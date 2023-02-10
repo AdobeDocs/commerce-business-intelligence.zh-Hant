@@ -2,9 +2,9 @@
 title: 分析重複概率衰減和流失
 description: 了解並了解訂單之間的時間流失情況，以及客戶預期流失的時間。
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 如果您提供多種產品，您可能會想知道購買特定產品的客戶在一段時間內的行為與其他客戶不同。 想知道更多嗎？ 請查看本教學課程，以根據客戶群已購買的特定產品，探索其終身購買行為。
 
-此最佳實務由 [!DNL MBI] 資料分析服務(DAS)。 我們期待回答您的任何特定業務問題！ [聯絡支援](../../guide-overview.md) 以取得詳細資訊。
+此最佳實務由 [!DNL MBI] 資料分析服務(DAS)。 我們期待回答您的任何特定業務問題！ [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 以取得詳細資訊。
 
 ### 相關
 

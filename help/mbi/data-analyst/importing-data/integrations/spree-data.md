@@ -2,9 +2,9 @@
 title: 預期的Spree資料
 description: 探索可從Spree匯入至您 [!DNL MBI] 帳戶。
 exl-id: 203a2d4b-e7ad-4704-a3c1-8e22ff0bf2d6
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 | `Users` | 此 `users` 表格包含註冊客戶的帳戶詳細資訊，包括個人的電子郵件、姓名和註冊日期。 這可讓您分析不同的客戶區段及其購買行為。 |
 | [`Orders`](https://guides.spreecommerce.org/developer/orders.html#overview) | 此 `orders` 表格是所有訂單層級量度的基礎。 此處記錄的是您 [!DNL Spree] 商店，包括 `completed\_at` （訂單的時間戳記）, `user\_id` （下訂單的註冊用戶id）。 若訂單是由註冊使用者所訂購，則 `user\_id` 會連結回 `users` 表格，以便分析使用者購買行為。 |
 | `Line items` | 此 `line\_items` 表是其中一個的子項 `orders` 表格或 `subscriptions`. 它會記錄訂單或訂閱的行項目詳細資訊。 若訂購多項產品，每個產品在此表格中會有各自的資料列，包括 `product\_id` 讓你將它與 `Products` 表格。 |
-| [`Products`](https://guides.spreecommerce.com/developer/products.html#overview) | 此 `products` 表記錄Spree目錄中可銷售項目的所有產品詳細資訊。 這可讓您依產品屬性劃分行項目層級量度。 |
+| `Products` | 此 `products` 表記錄Spree目錄中可銷售項目的所有產品詳細資訊。 這可讓您依產品屬性劃分行項目層級量度。 |
 | `Subscriptions` | 如果您有 [!DNL Spree] 訂閱擴充功能， `subscriptions` 表格包含每個個別訂閱的資訊，包括 `created\_at` （開始日期）, `cancelled\_at` （取消訂閱的日期），而 `interval` 訂閱。 |
 
 {style=&quot;table-layout:auto&quot;}
@@ -28,4 +28,4 @@ ht-degree: 0%
 ## 相關：
 
 * [連接 [!DNL Spree]](../integrations/spree.md)
-* [重新驗證整合](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

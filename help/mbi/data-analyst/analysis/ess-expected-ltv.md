@@ -2,9 +2,9 @@
 title: 預期期限值(LTV)分析（基本）
 description: 了解如何建立分析以了解您目前客戶的期限值，並預測期限值會隨著更多訂單而增加的情形。
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -44,8 +44,6 @@ ht-degree: 0%
 * 我們將在此建立和新增所有報表。
 
 ## 建立報表
-
-* 如果尚未，請簽出 [此影片](https://fast.wistia.net/embed/iframe/24zz7wmjrt) 關於使用**[!UICONTROL Visual Report Builder] 建立圖表、表和標量值。
 
 >[!NOTE]
 >

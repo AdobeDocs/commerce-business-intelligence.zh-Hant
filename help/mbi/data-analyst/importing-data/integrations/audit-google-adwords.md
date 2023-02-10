@@ -16,7 +16,7 @@ ht-degree: 0%
 1. 下載並安裝免費 [[!DNL Google Adwords] 編輯器](https://ads.google.com/home/tools/ads-editor/) 應用程式。
 1. 安裝完成後，請選取 `Add Count` 在 `Add/manage accounts` 中。
 1. 輸入 [!DNL Google Adwords] 帳戶資訊。
-1. 帳戶新增至 [!DNL Google Adwords] 編輯器，選取 **[!UICONTROL File** > **&#x200B;匯出試算表(CSV)**> **導出整個帳戶]**
+1. 將帳戶新增至 [!DNL Google Adwords] 編輯器，選取 **[!UICONTROL File** > **&#x200B;匯出試算表(CSV)**> **導出整個帳戶]**
 
 這會建置 `.csv` 檔案包含儲存在您目前 [!DNL Google Adwords] 帳戶。 此時，請提交支援票證（請務必附加此檔案！） 以便我們更仔細地查看您的資料。 如果檔案過大，請與共用 [!DNL MBI] 團隊經由 [!DNL Dropbox] 或 [!DNL Google Drive].
 

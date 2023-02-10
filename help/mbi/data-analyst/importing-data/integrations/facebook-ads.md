@@ -2,9 +2,9 @@
 title: Connect Facebook Ads
 description: 了解如何分析您的廣告支出資料，並查看您的資金是否得到有效支援。
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -52,11 +52,11 @@ ht-degree: 0%
 
 ## 接下來呢？ {#next}
 
-請確定您正在追蹤 [!DNL Facebook] 行銷活動 [!DNL Google Analytics] 按照 [教學課程](https://www.facebook.com/business/google-analytics). 這將確保 `utm\_campaign` 欄位 [!DNL Google Analytics] 正確填入 [!DNL Facebook] 行銷活動。
+請確定您正在追蹤 [!DNL Facebook] 行銷活動 [!DNL Google Analytics]. 這將確保 `utm\_campaign` 欄位 [!DNL Google Analytics] 正確填入 [!DNL Facebook] 行銷活動。
 
 ## 相關
 
-* [重新驗證整合](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [連接您的 [!DNL Google Adwords] 帳戶](../integrations/google-ecommerce.md)
 * [透過追蹤訂單轉介來源 [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [在您的資料庫中追蹤使用者反向連結來源](../../analysis/google-track-user-acq.md)

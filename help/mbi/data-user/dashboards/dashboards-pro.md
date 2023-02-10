@@ -2,9 +2,9 @@
 title: 現成控制面板
 description: 了解現成可用的控制面板，以深入了解您的業務。
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '2235'
+source-wordcount: '2245'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->存取這些控制面板取決於您的帳戶類型和存取層級。 如果您沒有看見這些控制面板，請聯絡 [支援](../../guide-overview.md).
+>存取這些控制面板取決於您的帳戶類型和存取層級。 如果您沒有看見這些控制面板，請聯絡 [支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ## 報表可用性
 

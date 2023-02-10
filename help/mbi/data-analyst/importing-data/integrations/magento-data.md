@@ -2,9 +2,9 @@
 title: 預期的商務資料
 description: 探索商務用戶導入到MBI的主要資料表
 exl-id: b481c8fc-41b6-4094-8901-17d57f26bfc0
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -27,5 +27,5 @@ ht-degree: 0%
 
 ## 相關
 
-* [連接 [!DNL Magento]](../integrations/magento.md)
-* [重新驗證整合](https://support.magento.com/hc/en-us/articles/360016733151)
+* [連接 [!DNL Adobe Commerce]](../integrations/magento.md)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

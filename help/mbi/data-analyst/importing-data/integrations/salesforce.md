@@ -2,9 +2,9 @@
 title: 連接Salesforce
 description: 了解Salesforce資料如何啟用一系列分析，從評分和最佳化銷售機會到實現您的目標以實現轉換的機會。
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
@@ -36,4 +36,4 @@ ht-degree: 0%
 如果你更懂科技， [[!DNL Salesforce] API檔案](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) 可以是有用的資源，以進一步了解Salesforce如何與 [!DNL MBI].
 
 * [預期 [!DNL Salesforce] 資料](../integrations/salesforce-data.md)
-* [重新驗證整合](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

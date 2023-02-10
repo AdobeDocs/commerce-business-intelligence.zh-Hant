@@ -2,9 +2,9 @@
 title: 連接Google Analytics倉庫
 description: 了解如何追蹤訪客使用您網站的方式、哪些內容吸引人、哪些是訪客的退出位置等。
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] 是 `Premium` 整合。 [聯絡支援](../../../guide-overview.md) 如果您有興趣將此整合新增至您的訂閱。
+>[!DNL Google Analytics Warehoused] 是 `Premium` 整合。 [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 如果您有興趣將此整合新增至您的訂閱。
 
 1. 前往 `Connections` 頁面底下 **[!UICONTROL Admin** > **Integrations]**.
 1. 按一下 **[!UICONTROL Add a Add Integration]**，位於畫面的右側。
@@ -61,8 +61,7 @@ ht-degree: 0%
 
 ## 相關檔案
 
-* [重新驗證整合](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [連接 [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [分析網站活動和客戶轉換率](../../analysis/web-act-cust-conversion.md)
 * [使用追蹤使用者贏取資料 [!DNL Google Analytics] cookie](../../analysis/google-track-user-acq.md)
-* [使用追蹤使用者裝置和瀏覽器資料 [!DNL Google Analytics] cookie](https://support.magento.com/hc/en-us/articles/360016732911)

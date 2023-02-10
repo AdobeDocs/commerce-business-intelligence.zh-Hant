@@ -2,9 +2,9 @@
 title: 抵用券效益
 description: 了解如何分析您的抵用券績效。
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1176'
 ht-degree: 0%
 
 ---
@@ -512,4 +512,4 @@ ht-degree: 0%
 
 編譯所有報表後，您可以視需要在控制面板上組織報表。 結束結果可能看起來像頁面頂端的影像。
 
-如果您在建立此分析時遇到任何問題，或只是想與我們的專業服務團隊接洽， [聯絡支援](../../guide-overview.md).
+如果您在建立此分析時遇到任何問題，或只是想與我們的專業服務團隊接洽， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

@@ -2,9 +2,9 @@
 title: 行銷ROI
 description: 了解如何設定控制面板來追蹤您的通道分析，包括匯總及依行銷活動的投資報酬率。
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -295,7 +295,7 @@ ht-degree: 0%
 
    [!UICONTROL Chart Type]: `Table`
 
-如果您在建立此分析時遇到任何問題，或只是想與我們的專業服務團隊接洽， [聯絡支援](../../guide-overview.md).
+如果您在建立此分析時遇到任何問題，或只是想與我們的專業服務團隊接洽， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ### 相關
 

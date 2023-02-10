@@ -2,9 +2,9 @@
 title: 刪除或重新啟用使用者
 description: 了解如何刪除 [!DNL MBI] 使用者。
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -24,5 +24,5 @@ ht-degree: 0%
 如果您只需要推送至其他使用者帳戶之使用者的控制面板，請執行下列動作：
 
 1. 使用已刪除使用者的電子郵件地址建立新 [!DNL MBI] 使用者。
-1. [通知支援](../../guide-overview.md) 建立使用者後。 支援會將控制面板轉移至您的帳戶。
+1. [通知支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 建立使用者後。 支援會將控制面板轉移至您的帳戶。
 1. 支援通知您轉移後，您可以再次刪除使用者。

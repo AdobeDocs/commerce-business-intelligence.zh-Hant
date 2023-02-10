@@ -2,10 +2,10 @@
 title: 分析客戶再購買行為
 description: 了解如何分析客戶回購行為。
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 0%
+source-wordcount: '876'
+ht-degree: 1%
 
 ---
 
@@ -46,9 +46,9 @@ ht-degree: 0%
 
 | **產品名稱** | **重複順序概率** | **訂購的平均期限數** | **平均期限收入** | **下訂單時間中位數** |
 |-----|-----|-----|-----|-----|
-| 單杯咖啡機 | 94.98% | 7.92 | US$549.82 | 57.01天 |
-| 咖啡膠囊 | 93.82% | 8.68 | US$479.98 | 63.48天 |
-| 咖啡豆 | 41.92% | 6.07 | US$99.82 | 27.31天 |
+| 單杯咖啡機 | 94.98% | 7.92 | $549.82 | 57.01天 |
+| 咖啡膠囊 | 93.82% | 8.68 | $479.98 | 63.48天 |
+| 咖啡豆 | 41.92% | 6.07 | $99.82 | 27.31天 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -80,4 +80,4 @@ ht-degree: 0%
 
 在您確定為何會發生流失率後，即可使用分析建立 `reactivation` 行銷活動。 使用此資料，您可以識別已失效的使用者、自上次造訪以來已經過多久、上次購買的次數等。 這可讓您做出可操作的決策，以吸引客戶回來。
 
-如需分析協助， [聯絡支援](../../guide-overview.md).
+如需分析協助， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

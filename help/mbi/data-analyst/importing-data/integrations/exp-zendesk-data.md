@@ -2,9 +2,9 @@
 title: 預期的Zendesk資料
 description: 了解可從Zendesk導入MBI的主要資料表，包括有關Zendesk資料的其他文檔的連結。
 exl-id: 838d8d13-e2e1-44c2-a416-f1792200ee6f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ ht-degree: 0%
 ## 相關
 
 * [連接Zendesk](../integrations/zendesk.md)
-* [重新驗證整合](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

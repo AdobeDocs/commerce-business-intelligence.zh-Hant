@@ -2,9 +2,9 @@
 title: 審核Zendesk資料
 description: 了解匯出Zendesk資料的步驟。
 exl-id: 3c8dcc72-3623-4c4e-a941-f431a97571e0
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 啟用資料匯出
 
-目前未針對所有項目啟用資料匯出 [!DNL Zendesk] 帳戶。 若要啟用此功能， [提交支援票證](../../../guide-overview.md)，提及 [!DNL Zendesk] 子網域名稱。
+目前未針對所有項目啟用資料匯出 [!DNL Zendesk] 帳戶。 若要啟用此功能， [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en)，提及 [!DNL Zendesk] 子網域名稱。
 
 >[!NOTE]
 >
@@ -36,6 +36,6 @@ ht-degree: 0%
 
    此下載連結至少有三天有效。
 
-此過程將構建一個XML檔案，其中包含當前儲存的所有資訊 [!DNL Zendesk] 帳戶，包括票證資料（含註解）、使用者資料和帳戶資料。 此時，您可以 [提交支援票證](../../../guide-overview.md) （請務必附加此檔案！） 以便我們更仔細地查看您的資料。 如果檔案過大，請與共用 [!DNL MBI] 團隊經由 [!DNL Dropbox] 或 [!DNL Google Drive].
+此過程將構建一個XML檔案，其中包含當前儲存的所有資訊 [!DNL Zendesk] 帳戶，包括票證資料（含註解）、使用者資料和帳戶資料。 此時，您可以 [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) （請務必附加此檔案！） 以便我們更仔細地查看您的資料。 如果檔案過大，請與共用 [!DNL MBI] 團隊經由 [!DNL Dropbox] 或 [!DNL Google Drive].
 
-如需 [!DNL Zendesk] 檔案匯出，請參閱 [[!DNL Zendesk] 匯出檔案](https://support.zendesk.com/entries/23002207-Exporting-data-to-a-CSV-or-XML-file-Plus-and-Enterprise-).
+如需 [!DNL Zendesk] 檔案匯出，請參閱 [[!DNL Zendesk] 匯出檔案](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file).

@@ -2,9 +2,9 @@
 title: 啟動您的 [!DNL MBI] 雲端入門訂閱帳戶
 description: 了解如何啟用 [!DNL MBI] 雲端入門專案。
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 1. 建立 [!DNL MBI] 帳戶。
 
-   - 前往 [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login)
+   - 前往 [Adobe Commerce帳戶登入](https://account.magento.com/customer/account/login)
 
    - 前往 **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 1. 建立專用 [!DNL MBI] 使用者。
 
-   - 在上建立新使用者 [https://accounts.magento.com](https://accounts.magento.com).
+   - 在 [Adobe Commerce帳戶](https://accounts.magento.com).
 
    - _為什麼是新使用者？_ [!DNL MBI] 需要新增至專案的使用者持續擷取要傳輸至帳戶的新資料 [!DNL MBI] 資料倉庫。 此使用者將作為該連線。 步驟4將新增此使用者至專案。
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 1. 新增 [!DNL MBI] `Public key` 到 [!DNL MBI] 在步驟5中建立的使用者。
 
-   - 前往 [https://accounts.magento.cloud/](https://accounts.magento.cloud/). 使用您的帳戶登入資訊登入新 [!DNL MBI] 用戶已建立。 然後前往 `Account Settings` 標籤。
+   - 前往 [您的雲端Adobe Commerce帳戶](https://accounts.magento.cloud/). 使用您的帳戶登入資訊登入新 [!DNL MBI] 用戶已建立。 然後前往 `Account Settings` 標籤。
 
    - 向下捲動頁面，然後展開下拉式清單 `SSH` 鍵。 然後按一下 **[!UICONTROL Add a public key]**.
 

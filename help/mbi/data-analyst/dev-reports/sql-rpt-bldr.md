@@ -2,9 +2,9 @@
 title: 使用SQLReport Builder
 description: 了解使用SQLReport Builder的實用和說明。
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
-source-git-commit: 09b6983c3e06a1f18035542dfa3b9de9ac3ceb38
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1501'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 0%
 >
 >需要 [管理權限](../../administrator/user-management/user-management.md) 來建立和編輯SQL圖表。 `Standard` 使用者可以在控制面板上重新排列這些圖表， `Read-only` 使用者擁有與傳統圖表相同的體驗。 此外， `Read-only` 用戶無權訪問查詢的文本。
 
-查看我們的 [訓練影片](https://support.magento.com/hc/en-us/articles/360016730131) 了解更多。
+查看我們的 [訓練影片](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) 了解更多。
 
 `SQL`，或結構化查詢語言，是一種用於與資料庫通信的寫程式語言。 在 [!DNL MBI], SQL可用來查詢或擷取資料倉庫中的資料。 查看控制面板上的報表 — 在幕後，每個報表都由SQL查詢提供支援。
 
 您可以使用 [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) 若要直接查詢您的資料倉庫，請檢視結果，然後將結果轉換為圖表。 您可以開始使用 `SQL Report Builder` 瀏覽至 **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
-查看我們的 [訓練影片](https://support.magento.com/hc/en-us/articles/360016730131-Training-Video-SQL-Report-Builder) 了解更多。
+查看我們的 [訓練影片](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) 了解更多。
 
-此 `SQL Report Builder` 可讓您直接查詢資料倉庫、檢視結果，並快速將其轉換為圖表。 使用SQL建立報表的最佳步驟是 [您不需要等待更新週期來迭代列](https://support.magento.com/hc/en-us/articles/360016506212) 建立。 如果結果看起來不太正確，您可以快速編輯並重新運行查詢，直到符合您的期望。
+此 `SQL Report Builder` 可讓您直接查詢資料倉庫、檢視結果，並快速將其轉換為圖表。 使用SQL來建立報表的最佳步驟，是您不需要等待更新週期來反覆查看您建立的欄。 如果結果看起來不太正確，您可以快速編輯並重新運行查詢，直到符合您的期望。
 
 在本文中，我們會引導您使用 `SQL Report Builder`. 了解您的方式後，請查看我們的SQL以取得視覺效果教學課程，或嘗試最佳化您所撰寫的部分查詢。
 
@@ -131,9 +131,9 @@ ht-degree: 0%
 
 大部分時間、結果差異可歸因於更新週期。 若 [!DNL MBI] 正在將資料從資料庫複製到Data Warehouse的過程中，即使使用同一查詢，您也可能會看到不同的結果。
 
-連線問題也可能導致差異。 導覽至 `Connections` 按一下 **[!DNL Manage Data** > **Connections]**)以檢出 — 相關資料庫整合是否有錯誤？ 如果是，您可能需要 [重新驗證整合](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations) 讓事情重新開始。
+連線問題也可能導致差異。 導覽至 `Connections` 按一下 **[!DNL Manage Data** > **Connections]**)以檢出 — 相關資料庫整合是否有錯誤？ 如果是，您可能需要 [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en) 讓事情重新開始。
 
-如果所有整合皆連線成功，而您未處於更新週期的中間，則可能會有其他問題。 請嘗試使用 [資料差異疑難排解指南](https://support.magento.com/hc/en-us/sections/360003074492) 來找出問題。
+如果所有整合皆連線成功，而您未處於更新週期的中間，則可能會有其他問題。
 
 #### 刪除SQL報表是否也會從我的Data Warehouse中刪除基礎列？
 

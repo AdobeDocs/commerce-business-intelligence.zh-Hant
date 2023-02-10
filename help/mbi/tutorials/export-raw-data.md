@@ -2,16 +2,16 @@
 title: 匯出原始資料
 description: 了解如何從 [!DNL MBI] Data Warehouse，進一步了解是什麼在推動您的控制面板。
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
 
 # 匯出原始資料
 
-使用原始資料匯出功能，您可以從 [!DNL MBI] Data Warehouse，進一步了解是什麼在推動您的控制面板。 此外，原始資料匯出功能也可協助您 [找出資料差異](https://support.magento.com/hc/en-us/articles/360016730631).
+使用原始資料匯出功能，您可以從 [!DNL MBI] Data Warehouse，進一步了解是什麼在推動您的控制面板。 此外，原始資料匯出功能也可協助您 [找出資料差異](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en).
 
 原始資料匯出功能可存取其他欄和維度，這些是透過相關量度的去標準化和預先匯總所產生。 例如， `User's first order date` 是可針對 [!DNL MBI]，但資料庫中可能無法使用。
 

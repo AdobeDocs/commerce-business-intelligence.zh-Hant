@@ -2,9 +2,9 @@
 title: 通過SSH通道連接PostgreSQL
 description: 了解如何將PostgreSQL資料庫連接到 [!DNL MBI] 透過SSH通道。
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 0%
 * `Username`:RJMetrics Postgres使用者名稱（應為rjmetric）
 * `Password`:RJMetrics Postgres密碼
 * `Port`:伺服器上的PostgreSQL埠（預設為5432）
-* `Host`:127.0.0.1
+* `Host`: 127.0.0.1
 
 在 `SSH Connection`:
 
@@ -105,4 +105,4 @@ ht-degree: 0%
 
 ### 相關
 
-* [重新驗證整合](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

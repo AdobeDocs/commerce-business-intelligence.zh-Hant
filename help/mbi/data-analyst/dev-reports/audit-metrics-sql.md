@@ -2,9 +2,9 @@
 title: 使用SQLReport Builder
 description: 了解如何使用SQLReport Builder審核資料和度量，以便您可以將結果與本地資料庫的資料進行比較。
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ ht-degree: 0%
 
 ### 還難過？
 
-如果您在稽核資料後發現不一致，請查看 [聯絡支援：資料差異](https://support.magento.com/hc/en-us/articles/360016505312) 支援文章，以取得後續操作的詳細資訊。
+如果您在稽核資料後發現不一致，請查看 [聯絡支援：資料差異](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=en) 支援文章，以取得後續操作的詳細資訊。

@@ -2,16 +2,16 @@
 title: 了解您的 [!DNL MBI] 環境
 description: 了解如何使用和改善 [!DNL MBI] 環境。
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '780'
 ht-degree: 0%
 
 ---
 
 # 您的 [!DNL MBI] 環境
 
-分析商務資料時，請注意這些因素和常見的誤解。 若您需要協助以確定您正確使用商務結構，請立即 [聯絡支援](../guide-overview.md).
+分析商務資料時，請注意這些因素和常見的誤解。 若您需要協助以確定您正確使用商務結構，請立即 [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ## [!DNL entity\_id]
 

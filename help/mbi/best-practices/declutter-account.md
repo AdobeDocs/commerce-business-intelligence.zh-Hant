@@ -2,9 +2,9 @@
 title: 去掉你的 [!DNL MBI] 帳戶
 description: 了解如何清理您的 [!DNL MBI] 帳戶。
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->停用使用者也會移除該使用者建立的圖表、控制面板和其他資產。 如果您想要保留這些資產，請聯絡 [!DNL MBI] [支援](../guide-overview.md) 團隊，再停用使用者。 支援可協助您將這些資產轉移給其他使用者。
+>停用使用者也會移除該使用者建立的圖表、控制面板和其他資產。 如果您想要保留這些資產，請連絡 [!DNL MBI] [支援](../guide-overview.md) 團隊，再停用使用者。 支援可協助您將這些資產轉移給其他使用者。
 
 ### 重新啟用使用者
 

@@ -2,9 +2,9 @@
 title: 匯入Bing廣告支出資料
 description: 了解如何將Bing廣告支出資料匯入 [!DNL MBI] 供分析之用。
 exl-id: c8dec4b4-74ce-41b2-a77d-403fe44e2816
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '157'
 ht-degree: 0%
 
 ---
@@ -24,4 +24,4 @@ ht-degree: 0%
 1. 在 `Save As` 對話框，按一下要保存導出檔案的資料夾。
 1. 在 `File name` 框中，選擇檔案導出的名稱。
 1. 按一下 **[!UICONTROL Save]**.
-1. 下載檔案後，  [聯絡支援](../../../guide-overview.md)，我們會代表您執行首次上傳並設定必要的後端維度。
+1. 下載檔案後，  [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en)，我們會代表您執行首次上傳並設定必要的後端維度。

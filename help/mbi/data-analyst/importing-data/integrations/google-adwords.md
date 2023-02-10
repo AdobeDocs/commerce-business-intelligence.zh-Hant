@@ -2,9 +2,9 @@
 title: 連線Google Adwords
 description: 了解如何結合廣告成本和從行銷活動中獲得的使用者客戶終身價值(CLV)，以評估行銷活動的投資報酬率。
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -53,10 +53,9 @@ ht-degree: 0%
 
 ## 相關
 
-* [重新驗證整合](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [透過追蹤訂單轉介來源 [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [在您的資料庫中追蹤使用者反向連結來源](../../analysis/google-track-user-acq.md)
-* [在資料庫中追蹤使用者裝置、瀏覽器和作業系統資料](https://support.magento.com/hc/en-us/articles/360016732911)
 * [探索您最有價值的贏取來源和管道](../../analysis/most-value-source-channel.md)
 * [提高廣告宣傳的投資報酬率](../../analysis/roi-ad-camp.md)
 * [如何 [!DNL Google Analytics] UTM歸因功能是否正常？](../../analysis/utm-attributes.md)

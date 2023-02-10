@@ -2,9 +2,9 @@
 title: 了解資料庫和SQL編輯器之間的結果
 description: 了解資料庫和SQL編輯器之間的結果。
 exl-id: f31f3eef-791a-4984-901e-bc10554031bd
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
@@ -29,4 +29,4 @@ ht-degree: 0%
 檢查資料的新鮮度 *特定表*，建議您建立快速 [SQL報告](../../dev-reports/sql-rpt-bldr.md) 執行 `MAX(timestamp)` 在您帳戶中最重要的表格上。 將此時間戳記與 `Last Data Point` 會指出問題是否影響整個帳戶或表格的子集。 我們建議對三到四個常用的重要表執行此操作。
 
 - 若 `MAX(timestamp)` 值最近於 `Last Data Point Received`，這表示表的子集受到影響，但整體帳戶的更新週期穩定。
-- 若 `MAX(timestamp)` 值等於或之前 `Last Data Point Received`，表示帳戶的更新週期會受到影響。 在這種情況下， [提交支援票證](../../../guide-overview.md).
+- 若 `MAX(timestamp)` 值等於或之前 `Last Data Point Received`，表示帳戶的更新週期會受到影響。 在這種情況下， [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

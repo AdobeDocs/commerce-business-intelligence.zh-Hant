@@ -2,7 +2,7 @@
 title: 資料遷移服務
 description: 了解提交請求和開始移轉所需的一切。
 exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 資料移轉
 
-遷移到新的資料庫架構、伺服器或報告資料庫不必帶來壓力。 我們的 **[!DNL Magento Services - Analytics]** 團隊提供移轉協助 — 我們承擔所有重擔，因此您不必擔心。
+遷移到新的資料庫架構、伺服器或報告資料庫不必帶來壓力。 我們的 **[!DNL Adobe Commerce Services - Analytics]** 團隊提供移轉協助 — 我們承擔所有重擔，因此您不必擔心。
 
 為確保移轉過程盡可能順暢，我們請您在提交移轉請求時盡可能詳細說明。 本文提供提交請求並開始移轉所需的一切。 為我們提供您需求的完整圖片，將可確保您的專案限定範圍正確，且預估準確。
 

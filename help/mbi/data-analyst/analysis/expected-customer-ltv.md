@@ -2,9 +2,9 @@
 title: Pro的預期期限值(LTV)分析
 description: 了解如何設定控制面板，協助您了解客戶期限值成長和預期期限值。
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -153,4 +153,4 @@ ht-degree: 0%
 
 編譯所有報表後，您可以視需要在控制面板上組織報表。 結束結果可能看起來像頁面頂端的影像。
 
-如果您在建立此分析時遇到任何問題，或只是想與我們的專業服務團隊接洽， [聯絡支援](../../guide-overview.md).
+如果您在建立此分析時遇到任何問題，或只是想與我們的專業服務團隊接洽， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

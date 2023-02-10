@@ -2,9 +2,9 @@
 title: 通過cPanel連接MySQL
 description: 了解如何透過cPanel連接MySQL。
 exl-id: 90b0a0b0-8c6b-4144-95b4-f588f18616c7
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 >
 >強烈建議您使用SSH或其他加密形式來保護您的資料！ 如果此選項不可用，您仍可以直接連接 [!DNL MBI] 使用本文中的說明，將資料庫重新命名。
 
-在本文中，我們將引導您直接將MySQL資料庫連接到 [!DNL MBI] 使用cPanel」。 此程式也可用來連線 [!DNL Magento] 和任何其他基於MySQL的電子商務資料庫 [!DNL MBI].
+在本文中，我們將引導您直接將MySQL資料庫連接到 [!DNL MBI] 使用cPanel」。 此程式也可用來連線 [!DNL Adobe Commerce] 和任何其他基於MySQL的電子商務資料庫 [!DNL MBI].
 
 1. 建立 [!DNL MBI] MySQL用戶 `cPanel`
 1. 在 [!DNL MBI]
@@ -69,4 +69,4 @@ ht-degree: 0%
 
 ## 相關：
 
-* [重新驗證整合](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

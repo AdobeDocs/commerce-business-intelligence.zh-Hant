@@ -2,9 +2,9 @@
 title: 包含的控制面板
 description: 了解如何檢查基本量度（例如使用者期限收入、重複購買次數等）的運作狀況，為日後的探索奠定堅實的基礎。
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: 3557e6370fae637cd74550b2806847bebe61d5d3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '973'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >某些控制面板的可用性取決於您的資料集。
 
-如果您有任何疑問，或您想要將套件新增至帳戶，請提交 [支援票證](../../guide-overview.md) 來幫忙。
+如果您有任何疑問，或您想要將套件新增至帳戶，請提交 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 來幫忙。
 
 ## 執行概觀
 

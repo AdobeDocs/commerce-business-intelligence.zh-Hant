@@ -2,9 +2,9 @@
 title: 了解並建立基本分析
 description: 了解如何了解及建立基本分析。
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '3142'
+source-wordcount: '3153'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 **你接受客人的命令嗎？**
 
-*如果是，此表可能不包含所有客戶。 聯繫我們的 [支援團隊](https://support.magento.com/hc/en-us/articles/360016503692) 以確保客戶分析包含所有客戶。*
+*如果是，此表可能不包含所有客戶。 聯繫我們的 [支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 以確保客戶分析包含所有客戶。*
 
 *不確定你接受客人的命令？ 請參閱 [本主題](../data-warehouse-mgr/guest-orders.md) 要了解更多！*
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 * **[!UICONTROL Created_at]**:建立或下單的日期。
 * **[!UICONTROL Customer_email]**:下訂單的客戶的電子郵件地址。 這也可能是客戶的唯一識別碼。
 * **[!UICONTROL Customer's lifetime number of orders]**:在您的 `Customers` 表格。
-* **[!UICONTROL Customer's order number]**:與訂單關聯的客戶順序訂單編號。 例如，如果您要查看的列是客戶的首筆訂單，則此欄為「1」；但是，如果這是客戶的第15個訂單，此欄會針對此訂單顯示「15」。 如果您的 `Customers` 桌子，問 [支援團隊](https://support.magento.com/hc/en-us/articles/360016503692) 來幫助你建造它。
+* **[!UICONTROL Customer's order number]**:與訂單關聯的客戶順序訂單編號。 例如，如果您要查看的列是客戶的首筆訂單，則此欄為「1」；但是，如果這是客戶的第15個訂單，此欄會針對此訂單顯示「15」。 如果您的 `Customers` 桌子，問 [支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 來幫助你建造它。
 * **[!UICONTROL Customer's order number (previous-current)]**:中兩個值的串連 **[!UICONTROL Customer's order number]** 欄。 它用於下列範例報表中，以顯示任意兩個訂單之間經過的時間。 例如，客戶的首次訂購日期與其第二次訂購日期之間的時間，會透過此計算顯示為「1-2」。
 * **[!UICONTROL Coupon_code]**:顯示每筆訂單上使用的抵用券。
 * **[!UICONTROL Seconds since previous order]**:客戶訂購之間的時間（以秒為單位）。
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 ## 行銷支出表
 
-分析行銷支出時，您可以包括 [!DNL Facebook], [!DNL Google AdWords]，或分析中的其他來源。 如果您有多個行銷支出來源，請連絡我們的 [服務團隊](https://business.adobe.com/products/magento/fully-managed-service.html) ，協助您為行銷活動設定匯總表格。
+分析行銷支出時，您可以包括 [!DNL Facebook], [!DNL Google AdWords]，或分析中的其他來源。 如果您有多個行銷支出來源，請連絡我們的 [Managed Services團隊](https://business.adobe.com/products/magento/fully-managed-service.html) ，協助您為行銷活動設定匯總表格。
 
 **Dimension**
 
@@ -535,7 +535,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您可以將公式標題為「ROI」，並隱藏所有量度。 此外，您可以調整量度中的篩選器，以分析替代來源和媒體。 此外，請查看 [這篇文章](../analysis/roi-ad-camp.md) 如需CAC、LTV和ROI的詳細資訊。
+>您可以將公式標題為「ROI」，並隱藏所有量度。 此外，您可以調整量度中的篩選器，以分析替代來源和媒體。 此外，請查看 [本主題](../analysis/roi-ad-camp.md) 如需CAC、LTV和ROI的詳細資訊。
 
 ![ROI 1](../../assets/ROI_1.png)<!--{: width="929"}-->
 

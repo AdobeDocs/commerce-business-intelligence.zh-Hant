@@ -2,9 +2,9 @@
 title: 分析退貨單
 description: 了解如何設定控制面板，以詳細分析您商店的傳回。
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -248,4 +248,4 @@ ht-degree: 0%
 
 編譯所有報表後，您可以視需要在控制面板上組織報表。 結果可能類似於上述範例控制面板。
 
-如果在構建此分析時遇到任何問題，或只是希望與專業服務團隊接洽， [聯絡支援](../../guide-overview.md).
+如果在構建此分析時遇到任何問題，或想要與Professional Services團隊接洽， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

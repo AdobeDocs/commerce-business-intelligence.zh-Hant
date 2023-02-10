@@ -2,9 +2,9 @@
 title: 縮短更新週期時間
 description: 了解如何縮短更新週期時間。
 exl-id: 0b211e2d-770f-480d-a7fb-8d10e3e7272e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -41,4 +41,4 @@ ht-degree: 0%
 
 ## 包裝
 
-如果即使在實作這些建議後，更新時間仍緩慢， [聯繫我們的支援團隊](../guide-overview.md).
+如果即使在實作這些建議後，更新時間仍緩慢， [聯繫我們的支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

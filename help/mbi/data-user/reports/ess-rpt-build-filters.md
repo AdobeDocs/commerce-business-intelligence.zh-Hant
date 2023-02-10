@@ -2,9 +2,9 @@
 title: 篩選器
 description: 了解如何使用篩選。
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >報表最多可以有3,500個資料點。 若要減少資料點數，請使用篩選器來減少用於產生報表的資料量。
 
-MBI包含一系列篩選器，您可以使用「現成」或修改以滿足您的需求。 您可以建立的篩選器數量沒有限制。
+MBI包含一系列篩選器，您可以使用「現成可用(OOTB)」或修改以滿足您的需求。 您可以建立的篩選器數量沒有限制。
 
 ## 若要新增篩選器：
 

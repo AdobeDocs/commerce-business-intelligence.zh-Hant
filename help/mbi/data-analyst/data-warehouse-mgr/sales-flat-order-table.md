@@ -2,9 +2,9 @@
 title: sales_order表
 description: 了解如何使用sales_order表。
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
-source-git-commit: 73373924b7adaffabf643b65bd290ce2d9408574
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1219'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 | `customer_group_id` | 與 `customer_group` 表格。 加入 `customer_group.customer_group_id` 確定與訂單關聯的客戶組 |
 | `customer_id` | `Foreign key` 與 `customer_entity` 表中，如果已註冊客戶。 加入 `customer_entity.entity_id` 確定與訂單關聯的客戶屬性。 如果訂單是透過訪客結帳下達，此欄位將會是 `NULL` |
 | `entity_id` (PK) | 表的唯一標識符，常用於連接到Commerce實例內的其他表 |
-| `increment_id` | 訂單的唯一識別碼，通常稱為 `order_id` Magento。 此 `increment_id` 最常用於連接到外部源，例如 [!DNL Google Ecommerce] |
+| `increment_id` | 訂單的唯一識別碼，通常稱為 `order_id` 在Adobe Commerce。 此 `increment_id` 最常用於連接到外部源，例如 [!DNL Google Ecommerce] |
 | `shipping_address_id` | 與 `sales_order_address` 表格。 加入 `sales_order_address.entity_id` 確定與訂單關聯的發運地址詳細資訊 |
 | `status` | 訂單狀態。 可能會傳回「complete」、「processing」、「cancelled」、「requed」等值，以及在商務執行個體上實作的任何自訂狀態。 在處理訂單時可能會有所變更 |
 | `store_id` | `Foreign key` 與 `store` 表格。 加入 `store`.`store_id` 確定與訂單關聯的商務商店視圖 |

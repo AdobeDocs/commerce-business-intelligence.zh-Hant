@@ -2,10 +2,10 @@
 title: MBI Essentials與Pro
 description: 了解MBI Essentials與MBI Pro有何不同。
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-source-git-commit: 1703e469e245629797bbe08d691d7f8e816a4019
+source-git-commit: dcd02693b3ca060ecdc47cbee189428ce157dd58
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 0%
+source-wordcount: '86'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 | `Pre-Defined Reports` | 最多100 | 自訂 |
 | `Pre-Defined Dashboards` | 5-6 | 自訂 |
 | `New Custom Report Creation` | 是 | 是 |
-| `Magento Commerce Tables` | 4-6 | 無限制 |
+| `Commerce Tables` | 4-6 | 無限制 |
 | `Log-ins/User Accounts` | 10 | 20 |
 | `User Permissions` | 是 | 是 |
 | `Data Warehouse Manager` | 不可用 | 可用 |
@@ -152,7 +152,3 @@ ht-degree: 0%
    * `store_id`
    * `name`
 
-請參考下列影片系列，進一步了解 [!DNL MBI Essentials] 和 [!DNL MBI Pro].
-
-* [`Essentials`](https://support.magento.com/hc/en-us/articles/360005305614)
-* [`Pro`](https://support.magento.com/hc/en-us/articles/360005373453)

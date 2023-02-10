@@ -2,9 +2,9 @@
 title: 定義客戶流失
 description: 了解如何設定控制面板，協助您定義交易式客戶的流失率。
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: 3557e6370fae637cd74550b2806847bebe61d5d3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -136,4 +136,4 @@ ht-degree: 0%
 
 編譯所有報表後，您可以視需要在控制面板上組織報表。 結束結果可能看起來像頁面頂端的影像
 
-如果您在建立此分析時遇到任何問題，或只是想與我們的專業服務團隊接洽， [聯絡支援](../../guide-overview.md).
+如果您在建立此分析時遇到任何問題，或只是想與我們的專業服務團隊接洽， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

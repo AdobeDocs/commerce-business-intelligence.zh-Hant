@@ -2,9 +2,9 @@
 title: 使用檔案上傳程式
 description: 了解如何將所有資料放入單一資料倉庫。
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 ## 限制和要求 {#require}
 
 1. **檔案上傳唯一支援的格式是 `CSV` 或`comma separated values`**. 如果您使用Excel，則可使用「另存新檔」功能，將檔案儲存於 `.csv` 格式。
-1. **`CSV`檔案必須使用`UTF-8 encoding`**. 大多數情況下，這不會是問題。 如果您在上傳檔案時遇到此錯誤， [請參閱本支援文章](https://support.magento.com/hc/en-us/articles/360016730591).
+1. **`CSV`檔案必須使用`UTF-8 encoding`**. 大多數情況下，這不會是問題。 如果您在上傳檔案時遇到此錯誤， [請參閱本支援文章](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=en).
 1. **檔案不能大於100MB**. 如果檔案大於此，請將表分割為塊，並將它們另存為單個檔案。 您可以在載入初始檔案後使用附加資料。
 1. **所有表必須具有`primary key`**. 表格中至少必須有一欄可作為 `primary key`，或表格中每一列的唯一識別碼。 任何指定為 `primary key` can *從不* 為null。 A `primary key` 可以像新增為每列指定數字的欄一樣簡單，或可以串連兩個欄來建立唯一值的欄(例如 `campaign name` 和 `date`)。
 

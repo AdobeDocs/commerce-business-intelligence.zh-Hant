@@ -2,9 +2,9 @@
 title: 控制面板範圍篩選
 description: 了解如何大量編輯特定控制面板上的所有報表。
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->整個商店會啟用或停用商店篩選 [!DNL MBI] 帳戶。 如果控制面板包含不受篩選影響的報表，例如未建立於任何商務資料上的報表，則套用儲存篩選時，這些報表不會更新。 您可以 [聯絡支援](../../guide-overview.md) 如果您認為報表應根據商店選擇而更新，或您認為帳戶商店篩選器已錯誤停用。
+>整個商店會啟用或停用商店篩選 [!DNL MBI] 帳戶。 如果控制面板包含不受篩選影響的報表，例如未建立於任何商務資料上的報表，則套用儲存篩選時，這些報表不會更新。 您可以 [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 如果您認為報表應根據商店選擇而更新，或您認為帳戶商店篩選器已錯誤停用。
 
 當您從 `Store Filter`，當您在控制面板之間導覽時，篩選器會保留您的選取項目。 保留您的選取項目，可讓您在選取之前，隨處查看所選儲存的資料 `All Stores`.
 

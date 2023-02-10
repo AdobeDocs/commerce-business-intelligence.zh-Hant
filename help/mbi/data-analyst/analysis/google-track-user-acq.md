@@ -2,10 +2,10 @@
 title: Google Analytics — 追蹤使用者贏取來源資料概觀
 description: 了解如何依使用者贏取來源劃分資料。
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 0%
+source-wordcount: '837'
+ht-degree: 1%
 
 ---
 
@@ -93,7 +93,6 @@ ht-degree: 0%
 
 ### 相關
 
-* **[在資料庫中追蹤使用者裝置、瀏覽器和作業系統資料](https://support.magento.com/hc/en-us/articles/360016732911)**
 * **[探索您最有價值的贏取來源和管道](../analysis/most-value-source-channel.md)**
 * **[連接您的 [!DNL Google Adwords] 帳戶](../importing-data/integrations/google-adwords.md)**
 * **[提高廣告宣傳的投資報酬率](../analysis/roi-ad-camp.md)**

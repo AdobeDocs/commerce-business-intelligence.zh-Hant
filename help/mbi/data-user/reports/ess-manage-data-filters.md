@@ -2,9 +2,9 @@
 title: 建立量度的篩選器集
 description: 了解如何建立儲存的篩選器集並將其套用至量度。
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 若您的 [!DNL MBI] 您可以建立儲存的篩選集，並將篩選集套用至量度，這需要以類似方式篩選（例如篩選掉測試順序）。 這樣可節省時間，因為您在建立或編輯量度時不需要新增個別篩選器。
 
-查看我們的 [訓練影片](https://support.magento.com/hc/en-us/articles/360016730151) 了解更多。
+查看我們的 [訓練影片](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) 了解更多。
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: 分段和篩選的建議資料Dimension
 description: 了解分段和篩選的最佳實務。
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 依上述維度劃分量度的第一步，是確定您要在資料庫中追蹤此資料。 如果未追蹤，請洽詢您的技術團隊，並尋找開始追蹤此資料的方式。
 
-一旦我們確認在您的資料庫中追蹤資料， [聯繫我們的支援團隊](../guide-overview.md) 將維度推送至 [!DNL MBI] 量度和圖表，或僅使用我們的欄位管理工具來追蹤 [!DNL MBI].
+一旦我們確認在您的資料庫中追蹤資料， [聯繫我們的支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 將維度推送至 [!DNL MBI] 量度和圖表，或僅使用我們的欄位管理工具來追蹤 [!DNL MBI].
 
 ## 相關
 

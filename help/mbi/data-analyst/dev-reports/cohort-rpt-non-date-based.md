@@ -71,7 +71,7 @@ ht-degree: 0%
 
 以下是您選取包含 `cohorts action timestamp` （因此，在2017年11月至2018年10月期間首次訂購的客戶）。 這可以是移動日期範圍或固定日期範圍。
 
-#### 5。 `Time range after cohort occurrence`
+#### 5. `Time range after cohort occurrence`
 
 您想要查看 `cohorts` 依月、周或年的時段而定？ 以下是您進行這些選取的位置。 在該區段下方，您將選取 `time range` 在 `cohort action timestamp` 已發生。 例如，這會顯示在動作時間範圍內下過第一筆訂單的客戶的十二個月資料。
 

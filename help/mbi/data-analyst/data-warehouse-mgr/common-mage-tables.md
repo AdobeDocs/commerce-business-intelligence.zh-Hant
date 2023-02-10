@@ -2,7 +2,7 @@
 title: 常見商務表
 description: 了解一些較常見的表格， [!DNL MBI] 客戶可利用。
 exl-id: 8b316130-55c6-4771-ae6e-97ac605fc6cc
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 0%
@@ -31,4 +31,4 @@ ht-degree: 0%
 
 ## 相關檔案
 
-[[!DNL Magento] 實體關係圖](../data-warehouse-mgr/entity-rel-diag.md)
+[實體關係圖](../data-warehouse-mgr/entity-rel-diag.md)

@@ -2,9 +2,9 @@
 title: 實體關係圖
 description: 了解幾個ER圖表，以幫助您直觀地了解幾個常見的Commerce資料庫表之間的關係。
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->`customer\_entity.entity\_id` 不等於 `sales\_flat\_order.entity\_id`. 第一個可以認為 `customer\_id` 第二個可以被認為 `order\_id.` 您可以在 [`entity\_id` 節](https://support.magento.com/hc/en-us/articles/360016729951) 我們 _[!DNL Magento]:常見誤解_ 文章。
+>`customer\_entity.entity\_id` 不等於 `sales\_flat\_order.entity\_id`. 第一個可以認為 `customer\_id` 第二個可以被認為 `order\_id.`
 
 內 [!DNL MBI]，如果這兩個表之間的路徑尚未存在，則您可以 [建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md) 在「Data Warehouse」標籤中。 準備好建立路徑時，其定義如下：
 

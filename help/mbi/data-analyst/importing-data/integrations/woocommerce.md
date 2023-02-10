@@ -2,9 +2,9 @@
 title: Connect WooCommerce
 description: 了解如何了解您的業務表現，或尋找最有價值的贏取來源和管道。
 exl-id: 26ac24e0-087b-4958-873c-2facab22ffb2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '108'
 ht-degree: 0%
 
 ---
@@ -23,5 +23,5 @@ ht-degree: 0%
 
 ## 相關：
 
-* [重新驗證整合](https://support.magento.com/hc/en-us/articles/360016733151)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [用於細分和篩選的建議資料維度](../../../best-practices/segment-filter.md)

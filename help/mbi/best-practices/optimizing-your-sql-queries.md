@@ -2,9 +2,9 @@
 title: 優化SQL查詢
 description: 了解如何優化SQL查詢。
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 SQLReport Builder允許您在任何給定時間查詢和迭代這些查詢。 如果您需要修改查詢，而不需要等待更新週期完成，才能實現您建立的欄或報表需要更新，這個功能就很實用。
 
-執行查詢之前， [[!DNL MBI] 估計其成本](https://support.magento.com/hc/en-us/articles/360016730391). 成本考慮了執行查詢所需的時間和資源數。 如果該成本被認為過高，或傳回的列數超過限制，查詢將不會執行。 我們提供了查詢資料倉庫的建議清單，可確保您編寫盡可能簡化的查詢。
+執行查詢之前， [[!DNL MBI] 估計其成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). 成本考慮了執行查詢所需的時間和資源數。 如果該成本被認為過高，或傳回的列數超過限制，查詢將不會執行。 我們提供了查詢資料倉庫的建議清單，可確保您編寫盡可能簡化的查詢。
 
 ## 使用SELECT或選擇所有列
 

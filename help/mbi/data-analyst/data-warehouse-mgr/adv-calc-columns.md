@@ -2,10 +2,10 @@
 title: 高級計算列類型
 description: 了解大多數使用欄案例的基本知識，但您可能想要的計算欄比Data Warehouse管理員可建立的要複雜一些。
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 0%
+source-wordcount: '912'
+ht-degree: 4%
 
 ---
 
@@ -159,7 +159,7 @@ A **時區轉換** 計算欄會將特定資料來源的時間戳記從其記錄�
 
 別擔心。 僅僅因為此處未列出，並不表示這是不可能的。 我們的Data Warehouse分析師團隊已為您提供支援。
 
-要定義新的計算列， [提交支援票證](../../guide-overview.md) 詳細列出您要建置的項目。
+要定義新的計算列， [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 詳細列出您要建置的項目。
 
 ## 相關檔案
 

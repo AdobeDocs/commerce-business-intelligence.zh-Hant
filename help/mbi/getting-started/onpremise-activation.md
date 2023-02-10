@@ -2,9 +2,9 @@
 title: 啟用 [!DNL MBI] 內部部署訂閱帳戶
 description: 了解如何啟用 [!DNL MBI] 內部部署訂閱的帳戶。
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 1. 建立 [!DNL MBI] 帳戶。
 
-   - 前往 [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login)
+   - 前往 [Adobe Commerce帳戶登入](https://account.magento.com/customer/account/login)
 
    - 前往 **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
    ![](../assets/create-account-2.png)
 
-   - 前往收件匣並驗證您的電子郵件地址。 如果你沒有收到電子郵件， [聯絡支援](../guide-overview.md).
+   - 前往收件匣並驗證您的電子郵件地址。 如果你沒有收到電子郵件， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
    - 建立密碼。
 

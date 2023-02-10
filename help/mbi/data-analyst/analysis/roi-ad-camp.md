@@ -2,9 +2,9 @@
 title: 提高廣告宣傳的投資報酬率
 description: 了解評估行銷活動績效的幾種不同方法。
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ MBI讓您輕鬆 [結合廣告成本資料和收入資料](../../data-analyst/imp
 >
 >我們將假設所有促銷活動成本都專門用於產生特定產品的購買。 假設所有成本都花在了產生購買上，則最壞的情況（每次購買的成本最高）將包括所產生的ROI，因此您可以確定實際ROI高於此計算。 範例：假設您在產生10個新使用者和10個購買的促銷活動上花費了$20，則您的每次購買實際成本為$1，但根據我們的假設，購買新使用者的所有成本為$2。)*
 
-開始之前， [提交支援票證](../../guide-overview.md) 將以下維連接到行項表(`sales\_flat\_order\_item, order\_item`):
+開始之前， [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 將以下維連接到行項表(`sales\_flat\_order\_item, order\_item`):
 
 * 訂單的來源（如果您只追蹤使用者層級的反向連結來源，則加入使用者的來源）
 * 訂購的促銷活動（如果您只追蹤使用者層級的反向連結來源，則加入使用者的促銷活動）

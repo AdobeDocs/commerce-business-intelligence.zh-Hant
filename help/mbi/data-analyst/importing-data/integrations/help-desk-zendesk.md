@@ -2,9 +2,9 @@
 title: Zendesk的服務台報告
 description: 了解您最重要的轉介管道。
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->這僅適用於位於 `Pro` 規劃並使用新架構。 您在 [新架構](https://support.magento.com/hc/en-us/articles/360016503052-New-Architecture-FAQ) 如果你有 `Data Warehouse Views` 選取後可用的區段 `Manage Data` 中。
+>這僅適用於位於 `Pro` 規劃並使用新架構。 如果您有 `Data Warehouse Views` 選取後可用的區段 `Manage Data` 中。
 
 整合您的 [!DNL Zendesk] 使用交易資料庫的資料是更好地了解客戶與銷售或客戶成功團隊互動情況，以及使用您的支援平台的客戶類型的絕佳方式。 在本文中，我們示範如何設定控制面板，以取得關於您的 [!DNL Zendesk] 效能和關聯。
 
@@ -196,7 +196,7 @@ ht-degree: 0%
 
       * `Calculation` - `to_char(A,'D')||'. '||to_char(A,'Day')`
 
-      *`Datatype` - `String`
+      *`Datatype` – `String`
 
 
 * **`customer_entity`** 表格
@@ -221,7 +221,7 @@ ht-degree: 0%
 
       * `Calculation` - `case when A>0 then 'Yes' else 'No' end`
 
-      * `Datatype` - `String`
+      * `Datatype` – `String`
 
 * **`[Zendesk] Tickets`** 表格
    * 選取定義： `Joined Column`

@@ -2,9 +2,9 @@
 title: 檢查更新週期狀態
 description: 了解如何檢查更新週期狀態。
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 為什麼應檢查更新週期狀態？
 
-檢查狀態更新週期對於審核中的資料很有用 [!DNL MBI] 帳戶。 如果您看到 [不符合預期的結果](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)，例如 [!DNL MBI] 不符合您在電子商務平台或 [[!DNL Google] 電子商務收入](https://support.magento.com/hc/en-us/articles/360016505232) 您可以檢查最後一個資料點，查看更新完成後問題是否會解決。
+檢查狀態更新週期對於審核中的資料很有用 [!DNL MBI] 帳戶。 如果您看到 [不符合預期的結果](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)，例如 [!DNL MBI] 不符合您在電子商務平台或 [[!DNL Google] 電子商務收入](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) 您可以檢查最後一個資料點，查看更新完成後問題是否會解決。
 
 ## [!UICONTROL Read-Only] 和 [!UICONTROL Standard]**用戶
 

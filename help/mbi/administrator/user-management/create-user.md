@@ -2,9 +2,9 @@
 title: 新增/編輯新使用者
 description: 了解如何新增 [!DNL MBI] 以及如何更新您的用戶名或密碼。
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,8 @@ ht-degree: 0%
    >若要檢視、新增或變更帳戶的帳單資訊，您必須 `Billing` 權限。 [權限是依使用者而設定](../../administrator/user-management/user-management.md) 建立使用者帳戶時。 如果您需要 `Billing` 權限，請連絡您帳戶的管理員。
 
 1. 按一下 **[!UICONTROL Save]**.
-1. 新使用者會收到包含登入和密碼詳細資訊的電子郵件。
+
+新使用者會收到包含登入和密碼詳細資訊的電子郵件。
 
 >[!NOTE]
 >
@@ -37,4 +38,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->每個帳戶都有合約數量的授權或座位。 如果你達到極限或想知道更多， [提交支援票證](../../guide-overview.md).
+>每個帳戶都有合約數量的授權或座位。 如果你達到極限或想知道更多， [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

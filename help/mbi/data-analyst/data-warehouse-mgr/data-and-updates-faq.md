@@ -2,9 +2,9 @@
 title: 資料和更新資訊
 description: 了解如何檢查更新週期的狀態。
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
-source-git-commit: 09b6983c3e06a1f18035542dfa3b9de9ac3ceb38
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -38,8 +38,8 @@ ht-degree: 0%
 
 ## 為什麼[!DNL Google ECommerce]資料與我的資料庫不同？ {#ecommdatabase}
 
-之間的差異 [!DNL Google Analytics] 而您的資料庫可能因多種原因出現。 追蹤未正確啟用、使用者無痕造訪，以及點按事件未正確運作，只是幾個範例。 如果您的收入和訂單看起來不太正確， [使用本文](https://support.magento.com/hc/en-us/articles/360016505232) 診斷問題。
+之間的差異 [!DNL Google Analytics] 而您的資料庫可能因多種原因出現。 追蹤未正確啟用、使用者無痕造訪，以及點按事件未正確運作，只是幾個範例。 如果您的收入和訂單看起來不太正確， [使用本文](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) 診斷問題。
 
 ## 如何疑難排解資料不一致？ {#datadiscrepancy}
 
-我們知道看到不一致的資料可能是令人沮喪的體驗。 嘗試使用 [資料差異檢查清單](https://support.magento.com/hc/en-us/articles/360016731271) 或 [資料匯出教學課程](https://support.magento.com/hc/en-us/articles/360016730631) 診斷問題。 如果你還被難住， [聯絡支援](../../guide-overview.md).
+我們知道看到不一致的資料可能是令人沮喪的體驗。 嘗試使用 [資料差異檢查清單](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=en) 或 [資料匯出教學課程](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en) 診斷問題。 如果你還被難住， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

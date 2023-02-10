@@ -2,16 +2,16 @@
 title: 分析庫存水準
 description: 了解如何分析庫存水準。
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
 
 # 分析庫存水準
 
-本主題示範如何設定控制面板，以提供目前詳細目錄的深入分析。 本主題包含有關舊體系結構或新體系結構的客戶端的說明。 如果您沒有 **[!UICONTROL Data Warehouse Views]** 選項 **[!UICONTROL Manage Data]** 功能表)。 如果您使用舊版架構，請提交 [新支援請求](../../guide-overview.md) 與主題 **[!UICONTROL INVENTORY ANALYSIS]** 一旦到達 _計算的欄_ 以下說明。
+本主題示範如何設定控制面板，以提供目前詳細目錄的深入分析。 本主題包含有關舊體系結構或新體系結構的客戶端的說明。 如果您沒有 **[!UICONTROL Data Warehouse Views]** 選項 **[!UICONTROL Manage Data]** 功能表)。 如果您使用舊版架構，請提交 [新支援請求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 與主題 **[!UICONTROL INVENTORY ANALYSIS]** 一旦到達 _計算的欄_ 以下說明。
 
 ## 要追蹤的欄：
 
@@ -240,4 +240,4 @@ ht-degree: 0%
       [!UICONTROL Chart type]: `Table`
 
 
-如果您在建立此分析時遇到任何問題，或只是想與我們的專業服務團隊接洽， [聯絡支援](../../guide-overview.md).
+如果您在建立此分析時遇到任何問題，或只是想與我們的專業服務團隊接洽， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
