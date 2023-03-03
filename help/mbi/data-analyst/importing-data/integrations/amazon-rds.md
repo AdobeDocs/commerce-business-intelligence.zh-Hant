@@ -2,9 +2,9 @@
 title: 連接Amazon RDS
 description: 了解連接RDS實例的步驟。
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Amazon關係資料庫服務(RDS)是一種托管資料庫服務，在您可能已
 
 在你同意 [!DNL MBI] 存取您的執行個體並為我們建立使用者，您最不需要做的就是在中輸入連線資訊 [!DNL MBI].
 
-的憑據頁 `MySQL`, `Microsoft SQL`，和 `PostgreSQL` 可透過 `Integrations` 頁面(**[!UICONTROL Manage Data** > **Integrations]**) **[!UICONTROL Add Integration]**. 顯示整合清單時，按一下您用來前往認證頁面之資料庫的圖示。 如果您目前無法存取所需的整合，請聯絡CSM。
+的憑據頁 `MySQL`, `Microsoft SQL`，和 `PostgreSQL` 可透過 `Integrations` 頁面(**[!UICONTROL Manage Data** > **Integrations]**) **[!UICONTROL Add Integration]**. 顯示整合清單時，按一下您用來前往認證頁面之資料庫的圖示。 如果您目前沒有存取所需整合的權限，請連絡您的Adobe帳戶團隊。
 
 要完成連接的建立，我們需要以下資訊：
 

@@ -2,7 +2,7 @@
 title: 啟動您的 [!DNL MBI] 雲端入門訂閱帳戶
 description: 了解如何啟用 [!DNL MBI] 雲端入門專案。
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
-source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
+source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->協助啟動 [!DNL MBI] for `Cloud Pro` 專案，請連絡您的客戶成功經理或客戶技術顧問。
+>協助啟動 [!DNL MBI] for `Cloud Pro` 項目，請聯繫您的Adobe客戶團隊或客戶技術顧問。
 
 1. 建立 [!DNL MBI] 帳戶。
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
    - 前往 **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
-   - 按一下 **[!UICONTROL Create Instance]**. 如果您沒有看到此按鈕，請連絡您的客戶成功經理或客戶技術顧問。
+   - 按一下 **[!UICONTROL Create Instance]**. 如果您沒有看到此按鈕，請聯繫您的Adobe客戶團隊或客戶技術顧問。
 
    - 選取 `Cloud Starter` 訂閱。 如果您只有 `cloud starter` 訂閱會自動選取。
 
@@ -198,6 +198,6 @@ ht-degree: 0%
 
 1. 您現在已成功連線至 [!DNL MBI] 帳戶。
 
-1. 成功連接後 [!DNL MBI] 至您的商務資料庫，請連絡您的客戶成功經理以協調後續步驟，例如設定整合和其他設定步驟。
+1. 成功連接後 [!DNL MBI] 至您的商務資料庫，請連絡您的Adobe帳戶團隊以協調後續步驟，例如設定整合和其他設定步驟。
 
 1. 完成配置後，您可以 [登入](../getting-started/sign-in.md) 至 [!DNL MBI] 帳戶。

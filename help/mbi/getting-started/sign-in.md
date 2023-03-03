@@ -2,7 +2,7 @@
 title: 存取 [!DNL MBI] 帳戶
 description: 了解如何登入您的 [!DNL MBI] 帳戶。
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 存取已啟用的 [!DNL MBI] 帳戶
 
-啟動後 [!DNL MBI] 帳戶 [內部部署](../getting-started/onpremise-activation.md) 或 [雲端](../getting-started/cloud-activation.md) 並且已與您的客戶成功經理合作以完成設定步驟，您現在可以登入您的帳戶。
+啟動後 [!DNL MBI] 帳戶 [內部部署](../getting-started/onpremise-activation.md) 或 [雲端](../getting-started/cloud-activation.md) 並且已與您的Adobe客戶團隊合作以完成設定步驟，您現在可以登入您的帳戶。
 
 您可以使用 [!DNL Adobe ID] 或使用 [!DNL MBI] 電子郵件地址和密碼。
 
