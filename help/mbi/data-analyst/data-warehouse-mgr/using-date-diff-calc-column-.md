@@ -2,9 +2,9 @@
 title: 使用日期差異計算欄
 description: 了解「日期差異」計算欄的用途和用途。
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '256'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 **說明**
 
-此 `Date Difference` 欄類型：根據事件時間戳記，找出屬於單一記錄的兩個事件之間的時間。 此欄中計算的原始值（以秒為單位），但會自動轉換為分鐘、小時、天等，以便顯示在報表上。 但是，當作為篩選器/群組時，您想以秒為單位使用值。
+此 `Date Difference` 欄類型：根據事件時間戳記，找出屬於單一記錄的兩個事件之間的時間。 此欄中計算的原始值以秒為單位，但會自動轉換為分鐘、小時、天等，以便顯示在報表上。 但是，當作為篩選器/群組時，您想以秒為單位使用值。
 
 A `date difference` 計算欄可用來建立量度，以計算兩個事件之間的平均或中位數時間，例如客戶註冊與其首次訂購之間的平均時間。
 
@@ -26,7 +26,7 @@ A `date difference` 計算欄可用來建立量度，以計算兩個事件之間
 | `A` | 2015-01-01 00:00:00 | 2015-01-01 12:30:00 | 45000 |
 | `B` | 2015-01-01 08:00:00 | 2015-01-01 10:00:00 | 7200 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 
 在上述範例中， `Date Difference` 欄是 `Seconds between timestamp_2 and timestamp_1` 欄。 執行計算 `timestamp_2 minus timestamp_1`.
@@ -44,7 +44,7 @@ A `date difference` 計算欄可用來建立量度，以計算兩個事件之間
    * 選擇 `Starting DATETIME` column** >選擇起始日期時間欄位，通常是先前發生的事件
 
 1. 為欄提供名稱，然後按一下 **[!UICONTROL Save]**.
-1. 欄將可供使用 *立即*.
+1. 欄可供使用 *立即*.
 
 作為範例，下列範例會設定為計算 `Seconds between order date and customer's creation date`:
 

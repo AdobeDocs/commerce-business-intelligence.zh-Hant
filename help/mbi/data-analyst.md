@@ -2,9 +2,9 @@
 title: 資料分析人員
 description: 資料分析人員
 exl-id: e7c4e0ba-f8fd-4a35-a9b1-1c2c43a1773d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '85'
+source-wordcount: '77'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,11 @@ ht-degree: 0%
 
 您很熟悉如何設計查詢，以及如何成為資料分析的首選人員。 您知道如何找到資料問題的具體答案，並想要為同事提供自助服務的體驗。
 
-在本節中，您將學習如何將資料連線並匯入至 [!DNL MBI]，檢視資料在資料倉庫中的儲存和結構、如何分析資料，以及如何使用 `SQL report builder`.
+本節示範如何：
+* 連線和匯入資料 [!DNL MBI]
+* 檢視資料在Data Warehouse中的儲存和結構
+* 分析資料
+* 使用 `SQL report builder`
 
 ## 相關
 

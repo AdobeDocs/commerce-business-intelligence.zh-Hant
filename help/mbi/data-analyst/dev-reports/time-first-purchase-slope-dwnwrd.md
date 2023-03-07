@@ -2,22 +2,22 @@
 title: 首次購買的平均時間報表
 description: 了解如何使用「首次購買的平均時間」報表。
 exl-id: c18734ce-0ae0-4e84-b9d0-eb2c21a5c3a5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
 
 # 首次購買的平均時間報表
 
-我們的許多客戶都有一個名為 `Average time to first purchase`，顯示一組使用者的註冊日期與首次購買日期之間的平均時間。 隨著時間的流逝，資料幾乎總是會向下傾斜。
+許多Adobe客戶有一個名為 `Average time to first purchase`，顯示一組使用者的註冊日期與首次購買日期之間的平均時間。 隨著時間的流逝，資料幾乎總是會向下傾斜。
 
 ![首次訂購的平均時間](../../assets/average-time-to-first-order.png)
 
 這是因為這些較新的客戶尚未有機會產生任何從加入日期起超過一個月的購買。 由於從未購買過的使用者完全不包括在內（直到他們購買），因此對於較新的客戶群，這會偏向於平均向下。
 
-還有其他一些可能的方法來觀察這個量度，這會帶來較少的偏差。 讓我們來探索一個例子。
+還有其他一些可能的方法來觀察這個量度，這會帶來較少的偏差。 探索一個範例。
 
 ## 範例：執行 `cohort` 一階分析
 

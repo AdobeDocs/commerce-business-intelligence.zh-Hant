@@ -2,7 +2,7 @@
 title: 建立量度的篩選器集
 description: 了解如何建立儲存的篩選器集並將其套用至量度。
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 若您的 [!DNL MBI] 您可以建立儲存的篩選集，並將篩選集套用至量度，這需要以類似方式篩選（例如篩選掉測試順序）。 這樣可節省時間，因為您在建立或編輯量度時不需要新增個別篩選器。
 
-查看我們的 [訓練影片](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) 了解更多。
+請參閱 [訓練影片](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) 了解更多。
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 1. 新增所有相關篩選器。
 
-   例如，如果我們只想在 `Total number of orders` 量度中，我們會套用篩選器，排除所有沒有狀態=的訂單 `complete`.
+   例如，如果您只想在 `Total number of orders` 量度時，您會套用篩選器，排除所有沒有狀態=的訂單 `complete`.
 
 1. 驗證篩選邏輯，並確認括弧和運算子已正確放置：例如， `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
 

@@ -2,7 +2,7 @@
 title: Google Analytics — 在資料庫中追蹤使用者裝置和瀏覽器資料
 description: 了解實際透過行動裝置登入的使用者數量，以及這對這些使用者的期限值有何影響。
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ### 您應在何時記錄此資料？
 
-建議您新增名為 `Platform` 或 `User-Agent` 至 `Customers` 和 `Orders` 資料庫表，用於在每次建立用戶或下訂單時儲存此資訊。 如果使用SQL資料庫，此欄位應為 `VARCHAR(255)`. 
+Adobe建議您新增名為 `Platform` 或 `User-Agent` 至 `Customers` 和 `Orders` 資料庫表，用於在每次建立用戶或下訂單時儲存此資訊。 如果使用SQL資料庫，此欄位應為 `VARCHAR(255)`. 
 
 >[!NOTE]
 >

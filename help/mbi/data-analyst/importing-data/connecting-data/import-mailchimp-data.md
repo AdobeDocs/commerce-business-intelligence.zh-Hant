@@ -2,9 +2,9 @@
 title: 導入MailChimp資料
 description: 了解如何將MailChimp資料匯入 [!DNL MBI].
 exl-id: 5595c6a6-5476-4a0e-a493-ddc32161894e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 1. 按一下 **[!UICONTROL Export]** 並儲存 `.csv` 檔案。
 
-   您需要新增 `primary key`, `date (mm/dd/yyyy)`，和 `campaign name` 欄。 請確定 `primary keys` 對每一列都是唯一的。
+   您必須新增 `primary key`, `date (mm/dd/yyyy)`，和 `campaign name` 欄。 請確定 `primary keys` 對每一列都是唯一的。
 
    ![導入mailchimp 4](../../../assets/import-mailchimp-4.png)
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 1. 按一下 **[!UICONTROL Export]** 並儲存 `.csv` 檔案。
 
-   您需要新增 `Primary Key`, `date (mm/dd/yyyy)`, `campaign name`，和 `URL` 欄。 您不需要新增完整URL，只需要能讓您知道已點按的內容。
+   您必須新增 `Primary Key`, `date (mm/dd/yyyy)`, `campaign name`，和 `URL` 欄。 您不需要新增完整的URL，只是可讓您知道已點按的內容。
 
    ![導入mailchim 7](../../../assets/import-mailchimp-7.png)
 
@@ -65,12 +65,12 @@ ht-degree: 0%
 
 1. 按一下 **[!UICONTROL Export]** 並儲存 `.csv` 檔案。
 
-   您需要新增 `Primary Key`, `date (mm/dd/yyyy)`，和 `campaign name` 欄。
+   您必須新增 `Primary Key`, `date (mm/dd/yyyy)`，和 `campaign name` 欄。
 
    ![導入mailchim 9](../../../assets/import-mailchimp-9.png)
 
 ## 準備要上傳至的檔案 [!DNL MBI] {#upload}
 
-每個檔案 —  `Opens`, `Clicks`，和 `Sent`  — 應上傳至 [!DNL MBI] 檔案。 我們也建議您使用此命名慣例為檔案命名： `MailChimp\_ACTION\_DATE`. 取代 `ACTION` with `Open`, `Click`，或 `Sent`，取代 `DATE` 和出口日期。
+每個檔案 —  `Opens`, `Clicks`，和 `Sent`  — 應上傳至 [!DNL MBI] 檔案。 Adobe建議您使用此命名慣例為檔案命名： `MailChimp\_ACTION\_DATE`. 取代 `ACTION` with `Open`, `Click`，或 `Sent`，取代 `DATE` 和出口日期。
 
-準備好上傳檔案時，請使用 [`File Upload` 功能](../connecting-data/using-file-uploader.md) 將資料匯入您的資料倉庫。
+準備好上傳檔案時，請使用 [`File Upload` 功能](../connecting-data/using-file-uploader.md) 將資料帶入您的Data Warehouse。

@@ -2,9 +2,9 @@
 title: Connect Facebook Ads
 description: 了解如何分析您的廣告支出資料，並查看您的資金是否得到有效支援。
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ![](../../../assets/Facebook_Access_Popup.png)
 
-您將依照一系列步驟來允許 [!DNL MBI] 要從公共配置檔案訪問資料， [!DNL Facebook Ads] 和相關統計資料。 按一下 **[!UICONTROL OK]** 繼續。
+您需執行一系列步驟，才能允許 [!DNL MBI] 要從公共配置檔案訪問資料， [!DNL Facebook Ads] 和相關統計資料。 按一下 **[!UICONTROL OK]** 繼續。
 
 ## 選擇 [!DNL Facebook Ads] 提取資料的帳戶 {#stepthree}
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 ## 接下來呢？ {#next}
 
-請確定您正在追蹤 [!DNL Facebook] 行銷活動 [!DNL Google Analytics]. 這將確保 `utm\_campaign` 欄位 [!DNL Google Analytics] 正確填入 [!DNL Facebook] 行銷活動。
+請確定您正在追蹤 [!DNL Facebook] 行銷活動 [!DNL Google Analytics]. 這可確保 `utm\_campaign` 欄位 [!DNL Google Analytics] 正確填入 [!DNL Facebook] 行銷活動。
 
 ## 相關
 

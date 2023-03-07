@@ -1,10 +1,10 @@
 ---
 title: 管理資料維度
-description: 了解資料的產生方式、確切導致新列插入核心商務其中一列的原因，以及進行購買或建立帳戶等動作記錄至商務資料庫的方式。
+description: 了解維度是什麼，並可用來根據量度篩選或分段圖表。
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 1. 選擇包含維的表。
 
-1. 在 `Choose Metric(s) to Add Dimensions` 欄，選取您要新增維度的量度。 選取後， `Choose Dimensions to Add` 欄會顯示在右側。 勾選您要新增至所選量度的維度。
+1. 在 `Choose Metric(s) to Add Dimensions` 欄，選取您要新增維度的量度。 選取後， `Choose Dimensions to Add` 欄。 勾選您要新增至所選量度的維度。
 
    ![](../../assets/Add_Dimensions.png)
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->要篩選或分組依據的任何維都必須已在 [!DNL MBI]. 如果您找不到所需的維度，我們可能需要透過 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 頁面。
+>要篩選或分組依據的任何維都必須已在 [!DNL MBI]. 如果找不到所需的維度，您可能需要透過 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 頁面。
 
 
 **若要從量度刪除維度：**
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->即使刪除維度後，它仍作為欄存在於我們的資料倉庫中的表格中。 您可以將其新增至任何量度，並使用這些維度建立新量度。 要刪除資料列，維與 [!DNL MBI]，只需透過 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 頁面。
+>即使刪除維度後，該維度仍以欄的形式存在於Data Warehouse的表格中。 您可以將其新增至任何量度，並使用這些維度建立新量度。 移除維度對應的資料欄 [!DNL MBI]，只需透過 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 頁面。
 
 ## 相關檔案
 

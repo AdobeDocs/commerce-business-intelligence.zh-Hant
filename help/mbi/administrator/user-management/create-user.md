@@ -2,7 +2,7 @@
 title: 新增/編輯新使用者
 description: 了解如何新增 [!DNL MBI] 以及如何更新您的用戶名或密碼。
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -22,19 +22,19 @@ ht-degree: 0%
 
 1. 按一下 **[!UICONTROL Save]**.
 
-新使用者會收到包含登入和密碼詳細資訊的電子郵件。
+新使用者會收到電子郵件，內含登入和密碼詳細資訊。
 
 >[!NOTE]
 >
->新使用者預設不會有任何控制面板。 我們建議你 [分享](../../data-user/dashboards/share-dashboard-with-users.md) 新使用者的必要控制面板。
+>新使用者預設沒有任何控制面板。 Adobe建議您 [分享](../../data-user/dashboards/share-dashboard-with-users.md) 新使用者的必要控制面板。
 
 ## 更新您的電子郵件地址或密碼
 
-您可以按一下右上角的公司名稱，然後按一下「按一下」 ，以更新您的電子郵件地址和/或密碼 **[!UICONTROL Edit Profile]**.
+您可以按一下右上角的公司名稱，然後按一下「按一下」，以更新您的電子郵件地址和/或密碼 **[!UICONTROL Edit Profile]**.
 
 ## 重新傳送邀請
 
-如果您需要將邀請重新傳送給新使用者，請前往 [登入頁面](https://dashboard.rjmetrics.com)，按一下 **[!UICONTROL Forgot?]**，請輸入新用戶的電子郵件地址，然後按一下 **[!UICONTROL Reset Password]**. 這會重新傳送邀請並允許使用者登入。
+如果您需要將邀請重新傳送給新使用者，請前往 [登入頁面](https://dashboard.rjmetrics.com/v2/session/create)，按一下 **[!UICONTROL Forgot?]**，請輸入新用戶的電子郵件地址，然後按一下 **[!UICONTROL Reset Password]**. 這會重新傳送邀請，並允許使用者登入。
 
 >[!IMPORTANT]
 >

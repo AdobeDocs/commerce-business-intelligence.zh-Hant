@@ -2,9 +2,9 @@
 title: 每年、每月和每週報告
 description: 了解如何輕鬆查看一段時間的趨勢，以及針對您想要比較的時段變更觀點。
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -15,18 +15,18 @@ ht-degree: 0%
 >
 >本文包含使用原始架構和新架構的用戶端指示。 您在 [新架構](../../administrator/account-management/new-architecture.md) 如果你有 _Data Warehouse檢視_ 選取後可用的區段 `Manage Data` 中。
 
-報告建立工具可讓您輕鬆查看一段時間的趨勢，並變更您想比較之時段的透視。 在本文中，我們將示範如何設定控制面板，以更深入的層級，讓您能夠針對每週、每月和每年分析建立報表。
+報告建立工具可讓您輕鬆查看一段時間的趨勢，並變更您想比較之時段的透視。 本文示範如何設定控制面板，以便更深入地建立報表，以便針對每週、每月和每年分析建立報表。
 
 ![](../../assets/Wow__mom__yoy.png)
 
-開始之前，請先詳細熟悉探索觀點 [此處](../../tutorials/using-visual-report-builder.md) 以及獨立的時間選項 [此處](../../tutorials/time-options-visual-rpt-bldr.md).
+開始之前，請先詳細熟悉探索觀點 [此處](../../tutorials/using-visual-report-builder.md) 和獨立時間選項 [此處](../../tutorials/time-options-visual-rpt-bldr.md).
 
 此分析包含 [進階計算欄](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## 計算欄
 
 * **`Sales_flat_order`** 表格
-* **原始架構：** 以下欄將由分析師建立，作為 `[YoY WoW MoM ANALYSIS]` 票證
+* **原始架構：** 以下欄是由分析師建立，作為 `[YoY WoW MoM ANALYSIS]` 票證
 * `created_at (month-day)`
 * `created_at (month)`
 * `created_at (day of the month)`
@@ -34,11 +34,11 @@ ht-degree: 0%
 * `created_at (hour of the day)`
 
 * **新架構：** 下面列出的SQL，附上如何建立此計算的示例照片
-   * `created_at (month-day)` [!UICONTROL Calculation]:: **to_char(A, &#39;mm-dd&#39;)**
+   * `created_at (month-day)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-dd&#39;)**
    * `created_at (month)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-month&#39;)**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char(A, &#39;dd&#39;)**
    * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char(A, &#39;d-Day&#39;)**
-   * **`created_at (hour of the day)` [!UICONTROL Calculation]:: **to_char(A, &#39;hh24&#39;)**
+   * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char(A, &#39;hh24&#39;)**
 
       ![](../../assets/new-arch-create-calc.png)
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 * 量度 `A`:本月*
 * 量度 `B`:上個月*
-* [!UICONTROL Time period]:1個月前，0個月前
+* [!UICONTROL Time period]:一個月前
 * 
    [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
@@ -120,4 +120,4 @@ ht-degree: 0%
 * 
    [!UICONTROL Chart Type]: `Line`
 
-編譯所有報表後，您可以視需要在控制面板上組織報表。 最終結果看起來可能像此頁面頂端的影像。
+編譯所有報表後，您可以視需要在控制面板上組織報表。 結果可能類似於此頁頂部的影像。

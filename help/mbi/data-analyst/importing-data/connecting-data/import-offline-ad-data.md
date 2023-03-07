@@ -2,7 +2,7 @@
 title: 匯入其他廣告支出資料
 description: 了解如何將離線或其他廣告支出資料匯入 [!DNL MBI].
 exl-id: 6f12a397-0927-4e87-95ff-3a55ccc9e14b
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 ## 上傳廣告成本資料
 
-分析廣告支出資料的第一步是取得資料。 由於大部分的廣告平台都允許您匯出報表，因此建議您從廣告平台匯出原始資料，並直接將其上傳至 [!DNL MBI] 不用任何操縱。 您可以對資料倉庫中的資料執行操作，因此無需加倍努力。
+分析廣告支出資料的第一步是取得資料。 由於大部分的廣告平台都允許您匯出報表，因此，Adobe建議您從廣告平台匯出原始資料，並直接將其上傳至 [!DNL MBI] 不用任何操縱。 您可以對Data Warehouse中的資料執行操作，因此無需加倍努力。
 
-匯出廣告支出資料後，請使用 [`File Upload` 功能](../connecting-data/using-file-uploader.md) 將資料匯入您的資料倉庫。 您可以將新資料上傳至相同 [!DNL MBI] 表格。
+匯出廣告支出資料後，請使用 [`File Upload` 功能](../connecting-data/using-file-uploader.md) 將資料帶入您的Data Warehouse。 您可以將新資料上傳至相同 [!DNL MBI] 表格。
 
 ## 離線來源
 

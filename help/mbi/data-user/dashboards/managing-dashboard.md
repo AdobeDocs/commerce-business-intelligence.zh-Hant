@@ -2,9 +2,9 @@
 title: 管理控制面板
 description: 了解如何管理您所擁有控制面板的使用者權限、刪除不再需要的控制面板，以及設定預設控制面板。
 exl-id: 32c21093-2a7d-4d8e-afc0-19bd702f9b36
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >需要 [管理權限](../../administrator/user-management/user-management.md).
 
-在 **[!DNL Manage Data** > **Dashboards]**，您可以管理所擁有控制面板的使用者權限、刪除不再需要的控制面板，以及設定預設控制面板。 以下提供本文所涵蓋的內容：
+在 **[!DNL Manage Data** > **Dashboards]**，您可以管理所擁有控制面板的使用者權限、刪除不再需要的控制面板，以及設定預設控制面板。 本文涵蓋：
 
 1. [重新命名控制面板](#rename)
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 若要變更帳戶的預設控制面板：
 
-1. 按一下您要作為預設值的控制面板的名稱。
+1. 按一下您要作為預設值的控制面板名稱。
 
 1. 按一下 **[!UICONTROL Make Default]**.
 

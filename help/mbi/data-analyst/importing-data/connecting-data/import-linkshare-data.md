@@ -2,9 +2,9 @@
 title: 匯入Linkshare資料
 description: 了解如何將Linkshare資料匯入 [!DNL MBI].
 exl-id: 1c2025a6-746c-4929-bbb1-62af1afcbc49
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '94'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,6 @@ ht-degree: 0%
 
 1. 按一下 **[!UICONTROL Download]**.
 
-   此時，a `.csv` 檔案即會建立及下載。
+   此時，a `.csv` 檔案和下載。
 
 下載檔案後，您可將其上傳至 [!DNL MBI] 使用 [`File Upload` 功能](../connecting-data/using-file-uploader.md).

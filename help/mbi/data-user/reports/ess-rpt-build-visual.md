@@ -2,9 +2,9 @@
 title: 視覺Report Builder
 description: 了解如何使用視覺Report Builder。
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ ht-degree: 0%
       | ![](../../assets/magento-bi-btn-chart-area.png) | 區域 |
       | ![](../../assets/magento-bi-btn-chart-funnel.png) | 漏斗 |
 
-      {style=&quot;table-layout:auto&quot;}
+      {style="table-layout:auto"}
 
 
 

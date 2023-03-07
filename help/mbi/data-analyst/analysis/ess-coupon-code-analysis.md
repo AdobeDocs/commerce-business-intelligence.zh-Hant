@@ -2,9 +2,9 @@
 title: 抵用券代碼分析（基本）
 description: 了解企業的抵用券表現，是劃分訂單和深入了解客戶習慣的有趣方式。
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 了解企業的抵用券表現，是劃分訂單和深入了解客戶習慣的有趣方式。
 
-我們記錄了建立此分析所需的步驟，以了解獲得優惠券的客戶如何執行、查看趨勢及追蹤個別優惠券代碼的使用情形。
+本文記錄建立此分析所需的步驟，以了解購買抵用券的客戶如何執行、查看趨勢，以及追蹤個別抵用券代碼的使用情形。
 
 ![](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 建立量度
 
-第一步將是透過下列步驟建立新量度：
+第一步是透過下列步驟來建構新量度：
 
 * 導覽至 **[!UICONTROL Manage Data > Metrics > Create New Metric]**.
 
@@ -45,7 +45,7 @@ ht-degree: 0%
    * 導覽至 [!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**。
    * 為控制面板命名，例如 `_Coupon Analysis_`.
 
-* 我們將在此建立和新增所有報表。
+* 這是您建立和新增所有報表的位置。
 
 ## 建立報表
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此 [!UICONTROL Time Period]**對於每個報告，列為 `All-time`. 您可以隨意修改，以符合您的分析需求。 我們建議此控制面板上的所有報表涵蓋相同時段，例如 `All time`, `Year-to-date`，或 `Last 365 days`.
+>此 [!UICONTROL Time Period]**對於每個報告，列為 `All-time`. 您可以隨意修改，以符合您的分析需求。 Adobe建議此控制面板上的所有報表涵蓋相同時段，例如 `All time`, `Year-to-date`，或 `Last 365 days`.
 
 * **具有優惠券的訂單**
    * 
@@ -129,15 +129,15 @@ ht-degree: 0%
       * 新增篩選器：
          * [`A`] `coupon_code` **不**`[NULL]`
          * [`B`] `Customer's order number` **等於** `1`
-   * 建立新公式： `Gross revenue`
+   * 建立公式： `Gross revenue`
       * [!UICONTROL Formula]: `(B – C)`
       * 
          [!UICONTROL Format]: `Currency`
-   * 建立新公式：**%折扣**
+   * 建立公式：**%折扣**
       * 公式： `(C / (B - C))`
       * 
          [!UICONTROL Format]: `Percentage`
-   * 建立新公式： `Average order discount`
+   * 建立公式： `Average order discount`
       * [!UICONTROL Formula]: `(C / A)`
       * 
          [!UICONTROL Format]: `Percentage`

@@ -2,16 +2,16 @@
 title: SQL與Data Warehouse管理器之間的差異
 description: 了解SQL與Data Warehouse管理器之間的差異。
 exl-id: 31dd7a04-5c03-4399-b67e-f51703eb9fea
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
 # SQL與Data Warehouse管理器之間的差異
 
-在 [SQLReport Builder](../dev-reports/sql-rpt-bldr.md) 和使用 [Data Warehouse管理員](../data-warehouse-mgr/creating-calculated-columns.md):一個是對更新週期的依賴，另一個是欄在帳戶中的儲存方式。
+在 [SQLReport Builder](../dev-reports/sql-rpt-bldr.md) 和使用 [Data Warehouse管理員](../data-warehouse-mgr/creating-calculated-columns.md). 一個是對更新週期的依賴，另一個是欄在帳戶中的儲存方式。
 
 ## 中的欄 `SQL Report Builder`
 

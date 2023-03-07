@@ -1,10 +1,10 @@
 ---
 title: 預期的Facebook Ads資料
-description: 了解建議您同步至資料倉庫的表格的簡短概述
+description: 了解建議您同步至Data Warehouse的表格概觀
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 在您 [已連接 [!DNL Facebook Ads] 帳戶](../integrations/facebook-ads.md)，您可以使用 [Data Warehouse管理員](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 輕鬆追蹤相關資料欄位以進行分析。
 
-在本文中，我們會簡要概述建議您同步至資料倉庫的表格。 這不是完整清單，因為有很多子表。 我們只強調核心表。
+本文提供表格Adobe的簡要概述，建議您同步至Data Warehouse。 這不是完整清單，因為有很多子表。 它只會反白標示核心表格。
 
 ## 核心廣告行銷活動表格
 
 這些表格包含核心廣告促銷活動元件的相關資料。
 
-### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adcampaign/)
+### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group)
 
 此表格是 [!DNL Facebook Ads] 帳戶。 欄包括 `campaign id`, `name`, `status (active/paused)`, `objective`.
 
@@ -29,13 +29,13 @@ ht-degree: 0%
 
 此表記錄是 [!DNL Facebook Ads] 在 [!DNL Facebook Ads] 帳戶。 欄包含廣告 `Campaign id/name` 廣告集屬於、預算、競標類型、排程和對象鎖定目標資訊。
 
-### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adgroup/)
+### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/adgroup)
 
-此表記錄 [!DNL Facebook Ads] 帳戶。 欄包含廣告資訊，包括其所屬的廣告集和廣告促銷活動、廣告競標、廣告鎖定目標，以及廣告所使用之特定創意（影像/文字）的參考。
+此表記錄 [!DNL Facebook Ads] 帳戶。 欄包含廣告資訊，包括其所屬的廣告集和廣告促銷活動、廣告競標、廣告鎖定目標，以及廣告使用的特定創作（影像/文字）參考。
 
-### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adcreative/)
+### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-creative)
 
-此表記錄了 [!DNL Facebook Ads]. 這些包括創意名稱、說明，以及適當的相關影像url。
+此表記錄了 [!DNL Facebook Ads]. 創意內容包括創意名稱、說明和相關影像URL（如適用）。
 
 ## 分段的促銷活動表格
 

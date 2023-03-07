@@ -1,27 +1,31 @@
 ---
 title: 時近、頻率、貨幣(RFM)分析
-description: 了解如何設定控制面板，讓您依客戶的使用間隔、頻率和貨幣排名來劃分客戶。
+description: 了解如何設定控制面板，讓您依客戶的造訪間隔、頻率和貨幣排名來劃分客戶。
 exl-id: 8f0f08fd-710b-4810-9faf-3d0c3cc0a25d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
 
 # RFM分析
 
-在本文中，我們示範如何設定控制面板，讓您依客戶的使用間隔、頻率和貨幣排名來劃分客戶。 RFM分析是一種行銷技術，會將客戶行為納入考量，協助您決定外展的細分。 它考慮了三個方面：客戶最近從您的商店購買的次數、從您購買的頻率，以及客戶花費的金錢。
+本文示範如何設定控制面板，讓您依據客戶的造訪間隔、頻率和貨幣排名來劃分客戶。 RFM分析是一種行銷技術，會將客戶行為納入考量，協助您決定外展的細分。 它有三個方面：
+
+* 客戶最近從您的商店購買的時間
+* 他們向您購買的頻率
+* 客戶花費的金額
 
 ![](../../assets/blobid0.png)
 
-只有在您具有 [!DNL MBI] Pro針對新架構進行規劃(例如，如果您在「管理資料」功能表下有「Data Warehouse檢視」選項)。 這些欄可從「管理資料>Data Warehouse」頁面建立。 詳細說明如下。
+RFM分析只有在您具有 [!DNL MBI] Pro針對新架構進行規劃(例如，如果您在「管理資料」功能表下有「Data Warehouse檢視」選項)。 這些欄可從「管理資料>Data Warehouse」頁面建立。 詳細說明如下。
 
 ## 快速入門
 
-首先，您必須上傳僅包含主索引鍵且值為1的檔案。 這可建立一些分析所需的計算欄。
+您必須先上傳僅包含主索引鍵且值為1的檔案。 這可為分析建立一些必要的計算欄。
 
-您可以善用此 [說明中心文章](../importing-data/connecting-data/using-file-uploader.md) 以及下方的影像，以設定檔案格式。
+您可以使用 [說明中心文章](../importing-data/connecting-data/using-file-uploader.md) 和下面的影像，以設定檔案格式。
 
 ## 計算欄
 
@@ -51,7 +55,7 @@ ht-degree: 0%
 
    [!UICONTROL資料類型]: `Integer`
 
-* **計數參考** 表格（這是您剛上傳的檔案，編號為「1」）
+* **計數參考** 表格（這是您上傳的檔案，編號為「1」）
 * 客戶數
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
 * [!UICONTROL Path]: `ales_flat_order.(input) reference > Count reference.Primary Key` 或 `customer_entity.(input)reference > Count Reference`. `Primary Key`
@@ -196,7 +200,7 @@ ht-degree: 0%
 
    [!UICONTROL Chart type]: `Table`
 
-* **最近5分的客戶**
+* **具有5個最近分數的客戶**
 * 量度 `A`: `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 5`
@@ -214,7 +218,7 @@ ht-degree: 0%
 
    [!UICONTROL Chart type]: `Table`
 
-* **最近1分的客戶**
+* **具有單一造訪間分數的客戶**
 * 量度 `A`: `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 1`
@@ -232,4 +236,4 @@ ht-degree: 0%
 
    [!UICONTROL Chart type]: `Table`
 
-編譯所有報表後，您可以視需要在控制面板上組織報表。 最終結果看起來可能與上述範例控制面板相似，但三個產生的表格只是您可以執行之客戶細分類型的範例。
+編譯所有報表後，您可以視需要在控制面板上組織報表。 結果看起來可能類似於上述範例控制面板，但三個產生的表格只是您可以執行之客戶細分類型的範例。

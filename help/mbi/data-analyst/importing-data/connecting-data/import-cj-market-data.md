@@ -2,16 +2,16 @@
 title: 匯入CJ附屬機構（委託章節）行銷資料
 description: 了解如何將CJ附屬機構(Commission Junction)資料匯入 [!DNL MBI].L MBI]。
 exl-id: 1db83f34-15a1-4599-ab0a-65d527ccae01
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
 
 # 匯入 `CJ Affiliate` 資料
 
-匯入 `CJ Affiliate` （委託章克申）資料 [!DNL MBI]，只需依照下列步驟操作，並將產生的檔案附加至支援票證即可。 我們會設定您帳戶的資料表，允許您繼續獨立上傳資料。
+匯入 `CJ Affiliate` （委託章克申）資料 [!DNL MBI]，只需依照下列步驟操作，並將產生的檔案附加至支援票證即可。 Adobe會設定您帳戶的資料表，並允許您繼續獨立上傳資料。
 
 ## 匯出 `CJ Affiliate` 資料
 
@@ -29,6 +29,6 @@ ht-degree: 0%
 
    ![導出cj附屬資料](../../../assets/export-an-individual-order-2.jpg)<!--{:.zoom}-->
 
-1. 下載檔案後，您可以 [上傳檔案](../connecting-data/using-file-uploader.md) 至 [!DNL MBI] 資料倉庫。
+1. 下載檔案後，您可以 [上傳檔案](../connecting-data/using-file-uploader.md) 至 [!DNL MBI] Data Warehouse。
 
-   這會在您的 [!DNL MBI] 資料倉庫，您可以繼續定期將最新資料上傳至。 上傳檔案時，請務必遵循 [使用檔案上傳程式](../connecting-data/using-file-uploader.md).
+   這會在 [!DNL MBI] Data Warehouse您可以繼續定期將新資料上傳至。 上傳檔案時，請務必遵循 [使用檔案上傳程式](../connecting-data/using-file-uploader.md).

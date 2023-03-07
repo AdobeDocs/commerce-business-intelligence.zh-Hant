@@ -2,9 +2,9 @@
 title: customer_entity表
 description: 了解如何存取所有已註冊帳戶的記錄。
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 | **欄名稱** | **說明** |
 |---|---|
-| `created_at` | 與帳戶註冊日期對應的時間戳記，通常以UTC儲存在本機。 視您在 [!DNL MBI]，此時間戳記可轉換為 [!DNL MBI] 與資料庫時區不同 |
+| `created_at` | 與帳戶註冊日期對應的時間戳記，以UTC儲存在本機。 視您在 [!DNL MBI]，此時間戳記可轉換為 [!DNL MBI] 與資料庫時區不同 |
 | `email` | 與帳戶相關聯的電子郵件地址 |
 | `entity_id` (PK) | 表的唯一標識符，通常用於與 `customer_id` 在實例內的其他表中 |
 | `group_id` | 與 `customer_group` 表格。 加入 `customer_group.customer_group_id` 確定與註冊帳戶關聯的客戶組 |
 | `store_id` | 與 `store` 表格。 加入 `store`.`store_id` 確定與註冊帳戶關聯的商務商店視圖 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 公用計算列
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 | `Seconds since customer's first order date` | 客戶首次訂購日期與現在之間的經過時間。 減去計算 `Customer's first order date` 從執行查詢時的伺服器時間戳記傳回，以整數秒數表示 |
 | `Store name` | 與此註冊帳戶關聯的商務儲存的名稱。 通過連接計算 `customer_entity.store_id` to `store.store_id` 並返回 `name` 欄位 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 通用量度
 
@@ -55,16 +55,16 @@ ht-degree: 0%
 | `New customers` | 至少有一筆訂單的客戶數量，計在其首筆訂單的日期。 不包括註冊但從未下訂單的帳戶 | 操作：計數<br/>操作數： `entity_id`<br/>時間戳記： `Customer's first order date` |
 | `Registered accounts` | 註冊的帳戶數。 包括所有註冊帳戶，無論帳戶是否下過訂單 | 操作：計數<br/>操作數： `entity_id`<br/>時間戳記： `created_at` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 外鍵連接路徑
 
 `customer_group`
 
-* 加入 `customer_group` 表格，以建立新欄，以傳回已註冊帳戶的客戶群組名稱。
+* 加入 `customer_group` 表，以建立返回已註冊帳戶的客戶組名的列。
    * 路徑： `customer_entity.group_id` （多個）=> `customer_group.customer_group_id` (1)
 
 `store`
 
-* 加入 `store` 表，以建立新列，這些列返回與與註冊帳戶關聯的儲存相關的詳細資訊。
+* 加入 `store` 表，以建立返回與與已註冊帳戶關聯的儲存相關的詳細資訊的列。
    * 路徑： `customer_entity.store_id` （多個）=> `store.store_id` (1)

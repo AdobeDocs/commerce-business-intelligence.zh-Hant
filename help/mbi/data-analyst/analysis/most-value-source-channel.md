@@ -2,9 +2,9 @@
 title: 識別您最有價值的行銷來源和管道
 description: 了解一些可用來揭露最有價值的行銷管道的報表。
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 使用 [!DNL MBI]，您可以輕鬆地依反向連結來源劃分收入和使用者，無論其對應至 [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) 或自訂資料欄位。 此區段可讓您找出成效最佳的管道，並更妥善地投資行銷預算。
 
-在本文中，我們將探索一些您可用來發掘最有價值行銷管道的報表：
+本文探討一些您可以用來發掘最有價值行銷管道的報表：
 
 * [按來源列出的新用戶](#newusersbysource)
 * [按使用者來源列出的平均期限收入](#avglifetimerev)
@@ -36,9 +36,9 @@ ht-degree: 0%
 1. 設定 [!UICONTROL Time Period] 到要分析的註冊期。
 1. 設定 [!UICONTROL Interval] 到每月。
 1. 設定 [!UICONTROL Group By] 若要贏取（或轉介）來源，請選取您要包含的來源。
-1. 在此範例中，我們使用 `stacked columns` [!UICONTROL chart type].
+1. 此範例使用 `stacked columns` [!UICONTROL chart type].
 
-以下是視覺逐步：
+以下是視覺逐步說明：
 
 ![按源建立新用戶報告。](../../assets/New_Users_by_source.gif)
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 1. 設定 [!UICONTROL Time Period] 至您要分析的時段。
 1. 設定 [!UICONTROL Interval] 到每月。
    [!UICONTROL Group By] 若要贏取（或轉介）來源，請選取您要包含的來源。
-1. 在此範例中，我們使用 `line chart` 類型。
+1. 此範例使用 `line chart` 類型。
 
 以下是視覺逐步說明：
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 1. 設定 [!UICONTROL Time Period] 到要分析的註冊期。
 1. 設定 [!UICONTROL Time Interval] 到每月。
 1. 設定 [!UICONTROL Group By] 若要贏取（或轉介）來源，請選取您要包含的來源。
-1. 在此範例中，我們使用 **堆疊欄** 圖表類型。
+1. 此範例使用 **堆疊欄** 圖表類型。
 
 以下是視覺逐步說明：
 
@@ -76,14 +76,14 @@ ht-degree: 0%
 
 ## 按用戶註冊日期和來源列出的總收入 {#revbyregdateandsource}
 
-我們先前進行的期限收入分析可讓您查看從不同來源取得之使用者的平均期限收入，但期限總收入又如何？ 此報告可讓您識別在特定時間和特定來源註冊的使用者總收入。
+先前涵蓋的期限收入分析可讓您查看從不同來源取得的使用者的平均期限收入，但期限收入總計又如何？ 此報告可讓您識別在特定時間和特定來源中註冊的使用者總收入。
 
 若要在Report Builder中建立此報表，請新增 `Revenue by user registration date` 量度。 如果您尚未 [建立此量度](../../data-user/reports/ess-manage-data-metrics.md) 你可以通過複製 `Revenue` 量度和變更 `time stamp` 至使用者的 `creation date`. 新增量度後，請執行下列動作：
 
 1. 設定 [!UICONTROL Time Period] 到要分析的註冊期。
 1. 設定 [!UICONTROL Time Interval] 到每月。
 1. 設定 [!UICONTROL Group By] 若要贏取（或轉介）來源，請選取您要包含的來源。
-1. 在此範例中，我們使用 `stacked columns` 圖表類型。
+1. 此範例使用 `stacked columns` 圖表類型。
 
 以下是視覺逐步說明：
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 ## 按用戶源重複訂單 {#repeatordersbysource}
 
-「平均訂單值」報表平均顯示下單時從特定來源獲得的使用者花費。 不過，如果相同的使用者是重複客戶，此報表不會顯示。 但透過「依使用者來源重複訂購」，您可以查看特定來源的使用者是否進行了或多或少的重複購買。
+「平均訂單值」報表平均顯示從特定來源獲取的用戶在下訂單時的花費。 不過，如果相同的使用者是重複客戶，此報表不會顯示。 但透過「依使用者來源重複訂購」，您可以查看特定來源的使用者是否進行了或多或少的重複購買。
 
 若要在 [Report Builder](../../tutorials/using-visual-report-builder.md)，新增 **訂單數** 量度，然後執行下列動作：
 
@@ -102,7 +102,7 @@ ht-degree: 0%
    用戶的訂單號大於1
 
 1. 設定 [!UICONTROL Group By] 若要贏取（或轉介）來源，請選取您要包含的來源。
-1. 在此範例中，我們使用 `stacked columns` 圖表類型。
+1. 此範例使用 `stacked columns` 圖表類型。
 
 以下是視覺逐步說明：
 
@@ -111,7 +111,7 @@ ht-degree: 0%
 
 ## 包裝 {#wrapup}
 
-在本文中，我們只談了幾項分析，您可使用這些分析來分析您的收購和行銷管道的價值，但這只是冰山一角。 如果您建立了我們未在此涵蓋的強大分析，請讓我們了解您在評論中執行的操作。
+本文只談了幾項分析，可供您用來分析收購和行銷管道的價值，但這只是冰山一角。
 
 ## 相關 {#related}
 

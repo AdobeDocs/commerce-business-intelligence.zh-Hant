@@ -2,16 +2,16 @@
 title: 匯出原始資料
 description: 了解如何從 [!DNL MBI] Data Warehouse，進一步了解是什麼在推動您的控制面板。
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
 
 # 匯出原始資料
 
-使用原始資料匯出功能，您可以從 [!DNL MBI] Data Warehouse，進一步了解是什麼在推動您的控制面板。 此外，原始資料匯出功能也可協助您 [找出資料差異](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en).
+使用原始資料匯出功能，您可以從 [!DNL MBI] Data Warehouse，進一步了解是什麼在推動您的控制面板。 此外，原始資料匯出可協助您 [找出資料差異](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en).
 
 原始資料匯出功能可存取其他欄和維度，這些是透過相關量度的去標準化和預先匯總所產生。 例如， `User's first order date` 是可針對 [!DNL MBI]，但資料庫中可能無法使用。
 
@@ -23,14 +23,14 @@ ht-degree: 0%
 
 ## 步驟1:選擇要導出的資料 {#select}
 
-有兩種方式可以在 [!DNL MBI]:在圖表層級或表格層級。
+有兩種方式可在 [!DNL MBI]:在圖表層級或表格層級。
 
 ### 在 `Manage Data` 標籤
 
 如果要從中導出表 `Manage Data` 標籤，您需要 [管理](../administrator/user-management/user-management.md) 權限。
 
 1. 按一下 **[!UICONTROL Manage Data** > **&#x200B;匯出資料&#x200B;**> **原始資料匯出]** 開始使用。
-1. 您會看到 `Export List` （如果有的話）。 按一下 **[!UICONTROL Add Export]** 來建立新導出。
+1. 您會看到 `Export List` （如果有的話）。 按一下 **[!UICONTROL Add Export]** 來建立匯出。
 1. 此 `New Raw Data Export` 對話框。 您可以在此選取或取消選取欄和篩選器，以自訂匯出：
 
    * `Table` - `Table` 欄位會選取要匯出資料的表格。 依預設，這會顯示您導覽至的表格。
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 1. 完成後，按一下 **[!UICONTROL Export Data]**.
 
-讓我們從圖表層面審視整個流程。
+從圖表層級查看整個流程。
 
 ![](../assets/Chart-level_export.gif)
 

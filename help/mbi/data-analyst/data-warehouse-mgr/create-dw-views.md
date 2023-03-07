@@ -1,21 +1,21 @@
 ---
 title: 建立和使用Data Warehouse檢視
-description: 了解如何通過修改現有表來建立新倉庫儲存的表，或通過使用SQL將多個表連接或合併在一起。
+description: 了解如何通過修改現有表來建立新倉庫儲存的表，或使用SQL將多個表連接或合併在一起。
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1064'
 ht-degree: 9%
 
 ---
 
 # 使用Data Warehouse檢視
 
-本檔案概述 `Data Warehouse Views` 瀏覽至 **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**. 以下說明其作用以及如何建立新檢視，以及如何使用範例 `Data Warehouse Views` 整合 [!DNL Facebook] 和 [!DNL AdWords] 花費資料。
+本檔案概述 `Data Warehouse Views` 瀏覽至 **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**. 以下是其功能及如何建立檢視的說明，以及如何使用範例 `Data Warehouse Views` 整合 [!DNL Facebook] 和 [!DNL AdWords] 花費資料。
 
 ## 一般用途
 
-此 `Data Warehouse Views` 特徵是一種通過修改現有表來建立新倉庫儲存表的方法，或通過使用SQL將多個表連接或合併在一起。 一次a `Data Warehouse View` 已由更新週期建立和處理，則會在您的Data Warehouse中填入為 `Data Warehouse Views` 下拉式清單，如下所示：
+此 `Data Warehouse Views` 特徵是一種通過修改現有表來建立新倉庫儲存表的方法，或通過使用SQL將多個表連接或合併在一起的方法。 一次a `Data Warehouse View` 由更新週期建立和處理，則會在您的Data Warehouse中以 `Data Warehouse Views` 下拉式清單，如下所示：
 
 ![](../../assets/Data_Warehouse.png)
 
@@ -23,7 +23,7 @@ ht-degree: 9%
 
 `Data Warehouse Views` 主要用於將多個相似但不同的表合併在一起，以便所有報告都可以建立在單個新表上。 一些常見範例包括整合來自舊版資料庫和即時資料庫的表格，以結合歷史和目前資料，或將多個廣告來源(例如Facebook和AdWords)合併為單數 `Consolidated ad spend` 表格。
 
-如果您熟悉SQL，這兩個整合示例都利用 `UNION` 函式，但在建立新視圖時，可以使用任何PostgreSQL語法和函式。
+如果您熟悉SQL，這兩個整合示例都使用 `UNION` 函式，但在建立新視圖時，可以使用任何PostgreSQL語法和函式。
 
 ## 建立和管理Data Warehouse檢視
 
@@ -31,22 +31,22 @@ ht-degree: 9%
 
 ![](../../assets/Data_Warehouse_Views.png)
 
-您可以在此處依照下列範例指示建立新檢視：
+您可以在此處依照下列範例指示建立檢視：
 
 1. 如果觀察現有視圖，請按一下 **[!UICONTROL New Data Warehouse View]** 開啟空白查詢窗口。 如果已開啟空白查詢窗口，請繼續執行下一步。
-1. 在 `View Name` 欄位。 此處提供的名稱將決定Data Warehouse中檢視的顯示名稱。 `View names` 限於小寫字母、數字和底線(_)。 其他字元都禁止使用。
+1. 在 `View Name` 欄位。 此處提供的名稱決定了Data Warehouse中檢視的顯示名稱。 `View names` 限於小寫字母、數字和底線(_)。 其他字元都禁止使用。
 1. 在標題為的窗口中輸入查詢 `Select Query`，使用標準PostgreSQL語法。
    >[!NOTE]
    >
    >您的查詢必須引用特定列名。 使用 `*`不允許使用字元來選擇所有列。
 
-1. 完成後，按一下 **[!UICONTROL Save]** 來儲存檢視。 請注意，您的檢視會暫時 `Pending` 狀態，直到下一個完整更新週期處理完畢，此時狀態將變更為 `Active`. 由更新處理之後，您的檢視就可供報表使用。
+1. 完成後，按一下 **[!UICONTROL Save]** 來儲存檢視。 您的檢視暫時具有 `Pending` 狀態，直到下一個完整更新週期處理完它，此時狀態會變更為 `Active`. 由更新處理之後，您的檢視就可供報表使用。
 
-請務必提及，儲存後，用來產生 `Data Warehouse View` 無法編輯。 如果由於某些原因，您需要調整 `Data Warehouse View`，您將需要建立新檢視，並手動將任何計算欄、量度或報表從原始檢視移轉到新檢視。 完成移轉後，您就可以安全地刪除原始檢視。 因為 `Data Warehouse Views` 不可編輯，強烈建議您使用 `SQL Report Builder` 將查詢儲存為「Data Warehouse檢視」之前。
+請務必提及，儲存後，用來產生 `Data Warehouse View` 無法編輯。 如果您需要調整 `Data Warehouse View`，您必須建立檢視，並手動將任何計算欄、量度或報表從原始檢視移轉至新檢視。 完成移轉後，您就可以安全地刪除原始檢視。 因為 `Data Warehouse Views` 不可編輯，Adobe建議您使用 `SQL Report Builder` 將查詢儲存為「Data Warehouse檢視」之前。
 
 ## 範例： [!DNL Facebook] 和 [!DNL Google AdWords] 資料
 
-讓我們更仔細地看一下本文前面提到的一個例子：合併 [!DNL Facebook] 和 [!DNL AdWords] 將資料花費到新的匯總廣告表格中。 最常見的情況是需要合併兩個表，示例資料集如下：
+請進一步查看本文前面提到的其中一個範例：合併 [!DNL Facebook] 和 [!DNL AdWords] 將資料花費到新的匯總廣告表格中。 最常見的情況是需要合併兩個表，示例資料集如下：
 
 `Ad source: Google AdWords`
 
@@ -76,7 +76,7 @@ ht-degree: 9%
 | 4 | aa | 110 | 2017-06-08 00:00:00 | 6000 | 10 |
 | 5 | cc | 5 | 2017-07-06 00:00:00 | 300 | 1.2 |
 
-若要建立包含兩者的單一廣告支出表格 [!DNL Facebook] 和 [!DNL AdWords] 促銷活動，我們需要編寫SQL查詢並使用 `UNION ALL` 函式。 A `UNION ALL` 語句通常用於組合多個不同的SQL查詢，同時將每個查詢的結果附加到單個輸出。
+若要建立包含兩者的單一廣告支出表格 [!DNL Facebook] 和 [!DNL AdWords] 促銷活動，您必須撰寫SQL查詢，並使用 `UNION ALL` 函式。 A `UNION ALL` 語句通常用於組合多個不同的SQL查詢，同時將每個查詢的結果附加到單個輸出。
 
 以下是 `UNION` 值得一提的語句，如PostgreSQL中所述 [檔案](https://www.postgresql.org/docs/8.3/queries-union.html):
 
@@ -85,7 +85,7 @@ ht-degree: 9%
 
 執行 `UNION` 或 `UNION ALL` 語句，則最終輸出中的列名將反映第一個查詢中的列的命名。
 
-在大多數情況下，整合 [!DNL Facebook] 和 [!DNL Google AdWords] 將資料花費到 `Data Warehouse View` 將需要建立一個包含7列的表，其查詢如下所示：
+通常，將 [!DNL Facebook] 和 [!DNL Google AdWords] 將資料花費到 `Data Warehouse View` 需要建立一個包含7列的表，其查詢如下所示：
 
 ```sql
     SELECT
@@ -112,9 +112,9 @@ ht-degree: 9%
 以上幾項要點：
 
 * 為了清楚起見，所有欄會設為上方的別名，以便所有查詢的名稱相符。 然而，這並非必要條件。 在SELECT查詢中調用列的順序指定它們的排列方式。
-* 名為的新列 `ad_source` 是為了更輕鬆篩選 [!DNL AdWords] 或 [!DNL Facebook] 資料。 請記住，此查詢會結合兩個表中的所有資料。 如果您不建立 `ad_source`)，從特定來源識別支出並不容易。
+* 名為的新列 `ad_source` 是為了更輕鬆篩選 [!DNL AdWords] 或 [!DNL Facebook] 資料。 請記住，此查詢會結合兩個表中的所有資料。 如果您不建立 `ad_source`，從特定來源識別支出並非易事。
 
-將上述查詢儲存為 `Data Warehouse View` 將建立包含兩者的新表 [!DNL Facebook] 和 [!DNL AdWords] 支出，如下所示：
+將上述查詢儲存為 `Data Warehouse View` 建立同時包含兩者的表 [!DNL Facebook] 和 [!DNL AdWords] 支出，如下所示：
 
 | **`id`** | **`ad_source`** | **`date`** | **`campaign`** | **`spend`** | **`impressions`** | **`clicks`** |
 |--- |--- |--- |--- |--- |--- |--- |
@@ -133,11 +133,11 @@ ht-degree: 9%
 
 **想要其他幫助嗎？**
 
-寫入SQL並建立 `Data Warehouse Views` 技術支援中未包含。  但是，服務團隊在建立意見方面提供協助。 從使用新資料庫遷移和整合舊資料庫到建立單個Data Warehouse視圖以用於特定分析的所有方面，他們都擅長針對您的所有資料結構難題組織基於SQL的解決方案。
+寫入SQL並建立 `Data Warehouse Views` 技術支援中未包含。 但是，服務團隊在建立意見方面提供協助。 對於從使用新資料庫遷移舊資料庫到建立單個Data Warehouse視圖以用於特定分析的所有內容，支援團隊都可以提供幫助。
 
-在大多數情況下，建立 `Data Warehouse View` 為了整合2-3個類似結構的表，需要5小時的服務時間，這相當於1250美元的工作。 但以下是一些可能增加預期所需投資的共同因素：
+通常，建立新 `Data Warehouse View` 為了整合2-3個類似結構的表，需要5小時的服務時間，這相當於1250美元的工作。 但以下是一些可能增加預期所需投資的共同因素：
 
-* 將3個以上的表合併到單個視圖中
-* 建立多個資料倉庫視圖
+* 將三個以上的表合併到一個視圖中
+* 建立多個Data Warehouse檢視
 * 複雜的連接邏輯或過濾條件
-* 將2個或多個表與不同的資料結構合併
+* 使用不同資料結構合併兩個或多個表

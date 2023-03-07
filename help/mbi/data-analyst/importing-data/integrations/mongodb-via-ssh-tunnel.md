@@ -2,31 +2,30 @@
 title: Connect [!DNL MongoDB] 透過SSH通道
 description: 了解如何連線 [!DNL MongoDB] 通過SSH通道。
 exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '678'
 ht-degree: 0%
 
 ---
 
 # Connect [!DNL MongoDB] 透過SSH通道
 
-
-連接 [!DNL MongoDB] 資料庫 [!DNL MBI] 透過SSH通道，您（或您的團隊，如果您不是技術人員）需要執行下列操作：
+連接 [!DNL MongoDB] 資料庫 [!DNL MBI] 透過SSH通道，您（或您的團隊，如果您不是技術人員）必須執行下列操作：
 
 1. [擷取 [!DNL MBI] 公開金鑰](#retrieve)
 1. [允許存取 [!DNL MBI] IP位址](#allowlist)
-1. [為MBI建立Linux用戶](#linux)
+1. [建立Linux](#linux)
 1. [建立 [!DNL MongoDB] MBI用戶](#mongodb)
 1. [在 [!DNL MBI]](#finish)
 
 >[!NOTE]
 >
->由於此設定的技術性質，建議您循環使用開發人員，以說明您之前是否未執行此作業。
+>由於此設定的技術性質，Adobe建議您回圈開發人員，以便在您之前尚未這麼做時提供協助。
 
 ## 擷取 [!DNL MBI] 公開金鑰 {#retrieve}
 
-此 `public key` 用於授權 [!DNL MBI] `Linux` 使用者。 在下一節中，我們會建立使用者並匯入金鑰。
+此 `public key` 用於授權 [!DNL MBI] `Linux` 使用者。 下一節會逐步引導您建立使用者並匯入金鑰。
 
 1. 前往 **[!UICONTROL Data** > **Connections]** 按一下 **[!UICONTROL Add New Data Source]**.
 1. 按一下 [!DNL MONGODB] 表徵圖。
@@ -35,13 +34,13 @@ ht-degree: 0%
 
 在整個教學課程中，請保持此頁面開啟，您需要在下一節和結尾處開啟。
 
-如果您有點迷路，以下是如何導覽 [!DNL MBI] 要檢索密鑰，請執行以下操作：
+如果你迷路了，以下是如何瀏覽 [!DNL MBI] 要檢索密鑰，請執行以下操作：
 
 ![擷取RJMetrics公開金鑰](../../../assets/MongoDB_Public_Key.gif)<!--{:.zoom}-->
 
 ## 允許存取 [!DNL MBI] IP位址 {#allowlist}
 
-為了連線成功，您必須將防火牆設定為允許從我們的IP位址存取。 是 `54.88.76.97` 和 `34.250.211.151`，但也在 [!DNL MongoDB] 憑據頁：
+為了連線成功，您必須將防火牆設定為允許從IP位址存取。 是 `54.88.76.97` 和 `34.250.211.151`，但也在 [!DNL MongoDB] 憑據頁：
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
@@ -49,7 +48,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->若 `sshd_config` 與伺服器相關聯的檔案未設定為預設選項，只有某些使用者能存取伺服器 — 這會防止成功連線至 [!DNL MBI]. 在這些情況下，必須執行類似 `AllowUsers` 允許 `rjmetric` 對伺服器的用戶訪問。
+>若 `sshd_config` 與伺服器關聯的檔案未設定為預設選項，只有某些用戶具有伺服器訪問權 — 這會阻止成功連接到 [!DNL MBI]. 在這些情況下，必須執行類似 `AllowUsers` 允許 `rjmetric` 對伺服器的用戶訪問。
 
 只要包含即時（或經常更新）資料，就可以是生產或次要電腦。 只要此用戶保留連接到的權限，您可以按任何需要的方式限制該用戶 [!DNL MongoDB] 伺服器。
 
@@ -61,7 +60,7 @@ ht-degree: 0%
     mkdir /home/rjmetric/.ssh
 ```
 
-記住 `public key` 我們在第一節中擷取的？ 為確保用戶能夠訪問資料庫，我們需要將密鑰導入 `authorized_keys`. 將整個金鑰複製到 `authorized_keys` 檔案如下：
+記住 `public key` 你在第一節中檢索到的？ 若要確保使用者擁有資料庫的存取權，您需要將金鑰匯入 `authorized_keys`. 將整個金鑰複製到 `authorized_keys` 檔案如下：
 
 ```bash
     touch /home/rjmetric/.ssh/authorized_keys
@@ -77,7 +76,7 @@ ht-degree: 0%
 
 ## 建立 [!DNL MBI] [!DNL MongoDB] 使用者 {#mongodb}
 
-[!DNL MongoDB] 伺服器有兩種執行模式 —  [一個具有「auth」選項](#auth) `(mongod -- auth)` 一個沒有， [為預設值](#default). 建立 [!DNL MongoDB] 根據您的伺服器使用的模式，使用者會有所不同，因此請務必驗證模式，再繼續。
+[!DNL MongoDB] 伺服器有兩種執行模式 —  [一個具有「auth」選項](#auth) `(mongod -- auth)` 一個沒有， [為預設值](#default). 建立 [!DNL MongoDB] 使用者會依您的伺服器使用的模式而有所不同。 繼續之前，請務必驗證模式。
 
 ### 若您的伺服器使用 `Auth` 選項： {#auth}
 
@@ -87,7 +86,7 @@ ht-degree: 0%
 >
 >要查看所有可用的資料庫， [!DNL MBI] 使用者需要執行權限 `listDatabases.`
 
-此命令將授予 [!DNL MBI] 使用者存取權 `to all databases`:
+此命令授予 [!DNL MBI] 使用者存取權 `to all databases`:
 
 ```bash
     use admin
@@ -114,7 +113,7 @@ ht-degree: 0%
 
 ### 如果您的伺服器使用預設選項 {#default}
 
-如果您的伺服器未使用 `auth` 模式，您的 [!DNL MongoDB] 即使沒有用戶名和密碼，伺服器仍可訪問。 不過，您應確保 `mongodb.conf` 檔案 `(/etc/mongodb.conf)` 有以下幾行 — 如果沒有，請在添加這些行後重新啟動伺服器。
+如果您的伺服器未使用 `auth` 模式，您的 [!DNL MongoDB] 即使沒有用戶名和密碼，也可以訪問伺服器。 不過，您應確保 `mongodb.conf` 檔案 `(/etc/mongodb.conf)` 有以下幾行 — 如果沒有，請在添加這些行後重新啟動伺服器。
 
 ```bash
     bind_ip = 127.0.0.1
@@ -125,7 +124,7 @@ ht-degree: 0%
 
 ## 將連線和使用者資訊輸入 [!DNL MBI] {#finish}
 
-總結一下，我們需要將連線和使用者資訊輸入 [!DNL MBI]. 你離開 [!DNL MongoDB] 憑據頁開啟？ 如果沒有，請前往 **[!UICONTROL Data > Connections]** 按一下 **[!UICONTROL Add New Data Source]**，則 [!DNL MongoDB] 表徵圖。 別忘了改變 `Encrypted` 切換為 `Yes`.
+總結一下，您需要將連線和使用者資訊輸入 [!DNL MBI]. 你離開 [!DNL MongoDB] 憑據頁開啟？ 如果沒有，請前往 **[!UICONTROL Data > Connections]** 按一下 **[!UICONTROL Add New Data Source]**，則 [!DNL MongoDB] 表徵圖。 別忘了變更 `Encrypted` 切換為 `Yes`.
 
 在此頁面中輸入以下資訊，從 `Database Connection` 小節：
 
@@ -137,8 +136,8 @@ ht-degree: 0%
 
 在 `SSH Connection` 小節：
 
-* `Remote Address`:我們要SSH到的伺服器的IP地址或主機名
-* `Username`:此 [!DNL MBI] Linux(SSH)使用者名稱（應為量度）
+* `Remote Address`:要SSH到的伺服器的IP地址或主機名
+* `Username`:此 [!DNL MBI] Linux®(SSH)使用者名稱（應為量度）
 * `SSH Port`:伺服器上的SSH埠（預設為22個）
 
 就這樣！ 完成後，按一下 **[!UICONTROL Save Test]** 以完成設定。

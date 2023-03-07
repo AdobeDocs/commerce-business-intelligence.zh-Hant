@@ -2,9 +2,9 @@
 title: Google Analytics — 追蹤使用者贏取來源資料概觀
 description: 了解如何依使用者贏取來源劃分資料。
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: ad95a03193853eebf2b695cd6f5c3cb5a9837f93
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '815'
 ht-degree: 1%
 
 ---
@@ -21,19 +21,19 @@ ht-degree: 1%
 
 ## 追蹤使用者贏取來源
 
-建議您根據您的設定，使用兩種方法來追蹤反向連結來源資料：
+Adobe建議您根據您的設定，使用兩種方法來追蹤反向連結來源資料：
 
 ### （選項1）透過 [!DNL Google Analytics E-Commerce] (包括 [!DNL Shopify] 商店)
 
-如果您利用 [!DNL Google Analytics E-Commerce] 要跟蹤訂單和銷售資料，您可以利用 [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) 同步每個訂單的轉介來源資料。 這可讓您依反向連結來源(例如 `utm_source` 或 `utm_medium`)，並透過 [!DNL MBI] 自訂維度，例如 `User's first order source`.
+如果您使用 [!DNL Google Analytics E-Commerce] 若要追蹤訂單和銷售資料，您可以使用 [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) 同步每個訂單的轉介來源資料。 這可讓您依反向連結來源(例如 `utm_source` 或 `utm_medium`)。 您也可以透過 [!DNL MBI] 自訂維度，例如 `User's first order source`.
 
 >[!NOTE]
 >
->Shopify用戶**:開啟 [!DNL [Google Analytics E-Commerce] tracking in Shopify](http://docs.shopify.com/manual/settings/general/google-analytics#ecommerce-tracking) 在連接 [!DNL Google Analytics E-Commerce] 帳戶 [!DNL MBI].
+>Shopify用戶**:開啟 [!DNL [Google Analytics E-Commerce] tracking in Shopify](https://help.shopify.com/en/manual/reports-and-analytics/google-analytics#ecommerce-tracking) 在連接 [!DNL Google Analytics E-Commerce] 帳戶 [!DNL MBI].
 
 ### （選項2）保存 [!DNL Google Analytics]&#39;資料庫中的贏取源資料
 
-在本文中，我們將說明如何儲存 [!DNL Google Analytics] 贏取管道資訊放入您自己的資料庫 — 即 `source`, `medium`, `term`, `content`, `campaign`，和 `gclid` 使用者首次造訪您的網站時所呈現的參數。 如需這些參數的說明，請查看 [!DNL [Google Analytics] documentation](http://support.google.com/analytics/bin/answer.py?hl=en&amp;answer=1191184). 接著，我們將探索一些功能強大的行銷分析，這些分析可透過 [!DNL MBI].
+本文說明如何儲存 [!DNL Google Analytics] 贏取管道資訊放入您自己的資料庫 — 即 `source`, `medium`, `term`, `content`, `campaign`，和 `gclid` 使用者首次造訪您的網站時所呈現的參數。 如需這些參數的說明，請查看 [!DNL [Google Analytics] documentation](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). 接著，您可以探索一些功能強大的行銷分析，這些分析可以在 [!DNL MBI].
 
 #### 為什麼？
 
@@ -41,9 +41,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->[!DNL [Google Analytics eCommerce Tracking]](https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingEcommerce) 將交易資料儲存在 [!DNL Google Analytics]，但此解決方案不適用於非電子商務網站，且某些工具（例如同類群組分析）在 [!DNL Google Analytics] 介面。
+>[!DNL [Google Analytics eCommerce Tracking]](https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingEcommerce) 通過將事務資料儲存在 [!DNL Google Analytics]，但此解決方案不適用於非電子商務網站。 此外，同類群組分析等特定工具在 [!DNL Google Analytics] 介面。
 
-如果您想要將後續交易電子郵件傳送給從特定電子郵件行銷活動取得的所有客戶，該怎麼辦？ 還是將贏取資料與您的CRM系統整合？ 在 [!DNL Google Analytics]  — 事實上，這違反服務條款 [!DNL Google Analytics] 儲存可識別個人的任何資料。  但這並不意味著你不能自己儲存這些資料。
+如果您想要將後續交易電子郵件傳送給從特定電子郵件行銷活動取得的所有客戶，該怎麼辦？ 還是將贏取資料與您的CRM系統整合？ 在 [!DNL Google Analytics]  — 事實上，這違反服務條款 [!DNL Google Analytics] 儲存可識別個人的任何資料。 但是，你可以自己儲存這些資料。
 
 #### 方法
 
@@ -51,21 +51,21 @@ ht-degree: 1%
 
 > `100000000.12345678.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=rj metrics`
 
-顯然有些贏取來源資料已編碼至字串，我們經過測試以確認這是訪客的最新贏取來源和相關促銷活動資料。 現在我們只需要知道如何提取資料。 幸運的是，Justin Cutroni先前已描述此編碼的運作方式，並共用了一些javascript代碼來擷取關鍵資訊的比特。
+顯然有些擷取來源資料已編碼為字串。 這會進行測試，以確認這是訪客的最新贏取來源和相關的促銷活動資料。 現在您需要了解如何擷取資料。 幸運的是，Justin Cutroni先前已說明此編碼的運作方式，並共用一些JavaScript程式碼來擷取資訊的關鍵位元。
 
-我們把代碼翻譯成 [托管於github的PHP程式庫](https://github.com/RJMetrics/referral-grabber-php).   若要使用程式庫， `include` 參考 `ReferralGrabber.php` 然後呼叫
+此程式碼已轉譯為 [托管於github的PHP程式庫](https://github.com/RJMetrics/referral-grabber-php). 若要使用程式庫， `include` 參考 `ReferralGrabber.php` 然後呼叫
 
 > `$data = ReferralGrabber::parseGoogleCookie($_COOKIE['__utmz']);`
 
-傳回 `$data` 陣列是鍵的映射 `source`, `medium`, `term`, `content`, `campaign`, `gclid` 和各自的值。
+傳回 `$data` 陣列是索引鍵的地圖 `source`, `medium`, `term`, `content`, `campaign`, `gclid`，及其各自的值。
 
-建議將新表格新增至您的資料庫，例如 `user_referral`，包含下列欄： `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. 每當使用者登入時，請抓取反向連結資訊並儲存至此表格。
+Adobe建議將表添加到資料庫，例如， `user_referral`，包含下列欄： `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. 每當使用者登入時，請抓取反向連結資訊並儲存至此表格。
 
 #### 如何使用此資料
 
-現在我們正在儲存使用者贏取來源，該如何使用？
+現在您正在儲存使用者贏取來源，如何使用？
 
-假設我們使用SQL資料庫，且 `users` 表格，其結構如下：
+假設您使用SQL資料庫，且 `users` 表格，其結構如下：
 
 | ID | 電子郵件 | JOIN_DATE | ACQ_SOURCE | ACQ_MEDIUM |
 |--- |--- |--- |--- |--- |
@@ -76,11 +76,11 @@ ht-degree: 1%
 | 5 | jen@ghi.net | 2012-01-30 | 其他 | 有機 |
 | ... | ... | ... | ... | ... |
 
-首先，我們可以對您的資料庫執行下列查詢，以計算來自每個反向連結管道的使用者人數：
+首先，您可以對資料庫執行下列查詢，以計算來自每個反向連結管道的使用者人數：
 
 > `SELECT acq_source, COUNT(id) as user_count FROM users GROUP BY acq_source;`
 
-結果會如下所示：
+結果看起來像這樣：
 
 | ACQ_SOURCE | USER_COUNT |
 |--- |--- |
@@ -89,7 +89,14 @@ ht-degree: 1%
 | 轉介 | 55 |
 | 其他 | 16 |
 
-這很有趣，但用途有限。 我們真正想知道的是這些數字隨著時間的增長，每個收購來源產生的收入， [同類群組分析](http://cohortanalysis.com/) 來自每個來源的使用者數，以及其中一個管道的使用者日後以客戶身分回訪的可能性。 執行這些分析所需的查詢是複雜的，這是我們建立 [!DNL MBI]. 有了這些資訊，我們可以確定最有利可圖的收購渠道，並相應地集中我們的營銷時間和資金。
+這很有趣，但用途有限。 您真正想知道的是：
+
+* 這些數字隨時間的增長率
+* 各收購來源產生的收入金額
+* a [同類群組分析](https://en.wikipedia.org/wiki/Cohort_analysis) 來自每個來源的使用者
+* 其中一個管道的使用者日後回訪客戶的可能性。
+
+執行這些分析所需的查詢很複雜。 利用這些資訊，您可以確定最有利可圖的收購渠道，並據此將行銷時間和資金集中在一起。
 
 ### 相關
 

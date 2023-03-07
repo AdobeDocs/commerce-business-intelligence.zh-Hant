@@ -2,9 +2,9 @@
 title: 控制面板
 description: 了解如何建立及使用控制面板。
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 [!DNL MBI] 控制面板可讓您快速檢視商店的績效和銷售活動。 個別控制面板可與其他使用者共用，並組織成邏輯群組。 您也可以為其他使用者設定不同的權限層級。
 
-您可以輕鬆建立新報表、將其新增至控制面板，以及將資料匯出至Excel。 可以調整圖表和報表的大小，並將其拖放到控制面板上的位置。
+您可以輕鬆建立報表、將其新增至控制面板，以及將資料匯出至Excel。 可以調整圖表和報表的大小，並將其拖放到控制面板上的位置。
 
 ![控制面板](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
 
 ## 建立控制面板 {#createdash}
 
-控制面板基本上是可共用的主題貯體，供您在Report Builder中建立的分析之用。 這是您如何鼓勵您的團隊在整個組織中共同合作及維護單一真相來源的方式。
+控制面板是可共用的主題貯體，供您在Report Builder中建立的分析之用。 這是您如何鼓勵您的團隊在整個組織中共同合作及維護單一真相來源的方式。
 
 *如果您是管理員或標準使用者*，您可以按一下 `Dashboard Options` 下拉式清單，選擇 `Create New dashboard`.
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ![排列調整儀表板大小的元素](../../assets/arrange_resize_dashboard_element.gif)
 
-### 建立新控制面板
+### 建立控制面板
 
 1. 在功能表上，按一下 **[!UICONTROL Dashboards]**.
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
    * 輸入 `Name` 的URL。
 
-   * 建立新 `Group` 在控制面板中，輸入群組名稱。
+   * 建立 `Group` 在控制面板中，輸入群組名稱。
 
       例如，如果您的商務安裝有多個商店檢視，則可為每個商店檢視建立群組。
 
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 ### 共用控制面板 {#sharingdash}
 
-要真正擴展 [!DNL MBI] 建議您與其他團隊成員共用您建立的控制面板，讓您在整個組織中獲得寶貴的見解。 *您可以共用您擁有的控制面板* 按一下 `Share Dashboard` 選項。
+要真正擴展 [!DNL MBI] 在整個組織中，Adobe會鼓勵您與其他團隊成員共用您建立的控制面板，以提供寶貴的深入分析。 *您可以共用您擁有的控制面板* 按一下 `Share Dashboard` 選項。
 
 當您共用控制面板時，您可以在組織間指派權限，或依個別來指派，這表示您可以決定誰可以檢視及編輯您的報表。
 

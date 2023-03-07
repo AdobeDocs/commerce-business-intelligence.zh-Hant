@@ -2,9 +2,9 @@
 title: 存取 [!DNL MBI] 帳戶
 description: 了解如何登入您的 [!DNL MBI] 帳戶。
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您使用 [!DNL Adobe ID]，您將無法變更 [!DNL MBI] 設定檔密碼。
+>如果您使用 [!DNL Adobe ID]，您無法變更 [!DNL MBI] 設定檔密碼。
 
 ## 使用您的用戶名和密碼登錄
 

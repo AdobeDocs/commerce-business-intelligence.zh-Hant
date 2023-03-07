@@ -5,9 +5,9 @@ breadcrumb-title: 指南概述
 seo-title: MBI User Guide
 seo-description: Describes how to use the MBI features used to gain insights from Adobe Commerce or Magento Open Source data.
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -34,15 +34,15 @@ ht-degree: 0%
 
 ## 如何取得協助
 
-如果您有問題或想利用我們的一些專業服務，或您遇到我們帳戶的問題，並且想了解哪些資源可幫助您排除問題，請訪問我們的支援團隊。
+如果您有問題、想要利用某些專業服務或遇到帳戶問題，請與支援團隊聯繫。
 
 ### 服務策略
 
-請參閱 [客戶支援團隊提供哪些服務的清單](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+請參閱 [客戶支援團隊提供的服務清單](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ### 提交支援票證
 
-需要建立進階計算欄的協助嗎？ 遇到缺陷或連接問題？ 如果您需要與我們的支援團隊聯繫，我們會要求您使用 [支援票證指南] (https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en)。 這些准則概述了解決該問題所需的資訊Adobe。
+是否需要建立進階計算欄的協助？ 遇到缺陷或連接問題？ 如果您需要與支援團隊聯絡，Adobe會要求您使用 [支援票證指南] (https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en)。 這些准則概述了解決該問題所需的資訊Adobe。
 
 ## 可用檔案
 
@@ -53,4 +53,4 @@ ht-degree: 0%
 | [Adobe Commerce 2.4操作指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html) | 關於開發、部署及維護部署在Adobe Commerce和Magento Open Source平台上之專案的概念、流程、工具及最佳實務的系統檔案。 |
 | [Adobe Commerce 2.4開發人員檔案](https://developer.adobe.com/commerce/) | 以開發人員為中心的檔案，用於建置和自訂Adobe Commerce或Magento Open Source |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

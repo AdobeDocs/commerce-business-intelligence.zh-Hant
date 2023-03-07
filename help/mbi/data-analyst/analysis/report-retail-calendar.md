@@ -2,26 +2,26 @@
 title: 在零售日曆上製作報表
 description: 了解如何設定結構，在您的 [!DNL MBI] 帳戶。
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
 
 # 在零售日曆上報告
 
-在本文中，我們演示了如何建立結構以使用 [4-5-4零售日曆](https://nrf.com/resources/4-5-4-calendar) 在 [!DNL MBI] 帳戶。 視覺化報告建立工具提供極富彈性的時間範圍、間隔和獨立設定。 我們的團隊也能協助您變更一週中的開始日，以符合您的業務偏好。 不過，所有這些設定都可搭配傳統的每月日曆使用。
+本文示範如何設定結構以使用 [4-5-4零售日曆](https://nrf.com/resources/4-5-4-calendar) 在 [!DNL MBI] 帳戶。 視覺化報告建立工具提供極富彈性的時間範圍、間隔和獨立設定。 不過，所有這些設定都可搭配傳統的每月日曆使用。
 
-由於我們的許多客戶更改其日曆以使用零售或會計日期，下列步驟將說明如何使用您的資料並使用零售日期建立報表。 雖然下列指示會參考4-5-4零售日曆，但您可以針對您的團隊使用的任何特定日曆加以變更，無論是財務日曆還是自訂日曆。
+由於許多客戶更改其日曆以使用零售或會計日期，下列步驟將說明如何使用您的資料，以及使用零售日期建立報表。 雖然下列指示會參考4-5-4零售日曆，但您可以針對您的團隊使用的任何特定日曆進行變更，無論是財務日曆還是自訂日曆。
 
-開始之前，請熟悉 [檔案上傳程式](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) 並確保你把 `.csv` 檔案，讓日期可涵蓋所有歷史資料，並將日期推送至未來。
+開始使用前，請熟悉 [檔案上傳程式](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) 並確保你把 `.csv` 檔案。 這可確保日期涵蓋所有歷史資料，並將日期推送至未來。
 
 此分析包含 [進階計算欄](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## 快速入門
 
-您可以 [下載](../../assets/454-calendar.csv) a `.csv` 零售年度4-5-4零售日曆版本（2014至2017年）。 請注意，您可能需要根據內部零售日曆調整此檔案，並延長日期範圍，以支援您的歷史和目前時間範圍。 下載檔案後，請使用「檔案上傳程式」，在您的 [!DNL MBI] 資料倉庫。 如果您使用的是4-5-4零售日曆的未更改版本，請確保此表中欄位的結構和資料類型與以下內容相符：
+您可以 [下載](../../assets/454-calendar.csv) a `.csv` 零售年度4-5-4零售日曆版本（2014至2017年）。 您可能需要根據內部零售日曆調整此檔案，並延長日期範圍以支援您的歷史和目前時間範圍。 下載檔案後，請使用「檔案上傳程式」，在您的 [!DNL MBI] Data Warehouse。 如果您使用的是4-5-4零售日曆的未更改版本，請確保此表中欄位的結構和資料類型與以下內容相符：
 
 | 欄名稱 | 列資料類型 | 主鍵 |
 | --- | --- | --- |
@@ -33,7 +33,7 @@ ht-degree: 0%
 | `Month Name Retail` | `Text` （最多255個字元） | `No` |
 | `Week Number of Month Retail` | `Whole Number` | `No` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 要建立的列
 
@@ -92,7 +92,7 @@ ht-degree: 0%
       * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
       * 路徑 — 
          * [!UICONTROL Many]:sales\_order。\[INPUT\]已建立\_at(yyyy-mm-dd 00:00:00
-         * [!UICONTROL One]：零售日曆。日期重新整理
+         * [!UICONTROL One]:Retail Calendar.Date Retail
       * 選取 [!UICONTROL table]: `Retail Calendar`
       * 選取 [!UICONTROL column]: `Week Retail`
    * **建立\_at（零售月）**
@@ -199,8 +199,8 @@ ht-degree: 0%
 
 ## 後續步驟
 
-上述說明如何設定零售日曆，使其與您 `sales\_order` 表格(例如，`Revenue` 和 `Orders`)，但您也可以延伸此功能，以支援任何表格上所建量度的零售日曆。 唯一的要求是此表具有有效的日期時間欄位，可用於連接到零售日曆表。
+上述說明如何設定零售日曆，使其與您 `sales\_order` 表格(例如 `Revenue` 或 `Orders`)。 您也可以延伸此功能，以支援任何表格上所建量度的零售日曆。 唯一的要求是此表具有有效的日期時間欄位，可用於連接到零售日曆表。
 
-例如，若要在零售日曆上檢視4-5-4度量，請建立新 `Same Table` 在 `customer\_entity` 表格，類似 `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` 如上所述。 然後，您可以使用此欄來重現 `One to Many` JOINED\_COLUMN計算(如 `Created_at (retail year)` 和 `Include in previous retail year? (Yes/No)` 加入 `customer\_entity` 表格 `Retail Calendar` 表格。
+例如，若要在零售日曆上檢視4-5-4度量，請建立 `Same Table` 在 `customer\_entity` 表格，類似 `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` 如上所述。 然後，您可以使用此欄來重現 `One to Many` JOINED\_COLUMN計算(如 `Created_at (retail year)` 和 `Include in previous retail year? (Yes/No)` 加入 `customer\_entity` 表格 `Retail Calendar` 表格。
 
 別忘了 [將所有新欄新增為量度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 建立新報表之前。

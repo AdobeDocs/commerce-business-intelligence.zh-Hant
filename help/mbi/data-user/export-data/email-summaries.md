@@ -2,7 +2,7 @@
 title: 建立自動電子郵件摘要
 description: 了解如何建立自動化電子郵件摘要。
 exl-id: a9aea4fc-9193-467f-8554-3ad77ac3fa73
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 建立自動電子郵件摘要
 
-電子郵件摘要是功能強大的通訊工具，可用來與主要利害關係人分享您業務的目前狀態和趨勢。 使用電子郵件摘要，您可以：
+電子郵件摘要是功能強大的通訊工具，可用來與主要利害關係人分享您的業務狀態和趨勢。 使用電子郵件摘要，您可以：
 
 * 包含報表的電子郵件圖形摘要
 * 納入或排除電子郵件摘要作者不接收電子郵件

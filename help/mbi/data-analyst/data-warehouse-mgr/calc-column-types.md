@@ -2,9 +2,9 @@
 title: 計算的列類型
 description: 了解如何建立欄來擴大和最佳化您的資料以進行分析。
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 在 [Data Warehouse管理員](../data-warehouse-mgr/tour-dwm.md)，您可以建立欄來擴大和最佳化資料以進行分析。 [此功能](../data-warehouse-mgr/creating-calculated-columns.md) 可在「Data Warehouse管理器」中選取任何表格，然後按一下「 **[!UICONTROL Create New Column]**.
 
-本文說明您可以透過「Data Warehouse管理員」建立的欄類型，以及說明、該欄的視覺逐步操作，以及 [參考圖](#map) 建立列所需的所有輸入。 建立計算欄的方式有三種：
+本文說明您可以透過「Data Warehouse管理員」建立的欄類型。 它也涵蓋說明、該欄的視覺逐步說明，以及 [參考圖](#map) 建立列所需的所有輸入。 建立計算欄的方式有三種：
 
 * [相同的表計算列](#sametable)
 * [一對多計算欄](#onetomany)
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 年齡計算欄會傳回目前時間與某些輸入時間之間的秒數。
 
-在以下範例中，我們已建立 `Seconds since customer's most recent order` 在 `customers` 表格。 這可用來建立未在內進行購買（有時稱為轉售）的客戶使用者清單 `X days`.
+以下範例會建立 `Seconds since customer's most recent order` 在 `customers` 表格。 這可用來建立未在內進行購買（有時稱為轉手）的客戶使用者清單 `X days`.
 
 ![](../../assets/age.gif)
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 貨幣轉換器計算列將列的本地貨幣轉換為所需的新貨幣。
 
-在以下範例中，我們已建立 `base\_grand\_total In AED`，轉換 `base\_grand\_total` 從本幣到AED `sales\_flat\_order` 表格。 此欄適用於想以當地貨幣報告的多種貨幣的商店。
+以下範例會建立 `base\_grand\_total In AED`，轉換 `base\_grand\_total` 從本幣到AED `sales\_flat\_order` 表格。 此欄適用於想以當地貨幣報告的多種貨幣的商店。
 
 若為商務客戶， `base\_currency\_code` 欄位通常會儲存原生貨幣。 此 `Spot Time` 欄位應符合量度中使用的日期。
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ## 一對多計算欄 {#onetomany}
 
-`One-to-Many` 欄 [利用兩個表之間的路徑](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md). 此路徑始終表示一個表，一個屬性在其中生存，而一個多表，該屬性被「重新定位」到。 路徑可描述為 `foreign key--primary key` 關係。
+`One-to-Many` 欄 [使用兩個表之間的路徑](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md). 此路徑始終表示一個表，一個屬性在其中生存，而一個多表，該屬性被「重新定位」到。 路徑可描述為 `foreign key--primary key` 關係。
 
 ### 連結列 {#joined}
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ## 多對一計算欄 {#manytoone}
 
-這些欄會使用與一對多欄相同的路徑，但會將資料指向相反的方向。 欄會在路徑的一側建立，而非在多側。 由於此關係，列中的值需要是聚合，即對資料點在多邊上執行的數學運算。 此功能有許多使用案例，下方列出幾個。
+這些欄使用的路徑與一對多欄相同，但它們將資料指向相反的方向。 欄會在路徑的一側建立，而非在多側。 由於此關係，列中的值需要是聚合，即對資料點在多邊上執行的數學運算。 此功能有許多使用案例，下方列出幾個。
 
 ### 計數 {#count}
 
@@ -97,9 +97,9 @@ ht-degree: 0%
 
 ## 進階計算欄 {#advanced}
 
-在分析和回答有關您業務的問題時，您可能會遇到無法建立所需確切欄的情況。 在這些情況下，我們已經掩護你了！
+在分析和回答有關您業務的問題時，您可能會遇到無法建立所需確切欄的情況。
 
-為確保快速週轉，建議您查看 [高級計算列類型](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) 指南，了解我們的支援團隊可以建立哪些欄。 在該文章中，我們還將介紹建立列所需的資訊 — 請將其納入您的請求中。
+為確保快速週轉，Adobe建議查看 [高級計算列類型](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) 指南，了解Adobe支援團隊可以建立哪些欄。 該文章也涵蓋您建立欄所需的資訊，包括在您的請求中。
 
 ## 相關檔案
 

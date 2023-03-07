@@ -2,9 +2,9 @@
 title: 資料使用者
 description: 資料使用者
 exl-id: 2f412c94-5042-4411-b19b-482993e6f70f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '76'
+source-wordcount: '70'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,9 @@ ht-degree: 0%
 
 您可使用資料來協助進行業務決策。 您可能會收到團隊中資料分析師的報表和控制面板，但您也想要了解如何建立這些報表和控制面板。
 
-在本節中，您將學習如何在 [!DNL MBI] 使用報表和控制面板，以及如何透過電子郵件和 `.csv` 檔案。
+本節示範如何：
+* 在中獲取和顯示資料 [!DNL MBI] 使用報表和控制面板
+* 透過電子郵件與利害關係人分享資料， `.csv` 檔案
 
 ## 相關
 

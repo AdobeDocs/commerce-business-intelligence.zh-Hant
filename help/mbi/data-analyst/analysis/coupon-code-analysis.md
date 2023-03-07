@@ -2,16 +2,16 @@
 title: 抵用券效益
 description: 了解如何分析您的抵用券績效。
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
 
 # 進階抵用券代碼分析
 
-了解企業的抵用券績效是劃分訂單的有趣方式，也能更清楚了解客戶。 本文會逐步引導您進行建立分析的步驟，以了解您透過使用抵用券取得哪些客戶、其執行方式，以及追蹤一般抵用券使用情況。
+了解企業的抵用券績效是劃分訂單的有趣方式，也能更清楚了解客戶。 本文會逐步引導您進行建立分析的步驟，以了解您使用抵用券取得哪些客戶、其執行方式，以及追蹤一般抵用券使用情況。
 
 ![](../../assets/coupon_analysis_-_analysis_library.png)<!--{: width="800" height="375"}-->
 
@@ -34,8 +34,9 @@ ht-degree: 0%
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `coupon\_code`
-   * [!UICONTROL Datatype]:: `String`
-   * [!UICONTROL Calculation]::案例 `A` 則為null `No coupon` else `Coupon` 結束
+   * 
+      [!UICONTROL資料類型]: `String`
+   * [!UICONTROL Calculation]:案例 `A` 則為null `No coupon` else `Coupon` 結束
 
 
 * **\[INPUT\] customer\_id — 抵用券代碼**
@@ -43,8 +44,8 @@ ht-degree: 0%
    * [!UICONTROL Inputs]:
       * `A`: `customer\_id`
       * `B`: `coupon\_code`
-   * [!UICONTROL Datatype]::字串
-   * [!UICONTROL Calculation]:: `concat(A,' - ',B)`
+   * [!UICONTROL Datatype] 字串
+   * [!UICONTROL Calculation]: `concat(A,' - ',B)`
 
 
 * **具有此抵用券的訂單數**
@@ -80,21 +81,24 @@ ht-degree: 0%
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-      * [!UICONTROL Datatype]:: `String`
-      * [!UICONTROL Calculation]:: **當A=「抵用券」然後「抵用券贏取客戶」其他「非抵用券贏取客戶」結束時的案例**
+      * 
+         [!UICONTROL資料類型]: `String`
+      * [!UICONTROL Calculation]: **當A=「抵用券」然後「抵用券贏取客戶」其他「非抵用券贏取客戶」結束時的案例**
    * **具有抵用券的客戶訂單百分比**
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `User's lifetime number of coupons used`
          * `B`: `User's lifetime number of orders`
-      * [!UICONTROL Datatype]:: `Decimal`
-      * [!UICONTROL Calculation]:: **當A為Null或B為Null或B=0然後為Null時，其他A/B結尾為A/B**
+      * 
+         [!UICONTROL資料類型]: `Decimal`
+      * [!UICONTROL Calculation]: **當A為Null或B為Null或B=0然後為Null時，其他A/B結尾為A/B**
    * **客戶的抵用券使用量**
       * [!UICONTROL Column type]: `Same Table => Calculation`
       * [!UICONTROL Inputs]:
          * `A`: `Percent of customer's orders with coupon`
-      * [!UICONTROL Datatype]:: `String`
-      * [!UICONTROL Calculation]:: **當A=0，當A&lt;0.5，當A=0.5，當A=0.5，當A=1，當A=1，當A=0.5，當A=0.5，當A=0.5，當Martily coupain&#39;結尾時，當A=0.5，當A=1，當A=1，當A=0.5，當Marty coupin&#39;，則為Undefined」**
+      * 
+         [!UICONTROL資料類型]: `String`
+      * [!UICONTROL Calculation]: **當A=0，當A&lt;0.5，當A=0.5，當A=0.5，當A=1，當A=1，當A=0.5，當A=0.5，當A=0.5，當Martily coupain&#39;結尾時，當A=0.5，當A=1，當A=1，當A=0.5，當Marty coupin&#39;，則為Undefined」**
 
 
 
@@ -127,8 +131,9 @@ ht-degree: 0%
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-   * [!UICONTROL Datatype]:: `String`
-   * [!UICONTROL Calculation]:: **當A=「抵用券」然後「抵用券贏取客戶」其他「非抵用券贏取客戶」結束時的案例**
+   * 
+      [!UICONTROL資料類型]: `String`
+   * [!UICONTROL Calculation]: **當A=「抵用券」然後「抵用券贏取客戶」其他「非抵用券贏取客戶」結束時的案例**
 
 
 * **具有抵用券的客戶訂單百分比**
@@ -136,16 +141,18 @@ ht-degree: 0%
    * [!UICONTROL Inputs]:
       * `A`: `User's lifetime number of coupons used`
       * `B`: `User's lifetime number of orders`
-   * [!UICONTROL Datatype]:: `Decimal`
-   * [!UICONTROL Calculation]:: **當A為Null或B為Null或B=0然後為Null時，其他A/B結尾為A/B**
+   * 
+      [!UICONTROL資料類型]: `Decimal`
+   * [!UICONTROL Calculation]: **當A為Null或B為Null或B=0然後為Null時，其他A/B結尾為A/B**
 
 
 * **客戶的抵用券使用量**
    * [!UICONTROL Column type]: `Same Table => Calculation`
    * [!UICONTROL Inputs]:
       * `A`: `Percent of customer's orders with coupon`
-   * [!UICONTROL Datatype]:: `String`
-   * [!UICONTROL Calculation]:: **當A=0，當A&lt;0.5，當A=0.5，當A=0.5，當A=1，當A=1，當A=0.5，當A=0.5，當A=0.5，當Martily coupain&#39;結尾時，當A=0.5，當A=1，當A=1，當A=0.5，當Marty coupin&#39;，則為Undefined」**
+   * 
+      [!UICONTROL資料類型]: `String`
+   * [!UICONTROL Calculation]: **當A=0，當A&lt;0.5，當A=0.5，當A=0.5，當A=1，當A=1，當A=0.5，當A=0.5，當A=0.5，當Martily coupain&#39;結尾時，當A=0.5，當A=1，當A=1，當A=0.5，當Marty coupin&#39;，則為Undefined」**
 
 
 ## 量度
@@ -237,7 +244,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您有大量抵用券代碼，像我們的許多客戶一樣，您會想要套用「排名最前/最下」（例如依「平均期限」收入排序的「排名最前10」）
+>如果您有許多抵用券代碼，像許多客戶一樣，您想要套用「排名最前/最下」（例如依「平均」期限收入排序的「排名最前10」）
 
 * **重複訂單可能性：優惠券贏取**
    * [!UICONTROL Metric]: `Number of orders`
@@ -251,7 +258,7 @@ ht-degree: 0%
       [!UICONTROL公式]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
-   * 從中選擇統計顯著數 `Customer's by lifetime orders` 圖表。 查看圖表時，我們通常會尋找貯體中有30位或更多客戶的訂單編號。 視您的資料集而定，這可能是很大的數字，因此您可以自由加入1-10。
+   * 從中選擇統計顯著數 `Customer's by lifetime orders` 圖表。 查看圖表時，一個不錯的規則是尋找貯體中有30個或更多客戶的訂單號。 視您的資料集而定，這可能是很大的數字，因此您可以自由加入1-10。
 
 
 * 量度 `A`: `Number of orders`
@@ -510,6 +517,6 @@ ht-degree: 0%
 >
 >「具有此抵用券的訂單數」為10的數量是任意的。 請隨時使用此篩選器的最適當數量。
 
-編譯所有報表後，您可以視需要在控制面板上組織報表。 結束結果可能看起來像頁面頂端的影像。
+編譯所有報表後，您可以視需要在控制面板上組織報表。 結果可能像頁面頂端的影像。
 
-如果您在建立此分析時遇到任何問題，或只是想與我們的專業服務團隊接洽， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+如果在構建此分析時遇到任何問題，或只是希望與專業服務團隊接洽， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

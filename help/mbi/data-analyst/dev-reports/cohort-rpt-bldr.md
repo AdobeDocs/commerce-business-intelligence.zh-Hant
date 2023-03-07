@@ -2,22 +2,22 @@
 title: 同類群組Report Builder
 description: 了解在其生命週期中具有類似特徵的使用者群組分析。
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '1599'
+source-wordcount: '1556'
 ht-degree: 0%
 
 ---
 
 # 同類群組Report Builder
 
-您是否曾希望研究用戶的不同子集隨時間的變化如何？ 例如，您是否曾想過，在促銷期間註冊的使用者的平均期限收入是否比沒有註冊的使用者高？ 如果答案是 `Yes`，則 `Cohort Report Builder` 是你的完美工具。 [!DNL MBI] 已經過專門優化，以執行此分析並使其與您的業務相關。
+您是否曾希望研究用戶的不同子集隨時間的變化如何？ 例如，您是否曾想過，在促銷期間註冊的使用者的平均期限收入是否比沒有註冊的使用者高？ 如果答案是 `Yes`，則 `Cohort Report Builder` 是你的完美工具。 [!DNL MBI] 已優化，以便執行此分析並使其與您的業務相關。
 
 ## 同類群組分析是什麼？ {#what}
 
 `Cohort` 分析可廣義定義為對在其生命週期中具有相似特徵的用戶組的分析。 它可讓您識別不同使用者群組的行為趨勢。
 
-如需更深入的入門 `cohort` 分析， [看這裡](https://www.cohortanalysis.com/)  — 我們在上面寫了網站！
+如需更深入的入門 `cohort` 分析， [看這裡](https://www.cohortanalysis.com/).
 
 在 [!DNL MBI] 控制面板，可輕鬆建立使用者 `cohorts` 根據 `cohort` 日期和量度。
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 **新增量度**
 
-既然我們在 `Report Builder`，我們會新增要執行分析的量度(範例： `Revenue` 或 `Orders`)。
+既然你在 `Report Builder`，新增您要執行分析的量度(範例： `Revenue` 或 `Orders`)。
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ![](../../assets/visual-report-builder-cohort-toggle.png)
 
-這會開啟新視窗，供我們設定 `Cohort` 報告。
+這會開啟新視窗，以設定 `Cohort` 報告。
 
 ### 需要5個規格才能建立 `Cohort` 報告：
 
@@ -67,13 +67,13 @@ ht-degree: 0%
 
 #### 2. `Cohort` 時段
 
-選擇要分組的時段 `cohorts` 。 換句話說，您上面選取的時間戳記中哪部分最重要；the `week`, `month`, `quarter`，或 `year`?  您的報表會以您在此選取的任何間隔顯示資料
+選擇要分組的時段 `cohorts` 。 換句話說，您上面選取的時間戳記中哪部分最重要；the `week`, `month`, `quarter`，或 `year`? 您的報表會以您在此選取的任何間隔顯示資料
 
 #### 3.和4。 設定 `cohorts` 檢視及各自的資料量 `cohort` 必須
 
-這些參數可協助您僅檢視 `cohorts` 你感興趣的，還有 `Preview` 方塊，顯示報表中將顯示的確切同類群組。
+這些參數可協助您僅檢視 `cohorts` 你感興趣的，還有 `Preview` 方塊，顯示報表中顯示的同類群組。
 
-依預設，目前 `cohort` 除非您變更每個項目所需的最少資料量，否則不會包含 `cohort` to `0`. 在此情況下， `cohort` 目前時段僅包含部分資料。
+依預設，目前 `cohort` 除非您變更每個項目所需的最小資料量，否則不包含 `cohort` to `0`. 在此情況下， `cohort` 目前時段僅包含部分資料。
 
 #### 5.之後時間範圍 `Cohort` 發生次數
 
@@ -105,9 +105,9 @@ ht-degree: 0%
 
 ![](../../assets/create-cohort-analysis.png)
 
-`Cohort` 實際分析！ 在此，我們可以看到收入依累積和每位使用者計算，會隨著時間而增長。
+`Cohort` 實際分析！ 在此，您可以看到收入依累計和每位使用者計算，會隨著時間而增加。
 
-在本節中，我們會逐步引導您建立自己的 `cohort` 分析。 如需範例(以及說明此程式的動畫GIF)，請參閱 [範例區段](#examples) 這篇文章。
+本節會逐步引導您建立自己的 `cohort` 分析。 如需範例(以及說明此程式的動畫GIF)，請查看 [範例區段](#examples) 這篇文章。
 
 1. 按一下 **[!UICONTROL Report Builder]** 在左側標籤或 **[!UICONTROL Add Report** > **Create Report]** 在任何控制面板中。
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 #### 新增量度
 
-既然我們在 `Cohort Report Builder`，讓我們新增量度(範例： `Revenue` 或 `Number of orders`)，以便執行分析。
+既然你在 `Cohort Report Builder`，新增量度(範例： `Revenue` 或 `Number of orders`)執行分析。
 
 >[!NOTE]
 >
@@ -131,19 +131,19 @@ ht-degree: 0%
 
 #### 設定間隔和時段
 
-接下來，我們設定 `Interval` 和 `Time Period`.
+接下來，設定 `Interval` 和 `Time Period`.
 
 `Interval`
-此 `Interval` 選項可讓您設定 `length` 您的 `cohorts`. 例如，如果此值設為 `Month`，您的報表將以月為單位測量。
+此 `Interval` 選項可讓您設定 `length` 您的 `cohorts`. 例如，如果此值設為 `Month`，則報表的測量單位為月。
 
 您可以使用 **持續時間** 功能表。
 
 `Time Period`
-使用 `Time Period` 功能表來選擇特定使用者 `cohorts` 來分析。 您可以顯示 `cohort`，從清單中選擇，指定時間範圍，或定義滾動時間範圍 `cohorts` 包括。 例如，如果我們使用 `Specific Cohorts` 選項，我們可以選取要納入分析的特定月份：
+使用 `Time Period` 功能表來選擇特定使用者 `cohorts` 來分析。 您可以顯示 `cohort`，從清單中選擇，指定時間範圍，或定義滾動時間範圍 `cohorts` 包括。 例如，如果您使用 `Specific Cohorts` 選項，您可以選取要納入分析的特定月份：
 
 ![使用 `Time Period` 添加特定的菜單 `Cohorts`](../../assets/Cohort_Time_Period.gif)
 
-如果我們將 `cohorts` 在 `Specific Cohorts` 清單中，所有在這些月中註冊的用戶都將包括在內。
+如果您要將 `cohorts` 在 `Specific Cohorts` 清單中，所有在這些月中註冊的用戶都將包括在內。
 
 #### 定義X軸
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 
 ![](../../assets/Cohort_Counting_Members_option.png)
 
-讓我們來看一個範例，以了解此設定。 假設您建立報表， `Revenue` 量度依據 `Customer's registration date`. 你也想用這個觀點 `Average value per cohort member` 以查看一段時間內每位購買者的收入。 為了找出每個買家的平均價值，我們需要決定要除以的買家數量。 是否為 `customers` 表格，或是您的 `orders table` 同一時期？
+請參閱範例以了解此設定。 假設您建立報表， `Revenue` 量度依據 `Customer's registration date`. 你也想用這個觀點 `Average value per cohort member` 以查看一段時間內每位購買者的收入。 要查找每個買家的平均值，您需要決定要除以的買家數量。 是否為 `customers` 表格，或是您的 `orders table` 同一時期？
 
 這個設定回答了這個問題。 計算 `customers` 表格包含平均中的所有客戶（無論他們是否曾購買）。 計算 `orders` 表格僅包含購買的客戶。
 
@@ -171,19 +171,19 @@ ht-degree: 0%
 
 ## 同類群組分析範例 {#examples}
 
-現在，我們已逐步了解如何 `cohort` 分析，讓我們看一些例子。
+現在您已逐步了解如何建立 `cohort` 分析，看一些例子。
 
 ### 我想知道我的使用者 `cohorts` 會隨著時間而增長。
 
 ![使用者 `cohorts` 隨著時間的推移而增長](../../assets/cohort1.gif)
 
-在此範例中，我們分析 `Revenue` 量度，按 `customer's first order date`，並選取最近8個 `cohorts` (定義於 `Time Period` 功能表)來納入分析。 為了觀察群體在一段時間內如何成長，我們使用 `Cumulative Average Value per Cohort Member` `perspective`.
+在此範例中，您分析 `Revenue` 量度，依群組 `customer's first order date`，並選取最近8個 `cohorts` (定義於 `Time Period` 功能表)來納入分析。 為了了解同類群體在一段時間內如何成長，您使用 `Cumulative Average Value per Cohort Member` `perspective`.
 
 ### 我想知道，平均而言，使用者在有生命週期中不同時間點的訂購量。
 
 !![Average number of orders users make at different points in their lifetimes](../../assets/cohort2.gif)
 
-在此範例中，我們分析 `Number of orders` 量度，按 `customer's first order date`，並包含8個最近的同類群組(定義於 `Time Period` 功能表)。 若要查看每個同類群組的平均訂購數，我們已變更 `perspective` to `Average Value per Cohort Member`.
+在此範例中，您分析 `Number of orders` 量度，依群組 `customer's first order date`，並包含最近的八個同類群組(定義於 `Time Period` 功能表)。 若要查看每個同類群組的平均訂購數，您已變更 `perspective` to `Average Value per Cohort Member`.
 
 ### 我想要了解使用者未來的購買活動與其第一個月的業務活動有何不同。
 
@@ -198,7 +198,7 @@ ht-degree: 0%
 這會將 `Standard cohort` (1)中的分析，依每個 `cohort` 群組。 這在比較同類群組效能時很實用，因為並非所有同類群組都可能包含相同的使用者數量。 例如，某個特定 `cohort`.
 
 `Cumulative`
-此 `perspective` 顯示了 `cohort` 分析 `cumulative` 基準。 換言之，它會顯示指定同類群組在生命週期中任何指定時間點迄今的總貢獻。 例如，特定同類群組使用者6週後的累計收入。
+此 `perspective` 顯示了 `cohort` 分析 `cumulative` 基準。 換言之，它會顯示指定同類群組在生命週期中任何指定時間點迄今的總貢獻。 例如，特定同類群組使用者六週後的累計收入。
 
 `Cumulative Average Value per Cohort Member`
 這會將 `Cumulative` (3)中的分析，依每個 `cohort` 群組。 它會顯示每個 `cohort` 成員 `cohort's` 生命。 例如，6月加入之使用者6個月後的平均期限收入。
@@ -211,4 +211,4 @@ ht-degree: 0%
 
 ## 包裝 {#finish}
 
-此 `Cohort Report Builder` 目前已針對依公用程式將使用者分組而最佳化 `cohort date`. 您可能有興趣依類似的活動或屬性將使用者分組，如果是這種情況，我們很想提供協助！ 建議您簽出 [關於定性同類群組的本教學課程](../dev-reports/create-qual-cohort-analysis.md) 開始使用。
+此 `Cohort Report Builder` 已針對使用者分組最佳化，使用公用 `cohort date`. 您可能有興趣依類似的活動或屬性將使用者分組。 Adobe建議簽出 [關於定性同類群組的本教學課程](../dev-reports/create-qual-cohort-analysis.md) 開始使用。

@@ -2,9 +2,9 @@
 title: Zendesk的服務台報告
 description: 了解您最重要的轉介管道。
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >這僅適用於位於 `Pro` 規劃並使用新架構。 如果您有 `Data Warehouse Views` 選取後可用的區段 `Manage Data` 中。
 
-整合您的 [!DNL Zendesk] 使用交易資料庫的資料是更好地了解客戶與銷售或客戶成功團隊互動情況，以及使用您的支援平台的客戶類型的絕佳方式。 在本文中，我們示範如何設定控制面板，以取得關於您的 [!DNL Zendesk] 效能和關聯。
+整合您的 [!DNL Zendesk] 使用交易資料庫的資料是更好地了解客戶與銷售團隊或客戶成功團隊互動的絕佳方式。 它還可幫助您了解客戶使用您的支援平台的類型。 本文示範如何設定控制面板，以取得關於您 [!DNL Zendesk] 效能和關聯。
 
-開始之前，您需要連接 [[!DNL Zendesk]](../integrations/zendesk.md). 此分析包含 [進階計算欄](../../data-warehouse-mgr/adv-calc-columns.md).
+開始之前，您要連接 [[!DNL Zendesk]](../integrations/zendesk.md). 此分析包含 [進階計算欄](../../data-warehouse-mgr/adv-calc-columns.md).
 
 <!-- Getting Started -->
 
@@ -272,7 +272,7 @@ ht-degree: 0%
 * [!UICONTROL Filter]:
 
 * **[!DNL Zendesk]首次回應的平均/中位數時間**
-   * 我們數的票
+   * 已計算的票證
    * 狀態已關閉，已解決
 
 * 在 **`[Zendesk] tickets`** 表格

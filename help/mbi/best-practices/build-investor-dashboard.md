@@ -2,16 +2,16 @@
 title: 為投資者建立儀表板
 description: 了解如何為投資者建立控制面板。
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
 # 建立投資者儀表板
 
-我們的許多客戶都在與投資者合作，需要與他們共用來自平台的資訊，但您為做出日常業務決策而建立的控制面板，可能不是投資者想要的。 在此，我們將介紹一些最佳實務，說明如何建立全面但簡單的控制面板，以便與活躍和潛在投資者共用。
+許多客戶與投資者合作，需要從平台中共用資訊，但您為做出日常業務決策而建立的控制面板，可能不是投資者想要的。 以下說明如何建立全面但簡單、適合與活躍和潛在投資者共用的控制面板的一些最佳實務。
 
 以下是您為投資者控制面板建立報表所需的內容：
 
@@ -71,8 +71,8 @@ ht-degree: 0%
 * 使用簡潔明瞭 [命名約定](../best-practices/naming-elements.md)
 * 與投資者使用者共用控制面板
 * 或透過 **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
-* 僅建立一個控制面板。 這樣可讓內容更易於維護，您將確切了解您的投資者正在查看的內容。
+* 僅建立一個控制面板。 這可讓內容更易於維護，而且您確切知道投資者在看什麼。
 
-周密地組織報告，並注意細節。 完成後，控制面板會如下所示：
+周密地組織報告，並注意細節。 完成後，控制面板如下所示：
 
 ![](../../mbi/assets/investor-dboard-example.png)

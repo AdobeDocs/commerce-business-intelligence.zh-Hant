@@ -2,24 +2,24 @@
 title: 預期Google Analytics資料
 description: 了解如何與Google Analytics量度互動。
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
 
 # 預期 [!DNL Google Analytics] 資料
 
-連線後 [!DNL Google Analytics] 整合，您可以與 [!DNL Google Analytics] 量度 *在`Visual Report Builder`*. 當您輸入 `Visual Report Builder`，若您按一下 **[!UICONTROL Add a Metric]**，此 [!DNL Google Analytics] 設定檔會顯示在資料倉庫中量度下方的下拉式清單中。
+連線後 [!DNL Google Analytics] 整合，您可以與 [!DNL Google Analytics] 量度 *在`Visual Report Builder`*. 當您輸入 `Visual Report Builder`，若您按一下 **[!UICONTROL Add a Metric]**，此 [!DNL Google Analytics] 設定檔會顯示在您Data Warehouse中量度下方的下拉式清單中。
 
 此 [!DNL Google Analytics] 整合 *live*  — 這意味著 `Report Builder` 請求資料 [!DNL Google Analytics] *立即* 新增量度至報表時。 這也表示您可以存取的量度的定義與 [!DNL Google Analytics]，而這些值不是 *倉庫* 在 [!DNL MBI] 帳戶 — 僅在報表中以視覺方式顯示。
 
-[!DNL Google Analytics] 整合 [!DNL MBI] 利用 [!DNL Google Analytics] [核心報表API](https://developers.google.com/analytics/devguides/reporting/core/v3/)，並支援下列量度和維度。
+[!DNL Google Analytics] 整合 [!DNL MBI] 使用 [!DNL Google Analytics] [核心報表API](https://developers.google.com/analytics/devguides/reporting/core/v3/)，並支援下列量度和維度。
 
 >[!NOTE]
 >
->若要避免非預期或無意義的結果，請確認您使用的任何維度都與您在 `Report Builder`. 您可以檢查 [此處](https://developers.google.com/analytics/devguides/reporting/core/dimsmets).
+>若要避免非預期或無意義的結果，請確認您使用的任何維度都與 `Report Builder`. 您可以檢查 [此處](https://ga-dev-tools.google/dimensions-metrics-explorer/).
 
 ## 支援的量度
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 | `All Goals Conversion Rate` | `ga:goalConversionRateAll` |
 | `Total Goal Value` | `ga:goal1ValueAll` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 支援的Dimension
 
@@ -142,4 +142,4 @@ ht-degree: 0%
 | `Custom (User Defined) Value` | `ga:userDefinedValue` | `Yes` |
 | `Year` | `ga:year` | `No` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

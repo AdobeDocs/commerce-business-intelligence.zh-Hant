@@ -2,9 +2,9 @@
 title: sales_order_item表
 description: 了解如何使用sales_order_item表。
 exl-id: 5c48e985-3ba2-414b-bd1f-555b3da763bd
-source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '873'
 ht-degree: 0%
 
 ---
@@ -29,19 +29,19 @@ ht-degree: 0%
 
 | **欄名稱** | **說明** |
 |----|----|
-| `base_price` | 產品在售後銷售時的單位價格 [目錄價格規則、分層折扣和特價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) 在套用任何稅、運費或購物車折扣之前，以商店的基本貨幣表示 |
-| `created_at` | 訂單項的建立時間戳記，通常以UTC儲存在本地。 視您在 [!DNL MBI]，此時間戳記可轉換為 [!DNL MBI] 與資料庫時區不同 |
+| `base_price` | 產品在售後銷售時的單位價格 [目錄價格規則、分層折扣和特價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) 在套用任何稅、運費或購物車折扣之前。 以商店的基本貨幣表示 |
+| `created_at` | 以UTC本地儲存的訂單項的建立時間戳。 視您在 [!DNL MBI]，此時間戳記可轉換為 [!DNL MBI] 與資料庫時區不同 |
 | `item_id` (PK) | 表的唯一標識符 |
 | `name` | 訂單項的文本名稱 |
 | `order_id` | `Foreign key` 與 `sales_order` 表格。 加入 `sales_order.entity_id` 確定與訂單物料關聯的訂單屬性 |
-| `parent_item_id` | `Foreign key` 將簡單產品與其父產品組合或可配置產品相關聯。 加入 `sales_order_item.item_id` 確定與簡單產品關聯的父產品屬性。 對於父訂單項目（即捆綁或可配置產品類型）, `parent_item_id` 將 `NULL` |
+| `parent_item_id` | `Foreign key` 將簡單產品與其父產品組合或可配置產品相關聯。 加入 `sales_order_item.item_id` 確定與簡單產品關聯的父產品屬性。 對於父訂單項目（即捆綁或可配置產品類型）, `parent_item_id` is `NULL` |
 | `product_id` | `Foreign key` 與 `catalog_product_entity` 表格。 加入 `catalog_product_entity.entity_id` 確定與訂單項目關聯的產品屬性 |
 | `product_type` | 已銷售的產品類型。 潛在 [產品類型](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types) 包括：簡單、可配置、分組、虛擬、捆綁和可下載 |
 | `qty_ordered` | 銷售時特定訂單項目在購物車中包含的件數 |
 | `sku` | 已購買訂單項目的唯一標識符 |
 | `store_id` | `Foreign key` 與 `store` 表格。 加入 `store.store_id` 要確定與訂單項關聯的商務商店視圖 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 公用計算列
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 | `Order's status` | 訂單狀態。 通過連接計算 `sales_order_item.order_id` to `sales_order.entity_id` 並返回 `status` 欄位 |
 | `Store name` | 與訂單項目關聯的商務商店名稱。 通過連接計算 `sales_order_item.store_id` to `store.store_id` 並返回 `name` 欄位 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 通用量度
 
@@ -66,13 +66,13 @@ ht-degree: 0%
 | `Products ordered` | 銷售時購物車中包含的產品總數 | `Operation: Sum`<br>`Operand: qty_ordered`<br>`Timestamp: created_at` |
 | `Revenue by products ordered` | 在應用目錄價格規則、分層折扣和特價後，在應用任何稅、運費或購物車折扣之前，購物車中包含的產品在銷售時的總價值 | `Operation: Sum`<br>`Operand: Order item total value (quantity * price)`<br>`Timestamp: created_at` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## `Foreign Key` 連接路徑
 
 `catalog_product_entity`
 
-* 加入 `catalog_product_entity` 表格，以建立新欄，這些欄會傳回與訂單項目相關聯的產品屬性。
+* 加入 `catalog_product_entity` 表格，以建立傳回與訂單項目相關聯的產品屬性的欄。
    * 路徑： `sales_order_item.product_id` （多個）=> `catalog_product_entity.entity_id` (1)
 
 `sales_order`
@@ -82,10 +82,10 @@ ht-degree: 0%
 
 `sales_order_item`
 
-* 加入 `sales_order_item` 建立將父可配置或捆綁SKU的詳細資訊與簡單產品關聯的新列。 請注意，您需要 [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 如需設定這些計算的協助，請參閱「Data Warehouse管理器」。
+* 加入 `sales_order_item` 建立將父可配置或捆綁SKU的詳細資訊與簡單產品關聯的列。 [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 如需設定這些計算的協助，請參閱「Data Warehouse管理器」。
    * 路徑： `sales_order_item.parent_item_id` （多個）=> `sales_order_item.item_id` (1)
 
 `store`
 
-* 加入 `store` 表格，以建立新欄，這些欄會傳回與訂單項目相關聯的商務存放區詳細資料。
+* 加入 `store` 表，用於建立與訂單項關聯的商務儲存相關的返回詳細資訊的列。
    * 路徑： `sales_order_item.store_id` （多個）=> `store.store_id` (1)

@@ -2,9 +2,9 @@
 title: 連線Google Adwords
 description: 了解如何結合廣告成本和從行銷活動中獲得的使用者客戶終身價值(CLV)，以評估行銷活動的投資報酬率。
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 你做了調查，製作了廣告，發起了宣傳。 現在，您可以分析廣告支出資料，並查看您的資金是否得到有效支援。 使用您的廣告支出資料，您可以 [將廣告成本和客戶期限值(CLV)結合在一起，以評估行銷活動的投資報酬率](../../analysis/roi-ad-camp.md) 從您的行銷活動獲得的使用者。
 
-讓我們從進入 [!DNL Google Adwords] 憑證 [!DNL MBI]:
+輸入 [!DNL Google Adwords] 憑證 [!DNL MBI]:
 
 1. 前往下方的「連線」頁面 **管理資料>整合**.
 1. 按一下 **新增整合**，位於畫面的右上方。
 1. 按一下 **[!DNL Google Adwords]** 表徵圖。 這會開啟 [!DNL Google Adwords] 憑據頁。
 1. 輸入 [!DNL Google Analytics] 憑證。 授權程式完成後，系統會將您重新導向回 [!DNL MBI].
-1. 將會顯示設定檔ID清單。 檢查您要連線的設定檔 [!DNL MBI].
+1. 隨即顯示設定檔ID清單。 檢查您要連線的設定檔 [!DNL MBI].
 
    ![](../../../assets/cnnct-profile.png)
 
@@ -35,19 +35,19 @@ ht-degree: 0%
 
 ## `Connecting multiple Google Analytics profiles`
 
-您可能有多個網站連結至單一 [!DNL Google Analytics] 帳戶，以其自己的 [!DNL Google Analytics] 設定檔ID。 在此情況下，您可以選擇將所有設定檔ID納入 [!DNL MBI]. 只要檢查您要在設定檔選取步驟期間納入的設定檔ID即可。
+您可能有多個網站連結至單一 [!DNL Google Analytics] 帳戶，以其自己的 [!DNL Google Analytics] 設定檔ID。 在此情況下，您可以選擇將所有設定檔ID納入 [!DNL MBI]. 檢查在設定檔選取步驟期間您要包含的設定檔ID。
 
 **識別特定網站的Google Analytics設定檔ID:**
 
 1. 登入 [!DNL Google Analytics]
 1. 前往特定網站的 [!DNL Google Analytics] 儀表板
-1. 查看URL — 設定檔ID對應至下列8個數字 `p` 在行尾：
+1. 查看URL — 設定檔ID對應至下列八個數字 `p` 在行尾：
 
    `www.google.com/analytics/web/#home/a11345062w43527078p**XXXXXXXX**`
 
 ## 斷開連接 [!DNL Google Adwords]
 
-1. 造訪您的 [!DNL Google] [帳戶設定](https://www.google.com/accounts/) 頁面。
+1. 造訪您的 [!DNL Google] [帳戶設定](https://www.google.com/account/about/?hl=en) 頁面。
 1. 在 `Security` ，然後按一下 **[!UICONTROL edit]** 下一頁 `Authorizing` 應用程式和網站。
 1. 按一下 **[!UICONTROL revoke access]** 下一頁 [!DNL MBI].
 

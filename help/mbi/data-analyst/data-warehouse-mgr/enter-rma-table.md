@@ -2,9 +2,9 @@
 title: enterprise_rma表
 description: 了解如何分析特定回訪請求的相關資訊。
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 | `order\_id` | 與 `sales\_flat\_order` 表格。 |
 | `customer\_id` | 與 `customer\_entity` 表格。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 公用計算列
 
@@ -36,9 +36,9 @@ ht-degree: 0%
 | `Order's created\_at` | 這是原始訂單的日期。 這可用來取得訂單與回訪請求之間的時間。 |
 | `Customer's order number` | 這是與原始訂單關聯的客戶訂單編號。 |
 | `Seconds between order's created\_at and return's date\_requested` | 從訂單日期到傳回請求的秒數。 |
-| `Return's total value` | 這是傳回的總貨幣金額。 這將是每個退貨項目的個別退貨金額的總和。 |
+| `Return's total value` | 這是傳回的總貨幣金額。 這是每個退貨項目的個別退貨金額的總和。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 通用量度
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 | `Average returned amount` | 傳回的平均貨幣金額。 | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` 欄： `date requested` |
 | `Average time to return` | 從訂單到返回的平均時間。 | `Operation` 欄：請求的訂單日期和退貨日期之間的秒數<br>`Operation`: `Average`<br>`Timestamp` 欄： `date requested` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 連接到其他表
 

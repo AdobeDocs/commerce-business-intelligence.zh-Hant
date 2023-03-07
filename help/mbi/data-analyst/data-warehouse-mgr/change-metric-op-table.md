@@ -2,16 +2,16 @@
 title: 變更量度的操作表
 description: 了解如何變更量度用來執行其操作的資料表格。
 exl-id: c7a074ca-31f4-43e5-85d9-b64dca95dc23
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
 
 # 變更量度的操作表
 
-在某些情況下，您可以決定變更量度用來執行其操作的資料表格。 例如，如果您有新的使用者表格，您會想從「Users\_Old」表格移轉使用者相關量度，以改用「Users\_New」表格。
+在某些情況下，您可以決定變更量度用來執行其操作的資料表格。 例如，如果您有新的使用者表格，則想從「Users\_Old」表格移轉使用者相關量度，以改用「Users\_New」表格。
 
 1. 前往 **[!UICONTROL Data]** > **[!UICONTROL Metrics]**
 1. 按一下 **[!UICONTROL Edit]** 在您要切換 `operational` 表格。
@@ -23,6 +23,6 @@ ht-degree: 0%
 
    ![](../../assets/change-metrics-2.png)
 
-1. 如果新表格中沒有匹配列，則可以 **在資料表格中建立** 或 [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 如果是由 [!DNL MBI])，或只是 **從量度中刪除維度**. 若要刪除您不再需要的維度，只需返回量度的編輯器，並選取要刪除的維度 `Dimensions`.
+1. 如果新表格中沒有匹配列，則可以 **在資料表格中建立** 或 [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 如果是由 [!DNL MBI])。 您也可以 **從量度中刪除維度**. 若要刪除您不再需要的維度，只需返回量度的編輯器，並選取要刪除的維度 `Dimensions`.
 
    ![](../../assets/change-metrics-3.png)

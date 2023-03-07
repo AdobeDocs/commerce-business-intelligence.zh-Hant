@@ -2,9 +2,9 @@
 title: 永久刪除圖表
 description: 了解如何永久刪除圖表。
 exl-id: 34234ff6-b258-4369-9774-946d8423d4da
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '107'
+source-wordcount: '103'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 1. 按一下 **[!UICONTROL Charts]**.
 
-1. 您可以刪除的圖表（根據使用者權限和圖表所有權）會顯示在畫面的右側。
+1. 您可以刪除的圖表（根據使用者權限和圖表所有權）會顯示在畫面右側。
 
 1. 按一下您要刪除的圖表線旁的核取方塊。
 

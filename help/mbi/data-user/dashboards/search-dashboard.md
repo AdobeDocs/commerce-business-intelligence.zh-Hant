@@ -2,16 +2,16 @@
 title: 搜尋控制面板
 description: 了解如何使用「全域搜尋」功能來尋找控制面板，以及如何搜尋其他使用者擁有的控制面板。
 exl-id: eea09ee5-e7ec-4002-8257-a35a64c900a9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
 
 # 搜尋控制面板
 
-在本文中，我們會示範如何使用 [`Global Search` 功能](#global) 尋找控制面板及如何搜尋 [其他使用者擁有的控制面板](#other).
+本文會示範如何使用 [`Global Search` 功能](#global) 尋找控制面板及如何搜尋 [其他使用者擁有的控制面板](#other).
 
 ## 全域搜尋 {#global}
 

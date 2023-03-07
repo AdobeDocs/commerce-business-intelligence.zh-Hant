@@ -1,10 +1,10 @@
 ---
 title: 行銷ROI
-description: 了解如何設定控制面板來追蹤您的通道分析，包括匯總及依行銷活動的投資報酬率。
+description: 了解如何設定控制面板來追蹤您的管道分析，包括匯總及依行銷活動的投資報酬率。
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -13,26 +13,26 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本文包含使用原始架構和新架構的用戶端相關說明。 您在 [新架構](../../administrator/account-management/new-architecture.md) 如果您在從主工具列選取「管理資料」後，有「Data Warehouse檢視」區段可供使用。
+>本文包含使用原始架構和新架構的用戶端指示。 您在 [新架構](../../administrator/account-management/new-architecture.md) 如果您在從主工具列選取「管理資料」後，有「Data Warehouse檢視」區段可供使用。
 
-如果你線上上廣告上花錢，你將不可避免地希望跟蹤你在此支出上的回報，並就進一步的投資做出資料驅動的決策。 在本文中，我們將示範如何設定控制面板來追蹤您的通道分析，包括匯總及依促銷活動的投資報酬率。
+如果您要線上上廣告上花錢，則希望跟蹤此支出的回報，並就進一步的投資做出資料驅動的決策。 本文示範如何設定控制面板來追蹤管道分析，包括匯總和依促銷活動的ROI。
 
 ![](../../assets/Marketing_dashboard_example.png)
 
-開始之前，您要連接 [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md), [!DNL [Adwords]](../importing-data/integrations/google-adwords.md)，和 [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md) 帳戶，並帶入任何額外的線上廣告支出資料。 此分析包含 [進階計算欄](../data-warehouse-mgr/adv-calc-columns.md).
+開始之前，您要連接 [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md), [!DNL [Adwords]](../importing-data/integrations/google-adwords.md)，和 [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md) 帳戶，並帶入任何其他線上廣告支出資料。 此分析包含 [進階計算欄](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## 統一表
 
-**原始架構：** 從各種來源匯集您的支出(例如 [!DNL Facebook Ads] 或 [!DNL Google Adwords])，建議您建立 **統一表** 廣告花費的全部。 您需要一名分析師來為您完成此步驟。 如果你還沒有， [提出支援請求](../../guide-overview.md) 與主題 `[MARKETING ROI ANALYSIS]`，分析師將建立此表格。
+**原始架構：** 從各種來源匯集您的支出(例如 [!DNL Facebook Ads] 或 [!DNL Google Adwords]),Adobe建議建立 **統一表** 廣告花費的全部。 您需要分析師為您完成此步驟。 如果你沒有， [提出支援請求](../../guide-overview.md) 與主題 `[MARKETING ROI ANALYSIS]`，分析師會建立此表格。
 
-**新架構：** 您可以遵循 [此分析程式庫](../../data-analyst/data-warehouse-mgr/create-dw-views.md) 主題。 統一表現在稱為新體系結構上的Data Warehouse視圖。
+**新架構：** 您可以遵循下列範例： [此分析程式庫](../../data-analyst/data-warehouse-mgr/create-dw-views.md) 主題。 統一表現在稱為新體系結構上的Data Warehouse視圖。
 
 ## 計算欄
 
 要建立的列
 
 * **`Consolidated Digital Ad Spend`** 表格
-* **`Campaign name`** 將由分析師建立，作為 **[行銷ROI分析]** 票證
+* **`Campaign name`** 由分析師建立，作為 **[行銷ROI分析]** 票證
 
 >[!NOTE]
 >
@@ -295,7 +295,7 @@ ht-degree: 0%
 
    [!UICONTROL Chart Type]: `Table`
 
-如果您在建立此分析時遇到任何問題，或只是想與我們的專業服務團隊接洽， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+如果在構建此分析時遇到任何問題，或只是希望與專業服務團隊接洽， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ### 相關
 

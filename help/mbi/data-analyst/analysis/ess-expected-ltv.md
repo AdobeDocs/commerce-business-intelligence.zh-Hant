@@ -1,10 +1,10 @@
 ---
 title: 預期期限值(LTV)分析（基本）
-description: 了解如何建立分析以了解您目前客戶的期限值，並預測期限值會隨著更多訂單而增加的情形。
+description: 了解如何建立分析以了解目前客戶的期限值，並預測期限值隨訂單增加而增加的情形。
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 在客戶下更多訂單時預測其期限值，是任何規模業務中最重要的環節之一。
 
-以下是建立分析以了解目前客戶期限值的步驟，以及預測期限值將如何隨著更多訂單而增加的步驟：
+以下是建立分析以了解目前客戶期限值，並預測期限值隨更多訂單增加的步驟：
 
 ![預期期限值](../../assets/expected_ltv_720.png)
 
 ## 建立量度
 
-第一步將是透過下列步驟建立新量度：
+第一步是透過下列步驟來建構新量度：
 * 導覽至 **[!UICONTROL Manage Data > Metrics]**
    * 檢視現有 **[!UICONTROL Avg lifetime revenue]**.
 
@@ -41,13 +41,13 @@ ht-degree: 0%
 * 導覽至 **[!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**.
 * 為控制面板命名，例如 `Expected LTV`.
 
-* 我們將在此建立和新增所有報表。
+* 這是您建立和新增所有報表的位置。
 
 ## 建立報表
 
 >[!NOTE]
 >
->開啟 **[!UICONTROL Time Period:]**，則每個報表的時段會列為 `All-time`. 您可以隨意修改，以符合您的分析需求。 我們建議此控制面板上的所有報表涵蓋相同時段，例如 `All time`, `Year-to-date`，或 `Last 365 days`.
+>開啟 **[!UICONTROL Time Period:]**，則每個報表的時段會列為 `All-time`. 您可以隨意修改，以符合您的分析需求。 Adobe建議此控制面板上的所有報表涵蓋相同時段，例如 `All time`, `Year-to-date`，或 `Last 365 days`.
 
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
@@ -88,7 +88,7 @@ ht-degree: 0%
       [!UICONTROL圖表類型]: `Line`
    >[!NOTE]
    >
-   >請勿為 `Customer's lifetime number of orders`，而是查看新客戶數量達到少數的點，然後手動將每個客戶的期限訂單數量值新增至該點。 例如，如果一次訂購有200位客戶，第2次75位，第3次15位，第4次3位，新增 *1、2和3*.
+   >請勿為 `Customer's lifetime number of orders`. 相反地，請查看新客戶數量達到少數的點，並手動將每個客戶的期限訂單數量值新增至該點。 例如，如果一次訂購有200位客戶，第2次75位，第3次15位，第4次3位，新增 *1、2和3*.
 
 * 新增現有 [!UICONTROL Avg customer lifetime revenue by cohort] 報表。
 

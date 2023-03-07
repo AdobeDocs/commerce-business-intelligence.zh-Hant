@@ -2,22 +2,22 @@
 title: Pro的預期期限值(LTV)分析
 description: 了解如何設定控制面板，協助您了解客戶期限值成長和預期期限值。
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
 
 # 預期期限值分析
 
-在本文中，我們示範如何設定控制面板，以協助您了解客戶期限值成長和預期期限值。
+本文示範如何設定控制面板，協助您了解客戶期限值成長和客戶預期期限值。
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
 此分析僅適用於新架構的Pro客戶。 如果您的帳戶可存取 `Persistent Views` 功能 `Manage Data` 側欄，表示您使用新架構，並可依照此處列出的指示自行建立此分析。
 
-開始之前，請先熟悉 [同類群組報告建立工具。](../dev-reports/cohort-rpt-bldr.md)
+開始之前，請熟悉 [同類群組報告建立工具。](../dev-reports/cohort-rpt-bldr.md)
 
 ## 計算欄
 
@@ -151,6 +151,6 @@ ht-degree: 0%
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Cumulative average value per cohort member`
 
-編譯所有報表後，您可以視需要在控制面板上組織報表。 結束結果可能看起來像頁面頂端的影像。
+編譯所有報表後，您可以視需要在控制面板上組織報表。 結果可能像頁面頂端的影像。
 
-如果您在建立此分析時遇到任何問題，或只是想與我們的專業服務團隊接洽， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+如果在構建此分析時遇到任何問題，或只是希望與專業服務團隊接洽， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

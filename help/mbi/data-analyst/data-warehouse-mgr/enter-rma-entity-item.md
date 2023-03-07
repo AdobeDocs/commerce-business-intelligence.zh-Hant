@@ -2,9 +2,9 @@
 title: Enterprise_Rma_Item_Entity表
 description: 了解如何從請求的回訪分析特定項目的相關資訊。
 exl-id: aa71cb3f-3e0b-4b6b-b4cc-dad103f79c51
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,14 @@ ht-degree: 0%
 |---|---|
 | `entity\_id` | 表的唯一標識符。 每個 `entity\_id` 表示已請求返回的項目。 |
 | `rma\_entity\_id` | 與 `enterprise\_rma` 表格。 |
-| `status` | 項目返回的狀態。 值包括「已接收」、「待定」、「已授權」等。 此狀態的值不一定會符合整體回訪狀態的值。 |
+| `status` | 項目返回的狀態。 值包括「已接收」、「待定」、「已授權」等。 此狀態中的值可能與整體返回狀態的值不匹配。 |
 | `qty\_requested` | 客戶要求退貨的數量。 |
 | `qty\_approved` | 批准退貨的數量。 |
-| `qty\_returned` | 實際返回的數量。 |
+| `qty\_returned` | 退回的數量。 |
 | `order\_item\_id` | 與 `sales\_flat\_order\_item` 表格。 |
 | `product\_sku` | 傳回的SKU。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 公用計算列
 
@@ -38,9 +38,9 @@ ht-degree: 0%
 |---|---|
 | `Return date\_requested` | 這是客戶請求退貨的日期。 |
 | `Item price` | 項目的價格。 |
-| `Return item's total value (qty\_returned * price)` | 這是傳回項目的總貨幣值。 這將用於計算 `enterprise\_rma` 表格。 |
+| `Return item's total value (qty\_returned * price)` | 這是傳回項目的總貨幣值。 這可用來計算 `enterprise\_rma` 表格。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 通用量度
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 | `Number of items returned` | 傳回的項目數。 | 工序列：返回數量<br>操作：總和<br>時間戳列：請求的返回日期 |
 | `Returned items' total value` | 返回的貨幣金額。 | 操作列：退貨項目的總值（退貨數量*價格）<br>操作：總和<br>時間戳列：請求的返回日期 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 連接到其他表
 

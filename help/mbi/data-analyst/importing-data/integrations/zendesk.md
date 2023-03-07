@@ -2,9 +2,9 @@
 title: Connect Zendesk
 description: 了解如何在 [!DNL MBI].
 exl-id: 1c7f7c5c-4b1c-4bcf-8f1d-2b4cf9cdb0fb
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 1. [擷取 [!DNL Zendesk] API Token](#steptwo)
 1. [輸入 [!DNL Zendesk] 登入資訊和Token，於 [!DNL MBI]](#stepthree)
 
-若要完成此程式，您需要開啟兩個瀏覽器視窗或標籤，其中一個用於 [!DNL MBI]，另一個 [!DNL Zendesk] 帳戶。
+若要完成此程式，您必須開啟兩個瀏覽器視窗或標籤，其中一個用於 [!DNL MBI]，另一個 [!DNL Zendesk] 帳戶。
 
 ## 開啟 [!DNL Zendesk] 憑據頁 [!DNL MBI] {#stepone}
 
@@ -37,11 +37,11 @@ ht-degree: 0%
 
 1. 在您登入 [!DNL Zendesk] 帳戶，按一下畫面左下角的「設定」（齒輪）圖示。
 1. 當 `Settings` 功能表，找出 `Channels` 區段。 按一下 **[!UICONTROL API]** 在本節中。
-1. 在 `Token Access` ，按一下旁邊的複選框 `Enabled`. 將顯示「作用中API代號」清單。
+1. 在 `Token Access` ，按一下旁邊的複選框 `Enabled`. 顯示「作用中API代號」的清單。
 1. 按一下 **[!UICONTROL Add New Token]**.
-1. 出現提示時，請為代號輸入標籤。 建議您使用 `MBI`，您一看就知道使用代號的應用程式。
+1. 出現提示時，請為代號輸入標籤。 Adobe建議使用 `MBI`，您一眼就知道使用代號的應用程式。
 1. 按一下 **[!UICONTROL Create]**.
-1. 將建立API代號。 複製此代號；它將用於下一步。
+1. 已建立API代號。 複製此代號；它將用於下一步。
 
 ## 輸入 [!DNL Zendesk] 登入資訊和API代號 [!DNL MBI] {#stepthree}
 

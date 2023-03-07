@@ -2,9 +2,9 @@
 title: 分析庫存水準
 description: 了解如何分析庫存水準。
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ ht-degree: 0%
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
    * **`Avg products sold per week (all time)`**
-      * 將在您提交 **[庫存分析]** 支援請求
+      * 由分析人員在您提交 **[庫存分析]** 支援請求
 
 
 
@@ -183,7 +183,7 @@ ht-degree: 0%
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * 選取 [!UICONTROL column]: `Avg products sold per week (all time)`
    * **`Weeks on hand`**
-      * 將在您提交 **[!UICONTROL INVENTORY ANALYSIS]** 支援請求
+      * 由分析人員在您提交 **[!UICONTROL INVENTORY ANALYSIS]** 支援請求
 
 
 
@@ -240,4 +240,4 @@ ht-degree: 0%
       [!UICONTROL Chart type]: `Table`
 
 
-如果您在建立此分析時遇到任何問題，或只是想與我們的專業服務團隊接洽， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+如果在構建此分析時遇到任何問題，或只是希望與專業服務團隊接洽， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

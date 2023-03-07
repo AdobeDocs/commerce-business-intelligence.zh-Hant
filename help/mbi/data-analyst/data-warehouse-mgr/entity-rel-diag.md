@@ -2,9 +2,9 @@
 title: 實體關係圖
 description: 了解幾個ER圖表，以幫助您直觀地了解幾個常見的Commerce資料庫表之間的關係。
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在本文中，您會看到 **加入**, **關係** 和 **路徑**. 這些詞都用於描述兩個表的連接方式。
+>在本文中，您會看到 **加入**, **關係**，和 **路徑**. 這些詞都用於描述兩個表的連接方式。
 
 ## 核心商務 `ER` 圖表
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 >
 >`customer\_entity.entity\_id` 不等於 `sales\_flat\_order.entity\_id`. 第一個可以認為 `customer\_id` 第二個可以被認為 `order\_id.`
 
-內 [!DNL MBI]，如果這兩個表之間的路徑尚未存在，則您可以 [建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md) 在「Data Warehouse」標籤中。 準備好建立路徑時，其定義如下：
+內 [!DNL MBI]，如果這兩個表之間的路徑不存在，您可以 [建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md) 在「Data Warehouse」標籤中。 準備好建立路徑時，其定義如下：
 
 ![](../../assets/SFO___CE_path.png)
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 一個訂單可以包含許多項目。 這兩個表之間的關係是 `sales\_flat\_order.entity\_id = sales\_flat\_order\_item.order\_id`.
 
-內 [!DNL MBI]，如果這兩個表之間的路徑尚未存在，則您可以 [建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md) 在「Data Warehouse」標籤中。 準備好建立路徑時，其定義如下：
+內 [!DNL MBI]，如果這兩個表之間的路徑不存在，您可以 [建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md) 在「Data Warehouse」標籤中。 準備好建立路徑時，其定義如下：
 
 ![](../../assets/SFOI___SFO_path.png)
 
@@ -55,6 +55,6 @@ ht-degree: 0%
 
 一個產品可以購買許多項目。 這兩個表之間的關係是 `catalog\_product\_entity.entity\_id = sales\_flat\_order\_item.product`.
 
-內 [!DNL MBI]，如果這兩個表之間的路徑尚未存在，則您可以 [建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md) 在「Data Warehouse」標籤中。 準備好建立路徑時，其定義如下：
+內 [!DNL MBI]，如果這兩個表之間的路徑不存在，您可以 [建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md) 在「Data Warehouse」標籤中。 準備好建立路徑時，其定義如下：
 
 ![](../../assets/SFOI___CPE_path.png)

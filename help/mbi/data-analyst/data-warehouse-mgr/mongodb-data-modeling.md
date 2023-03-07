@@ -2,9 +2,9 @@
 title: MongoDB資料模型
 description: 了解如何避免造成問題的資料模式。
 exl-id: 556c854b-5d7c-4f72-8ed7-5bc08d9ee5b9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 子巢狀陣列 {#subnested}
 
-如果您的集合如下列範例， [!DNL MBI] 只會復寫項目陣列中的資料。 不會提取子項目陣列中的資料。
+如果您的集合如下列範例， [!DNL MBI] 僅複製項陣列中的資料。 未提取子項陣列中的資料。
 
 ```bash
     {
@@ -54,7 +54,7 @@ ht-degree: 0%
     }
 ```
 
-這通常發生在使用物件且陣列更適當的地方。 現在，我們將重新處理上述範例：
+這通常發生在使用物件且陣列更適當的地方。 現在，重新編寫上述範例：
 
 ```bash
     {

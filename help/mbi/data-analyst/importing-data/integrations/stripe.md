@@ -2,9 +2,9 @@
 title: 連接條帶
 description: 了解如何管理及追蹤您企業的付款和發票資料。
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../../assets/stripe-logo.png)
 
-[!DNL Stripe] 可讓您管理並追蹤企業的付款和發票資料。 連接 [!DNL Stripe] 帳戶 [!DNL MBI] 是簡單的兩步驟程式：
+[!DNL Stripe] 允許您管理和跟蹤您公司的付款和發票資料。 連接 [!DNL Stripe] 帳戶 [!DNL MBI] 是簡單的兩步驟程式：
 
 1. [新增 [!DNL Stripe] 作為 [!DNL MBI]](#stepone)
 1. [允許 [!DNL MBI] 存取 [!DNL Stripe] 資料](#steptwo)

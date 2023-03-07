@@ -2,16 +2,16 @@
 title: 管理使用者和權限
 description: 了解如何管理您的 [!DNL MBI] 使用者。
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
 # 管理使用者權限
 
-MBI旨在成為整個組織內的單一真相來源。 每位使用者將擁有自己的控制面板集， [與其他使用者共用](../../data-user/dashboards/share-dashboard-with-users.md).
+MBI旨在成為整個組織內的單一真相來源。 每位使用者都有自己的控制面板集， [與其他使用者共用](../../data-user/dashboards/share-dashboard-with-users.md).
 
 ## 使用者權限層級
 
@@ -44,32 +44,32 @@ MBI旨在成為整個組織內的單一真相來源。 每位使用者將擁有�
 | **存取帳單** | ✔ | ✔** |  |
 | **聯絡支援** | ✔ | ✔ | ✔ |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 >[!NOTE]
 >
 >_您可以限制&#x200B;**[!UICONTROL Standard]**使用者 [存取特定量度](../../administrator/user-management/restrict-metric-access.md)._
 >
->**[!UICONTROL Standard] _使用者可使用額外的權限設定存取帳單。_
+>**[!UICONTROL Standard] _使用者可透過額外的權限設定存取帳單。_
 >
->**[!UICONTROL Read-Only]** 使用者只能 _檢視_ 與其共用的控制面板；無法在中建立或編輯任何項目 [!DNL MBI]，他們也無法搜尋控制面板並將其新增至帳戶。 建議您與共用特定控制面板集 **[!UICONTROL Read-Only]** 您或團隊其他成員維護的使用者。 請勿複製控制面板集。
+>**[!UICONTROL Read-Only]** 使用者只能 _檢視_ 與其共用的控制面板；無法在中建立或編輯任何項目 [!DNL MBI]，他們也無法搜尋控制面板並將其新增至帳戶。 Adobe建議您與共用特定控制面板集 **[!UICONTROL Read-Only]** 您或團隊其他成員維護的使用者。 請勿複製控制面板集。
 
 ## 其他權限：帳單與技術 {#billingtech}
 
-除了一般權限層級外，還有另外兩個使用者名稱 —  `Billing` 和 `Technical`. 這些名稱旨在與一般權限級別一起使用。
+除了一般權限層級外，還有另外兩個使用者名稱 —  `Billing` 和 `Technical`. 這些名稱應與一般權限層級搭配使用。
 
 ### 帳單
 
-`Billing` 用戶有權訪問帳單頁，並可以更改付款資訊。 此外，我們的團隊也可能會聯絡他們，詢問帳單問題。
+`Billing` 用戶有權訪問帳單頁，並可以更改付款資訊。 此外，Adobe也可就帳單問題與他們聯絡。
 
-`Admin` 依預設，使用者可存取「帳單」標籤，但標準使用者若具有 `Billing` 核取方塊。
+`Admin` 使用者可存取 `Billing` 標籤，但 `Standard` 如果使用者擁有 `Billing` 核取方塊。
 
 ![帳單](../../assets/billing.png)<!--{: width="550" height="363"}-->
 
 ### 技術
 
-`Technical` 使用者沒有任何特定權限，此設定只會標籤您組織內的技術聯絡人。 我們的團隊可能會就技術問題聯絡這些使用者。
+`Technical` 使用者沒有任何特定權限，此設定只會標籤您組織內的技術聯絡人。 如有技術問題，Adobe可聯絡這些使用者。
 
 `Admin` 使用者可以按一下 **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** 並遵循提示。 在中建立使用者後 [!DNL MBI]，您邀請的幸運者將會收到如何完成帳戶設定程式的電子郵件指示。
 
-隨時， `Admins` 可以按一下 **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**. 此頁面顯示使用者的權限，以及使用者可存取的量度和控制面板。
+隨時， `Admins` 可以按一下 **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**. 此頁面顯示使用者的權限，以及可存取的量度和控制面板。

@@ -2,9 +2,9 @@
 title: 預期 [!DNL Adobe Analytics] 資料
 description: 了解連接RDS實例的步驟。
 exl-id: 4df66ec1-c7f3-4b02-8f0f-49cada99c14c
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 | `_id` | 此欄是主要索引鍵。 |
 | `_item_hash` | [!DNL MBI] 唯一識別碼。 此列由建立 [!DNL MBI]. |
 | `_updated_at` | 此欄包含上次更新資料列的時間。 建立者 [!DNL MBI]. |
-| `start_date` | 列包含資料的開始日期。 `start_date` 會一律為同一天的00:00（在一列中）。 |
+| `start_date` | 列包含資料的開始日期。 `start_date` 一列內一律為當天00:00。 |
 | `end_date` | 列包含資料的結束日期。 `end_date` 一列內一律為當天23:59。 |
 | `page_views` | 所選量度：已識別時段的頁面檢視總數。 |
 | `page` | 所選維：具有追蹤檢視的個別頁面名稱。 |
@@ -46,6 +46,6 @@ ht-degree: 0%
 | 限制 | 說明 |
 | --- | --- |
 | `Historical data period` | 如同其他協力廠商整合， [!DNL Adobe Analytics] 整合會提取有限的歷史資料，然後繼續保持資料更新。 歷史期間設為2週。 |
-| `Empty component combinations` | 某些量度和維度的組合不含任何資料。 如果為複製選擇了這種組合， [!DNL MBI] 從複製表中排除該列。 若要避免選取此類組合，您可以先在 [[!DNL Adobe Analytics] 工作區](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=en) 以驗證您會獲得預期的資料。 |
-| `Re-authorization cadence` | 重新授權 [!DNL Adobe Analytics] 目前每兩週需要一次整合。 若要重新授權，請前往整合的編輯頁面，然後按一下 **[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]**. |
-| `One dimension per row` | [!DNL Adobe Analytics] 一次提供一個維度的量度資料。 如果您在設定期間選取多個維度， [!DNL MBI] 表格將包含每個其他維度的單一維度值和null。 |
+| `Empty component combinations` | 某些量度和維度的組合不含任何資料。 如果為複製選擇了這種組合， [!DNL MBI] 從複製表中排除該列。 若要避免選取此類組合，您可以先在 [[!DNL Adobe Analytics] 工作區](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=en) 來驗證您獲得的資料。 |
+| `Re-authorization cadence` | 重新授權 [!DNL Adobe Analytics] 每兩週需要整合一次。 若要重新授權，請前往整合的編輯頁面，然後按一下 **[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]**. |
+| `One dimension per row` | [!DNL Adobe Analytics] 一次提供一個維度的量度資料。 如果您在設定期間選取多個維度， [!DNL MBI] 表包含每個其他維的單個維值和空值。 |

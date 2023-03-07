@@ -2,9 +2,9 @@
 title: 控制面板中的大量編輯圖表
 description: 了解如何使用 [!DNL MBI].
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 * [此 ](#dates)
 
-話雖如此，想想看。 *這些變更需要永久性嗎？* 否則，請考慮複製控制面板，然後變更新控制面板中的日期。 這可讓您在仍進行所需變更時，保留原始控制面板。
+話雖如此，想想看。 *這些變更需要永久性嗎？* 否則，請考慮複製控制面板，然後變更新控制面板中的日期。 這可讓您在進行所需變更時，保留原始控制面板。
 
 >[!NOTE]
 >
->如果您要變更許多報表，更新程式可能需要一些時間。
+>如果您變更許多報表，更新程式可能需要一些時間。
 
 ## 使用 `Find/Replace` {#findreplace}
 

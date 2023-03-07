@@ -2,9 +2,9 @@
 title: 格式化和導入財務資料
 description: 了解如何格式化和匯入財務資料。
 exl-id: cdbed262-7cf1-4fd6-ad5a-c44d26dffba7
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 本主題探討匯入財務資料以進行分析的最佳方式，位於 [!DNL MBI].
 
-二維、跨索引標籤資料表通常是用於財務資料的格式。 由於欄和列中都有按標籤分類的值，這種類型的版面可能很容易用人的眼睛和電子錶格工具來查看，但對資料庫來說不太友好。
+二維、跨索引標籤資料表通常是用於財務資料的格式。 在欄和列中，以標籤分類的值，這種類型的版面可能很容易用人眼和試算表工具來檢視，但對資料庫不好用。
 
 ![](../../mbi/assets/crosstab.png)
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 要使用Excel透視表平面化二維表：
 
 1. 開啟包含二維資料表的檔案。
-1. 開啟資料透視表嚮導。 在Windows中，快捷方式是 `Alt-D`. 在Mac OSX中，輸入 `Command-Option-P`.
+1. 開啟資料透視表嚮導。 在Windows中，快捷方式是 `Alt-D`. 在Mac OS中，輸入 `Command-Option-P`.
 1. 選擇 **[!UICONTROL Multiple consolidated ranges]** 按一下 **[!UICONTROL Next]**.
 1. 選擇 **[!UICONTROL I will create the page fields]** 按一下 **[!UICONTROL Next]**.
 1. 選取二維表格中的整個資料集，包括標籤。 確保 `0` 已針對所需頁面欄位數選取，然後按一下 **[!UICONTROL Next]**.

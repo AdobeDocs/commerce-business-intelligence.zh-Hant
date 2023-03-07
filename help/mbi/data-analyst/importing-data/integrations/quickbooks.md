@@ -2,9 +2,9 @@
 title: Connect QuickBooks
 description: 了解您的企業財務現在如何與銷售和營銷資料並存，讓您能夠快速、輕鬆地監控您的開支、識別過度支出等。
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---

@@ -2,7 +2,7 @@
 title: 與其他使用者共用控制面板
 description: 了解如何與其他使用者共用控制面板。
 exl-id: 6279b049-d1b2-4d40-b30b-ee8772e990f4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 與其他使用者共用控制面板
 
-共用控制面板是讓團隊保持循環狀態，並鼓勵協作討論的絕佳方式。 透過建立和共用中央控制面板，您可以為您的團隊提供所需的資訊，同時仍能維持控制。 [建議](../../best-practices/share-dashboard-best-practice.md){:target=&quot;_blank&quot;} `Edit` 對少數項的權限，可將意外變更最小化。
+共用控制面板是讓團隊保持循環狀態，並鼓勵協作討論的絕佳方式。 透過建立和共用中央控制面板，您可以為您的團隊提供所需的資訊，同時仍能維持控制。 [Adobe建議](../../best-practices/share-dashboard-best-practice.md){:target=&quot;_blank&quot;} `Edit` 對少數項的權限，可將意外變更最小化。
 
 >[!NOTE]
 >

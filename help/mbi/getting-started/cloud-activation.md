@@ -2,9 +2,9 @@
 title: 啟動您的 [!DNL MBI] 雲端入門訂閱帳戶
 description: 了解如何啟用 [!DNL MBI] 雲端入門專案。
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->協助啟動 [!DNL MBI] for `Cloud Pro` 項目，請聯繫您的Adobe客戶團隊或客戶技術顧問。
+>如需啟動的協助 [!DNL MBI] for `Cloud Pro` 項目，請聯繫您的Adobe客戶團隊或客戶技術顧問。
 
 1. 建立 [!DNL MBI] 帳戶。
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
    - 按一下 **[!UICONTROL Create Instance]**. 如果您沒有看到此按鈕，請聯繫您的Adobe客戶團隊或客戶技術顧問。
 
-   - 選取 `Cloud Starter` 訂閱。 如果您只有 `cloud starter` 訂閱會自動選取。
+   - 選取 `Cloud Starter` 訂閱。 如果您只有 `cloud starter` 訂閱，此為預設選項。
 
    - 按一下 **[!UICONTROL Continue]**.
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
    ![](../assets/create-account-4.png)
 
-   - 建立帳戶後，您便可以選擇將使用者新增至您的新帳戶。 現在可以新增技術管理員以執行下列步驟。
+   - 建立帳戶後，您可以將使用者新增至新帳戶。 現在可以新增技術管理員以執行下列步驟。
 
    ![](../assets/create-account-5.png)
 
@@ -49,13 +49,13 @@ ht-degree: 0%
 
    ![](../assets/create-account-6.png)
 
-   在連接資料庫以執行入門流程的第三步之前，您需要收集一些資訊。 您會填入 `Connect your database` 頁面。
+   先收集一些資訊，然後才能連接資料庫以執行入門流程的第三步。 您完成 `Connect your database` 頁面。
 
 1. 建立專用 [!DNL MBI] 使用者。
 
-   - 在 [Adobe Commerce帳戶](https://accounts.magento.com).
+   - 在 [Adobe Commerce帳戶](https://account.magento.com/customer/account/login).
 
-   - _為什麼是新使用者？_ [!DNL MBI] 需要新增至專案的使用者持續擷取要傳輸至帳戶的新資料 [!DNL MBI] 資料倉庫。 此使用者將作為該連線。 步驟4將新增此使用者至專案。
+   - _為什麼是新使用者？_ [!DNL MBI] 需要新增至專案的使用者持續擷取要傳輸至帳戶的新資料 [!DNL MBI] Data Warehouse。 此使用者可作為該連線。 步驟4將介紹如何將此用戶添加到項目。
 
    - 擁有專屬 [!DNL MBI] 使用者可防止新增的使用者因疏忽而停用或刪除，並停止 [!DNL MBI] 連線。
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 1. 取得您的 [!DNL MBI] `SSH` 鍵。
 
-   - 前往 `Connect your database` 頁面 [!DNL MBI] 設定使用者介面並向下捲動至 `Encryption settings`.
+   - 前往 `Connect your database` 頁面 [!DNL MBI] 設定使用者介面，向下捲動至 `Encryption settings`.
 
    - 若 `Encryption Type` 欄位，選擇 `SSH Tunnel`.
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 1. 新增 [!DNL MBI] `Public key` 到 [!DNL MBI] 在步驟5中建立的使用者。
 
-   - 前往 [您的雲端Adobe Commerce帳戶](https://accounts.magento.cloud/). 使用您的帳戶登入資訊登入新 [!DNL MBI] 用戶已建立。 然後前往 `Account Settings` 標籤。
+   - 前往 [您的雲端Adobe Commerce帳戶](https://account.magento.com/cloud/customer/login/). 使用您的帳戶登入資訊登入新 [!DNL MBI] 用戶已建立。 然後前往 `Account Settings` 標籤。
 
    - 向下捲動頁面，然後展開下拉式清單 `SSH` 鍵。 然後按一下 **[!UICONTROL Add a public key]**.
 
@@ -174,7 +174,7 @@ ht-degree: 0%
 
 1. 獲取加密設定的資訊。
 
-   - 專案UI提供 `SSH` 存取字串。 此字串可用來收集 `Remote Address` 和 `Username` 在 `Encryption` 設定。 使用 `SSH Access` 按一下專案UI主分支上的存取網站按鈕，找到您的 `User Name` 和 `Remote Address` 如下所示。
+   - 專案UI提供 `SSH` 存取字串。 此字串可用來收集 `Remote Address` 和 `Username` 在 `Encryption` 設定。 使用 `SSH Access` 字串，方法是按一下專案UI主要分支上的存取網站按鈕，然後找到您的 `User Name` 和 `Remote Address` 如下所示。
 
    ![](../assets/create-account-13.png)
 

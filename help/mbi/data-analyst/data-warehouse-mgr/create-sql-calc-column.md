@@ -2,9 +2,9 @@
 title: 建立和使用SQL計算列
 description: 了解如何以新MBI體系結構上的SQL計算列的形式建立高級列。
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '817'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 過去， `advanced` 只能由客戶成功團隊的分析師在此完成 [!DNL MBI]. 現在，所有功能都掌握在最終用戶手中，而高級列可以以 `SQL Calculation` 欄 [!DNL MBI] 架構。
 
-此 `Calculation` 列類型(現在在「Data Warehouse管理器」中可用)是同一表操作，允許您使用PostgreSQL邏輯轉換表上的列。 關於可在 `Calculatio`在PostgreSQL網站上可以找到n列類型 [此處](https://www.postgresql.org/docs/9.6/static/functions.html).
+此 `Calculation` 列類型(現在在「Data Warehouse管理器」中可用)是同一表操作，允許您使用PostgreSQL邏輯轉換表上的列。 關於可在 `Calculatio`在PostgreSQL網站上可以找到n列類型 [此處](https://www.postgresql.org/docs/9.6/functions.html).
 
-可使用 `Calculation` 欄幾乎無限制，但大部分欄可使用IF-THEN陳述式和基本算術來建立，這些將用於以下範例中。
+可使用 `Calculation` 欄幾乎無限制，但大部分欄可使用IF-THEN陳述式和基本算術來建立，於下列範例中使用。
 
 **範例1:客戶的最後訂單？**
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 **範例2:訂單項目總值（數量*價格）**
 
-我們的許多客戶喜歡在項目層級分析收入，依欄位(例如 `product name` 或 `category`. 實際上，大多數資料庫並不會按訂單提供某產品的收入；而是提供訂單中的銷售數量和項目價格。
+許多客戶喜歡在項目層級分析收入，並依欄位(如 `product name` 或 `category`. 實際上，大多數資料庫並不會按訂單提供某產品的收入；而是提供訂單中的銷售數量和項目價格。
 
 為了啟用產品收入分析，大部分帳戶都有一個名為 `Order item total value (quantity * price)` 在 `Orders Items` 表格。 如果您的帳戶位於新架構，則此欄也會使用 `Calculation` 欄，並可在下方的螢幕擷取中看到：
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 在商務結構中， `Order item total value (quantity * price)` 欄使用輸入 `qty ordered` 和 `base price` 已將 `A` 和 `B` 分別為5個。
 
-此新欄所傳回的值會是美金和美分，因此正確的資料類型為 `Decimal(10,2)`.
+此新欄傳回的值是美元和美分，因此正確的資料類型為 `Decimal(10,2)`.
 
 **力學**
 
@@ -57,20 +57,20 @@ ht-degree: 0%
 
 ![](../../assets/blobid2.png)
 
-您可以從此處建立新 `Calculation` 欄，請依照下列步驟執行：
+您可在此建立 `Calculation` 欄，請依照下列步驟執行：
 
 1. 選取要在其上新增 `Calculation` 欄。
 1. 在正確的表格上，按一下 **[!UICONTROL Create New Column]** 在畫面右上角。
 1. 從 `Select a definition` 下拉式清單，選取 `Same Table`.
 1. 選擇 `Calculation` 作為 `column definition equation`.
 1. 輸入列名。
-1. 選擇 `input` 表中用於新列邏輯的列。 您新增的每欄都會收到字母別名，因此第一欄會是 `A`，第二個是 `B` 等等。
-1. 在視窗中，使用輸入項的字母別名為新列鍵入PostgreSQL邏輯。 SQL計算應限於單個列定義，包括SQL查詢的SELECT和FROM語句之間的所有邏輯。 請注意，使用任何輸入字母的SQL關鍵字應為小寫。 例如，使用 `CASE` 語句，應以小寫寫 —  `case`. 系統假設大寫 `A` 是指其中一個輸入。
+1. 選擇 `input` 表中用於新列邏輯的列。 您新增的每欄都會收到字母別名，因此第一欄是 `A`，第二個是 `B` 等等。
+1. 在視窗中，使用輸入項的字母別名為新列鍵入PostgreSQL邏輯。 SQL計算應限於單個列定義，包括SQL查詢的SELECT和FROM語句之間的所有邏輯。 使用任何輸入字母的SQL關鍵字應為小寫。 例如，使用 `CASE` 語句，應以小寫寫 —  `case`. 系統假設大寫 `A` 是指其中一個輸入。
 1. 選擇相應的資料類型。
    * `Integer`  — 整數
    * `Decimal(10,2)`  — 小數位數，總位數為10，其中2位於小數點的右側
-   * `String`  — 使用非數字的任何類型的文本或字元系列
+   * `String`  — 使用非數字的任何類型的文本或一系列字元
    * `Datetime` - yyyy-MM-dd hh:mm:ss格式
 
-1. 按一下 **[!UICONTROL test column]**. 這會為每個輸入產生5個測試值的清單，並顯示每組測試值之步驟6的邏輯結果。 如果SQL的任何部分生成錯誤，則將返回相應的錯誤消息。 請注意，只有當所有輸入列均為本機欄位時，才能產生範例結果。 如果任何輸入欄是計算欄，則您需要將欄新增至量度並在視覺化Report Builder中檢視，以驗證結果
-1. 對結果滿意後，按一下 **[!UICONTROL Save]**，您的欄將可供使用。
+1. 按一下 **[!UICONTROL test column]**. 這會為每個輸入產生五個測試值的清單，並顯示每組測試值之步驟6的邏輯結果。 如果SQL的任何部分生成錯誤，則返回相應的錯誤消息。 只有當所有輸入列均為本機欄位時，才能產生範例結果。 如果任何輸入欄是計算欄，則必須將欄新增至量度並在視覺化Report Builder中檢視，以驗證結果
+1. 對結果滿意後，按一下 **[!UICONTROL Save]**. 欄可供使用。

@@ -2,28 +2,28 @@
 title: 定義客戶集中度
 description: 了解如何設定控制面板，協助您測量總收入在客戶群中的分配方式。
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
 
 # 客戶集中度
 
-在本文中，我們示範如何設定控制面板，以協助您評估總收入在客戶群中的分配方式。 了解客戶貢獻的收入百分比，並建立分段清單，以便將市場最佳化，並留住高貢獻的客戶。
+本文示範如何設定控制面板，協助您測量總收入在客戶群中的分配方式。 了解客戶貢獻的收入百分比，並建立分段清單，以便將市場最佳化，並留住高貢獻的客戶。
 
 此分析包含 [進階計算欄](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## 快速入門
 
-首先，您必須上傳僅包含主索引鍵且值為1的檔案。 這可建立一些分析所需的計算欄。
+您必須先上傳僅包含主索引鍵且值為1的檔案。 這可為分析建立一些必要的計算欄。
 
-您可以善用 [檔案上傳程式](../importing-data/connecting-data/using-file-uploader.md) 以及下方的影像，以設定檔案格式。
+您可以使用 [檔案上傳程式](../importing-data/connecting-data/using-file-uploader.md) 和下面的影像，以設定檔案格式。
 
 ## 計算欄
 
-如果您位在原始架構上(例如，如果您沒有 `Data Warehouse Views` 選項 `Manage Data` 功能表)，您會想要聯絡我們的支援團隊以建置下列欄。 在新架構上，可從 `Manage Data > Data Warehouse` 頁面。 詳細說明如下。
+如果您位在原始架構上(例如，如果您沒有 `Data Warehouse Views` 選項 `Manage Data` 功能表)，請連絡支援團隊以建置下列。 在新架構上，可從 `Manage Data > Data Warehouse` 頁面。 詳細說明如下。
 
 如果貴公司允許客戶訂購，則會作進一步區分。 若是如此，您可以忽略 `customer_entity` 表格。 如果不允許來賓訂單，請忽略 `sales_flat_order` 表格。
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 * [!UICONTROL Calculation]:- **當A為Null時則為Null，否則為1結尾**
 * [!UICONTROL Datatype]: – `Integer`
 
-* `Customer concentration` 表格(這是您剛上傳的檔案，其編號為 `1`)
+* `Customer concentration` 表格(這是您上傳的檔案，編號為 `1`)
 * 客戶數
 * [!UICONTROL Column type]: – `Many to One > Count Distinct`
 * 路徑 —  `sales_flat_order.(input) reference > Customer Concentration.Primary Key` 或 `customer_entity.(input)reference > Customer Concentration.Primary Key`
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->使用的百分位數甚至是客戶的分割，代表您客戶群的第X個百分位數。 每個客戶都會與一個1到100的整數相關聯，這可視為其終身收入 *排名*. 例如，如果特定客戶的客戶收入百分位數為 **5**，此客戶位於 ***第5個百分位數*** 按終身收入計算。
+>使用的百分位數甚至是客戶的分割，代表您客戶群的第X個百分位數。 每個客戶都與1到100的整數相關聯，這可視為其終身收入 *排名*. 例如，如果特定客戶的客戶收入百分位數為 **5**，此客戶位於 ***第五百分位數*** 按終身收入計算。
 
 ## 量度
 
@@ -156,6 +156,6 @@ ht-degree: 0%
 
    [!UICONTROL Chart type]: `Table`
 
-編譯所有報表後，您可以視需要在控制面板上組織報表。 結束結果可能類似於上述範例控制面板。
+編譯所有報表後，您可以視需要在控制面板上組織報表。 結果可能類似於上述範例控制面板。
 
-如果您在建立此分析時遇到任何問題，或只是想與我們的專業服務團隊接洽， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+如果在構建此分析時遇到任何問題，或只是希望與專業服務團隊接洽， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

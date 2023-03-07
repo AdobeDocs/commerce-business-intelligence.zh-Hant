@@ -2,9 +2,9 @@
 title: 建立量度
 description: 了解如何使用量度建立圖表。
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 0%
 >
 >需要 [管理權限](../../administrator/user-management/user-management.md).
 
-簡言之，量度就是測量。 在SQL和資料庫結構中，度量類似於在變數時段內儲存的查詢。
+放大，量度是測量。 在SQL和資料庫結構中，度量就像在變數期間儲存的查詢。
 
-在 [!DNL MBI]，您可以將量度用於 [建立圖表](../../data-user/reports/ess-rpt-build-visual.md). 例如，量度 `revenue` 是訂購的總量。 量度 `average customer revenue per order` 是客戶每筆訂單的平均花費。
+在 [!DNL MBI]，您可以將量度用於 [建立圖表](../../data-user/reports/ess-rpt-build-visual.md). 例如，量度 `revenue` 是訂單總數。 量度 `average customer revenue per order` 是客戶每筆訂單的平均花費。
 
 在報表中使用時，量度可依指定時段分析，並 [篩選或分段](../../best-practices/segment-filter.md) 不同類別。 請考慮分析按性別分組的平均客戶收入，在此例中， `average customer revenue per order` 是量度，性別是群組。
 
 ## 定義量度 {#define}
 
-1. 若要建立新量度，請按一下 **[!UICONTROL Data** > **Metrics]**.
+1. 若要建立量度，請按一下 **[!UICONTROL Data** > **Metrics]**.
 
 1. 按一下 **[!UICONTROL Create New Metric]**.
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 1. 為量度命名。
 
-   我們建議您一個名稱，一看就能告訴您量度是什麼。 例如： `Average Order Revenue`.
+   Adobe建議您一個名稱，一看就能告訴您量度是什麼。 例如： `Average Order Revenue`.
 
 1. 下一步是定義量度的用途。 使用下拉式功能表，定義量度的操作， `operation` 欄和 `date` 維度：
 
@@ -54,21 +54,21 @@ ht-degree: 0%
 
 ## 新增篩選器 {#filters}
 
-此 `Filter` 區段可讓您建立新篩選器或套用 [儲存的篩選集](../../data-user/reports/ess-manage-data-filters.md) 至量度。
+此 `Filter` 區段可讓您建立篩選或套用 [儲存的篩選集](../../data-user/reports/ess-manage-data-filters.md) 至量度。
 
-為我們的 `average order revenue` 量度中，我們不想加入在設定商店時可能已執行的任何測試訂單，這會導致錯誤的結果。 我們可以套用篩選器集，從資料集中移除這些訂單。 建立篩選器後，篩選器將套用至使用此量度建立的所有圖表。
+若 `average order revenue` 量度時，您不想加入在設定商店時可能已完成的任何測試訂單，這會導致錯誤結果。 可套用篩選集以從資料集中移除這些順序。 建立篩選器後，篩選器將套用至使用此量度建立的所有圖表。
 
 此 `Filter Logic` 區段可讓您進一步定義量度的行為。
 
-* &quot;\[&quot;`A`\]或\[`B`「\]」將允許滿足篩選器「\[」的任何資料`A`\]或\[`B`\]
-* &quot;\[&quot;`A`\]和\[`B`「\]」將僅允許滿足兩個篩選器「\[」的資料`A`\]和\[`B`\]
-* &quot;(\[`A`\]和\[`B`\])或\[`C`「\]」將僅允許同時滿足兩個篩選器的資料\[`A`\]和\[`B`\]或滿足篩選器\[`C`單獨
+* &quot;\[&quot;`A`\]或\[`B`「\]」允許滿足篩選器「\[」的任何資料`A`\]或\[`B`\]
+* &quot;\[&quot;`A`\]和\[`B`「\]」僅允許滿足兩個篩選器「\[」的資料`A`\]和\[`B`\]
+* &quot;(\[`A`\]和\[`B`\])或\[`C`「\]」僅允許同時滿足兩個篩選器的資料\[`A`\]和\[`B`\]或滿足篩選器\[`C`單獨
 
 ## 新增Dimension {#dimensions}
 
-此 [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 區段顯示所有可用的資料維度，以供篩選或分組之用；依預設，所有可用的資料欄都會列為維度。 繼續我們的範例，如果我們想依轉介來源劃分收入，我們可以在此執行此操作。
+此 [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 區段顯示所有可用的資料維度，以供篩選或分組之用；依預設，所有可用的資料欄都會列為維度。 繼續此範例，如果您想要依反向連結來源來劃分收入，可以在此執行此操作。
 
-除了將所有可用資料欄列為維度外， [!DNL MBI] 也會猜測哪些欄可分組。 *對報表資料進行分段或分組*，欄必須標示為可群組。
+除了將所有可用資料欄列為維度外， [!DNL MBI] 猜測哪些欄可分組。 *對報表資料進行分段或分組*，欄必須標示為可群組。
 
 ## 結束 {#finish}
 

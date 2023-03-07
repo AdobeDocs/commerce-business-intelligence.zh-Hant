@@ -2,9 +2,9 @@
 title: 啟用 [!DNL MBI] 內部部署訂閱帳戶
 description: 了解如何啟用 [!DNL MBI] 內部部署訂閱的帳戶。
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
    ![](../assets/create-account-4.png)
 
-   - 建立帳戶後，您可以選擇將使用者新增至新帳戶。 現在可以新增技術管理員以執行下列步驟。
+   - 建立帳戶後，您可以新增使用者至新帳戶。 現在可以新增技術管理員以執行下列步驟。
 
    ![](../assets/create-account-5.png)
 

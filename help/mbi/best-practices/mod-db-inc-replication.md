@@ -2,9 +2,9 @@
 title: 修改資料庫以支援增量複製
 description: 了解如何修改資料庫以支援增量複製。
 exl-id: c9a38892-6096-4eb5-8a53-35b8b7b083dc
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -32,4 +32,4 @@ ht-degree: 0%
 
 ## 包裝
 
-通過對表進行微幅修改，您可以利用更快、更高效的增量複製方法；不過，如果這仍不可能，您仍可以執行其他步驟， [減少更新時間](../best-practices/reduce-update-cycle-time.md) 和 [優化資料庫](../best-practices/opt-db-analysis.md).
+通過對表進行微幅修改，您可以利用更快、更高效的增量複製方法。 不過，如果無法這麼做，您仍可執行其他步驟， [減少更新時間](../best-practices/reduce-update-cycle-time.md) 和 [優化資料庫](../best-practices/opt-db-analysis.md).

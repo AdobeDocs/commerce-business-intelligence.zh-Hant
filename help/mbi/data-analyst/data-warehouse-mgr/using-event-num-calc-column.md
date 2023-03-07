@@ -2,9 +2,9 @@
 title: 事件編號計算列
 description: 了解「事件編號」計算欄的用途和用途。
 exl-id: c234621e-2e68-4e63-8b0d-7034d1b5fe1f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '382'
 ht-degree: 3%
 
 ---
@@ -44,6 +44,6 @@ ht-degree: 3%
 1. 按一下 **[!UICONTROL Create a Column]** 並選擇 `EVENT_NUMBER (…)` 欄類型：在 `Same Table` 區段。
 1. 第一個下拉式清單 `Event Owner` 指定要為其確定排名的實體。 若 `Customer's order number`，客戶識別碼，例如 `customer_id` 或 `customer_email` 會是 `Event Owner`.
 1. 第二個下拉式清單 `Event Rank` 指定執行決定行排名的序列的列。 若 `Customer's order number`, `created_at` 時間戳記會是 `Event Rank`.
-1. 在 `Options` 下拉式清單中，您可以新增篩選器以排除不會考慮列。 排除的列會具有 `NULL` 值。
+1. 在 `Options` 下拉式清單中，您可以新增篩選器以排除不會考慮列。 排除的列具有 `NULL` 值。
 1. 為欄提供名稱，然後按一下 **[!UICONTROL Save]**.
-1. 欄將可供使用 _立即。_
+1. 欄可供使用 _立即。_

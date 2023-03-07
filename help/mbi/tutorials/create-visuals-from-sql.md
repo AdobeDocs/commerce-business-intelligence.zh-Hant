@@ -2,9 +2,9 @@
 title: 從SQL查詢建立視覺效果
 description: 了解如何熟悉SQLReport Builder中使用的術語，並為建立SQL視覺效果奠定堅實的基礎。
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 >
 >日期和時間戳記也可作為 `Categories`. 它們只是查詢中的另一列資料，必鬚根據需要在查詢本身中格式化和排序。
 
-- `Labels`:這些標籤會以x軸標籤的形式套用。 分析隨時間的資料趨勢時，通常會將年和月欄指定為標籤。 可以將多列設定為「標籤」。
+- `Labels`:這些標籤會以x軸標籤的形式套用。 分析隨時間的資料趨勢時，會將年和月欄指定為標籤。 可以將多列設定為「標籤」。
 
 ## 步驟1:寫入查詢
 
@@ -66,11 +66,11 @@ ht-degree: 0%
 
 ![](../assets/SQL_initial_report_results.png)
 
-在此範例中，我們希望此圖表能呈現一段時間的趨勢。 若要建立，請使用下列設定：
+在此範例中，您希望此圖表呈現一段時間的趨勢。 若要建立，請使用下列設定：
 
-- `Series`:選取 `Items sold` 欄作為 `Series` 因為我們想量一下。 定義 `Series` 欄，您會在報表中看到單一圖表。
+- `Series`:選取 `Items sold` 欄作為 `Series` 因為你想量一下。 定義 `Series` 欄，您會在報表中看到單一圖表。
 
-- `Category`:在此範例中，我們想以不同行形式檢視每個產品。 為此，我們設定 `Product name` 作為 `Category`.
+- `Category`:在此範例中，您想要以不同行形式檢視每個產品。 要執行此操作，請設定 `Product name` 作為 `Category`.
 
 - `Labels`:使用欄 `year` 和 `month` 作為標籤，以便能夠檢視 `Items Sold` 隨時間變化。
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 >
 >查詢必須包含 `ORDER BY` 子句(如果 `date`/`time` 欄。
 
-以下是我們如何建立此視覺效果的快速檢視，從執行查詢到設定報表皆然：
+以下快速了解您如何建立此視覺效果，從執行查詢到設定報表：
 
 ![](../assets/SQL_report_settings.gif)
 
