@@ -2,9 +2,9 @@
 title: MBI
 description: 了解如何使用 [!DNL MBI] 適用於Adobe Commerce的功能。
 breadcrumb-title: MBI使用手冊
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 807ad89d38ab6c6dfb05afb3b1b9c09947633efa
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -16,10 +16,8 @@ ht-degree: 0%
 - [[!DNL MBI] 簡介](getting-started/getting-started.md)
 - 快速入門 {#start}
    - [入門](getting-started/onboarding.md)
-   - [針對 [!DNL On-Premise]](getting-started/onpremise-activation.md)
-   - [針對 [!DNL Cloud Starter]](getting-started/cloud-activation.md)
+   - [啟動您的 [!DNL MBI] 帳戶](getting-started/onpremise-activation.md)
    - [登入 [!DNL MBI] 帳戶](getting-started/sign-in.md)
-   - [MBI Essentials與MBI Pro](getting-started/essentials-vs-pro.md)
 - 管理員 {#administrator}
    - 帳戶管理 {#acct-mgmt}
       - [優點 [!DNL New Architecture]](../mbi/administrator/account-management/new-architecture.md)

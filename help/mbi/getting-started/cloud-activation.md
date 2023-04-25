@@ -2,9 +2,10 @@
 title: 啟動您的 [!DNL MBI] 雲端入門訂閱帳戶
 description: 了解如何啟用 [!DNL MBI] 雲端入門專案。
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+redirect_to: https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/start/onpremise-activation.html?lang=en
+source-git-commit: 807ad89d38ab6c6dfb05afb3b1b9c09947633efa
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

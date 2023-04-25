@@ -2,9 +2,9 @@
 title: 預期Google Analytics資料
 description: 了解如何與Google Analytics量度互動。
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 0e9d30155432a29cf67d29a10646a2971ea0382f
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 0%
 連線後 [!DNL Google Analytics] 整合，您可以與 [!DNL Google Analytics] 量度 *在`Visual Report Builder`*. 當您輸入 `Visual Report Builder`，若您按一下 **[!UICONTROL Add a Metric]**，此 [!DNL Google Analytics] 設定檔會顯示在您Data Warehouse中量度下方的下拉式清單中。
 
 此 [!DNL Google Analytics] 整合 *live*  — 這意味著 `Report Builder` 請求資料 [!DNL Google Analytics] *立即* 新增量度至報表時。 這也表示您可以存取的量度的定義與 [!DNL Google Analytics]，而這些值不是 *倉庫* 在 [!DNL MBI] 帳戶 — 僅在報表中以視覺方式顯示。
+
++++支援的量度和Dimension(Google Analytics3或Universal Analytics)
+
+>[!NOTE]
+>
+>2023年7月1日起，標準Universal Analytics([!DNL Google Analytics] 3)屬性將不再處理資料。 2023年7月1日之後，您將能看到Universal Analytics報表。 不過，新資料只會流入 [!DNL Google Analytics] 4個屬性。
 
 [!DNL Google Analytics] 整合 [!DNL MBI] 使用 [!DNL Google Analytics] [核心報表API](https://developers.google.com/analytics/devguides/reporting/core/v3/)，並支援下列量度和維度。
 
@@ -143,3 +149,17 @@ ht-degree: 0%
 | `Year` | `ga:year` | `No` |
 
 {style="table-layout:auto"}
+
++++
+
++++支援的量度和Dimension(Google Analytics4)
+
+[!DNL Google Analytics] 整合 [!DNL MBI] 使用 [!DNL Google Analytics] [資料API v1(GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
+
+>[!NOTE]
+>
+> MBI不支援以下維： `cohort`, `cohortNthDay`, `cohortNthMonth`，和 `cohortNthWeek`.
+>
+>若要避免非預期或無意義的結果，請確認您使用的任何維度都與 `Visual Report Builder`. 您可以檢查 [GA4Dimension與量度總管](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/).
+
++++
