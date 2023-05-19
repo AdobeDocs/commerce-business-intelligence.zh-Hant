@@ -1,41 +1,41 @@
 ---
-title: 匯入Linkshare資料
-description: 了解如何將Linkshare資料匯入 [!DNL MBI].
+title: 導入Linkshare資料
+description: 學習將Linkshare資料導入 [!DNL Commerce Intelligence]。
 exl-id: 1c2025a6-746c-4929-bbb1-62af1afcbc49
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
 
 ---
 
-# 匯入 `Linkshare` 資料
+# 導入 [!DNL Linkshare] 資料
 
-將 `Linkshare` 資料 [!DNL MBI]，您需要執行兩項動作：
+要將 [!DNL Linkshare] 資料 [!DNL Adobe Commerce Intelligence]你需要做兩件事：
 
-1. [將Linkshare資料匯出至 ](#export)
-1. [將試算表上傳至 [!DNL MBI]](../connecting-data/using-file-uploader.md)
+1. [導出中的Linkshare資料 ](#export)
+1. [將電子錶格上載到 [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
-## 從Linkshare匯出資料 {#export}
+## 從Linkshare導出資料 {#export}
 
-1. 在 `Linkshare` 帳戶，轉到 **[!UICONTROL Reports** > **Run Reports].**
+1. 在 [!DNL Linkshare] 帳戶，轉到 **[!UICONTROL Reports** > **Run Reports]。**
 
-1. 在 `Report` 下拉式清單，選取 **[!UICONTROL Sales & Activity Report]**.
+1. 在 `Report` 下拉清單，選擇 **[!UICONTROL Sales & Activity Report]**。
 
-1. 將所有其他下拉式清單選項保留為預設選項。
+1. 將所有其它下拉選項保留為預設選擇。
 
-1. 在 `Date Range` 下拉式清單，選取任何選項(`Sun - Sat`, `Mon - Sun`)符合您的 `Start of Week` 設定 [!DNL MBI].
+1. 在 `Date Range` 下拉選項(`Sun - Sat`。 `Mon - Sun`與 `Start of Week` 設定 [!DNL Commerce Intelligence]。
 
-1. 清除 `Compare Year-Over-Year Data` 核取方塊。
+1. 清除 `Compare Year-Over-Year Data` 複選框。
 
-1. 在 `Data Type`，選取 `Transaction Date`.
+1. 下 `Data Type`選中 `Transaction Date`。
 
-   ![匯入\_linkshare\_data.png](../../../assets/importing_linkshare_data.png)
+   ![導入\_linkshare\_data.png](../../../assets/importing_linkshare_data.png)
 
-1. 按一下 **[!UICONTROL View Report]**.
+1. 按一下 **[!UICONTROL View Report]**。
 
-1. 按一下 **[!UICONTROL Download]**.
+1. 按一下 **[!UICONTROL Download]**。
 
-   此時，a `.csv` 檔案和下載。
+   此時， `.csv` 檔案並下載。
 
-下載檔案後，您可將其上傳至 [!DNL MBI] 使用 [`File Upload` 功能](../connecting-data/using-file-uploader.md).
+下載檔案後，您可以將其上載到 [!DNL Commerce Intelligence] 使用 [`File Upload` 特徵](../connecting-data/using-file-uploader.md)。

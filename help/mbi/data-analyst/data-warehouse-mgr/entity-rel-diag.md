@@ -1,29 +1,29 @@
 ---
 title: 實體關係圖
-description: 了解幾個ER圖表，以幫助您直觀地了解幾個常見的Commerce資料庫表之間的關係。
+description: 瞭解幾個ER圖，以幫助您直觀地顯示幾個常用Commerce資料庫表之間的關係。
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
 
 # 實體關係圖
 
-什麼是 **[!UICONTROL entity relationship (ER) diagram]**? 安 `ER` 圖表是資料庫內表格及其彼此間關係的視覺效果。 本文包含一些ER圖表，可幫助您直觀地顯示幾個常見的Commerce資料庫表之間的關係。
+什麼是 **[!UICONTROL entity relationship (ER) diagram]**? 安 [!UICONTROL ER] 圖是資料庫中表的可視化，以及表與表之間的關係。 本主題包含 [!UICONTROL ER] 圖，幫助您直觀顯示幾個常用的Adobe Commerce資料庫表之間的關係。
 
 >[!NOTE]
 >
->在本文中，您會看到 **加入**, **關係**，和 **路徑**. 這些詞都用於描述兩個表的連接方式。
+>在整個主題中，您可以看到 **加入**。 **關係**, **路徑**。 這些詞都用於描述兩個表的連接方式。
 
-## 核心商務 `ER` 圖表
+## 核心商務 [!UICONTROL ER] 圖
 
-![4_DB_Chart](../../assets/4_DB_Chart.png)
+![4_資料庫_圖表](../../assets/4_DB_Chart.png)
 
-此 `ER` 圖表表示Commerce資料庫內核心表之間的關係。 通過一次查看多個關係，您可以了解資料在多個表之間的關聯。
+此 `ER` 圖表表示Commerce資料庫中核心表之間的關係。 通過一次查看多個關係，您可以看到資料在多個表之間如何關聯。
 
-以下各節包含 `ER` 一次對兩個表的特定圖表。 若要檢視圖表及其隨附說明，請按一下該區段的標題。
+以下各節包含 `ER` 一次特定於兩個表的圖。 要查看圖及其附帶說明，請按一下該節的標題。
 
 ## `customer\_entity & sales\_flat\_order`
 
@@ -33,9 +33,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->`customer\_entity.entity\_id` 不等於 `sales\_flat\_order.entity\_id`. 第一個可以認為 `customer\_id` 第二個可以被認為 `order\_id.`
+>`customer\_entity.entity\_id` 不等於 `sales\_flat\_order.entity\_id`。 第一個可以認為 `customer\_id` 第二個可以認為 `order\_id.`
 
-內 [!DNL MBI]，如果這兩個表之間的路徑不存在，您可以 [建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md) 在「Data Warehouse」標籤中。 準備好建立路徑時，其定義如下：
+在 [!DNL Commerce Intelligence]，如果這兩個表之間的路徑不存在，則 [建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md) Data Warehouse。 準備好建立路徑時，將按如下方式定義：
 
 ![](../../assets/SFO___CE_path.png)
 
@@ -43,9 +43,9 @@ ht-degree: 0%
 
 ![1_OneOrderManyItems](../../assets/1_OneOrderManyItems.png)
 
-一個訂單可以包含許多項目。 這兩個表之間的關係是 `sales\_flat\_order.entity\_id = sales\_flat\_order\_item.order\_id`.
+一個訂單可以包含多個項。 這兩個表之間的關係是 `sales\_flat\_order.entity\_id = sales\_flat\_order\_item.order\_id`。
 
-內 [!DNL MBI]，如果這兩個表之間的路徑不存在，您可以 [建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md) 在「Data Warehouse」標籤中。 準備好建立路徑時，其定義如下：
+在 [!DNL Commerce Intelligence]，如果這兩個表之間的路徑不存在，則 [建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md) 的子菜單。 準備建立路徑時，定義路徑，如下所示。
 
 ![](../../assets/SFOI___SFO_path.png)
 
@@ -53,8 +53,8 @@ ht-degree: 0%
 
 ![3_OneProductManyTimes](../../assets/3_OneProductManyTimes.png)
 
-一個產品可以購買許多項目。 這兩個表之間的關係是 `catalog\_product\_entity.entity\_id = sales\_flat\_order\_item.product`.
+一個產品可以購買多種產品。 這兩個表之間的關係是 `catalog\_product\_entity.entity\_id = sales\_flat\_order\_item.product`。
 
-內 [!DNL MBI]，如果這兩個表之間的路徑不存在，您可以 [建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md) 在「Data Warehouse」標籤中。 準備好建立路徑時，其定義如下：
+在 [!DNL Commerce Intelligence]，如果這兩個表之間的路徑不存在，則 [建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md) Data Warehouse。 準備建立路徑時，定義路徑，如下所示。
 
 ![](../../assets/SFOI___CPE_path.png)

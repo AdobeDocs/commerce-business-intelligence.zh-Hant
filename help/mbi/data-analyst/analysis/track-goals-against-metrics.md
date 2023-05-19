@@ -1,63 +1,63 @@
 ---
-title: 根據量度追蹤目標
-description: 了解如何設定控制面板，協助您根據實際資料（包括收入、新註冊使用者和訂單）追蹤業務目標。
+title: 根據指標跟蹤目標
+description: 瞭解如何設定儀表板，幫助您根據實際資料跟蹤業務目標 — 包括收入、新註冊用戶和隨時間推移的訂單。
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
 
-# 根據績效量度追蹤目標
+# 根據效能指標跟蹤目標
 
-大部分的客戶都想追蹤 **業務目標**，但不會意識到這在 [!DNL MBI]. 本文示範如何設定控制面板，協助您根據實際資料（包括收入、新註冊使用者和訂單）追蹤業務目標。 您也會學習如何比較逐年績效，所有這一切都在控制面板中，如下所示：
+大多數客戶都想跟蹤 **業務目標**&#x200B;但是沒意識到這在 [!DNL Adobe Commerce Intelligence]。 本主題演示了如何設定儀表板，以幫助您根據實際資料跟蹤業務目標 — 包括收入、新註冊用戶和隨時間推移的訂單。 您還將學習如何將年與年的績效進行比較，所有這些都位於這樣的儀表板中：
 
 ![](../../assets/Goals-_dashboard_2.png)
 
-開始之前，請熟悉 [檔案上傳程式](../importing-data/connecting-data/using-file-uploader.md) 並確定您已定義指定時段的業務目標。
+在開始之前，您應查看 [檔案上載程式](../importing-data/connecting-data/using-file-uploader.md) 並確保您已定義了給定時間段的業務目標。
 
-## 快速入門
+## 入門
 
-您必須先上傳包含貴公司特定每日/每月/每季目標的檔案。
+您需要首先上載包含特定業務的每日/每月/季度目標的檔案。
 
-您可以使用 [檔案上傳程式](../importing-data/connecting-data/using-file-uploader.md) 和下面的影像，以設定檔案格式。 客戶端跟蹤的最常見目標 [!DNL MBI] 包括訂購、收入和新註冊帳戶。
+您可以使用 [檔案上載程式](../importing-data/connecting-data/using-file-uploader.md) 和下面的影像來格式化檔案。 客戶端跟蹤的最常見目標 [!DNL Commerce Intelligence] 包括訂單、收入和新註冊帳戶。
 
 ![](../../assets/Goals-_Excel.png)
 
-## 量度
+## 度量
 
-為每個目標建立一個新量度。 例如，如果您上傳每月收入和訂單目標，則需要建立兩個新量度：
+為每個目標建立一個新度量。 例如，如果您載入每月收入和訂單目標，則需要建立兩個新指標：
 
-* **每月收入目標**
-* 在 **`Monthly goals`** 表格
-* 此量度會執行 **總和**
-* 在 **`Revenue target`** 欄
-* 由 **`Month`** timestamp
+* **月收入目標**
+* 在 **`Monthly goals`** 表
+* 此度量執行 **和**
+* 在 **`Revenue target`** 列
+* 按 **`Month`** 時間戳
 
 * **每月訂單目標**
-* 在 **`Monthly goals`** 表格
-* 此量度會執行 **總和**
-* 在 **`Orders target`** 欄
-* 由 **`Month`** timestamp
+* 在 **`Monthly goals`** 表
+* 此度量執行 **和**
+* 在 **`Orders target`** 列
+* 按 **`Month`** 時間戳
 
 * **每月新註冊帳戶目標**
-* 在 **`Monthly goals`** 表格
-* 此量度會執行 **總和**
-* 在 **`New registered accounts target`** 欄
-* 由 **`Month`** timestamp
+* 在 **`Monthly goals`** 表
+* 此度量執行 **和**
+* 在 **`New registered accounts target`** 列
+* 按 **`Month`** 時間戳
 
-## 報表
+## 報告
 
-一如既往，在分析目標時，混合使用靜態值和視覺化圖表會很有幫助。 以下是三個範例報表，可協助您開始追蹤收入績效。
+分析目標時，將靜態值和可視圖表混合在一起是很有幫助的。 下面是三個示例報告，幫助您開始跟蹤收入表現。
 
-* **剩餘收入用於實現目標**
-* 量度 `A`: `Revenue`
+* **剩餘收入實現目標**
+* 度量 `A`: `Revenue`
 * 
 
-   [!UICONTROL量度]: `Revenue`
+   [!UICONTROL度量]: `Revenue`
 
-* 量度 `B`: `Target Revenue`
+* 度量 `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
@@ -67,7 +67,7 @@ ht-degree: 0%
 
    [!UICONTROL Format]: `Number`
 
-* [!UICONTROL Time period]:（您想要的任何相關時段）
+* [!UICONTROL Time period]:（不管您想要什麼時間段）
 * 
    [!UICONTROL Interval]: `Month`
 * 
@@ -75,20 +75,20 @@ ht-degree: 0%
    [!UICONTROL圖表類型]: `Scalar`
 
 * **收入目標**
-* 量度 `A`: `Revenue`
+* 度量 `A`: `Revenue`
 * 
 
-   [!UICONTROL量度]: `Revenue`
+   [!UICONTROL度量]: `Revenue`
 
-* 量度 `B`: `Target Revenue`
+* 度量 `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
-* 量度 `C`: `Revenue (amount change since previous year)` （隱藏）
+* 度量 `C`: `Revenue (amount change since previous year)` （隱藏）
 * 
-   [!UICONTROL量度]: `Revenue`
+   [!UICONTROL度量]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
-* [!UICONTROL Formula]:（去年這個月）
+* [!UICONTROL Formula]:（去年本月）
 * 
    [!UICONTROL公式]: `(A-C)`
 * 
@@ -96,11 +96,11 @@ ht-degree: 0%
    [!UICONTROL Format]: `Currency`
 
 * 關閉 `Multiple Y-Axes`
-* [!UICONTROL Time period]:（不管您想要什麼相關時段）*
+* [!UICONTROL Time period]:（不管您需要什麼相關時間段）*
 * 
    [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 
-完成上述收入目標報表後，您就可以針對訂單、註冊帳戶或目標檔案上傳中包含的任何其他值，建立相同的目標報表。
+完成上述收入目標報表後，您可以建立與訂單、註冊帳戶或目標檔案上載中包含的任何其它值相關的目標相同的報表。
 
-編譯所有報表後，您可以視需要在控制面板上組織報表。 結果可能類似於此頁頂部的影像。
+編譯完所有報告後，可以根據需要在儀表板上組織這些報告。 結果可能與此頁頂部的影像類似。

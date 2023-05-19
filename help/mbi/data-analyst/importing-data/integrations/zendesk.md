@@ -1,55 +1,55 @@
 ---
-title: Connect Zendesk
-description: 了解如何在 [!DNL MBI].
+title: 連接Zendesk
+description: 瞭解如何整合幫助台報告 [!DNL Commerce Intelligence]。
 exl-id: 1c7f7c5c-4b1c-4bcf-8f1d-2b4cf9cdb0fb
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
 
-# Connect [!DNL Zendesk]
+# 連接 [!DNL Zendesk]
 
 >[!NOTE]
 >
->需要 [管理權限](../../../administrator/user-management/user-management.md).
+>需要 [管理權限](../../../administrator/user-management/user-management.md)。
 
 ![](../../../assets/Zendesk_logo.png)
 
-連接 [!DNL Zendesk] 資料可讓您整合 [!DNL MBI]. 這可讓您最佳化客戶支援，並監控服務台效能與收入。
+連接 [!DNL Zendesk] 資料使您能夠在 [!DNL Commerce Intelligence]。 這使您能夠優化客戶支援並監控服務台的效能以及收入。
 
-連接 [!DNL Zendesk] 資料是簡單的三步驟程式：
+連接 [!DNL Zendesk] 資料是一個簡單的三步過程：
 
-1. [開啟 [!DNL Zendesk] 憑據頁 [!DNL MBI]](#stepone)
-1. [擷取 [!DNL Zendesk] API Token](#steptwo)
-1. [輸入 [!DNL Zendesk] 登入資訊和Token，於 [!DNL MBI]](#stepthree)
+1. [開啟 [!DNL Zendesk] 「憑據」頁 [!DNL Commerce Intelligence]](#stepone)
+1. [檢索 [!DNL Zendesk] API令牌](#steptwo)
+1. [輸入 [!DNL Zendesk] 登錄資訊和令牌 [!DNL Commerce Intelligence]](#stepthree)
 
-若要完成此程式，您必須開啟兩個瀏覽器視窗或標籤，其中一個用於 [!DNL MBI]，另一個 [!DNL Zendesk] 帳戶。
+要完成此過程，您需要開啟兩個瀏覽器窗口或頁籤 — 一個 [!DNL Commerce Intelligence]，另一個 [!DNL Zendesk] 帳戶。
 
-## 開啟 [!DNL Zendesk] 憑據頁 [!DNL MBI] {#stepone}
+## 開啟 [!DNL Zendesk] 「憑據」頁 [!DNL Commerce Intelligence] {#stepone}
 
-1. 前往 `Integrations` 頁面底下 **[!UICONTROL Manage Data** > **&#x200B;資料來源&#x200B;**> **整合]**.
-1. 按一下 **[!UICONTROL Add Integration]**，位於畫面的右側。
-1. 按一下 [!DNL Zendesk] 表徵圖。 這會開啟 [!DNL Zendesk] 憑據頁。
+1. 轉到 `Integrations` 頁 **[!UICONTROL Manage Data** > **&#x200B;資料源&#x200B;**> **整合]**。
+1. 按一下 **[!UICONTROL Add Integration]**，位於螢幕的右側。
+1. 按一下 [!DNL Zendesk] 表徵圖 開啟 [!DNL Zendesk] 「憑據」頁。
 
-## 擷取 [!DNL Zendesk] API代號 {#steptwo}
+## 檢索 [!DNL Zendesk] API令牌 {#steptwo}
 
-1. 在您登入 [!DNL Zendesk] 帳戶，按一下畫面左下角的「設定」（齒輪）圖示。
-1. 當 `Settings` 功能表，找出 `Channels` 區段。 按一下 **[!UICONTROL API]** 在本節中。
-1. 在 `Token Access` ，按一下旁邊的複選框 `Enabled`. 顯示「作用中API代號」的清單。
-1. 按一下 **[!UICONTROL Add New Token]**.
-1. 出現提示時，請為代號輸入標籤。 Adobe建議使用 `MBI`，您一眼就知道使用代號的應用程式。
-1. 按一下 **[!UICONTROL Create]**.
-1. 已建立API代號。 複製此代號；它將用於下一步。
+1. 在登錄到的窗口/頁籤中 [!DNL Zendesk] 帳戶，按一下螢幕左下角的「設定（齒輪）」表徵圖。
+1. 當 `Settings` 菜單顯示，查找 `Channels` 的子菜單。 按一下 **[!UICONTROL API]** 的下界。
+1. 在 `Token Access` 頁面中，按一下旁邊的複選框 `Enabled`。 顯示活動API令牌的清單。
+1. 按一下 **[!UICONTROL Add New Token]**。
+1. 出現提示時，請輸入令牌的標籤。 Adobe建議使用 `Commerce Intelligence`，您一眼就知道，哪個應用程式正在使用令牌。
+1. 按一下 **[!UICONTROL Create]**。
+1. 建立API令牌。 複製此令牌；下一步將使用。
 
-## 輸入 [!DNL Zendesk] 登入資訊和API代號 [!DNL MBI] {#stepthree}
+## 輸入 [!DNL Zendesk] 登錄資訊和API令牌 [!DNL Commerce Intelligence] {#stepthree}
 
-1. 輸入 [!DNL Zendesk] 網站首碼和登入電子郵件 [!DNL Zendesk] 憑據頁 [!DNL MBI].
-1. 輸入您的API代號。
-1. 按一下 **[!UICONTROL Save & Connect]**. 如果連線成功，則 *連接成功！* 訊息會顯示在畫面頂端。
+1. 輸入 [!DNL Zendesk] 站點前置詞和登錄電子郵件 [!DNL Zendesk] 「憑據」頁 [!DNL Commerce Intelligence]。
+1. 輸入API令牌。
+1. 按一下 **[!UICONTROL Save & Connect]**。 如果連接成功，則 *連接成功！* 消息顯示在螢幕頂部。
 
 ## 相關：
 
 * [預期 [!DNL Zendesk] 資料](../integrations/exp-zendesk-data.md)
-* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

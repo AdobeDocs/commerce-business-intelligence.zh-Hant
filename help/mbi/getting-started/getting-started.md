@@ -1,22 +1,27 @@
 ---
-title: 簡介
-description: 了解 [!DNL MBI].
+title: Adobe Commerce情報簡介
+description: 瞭解Adobe Commerce情報。
 exl-id: 0c960d8c-9bb7-429e-a88e-21678a77b710
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
 
-# 簡介
 
-[!DNL MBI] 是雲端資料管理與分析平台。 [!DNL MBI] 讓您能夠輕鬆整合和管理您的資料來源、建立資料模型、建立圖表和報表，以及維護單一的真相來源。
+# 簡介 [!DNL Adobe Commerce Intelligence]
 
-[!DNL MBI]，是Adobe Commerce的核心功能，可跨多個資料來源提供最佳實務洞察，讓商戶能夠以科學的資料導向決策，並採取清楚且知情的動作。 自動化您的報告流程，並轉變您做出業務決策和跨團隊協作的方式。 利用 [!DNL MBI].
+>[!NOTE]
+>
+>[!DNL Adobe Commerce Intelligence] 以前稱為 [!DNL Magento Business Intelligence]。 當前正在為本指南執行一系列更新以捕獲更改。
 
-連接、整合和轉換您的資料。 對您的業務資料進行視覺化、分析，並取得深入且可操作的分析。 不經過正式MBI培訓，即可建立自訂量度和報表。 這可讓您的整個團隊以資料為導向，而不需要解決任何常見的技術難題。 它也可讓您使用隨附的控制面板，以深入了解您的業務效能。
+[!DNL Adobe Commerce Intelligence] (前稱 [!DNL Magento Business Intelligence])是基於雲的資料管理和分析平台。 [!DNL Commerce Intelligence] 使您能夠輕鬆地整合和管理資料源、為資料建模、建立圖表和報告，以及維護單個真相來源。
 
-標準控制面板包括行銷ROI、客戶期限值、客戶細分、執行和投資者KPI、同類群組分析和銷售分析。
+[!DNL Commerce Intelligence], [!DNL Adobe Commerce]，提供跨多個資料源的最佳實踐洞察力，使商戶能夠做出科學的資料驅動決策，並採取明確和知情的行動。 自動化您的報告流程，轉變您跨團隊做出業務決策和協作的方式。 利用 [!DNL Commerce Intelligence]。
 
-當您 [啟用](../getting-started/onpremise-activation.md) 您的 [!DNL MBI] 帳戶，您將您的商務資料庫連接到 [!DNL MBI] 並立即存取5個包含約100份報表的控制面板。 這些報表旨在提供資料的相關分析，並回答下列問題 *我的訂單量如何逐月增長？*, *誰是我最忠誠的客戶？*，和 *我的優惠券策略有效嗎？*.
+連接、整合和轉換資料。 可視化、分析並深入、可操作地瞭解您的業務資料。 建立自定義度量和報告，而無需正式的Commerce Intelligence培訓。 這使您的整個團隊能夠不受任何常見技術難題的影響而進行資料驅動。 它還允許您使用隨附的儀表板來深入瞭解您的業務效能。
+
+標準控制板包括市場營銷ROI、客戶生存期價值、客戶細分、執行和投資者KPI、隊列分析和促銷分析。
+
+當你 [激活](../getting-started/onpremise-activation.md) 你 [!DNL Commerce Intelligence] 帳戶，你正在連接 [!DNL Adobe Commerce] 資料庫 [!DNL Commerce Intelligence] 並立即訪問5個包含大約100份報告的儀表板。 這些報告旨在提供有關資料的見解並回答問題，如 *我的訂單月比月增長如何？*。 *誰是我最忠誠的顧客？*, *我的優惠券策略有效嗎？*。

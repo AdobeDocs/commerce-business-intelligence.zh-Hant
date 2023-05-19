@@ -1,39 +1,41 @@
 ---
 title: 格式化和導入財務資料
-description: 了解如何格式化和匯入財務資料。
+description: 瞭解如何格式化和導入財務資料。
 exl-id: cdbed262-7cf1-4fd6-ad5a-c44d26dffba7
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
 
-# 格式和導入財務資料
+# 格式化和導入財務資料
 
-本主題探討匯入財務資料以進行分析的最佳方式，位於 [!DNL MBI].
+本主題討論導入財務資料以便在 [!DNL Adobe Commerce Intelligence]。
 
-二維、跨索引標籤資料表通常是用於財務資料的格式。 在欄和列中，以標籤分類的值，這種類型的版面可能很容易用人眼和試算表工具來檢視，但對資料庫不好用。
+二維交叉表資料表通常是用於財務資料的格式。 由於按列和行中的標籤分類的值，使用人眼和電子錶格工具可以輕鬆查看此類佈局，但它對資料庫不友好。
 
 ![](../../mbi/assets/crosstab.png)
 
-若要在 [!DNL MBI]，表格必須平面化為一維清單。 平面化時，每個資料值會依多個標籤分類，這些標籤全部在單一列中，其中每一列都是唯一的，或會有唯一識別碼，例如主索引鍵欄。
+要導入並分析此資料，請在 [!DNL Commerce Intelligence]，表必須平展為一維清單。 展平後，每個資料值都按多個標籤分類，這些標籤都位於一行中，其中每行是唯一的，或者具有唯一標識符，例如主鍵列。
 
 ![](../../mbi/assets/flattened.png)
 
-## 格式化要導入的Excel檔案
+## 格式化Excel檔案以導入
 
-要使用Excel透視表平面化二維表：
+使用 [!DNL Excel] 資料透視表：
 
-1. 開啟包含二維資料表的檔案。
-1. 開啟資料透視表嚮導。 在Windows中，快捷方式是 `Alt-D`. 在Mac OS中，輸入 `Command-Option-P`.
-1. 選擇 **[!UICONTROL Multiple consolidated ranges]** 按一下 **[!UICONTROL Next]**.
-1. 選擇 **[!UICONTROL I will create the page fields]** 按一下 **[!UICONTROL Next]**.
-1. 選取二維表格中的整個資料集，包括標籤。 確保 `0` 已針對所需頁面欄位數選取，然後按一下 **[!UICONTROL Next]**.
-1. 在新工作表中建立透視表，然後按一下 **[!UICONTROL Finish]**.
-1. 從欄位清單中取消選取欄位和列欄位。
-1. 按兩下生成的數值，在新頁面中顯示平面化源資料。
+1. 使用二維資料表開啟檔案。
+1. 開啟資料透視表嚮導。 在 [!DNL Windows]，快捷方式是 `Alt-D`。 在 [!DNL Mac OS]輸入 `Command-Option-P`。
+1. 選擇 **[!UICONTROL Multiple consolidated ranges]** 按一下 **[!UICONTROL Next]**。
+1. 選擇 **[!UICONTROL I will create the page fields]** 按一下 **[!UICONTROL Next]**。
+1. 在二維表中選擇整個資料集，包括標籤。 確保 `0` 為所需頁面欄位數選擇，然後按一下 **[!UICONTROL Next]**。
+1. 在新工作表中建立透視表並按一下 **[!UICONTROL Finish]**。
+1. 從欄位清單中取消選擇列和行欄位。
+1. 按兩下生成的數值以在新頁面中顯示展平的源資料。
    ![](../../mbi/assets/pivot-table-double-click.png)
-1. 另存為 `CSV` 檔案。
+1. 另存為 `CSV` 的子菜單。
 
-就這樣！ 資料表已轉換為清單格式，保留了其所有原始資訊，現在可以 [匯入 [!DNL MBI]](../data-analyst/importing-data/connecting-data/using-file-uploader.md) 供分析之用。
+## 包裝
+
+資料表已轉換為清單格式，保留其所有原始資訊，現在可以 [導入 [!DNL Commerce Intelligence]](../data-analyst/importing-data/connecting-data/using-file-uploader.md) 分析。

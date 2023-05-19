@@ -1,35 +1,35 @@
 ---
 title: 預期Google Analytics資料
-description: 了解如何與Google Analytics量度互動。
+description: 學習與Google Analytics指標進行交互。
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
-source-git-commit: 0e9d30155432a29cf67d29a10646a2971ea0382f
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
 
 # 預期 [!DNL Google Analytics] 資料
 
-連線後 [!DNL Google Analytics] 整合，您可以與 [!DNL Google Analytics] 量度 *在`Visual Report Builder`*. 當您輸入 `Visual Report Builder`，若您按一下 **[!UICONTROL Add a Metric]**，此 [!DNL Google Analytics] 設定檔會顯示在您Data Warehouse中量度下方的下拉式清單中。
+連接後 [!DNL Google Analytics] 整合，您可以與 [!DNL Google Analytics] 度量 *在`Visual Report Builder`*。 輸入 `Visual Report Builder`的 **[!UICONTROL Add a Metric]**，從您的 [!DNL Google Analytics] 配置檔案顯示在Data Warehouse中度量的下拉清單中。
 
-此 [!DNL Google Analytics] 整合 *live*  — 這意味著 `Report Builder` 請求資料 [!DNL Google Analytics] *立即* 新增量度至報表時。 這也表示您可以存取的量度的定義與 [!DNL Google Analytics]，而這些值不是 *倉庫* 在 [!DNL MBI] 帳戶 — 僅在報表中以視覺方式顯示。
+的 [!DNL Google Analytics] 整合 *活*  — 這意味著 `Report Builder` 請求資料 [!DNL Google Analytics] *立即* 將度量添加到報表時。 它還意味著您可以訪問的度量與它們在中的定義完全相同 [!DNL Google Analytics]，這些值不是 *倉庫* 在 [!DNL Commerce Intelligence] 帳戶 — 僅在報表中直觀顯示。
 
-+++支援的量度和Dimension(Google Analytics3或Universal Analytics)
-
->[!NOTE]
->
->2023年7月1日起，標準Universal Analytics([!DNL Google Analytics] 3)屬性將不再處理資料。 2023年7月1日之後，您將能看到Universal Analytics報表。 不過，新資料只會流入 [!DNL Google Analytics] 4個屬性。
-
-[!DNL Google Analytics] 整合 [!DNL MBI] 使用 [!DNL Google Analytics] [核心報表API](https://developers.google.com/analytics/devguides/reporting/core/v3/)，並支援下列量度和維度。
++++支援的指標和Dimension(Google Analytics3或通用分析)
 
 >[!NOTE]
 >
->若要避免非預期或無意義的結果，請確認您使用的任何維度都與 `Report Builder`. 您可以檢查 [此處](https://ga-dev-tools.google/dimensions-metrics-explorer/).
+>2023年7月1日，標準通用分析([!DNL Google Analytics] 3)屬性將不再處理資料。 您將能夠在2023年7月1日之後的一段時間內查看Universal Analytics報告。 但是，新資料只會流入 [!DNL Google Analytics] 4個屬性。
 
-## 支援的量度
+[!DNL Google Analytics] 整合 [!DNL Commerce Intelligence] 使用 [!DNL Google Analytics] [核心報告API](https://developers.google.com/analytics/devguides/reporting/core/v3/)，並支援以下度量和維。
 
-| [!DNL MBI] 顯示名稱 | [!DNL Google Analytics] 名稱/公式 |
+>[!NOTE]
+>
+>為避免意外或無意義的結果，請確認您使用的任何維都與在 `Report Builder`。 你可以查 [這裡](https://ga-dev-tools.google/dimensions-metrics-explorer/)。
+
+## 支援的度量
+
+| [!DNL Commerce Intelligence] 顯示名稱 | [!DNL Google Analytics] 名稱/公式 |
 | --- | --- |
 | `Page Views` | `ga:pageviews` |
 | `Total Time Spent On Page` | `ga:timeOnPage` |
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 ## 支援的Dimension
 
-| [!DNL MBI] 顯示名稱 | [!DNL Google Analytics] 名稱/公式 | 群體？ |
+| [!DNL Commerce Intelligence] 顯示名稱 | [!DNL Google Analytics] 名稱/公式 | 可分組？ |
 | --- | --- | --- |
 | `Ad Content` | `ga:adContent` | `Yes` |
 | `Ad Group` | `ga:adGroup` | `Yes` |
@@ -152,14 +152,14 @@ ht-degree: 0%
 
 +++
 
-+++支援的量度和Dimension(Google Analytics4)
++++支援的指標和Dimension(Google Analytics4)
 
-[!DNL Google Analytics] 整合 [!DNL MBI] 使用 [!DNL Google Analytics] [資料API v1(GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
+[!DNL Google Analytics] 整合 [!DNL Commerce Intelligence] 使用 [!DNL Google Analytics] [資料API v1(GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1)。
 
 >[!NOTE]
 >
-> MBI不支援以下維： `cohort`, `cohortNthDay`, `cohortNthMonth`，和 `cohortNthWeek`.
+> Commerce Intelligence不支援以下維： `cohort`。 `cohortNthDay`。 `cohortNthMonth`, `cohortNthWeek`。
 >
->若要避免非預期或無意義的結果，請確認您使用的任何維度都與 `Visual Report Builder`. 您可以檢查 [GA4Dimension與量度總管](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/).
+>為避免意外或無意義的結果，請確認您使用的任何維都與在 `Visual Report Builder`。 您可以檢查 [GA4Dimension和度量資源管理器](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/)。
 
 +++

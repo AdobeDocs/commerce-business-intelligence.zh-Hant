@@ -1,29 +1,29 @@
 ---
-title: 計算的列類型
-description: 了解如何建立欄來擴大和最佳化您的資料以進行分析。
+title: 計算列類型
+description: 瞭解如何建立列以補充和優化資料以進行分析。
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
 
-# 計算的列類型
+# 計算列類型
 
 * [相同的表計算](#sametable)
 * [一對多計算](#onetomany)
 * [多對一計算](#manytoone)
-* [實用的參考圖](#map)
-* [進階計算欄](#advanced)
+* [方便的參考地圖](#map)
+* [高級計算列](#advanced)
 
-在 [Data Warehouse管理員](../data-warehouse-mgr/tour-dwm.md)，您可以建立欄來擴大和最佳化資料以進行分析。 [此功能](../data-warehouse-mgr/creating-calculated-columns.md) 可在「Data Warehouse管理器」中選取任何表格，然後按一下「 **[!UICONTROL Create New Column]**.
+在 [Data Warehouse管理器](../data-warehouse-mgr/tour-dwm.md)，可以建立列來補充和優化資料以進行分析。 [此功能](../data-warehouse-mgr/creating-calculated-columns.md) 可通過選擇「Data Warehouse管理器」中的任何表並按一下 **[!UICONTROL Create New Column]**。
 
-本文說明您可以透過「Data Warehouse管理員」建立的欄類型。 它也涵蓋說明、該欄的視覺逐步說明，以及 [參考圖](#map) 建立列所需的所有輸入。 建立計算欄的方式有三種：
+本主題介紹了可以使用Data Warehouse管理器建立的列的類型。 它還包括描述、該欄目的視覺瀏覽，以及 [參考地圖](#map) 建立列所需的所有輸入。 有三種方法可建立計算列：
 
-* [相同的表計算列](#sametable)
-* [一對多計算欄](#onetomany)
-* [多對一計算欄](#manytoone)
+1. [相同的表計算列](#sametable)
+1. [一對多計算列](#onetomany)
+1. [多對一計算列](#manytoone)
 
 ## 相同的表計算列 {#sametable}
 
@@ -31,78 +31,78 @@ ht-degree: 0%
 
 ### 年齡 {#age}
 
-年齡計算欄會傳回目前時間與某些輸入時間之間的秒數。
+年齡計算列返回當前時間和某些輸入時間之間的秒數。
 
-以下範例會建立 `Seconds since customer's most recent order` 在 `customers` 表格。 這可用來建立未在內進行購買（有時稱為轉手）的客戶使用者清單 `X days`.
+下面的示例建立 `Seconds since customer's most recent order` 的 `customers` 的子菜單。 這可用於構建未在內部進行採購（有時稱為「轉移」）的客戶的用戶清單 `X days`。
 
 ![](../../assets/age.gif)
 
-### 貨幣轉換工具
+### 貨幣轉換器
 
-貨幣轉換器計算列將列的本地貨幣轉換為所需的新貨幣。
+貨幣轉換器計算的列將列的本幣轉換為所需的新貨幣。
 
-以下範例會建立 `base\_grand\_total In AED`，轉換 `base\_grand\_total` 從本幣到AED `sales\_flat\_order` 表格。 此欄適用於想以當地貨幣報告的多種貨幣的商店。
+下面的示例建立 `base\_grand\_total In AED`，轉換 `base\_grand\_total` 從本幣到AED `sales\_flat\_order` 的子菜單。 此列適用於希望以本幣報告的多種貨幣的商店。
 
-若為商務客戶， `base\_currency\_code` 欄位通常會儲存原生貨幣。 此 `Spot Time` 欄位應符合量度中使用的日期。
+對於Commerce客戶， `base\_currency\_code` 欄位通常儲存本幣。 的 `Spot Time` 欄位應與度量中使用的日期匹配。
 
 ![](../../assets/currency_converter.png)
 
-## 一對多計算欄 {#onetomany}
+## 一對多計算列 {#onetomany}
 
-`One-to-Many` 欄 [使用兩個表之間的路徑](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md). 此路徑始終表示一個表，一個屬性在其中生存，而一個多表，該屬性被「重新定位」到。 路徑可描述為 `foreign key--primary key` 關係。
+`One-to-Many` 列 [使用兩個表之間的路徑](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)。 此路徑始終意味著一個表（屬性位於其中）和多個表（屬性將「重新定位」到中）。 路徑可以描述為 `foreign key--primary key` 關係。
 
-### 連結列 {#joined}
+### 聯接列 {#joined}
 
-聯接列在一個表上重新定位屬性 *to* 多張桌子。 一/多的傳統範例是客戶（一）和訂單（多）。
+聯接列在一個表上重新定位屬性 *至* 很多桌子。 客戶(1)和訂單（多）是「一/多」的經典示例。
 
-在以下範例中， `Customer's group\_id` 維度會加入 `orders` 表格。
+在下面的示例中， `Customer's group\_id` 維被下聯到 `orders` 的子菜單。
 
 ![](../../assets/joined_column.gif)
 
-## 多對一計算欄 {#manytoone}
+## 多對一計算列 {#manytoone}
 
-這些欄使用的路徑與一對多欄相同，但它們將資料指向相反的方向。 欄會在路徑的一側建立，而非在多側。 由於此關係，列中的值需要是聚合，即對資料點在多邊上執行的數學運算。 此功能有許多使用案例，下方列出幾個。
+這些列使用與一對多列相同的路徑，但它們指向相反的方向。 該列在路徑的一側建立，而不是在多側建立。 由於這種關係，列中的值需要是聚合，即對多端資料點執行的數學操作。 這有許多使用案例，下面列出了一些。
 
 ### 計數 {#count}
 
-此類型的計算列返回許多表上的值計數 *onto* 一張桌子。
+此類型的計算列返回多個表上的值計數 *上* 一張桌子。
 
-在以下範例中，維度 `Customer's lifetime number of canceled orders` 是在 `customers` 表格(具有 `orders.status`)。
+在下面的示例中，維 `Customer's lifetime number of canceled orders` 建立 `customers` 表(帶過濾器 `orders.status`)。
 
 ![](../../assets/many_to_one.gif){:width=&quot;699&quot; height=&quot;351&quot;}
 
-### 總和 {#sum}
+### 和 {#sum}
 
-總計計算欄是 `many` 桌子上。
+求和計算列是 `many` 桌子上。
 
-這可用來建立客戶層級維度，例如 `Customer's lifetime revenue`.
+這可用於建立客戶級維，如 `Customer's lifetime revenue`。
 
-### 最小值或最大值 {#minmax}
+### 最小或最大 {#minmax}
 
-最小或最大計算列返回存在於多側的最小或最大記錄。
+最小或最大計算列返回多端存在的最小或最大記錄。
 
-這可用來建立客戶層級維度，例如 `Customer's first order date`.
+這可用於建立客戶級維，如 `Customer's first order date`。
 
 ### 存在 {#exists}
 
-存在的計算列是一個二進位測試，它確定記錄在多邊的存在。 換句話說，新欄會傳回 `1` 如果路徑在每個表中至少連接一行，則 `0` 如果無法進行連線。
+計算列是確定記錄在多側存在的二進位test。 換句話說，新列返回 `1` 如果路徑連接每個表中至少一行， `0` 的下界。
 
-此類型的維度可能會判斷（例如）客戶是否曾購買特定產品。 在 `customers` 表格和 `orders` 表格、特定產品的篩選器、維度 `Customer has purchased Product X?` 可以建立。
+此類型的維可能確定客戶是否曾購買過特定產品。 在 `customers` 表格 `orders` 表，特定產品的篩選器，維 `Customer has purchased Product X?` 可以建造。
 
-## 實用的參考圖 {#map}
+## 方便的參考地圖 {#map}
 
-如果您在建立計算欄時記住所有輸入內容有些困難，請在建立時試著讓此參考圖保持便利：
+如果您在建立計算列時難以記住所有輸入內容，請在構建時保持此引用映射的方便性：
 
 ![](../../assets/merged_reference_map.png)
 
-## 進階計算欄 {#advanced}
+## 高級計算列 {#advanced}
 
-在分析和回答有關您業務的問題時，您可能會遇到無法建立所需確切欄的情況。
+在您分析和回答有關業務的問題時，可能會遇到無法構建您想要的準確列的情況。
 
-為確保快速週轉，Adobe建議查看 [高級計算列類型](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) 指南，了解Adobe支援團隊可以建立哪些欄。 該文章也涵蓋您建立欄所需的資訊，包括在您的請求中。
+為確保快速週轉，Adobe建議 [高級計算列類型](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) 指南，以查看Adobe支援團隊可以構建的列類型。 該主題還涵蓋建立列所需的資訊 — 將其包括在您的請求中。
 
-## 相關檔案
+## 相關文檔
 
 * [建立計算列](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)
 * [建立/刪除計算列的路徑](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)
-* [了解和評估表關係](../../data-analyst/data-warehouse-mgr/table-relationships.md)
+* [瞭解和評估表關係](../../data-analyst/data-warehouse-mgr/table-relationships.md)

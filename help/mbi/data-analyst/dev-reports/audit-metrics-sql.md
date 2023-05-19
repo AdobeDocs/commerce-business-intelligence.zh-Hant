@@ -1,49 +1,49 @@
 ---
 title: 使用SQLReport Builder
-description: 了解如何使用SQLReport Builder審核資料和度量，以便您可以將結果與本地資料庫的資料進行比較。
+description: 瞭解如何使用SQLReport Builder審核資料和度量，以便您可以將結果與本地資料庫中的資料進行比較。
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---
 
-# `SQL Report Builder`
+# [!DNL SQL Report Builder]
 
-此 `SQL Report Builder` 主要用於建立新報表和反覆分析，但也可用於有效稽核資料和量度。 以下資訊說明如何使用 `SQL Report Builder` 以便將結果與本地資料庫中的資料進行比較。
+的 [!DNL SQL Report Builder] 主要用於構建新報告和迭代分析，但也可用於有效審核資料和度量。 以下資訊說明了如何使用 [!DNL SQL Report Builder] 以便將結果與本地資料庫中的資料進行比較。
 
-## 查詢量度
+## 查詢度量
 
-若要開始，請開啟 `SQL Report Builder` 瀏覽至 **[!UICONTROL Report Builder > SQL Report Builder > Create Report]**. 您可以使用SQL編輯器中的側欄，將游標移至量度上並按一下，將量度直接插入查詢中 **[!UICONTROL Insert]**. 這會將該量度的查詢定義新增至編輯器。 定義包含下列元件：
+要開始，請開啟 [!DNL SQL Report Builder] 通過導航 **[!UICONTROL Report Builder > SQL Report Builder > Create Report]**。 可以使用 [!DNL SQL] 編輯器，通過懸停於度量並按一下 **[!UICONTROL Insert]**。 這會將該度量的查詢定義添加到編輯器中。 定義包括以下元件：
 
-- 此 **量度操作** 正在執行，由以下範例中的SUM()指示。
-- 此 **表格** 由FROM子句指示的量度。
-- 任何 **篩選器（和篩選器集）** 已新增至量度的值，如下列範例中的WHERE子句所指示。
-- 元件 **timestamp** （年、月），以下範例中的ORDER BY子句指示。
+- 的 **度量操作** 正在執行，表示 `SUM()` 中。
+- 的 **表** 度量是由 `FROM` 。
+- 任意 **篩選器（和篩選器集）** 已添加到度量中，由 `WHERE` 的子句。
+- 元件 **時間戳** （年、月），其上要排序的資料由 `ORDER BY` 的子句。
 
-如果您想要更清楚地查看查詢，可以重新格式化查詢欄位中查詢的顯示方式。 準備就緒時，請選取 `Run Query`. 結果會以表格形式填入查詢下方的報表面板中。
+要更清楚地查看查詢，可以重新格式化查詢欄位中的顯示方式。 準備好後，選擇 `Run Query`。 結果以表格形式填充在查詢下方的報表面板中。
 
 ![](../../assets/run-query-results.gif)
 
 ## 限制查詢
 
-如果您嘗試找出特定的差異或一組資料，應將查詢限制在特定範例，以檢查您的本機資料庫。 您可以編輯查詢以符合所需的限制，以執行此操作。 在下列範例中，您將查詢限制為僅包含2013年1月1日或之後的收入。 更新查詢後，請選取 **[!UICONTROL Run Query]** 再次更新結果。
+如果您試圖查明特定差異或資料集，則應將查詢限制為特定示例，以檢查本地資料庫。 通過編輯查詢以符合所需限制，可以執行此操作。 在下例中，您將查詢限制為僅包括2013年1月1日或以後的收入。 更新查詢後，選擇 **[!UICONTROL Run Query]** 來更新結果。
 
 ![](../../assets/restricting-query.gif)
 
-## 儲存和匯出
+## 保存和導出
 
-當報表符合您的需求時，請為報表指定不同的名稱，按一下「 」，將其儲存至控制面板 **[!UICONTROL Save]**，並選取您要儲存的報表類型和控制面板。 稽核量度時，Adobe建議將報表儲存為 `Table` 並儲存至測試控制面板。
+當報告滿足您的需要時，請為報告指定一個不同的名稱，按一下 **[!UICONTROL Save]**，然後選擇要保存的報告類型和儀表板。 審核度量時，Adobe建議將報告另存為 `Table` 並保存到test儀表板。
 
-儲存報表後，選取「 `Go to Dashboard`. 您可從該處尋找報表並選取「 」，以匯出資料 **[!UICONTROL Options gear > Full `.csv`匯出]** 或 **[!UICONTROL Full Excel Export]**.
+保存報表後，通過選擇 `Go to Dashboard`。 從中，可以通過查找報告並選擇 **[!UICONTROL Options gear > Full `.csv`導出]** 或 **[!UICONTROL Full Excel Export]**。
 
 ![](../../assets/export-dboard-data.gif)
 
-## 自訂查詢
+## 自定義查詢
 
-您也可以撰寫自訂查詢並匯出結果，以與本機資料庫進行比較。 遵循 [查詢優化指南](../../best-practices/optimizing-your-sql-queries.md)，在SQL編輯器中寫入查詢。 您可以使用側邊欄頂端的按鈕，在可供 `SQL Report Builder` 並將其添加到查詢中。 當您的自訂查詢符合您的需求時，您可以儲存報表，並從控制面板匯出該資料。
+您還可以編寫自定義查詢並導出結果以與本地資料庫進行比較。 遵循 [查詢優化准則](../../best-practices/optimizing-your-sql-queries.md)，在SQL編輯器中寫入查詢。 您可以使用提要欄頂部的按鈕在表清單和可用於 [!DNL SQL Report Builder] 並添加到查詢中。 當自定義查詢符合您的需要時，您可以保存報告並從儀表板導出該資料。
 
-### 還難過？
-
-如果您在稽核資料後發現不一致，請查看 [聯絡支援：資料差異](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=en) 支援文章，以取得後續操作的詳細資訊。
+>[!NOTE]
+>
+>如果在審核資料後發現差異，請查看 [聯繫支援：資料差異](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) 有關下一步操作的詳細資訊，請參閱支援主題。

@@ -1,25 +1,25 @@
 ---
-title: 使用日期差異計算欄
-description: 了解「日期差異」計算欄的用途和用途。
+title: 使用日期差異計算列
+description: 瞭解「日期差額」計算列的用途和用途。
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 2%
 
 ---
 
-# 日期差異計算欄
+# 日期差值計算列
 
-本主題概述 `Date Difference` 可用的計算欄 **[!DNL Manage Data > Data Warehouse]** 頁面。 以下是其功能的說明，其後是範例，以及建立範例的機制。
+本主題概述了 `Date Difference` 計算列在 **[!DNL Manage Data > Data Warehouse]** 的子菜單。 下面是它所做的說明，然後是一個示例，以及建立它的機制。
 
-**說明**
+**解釋**
 
-此 `Date Difference` 欄類型：根據事件時間戳記，找出屬於單一記錄的兩個事件之間的時間。 此欄中計算的原始值以秒為單位，但會自動轉換為分鐘、小時、天等，以便顯示在報表上。 但是，當作為篩選器/群組時，您想以秒為單位使用值。
+的 `Date Difference` 列類型根據事件時間戳計算屬於單個記錄的兩個事件之間的時間。 此列中計算的原始值以秒為單位，但會自動轉換為分鐘、小時、天等，以便在報告中顯示。 但是，當用作篩選器/分組依據時，您希望以秒為單位使用該值。
 
-A `date difference` 計算欄可用來建立量度，以計算兩個事件之間的平均或中位數時間，例如客戶註冊與其首次訂購之間的平均時間。
+A `date difference` 可以使用計算列來建立度量，該度量計算兩個事件之間的平均時間或中值時間，例如客戶註冊和它們的第一個訂單之間的平均時間。
 
-**範例**
+**示例**
 
 | **`id`** | **`timestamp_1`** | **`timestamp_2`** | **`Seconds between timestamp_2 and timestamp_1`** |
 |--- |--- |--- |--- |
@@ -29,23 +29,23 @@ A `date difference` 計算欄可用來建立量度，以計算兩個事件之間
 {style="table-layout:auto"}
 
 
-在上述範例中， `Date Difference` 欄是 `Seconds between timestamp_2 and timestamp_1` 欄。 執行計算 `timestamp_2 minus timestamp_1`.
+在上例中， `Date Difference` 列 `Seconds between timestamp_2 and timestamp_1` 的雙曲餘切值。 它執行計算 `timestamp_2 minus timestamp_1`。
 
 **力學**
 
-下列步驟說明如何建立 `Date Difference` 欄。
+以下步驟說明如何建立 `Date Difference` 的雙曲餘切值。
 
-1. 導覽至 **[!DNL Manage Data > Data Warehouse]** 頁面。
-1. 導覽至您要建立此欄的表格。
-1. 按一下 **[!UICONTROL Create a Column]** 並依下列方式設定您的欄：
+1. 導航到 **[!DNL Manage Data > Data Warehouse]** 的子菜單。
+1. 導航到要在其上建立此列的表。
+1. 按一下 **[!UICONTROL Create a Column]** 並配置列，如下所示：
    * 選擇 `Column Definition Type` > `Same Table`
    * 選擇 `Column Definition Equation` > `DATE_DIFF = (Ending DATETIME - Starting DATETIME)`
-   * 選擇 `Ending DATETIME` column >選擇結束日期時間欄位，通常是稍後發生的事件
-   * 選擇 `Starting DATETIME` column** >選擇起始日期時間欄位，通常是先前發生的事件
+   * 選擇 `Ending DATETIME` 列>選擇結束日期時間欄位，該欄位通常是以後發生的事件
+   * 選擇 `Starting DATETIME` column** >選擇開始日期時間欄位，該欄位通常是早期發生的事件
 
-1. 為欄提供名稱，然後按一下 **[!UICONTROL Save]**.
-1. 欄可供使用 *立即*.
+1. 為列提供名稱，然後按一下 **[!UICONTROL Save]**。
+1. 該列可供使用 *立即*。
 
-作為範例，下列範例會設定為計算 `Seconds between order date and customer's creation date`:
+作為示例，以下示例配置為計算 `Seconds between order date and customer's creation date`:
 
 ![](../../assets/date_diff.png)

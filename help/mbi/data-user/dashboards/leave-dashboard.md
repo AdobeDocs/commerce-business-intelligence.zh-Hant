@@ -1,18 +1,18 @@
 ---
-title: 保留（取消共用）控制面板
-description: 了解如何從控制面板離開或取消共用您自己。
+title: 保留（取消共用）儀表板
+description: 瞭解如何從儀表板中離開或取消共用自己。
 exl-id: c84e7145-aded-4f66-8e52-a61c7e6ac804
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 0%
 
 ---
 
-# 保留（取消共用）控制面板
+# 保留（取消共用）儀表板
 
-更換團隊？ 在春天的中間 [!DNL MBI] 帳戶？ 若要離開控制面板或取消共用您自己，請按一下 **[!UICONTROL Shared]** 在畫面頂端，當您要離開控制面板時。 按一下 **[!UICONTROL Leave this Dashboard]** 把自己移走。
+更換團隊？ 在春天的中間 [!DNL Commerce Intelligence] 賬戶？ 要離開或取消共用儀表板，請按一下 **[!UICONTROL Shared]** 在螢幕頂部，在儀表板中要離開。 按一下 **[!UICONTROL Leave this Dashboard]** 去除你自己。
 
-範例：
+示例：
 
 ![離開儀表板](../../assets/Leave_Dashboard.gif)

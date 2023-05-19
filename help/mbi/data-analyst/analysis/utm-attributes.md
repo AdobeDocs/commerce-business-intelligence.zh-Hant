@@ -1,70 +1,70 @@
 ---
-title: Google Analytics和UTM歸因
-description: 了解Google Analytics來源歸因程式。
+title: Google Analytics與UTM屬性
+description: 瞭解Google Analytics源屬性流程。
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
 
-# Google Analytics和UTM歸因
+# [!DNL Google Analytics] 和UTM屬性
 
-這對 [追蹤使用者贏取來源](../../data-analyst/analysis/google-track-user-acq.md) to [識別成效最佳的廣告行銷活動](../../data-analyst/analysis/most-value-source-channel.md). 本文探討Google Analytics來源歸因程式。 換句話說，當記錄什麼資訊時。
+對於 [跟蹤用戶獲取源](../../data-analyst/analysis/google-track-user-acq.md) 至 [確定表現最佳的廣告活動](../../data-analyst/analysis/most-value-source-channel.md)。 本主題探討 [!DNL Google Analytics] 源屬性過程。 換句話說，記錄哪條資訊的時間。
 
 ## 歸因是什麼？
 
-`Attribution` 是指定特定活動的反向連結來源。 這些活動通常是巨集轉換或微觀轉換，巨集就像 **購買**&#x200B;微觀 **註冊，電子郵件註冊，部落格評論，** 等等。
+`Attribution` 是指定特定活動的引用源。 這些活動通常是宏轉換或微轉換，宏是類似 **購買**&#x200B;微生物 **註冊，電子郵件註冊，部落格評論，** 等等。
 
-理想情況下，每次發生轉換事件時，都會記錄轉介來源。 但來源又如何確定？
+理想地，每次發生轉換事件時，都記錄引用源。 但消息來源如何確定？
 
-事實上，使用者在點擊/提交微觀或巨集轉換前，通常會先從許多來源取得。 例如，他們可能透過自然方式來到網站，然後離開，然後透過付費搜尋來，然後離開，然後直接來到網站本身。 此源跟蹤資訊通常通過UTM參數提供給站點，但是也有更複雜的系統。 為您的目的，請著重於 [UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998).
+現實情況是，用戶在點擊/提交微或宏轉換之前，往往來自許多來源。 比如，他們可以通過有機方式來到網站，然後離開，然後通過付費搜索，然後離開，然後直接來到網站本身。 此源跟蹤資訊通常通過UTM參數提供給站點，但也有更複雜的系統。 為您的目的，請集中注意 [UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998)。
 
-## 如何 [!DNL Google Analytics] 是否透過UTM參數提供屬性轉介來源？
+## 如何 [!DNL Google Analytics] 是否通過UTM參數提供屬性引用源？
 
-在URL上指定UTM參數時，系統會剖析這些參數並放入 [!DNL Google Analytics] [cookie](https://en.wikipedia.org/wiki/HTTP_cookie). 如果網站沒有 [!DNL Google Analytics]，則擁有UTM沒有意義。 [!DNL Google Analytics] 有規則來處理在期限內使用UTM點擊多個URL的使用者（稍後會詳加說明）。 假設網站設定為將UTM參數擷取到外部資料庫，則發生微或巨集轉換時， [!DNL Google Analytics] 轉換時的cookie會複製到資料庫。
+在URL上指定UTM參數時，這些參數會被解析出並放入 [!DNL Google Analytics] [餅](https://en.wikipedia.org/wiki/HTTP_cookie)。 如果網站沒有 [!DNL Google Analytics]，擁有UTM沒有意義。 [!DNL Google Analytics] 有規則，說明在UTM的有生之年（以後更多），它如何處理與多個URL相連的用戶。 假設網站配置為將UTM參數捕獲到外部資料庫，則當發生微或宏轉換時， [!DNL Google Analytics] 轉換時的cookie將被複製到資料庫。
 
-## 首次點按與上次點按
+## 首次按一下與上次按一下
 
-### 上次點按歸因
+### 上次按一下屬性
 
-最後點按歸因是 [!DNL Google Analytics]. 在此情況下， [!DNL Google Analytics] cookie代表轉換事件前最新來源的UTM參數，這是 [記錄在資料庫中](../../data-analyst/analysis/google-track-user-acq.md). 此 [!DNL Google Analytics] 只有當使用者點按包含一組新UTM參數的新URL時，cookie才會覆寫先前的UTM參數。
+最後一次點擊屬性是最常用的屬性模型 [!DNL Google Analytics]。 在這個例子中， [!DNL Google Analytics] cookie表示轉換事件之前最新源的UTM參數，這是 [記錄在資料庫中](../../data-analyst/analysis/google-track-user-acq.md)。 的 [!DNL Google Analytics] 僅當用戶按一下包含一組新UTM參數的新URL時，cookie才會覆蓋以前的UTM參數。
 
-例如，假設使用者先透過 [!DNL Google Analytics][!DNL Google Analytics][!DNL Google Analytics] *付費搜尋*，然後傳回 *有機搜尋*，最後返回 *直接* 或透過 *電子郵件連結* **不含UTM參數** 在轉換事件之前。 在此範例中， [!DNL Google Analytics] cookie會指出使用者的來源是自然的，因為這代表轉換前的最後一個來源。 此 *路徑* ，而系統才會忽略最終轉換事件。 若使用者改為透過UTM的電子郵件連結造訪網站，則 [!DNL Google Analytics] cookie會說來源是「電子郵件」。 因此，如果Cookie中有現有UTM參數，且使用者透過直接傳入，則 [!DNL Google Analytics] cookie會顯示UTM參數，而非「直接」。
+例如，假設用戶首次通過 [!DNL Google Analytics] *付費搜索*，然後返回 *有機搜索*，最後回到 *網站* 或通過 *電子郵件連結* **沒有UTM參數** 的子菜單。 在此示例中， [!DNL Google Analytics] cookie表示用戶的源是有機的，因為這表示轉換前的最後一個源。 的 *路徑* 將忽略該最終轉換事件之前的用戶。 如果用戶通過帶有UTM的電子郵件連結訪問網站，則 [!DNL Google Analytics] cookie會說來源是「電子郵件」。 因此，如果cookie中存在現有UTM參數，並且用戶通過direct進入，則 [!DNL Google Analytics] cookie顯示的是UTM參數，而不是「direct」。
 
 >[!NOTE]
 >
->特定使用者的 [!DNL Google Analytics] cookie參數會在Cookie [過期](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)，或使用者在瀏覽器中清除其cookie時覆寫分類。*)
+>特定用戶的 [!DNL Google Analytics] 當cookie時，cookie參數將被擦除 [過期](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)，或當用戶在瀏覽器中清除其cookie時。*
 
-### 首次點按歸因
+### 首次按一下屬性
 
-有些付費歸因工具可讓您擷取使用者路徑中來源的「煎餅堆疊」。 在這種情況下，在上述範例中，按一下「歸因」後即會得知付費搜尋。 或者，有些網站會實作自己的Cookie來擷取煎餅堆疊，並將第一個來源儲存至其資料庫。
+一些付費歸屬工具允許您捕獲用戶路徑中的「煎餅堆」源。 在這種情況下，在上例中，首先按一下屬性將告訴我們付費搜索。 或者，一些網站會實現自己的cookie，以捕獲煎餅堆並將第一個源儲存到其資料庫中。
 
 ## 如何分析歸因？
 
-[!DNL Google Analytics] 其網頁介面具備一些強大功能，可讓您執行四種不同的歸因模型：
+[!DNL Google Analytics] 在其web介面中具有一些強大的功能，允許您執行四種不同的屬性模型：
 
-* 首次點按
-* 上次點按
-* 線性（將收入平均分配給路徑中的所有來源）
-* 加權（自訂歸因）
+1. 首次按一下
+1. 最後按一下
+1. 線性（在路徑中所有來源之間平均分配收入）
+1. 加權（自定義屬性）
 
-現在您了解每個微觀或巨集轉換的歸因模型為何了，問題就變成「您該如何處理使用者轉換總數？」。  例如，查看根據GA上次點按邏輯記錄的UTM:
+既然您瞭解了每個微或宏轉換的屬性模型是什麼，問題就變成了「您如何處理用戶轉換的全部內容？」。  例如，查看根據GA上次按一下邏輯記錄的UTM:
 
-* 用戶註冊在自然狀態下
-* 使用者首次付費搜尋購買$5.00
-* 使用者在電子郵件下購買的第二次$50.00
-* 使用者以自然方式購買的第三筆費用$10.00
+* 有機用戶註冊
+* 付費搜索下用戶的首次購買$5.00
+* 用戶在電子郵件下的第二次購買$50.00
+* 用戶第三次有機購買10.00美元
 
-這裡是你問的「我從付費搜索中獲得了多少收入？ 從電子郵件？  從有機的？」 您可以說答案是5、50和10（無論最後一個來源是什麼），或者您也可以說將所有收入歸因於第一個來源（65個全部歸於有機來源）。 您也可以套用一些加權分析，或套用線性模型（亦即每個約22個）。
+你問：&quot;我從付費搜索中獲得了多少收入？ 電子郵件？  來自有機？」 你可以說答案是5 、 50和10（不管最後一個來源是什麼），或者你也可以說將所有收入都歸於第一個來源（所有65都歸有機來源）。 也可以應用一些加權分析或應用線性模型（即每個約22個）。
 
-## 相關檔案
+## 相關文檔
 
-* [透過追蹤訂單轉介來源 [!DNL Google Analytics] 電子商務](../importing-data/integrations/google-ecommerce.md)
-* [在您的資料庫中追蹤使用者反向連結來源](../analysis/google-track-user-acq.md)
-* [在資料庫中追蹤使用者裝置、瀏覽器和作業系統資料](../analysis/google-track-user-acq.md)
-* [探索您最有價值的贏取來源和管道](../analysis/most-value-source-channel.md)
-* [連接您的 [!DNL Google Adwords] 帳戶](../importing-data/integrations/google-adwords.md)
-* [提高廣告宣傳的投資報酬率](../analysis/roi-ad-camp.md)
-* [中UTM標籤的五個最佳作法 [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)
+* [跟蹤訂單推薦來源 [!DNL Google Analytics] 電子商務](../importing-data/integrations/google-ecommerce.md)
+* [跟蹤資料庫中的用戶推薦源](../analysis/google-track-user-acq.md)
+* [跟蹤資料庫中的用戶設備、瀏覽器和OS資料](../analysis/google-track-user-acq.md)
+* [發現您最有價值的收購來源和渠道](../analysis/most-value-source-channel.md)
+* [連接 [!DNL Google Adwords] 帳戶](../importing-data/integrations/google-adwords.md)
+* [提高廣告活動的ROI](../analysis/roi-ad-camp.md)
+* [UTM標籤的五個最佳做法 [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

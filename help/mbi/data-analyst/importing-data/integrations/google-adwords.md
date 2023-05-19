@@ -1,61 +1,61 @@
 ---
-title: 連線Google Adwords
-description: 了解如何結合廣告成本和從行銷活動中獲得的使用者客戶終身價值(CLV)，以評估行銷活動的投資報酬率。
+title: 連接Google廣告詞
+description: 通過將廣告成本與從您的市場活動中獲得的用戶的客戶生命週期價值(CLV)相結合，學習衡量市場活動ROI。
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
-# Connect [!DNL Google Adwords]
+# 連接 [!DNL Google Adwords]
 
 >[!NOTE]
 >
->需要 [管理權限](../../../administrator/user-management/user-management.md).
+>需要 [管理權限](../../../administrator/user-management/user-management.md)。
 
 ![](../../../assets/Google_Adwords_logo.png)
 
-你做了調查，製作了廣告，發起了宣傳。 現在，您可以分析廣告支出資料，並查看您的資金是否得到有效支援。 使用您的廣告支出資料，您可以 [將廣告成本和客戶期限值(CLV)結合在一起，以評估行銷活動的投資報酬率](../../analysis/roi-ad-camp.md) 從您的行銷活動獲得的使用者。
+你做了調查，做了廣告，發佈了 [!DNL Google] 競選。 現在，是時候分析一下您的廣告支出資料，看看您的資金是否得到了有效的使用。 使用廣告支出資料，您 [將廣告成本與客戶生存期價值(CLV)相結合，以衡量市場活動的投資回報率](../../analysis/roi-ad-camp.md) 從您的市場活動中獲得的用戶。
 
-輸入 [!DNL Google Adwords] 憑證 [!DNL MBI]:
+通過輸入 [!DNL Google Adwords] 憑據 [!DNL Commerce Intelligence]。
 
-1. 前往下方的「連線」頁面 **管理資料>整合**.
-1. 按一下 **新增整合**，位於畫面的右上方。
-1. 按一下 **[!DNL Google Adwords]** 表徵圖。 這會開啟 [!DNL Google Adwords] 憑據頁。
-1. 輸入 [!DNL Google Analytics] 憑證。 授權程式完成後，系統會將您重新導向回 [!DNL MBI].
-1. 隨即顯示設定檔ID清單。 檢查您要連線的設定檔 [!DNL MBI].
+1. 轉到 `Connections` 頁 **管理資料>整合**。
+1. 按一下 **添加整合**，位於螢幕的右上側。
+1. 按一下 **[!DNL Google Adwords]** 表徵圖 開啟 [!DNL Google Adwords] 「憑據」頁。
+1. 輸入 [!DNL Google Analytics] 憑據。 在完成授權過程後，您將被重定向回 [!DNL Commerce Intelligence]。
+1. 顯示配置檔案ID的清單。 檢查要連接到的配置檔案 [!DNL Commerce Intelligence]。
 
    ![](../../../assets/cnnct-profile.png)
 
-1. 變更會自動儲存，因此按一下 **[!UICONTROL Back to Connections]** 等你完成。
+1. 更改將自動保存，因此按一下 **[!UICONTROL Back to Connections]** 等你做完。
 
-如果您有多個設定檔，且需要一些說明來識別哪個是，請參閱 `Connecting Multiple Google Analytics profiles` 一節。
+如果您有多個配置式，並且需要一些幫助來確定哪個是，請參閱 `Connecting Multiple Google Analytics profiles` 的下界。
 
-## `Connecting multiple Google Analytics profiles`
+## 連接多個 [!DNL Google Analytics] 配置檔案
 
-您可能有多個網站連結至單一 [!DNL Google Analytics] 帳戶，以其自己的 [!DNL Google Analytics] 設定檔ID。 在此情況下，您可以選擇將所有設定檔ID納入 [!DNL MBI]. 檢查在設定檔選取步驟期間您要包含的設定檔ID。
+您可能有多個網站連接到一個 [!DNL Google Analytics] 帳戶，由自己確定 [!DNL Google Analytics] 配置檔案ID。 在這種情況下，您可以選擇將所有配置檔案ID包括在 [!DNL Commerce Intelligence]。 檢查要在配置檔案選擇步驟中包括的配置檔案ID。
 
-**識別特定網站的Google Analytics設定檔ID:**
+**要標識特定網站的Google Analytics配置檔案ID:**
 
-1. 登入 [!DNL Google Analytics]
-1. 前往特定網站的 [!DNL Google Analytics] 儀表板
-1. 查看URL — 設定檔ID對應至下列八個數字 `p` 在行尾：
+1. 登錄 [!DNL Google Analytics]
+1. 轉到特定網站 [!DNL Google Analytics] 儀表板
+1. 查看URL — 配置檔案ID對應於以下八個數字 `p` 在行末：
 
    `www.google.com/analytics/web/#home/a11345062w43527078p**XXXXXXXX**`
 
-## 斷開連接 [!DNL Google Adwords]
+## 斷開 [!DNL Google Adwords]
 
-1. 造訪您的 [!DNL Google] [帳戶設定](https://www.google.com/account/about/?hl=en) 頁面。
-1. 在 `Security` ，然後按一下 **[!UICONTROL edit]** 下一頁 `Authorizing` 應用程式和網站。
-1. 按一下 **[!UICONTROL revoke access]** 下一頁 [!DNL MBI].
+1. 訪問 [!DNL Google] [帳戶設定](https://www.google.com/account/about/?hl=en) 的子菜單。
+1. 在 `Security` ，按一下 **[!UICONTROL edit]** 下 `Authorizing` 應用程式和站點。
+1. 按一下 **[!UICONTROL revoke access]**。
 
 ## 相關
 
-* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
-* [透過追蹤訂單轉介來源 [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
-* [在您的資料庫中追蹤使用者反向連結來源](../../analysis/google-track-user-acq.md)
-* [探索您最有價值的贏取來源和管道](../../analysis/most-value-source-channel.md)
-* [提高廣告宣傳的投資報酬率](../../analysis/roi-ad-camp.md)
-* [如何 [!DNL Google Analytics] UTM歸因功能是否正常？](../../analysis/utm-attributes.md)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [跟蹤訂單推薦來源 [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
+* [跟蹤資料庫中的用戶推薦源](../../analysis/google-track-user-acq.md)
+* [發現您最有價值的收購來源和渠道](../../analysis/most-value-source-channel.md)
+* [提高廣告活動的ROI](../../analysis/roi-ad-camp.md)
+* [如何 [!DNL Google Analytics] UTM歸因工作？](../../analysis/utm-attributes.md)

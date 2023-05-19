@@ -1,25 +1,25 @@
 ---
-title: MongoDB資料模型
-description: 了解如何避免造成問題的資料模式。
+title: MongoDB資料建模
+description: 瞭解如何避免造成問題的資料模式。
 exl-id: 556c854b-5d7c-4f72-8ed7-5bc08d9ee5b9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
 
-# [!DNL MongoDB] 資料模型
+# [!DNL MongoDB] 資料建模
 
-當 [!DNL MBI] 拉進 [!DNL MongoDB] 資料，該資料被轉換為關係模型。
+當 [!DNL Adobe Commerce Intelligence] 拉進 [!DNL MongoDB] 資料，資料被轉換為關係模型。
 
-壞消息是：雖然大多數資料模式都不會造成問題，但由於轉換為關係模型， [!DNL MBI] 不支援。
+壞消息是：雖然大多數資料模式都不會帶來問題，但有一些資料不受支援 [!DNL Commerce Intelligence]，因為轉換為關係模型。
 
-好消息是：所有這些模式都可以避免。
+好消息是：所有這些圖案都可以避免。
 
-## 子巢狀陣列 {#subnested}
+## 子嵌套陣列 {#subnested}
 
-如果您的集合如下列範例， [!DNL MBI] 僅複製項陣列中的資料。 未提取子項陣列中的資料。
+如果你的收藏看起來像下面的例子， [!DNL Commerce Intelligence] 只複製items陣列中的資料。 不會從子項陣列中提取資料。
 
 ```bash
     {
@@ -39,9 +39,9 @@ ht-degree: 0%
     }
 ```
 
-## 變數物件索引鍵 {#varobjectkeys}
+## 變數對象鍵 {#varobjectkeys}
 
-不會在中複製包含物件及變數物件索引鍵的集合 [!DNL MBI]. 例如：
+不在中複製包含具有變數對象鍵的對象的集合 [!DNL Commerce Intelligence]。 例如：
 
 ```bash
     {
@@ -54,7 +54,7 @@ ht-degree: 0%
     }
 ```
 
-這通常發生在使用物件且陣列更適當的地方。 現在，重新編寫上述範例：
+這通常發生在使用對象和更合適的陣列的位置。 現在，重新編寫上面的示例：
 
 ```bash
     {

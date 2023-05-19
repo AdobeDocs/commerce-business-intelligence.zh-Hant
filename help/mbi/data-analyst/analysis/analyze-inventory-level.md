@@ -1,43 +1,43 @@
 ---
 title: 分析庫存水準
-description: 了解如何分析庫存水準。
+description: 瞭解如何分析庫存水準。
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 # 分析庫存水準
 
-本主題示範如何設定控制面板，以提供目前詳細目錄的深入分析。 本主題包含有關舊體系結構或新體系結構的客戶端的說明。 如果您沒有 **[!UICONTROL Data Warehouse Views]** 選項 **[!UICONTROL Manage Data]** 功能表)。 如果您使用舊版架構，請提交 [新支援請求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) 與主題 **[!UICONTROL INVENTORY ANALYSIS]** 一旦到達 _計算的欄_ 以下說明。
+本主題演示如何設定儀表板，該儀表板可提供對當前清單的洞察，並包含有關舊體系結構或新體系結構上客戶端的說明。 如果您沒有 **[!UICONTROL Data Warehouse Views]** 選項 **[!UICONTROL Manage Data]** 的子菜單。 如果您在舊體系結構上，請提交 [新支援請求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 和主題 **[!UICONTROL INVENTORY ANALYSIS]** 一旦您到達 _計算列_ 下面的說明。
 
-## 要追蹤的欄：
+## 要跟蹤的列：
 
-### 要追蹤指令的欄
+### 跟蹤說明的列
 
-* **[!UICONTROL cataloginventory_stock_item]** 表格：
+* **[!UICONTROL cataloginventory_stock_item]** 表：
    * **`item_id`**
    * **`product_id`**
    * **`qty`**
 
-* **[!UICONTROL catalog_product_entity]** 表格：
+* **[!UICONTROL catalog_product_entity]** 表：
    * **`entity_id`**
    * **`sku`**
    * **`created_at`**
 
 ## 計算列：
 
-### 新架構
++++ 新體系結構
 
-* **[!UICONTROL catalog_product_entity]** 表格：
+* **[!UICONTROL catalog_product_entity]** 表：
    * **`Product's most recent order date`**
       * [!UICONTROL Column type]: `Many to One`
       * 
          [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * 選取 [!UICONTROL column]: `created_at`
+      * 選擇 [!UICONTROL column]: `created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
    * **`Product's first order date`**
@@ -45,7 +45,7 @@ ht-degree: 0%
       * 
          [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * 選取 [!UICONTROL column]: `created_at`
+      * 選擇 [!UICONTROL column]: `created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
    * **`Seconds since product's most recent order date`**
@@ -58,7 +58,7 @@ ht-degree: 0%
       * 
          [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * 選取 [!UICONTROL column]: `qty_ordered`
+      * 選擇 [!UICONTROL column]: `qty_ordered`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
    * **`Avg products sold per week (all time)`**
@@ -71,37 +71,37 @@ ht-degree: 0%
       * 
          [!UICONTROL Datatype]: `Decimal`
       * 定義：
-         * 當A為null或B為null，則為null，則為null的其他四捨五入(A::decimal/(extract(epoch from(current_timestamp - B))::decimal/604800.0),2)結束
+         * 如果A為空或B為空，則為空，則為null則為round(A::decimal/(extract(epocom from(current_timestamp - B))::decimal/604800.0),2)end
 
 
 
 
 
-* **[!UICONTROL cataloginventory_stock_item]** 表格：
+* **[!UICONTROL cataloginventory_stock_item]** 表：
    * **`Sku`**
       * [!UICONTROL Column type]: `One to Many`
       * 
          [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * 選取 [!UICONTROL column]: `sku`
+      * 選擇 [!UICONTROL column]: `sku`
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `One to Many`
       * 
          [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * 選取 [!UICONTROL column]: `Product's lifetime number of items sold`
+      * 選擇 [!UICONTROL column]: `Product's lifetime number of items sold`
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `One to Many`
       * 
          [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * 選取 [!UICONTROL column]: `Seconds since product's most recent order date`
+      * 選擇 [!UICONTROL column]: `Seconds since product's most recent order date`
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `One to Many`
       * 
          [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * 選取 [!UICONTROL column]: `Avg products sold per week (all time)`
+      * 選擇 [!UICONTROL column]: `Avg products sold per week (all time)`
    * **`Weeks on hand`**
       * [!UICONTROL Column type]: `Same Table`
       * 
@@ -112,21 +112,22 @@ ht-degree: 0%
       * 
          [!UICONTROL Datatype]: `Decimal`
       * 定義：
-         * 當A為null或B為null或B = 0.0然後為null時的情況(A::decimal/B,2)結束
+         * 如果A為空或B為空或B = 0.0則為空，則為空，則為捨入(A::decimal/B,2)結束
 
 
 
 
 
-### 舊式架構
++++
++++ 舊體系結構
 
-* **[!UICONTROL catalog_product_entity]** 表格：
+* **[!UICONTROL catalog_product_entity]** 表：
    * **`Product's most recent order date`**
       * [!UICONTROL Column type]: `Many to One`
       * 
          [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * 選取 [!UICONTROL column]: `created_at`
+      * 選擇 [!UICONTROL column]: `created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
    * **`Product's first order date`**
@@ -134,7 +135,7 @@ ht-degree: 0%
       * 
          [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * 選取 [!UICONTROL column]: `created_at`
+      * 選擇 [!UICONTROL column]: `created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
    * **`Seconds since product's most recent order date`**
@@ -147,61 +148,63 @@ ht-degree: 0%
       * 
          [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]: **`sales_order_item.product_id => catalog_product_entity.entity_id`**
-      * 選取 [!UICONTROL column]: **`qty_ordered`**
+      * 選擇 [!UICONTROL column]: **`qty_ordered`**
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
    * **`Avg products sold per week (all time)`**
-      * 由分析人員在您提交 **[庫存分析]** 支援請求
+      * 在提交檔案時由分析師建立 **[庫存分析]** 支援請求
 
 
 
 
 
-* **[!UICONTROL cataloginventory_stock_item]** 表格：
+* **[!UICONTROL cataloginventory_stock_item]** 表：
    * **`Sku`**
       * [!UICONTROL Column type]: `One to Many`
       * 
          [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * 選取 [!UICONTROL column]: `sku`
+      * 選擇 [!UICONTROL column]: `sku`
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `One to Many`
       * 
          [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * 選取 [!UICONTROL column]: `Product's lifetime number of items sold`
+      * 選擇 [!UICONTROL column]: `Product's lifetime number of items sold`
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `One to Many`
       * 
          [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * 選取 [!UICONTROL column]: `Seconds since product's most recent order date`
+      * 選擇 [!UICONTROL column]: `Seconds since product's most recent order date`
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `One to Many`
       * 
          [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * 選取 [!UICONTROL column]: `Avg products sold per week (all time)`
+      * 選擇 [!UICONTROL column]: `Avg products sold per week (all time)`
    * **`Weeks on hand`**
-      * 由分析人員在您提交 **[!UICONTROL INVENTORY ANALYSIS]** 支援請求
+      * 在提交檔案時由分析師建立 **[!UICONTROL INVENTORY ANALYSIS]** 支援請求
 
 
 
 
 
-## 量度
++++
 
-### 量度指示
+## 度量
 
-* **[!UICONTROL cataloginventory_stock_item]** 表格：
-   * **`Inventory on hand`**:此量度會執行
-      * **總和** 在
-      * **`qty`** 欄排序
-      * [無] 欄
+### 度量說明
 
-## 報表
+* **[!UICONTROL cataloginventory_stock_item]** 表：
+   * **`Inventory on hand`**:此度量執行
+      * **和** 的
+      * **`qty`** 按排序的列
+      * [無] 列
 
-### 報表指示
+## 報告
+
+### 報告說明
 
 * **`Inventory on hand by sku`**
    * [!UICONTROL Metric]: `Inventory on hand`
@@ -221,7 +224,7 @@ ht-degree: 0%
    * [!UICONTROL Time period]: `All time`
    * 時間間隔： `None`
    * 
-      [!UICONTROL分組依據]: `Sku`
+      [!UICONTROL組依據]: `Sku`
    * 
 
       [!UICONTROL Chart type]: `Table`
@@ -234,10 +237,10 @@ ht-degree: 0%
    * [!UICONTROL Time period]: `All time`
    * 時間間隔： `None`
    * 
-      [!UICONTROL分組依據]: `Sku`
+      [!UICONTROL組依據]: `Sku`
    * 
 
       [!UICONTROL Chart type]: `Table`
 
 
-如果在構建此分析時遇到任何問題，或只是希望與專業服務團隊接洽， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+如果您在構建此分析時遇到任何問題，或者只想與專業服務團隊接洽， [聯繫人支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

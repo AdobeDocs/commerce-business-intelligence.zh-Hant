@@ -1,21 +1,21 @@
 ---
-title: Mixpanel中的資料驗證
-description: 了解如何確認您已同步直接在Mixpanel中供您使用的所有相同資料。
+title: 混合面板中的資料驗證
+description: 瞭解如何確認您已將直接在Mixpanel內可用的所有相同資料同步。
 exl-id: d18ce954-26fe-4440-ad8b-4f266c007b2f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---
 
-# 中的資料驗證 `Mixpanel`
+# 資料驗證 [!DNL Mixpanel]
 
-當 [!DNL MBI] 第一次連線至 [!DNL Mixpanel] 資料，您的客戶經理或分析師可能會要求您提供來自Mixpanel的資料匯出，以供驗證之用。 這可讓您確認已同步所有可直接在記憶體取的相同資料 [!DNL Mixpanel].
+當 [!DNL Adobe Commerce Intelligence] 首次連接 [!DNL Mixpanel] 資料，您的客戶經理或分析專家可能會要求您提供資料導出 [!DNL Mixpanel] 供驗證之用。 這允許您確認您已同步了所有直接在中可用的相同資料 [!DNL Mixpanel]。
 
-## 資料匯出程式： `Events`
+## 資料導出過程： `Events`
 
-1. 造訪您的 `Segmentation` 區段和檢視 `Your Top Events`.
+1. 訪問 `Segmentation` 節和視圖 `Your Top Events`。
 
    ![](../../../assets/your-top-events.png)
 
@@ -23,8 +23,8 @@ ht-degree: 0%
 
    ![](../../../assets/past-96-hours.png)
 
-1. 捲動至報表的右下部，然後匯出 `.csv` 檔案：
+1. 滾動到報表的右下部分並導出 `.csv` 檔案：
 
    ![](../../../assets/export-csv-mixpanel.png)
 
-1. 傳送 `.csv` 檔案傳送給您正在進行此驗證程式的客戶經理或分析師。
+1. 發送 `.csv` 檔案到您正在處理此驗證過程的客戶經理或分析師。

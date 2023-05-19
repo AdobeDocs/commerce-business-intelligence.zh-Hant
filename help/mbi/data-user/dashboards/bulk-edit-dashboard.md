@@ -1,70 +1,70 @@
 ---
-title: 控制面板中的大量編輯圖表
-description: 了解如何使用 [!DNL MBI].
+title: 儀表板中的批量編輯圖表
+description: 瞭解如何在中使用批量編輯功能 [!DNL Commerce Intelligence]。
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
 
-# 控制面板中的大量編輯圖表
+# 在儀表板中批量編輯圖表
 
-大量編輯功能可讓您輕鬆變更控制面板中的圖表名稱和日期。 例如，您希望特定控制面板上的所有圖表都參照單一商店，並每月報告，而非每季報告。 與其手動變更所有項目，請讓 `bulk-editing` 功能來執行工作。 在本文中，您將學習如何使用：
+批量編輯功能使您能夠輕鬆地更改儀表板中的圖表名稱和日期。 例如，您希望特定儀表板上的所有圖表都引用單個儲存並按月報告，而不是按季度報告。 不要手動更改所有內容， `bulk-editing` 功能完成工作。 在本主題中，您將學習如何使用：
 
-* [此 ](#findreplace)
+* [的 [!DNL Find/Replace] 功能](#findreplace)
 
-* [此 ](#prepend)
+* [的 [!DNL Prepend Name] 功能](#prepend)
 
-* [此 ](#dates)
+* [的 [!DNL Change Dates] 功能](#dates)
 
-話雖如此，想想看。 *這些變更需要永久性嗎？* 否則，請考慮複製控制面板，然後變更新控制面板中的日期。 這可讓您在進行所需變更時，保留原始控制面板。
+話雖如此，請考慮一下。 *這些變化需要永久性嗎？* 如果沒有，請考慮克隆儀表板，然後更改新儀表板中的日期。 這樣，您就可以保留原始儀表板，同時仍然進行所需的更改。
 
 >[!NOTE]
 >
->如果您變更許多報表，更新程式可能需要一些時間。
+>如果您正在更改大量報告，更新過程可能需要一些時間。
 
-## 使用 `Find/Replace` {#findreplace}
+## 使用 [!DNL Find/Replace] {#findreplace}
 
-1. 按一下齒輪(![](../../assets/gear-icon.png))圖示，然後是 [!UICONTROL Bulk Edit Reports] 窗口。
+1. 按一下齒輪(![](../../assets/gear-icon.png))表徵圖，然後 [!UICONTROL Bulk Edit Reports] 的子菜單。
 
-1. 按一下 **[!UICONTROL Chart Title Find and Replace]** 在快顯視窗中。
+1. 按一下 **[!UICONTROL Chart Title Find and Replace]** 的子菜單。
 
-1. 在 `Chart Title Find` 欄位中輸入要查找的字詞或字元。
+1. 在 `Chart Title Find` 的子菜單。
 
-1. 在 `Replace With` 欄位中，輸入應取代 `Find` 欄位。
+1. 在 `Replace With` 欄位，鍵入應替換 `Find` 的子菜單。
 
-1. 按一下 **[!UICONTROL Update Reports]**.
+1. 按一下 **[!UICONTROL Update Reports]**。
 
-範例：
+示例：
 
-![大量編輯](../../assets/bulk_edit.gif)
+![批量編輯](../../assets/bulk_edit.gif)
 
-## 前置詞 `Chart Names` {#prepend}
+## 預掛起 `Chart Names` {#prepend}
 
-1. 按一下齒輪(![](../../assets/gear-icon.png))圖示，然後是 [!UICONTROL Bulk Edit Reports] 窗口。
+1. 按一下齒輪(![](../../assets/gear-icon.png))表徵圖，然後 [!UICONTROL Bulk Edit Reports] 的子菜單。
 
-1. 按一下 **[!UICONTROL Prepend Report Names]** 在快顯視窗中。
+1. 按一下 **[!UICONTROL Prepend Report Names]** 的子菜單。
 
-1. 輸入要在圖表前面加上的字詞或字元。
+1. 鍵入要用來預置圖表的字詞。
 
-1. 按一下 **[!UICONTROL Update Reports]**.
+1. 按一下 **[!UICONTROL Update Reports]**。
 
-範例：
+示例：
 
 ![前置詞](../../assets/prepend.gif)
 
-## 變更 `Dates` {#dates}
+## 更改 `Dates` {#dates}
 
-1. 按一下齒輪(![](../../assets/gear-icon.png))圖示，然後選取 `!UICONTROL Bulk Edit Reports` 窗口。
+1. 按一下齒輪(![](../../assets/gear-icon.png))表徵圖，然後選擇 [!UICONTROL Bulk Edit Reports] 的子菜單。
 
-1. 按一下 **[!UICONTROL Change Dates]** 在快顯視窗中。
+1. 按一下 **[!UICONTROL Change Dates]** 在彈出窗口中。
 
-1. 設定新 `Start/End Date` 和 `Time Interval`. 您也可以保留這些欄位不變。
+1. 設定新 `Start/End Date` 和 `Time Interval`。 也可以保持這些欄位不變。
 
-1. 按一下 **[!UICONTROL Update Reports]**.
+1. 按一下 **[!UICONTROL Update Reports]**。
 
-範例：
+示例：
 
-![變更日期](../../assets/dates.gif)
+![更改日期](../../assets/dates.gif)

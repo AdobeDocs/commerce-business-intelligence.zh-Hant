@@ -1,23 +1,26 @@
 ---
-title: 審核Google Adwords資料
-description: 了解匯出Google Adwords資料的步驟。
+title: 審計GoogleAdwords資料
+description: 瞭解導出GoogleAdwords資料的步驟。
 exl-id: f619801f-e789-44ad-945e-268d430bf583
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
 
-# 稽核 [!DNL Google Adwords] 資料
+# 審計 [!DNL Google Adwords] 資料
 
-在裡面發現了怪物 [[!DNL Google Adwords]](../integrations/google-adwords.md)? 若要找出問題，您需要探索您的資料。 您可以匯出 [!DNL Google Adwords] 資料 `.csv` 檔案。
+發現了 [[!DNL Google Adwords]](../integrations/google-adwords.md)? 要查明問題，您需要瀏覽資料。 通過導出 [!DNL Google Adwords] 資料到 `.csv` 的子菜單。
 
-1. 下載並安裝免費 [[!DNL Google Adwords] 編輯器](https://ads.google.com/home/tools/ads-editor/) 應用程式。
-1. 安裝完成後，請選取 `Add Count` 在 `Add/manage accounts` 中。
+1. 下載並安裝免費 [[!DNL Google Adwords] 編輯器](https://ads.google.com/home/tools/ads-editor/) 的子菜單。
+
+1. 安裝完成後，選擇 `Add Count` 的 `Add/manage accounts` 的子菜單。
+
 1. 輸入 [!DNL Google Adwords] 帳戶資訊。
-1. 帳戶新增至 [!DNL Google Adwords] 編輯器，選取 **[!UICONTROL File** > **&#x200B;匯出試算表(CSV)**> **導出整個帳戶]**
 
-這可建立 `.csv` 檔案包含儲存在您目前 [!DNL Google Adwords] 帳戶。 此時，請提交支援票證（請務必附加此檔案！） 以便您更仔細地查看資料。 如果檔案過大，請與共用 [!DNL MBI] 團隊經由 [!DNL Dropbox] 或 [!DNL Google Drive].
+1. 將帳戶添加到 [!DNL Google Adwords] 編輯器，選擇 **[!UICONTROL File** > **&#x200B;導出電子錶格(CSV)**> **導出整個帳戶]**
 
-如需 [!DNL Google Adwords] `.csv` 檔案匯出，請參閱 [[!DNL Google Adwords] 檔案](https://support.google.com/google-ads/editor/answer/38657?hl=en).
+這將生成 `.csv` 包含當前儲存的所有資訊的檔案 [!DNL Google Adwords] 帳戶。 此時，提交 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （請務必附加此檔案！） 這樣你就可以更仔細地查看資料了。 如果檔案太大，請與 [!DNL Commerce Intelligence] 團隊 [!DNL Dropbox] 或 [!DNL Google Drive]。
+
+有關 [!DNL Google Adwords] `.csv` 檔案導出，請參閱 [[!DNL Google Adwords] 文檔](https://support.google.com/google-ads/editor/answer/38657?hl=en)。

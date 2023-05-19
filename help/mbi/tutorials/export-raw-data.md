@@ -1,70 +1,74 @@
 ---
-title: 匯出原始資料
-description: 了解如何從 [!DNL MBI] Data Warehouse，進一步了解是什麼在推動您的控制面板。
+title: 導出原始資料
+description: 學習從 [!DNL Commerce Intelligence] Data Warehouse更仔細地查看儀表板的電源。
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
 
-# 匯出原始資料
+# 導出原始資料
 
-使用原始資料匯出功能，您可以從 [!DNL MBI] Data Warehouse，進一步了解是什麼在推動您的控制面板。 此外，原始資料匯出可協助您 [找出資料差異](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en).
+使用原始資料導出，您可以從Data Warehouse導出記錄，以更仔細地瞭解是什麼驅動了儀表板。 此外，原始資料導出可幫助您 [精確資料差異](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html)。
 
-原始資料匯出功能可存取其他欄和維度，這些是透過相關量度的去標準化和預先匯總所產生。 例如， `User's first order date` 是可針對 [!DNL MBI]，但資料庫中可能無法使用。
+原始資料導出提供對通過相關度量的去標準化和預聚合生成的附加列和維的訪問。 比如說， `User's first order date` 是可為中的每個用戶導出的維 [!DNL Commerce Intelligence]，但可能在資料庫中不可用。
 
-本教學課程涵蓋下列內容：
+本教程將介紹以下內容：
 
 * [選擇要導出的資料](#select)
-* [下載匯出(](#download)
-* [存取歷史匯出](#historical)
+* [下載導出(](#download)
+* [訪問歷史導出](#historical)
 
 ## 步驟1:選擇要導出的資料 {#select}
 
-有兩種方式可在 [!DNL MBI]:在圖表層級或表格層級。
+有兩種方法可以在 [!DNL Commerce Intelligence]:
 
-### 在 `Manage Data` 標籤
+1. 在圖表級別
+1. 在表級
 
-如果要從中導出表 `Manage Data` 標籤，您需要 [管理](../administrator/user-management/user-management.md) 權限。
+### 在中的表級導出 [!UICONTROL Manage Data] 頁籤
 
-1. 按一下 **[!UICONTROL Manage Data** > **&#x200B;匯出資料&#x200B;**> **原始資料匯出]** 開始使用。
-1. 您會看到 `Export List` （如果有的話）。 按一下 **[!UICONTROL Add Export]** 來建立匯出。
-1. 此 `New Raw Data Export` 對話框。 您可以在此選取或取消選取欄和篩選器，以自訂匯出：
+如果要從中導出表 [!UICONTROL Manage Data] 頁籤 [管理](../administrator/user-management/user-management.md) 權限。
 
-   * `Table` - `Table` 欄位會選取要匯出資料的表格。 依預設，這會顯示您導覽至的表格。
-   * `Export Name`  — 在此欄位中，輸入匯出的名稱。 例如： `Philadelphia - Daily Revenue`.
-   * `Available Columns`  — 此欄位列出資料庫中可用於匯出的欄（維度）。 若要新增欄，請按一下其名稱。
-   * `Selected Columns`  — 此欄位列出匯出中目前包含的欄（維度）。 要刪除列，請按一下其名稱。
-   * `Filter`  — 本節列出目前套用至匯出的篩選器。 這些篩選器可以變更；您也可以新增篩選器，以匯出特定資料集。
-   * 完成後，按一下 **[!UICONTROL Export Data]**.
+1. 按一下 **[!UICONTROL Manage Data** > **&#x200B;導出資料&#x200B;**> **原始資料導出]**。
+1. 您看到 `Export List` 導出的資料。 按一下 **[!UICONTROL Add Export]** 的子菜單。
+1. 的 `New Raw Data Export` 對話框。 在此，可以通過選擇或取消選擇列和篩選器來自定義導出：
 
-### 從控制面板在圖表層級匯出
+   * `Table` - `Table` 欄位選擇從中導出資料的表。 預設情況下，將顯示您導航到的表。
+   * `Export Name`  — 在此欄位中，輸入導出的名稱。 例如： `Philadelphia - Daily Revenue`。
+   * `Available Columns`  — 此欄位列出資料庫中可用於導出的列（維）。 要添加列，請按一下其名稱。
+   * `Selected Columns`  — 此欄位列出當前包含在導出中的列（維）。 要刪除列，請按一下其名稱。
+   * `Filter`  — 本節列出當前應用於導出的篩選器。 這些過濾器可以更改；還可以添加新篩選器以導出特定資料集。
+   * 完成後，按一下 **[!UICONTROL Export Data]**。
 
-1. 按一下任何圖表右上角的齒輪圖示。
-1. 選擇 `Raw Export` 顯示 `Raw Export` 對話框。
-1. 自訂匯出，方法是選擇 `table`, `columns`，和 `filters` 包含或排除。 如需本模組中欄位的詳細資訊，請參閱上一節。
+### 從儀表板在圖表級別導出
+
+1. 按一下任意圖表右上角的齒輪表徵圖。
+
+1. 選擇 `Raw Export` 從下拉清單中顯示 `Raw Export` 對話框。
+
+1. 通過選擇 `table`。 `columns`, `filters` 包含或排除。 有關本模組中各欄位的詳細資訊，請參閱上一節。
+
    >[!NOTE]
    >
-   >顯示於 `Table` 欄位預設為提供圖表的表格。
+   >顯示在 `Table` 預設情況下，欄位是圖表的電源表。
 
-1. 完成後，按一下 **[!UICONTROL Export Data]**.
+1. 完成後，按一下 **[!UICONTROL Export Data]**。
 
-從圖表層級查看整個流程。
+在圖表級別查看整個流程。
 
 ![](../assets/Chart-level_export.gif)
 
-## 步驟2:下載匯出 {#download}
+## 步驟2:下載導出 {#download}
 
-完成在 `Raw Data Export` 對話框。 由於某些匯出項目可能很大，因此限制為1,000萬列，而且可能需要一些時間才能執行。
+導出將在完成您在 `Raw Data Export` 對話框。 由於某些出口可能大，因此限制在1000萬行，可能需要一些時間才能運行。
 
-要檢查導出是否就緒，請按一下 **[!UICONTROL Raw Data Exports]** 在畫面的右上角。 按一下 **[!UICONTROL Download]** 下載壓縮的 `.csv` 檔案。
+要檢查導出是否就緒，請按一下 **[!UICONTROL Raw Data Exports]** 在螢幕右上角。 按一下 **[!UICONTROL Download]** 下載拉鍊 `.csv` 導出檔案。
 
 ![](../assets/Downloading_export.gif)
 
-## 步驟3:存取歷史匯出 {#historical}
+## 第3步：訪問歷史導出 {#historical}
 
-若要檢視過去的匯出項目，請按一下 **[!UICONTROL Raw Data Export]** 在畫面的右上角。 最多可存取7天的待定和已完成報表。
-
-恭喜！ 你完成了。
+要查看過去的導出，請按一下 **[!UICONTROL Raw Data Export]** 在螢幕右上角。 最多可訪問7天的待處理和已完成的報告。

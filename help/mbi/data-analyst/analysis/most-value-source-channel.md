@@ -1,121 +1,121 @@
 ---
-title: 識別您最有價值的行銷來源和管道
-description: 了解一些可用來揭露最有價值的行銷管道的報表。
+title: 確定您最有價值的營銷來源和渠道
+description: 瞭解一些報告，這些報告可用於發現您最有價值的市場營銷渠道。
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
 
-# 識別成功的行銷來源
+# 確定成功的營銷來源
 
-您研究了對象、建立了行銷活動、投資了幾個行銷管道。 一段時間過後，這些管道的表現如何？ 新使用者最多的管道為何？ 哪個來源對您的總收入貢獻最大？
+你研究了你的受眾，你創造了你的活動，你投資了幾個營銷渠道。 現在時間已經過去了，這些頻道表現如何？ 哪個渠道吸引了最多的新用戶？ 哪個來源對您的總收入貢獻最大？
 
-使用 [!DNL MBI]，您可以輕鬆地依反向連結來源劃分收入和使用者，無論其對應至 [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) 或自訂資料欄位。 此區段可讓您找出成效最佳的管道，並更妥善地投資行銷預算。
+與 [!DNL Adobe Commerce Intelligence]，您可以輕鬆地按推薦來源劃分收入和用戶，無論它是否與 [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) 或自定義資料欄位。 這種細分使您能夠找到效能最佳的渠道，並更好地投資營銷預算。
 
-本文探討一些您可以用來發掘最有價值行銷管道的報表：
+本主題探討一些報告，您可以使用這些報告來發現您最有價值的營銷渠道：
 
-* [按來源列出的新用戶](#newusersbysource)
-* [按使用者來源列出的平均期限收入](#avglifetimerev)
-* [按用戶源的平均訂單值](#avgorderval)
+* [按源列出的新用戶](#newusersbysource)
+* [按用戶來源列出的平均生存期收入](#avglifetimerev)
+* [按用戶源列出的平均訂單值](#avgorderval)
 * [按用戶註冊日期和來源列出的收入](#revbyregdateandsource)
-* [按用戶源重複訂單](#repeatordersbysource)
+* [按用戶來源重複訂單](#repeatordersbysource)
 
-## 必要條件 {#prereqs}
+## 先決條件 {#prereqs}
 
-若要建置本文中的分析，您需要存取行銷贏取/反向連結來源資料。 如果您尚未追蹤，則需要將 [訂購引用源資料 [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) into [!DNL MBI] 才能繼續。 此外，將用戶設備資訊添加到您的分析中使您能夠查看反向連結使用的技術。
+要構建本主題中的分析，您需要訪問市場營銷獲取/推薦源資料。 如果你還沒有跟蹤它，你需要 [訂單引用源資料 [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) 入 [!DNL Adobe Commerce Intelligence] 才能繼續。 此外，向分析中添加用戶設備資訊使您能夠查看推薦使用的技術。
 
-## 按來源列出的新用戶 {#newusersbysource}
+## 按源列出的新用戶 {#newusersbysource}
 
-評估反向連結來源的效能是決定您最有價值管道的關鍵。 此報表會依贏取來源顯示一段時間內新註冊使用者的數量，讓您追蹤反向連結來源在贏取新註冊使用者時的效能。
+評估推薦來源的效能是確定您最有價值的渠道的關鍵。 此報表按獲取來源顯示一段時間內新註冊用戶的數量，從而允許您跟蹤在獲取新註冊用戶時推薦來源的效能。
 
-若要在 [Report Builder](../../tutorials/using-visual-report-builder.md)，新增 **新使用者** 量度（或計算一段時間中新使用者人數的相等量度）。 然後執行下列動作：
+在 [Report Builder](../../tutorials/using-visual-report-builder.md)的子菜單。 **新用戶** 度量（或計算一段時間內新用戶數的等效度量）。 然後執行以下操作：
 
 1. 設定 [!UICONTROL Time Period] 到要分析的註冊期。
 1. 設定 [!UICONTROL Interval] 到每月。
-1. 設定 [!UICONTROL Group By] 若要贏取（或轉介）來源，請選取您要包含的來源。
-1. 此範例使用 `stacked columns` [!UICONTROL chart type].
+1. 設定 [!UICONTROL Group By] 獲取（或引用）來源，並選擇要包括的來源。
+1. 此示例使用 `stacked columns` [!UICONTROL chart type]。
 
-以下是視覺逐步說明：
+下面是一個視覺漫遊：
 
 ![按源建立新用戶報告。](../../assets/New_Users_by_source.gif)
 
-## 按使用者來源列出的平均期限收入 {#avglifetimerev}
+## 按用戶來源列出的平均生存期收入 {#avglifetimerev}
 
-尋找能吸引新使用者的管道很重要，但這些轉介整體價值有多大？ 此報表顯示特定贏取來源使用者在期限內的平均收入。 換句話說，這可讓您查看從特定來源獲得的使用者在其期限內是否與從不同來源獲得的一組使用者相比花費更多。
+找到能吸引新用戶的渠道非常重要，但這些推薦總體而言有多重要？ 此報表顯示一段時間內來自特定獲取來源的用戶的平均生存期收入。 換句話說，這允許您查看從特定源獲取的用戶在其整個生命週期中是否比從不同源獲取的一組用戶花費更多。
 
-若要在Report Builder中建立此報表，請新增 **平均期限收入** 量度。 然後執行下列動作：
+要在Report Builder中建立此報表，請添加 **平均生命週期收入** 度量。 然後執行以下操作：
 
-1. 設定 [!UICONTROL Time Period] 至您要分析的時段。
+1. 設定 [!UICONTROL Time Period] 到要分析的時間段。
 1. 設定 [!UICONTROL Interval] 到每月。
-   [!UICONTROL Group By] 若要贏取（或轉介）來源，請選取您要包含的來源。
-1. 此範例使用 `line chart` 類型。
+   [!UICONTROL Group By] 獲取（或引用）來源，並選擇要包括的來源。
+1. 此示例使用 `line chart` 的雙曲餘切值。
 
-以下是視覺逐步說明：
+下面是一個視覺漫遊：
 
-![建立依使用者來源的平均期限收入](../../assets/Lifetime_revenue_by_user_source.gif).
+![按用戶源建立平均生存期收入](../../assets/Lifetime_revenue_by_user_source.gif)。
 
-此範例只會查看期限收入，但您也可以複製此分析來查看 [!UICONTROL Number of orders] 或 [!UICONTROL Distinct buyers] 由轉介來源。
+此示例僅查看生命期收入，但您也可以複製此分析以查看 [!UICONTROL Number of orders] 或 [!UICONTROL Distinct buyers] 按推薦來源。
 
-## 按用戶源的平均訂單值 {#avgorderval}
+## 按用戶源列出的平均訂單值 {#avgorderval}
 
-若要進一步了解使用者從特定贏取來源支出的金額，您可以建立報表，查看其平均訂購值。 這可讓您追蹤從特定來源取得的使用者是否比從其他來源取得的使用者在每次訂單上花費更多。
+為了更好地瞭解用戶從特定收購來源中花費的金錢，您可以構建一個查看其平均訂單值的報告。 這使您能夠跟蹤從特定來源獲取的用戶是否比從其他來源獲取的用戶花費更多的每訂單支出。
 
-若要在Report Builder中建立此報表，請新增 **平均訂購值** 量度，然後執行下列動作：
+要在Report Builder中建立此報表，請添加 **平均訂單值** ，然後執行以下操作：
 
 1. 設定 [!UICONTROL Time Period] 到要分析的註冊期。
 1. 設定 [!UICONTROL Time Interval] 到每月。
-1. 設定 [!UICONTROL Group By] 若要贏取（或轉介）來源，請選取您要包含的來源。
-1. 此範例使用 **堆疊欄** 圖表類型。
+1. 設定 [!UICONTROL Group By] 獲取（或引用）來源，並選擇要包括的來源。
+1. 此示例使用 **堆疊列** 圖表類型。
 
-以下是視覺逐步說明：
+下面是一個視覺漫遊：
 
-![建立依使用者來源的「平均訂單值」報表。](../../assets/Average_order_value_by_source.gif)
+![按用戶來源建立平均訂單值報表。](../../assets/Average_order_value_by_source.gif)
 
 ## 按用戶註冊日期和來源列出的總收入 {#revbyregdateandsource}
 
-先前涵蓋的期限收入分析可讓您查看從不同來源取得的使用者的平均期限收入，但期限收入總計又如何？ 此報告可讓您識別在特定時間和特定來源中註冊的使用者總收入。
+前面介紹的生命週期收入分析允許您查看從不同來源獲得的用戶的平均生命週期收入，但是，整個生命週期的收入呢？ 此報表允許您確定在特定時間和特定來源中註冊的總收入用戶的生成量。
 
-若要在Report Builder中建立此報表，請新增 `Revenue by user registration date` 量度。 如果您尚未 [建立此量度](../../data-user/reports/ess-manage-data-metrics.md) 你可以通過複製 `Revenue` 量度和變更 `time stamp` 至使用者的 `creation date`. 新增量度後，請執行下列動作：
+要在Report Builder中建立此報表，請添加 `Revenue by user registration date` 度量。 如果你沒有 [建立此度量](../../data-user/reports/ess-manage-data-metrics.md) 你可以通過複製 `Revenue` 度量和更改 `time stamp` 到用戶 `creation date`。 添加度量後，執行以下操作：
 
 1. 設定 [!UICONTROL Time Period] 到要分析的註冊期。
 1. 設定 [!UICONTROL Time Interval] 到每月。
-1. 設定 [!UICONTROL Group By] 若要贏取（或轉介）來源，請選取您要包含的來源。
-1. 此範例使用 `stacked columns` 圖表類型。
+1. 設定 [!UICONTROL Group By] 獲取（或引用）來源，並選擇要包括的來源。
+1. 此示例使用 `stacked columns` 圖表類型。
 
-以下是視覺逐步說明：
+下面是一個視覺漫遊：
 
 ![按用戶註冊日期和來源建立收入合計報表。](../../assets/Revenue_by_user_registration_date_and_source.gif)
 
-## 按用戶源重複訂單 {#repeatordersbysource}
+## 按用戶來源重複訂單 {#repeatordersbysource}
 
-「平均訂單值」報表平均顯示從特定來源獲取的用戶在下訂單時的花費。 不過，如果相同的使用者是重複客戶，此報表不會顯示。 但透過「依使用者來源重複訂購」，您可以查看特定來源的使用者是否進行了或多或少的重複購買。
+平均訂單值報表平均顯示從特定來源獲取的用戶在下訂單時的花費。 但是，此報告不會顯示這些用戶是否是重複客戶。 但是，使用「按用戶來源重複訂單」，您可以查看特定來源的用戶是否多或少重複購買。
 
-若要在 [Report Builder](../../tutorials/using-visual-report-builder.md)，新增 **訂單數** 量度，然後執行下列動作：
+在 [Report Builder](../../tutorials/using-visual-report-builder.md)的子菜單。 **訂單數** ，然後執行以下操作：
 
 1. 設定 [!UICONTROL Time Period] 到要分析的註冊期。
 1. 設定 [!UICONTROL Time Interval] 到每月。
-1. 新增 [!UICONTROL filter] 以便僅包含具有重複訂單的使用者：
+1. 添加 [!UICONTROL filter] 只包括重複訂單的用戶：
 
    用戶的訂單號大於1
 
-1. 設定 [!UICONTROL Group By] 若要贏取（或轉介）來源，請選取您要包含的來源。
-1. 此範例使用 `stacked columns` 圖表類型。
+1. 設定 [!UICONTROL Group By] 獲取（或引用）來源，並選擇要包括的來源。
+1. 此示例使用 `stacked columns` 圖表類型。
 
-以下是視覺逐步說明：
+下面是一個視覺漫遊：
 
-![建立「依使用者來源的重複訂單」報表。](../../assets/Repeat_orders_by_user_source.gif)
+![按用戶來源建立重複訂單報表。](../../assets/Repeat_orders_by_user_source.gif)
 
 
 ## 包裝 {#wrapup}
 
-本文只談了幾項分析，可供您用來分析收購和行銷管道的價值，但這只是冰山一角。
+本主題僅涉及一些分析，您可以用來分析您的收購和營銷渠道的價值，但這只是冰山一角。
 
 ## 相關 {#related}
 
-* [透過追蹤訂單反向連結來源 [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md)
+* [跟蹤訂單推薦來源 [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md)
 * [連接 [!DNL Google Adwords] 帳戶](../importing-data/integrations/google-adwords.md)
-* [建置 [!DNL Google ECommerce] 含訂單和客戶資料的維度](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
-* [中的UTM標籤最佳作法 [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)
+* [大樓 [!DNL Google ECommerce] 包含訂單和客戶資料的維](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [UTM標籤的最佳做法 [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)
