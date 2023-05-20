@@ -1,6 +1,6 @@
 ---
-title: 存取共用控制面板
-description: 了解如何存取共用控制面板。
+title: 訪問共用儀表板
+description: 瞭解如何訪問共用儀表板。
 exl-id: 528b8a2e-f13c-4ce8-ab8e-13864f50761a
 source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
 workflow-type: tm+mt
@@ -9,14 +9,14 @@ ht-degree: 0%
 
 ---
 
-# 存取共用控制面板
+# 訪問共用儀表板
 
-讓新用戶快速上手非常簡單。
+讓新用戶獲得最快速度很簡單。
 
 ## 新用戶
 
-新使用者建立密碼後，熱門共用控制面板清單隨即顯示。 他們可以選取要在控制面板上顯示的控制面板，然後按一下 **[!UICONTROL Done]**.
+新用戶建立密碼後，將顯示常用共用儀表板清單。 他們可以選擇要在儀表板上顯示的儀表板，然後按一下 **[!UICONTROL Done]**。
 
-## 現有使用者
+## 現有用戶
 
-若要再次檢視共用控制面板的清單，使用者可以按一下 **[!UICONTROL Find]** 在 `Global Search` 功能表。
+要再次查看共用儀表板清單，用戶可以按一下 **[!UICONTROL Find]** 的 `Global Search` 的子菜單。

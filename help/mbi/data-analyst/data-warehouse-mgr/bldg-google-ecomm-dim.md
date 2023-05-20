@@ -74,7 +74,7 @@ ht-degree: 0%
 
 ![](../../assets/help_center.gif)
 
-接下來，嘗試建立 **訂單 [!DNL Google Analytics] 介質** 和 `campaign`。 這些維度沒有太大變化，所以試一試。 但如果你被卡住了，你可以 [本文末尾](#stuck) 看看有什麼不同。
+接下來，嘗試建立 **訂單 [!DNL Google Analytics] 介質** 和 `campaign`。 這些維度沒有太大變化，所以試一試。 但如果你被卡住了，你可以 [本文的結尾](#stuck) 看看有什麼不同。
 
 ### 客戶表 {#customers}
 

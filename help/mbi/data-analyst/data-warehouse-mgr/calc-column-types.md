@@ -87,7 +87,7 @@ ht-degree: 0%
 
 計算列是確定記錄在多側存在的二進位test。 換句話說，新列返回 `1` 如果路徑連接每個表中至少一行， `0` 的下界。
 
-此類型的維可能確定客戶是否曾購買過特定產品。 在 `customers` 表格 `orders` 表，特定產品的篩選器，維 `Customer has purchased Product X?` 可以建造。
+此類型的維可能確定客戶是否曾購買過特定產品。 在 `customers` 表格和 `orders` 表，特定產品的篩選器，維 `Customer has purchased Product X?` 可以建造。
 
 ## 方便的參考地圖 {#map}
 

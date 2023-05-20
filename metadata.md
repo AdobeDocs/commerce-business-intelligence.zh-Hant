@@ -9,33 +9,33 @@ role: User
 index: true
 source-git-commit: 8e4854e5b8820eb1fa0aee0d23f7e1ecd36c538b
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '127'
 ht-degree: 0%
 
 ---
 
 
-# 供內部使用的中繼資料
+# 用於內部使用的元資料
 
-此 `metadata.md` 檔案包含存放庫層級中繼資料，會傳遞至使用手冊 `TOC.md` 檔案。 如果您想要變更任何使用手冊的metadata.md內容，請在任何 `TOC.md` 檔案。
+的 `metadata.md` 檔案包括傳遞到使用手冊的回購級別元資料 `TOC.md` 檔案。 如果要更改任何使用手冊的metadata.md內容，請在任何 `TOC.md` 的子菜單。
 
-| 中繼資料 | 它的作用 |
+| 元資料 | 它做什麼 |
 |--- |--- |
-| solution-title | 在文章標題中作為連結使用 |
-| solution-hub-url | 開啟helpx中樞頁面 |
-| solution-icon | 在解決方案標題旁顯示解決方案圖示。 尚未實作 |
-| getting-started-url | helpx快速入門頁面的連結 |
-| tutorials-url | 教學課程影片（helpx或KT教學課程其中之一）的連結 |
-| mini-toc-levels | 決定右邊欄中顯示的標題層數。 預設為2 |
-| git-repo | 指定主要存放庫的位置，以供內部使用 |
+| 解決方案標題 | 在文章標題中用作連結 |
+| 解決方案集線 | 開啟幫助中心頁 |
+| 解決方案表徵圖 | 在解決方案標題旁邊顯示解決方案表徵圖。 尚未實施 |
+| 入門URL | 指向幫助入門頁的連結 |
+| 教程url | 指向視頻教程的連結 — 幫助教程或KT教程 |
+| 微TOC級 | 確定顯示在右滑軌中的標題級別數。 預設值為2 |
+| Git回購 | 指定內部使用的主回購庫的位置 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 在TOC.md檔案中
 
-| 中繼資料 | 它的作用 |
+| 元資料 | 它做什麼 |
 |--- |--- |
-| user-guide-title | 在文章標題中作為連結使用 |
-| 使用手冊url | 開啟helpx中樞頁面 |
+| 使用手冊標題 | 在文章標題中用作連結 |
+| 使用手冊URL | 開啟幫助中心頁 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
