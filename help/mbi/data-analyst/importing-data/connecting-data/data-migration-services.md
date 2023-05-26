@@ -1,6 +1,6 @@
 ---
-title: 資料遷移服務
-description: 瞭解提交請求並開始遷移所需的一切。
+title: 資料移轉服務
+description: 瞭解提交請求並開始移轉所需的一切。
 exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,66 +9,66 @@ ht-degree: 0%
 
 ---
 
-# 資料遷移
+# 資料移轉
 
-遷移到新的資料庫架構、伺服器或報告資料庫不必感到壓力。 的 [[!DNL Adobe] 服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 提供遷移幫助。
+移轉至新的資料庫結構描述、伺服器或報告資料庫並不一定會有壓力。 此 [[!DNL Adobe] 服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 提供移轉協助。
 
-為確保過渡盡可能順利，在提交遷移請求時應盡可能詳細。 本主題包含您提交請求和開始遷移所需的一切內容。 為我們提供您需求的全面圖片，確保您的項目範圍正確且估計準確。
+為確保您的移轉過程儘可能順利，請在提交移轉請求時提供儘可能詳細的資訊。 本主題提供提交請求並開始移轉所需的一切。 提供您需求的完整資訊，確保您的專案範圍正確且估算準確。
 
-## 入門 {#started}
+## 快速入門 {#started}
 
-在開始之前，您必須瞭解以下問題的答案：
+開始之前，您必須知道下列問題的答案：
 
-* **新資料庫是否位於新伺服器上？** 在提交請求之前，請在以下位置更新資料連接的設定 **[!UICONTROL Manage Data** > **Connections]**。 如果您需要複習如何執行此操作，請轉至 [`Integrations`](../integrations/integrations.md) ，並查找所使用的資料庫類型的說明。
+* **新資料庫是在新伺服器上嗎？** 在提交請求之前，請更新下方的資料連線設定 **[!UICONTROL Manage Data** > **Connections]**. 如果您需要有關如何執行此動作的複習資料，請前往 [`Integrations`](../integrations/integrations.md) 區段，並尋找您所使用的資料庫型別的指示。
 
-* **您的所有歷史資料是否都存在於新資料庫中，或是需要遷移它？** 您可以在遷移過程中整合歷史資料和新資料。 即使您不需要整合，請在您的請求中告知我們。
+* **您的所有歷史資料都存在於新資料庫中還是需要移轉？** 您可以在移轉過程中合併歷史資料與新資料。 即使您不需要合併，請在您的請求中告知我們。
 
-在您對上述問題做出回答後，您需要瞭解遷移的類型。 新資料庫是否 [`same`](#sameschema) 架構，或者 [`different`](#newschema) 架構？ 在下面的討論中，您可以找到每種遷移類型的詳細說明。
+取得上述答案後，您必須知道移轉型別。 新資料庫是否會 [`same`](#sameschema) 結構描述，或它是否具有 [`different`](#newschema) 結構描述？ 在下列討論中，您會找到每種移轉型別的詳細指示。
 
-## 遷移到具有相同架構的新資料庫 {#sameschema}
+## 移轉至具有相同結構描述的新資料庫 {#sameschema}
 
-提交請求時，請讓我們知道資料庫架構沒有更改，並且已在中設定連接 [!DNL Adobe Commerce Intelligence]。
+提交請求時，請告知我們資料庫結構描述並未變更，且連線已設定於 [!DNL Adobe Commerce Intelligence].
 
-如果資料庫具有新名稱，請將其包含在請求中，以便可以正確遷移儀表板。
+如果資料庫有新名稱，請將其包含在請求中，以便您的儀表板可以正確移轉。
 
-如果資料庫名稱未更改，則遷移完成。 下次完成完整更新後，儀表板和報表將刷新。
+如果資料庫名稱未變更，則移轉完成。 在下次完整更新完成後，儀表板和報表將重新整理。
 
-## 使用不同模式遷移到新資料庫 {#newschema}
+## 移轉至具有不同結構描述的新資料庫 {#newschema}
 
 >[!IMPORTANT]
 >
->如果某些資料列在新資料庫中沒有相等的列，則某些分析可能會在進程中丟失。
+>如果某些資料欄在新資料庫中沒有對應的資料欄，則某些分析可能會在此過程中遺失。
 
-要成功完成此類遷移，必須將現有資料列與新資料庫中的等效資料列相匹配。 這不是強制性的，但為我們執行匹配有助於加快您請求的週轉時間並降低遷移的價格。
+若要成功完成這類移轉，現有資料欄必須與其在新資料庫中的對應資料欄相符。 這不是強制性的，但是對我們執行比對有助於加快請求的週轉時間，並降低移轉的成本。
 
-如果您覺得自己可以進行匹配，請按照以下說明操作，並將完成的電子錶格附加到您的請求：
+如果您覺得可以自行進行比對，請依照下列指示，將完成的試算表附加至您的請求：
 
-1. 查看當前同步到您的Data Warehouse的所有表和列(**[!UICONTROL Manage Data** > **Data Warehouse]**)。
+1. 檢閱目前同步處理至Data Warehouse的所有表格和欄(**[!UICONTROL Manage Data** > **Data Warehouse]**)。
 
-1. 在電子錶格中，為每個要遷移到新資料庫的表建立一個頁籤。
+1. 在試算表中，為每個要移轉至新資料庫的表格建立標籤。
 
-1. 在每個頁籤中，為所有需要遷移的現有列建立一個列。 Adobe建議給它命名 `Existing column name`。
+1. 在每個索引標籤中，為需要移轉的所有現有欄建立一個欄。 Adobe建議將其命名如下 `Existing column name`.
 
-1. 您還需要為電子錶格的每個頁籤中的新資料庫中的列的等效項建立另一個列。 Adobe建議將列命名為類似 `New column name`。
+1. 您還需要在試算表的每個索引標籤中，為新資料庫中的欄對應內容建立另一欄。 Adobe建議將欄命名如下 `New column name`.
 
-1. 輸入現有列及其等效項。 如果現有列沒有新的等效項，請輸入 `N/A`。
+1. 輸入現有欄及其對應欄。 如果現有欄沒有新的對等項，請輸入 `N/A`.
 
-   此外，如果有新方法計算新資料庫中的相同資訊，請在 [`New column name`] 的雙曲餘切值。
+   此外，如果有新方法可計算新資料庫中的相同資訊，請在 [`New column name`] 欄。
 
-下面是一個示例：
+以下是範例說明：
 
 ![](../../../assets/Migration_Spreadsheet.png)
 
 >[!NOTE]
 >
->如果某些資料列在新資料庫中沒有相等的列，則某些分析可能會在進程中丟失。
+>如果某些資料欄在新資料庫中沒有對應的資料欄，則某些分析可能會在此過程中遺失。
 
 ## 如何提交請求？ {#submitreq}
 
-你可以通過 [提交支援請求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+您可以透過以下方式聯絡我們 [提交支援要求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
-如果按照上一節中的步驟建立列匹配電子錶格，請不要忘記附加它。
+如果您依照上一節中建立欄位比對試算表的步驟進行，請不要忘記附加試算表。
 
 ## 接下來呢？ {#wrapup}
 
-確定項目範圍需要您與執行遷移的Commerce Services團隊的分析師進行一些協作。 更改的複雜性以及您和分析員的響應能力直接影響遷移所花費的時間。 在確定詳細資訊後，將建立時間表並將工作說明發送給您。
+確定專案範圍時，需要您和執行移轉的Commerce Services團隊的分析師進行一些共同作業。 變更的複雜性以及您和分析師的回應能力，會直接影響移轉所需的時間。 當您確定詳細資料後，將會建立時間表，並隨工作說明傳送給您。

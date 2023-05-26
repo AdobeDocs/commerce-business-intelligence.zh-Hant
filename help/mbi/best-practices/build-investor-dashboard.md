@@ -1,6 +1,6 @@
 ---
-title: 為投資者構建儀表板
-description: 瞭解如何為投資者構建儀表板。
+title: 為投資者建立儀表板
+description: 瞭解如何為投資者建立儀表板。
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
 source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
@@ -9,13 +9,13 @@ ht-degree: 0%
 
 ---
 
-# 構建投資者儀表板
+# 建立投資者儀表板
 
-許多客戶與投資者合作，需要從平台中共用資訊，但您為做出日常業務決策而建立的控制板，可能不是投資者想要的。 下面介紹了一些最佳做法，說明如何建立一個全面但簡單、非常適合與活躍和潛在投資者共用的儀表板。
+許多客戶都與投資者合作，並且需要從平台分享資訊，但您為進行日常業務決策而建立的儀表板可能不是投資者所尋求的。 以下說明如何建立完整但簡單的控制面板，以便與活躍和潛在投資者分享的一些最佳實務。
 
-以下是您為投資者儀表板建立報告所需的內容：
+以下是建立投資者儀表板報告所需的內容：
 
-## 標量報表
+## 純量報表
 
 * **[!UICONTROL All-time revenue]**
 * **[!UICONTROL Distinct buyers]**
@@ -23,56 +23,56 @@ ht-degree: 0%
 * **[!UICONTROL AOV]**
 * **[!UICONTROL Items sold]**
 
-## 可視報告
+## 視覺報表
 
 * **[!UICONTROL Revenue by quarter]**
-   * 指標 — 收入
+   * 量度 — 收入
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
-   * 指標 — 首次訂單收入
-   * 篩選器 — 用戶的訂單編號等於1
-   * 指標2 — 重複訂單收入
-      * 篩選器 — 用戶的訂單號大於1
-   * 取消選中「多Y軸」(Multiple Y-Axes)框
-   * 更改為堆積柱形圖
+   * 量度 — 首次訂購收入
+   * 篩選器 — 使用者的訂單編號等於1
+   * 量度2 — 重複訂購收入
+      * 篩選器 — 使用者的訂單編號大於1
+   * 取消勾選多個Y軸的方塊
+   * 變更為棧疊式柱狀圖
 * **[!UICONTROL AOV by quarter]**
-   * 指標1 — 收入
-      * 隱藏此度量
-   * 指標2 — 訂單數
-      * 隱藏此度量
+   * 量度1 — 收入
+      * 隱藏此量度
+   * 量度2 — 訂單數
+      * 隱藏此量度
    * 公式 — AOV
       * A/B
 * **[!UICONTROL All-time revenue by source]**
-   * 指標 — 收入
-   * 按客戶分組 `utm_source`
+   * 量度 — 收入
+   * 依客戶的群組 `utm_source`
 * **[!UICONTROL Revenue from top 10 products]**
-   * 指標 — 產品收入
+   * 量度 — 產品收入
       * 隱藏圖表
-      * 按產品名稱分組。 選擇所有產品。
-      * 將時間範圍設定為「全時」
-      * 將時間間隔設定為「無」
-      * 在「顯示頂部/底部」中，僅顯示按產品利潤排序的前10個
+      * 依產品名稱分組。 選取所有產品。
+      * 將時間範圍設定為「全部」
+      * 將時間間隔設定為無
+      * 在「顯示排名前/最後」中，僅顯示依產品利潤排列的排名前10位
 * **[!UICONTROL Cumulative distinct buyers by quarter]**
-   * 指標 — 不同的買家
-      * 透視 — 累計
+   * 量度 — 不同的購買者
+      * 透視 — 累積
 * **[!UICONTROL Site visits - New vs. repeat by month]**
-* 會話
+* 工作階段
 
-使用 [!DNL Google Analytics] 整合，您可以包括以下報告：
+使用 [!DNL Google Analytics] 整合，您可加入以下報表：
 
-* 現場訪問
+* 網站造訪
 * 轉換率
 
-使用 [Commerce Data Exchrity服務](https://business.adobe.com/products/magento/magento-commerce.html)，您可以包括以下報表：
+使用 [Commerce資料擴充服務](https://business.adobe.com/products/magento/magento-commerce.html)，您可加入以下報表：
 
-* 按州/地區、年齡、性別分列的獨特客戶。
+* 依州/地區、年齡、性別區分的不重複客戶。
 
-## 其他提示
+## 其他秘訣
 
-* 使用清晰、簡潔的 [命名約定](../best-practices/naming-elements.md)
-* 與投資者用戶共用儀表板
-* 或通過 **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
-* 僅建立一個儀表板。 這使內容更易於維護，而且您完全知道您的投資者在看什麼。
+* 使用簡潔明瞭 [命名慣例](../best-practices/naming-elements.md)
+* 與投資者使用者共用儀表板
+* 或透過以下方式傳送： **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
+* 僅建立一個儀表板。 這可讓內容更易於維護，而且您清楚知道您的投資者在看什麼。
 
-精心組織報告，注重細節。 完成後，儀表板如下所示：
+周詳地組織報表，並注意詳細資訊。 完成後，儀表板看起來類似以下：
 
 ![](../../mbi/assets/investor-dboard-example.png)

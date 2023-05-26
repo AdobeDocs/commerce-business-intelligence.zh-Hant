@@ -1,5 +1,5 @@
 ---
-title: 在多個螢幕上顯示儀表板
+title: 在多個熒幕上顯示儀表板
 description: 瞭解如何在辦公室周圍顯示儀表板。
 exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
 source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
@@ -11,16 +11,16 @@ ht-degree: 0%
 
 # 在辦公室周圍顯示儀表板
 
-對於 [!DNL Commerce Intelligence] 有興趣在整個辦公室的螢幕上顯示其儀表板和報告的用戶，有多種硬體選項可輕鬆啟用此設定。
+對象 [!DNL Commerce Intelligence] 有興趣在整個辦公室的熒幕上顯示其儀表板和報表的使用者，有各種硬體選項可以輕鬆啟用此設定。
 
-下面是您需要的選項的推薦清單：
+以下是您需要選項的建議專案清單：
 
-1. **帶HDMI輸入的電視或顯示器** 廣播到。
+1. **含HDMI輸入的電視機或顯示器** 廣播至。
 
-1. **運行輕量作業系統(如 [!DNL Chrome] 作業系統或樹莓派。** 您的轉換器應具有連接到螢幕的HDMI輸出，並始終顯示選定的儀表板。 運行自己作業系統的專用電腦優於類似 [!DNL Chromecast]中，您只能將同一儀表板向所有連接的螢幕發送。 轉換器最好安裝在螢幕後面。
+1. **具備Wifi功能的硬體鎖，執行輕量型作業系統，例如 [!DNL Chrome] 作業系統或Raspberry Pi。** 您的硬體鎖應該有可連線至熒幕的HDMI輸出，並且一律顯示您選取的控制面板。 專屬電腦執行自己的作業系統，優於類似以下的設定 [!DNL Chromecast]，您只能將相同的儀表板轉接到所有連線的熒幕。 硬體鎖最好安裝在熒幕後面。
 
-1. **USB鍵盤和滑鼠** 控制轉換器。
+1. **USB鍵盤與滑鼠** 控制您的硬體鎖。
 
-1. **一個瀏覽器擴展，可同時在多個頁籤之間旋轉。** 這允許您設定在唯一頁籤中顯示的任何選定儀表板。 Adobe推薦 [循環頁籤](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) 擴展 [!DNL Chrome]。
+1. **瀏覽器擴充功能，可一次在多個索引標籤之間旋轉。** 這可讓您設定顯示在唯一標籤中的任何選定儀表板。 Adobe建議 [旋轉器標籤](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) 擴充功能(如果您使用 [!DNL Chrome].
 
-在具備上述硬體後，您可以開啟螢幕上的瀏覽器窗口，其中包含要在每個頁籤中顯示的特定儀表板。 最後，將瀏覽器配置為以所需頻率旋轉每個儀表板。
+擁有上述硬體後，您可以在熒幕上開啟一個瀏覽器視窗，其中包含您想要顯示在每個標籤中的特定儀表板。 最後，將瀏覽器設定為以所需的頻率旋轉每個儀表板。

@@ -1,6 +1,6 @@
 ---
-title: 使用「顯示頂部/底部」功能對資料排序
-description: 瞭解如何使用「顯示頂部/底部」功能對資料進行排序。
+title: 使用「顯示頂端/底部」功能排序資料
+description: 瞭解如何使用「顯示頂端/底部」功能排序資料。
 exl-id: d47119f4-cdc5-4fa7-a606-d4b8555a8843
 source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
@@ -9,62 +9,62 @@ ht-degree: 0%
 
 ---
 
-# 使用 `Show Top/Bottom` 特徵
+# 排序資料使用 `Show Top/Bottom` 功能
 
-您可以在 `Visual Report Builder` 比分析時間的趨勢更好。 例如，您可以構建一個報告來顯示您的收購和市場營銷渠道的價值，但您也可以構建一個只顯示前五名執行者的報告。 同樣，您可以通過建立顯示哪些州生成了最多收入的報告來重新調整營銷工作。
+您可以在中完成更多工作 `Visual Report Builder` 而非建立一段時間內該趨勢的分析。 例如，您可以建置報表來顯示贏取和行銷管道的價值，但也可以建置報表來只顯示前五名績效者。 同樣地，您可以建立報表，顯示哪些狀態產生最多收入，藉此重新調整行銷工作的重點。
 
-此類資料排序和排序可以在同時使用 `Group By` 和 `Time Interval of None`。 當這兩個元素都在報告中時， `Show Top/Bottom` 圖表預覽上方顯示功能。 此功能允許您根據您設定的參數查看頂部（最高到最低）和底部（最低到最高）資料點。
+在同時使用兩者的報表中，可完成這類資料排序和排序 `Group By` 和 `Time Interval of None`. 當這兩個元素都在報表中時， `Show Top/Bottom` 功能會顯示在圖表預覽上方。 此功能可讓您根據您設定的引數檢視頂端（最高至最低）和底部（最低至最高）的資料點。
 
-![在可視Report Builder中顯示頂部/底部功能。](../../assets/Show_Top_Bottom.png)
+![在視覺Report Builder中顯示頂端/底部功能。](../../assets/Show_Top_Bottom.png)
 
-## 我怎麼用？ {#how}
+## 我該如何使用此功能？ {#how}
 
-按一下 **[!UICONTROL Show Top/Bottom link]** 來設定顯示和排序參數。 文本框中的數字可以是整數(如 `5`)或 `ALL`。 接下來，您可以選擇按度量或按分組對報表進行排序。
+按一下 **[!UICONTROL Show Top/Bottom link]** 以設定顯示和排序引數。 文字方塊中的數字可以是整數(例如 `5`)或 `ALL`. 接下來，您可以選擇依量度或分組來排序報表。
 
-例如，如果要顯示帶來最多收入的五個推薦來源，您就是這樣做的：
+例如，如果您想顯示帶來最多收入的五個反向連結來源，以下是您的做法：
 
-1. 添加 `Revenue` 度量。
+1. 新增 `Revenue` 報表的量度。
 
-1. 添加 `Group By` 按引用源分段度量。
+1. 新增 `Group By` 依反向連結來源將量度分段。
 
-1. 設定 `Time Interval` 至 `None`。
+1. 設定 `Time Interval` 至 `None`.
 
-1. 在 `Show Top/Bottom` 設定，將顯示設定為 `5` 因此，只有前五個總收入額的推薦來源才包括在報告中。
+1. 在 `Show Top/Bottom` 設定，將顯示設定為 `5` 因此，報表中只會包含前五個總收入金額的反向連結來源。
 
 >[!NOTE]
 >
->因為報告沒有 `Time Interval`，值（在本例中為前五個引用源）可隨時間變化。 如果一個推薦來源在收入方面超過另一個來源，則來源顯示的順序將發生更改。
+>因為報告沒有 `Time Interval`，值（在此例中是前五個反向連結來源）可能會隨著時間改變。 如果某個反向連結來源的收入超過另一個反向連結來源，則來源顯示的順序會變更。
 
-## 使用多個指標呢？ {#multiplemetrics}
+## 使用多個量度怎麼樣？ {#multiplemetrics}
 
-當報告中有多個度量時，使用此功能會變得複雜，因為每個度量只能按其自身或其中一個分組進行排序。
+當報表中有多個量度時，使用此功能會變得複雜，因為每個量度只能依其本身或依其中一個群組排序。
 
-假設你和他們 `Revenue` 和 `Number of orders` 度量，按引用源分組。 `Revenue` 只能按 `Revenue` 或推薦來源 `Number of orders` 只能按 `Number of orders` 或推薦來源。
+假設您同時使用兩個工具建立報告 `Revenue` 和 `Number of orders` 量度，依反向連結來源分組。 `Revenue` 只能排序依據 `Revenue` 或反向連結來源和 `Number of orders` 只能排序依據 `Number of orders` 或反向連結來源。
 
-這意味著，當你可以 `Revenue` 從頂部 `5` 生成收入的參考來源，您不能同時按頂層顯示訂單數 `5` 創收的推薦來源。 簡言之：當存在多個度量時，最佳選擇是按分組對每個度量進行排序。
+這表示雖然您可以顯示 `Revenue` 僅從頂端 `5` 產生收入的反向連結來源，您無法同時按最上方顯示訂單數 `5` 產生收入的推薦來源。 簡言之：如果有多個量度，最好是依分組來排序每個量度。
 
-下面是對 `Revenue` 按本身而不是按分組來度量。 正如您所看到的，不按分組對度量進行排序會生成一個奇怪（而且最終毫無幫助）的報告：
+以下是排序的圖表範例： `Revenue` 量度本身，而非分組。 如您所見，若未依群組排序量度，則會建立奇怪（且最終無用）的報告：
 
-![奇怪而無益的報告結果。](../../assets/strange-report-results.png)
+![奇怪且無用的報告結果。](../../assets/strange-report-results.png)
 
-如果您按分組對兩個指標進行排序，則圖表將如下所示：
+如果您已依群組排序這兩個量度，圖表看起來會像這樣：
 
-![按分組對兩個度量進行排序。](../../assets/sort-metrics-by-grouping.png)
+![依群組排序兩個量度。](../../assets/sort-metrics-by-grouping.png)
 
-## 預設情況下，值如何排序？ {#defaultsorting}
+## 依預設值如何排序？ {#defaultsorting}
 
-當報告中只包含一個度量時 `Group by` 和 `Time Interval` 共 `None`，在 `Visual Report Builder` 即根據度量顯示頂值。 在這個例子中， `Show Top/Bottom` 如果這符合您的需要，則可能不需要功能。
+當只有一個量度包含在具有的報告時 `Group by` 和 `Time Interval` 之 `None`，中的預設順序 `Visual Report Builder` 是根據量度顯示排名最前的值。 在此情況下， `Show Top/Bottom` 如果符合您的需求，則可能不需要此功能。
 
-此示例將介紹您的銷售代表已關閉的機會數。 此表根據度量自動從最高到最低排序，在此情況下 `Won Opportunities`。
+此範例會檢視您的銷售代表已結束的商機數量。 在此情況下，此表格會根據量度從最高到最低自動排序 `Won Opportunities`.
 
-![按度量排序。](../../assets/Ordered_by_metric.png)
+![依量度排序。](../../assets/Ordered_by_metric.png)
 
-但是，當添加第二個度量時，預設值是根據分組對頂部進行排序。 隨著度量和分組的添加，預設排序基於第一分組，然後是第二分組等。
+不過，新增第二個量度時，預設值是根據分組排序頂端。 新增量度和群組後，預設排序會依據第一個群組，然後是第二個群組，依此類推。
 
-![按分組排序。](../../assets/Ordered_by_grouping.png)
+![依群組排序。](../../assets/Ordered_by_grouping.png)
 
-## 收尾 {#wrapup}
+## 正在結束 {#wrapup}
 
-雖然此處介紹了一些基本功能，但此功能有許多有趣的用途。
+雖然部分基本功能已在此說明，但此功能有許多有趣的用途。
 
-請考慮以前的銷售代表和機會示例。 刪除 `Time Interval`，應用 `Group By`，並且根據分組對資料進行排序使我們能夠詳細瞭解每個銷售代表贏得的機會數量。 另外，使用 `Show Top/Bottom` 讓我們瞭解誰是表現最好的人。
+請思考先前的銷售代表與商機範例。 移除 `Time Interval`，套用 `Group By`，並根據分組來排序資料，可讓我們取得每個代表的成功機會數的詳細圖片。 此外，使用 `Show Top/Bottom` 功能可讓我們發現績效最佳者。

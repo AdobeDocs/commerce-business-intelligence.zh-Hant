@@ -1,6 +1,6 @@
 ---
-title: 導入MailChimp資料
-description: 學習將MailChimp資料導入 [!DNL Commerce Intelligence]。
+title: 匯入MailChimp資料
+description: 瞭解如何將MailChimp資料匯入 [!DNL Commerce Intelligence].
 exl-id: 5595c6a6-5476-4a0e-a493-ddc32161894e
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,68 +9,68 @@ ht-degree: 0%
 
 ---
 
-# 導入 [!DNL Mailchimp] 資料
+# 匯入 [!DNL Mailchimp] 資料
 
-要全面瞭解您的競選活動，您可以導入 [!DNL Mailchimp] 電子郵件市場活動資料 [!DNL Commerce Intelligence]。 要完成導入，您需要對每個 [!DNL Mailchimp] 您擁有的市場活動：
+若要全面瞭解您的行銷活動，您可以匯入 [!DNL Mailchimp] 透過電子郵件將行銷活動資料傳送至 [!DNL Commerce Intelligence]. 若要完成匯入，您需要針對每個 [!DNL Mailchimp] 您的行銷活動：
 
-## 導出開啟資料 {#opens}
+## 匯出開啟的資料 {#opens}
 
-1. 登錄後 [!DNL Mailchimp]，轉到 `Campaigns` 頁籤。
+1. 登入之後 [!DNL Mailchimp]，前往 `Campaigns` 標籤。
 
-   ![導入mailchim 1](../../../assets/import-mailchimp-1.png)
+   ![匯入mailchimp 1](../../../assets/import-mailchimp-1.png)
 
-1. 按一下 **[!UICONTROL View Report]**，在活動名稱旁邊。
+1. 按一下 **[!UICONTROL View Report]**，促銷活動名稱旁。
 
-   ![導入mailchim 2](../../../assets/import-mailchimp-2.png)
+   ![匯入mailchimp 2](../../../assets/import-mailchimp-2.png)
 
-1. 按一下 **[!UICONTROL Opened]** 數。
+1. 按一下 **[!UICONTROL Opened]** 數字。
 
-   ![導入mailchim3](../../../assets/import-mailchimp-3.png)
+   ![匯入mailchimp 3](../../../assets/import-mailchimp-3.png)
 
-1. 按一下 **[!UICONTROL Export]** 並保存 `.csv` 的子菜單。
+1. 按一下 **[!UICONTROL Export]** 並儲存 `.csv` 檔案。
 
-   必須添加 `primary key`。 `date (mm/dd/yyyy)`, `campaign name` 列。 確保 `primary keys` 對每行都是唯一的。
+   您必須新增 `primary key`， `date (mm/dd/yyyy)`、和 `campaign name` 欄放入此檔案。 確定 `primary keys` 每一列都是唯一的。
 
-   ![導入mailchim 4](../../../assets/import-mailchimp-4.png)
+   ![匯入mailchimp 4](../../../assets/import-mailchimp-4.png)
 
-## 導出按一下資料 {#clicks}
+## 匯出點選資料 {#clicks}
 
-1. 導航到 `View Report` 螢幕。
+1. 導覽回至 `View Report` 行銷活動的畫面。
 
-1. 按一下 `Clicked`。
+1. 按一下符合以下條件的數字 `Clicked`.
 
-   ![導入郵件連結5](../../../assets/import-mailchimp-5.png)
+   ![匯入mailchimp 5](../../../assets/import-mailchimp-5.png)
 
-1. 按一下 `Total Clicks` 或 `Unique Clicks` 的雙曲餘切值。
+1. 按一下 `Total Clicks` 或 `Unique Clicks` 欄。
 
-   ![導入郵件連結6](../../../assets/import-mailchimp-6.png)
+   ![匯入mailchimp 6](../../../assets/import-mailchimp-6.png)
 
-1. 按一下 **[!UICONTROL Export]** 並保存 `.csv` 的子菜單。
+1. 按一下 **[!UICONTROL Export]** 並儲存 `.csv` 檔案。
 
-   必須添加 `Primary Key`。 `date (mm/dd/yyyy)`。 `campaign name`, `URL` 列。 您不需要添加完整的URL，只是添加一些讓您知道點擊了什麼的內容。
+   您必須新增 `Primary Key`， `date (mm/dd/yyyy)`， `campaign name`、和 `URL` 欄放入此檔案。 您不需要新增完整URL，只要讓您知道點選了什麼即可。
 
-   ![導入郵件連結7](../../../assets/import-mailchimp-7.png)
+   ![匯入mailchimp 7](../../../assets/import-mailchimp-7.png)
 
-1. 對電子郵件中按一下的每個URL重複步驟3和4，將所有資料合併到同一個 `.csv` 的子菜單。
+1. 對電子郵件中按下的每個URL重複步驟3和4，將所有資料合併到相同檔案中 `.csv` 檔案完成時。
 
-## 導出發送的資料 {#sent}
+## 匯出已傳送的資料 {#sent}
 
-1. 進入 `Campaigns` 頁籤 [!DNL Mailchimp]。
+1. 前往 `Campaigns` 索引標籤/ [!DNL Mailchimp].
 
-1. 按一下 **[!UICONTROL View Report]** 選項。
+1. 按一下 **[!UICONTROL View Report]** 位於行銷活動名稱旁。
 
-1. 按一下旁邊的數字 `Recipients`。
+1. 按一下旁邊的數字 `Recipients`.
 
-   ![導入mailchim8](../../../assets/import-mailchimp-8.png)
+   ![匯入mailchimp 8](../../../assets/import-mailchimp-8.png)
 
-1. 按一下 **[!UICONTROL Export]** 並保存 `.csv` 的子菜單。
+1. 按一下 **[!UICONTROL Export]** 並儲存 `.csv` 檔案。
 
-   必須添加 `Primary Key`。 `date (mm/dd/yyyy)`, `campaign name` 列。
+   您必須新增 `Primary Key`， `date (mm/dd/yyyy)`、和 `campaign name` 欄放入此檔案。
 
-   ![導入郵件連結9](../../../assets/import-mailchimp-9.png)
+   ![匯入mailchimp 9](../../../assets/import-mailchimp-9.png)
 
-## 準備檔案以上載到 [!DNL Commerce Intelligence] {#upload}
+## 準備檔案以上傳到 [!DNL Commerce Intelligence] {#upload}
 
-每個檔案 —  `Opens`。 `Clicks`, `Sent`  — 應上載到 [!DNL Commerce Intelligence] 檔案。 Adobe建議使用此命名約定命名檔案： `MailChimp\_ACTION\_DATE`。 替換 `ACTION` 與 `Open`。 `Click`或 `Sent`，替換 `DATE` 和導出日期。
+每個檔案 —  `Opens`， `Clicks`、和 `Sent`  — 應上傳至 [!DNL Commerce Intelligence] 作為單獨的檔案。 Adobe建議您使用此命名慣例來命名檔案： `MailChimp\_ACTION\_DATE`. Replace `ACTION` 替換為 `Open`， `Click`，或 `Sent`，並取代 `DATE` 包含匯出日期。
 
-準備好上載檔案時，請使用 [`File Upload` 特徵](../connecting-data/using-file-uploader.md) 將資料帶入Data Warehouse。
+當您準備好上傳檔案時，請使用 [`File Upload` 功能](../connecting-data/using-file-uploader.md) 將資料帶入您的Data Warehouse。

@@ -10,4 +10,4 @@ ht-degree: 0%
 
 # Tutorials
 
-按照這些自我指導的教程瞭解 [!DNL Adobe Commerce Intelligence]。
+按照這些自我引導式教學課程，瞭解 [!DNL Adobe Commerce Intelligence].

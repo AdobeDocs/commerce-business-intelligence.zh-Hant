@@ -1,6 +1,6 @@
 ---
-title: Adobe Commerce情報
-description: 瞭解有關Adobe Commerce情報局的資訊。
+title: 加入Adobe Commerce Intelligence
+description: 瞭解如何上手Adobe Commerce Intelligence。
 exl-id: e0cce957-af2c-4514-9afd-c9aaa651a4f0
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,26 +9,26 @@ ht-degree: 0%
 
 ---
 
-# 登機 [!DNL Adobe Commerce Intelligence]
+# 入門 [!DNL Adobe Commerce Intelligence]
 
-與 `store` 和 `database` 設定確保正確設定報告。 有了這些答案，Adobe將提供您的報告，這些報告是專門為您商店的設定而定製的。
+與相關的入門問題 `store` 和 `database` 設定可確保您正確設定報表。 有了這些答案，Adobe提供的報表將完全根據您商店的設定量身打造。
 
-## 儲存設定
+## 商店設定
 
-- *您的商店是否接受來賓結帳？*  — 選擇 **是** 如果您允許客戶在未註冊帳戶的情況下從您的商店購買。
+- *您的商店是否接受訪客結帳？*  — 選取 **是** 若您允許客戶在商店購買商品，而不需註冊帳戶。
 
-- `Timezone`  — 選擇 `timezone` 你想看你的報導。
+- `Timezone`  — 選取 `timezone` 您想要在中檢視報告的資訊。
 
-- `Currency`  — 選擇 `currency` 你店裡的店。
+- `Currency`  — 選取 `currency` 您的商店營運所在的區域。
 
-- `Your week starts on...`  — 在報告中選擇要作為一週開始的星期幾。
+- `Your week starts on...`  — 在報表中選取您要作為一週開始的一週中的哪一天。
 
-- *您使用哪個版本的Commerce?*  — 選擇 `currency` 你店裡的店。
+- *您使用哪個版本的Commerce？*  — 選取 `currency` 您的商店營運所在的區域。
 
-- *你的店是在歐盟嗎？*  — 如果您回答 `Yes` 在這個問題上，Adobe遵照GDPR ，將您的Data Warehouse和所有資料托管在歐盟。
+- *您的商店位於歐盟嗎？*  — 如果您回答 `Yes` 針對此問題，Adobe會依照GDPR的規定，將您的Data Warehouse和所有資料託管於歐盟。
 
 ## 資料庫設定
 
-- `Database name`  — 什麼是 *名稱 [!DNL MySQL] 資料庫* 您的Commerce事務性資料所在的位置？
+- `Database name`  — 什麼是 *的名稱 [!DNL MySQL] 資料庫* 您的Commerce交易式資料位於何處？
 
-- `Table prefix (optional)` - Commerce資料庫中包含的表是否由任何內容(例如， `store_`)? 通常情況下不是這樣，但可以定制。
+- `Table prefix (optional)`  — 您的Commerce資料庫中包含的表格是否前置有任何內容(例如， `store_`)？ 情況通常並非如此，但這是可進行的自訂。

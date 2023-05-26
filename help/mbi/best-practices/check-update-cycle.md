@@ -11,32 +11,32 @@ ht-degree: 0%
 
 # 更新週期進度
 
-當你登錄 [!DNL Adobe Commerce Intelligence] 儀表板，有多種方法可檢查上次更新週期的狀態。 都取決於 [用戶權限](../administrator/user-management/user-management.md) 你有。
+當您登入 [!DNL Adobe Commerce Intelligence] 圖示板，有數種方式可檢查您上次更新週期的狀態。 這完全取決於型別 [使用者許可權](../administrator/user-management/user-management.md) 您擁有的。
 
-## 為什麼應檢查更新週期狀態？
+## 為何要檢查更新週期狀態？
 
-檢查狀態更新週期在您審核中的資料時非常有用 [!DNL Commerce Intelligence] 帳戶。 如果你看到 [不符合預期的結果](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)，例如，在 [!DNL Commerce Intelligence] 與您在電子商務平台或您的 [[!DNL Google] 電子商務收入](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) 您可以檢查最後一個資料點，以查看更新完成後問題是否已解決。
+當您稽核中的資料時，檢查狀態更新週期會很有用 [!DNL Commerce Intelligence] 帳戶。 如果您看到 [不符合您期望的結果](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)例如，以下專案的每日銷售額： [!DNL Commerce Intelligence] 與您在eCommerce平台或 [[!DNL Google] 電子商務收入](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) 您可以檢查最後一個資料點，以檢視問題在更新完成後是否解決。
 
-## [!UICONTROL Read-Only] 和 [!UICONTROL Standard] 用戶
+## [!UICONTROL Read-Only] 和 [!UICONTROL Standard] 使用者
 
-`Read-only` 用戶可以登錄到其儀表板，並通過懸停在頁面右上角的表徵圖上查看資料最近的更新時間。 這顯示上一個資料點的拉取時間。
+`Read-only` 使用者可以登入他們的儀表板，並透過將游標移至頁面右上角的圖示上來檢視資料最近更新的時間。 這會顯示上次提取資料點的時間。
 
 ![](../../mbi/assets/last-success-data.png)
 
-## [!UICONTROL Admin] 用戶
+## [!UICONTROL Admin] 使用者
 
-`Admin` 用戶可以登錄到儀表板並查看上面的最後一個資料點，以及其帳戶整合的簡短狀態表徵圖。
+`Admin` 使用者可以登入控制面板，檢視上方的最後一個資料點，以及其帳戶整合的簡短狀態圖示。
 
-有關詳細資訊，管理員用戶可以按一下 **[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]**。
+如需詳細資訊，管理員使用者可以按一下 **[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]**.
 
 ![](../../mbi/assets/detail-manage-data-integrations.png)
 
-此頁顯示當前更新狀態和上次完成更新的時間。
+此頁面顯示目前的更新狀態以及上次完成更新的時間。
 
-如果正在進行更新，則在更新完成後，您將看到一個連結來請求電子郵件通知。
+如果更新進行中，您會看到更新完成後要求電子郵件通知的連結。
 
-如果更新未進行，則會看到一個連結以強制啟動更新。
+如果更新未進行中，您會看到強制開始更新的連結。
 
 >[!NOTE]
 >
->如果您有停電時間(您不想 [!DNL Commerce Intelligence] 要更新資料)集，強制更新將啟動不遵守這些封鎖時間限制的更新週期。
+>如果您有中斷時間（您不想要的時間） [!DNL Commerce Intelligence] 更新您的資料)，強制更新會啟動不遵守這些中斷時數限制的更新週期。

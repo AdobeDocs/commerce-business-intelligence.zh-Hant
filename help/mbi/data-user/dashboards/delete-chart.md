@@ -11,24 +11,24 @@ ht-degree: 0%
 
 # 永久刪除圖表
 
-即使你 [從儀表板中刪除圖表](../../data-user/dashboards/remove-charts-dashboard.md)，您的 [!DNL Commerce Intelligence] 帳戶。
+即使您 [從儀表板移除圖表](../../data-user/dashboards/remove-charts-dashboard.md)，則它仍存在於您的 [!DNL Commerce Intelligence] 帳戶。
 
-要永久刪除圖表：
+若要永久刪除圖表：
 
-1. 按一下 **[!UICONTROL Account Setting]** 欄。
+1. 按一下 **[!UICONTROL Account Setting]** 在側欄中。
 
-1. 按一下 **[!UICONTROL Charts]**。
+1. 按一下 **[!UICONTROL Charts]**.
 
-1. 您可以刪除的圖表（基於用戶權限和圖表所有權）顯示在螢幕的右側。
+1. 您可以刪除的圖表（根據使用者許可權和圖表所有權）會顯示在畫面的右側。
 
-1. 按一下要刪除的圖表行旁邊的複選框。
+1. 按一下要刪除的圖表線旁的核取方塊。
 
-1. 按一下 **[!UICONTROL Delete Selected]**。
+1. 按一下 **[!UICONTROL Delete Selected]**.
 
    >[!NOTE]
    >
-   >如果圖表正在儀表板或電子郵件摘要中使用，則會顯示通知。 要繼續，必須確認刪除，然後按一下 **[!UICONTROL Force Deletion]**。
+   >如果圖表用於儀表板或電子郵件摘要，則會顯示通知。 若要繼續，您必須確認刪除，然後按一下 **[!UICONTROL Force Deletion]**.
 
-示例：
+範例：
 
 ![刪除圖表](../../assets/deletechart.gif)<!--{: width="630" height="402"}-->

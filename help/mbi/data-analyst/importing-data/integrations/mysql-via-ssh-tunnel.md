@@ -1,6 +1,6 @@
 ---
-title: 連接 [!DNL MySQL] 通過SSH隧道
-description: 瞭解如何連接 [!DNL MySQL] 通過SSH隧道。
+title: 正在連線 [!DNL MySQL] 透過SSH通道
+description: 瞭解如何連線 [!DNL MySQL] 透過SSH通道。
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,52 +9,52 @@ ht-degree: 0%
 
 ---
 
-# 連接 [!DNL MySQL] 通過 [!DNL SSH Tunnel]
+# Connect [!DNL MySQL] 透過 [!DNL SSH Tunnel]
 
-* [檢索 [!DNL Commerce Intelligence] 公鑰](#retrieve)
-* [允許訪問 [!DNL Commerce Intelligence] IP地址](#allowlist)
-* [建立Linux用戶 [!DNL Commerce Intelligence]](#linux)
-* [建立 [!DNL MySQL] 用戶 [!DNL Commerce Intelligence]](#mysql)
-* [在中輸入連接和用戶資訊 [!DNL Commerce Intelligence]](#finish)
+* [擷取 [!DNL Commerce Intelligence] 公開金鑰](#retrieve)
+* [允許存取 [!DNL Commerce Intelligence] ip位址](#allowlist)
+* [建立Linux使用者 [!DNL Commerce Intelligence]](#linux)
+* [建立 [!DNL MySQL] 使用者 [!DNL Commerce Intelligence]](#mysql)
+* [將連線和使用者資訊輸入到 [!DNL Commerce Intelligence]](#finish)
 
-## 跳至
+## 跳轉到
 
-* [[!DNL MySQL] 通過 ](../integrations/mysql-via-a-direct-connection.md)
-* [[!DNL MySQL] 通過 [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
+* [[!DNL MySQL] 透過 ](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL] 透過 [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
-連接 [!DNL MySQL] 資料庫 [!DNL Commerce Intelligence] 通過 `SSH tunnel`，您必須做幾件事：
+若要連線您的 [!DNL MySQL] 資料庫至 [!DNL Commerce Intelligence] 透過 `SSH tunnel`，您必須執行下列動作：
 
-1. 檢索 [!DNL Commerce Intelligence] `public key`
-1. 允許訪問 [!DNL Commerce Intelligence] `IP address`
-1. 建立 `Linux` 用戶 [!DNL Commerce Intelligence]
-1. 建立 `MySQL` 用戶 [!DNL Commerce Intelligence]
-1. 在中輸入連接和用戶資訊 [!DNL Commerce Intelligence]
+1. 擷取 [!DNL Commerce Intelligence] `public key`
+1. 允許存取 [!DNL Commerce Intelligence] `IP address`
+1. 建立 `Linux` 使用者 [!DNL Commerce Intelligence]
+1. 建立 `MySQL` 使用者 [!DNL Commerce Intelligence]
+1. 將連線和使用者資訊輸入到 [!DNL Commerce Intelligence]
 
 
-## 檢索 [!DNL Commerce Intelligence] 公鑰 {#retrieve}
+## 正在擷取 [!DNL Commerce Intelligence] 公開金鑰 {#retrieve}
 
-的 `public key` 用於授權 [!DNL Commerce Intelligence] `Linux` 。 在下一節中，將建立用戶並導入密鑰。
+此 `public key` 用於授權 [!DNL Commerce Intelligence] `Linux` 使用者。 在下一節中，您將建立使用者並匯入金鑰。
 
-1. 轉到 **[!UICONTROL Manage Data** > **Connections]** 按一下 **[!UICONTROL Add New Data Source]**。
-1. 按一下 `MySQL` 表徵圖
-1. 在 `MySQL credentials` 開啟，設定 `Encrypted` 切換至 `Yes`。 這將顯示SSH設定表單。
-1. 的 `public key` 位於此窗體下。
+1. 前往 **[!UICONTROL Manage Data** > **Connections]** 並按一下 **[!UICONTROL Add New Data Source]**.
+1. 按一下 `MySQL` 圖示。
+1. 晚於 `MySQL credentials` 頁面開啟，設定 `Encrypted` 切換至 `Yes`. 這會顯示SSH設定表單。
+1. 此 `public key` 位於此表單下方。
 
-在本教程的整個過程中，保持本頁開啟 — 您需要在下一節和結尾處開啟本頁。
+在本教學課程中保持此頁面開啟 — 您需要在下一節和結尾使用它。
 
-下面是如何瀏覽 [!DNL Commerce Intelligence] 要檢索密鑰：
+以下說明瀏覽瀏覽的方式 [!DNL Commerce Intelligence] 擷取金鑰：
 
 ![](../../../assets/MySQL_SSH.gif)<!--{: width="770"}-->
 
-## 允許訪問 [!DNL Commerce Intelligence] IP地址 {#allowlist}
+## 允許存取 [!DNL Commerce Intelligence] ip位址 {#allowlist}
 
-要使連接成功，必須配置防火牆以允許從IP地址訪問。 他們 `54.88.76.97` 和 `34.250.211.151` 但它們也在 `MySQL credentials` 的子菜單。 請參閱上面的GIF中的藍色框。
+若要讓連線成功，您必須將防火牆設定為允許從IP位址存取。 它們是 `54.88.76.97` 和 `34.250.211.151` 但它們也位於 `MySQL credentials` 頁面。 請參閱上方GIF中的藍色方塊。
 
-## 建立 [!DNL Linux] 用戶 [!DNL Commerce Intelligence] {#linux}
+## 建立 [!DNL Linux] 使用者 [!DNL Commerce Intelligence] {#linux}
 
-這可以是生產機或輔助機，只要它包含即時（或頻繁更新）資料。 你可以 [限制此用戶](../../../administrator/account-management/restrict-db-access.md) 只要它保留連接到 `MySQL` 伺服器。
+這可以是生產或次要機器，只要它包含即時（或經常更新）資料即可。 您可以 [限制此使用者](../../../administrator/account-management/restrict-db-access.md) 任何您喜歡的方式，只要它保留連線至 `MySQL` 伺服器。
 
-1. 要添加新用戶，請以root身份在您的 [!DNL Linux] 伺服器：
+1. 若要新增使用者，請以root身分在 [!DNL Linux] 伺服器：
 
 ```bash
         adduser rjmetric -p<password>
@@ -62,16 +62,16 @@ ht-degree: 0%
         mkdir /home/rjmetric/.ssh
 ```
 
-1. 記住 `public key` 在第一節里找到的？ 要確保用戶有權訪問資料庫，您需要將密鑰導入 `authorized\_keys`。
+1. 記住 `public key` 您在第一節中擷取了嗎？ 為確保使用者有權存取資料庫，您需要將金鑰匯入 `authorized\_keys`.
 
-   將整個密鑰複製到 `authorized\_keys` 檔案，如下所示：
+   將整個金鑰複製到 `authorized\_keys` 檔案如下所示：
 
 ```bash
         touch /home/rjmetric/.ssh/authorized_keys
         "<PASTE KEY HERE>" >> /home/rjmetric/.ssh/authorized_keys
 ```
 
-1. 要完成用戶建立，請更改 `/home/rjmetric` 允許訪問的目錄 `SSH`:
+1. 若要完成建立使用者，請變更以下專案的許可權： `/home/rjmetric` 允許透過存取的目錄 `SSH`：
 
 ```bash
         chown -R rjmetric:rjmetric /home/rjmetric
@@ -81,40 +81,40 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->如果 `sshd\_config` 與伺服器關聯的檔案未設定為預設選項，只有某些用戶具有伺服器訪問權限 — 這會阻止成功連接到 [!DNL Commerce Intelligence]。 在這些情況下，需要運行類似 `AllowUsers` 允許 `rjmetric` 用戶訪問伺服器。
+>如果 `sshd\_config` 與伺服器關聯的檔案未設定為預設選項，只有特定使用者擁有伺服器存取權 — 這會防止成功連線至 [!DNL Commerce Intelligence]. 在這些情況下，必須執行命令，例如 `AllowUsers` 以允許 `rjmetric` 使用者對伺服器的存取權。
 
-## 建立 [!DNL MySQL] 用戶 [!DNL Commerce Intelligence] {#mysql}
+## 建立 [!DNL MySQL] 使用者 [!DNL Commerce Intelligence] {#mysql}
 
-您的組織可能需要不同的進程，但建立此用戶的最簡單方法是登錄時執行以下查詢 [!DNL MySQL] 作為有權授予權限的用戶：
+您的組織可能需要不同的流程，但建立此使用者最簡單的方法是在登入時執行以下查詢 [!DNL MySQL] 作為有權授予許可權的使用者：
 
 ```sql
     GRANT SELECT ON *.* TO 'rjmetric'@'localhost' IDENTIFIED BY '<secure password here>';
 ```
 
-替換 `secure password here` 密碼安全，與 `SSH` 密碼。
+Replace `secure password here` 安全密碼，此密碼可能與 `SSH` 密碼。
 
-要限制此用戶訪問特定資料庫、表或列中的資料，可以改為運行僅允許訪問您允許的資料的GRANT查詢。
+若要限制此使用者存取特定資料庫、表格或欄中的資料，您可以改為執行GRANT查詢，僅允許存取您允許的資料。
 
-## 將連接和用戶資訊輸入 [!DNL Commerce Intelligence] {#finish}
+## 將連線和使用者資訊輸入到 [!DNL Commerce Intelligence] {#finish}
 
-要總結內容，您需要將連接和用戶資訊輸入 [!DNL Commerce Intelligence]。 你是不是離開了 `MySQL credentials` 開啟？ 否則，請轉到 **[!UICONTROL Data** > **Connections]** 按一下 **[!UICONTROL Add New Data Source]**，則 [!DNL MySQL] 表徵圖 不要忘記設定 `Encrypted` 切換至 `Yes`。
+若要完成工作，您必須將連線和使用者資訊輸入到 [!DNL Commerce Intelligence]. 您是否離開 `MySQL credentials` 頁面是否開啟？ 如果沒有，請前往 **[!UICONTROL Data** > **Connections]** 並按一下 **[!UICONTROL Add New Data Source]**，然後 [!DNL MySQL] 圖示。 別忘了設定 `Encrypted` 切換至 `Yes`.
 
-在此頁中輸入以下資訊，從 `Database Connection` 部分：
+在此頁面中輸入下列資訊，從 `Database Connection` 區段：
 
-* `Username`:用戶名 [!DNL Commerce Intelligence] [!DNL MySQL] 用戶
-* `Password`:的密碼 [!DNL Commerce Intelligence] [!DNL MySQL] 用戶
-* `Port`: [!DNL MySQL] 伺服器上的埠（預設為3306）
-* `Host` 預設情況下，這是localhost。 通常，它是您的 [!DNL MySQL] 伺服器，預設情況下 `127.0.0.1 (localhost)`，但也可能是某個本地網路地址(例如， `192.168.0.1`)或伺服器的公共IP地址。
+* `Username`：的使用者名稱 [!DNL Commerce Intelligence] [!DNL MySQL] 使用者
+* `Password`：的密碼 [!DNL Commerce Intelligence] [!DNL MySQL] 使用者
+* `Port`： [!DNL MySQL] 連線埠（預設為3306）
+* `Host` 依預設，這是localhost。 一般而言，它是的繫結位址值， [!DNL MySQL] 伺服器，預設為 `127.0.0.1 (localhost)`，但也可能是某些本機網路位址(例如， `192.168.0.1`)或伺服器的公用IP位址。
 
-   可以在 `my.cnf` 檔案(位於 `/etc/my.cnf`)下面的 `\[mysqld\]`。 如果在該檔案中注釋掉綁定地址行，則伺服器將受到外部連接嘗試的保護。
+   值可在以下連結中找到： `my.cnf` 檔案(位於 `/etc/my.cnf`)的行底下有 `\[mysqld\]`. 如果在該檔案中註解了bind-address行，則您的伺服器會受外部連線嘗試保護。
 
-在 `SSH Connection` 部分：
+在 `SSH Connection` 區段：
 
-* `Remote Address`:伺服器的IP地址或主機名 [!DNL Commerce Intelligence] 會穿過隧道
-* `Username`:用戶名 [!DNL Commerce Intelligence] SSH([!DNL Linux])用戶
-* `SSH Port`:伺服器上的SSH埠（預設為22）
+* `Remote Address`：伺服器的IP位址或主機名稱 [!DNL Commerce Intelligence] 將隧道連線至
+* `Username`：的使用者名稱 [!DNL Commerce Intelligence] SSH ([!DNL Linux])使用者
+* `SSH Port`：伺服器上的SSH連線埠（預設為22）
 
-完成後，按一下 **[!UICONTROL Save & Test]** 完成設定。
+完成後，按一下 **[!UICONTROL Save & Test]** 以完成設定。
 
 ## 相關：
 

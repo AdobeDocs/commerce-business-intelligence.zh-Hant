@@ -1,6 +1,6 @@
 ---
-title: 審核Zendesk資料
-description: 瞭解導出Zendesk資料的步驟。
+title: 稽核Zendesk資料
+description: 瞭解匯出Zendesk資料的步驟。
 exl-id: 3c8dcc72-3623-4c4e-a941-f431a97571e0
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,33 +9,33 @@ ht-degree: 0%
 
 ---
 
-# 審核Zendesk資料
+# 稽核Zendesk資料
 
-在你身上發現 [[!DNL Zendesk] 資料](../integrations/exp-zendesk-data.md)? 要查明問題，您需要瀏覽資料。 通過導出 [!DNL Zendesk] 資料到可下載檔案。
+發現您的電腦有異常 [[!DNL Zendesk] 資料](../integrations/exp-zendesk-data.md)？ 若要查明問題，您需要探索您的資料。 這可透過匯出 [!DNL Zendesk] 資料下載至可下載的檔案。
 
-## 啟用資料導出
+## 啟用資料匯出
 
-當前未為所有對象啟用資料導出 [!DNL Zendesk] 帳戶。 要激活此功能， [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)，提到 [!DNL Zendesk] 子域名。
+目前並未針對所有使用者啟用資料匯出 [!DNL Zendesk] 帳戶。 若要啟用此功能， [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)，提及您的 [!DNL Zendesk] 子網域名稱。
 
 >[!NOTE]
 >
->僅 `Enterprise` 和 `Plus` 計畫當前可以訪問此功能。
+>僅限 `Enterprise` 和 `Plus` 計畫目前擁有此功能的存取權。
 
-啟用資料導出後，只有特定電子郵件域中的管理員才能從 [!DNL Zendesk] 帳戶。 此電子郵件域通常與您的 [!DNL Zendesk]。 帳戶所有者的電子郵件域用作預設域，但您可以根據需要更改域。
+啟用資料匯出後，只有特定電子郵件網域中的管理員才能從匯出資料 [!DNL Zendesk] 帳戶。 此電子郵件網域通常與您的電子郵件網域相同。 [!DNL Zendesk]. 系統會使用帳戶所有者的電子郵件網域作為預設網域，但您可以視需要變更網域。
 
-## 導出到可下載檔案
+## 匯出至可下載的檔案
 
-1. 按一下邊欄中的「管理」表徵圖（齒輪徽標），然後選擇 **[!UICONTROL Manage** > **Reports]**。
-1. 按一下 **[!UICONTROL Export]** 頁籤。
-1. 按一下 **[!UICONTROL Request file]** 在「完全XML導出」旁邊，如下圖所示。
+1. 按一下側邊欄中的管理員圖示（齒輪標誌），然後選擇 **[!UICONTROL Manage** > **Reports]**.
+1. 按一下 **[!UICONTROL Export]** 標籤。
+1. 按一下 **[!UICONTROL Request file]** 「完整XML匯出」旁邊，如下圖所示。
 
-   此時，建設開始；完成後，您將通過電子郵件收到通知。
-   ![reports_export_new_png](../../../assets/reports_export_new.png)
+   此時，組建開始；完成時您會透過電子郵件收到通知。
+   ![reports_export_new.png](../../../assets/reports_export_new.png)
 
-1. 按一下電子郵件通知中的連結以下載包含報告的zip檔案。
+1. 按一下電子郵件通知中的連結，下載包含報表的zip檔案。
 
-   此下載連結至少有三天有效。
+   此下載連結至少三天有效。
 
-此進程生成包含當前儲存的所有資訊的XML檔案 [!DNL Zendesk] 帳戶，包括票證資料（帶注釋）、用戶資料和帳戶資料。 現在，你可以 [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （請務必附加此檔案！） 這樣你就可以更仔細地查看資料了。 如果檔案太大，請與 [!DNL Commerce Intelligence] 團隊 [!DNL Dropbox] 或 [!DNL Google Drive]。
+此程式會建立一個XML檔案，其中包含目前儲存於您目前檔案中的所有資訊 [!DNL Zendesk] 帳戶，包括票證資料（含註解）、使用者資料和帳戶資料。 此時，您可以 [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （請務必附加此檔案！） 以便進一步瞭解您的資料。 如果檔案太大，請將它與 [!DNL Commerce Intelligence] 團隊透過 [!DNL Dropbox] 或 [!DNL Google Drive].
 
-有關 [!DNL Zendesk] 檔案導出，請參閱 [[!DNL Zendesk] 導出文檔](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file)。
+如需有關的詳細資訊 [!DNL Zendesk] 檔案匯出，請參閱官方檔案 [[!DNL Zendesk] 匯出檔案](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file).

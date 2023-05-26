@@ -1,6 +1,6 @@
 ---
-title: Data Warehouse管理器
-description: 瞭解如何管理表和列同步設定、深入到表的架構並建立要在報告中使用的計算列。
+title: Data Warehouse管理員
+description: 瞭解如何管理表格和欄同步設定、深入研究表格的綱要，以及建立要在報告中使用的計算欄。
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
 source-git-commit: c4094e780f83255846520d18f4d0806b1dd9a9ef
 workflow-type: tm+mt
@@ -9,116 +9,116 @@ ht-degree: 0%
 
 ---
 
-# Data Warehouse管理器
+# Data Warehouse管理員
 
 >[!NOTE]
 >
->需要 [管理權限](../../administrator/user-management/user-management.md)
+>需要 [管理員許可權](../../administrator/user-management/user-management.md)
 
-Data Warehouse管理器，通過按一下 **[!UICONTROL Manage Data > Data Warehouse]**，是您的門戶 [!DNL Adobe Commerce Intelligence] Data Warehouse。 使用Data Warehouse管理器，可以管理表和列同步設定，深入到表的架構中，並建立要在報告中使用的計算列。
+Data Warehouse管理員，按一下 **[!UICONTROL Manage Data > Data Warehouse]**，是您網站的入口網站 [!DNL Adobe Commerce Intelligence] Data Warehouse。 使用「Data Warehouse管理員」，您可以管理表格和欄同步設定、深入研究表格的綱要，以及建立要在報表中使用的計算欄。
 
-本主題包括：
+本主題涵蓋：
 
-* [學習如何](#learning)
-* [同步表和列](#syncing)
-* [建立計算列](#calculated)
-* [刪除表並刪除列](#delete)
-* [正在後台同步新表](#syncnew)
-* [那麼，我什麼時候才能使用新欄目？](#when)
+* [瞭解如何解決問題](#learning)
+* [正在同步表格和欄](#syncing)
+* [建立計算欄](#calculated)
+* [刪除資料表及移除資料行](#delete)
+* [在背景同步新表格](#syncnew)
+* [那麼，我何時可以使用新欄呢？](#when)
 
-## 學習如何 {#learning}
+## 瞭解如何解決問題 {#learning}
 
-左側 `Data Warehouse Manager` 的子菜單。 從清單中選擇表時，表管理區域將使用表的模式填充，在該模式中可以修改選定的表。
+左側 `Data Warehouse Manager` 頁面包含表格清單，可讓您輕鬆在表格之間切換。 當您從清單中選取表格時，表格管理區域會填入您可以修改所選表格的表格綱要。
 
-在表清單中，表按其連接源分組。 這些源在 [!UICONTROL Manage Data > Integrations] 可能是資料庫， [API](https://developer.adobe.com/commerce/services/reporting/)或第三方連接器。 在表清單的頂部，有一個搜索框，使您能夠輕鬆查找所需的表。
+在表格清單中，表格會依其連線來源分組。 這些來源新增至 [!UICONTROL Manage Data > Integrations] 而且可能是資料庫、 [API](https://developer.adobe.com/commerce/services/reporting/)或協力廠商聯結器。 在表格清單頂端有一個搜尋方塊，可讓您輕鬆尋找所需的表格。
 
-在搜索框下，您會看到兩個選項： `All Tables` 和 `Synced Tables`。 的 `All Tables` 選項列出您已為Data Warehouse提供的所有表，其中包括已同步和未同步的表。
+在搜尋方塊下方，您會看到兩個選項： `All Tables` 和 `Synced Tables`. 此 `All Tables` 選項會列出您對Data Warehouse可用的所有表格，包括已同步和未同步的表格。
 
-的 `Synced Tables` 選項顯示已添加到Data Warehouse中並且已從選定列複製資料的所有表。
+此 `Synced Tables` 選項會顯示所有已新增至Data Warehouse的表格，以及已從選取的資料欄復寫資料的表格。
 
-不在中查看您要查找的表 `All Tables` 清單？ 原因有幾：
+在中看不到您要尋找的表格 `All Tables` 清單？ 這種情況有幾個可能的原因：
 
-* 尚未添加資料源
-* 資料源是資料庫， [!DNL Commerce Intelligence] 您建立的用戶沒有訪問權限。 在這種情況下，您或資料庫管理員必須授予訪問權限。
-* 最近添加了資料源或表，但尚未同步
+* 資料來源尚未新增
+* 資料來源為資料庫，且 [!DNL Commerce Intelligence] 您建立的使用者沒有存取權。 在這種情況下，您或您的資料庫管理員必須授予存取權。
+* 資料來源或資料表最近已新增，但尚未同步
 
-## 同步表和列 {#syncing}
+## 正在同步表格和欄 {#syncing}
 
-### 同步新表和本機列
+### 正在同步新資料表與原生資料行
 
-Data Warehouse管理器不僅讓您能夠輕鬆查看和管理資料源，而且您還可以自由選擇要同步的各個表和列。
+「Data Warehouse管理員」不僅可讓您輕鬆檢視和管理資料來源，也可讓您自由選取要同步的個別表格和欄。
 
-1. 按一下 `All Tables` 選項並找到要同步的表。
-1. 按一下表的名稱以預覽架構。 如果表是新表，則所有列均顯示為 `Unsynced`。
-1. 檢查要同步的列。
+1. 按一下 `All Tables` 選項並找到您要同步的表格。
+1. 按一下表格的名稱以預覽架構。 如果表格是新的，則所有欄會顯示為 `Unsynced`.
+1. 核取您要同步的欄。
 
    >[!NOTE]
    >
-   >表的本機列在 `Location` 的雙曲餘切值。
+   >表格的原生資料欄包含來自資料庫的 `Location` 欄。
 
-1. 確保檢查 `Primary Key` 列 — 這些列在列名旁邊有一個鍵符號。 A `Primary Key` 正確將資料同步到Data Warehouse。
+1. 請務必檢查 `Primary Key` 欄 — 這些欄在欄名稱旁有一個鍵符號。 A `Primary Key` 需要將資料正確同步至Data Warehouse。
 
-   如果正在同步直接來自資料庫的表，則可能 `Primary Keys` 可能不表示。 在這種情況下，請與資料庫管理員聯繫，請求將主鍵或鍵添加到表中。
-1. 完成後，按一下 ![按鈕](../../assets/button.png) 按鈕
+   如果您正在同步直接從資料庫取得的表格，則可能 `Primary Keys` 不可表示。 在此情況下，請連絡您的資料庫管理員，要求將一個或多個主索引鍵新增至表格。
+1. 完成後，按一下 ![按鈕](../../assets/button.png) 按鈕。
 
-A *成功！* 消息顯示，狀態更改為 `Pending` 的子菜單。 下次完全更新後，新同步的表和列將可用於報表。 也可以設定新 [複製方法](./cfg-replication-methods.md) 在初始同步後。
+A *成功！* 訊息隨即顯示，且狀態變更為 `Pending` 選取的欄。 下次完整更新完成後，新同步的表格和欄即可在報告中使用。 您也可以設定新的 [復寫方法](./cfg-replication-methods.md) 初次同步之後。
 
-以下是整個過程的簡要介紹：
+以下快速瀏覽整個程式：
 
-![向資料倉庫添加列](../../assets/DW_sync.gif)
+![新增欄至您的Data Warehouse](../../assets/DW_sync.gif)
 
-### 正在後台同步新表 {#syncnew}
+### 在背景同步新表格 {#syncnew}
 
-首次同步大表時，Data Warehouse需要追溯捕獲表中的所有資料點，然後才能持續捕獲新資料。 如果表很大，您可能不希望該初始同步與 **更新週期**。 在這種情況下，您希望在後台進行初始同步， *並行* 當前運行的任何更新。
+第一次同步大型表格時，您的Data Warehouse必須先回溯擷取表格中的所有資料點，才能持續擷取新資料。 如果您的表格很大，您可能不想讓初始同步處理依序執行， **更新週期**. 在此情況下，您希望初始同步在背景中進行，在 *平行* 任何目前執行中的更新。
 
-要確保發生這種情況，應選擇 `Save and Sync Data Immediately` 選項首次同步該表。
+若要確保發生，您應選取 `Save and Sync Data Immediately` 選項第一次同步該表格。
 
-### 檢查新表和列 {#forceupdate}
+### 檢查新表格和欄 {#forceupdate}
 
-Data Warehouse在添加新源、表或列時不會自動檢測它們。 一個同步進程將在一週內運行，以查找新添加項並使其可用，但是，如果要在進程運行之前訪問新添加的表和列，則可以強制執行結構同步。
+在新增來源、表格或欄時，您的Data Warehouse不會自動偵測這些來源、表格或欄。 同步處理會在一週中執行，以尋找新的加入專案並讓它們可用，但如果您想在程式執行之前存取新加入的表格和欄，則可以強制進行結構同步。
 
-在表清單中的搜索欄下面 `Check for new tables and columns` 的子菜單。 按一下此連結將強制啟動結構同步過程；通常在10分鐘後提供新的添加。 刷新頁面以查看新源、表或列。
+在表格清單的搜尋列下方是 `Check for new tables and columns` 連結。 按一下此連結會強制啟動結構同步程式；新專案通常在10分鐘後提供。 重新整理頁面以檢視新的來源、表格或欄。
 
-## 建立計算列 {#calculated}
+## 建立計算欄 {#calculated}
 
-只要能夠查看和管理來自所有來源的資料，就能更輕鬆地洞察您的業務。 但在Data Warehouse管理器中，可以通過在表內建立計算列來更進一步。 `Calculated` 列從現有資料中派生新資訊。
+只要能夠檢視和管理您所有來源的資料，就能更輕鬆深入瞭解您的業務。 但在「Data Warehouse管理員」中，您可以在表格內建立計算欄來更進一步。 `Calculated` 欄會從您現有的資料衍生出新資訊。
 
-如果要添加 `user's lifetime revenue` 到 `users` 表以查找高價值用戶。 或者，如果您想按性別劃分收入，可以添加 `customer's gender` 到 `orders` 的子菜單。
+說您想新增 `user's lifetime revenue` 至您的 `users` 以尋找高價值使用者的表格。 或者，如果您想要依性別劃分收入，可以新增 `customer's gender` 至您的 `orders` 表格。
 
-有關詳細資訊，請查看此 [教程](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)。
+如需詳細資訊，請檢視此 [教學課程](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
-## 刪除表和刪除列 {#delete}
+## 刪除表格和移除欄 {#delete}
 
-正如可以選擇要同步到Data Warehouse的表和列一樣，您也可以刪除或刪除它們。
+就像您可以選取要同步至Data Warehouse的表格和欄一樣，您也可以拖放或移除它們。
 
 >[!NOTE]
 >
->刪除表或刪除列將在確認刪除後刪除任何相關報表、度量、篩選器集和列。 確定你想這麼做。 **此操作無法撤消。**
+>刪除表格或移除欄會在您確認刪除後，刪除任何相依的報表、量度、篩選器集和欄。 確定您要執行此動作 —  **此動作無法復原。**
 
-按一下時不要擔心 **[!UICONTROL Delete]** 意外。 在刪除任何內容之前運行依賴關係檢查，因此您有機會在確認之前查看所有內容。
+如果您按一下，請不要擔心 **[!UICONTROL Delete]** 純屬意外。 相依性檢查會在任何專案刪除前執行，因此您有機會在確認前檢閱所有專案。
 
-要刪除列，請按一下列所屬的表。 檢查要刪除的列，然後按一下 ![按鈕\1.png](../../assets/button_1.png) 按鈕
+若要移除欄，請按一下該欄所屬的表格。 核取您要移除的欄，然後按一下 ![button\_1.png](../../assets/button_1.png) 按鈕。
 
-要刪除同步表，請選擇表中的所有列，然後再次按一下 ![按鈕](../../assets/button_1.png) 按鈕 這將從Data Warehouse中刪除使用此表的所有本機列和計算列。
+若要移除同步的表格，請選取表格中的所有欄，然後再次按一下 ![按鈕](../../assets/button_1.png) 按鈕。 這會從您的Data Warehouse中移除使用此表格的所有原生欄和計算欄。
 
-### 確認更改
+### 確認變更
 
-無論您是刪除表還是刪除列，刪除過程完成前都會運行依賴關係檢查。 相關性是使用要刪除的表或列的計算列、度量、篩選器集和報表。 所有發現的依賴關係都會顯示 — 此時，您可以取消進程或按一下 **[!UICONTROL Confirm Changes]** 刪除表/列。
+無論您是要刪除表格還是移除欄，相依性檢查都會在刪除程式完成之前執行。 相依性是指使用要移除之表格或欄的計算欄、量度、篩選器集和報表。 任何發現的相依性都會顯示 — 此時，您可以取消程式或按一下 **[!UICONTROL Confirm Changes]** 以放置表格/移除欄。
 
-雖然無法恢復已刪除的依賴項，但如果以後需要重新同步任何本機列，表和列仍將可用。
+雖然已刪除的相依性無法還原，但如果您日後需要重新同步任何原生欄，表格和欄仍然可用。
 
-下面是刪除列的快速查看：
+以下為移除欄的快速檢視：
 
-![從資料倉庫中刪除列](../../assets/DW_delete.gif)
+![從Data Warehouse移除欄](../../assets/DW_delete.gif)
 
-## 那麼，我什麼時候才能使用新欄目？ {#when}
+## 那麼，我何時可以使用新欄呢？ {#when}
 
-新同步的列和新的/已更新的計算列將在下次完全更新完成後可供使用。 如果更新尚未進行，可通過按一下 **[!UICONTROL Force update]** 顯示在 `Data Warehouse` 或 `Integrations` 的子菜單。 您還可以通過按一下在更新完成後安排電子郵件通知 **[!UICONTROL Email me when complete]**。
+新的同步欄和新的/更新的計算欄將在下一次完整更新完成後準備使用。 如果更新尚未進行，您可以按一下「 」以強制更新 **[!UICONTROL Force update]** 顯示在頂端 `Data Warehouse` 或 `Integrations` 頁面。 您也可以按一下「 」，排程更新完成時的電子郵件通知 **[!UICONTROL Email me when complete]**.
 
-當您準備在報告中使用新列時， [您需要先將它們添加到度量](../data-warehouse-mgr/manage-data-dimensions-metrics.md)。 雖然在更新完成之前資料不可用，但您仍然可以在報告中使用新列。 完成更新後，報表中的資料將顯示。
+當您準備好在報告中使用新欄時， [您需要先將量度新增至量度](../data-warehouse-mgr/manage-data-dimensions-metrics.md). 雖然在更新完成之前無法取得資料，您仍然可以在報表中使用新欄。 更新完成後，會顯示報表中的資料。
 
-## 收尾
+## 正在結束
 
-這篇文章涉及很多材料。 現在，您應該對資料庫是什麼、資料的組織方式、表之間的關係以及您可以對Data Warehouse管理器執行什麼操作有了深入的瞭解。
+本文涵蓋許多內容。 到現在為止，您應該已經清楚瞭解什麼是資料庫、資料的組織方式、表格之間的關聯方式，以及您可以使用Data Warehouse管理員做什麼。
 
-test您的知識 [建立計算列](../data-warehouse-mgr/creating-calculated-columns.md) 或 [作了一些有趣的報告](../../tutorials/using-visual-report-builder.md)。
+透過以下方式測試您的知識： [建立計算欄](../data-warehouse-mgr/creating-calculated-columns.md) 或 [製作一些有趣的報告](../../tutorials/using-visual-report-builder.md).

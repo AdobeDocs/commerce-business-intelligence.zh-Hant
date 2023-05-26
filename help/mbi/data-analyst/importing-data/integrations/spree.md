@@ -1,6 +1,6 @@
 ---
-title: 連接Spree
-description: 瞭解如何瞭解您的業務表現，或找到您最有價值的收購來源和渠道。
+title: 連線狂潮
+description: 瞭解如何瞭解您的業務成效或尋找您最有價值的贏取來源和管道。
 exl-id: d443e6ca-04b0-4090-a3be-14db71819356
 source-git-commit: 96e1da59c2f366bdb948ddf907340f7fd8636741
 workflow-type: tm+mt
@@ -9,15 +9,15 @@ ht-degree: 0%
 
 ---
 
-# 連接 [!DNL Spree]
+# Connect [!DNL Spree]
 
 ![](../../../assets/spree-commerce-logo.png)
 
-想瞭解您的業務表現如何，或找到您最寶貴的收購來源和渠道嗎？ 連接 [!DNL Spree] 資料 [!DNL Commerce Intelligence] 讓您回答這些問題等。
+想要瞭解您的業務表現或尋找您最有價值的贏取來源和管道？ 正在連線您的 [!DNL Spree] 資料目標 [!DNL Commerce Intelligence] 可讓您回答這些問題及其他問題。
 
-的 [!DNL Spree] 資料庫基於 [!DNL PostgreSQL]，您可以將其連接到 [!DNL Commerce Intelligence] 使用 [和你對正常人的 [!DNL Postgres] 連接](../integrations/postgresql.md)。
+此 [!DNL Spree] 資料庫基礎 [!DNL PostgreSQL]，您可以將其連線至 [!DNL Commerce Intelligence] 使用 [與一般步驟相同 [!DNL Postgres] 連線](../integrations/postgresql.md).
 
-## 相關文檔
+## 相關檔案
 
-* [建議的用於分段和篩選的資料維度](../../../best-practices/segment-filter.md)
-* [您最有價值的收購來源和渠道是什麼？](../../analysis/most-value-source-channel.md)
+* [分段和篩選的建議資料維度](../../../best-practices/segment-filter.md)
+* [您最寶貴的贏取來源和管道為何？](../../analysis/most-value-source-channel.md)

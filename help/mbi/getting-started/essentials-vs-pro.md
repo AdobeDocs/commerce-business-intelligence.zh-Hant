@@ -11,21 +11,21 @@ ht-degree: 5%
 
 # [!DNL Commerce Intelligence Essentials] 與 [!DNL Commerce Intelligence Pro]
 
-下表介紹了繼承中包含的元素 `Essentials` 和當前Commerce Intelligence帳戶。 Adobe不再提供 `Essentials`。
+下表說明舊版隨附的元素 `Essentials` 帳戶與目前Commerce Intelligence帳戶的比較。 Adobe不再提供 `Essentials`.
 
 |  | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|
-| `Pre-Defined Reports` | 最多100 | 自定義 |
-| `Pre-Defined Dashboards` | 5-6 | 自定義 |
+| `Pre-Defined Reports` | 最多100個 | 自訂 |
+| `Pre-Defined Dashboards` | 5-6 | 自訂 |
 | `New Custom Report Creation` | 是 | 是 |
-| `Commerce Tables` | 4-6 | 無限 |
+| `Commerce Tables` | 4-6 | 無限制 |
 | `Log-ins/User Accounts` | 10 | 20 |
 | `User Permissions` | 是 | 是 |
-| `Data Warehouse Manager` | 不可用 | 可用 |
+| `Data Warehouse Manager` | 無法使用 | 可用 |
 | `Email Reports` | 是 | 是 |
 | `Cohort Report Builder` | 是 | 是 |
-| `Google Analytics Live Integration` | 是 | 無限 |
-| `3rd Party Integrations` | 不可用 | 可用 |
+| `Google Analytics Live Integration` | 是 | 無限制 |
+| `3rd Party Integrations` | 無法使用 | 可用 |
 | `Full API Access` | 否 | 是 |
 | `Access to CS, AM, or Analysts` | 否 | 是 |
 | `Professional Services` | 可用 | 可用 |
@@ -34,9 +34,9 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->表的數量取決於來賓簽出。
+>資料表數目取決於訪客結帳。
 
-**包含的表**
+**包含的表格**
 
 * `sales\_order`
 * `sales\_order\_item`

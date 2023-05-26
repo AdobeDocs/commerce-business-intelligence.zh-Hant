@@ -1,6 +1,6 @@
 ---
 title: 使用報表
-description: 瞭解如何使用報告資料。
+description: 瞭解如何使用您的報告資料。
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -11,119 +11,119 @@ ht-degree: 0%
 
 # 使用報表
 
-在中使用報表 [!DNL Adobe Commerce Intelligence] 幫助您回答業務問題 — 無論您是希望查看本月與去年相比的收入，還是瞭解最新的購買成本 [!DNL Google AdWords] 競選。
+使用報告於 [!DNL Adobe Commerce Intelligence] 協助您回答業務問題 — 無論您是隻想檢視本月與去年的收入，還是想瞭解您最新的贏取成本 [!DNL Google AdWords] 行銷活動。
 
-從問題到答案的路到底是怎樣的？
+從問題到答案的路徑看起來是什麼樣子？
 
-為幫助您直觀地顯示此過程，將在下面映射該路由。 本主題介紹了您如何處理分析問題以及獲取所需資料所需的後端物流。
+為了協助您視覺化此流程，該路由如下圖所示。 本主題說明如何解決分析問題，以及獲取所需資料所需的後端後勤工作。
 
 ## 從問題開始
 
-您知道，您不斷提出一些問題來改進業務，從提高客戶滿意度到降低供應成本。 您專注於如何將問題轉化為有助於您做出決策的分析。
+您知道您不斷詢問問題以改善您的業務，從提高客戶滿意度到降低供應成本。 您專注於如何將您的問題轉換為有助於您推動決策的分析。
 
-在本示例中，假定您要回答以下問題：
+在此範例中，假設您要回答以下問題：
 
-* 我的新註冊者轉換的速度有多快？
+* 我的新註冊者轉換速度如何？
 
-## 識別度量
+## 識別測量
 
-現在是時候確定一份可能的分析和測量清單，以幫助回答這個問題。 對於本示例，請關注以下度量：
+現在是時候找出可能的分析和測量清單，以協助回答這個問題。 在此範例中，著重於下列量度：
 
-* 每次使用從註冊到首次購買日期的平均時間。
+* 從註冊到每次使用的首次購買日期的平均時間。
 
-這揭示了註冊日期和用戶第一個購買日期之間的平均時間，並提供了關於用戶在轉換漏斗中的最後一步如何操作的概念。
+這會顯示註冊日期與使用者首次購買日期之間的平均間隔時間，並讓您瞭解使用者在轉換漏斗中的這最後一個步驟中的行為。
 
-## 查找資料
+## 尋找資料
 
-瞭解該測量什麼只能讓我們獲得一部分。 要評估每個用戶從註冊到首次購買日期的平均時間，您需要確定度量包含的所有資料點。
+瞭解測量什麼只能幫我們達成目標。 若要評估每位使用者從註冊到首次購買日期的平均時間，您必須識別您的測量所包含的所有資料點。
 
-將測量分解為核心元件。 您必須知道已註冊的人數、已購買人數以及這兩個事件之間經過的時間。
+將您的量值劃分為核心元件。 您必須知道已註冊的人數、購買的人數，以及兩次事件之間經過的時間。
 
-在更高級別，您需要知道在資料庫中查找此資料的位置，具體是：
+在較高層級，您需要知道在資料庫中哪裡可以找到此資料，尤其是：
 
-* 每次註冊時記錄一行資料的表
-* 記錄每次有人購買時的資料行的表
-* 可用於連接或引用的列 `purchase` 的 `customer` 表 — 這樣我們就能知道誰購買了
+* 此表格會在每次有人註冊時記錄一列資料
+* 此表格會記錄每次有人購買時的資料列
+* 可用來聯結或參照 `purchase` 表格至 `customer` 表格 — 這可讓我們知道誰購買了
 
-在更精細的級別，您需要確定用於此分析的準確資料欄位：
+在更精細的層級，您需要識別用於此分析的確切資料欄位：
 
-* 包含客戶註冊日期的資料表和列：例如 `user.created\_at`
-* 包含採購日期的資料表和列：例如 `order.created\_at`
+* 包含客戶註冊日期的資料表格和欄：例如 `user.created\_at`
+* 包含購買日期的資料表格和欄：例如 `order.created\_at`
 
-## 建立資料列以進行分析
+## 建立資料欄以供分析
 
-除了上面概述的本機資料列外，您還需要一組計算的資料欄位來啟用此分析，包括：
+除了上述的原生資料欄以外，您還需要一組計算資料欄位來啟用此分析，包括：
 
-* `Customer's first purchase date` 返回特定用戶的 `MIN(order.created_at`)
+* `Customer's first purchase date` 會傳回特定使用者的 `MIN(order.created_at`)
 
 然後用於建立：
 
-* `Time between a customer's registration date and first purchase date`，它返回註冊到第一個購買日期之間某個特定用戶的時間。 這是以後指標的基礎。
+* `Time between a customer's registration date and first purchase date`，會傳回從註冊到首次購買日期之間經過的特定使用者時間。 這是您日後量度的基礎。
 
-這兩個欄位都需要在用戶級別上建立(例如，在 `user` )的正平方根。 這使平均分析能夠按用戶進行規範化（換句話說，此平均計算中的分母是用戶數）。
+這兩個欄位都必須在使用者層級建立(例如 `user` 表格)。 這可讓使用者標準化平均分析（換言之，此平均計算中的分母是使用者計數）。
 
-這裡 [!DNL Commerce Intelligence] 進去！ 你可以 [!DNL Commerce Intelligence] Data Warehouse，建立以上列。 與Adobe分析師團隊聯繫，並為我們提供新列的特定定義以供建立。 您還可以使用 [列編輯器](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)。
+這是以下位置 [!DNL Commerce Intelligence] 開始使用！ 您可以使用 [!DNL Commerce Intelligence] Data Warehouse以建立上述欄。 請聯絡Adobe分析團隊，向我們提供建立新欄位的特定定義。 您也可以使用 [欄編輯器](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
-最佳做法是避免直接在資料庫中建立這些計算的資料欄位，因為這會給生產伺服器帶來不必要的負擔。
+最佳實務是避免直接在資料庫中建立這些計算資料欄位，因為這會對生產伺服器造成不必要的負擔。
 
-## 建立度量
+## 建立量度
 
-既然您擁有分析所需的資料欄位，現在是時候找到或建立相關度量來構建分析了。
+現在您已具備分析所需的資料欄位，您可以開始尋找或建立相關量度來建構您的分析。
 
-在此，您要執行以下計算：
+您想在此執行下列計算：
 
 
-_[總和 `Time between a customer's registration date and first purchase date`] / [註冊和購買的客戶總數]_
+_[總和 `Time between a customer's registration date and first purchase date`] / [註冊及購買的客戶總數]_
 
-您想看到這個計算，是根據客戶的註冊日期繪製的，或者趨勢。 下面是如何 [建立此度量](../../data-user/reports/ess-manage-data-metrics.md) 在 [!DNL Commerce Intelligence]:
+而且您想要根據客戶的註冊日期，檢視這項計算隨著時間繪製或趨勢分析。 以下為操作說明 [建立此量度](../../data-user/reports/ess-manage-data-metrics.md) 在 [!DNL Commerce Intelligence]：
 
-1. 轉到 **[!UICONTROL Data]** 的 `Metrics` 頁籤。
-1. 按一下 **[!UICONTROL Add New Metric]** 的 `user` 表格（在其中建立了上面的尺寸）。
-1. 從下拉清單中，選擇 `Average` 的`Time between a customer's registration date and first purchase date` 列 `user` 按順序排列的表 `Customer's registration date`  的雙曲餘切值。
-1. 添加任何相關篩選器或篩選器集。
+1. 前往 **[!UICONTROL Data]** 並選取 `Metrics` 標籤。
+1. 按一下 **[!UICONTROL Add New Metric]** 並選取 `user` 表格（您建立上述維度的位置）。
+1. 從下拉式清單中選取 `Average` 於`Time between a customer's registration date and first purchase date` 中的欄 `user` 表格排序依據 `Customer's registration date`  欄。
+1. 新增任何相關的篩選器或篩選器集。
 
-此度量現已就緒。
+此量度現已準備就緒。
 
-## 建立報表
+## 建立報告
 
-設定新度量後，您可以使用它按註冊日期報告註冊到第一個購買日期之間的平均時間。
+設定好新量度後，您就可以用它來報告註冊日期與首次購買日期（依註冊日期）之間的平均時間。
 
-只需轉到任何儀表板並 [建立報表](../../data-user/reports/ess-manage-data-metrics.md) 使用上面建立的度量。
+只要前往任何儀表板並 [建立報告](../../data-user/reports/ess-manage-data-metrics.md) 使用以上建立的量度。
 
 ### `Visual Report Builder` {#visualrb}
 
-[的 `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) 是可視化資料的最簡單方法。 如果您不熟悉SQL或想快速建立報告，則最好選擇「可視Report Builder」。 只需按一下幾下，即可添加度量、分段資料並建立整個組織的報告。 這一選擇對初學者和專家都是完美的，因為它不需要任何技術專長。
+[此 `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) 是視覺化資料最簡單的方法。 如果您不熟悉SQL或想要快速建立報表，最好選擇視覺Report Builder。 只要按幾下，您就可以新增量度、劃分資料，以及建立要傳送至整個組織的報表。 此選項對初學者和專家都是完美的選擇，因為它不需要任何技術專業知識。
 
 |  |  |
 |--- |--- |
-| **這對……** | **這對……** |
-|  — 所有級別的分析/技術經驗<br> — 快速建立報告<br> — 建立分析以與其他用戶共用 |  — 需要SQL特定函式的分析<br> — 測試新列 — 計算列取決於初始資料填充的更新週期，而使用SQL建立的列則不是。 |
+| **這是最適合……** | **這個不太適合……** |
+|  — 所有層級的分析/技術體驗<br> — 快速建立報告<br> — 建立分析以與其他使用者共用 |  — 需要SQL特定函式的分析<br> — 測試新欄 — 計算欄取決於初始資料母體的更新週期，而使用SQL建立的欄則不然。 |
 
 {style="table-layout:auto"}
 
 ### 報表說明和影像
 
-#### 向報表添加說明
+#### 新增說明至報表
 
-在建立與團隊其他成員共用的報告時，Adobe建議添加說明，以便其他用戶更好地瞭解您的分析。
+建立與您團隊其他成員共用的報告時，Adobe建議新增說明，讓其他使用者更能瞭解您的分析。
 
-1. 按一下 **[!UICONTROL i]** 在任何報告的頂部。
-1. 在單詞框中輸入說明。
-1. 按一下 **[!UICONTROL Save Description]**。
+1. 按一下 **[!UICONTROL i]** 位於任何報表頂端。
+1. 在文字方塊中輸入說明。
+1. 按一下 **[!UICONTROL Save Description]**.
 
-請參見以下內容：
+請參閱下文：
 
 ![圖表說明](../../assets/Chart_Description.gif)
 
-#### 將報告導出為影像
+#### 將報表匯出為影像
 
-是否需要在演示文稿或文檔中包含報告？ 任何報表都可以使用PNG、PDF或SVG格式保存為影像 `Report Options` 的子菜單。
+需要在簡報或檔案中包含報告？ 任何報表都可以使用以下專案儲存為影像(PNG、PDF或SVG格式)： `Report Options` 功能表，位於每個報表的右上角。
 
-1. 按一下任何報告右上角的齒輪表徵圖。
-1. 從下拉清單中，選擇 `Enlarge`。
-1. 放大報告時，按一下 **[!UICONTROL Download]** 在報告右上角。
-1. 從下拉清單中選擇首選影像格式。 下載將立即開始。
+1. 按一下任何報表右上角的齒輪圖示。
+1. 從下拉式清單中選取 `Enlarge`.
+1. 當報表放大時，按一下 **[!UICONTROL Download]** 報表的右上角。
+1. 從下拉式清單中選取偏好的影像格式。 下載會立即開始。
 
-請參見以下內容：
+請參閱下文：
 
 ![](../../assets/exp-rep-as-image.gif)

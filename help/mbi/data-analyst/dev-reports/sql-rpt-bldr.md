@@ -1,6 +1,6 @@
 ---
 title: 使用SQLReport Builder
-description: 瞭解使用SQLReport Builder的內容。
+description: 瞭解使用SQLReport Builder的來去去。
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -13,162 +13,162 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->需要 [管理權限](../../administrator/user-management/user-management.md) 建立和編輯SQL圖表。 `Standard` 用戶可以在儀表板上重新排列這些圖表， `Read-only` 用戶擁有與傳統圖表相同的體驗。 另外， `Read-only` 用戶無權訪問查詢的文本。
+>需要 [管理員許可權](../../administrator/user-management/user-management.md) 建立和編輯SQL圖表。 `Standard` 使用者可以在儀表板上重新排列這些圖表，並且 `Read-only` 使用者擁有與傳統圖表相同的體驗。 此外， `Read-only` 使用者無權存取查詢的文字。
 
-查看 [培訓視頻](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) 來瞭解更多資訊。
+請參閱 [訓練影片](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) 以深入瞭解。
 
-[!DNL SQL]或「結構化查詢語言」是用於與資料庫通信的寫程式語言。 在 [!DNL Commerce Intelligence]。 [!DNL SQL] 用於查詢或檢索Data Warehouse中的資料。 查看儀表板上的報告 — 在幕後，每個報告都由 [!DNL SQL] 的子菜單。
+[!DNL SQL]或結構化查詢語言，是用於與資料庫通訊的程式設計語言。 在 [!DNL Commerce Intelligence]， [!DNL SQL] 用於查詢或擷取您Data Warehouse中的資料。 檢視控制面板上的報表 — 在幕後，每個報表都由 [!DNL SQL] 查詢。
 
-您可以使用 [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) 要直接查詢Data Warehouse，請查看結果，並將其轉換為圖表。 可以開始使用 [!DNL SQL Report Builder] 按一下 **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**。
+您可以使用 [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) 若要直接查詢您的Data Warehouse，請檢視結果，並將其轉換為圖表。 您可以開始使用建立報告 [!DNL SQL Report Builder] 按一下 **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**.
 
-查看 [培訓視頻](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) 來瞭解更多資訊。
+請參閱 [訓練影片](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html) 以深入瞭解。
 
-的 [!DNL SQL Report Builder] 允許您直接查詢Data Warehouse、查看結果，並快速將其轉換為圖表。 關於使用 [!DNL SQL] 要生成報告，您不需要等待更新週期來迭代您建立的列。 如果結果看起來不正確，您可以快速編輯並重新運行查詢，直到符合您的預期。
+此 [!DNL SQL Report Builder] 可讓您直接查詢Data Warehouse、檢視結果，並快速將其轉換為圖表。 使用的最佳部分 [!DNL SQL] 若要建立報表，您不需要等待更新週期來重複您建立的欄。 如果結果看起來不正確，您可以快速編輯並重新執行查詢，直到符合您的預期為止。
 
-本主題將引導您使用 [!DNL SQL Report Builder]。 等你瞭解了自己的路，再看看 [!DNL SQL] 要獲取可視化教程，請嘗試優化您編寫的一些查詢。
+本主題將引導您使用 [!DNL SQL Report Builder]. 在您瞭解如何應對後，請檢視 [!DNL SQL] 視覺效果教學課程，或嘗試最佳化您編寫的某些查詢。
 
-本文所涵蓋：
+本文章內容涵蓋：
 
-1. [寫入查詢](#writing)
+1. [撰寫查詢](#writing)
 
-1. [運行查詢並查看結果](#runquery)
+1. [執行查詢並檢視結果](#runquery)
 
-1. [建立可視化](#createviz)
+1. [建立視覺效果](#createviz)
 
-1. [保存報告](#save)
+1. [儲存報告](#save)
 
 ## [!DNL SQL Report Builder] 整合
 
-[[!DNL Google Analytics]](../importing-data/integrations/google-analytics.md) 是唯一不能與 [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)。 此功能正在開發中。
+[[!DNL Google Analytics]](../importing-data/integrations/google-analytics.md) 是唯一無法與搭配使用的整合 [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md). 此功能正在開發中。
 
-開始建立 [!DNL SQL] 報告，按一下 **[!UICONTROL Report Builder]** 或 **[!UICONTROL Add Report]** 在任何儀表板的頂部。 在 [!DNL Report Picker] 螢幕，按一下 **[!UICONTROL SQL Report Builder]** 開啟 [!DNL SQL] 編輯器。
+若要開始建立 [!DNL SQL] 報表，按一下 **[!UICONTROL Report Builder]** 或 **[!UICONTROL Add Report]** 任何控制面板頂端的。 在 [!DNL Report Picker] 熒幕，按一下 **[!UICONTROL SQL Report Builder]** 以開啟 [!DNL SQL] 編輯者。
 
-## 開始
+## 開始使用
 
-要編輯報告，請按一下齒輪(![](../../assets/gear-icon.png))表徵圖 [!DNL SQL]基於圖表，按一下 **[!UICONTROL Edit]**。
+若要編輯報表，請按一下齒輪(![](../../assets/gear-icon.png))圖示中的「 」圖示 [!DNL SQL]以圖表為基礎的點按 **[!UICONTROL Edit]**.
 
-## 寫入查詢 {#writing}
+## 撰寫查詢 {#writing}
 
 >[!NOTE]
 >
->[!DNL SQL Report Builder] 查詢區分大小寫。 確保在編寫查詢時使用了正確的大小寫，或者最終可能會出現意外的結果或錯誤。
+>[!DNL SQL Report Builder] 查詢區分大小寫。 在撰寫查詢時，請務必使用正確的大小寫，否則可能會出現非預期的結果或錯誤。
 
-遵循 [查詢優化准則](../../best-practices/optimizing-your-sql-queries.md)，在 [!DNL SQL] 編輯器。
+遵循 [查詢最佳化准則](../../best-practices/optimizing-your-sql-queries.md)，在中撰寫查詢 [!DNL SQL] 編輯者。
 
 >[!IMPORTANT]
 >
->**指標 [!DNL SQL] 報告**  — 在SQL報告中插入度量時， `current definition` 的下界。
+>**中的量度 [!DNL SQL] 報告**  — 將量度插入SQL報表時， `current definition` 使用的量度的。
 
-如果度量將來更新，則SQL報告 *不* 反映變化。 必須手動編輯報表，以使更改生效。
+如果未來更新測量結果，SQL報表會顯示 *不會* 反映變更。 您必須手動編輯報告，變更才會生效。
 
-使用提要欄頂部的按鈕，可以在可用於 [!DNL SQL Report Builder]。 如果在清單中未看到要查找的內容，請嘗試使用邊欄頂部的搜索欄進行搜索。
+您可以使用側邊欄頂端的按鈕，在表格清單與可用於的量度之間切換 [!DNL SQL Report Builder]. 如果您在清單中看不到要尋找的內容，請嘗試使用側邊欄頂端的搜尋列來搜尋。
 
-您還可以使用 [!DNL SQL] 編輯器，通過將度量、表和列懸停在查詢上並按一下 **[!UICONTROL Insert]**:
+您也可以使用中的側欄 [!DNL SQL] 編輯器可將量度、表格和欄直接插入查詢，方法是將滑鼠游標停留在量度、表格和欄上，然後按一下 **[!UICONTROL Insert]**：
 
-![將表插入 [!DNL SQL] 編輯器。](../../assets/SQL_RB_Insert_Table.png)
+![將表格插入 [!DNL SQL] 編輯者。](../../assets/SQL_RB_Insert_Table.png)
 
 >[!NOTE]
 >
->任意 [SELECT函式](https://www.postgresql.org/docs/9.5/sql-select.html#SQL-SELECT-LIST)，或SQLReport Builder中支援的任何不對資料進行變異的函式。 這包括但不限於AVG、COUNT、COUNT DISTINCT、MIN/MAX和SUM。
+>任何 [SELECT函式](https://www.postgresql.org/docs/9.5/sql-select.html#SQL-SELECT-LIST)SQLReport Builder支援PostgreSQL支援的任何函式（或任何不會變異資料的函式）。 這包含但不限於AVG、COUNT、COUNT DISTINCT、MIN/MAX和SUM。
 
-還有， `JOIN` 類型受支援，但Adobe建議僅使用INNER JOIN，因為它是最便宜的 `JOIN` 的下界。
+此外，任何 `JOIN` 支援型別，但Adobe建議僅使用INNER JOIN，因為這是最便宜的 `JOIN` 型別。
 
-## 運行查詢並查看結果 {#runquery}
+## 執行查詢並檢視結果 {#runquery}
 
-完成編寫查詢後，按一下 **[!UICONTROL Run Query]**。 結果顯示在SQL編輯器下的表中：
+當您完成查詢的撰寫時，請按一下 **[!UICONTROL Run Query]**. 結果會顯示在SQL編輯器下方的表格中：
 
-![運行查詢並查看結果。](../../assets/SQL_Run_Query.gif)
+![執行查詢並檢視結果。](../../assets/SQL_Run_Query.gif)
 
-如果結果中出現問題，您可以編輯查詢並重新運行查詢，直到您滿意為止。
+如果結果中出現錯誤，您可以編輯查詢並重新執行，直到滿意為止。
 
-你有時可能會看到 [編輯器下麵包含EXPLAIN的消息](../../best-practices/optimizing-your-sql-queries.md)。 如果您看到其中一個，這意味著您的查詢尚未運行，需要稍微調整。
+您有時可能會看到 [編輯器下含有EXPLAIN的訊息](../../best-practices/optimizing-your-sql-queries.md). 如果您看到其中一項，表示您的查詢尚未執行，需要微調。
 
-編輯完查詢後，可以繼續建立可視化或將工作保存到儀表板。
+編輯完查詢後，您可以繼續建立視覺效果或儲存工作到控制面板。
 
-## 建立可視化 {#createviz}
+## 建立視覺效果 {#createviz}
 
-要使用查詢結果建立可視化，請按一下 **[!UICONTROL Chart]** 的 `Results` 的子菜單。 在此頁籤中，您選擇：
+若要使用查詢結果建立視覺效果，請按一下 **[!UICONTROL Chart]** 索引標籤中的 `Results` 窗格。 在此索引標籤中，您選取：
 
-* 的 `Series`或要測量的列，例如 **已售物料**。
-* 的 `Category`，或要用於分割資料的列，如 **採集源**。
-* 的 `Labels`或X軸值。
+* 此 `Series`，或您要測量的欄，例如 **已售出專案**.
+* 此 `Category`，或您要用來劃分資料區段的欄，例如 **贏取來源**.
+* 此 `Labels`或X軸值。
 
-下面快速查看可視化過程的外觀：
+以下為視覺化程式外觀的快速檢視：
 
 ![](../../assets/SQL_RB_viz_overview.gif)
 
-有關如何建立可視化的詳細說明，請參閱 [通過SQL查詢建立可視化效果教程](../../tutorials/create-visuals-from-sql.md){:target=&quot;_blank&quot;}。
+如需如何建立視覺效果的詳細逐步解說，請參閱 [從SQL查詢教學課程建立視覺效果](../../tutorials/create-visuals-from-sql.md){： target=&quot;_blank&quot;}。
 
-## 保存報告 {#save}
+## 儲存報告 {#save}
 
-在保存您的工作之前，必須為報表命名。 請記住 [命名的最佳實踐准則](../../best-practices/naming-elements.md){:target=&quot;_blank&quot;}，然後選擇明確傳達報告內容的內容！
+您必須先為報表命名，才能儲存作業。 請記得遵循 [命名的最佳實務准則](../../best-practices/naming-elements.md){： target=&quot;_blank&quot;}，然後選擇能清楚傳達報表內容的內容！
 
-按一下 **[!UICONTROL Save]** 在 [!DNL SQL] 編輯器並選擇報告 `Type` (`Chart` 或 `Table`)。 要對內容進行總結，請選擇要將報告保存到的儀表板，然後按一下 **[!UICONTROL Save to Dashboard]**。
+按一下 **[!UICONTROL Save]** 位於的右上角 [!DNL SQL] 編輯並選取報告 `Type` (`Chart` 或 `Table`)。 若要總結，請選取要儲存報告的儀表板，然後按一下 **[!UICONTROL Save to Dashboard]**.
 
 ![](../../assets/SQL_Save_Report.gif)
 
-### 分析資料
+### 分析您的資料
 
 #### [!DNL SQL Report Builder]
 
-[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) 使您能夠直接查詢Data Warehouse、查看結果並快速將結果轉換為報告。 使用 [!DNL SQL] 也允許 [使用 [!DNL SQL] 不可用的函式](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) 的 `Visual` 或 `Cohort` Report Builder，從而讓您能夠更好地控制資料。
+[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) 讓您能夠直接查詢Data Warehouse、檢視結果，並快速將其轉換為報表。 使用 [!DNL SQL] 也可讓您 [使用 [!DNL SQL] 無法使用的函式](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) 在 `Visual` 或 `Cohort` Report Builder，讓您更能掌控資料。
 
-使用 [!DNL SQL] 不依賴於更新週期，這意味著您可以根據需要迭代這些週期並立即查看結果。
+計算欄建立方式： [!DNL SQL] 不依賴更新週期，這表示您可以視需要重複這些週期，並立即檢視結果。
 
 >[!NOTE]
 >
->這隻適用於列的結構，而不適用於資料的新鮮度。 新資料仍依賴於成功完成的更新週期。
+>這僅適用於欄的結構，不適用於資料的時效性。 新的資料仍取決於成功完成的更新週期。
 
-| **這對……** | **這對……** |
+| **這是最適合……** | **這個不太適合……** |
 |---|---|
-| 中級/高級分析師 | 初學者，你要知道 [!DNL SQL]。 |
-| 的 [!DNL SQL] 精明 | 簡單分析 — 編寫查詢比使用 [!UICONTROL Visual Report Builder]。 |
-| 生成一次性使用的計算列 | 與他人共用 — 請考慮您的受眾：他們明白 [!DNL SQL]? 如果不是，他們可能會對報告的構建方式感到困惑。 |
-| 資料 `one-to-many` 關係 |  |
-| 測試新列或分析 |  |
+| 中級/進階分析師 | 初學者 — 您需要知道 [!DNL SQL]. |
+| 此 [!DNL SQL] 精明 | 簡單分析 — 撰寫查詢可能比單純使用 [!UICONTROL Visual Report Builder]. |
+| 建立一次性使用的計算欄 | 與他人共用 — 考慮您的對象：他們是否瞭解 [!DNL SQL]？ 如果沒有，他們可能會對報告的建置方式感到困惑。 |
+| 資料與 `one-to-many` 關係 |  |
+| 測試新欄或分析 |  |
 
 #### 資料庫與SQL編輯器結果
 
-大多數時間、結果差異都可歸因於更新週期。 如果 [!DNL Commerce Intelligence] 正在將資料從資料庫複製到Data Warehouse的過程中，即使使用同一查詢，您也可能看到不同的結果。
+大多數情況下，結果的差異可歸因於更新週期。 若 [!DNL Commerce Intelligence] 正在將資料庫中的資料複製到Data Warehouse中，即使使用相同的查詢，您也可能會看到不同的結果。
 
-連接問題也可能導致差異。 導航到 `Connections` 按一下 **[!DNL Manage Data** > **Connections]** 檢出 — 有問題的資料庫整合是否出錯？ 如果是，你可能需要 [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html) 讓事情重新運轉起來。
+連線問題也可能導致不一致。 導覽至 `Connections` 按一下以建立頁面 **[!DNL Manage Data** > **Connections]** 以檢查它 — 有問題的資料庫整合是否有錯誤？ 若是如此，您可能需要 [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html) 讓事情再次執行。
 
-如果所有整合都已成功連接，並且您未處於更新週期的中間，則可能有其他問題。
+如果所有的整合都已成功連線，而且您並未處於更新週期中，則可能有其他錯誤。
 
-#### 是否刪除 [!DNL SQL] 報告還會從我的Data Warehouse中刪除基礎列？
+#### 刪除 [!DNL SQL] 報表也會從我的Data Warehouse刪除基礎欄嗎？
 
-不，不管您如何構建列，您不會從Data Warehouse中丟失任何列。
+否，無論如何建立，Data Warehouse中的欄都不會遺失。
 
-使用 `Data Warehouse Manager` 刪除使用報表或查詢時不受影響。
+使用建立的欄 `Data Warehouse Manager` 如果您刪除使用它們的報表或查詢，則不受影響。
 
-使用 [!DNL SQL Report Builder] 不保存到您的Data Warehouse。
+使用建立的欄 [!DNL SQL Report Builder] 不會儲存至您的Data Warehouse。
 
 
 #### `Report Builder` 與 `SQL Report Builder`
 
-的 [!DNL SQL Report Builder] 在建立和構建圖表時，您可以更靈活地選擇應在圖表上顯示的值 `X` 和 `Y` 軸。 有關在中建立圖表的詳細資訊 [!DNL SQL Report Builder]，簽出 [從建立可視化 [!DNL SQL] 查詢](../../tutorials/create-visuals-from-sql.md) 教程。
+此 [!DNL SQL Report Builder] 讓您在建立及建構圖表時擁有更多彈性，例如，您可以選取應顯示在 `X` 和 `Y` 軸。 如需有關在中建立圖表的詳細資訊 [!DNL SQL Report Builder]，檢視 [建立視覺效果來源 [!DNL SQL] 查詢](../../tutorials/create-visuals-from-sql.md) 教學課程。
 
 #### `Cohort Report Builder` {#cohortrb}
 
-與 [!DNL Visual Report Builder]，也請參見Wiki頁。 [[!DNL Cohort Report Builder]](../dev-reports/cohort-rpt-bldr.md) 僅用於單一目的 — 分析和識別隨時間推移的類似用戶組的行為趨勢。 使用 [!DNL Cohort Report Builder] 不需要 [!DNL SQL] 精明，所以如果你剛開始工作，你可以毫不猶豫地潛入。
+不喜歡 [!DNL Visual Report Builder]，則 [[!DNL Cohort Report Builder]](../dev-reports/cohort-rpt-bldr.md) 旨在用於單一目的 — 分析和識別類似使用者群組在一段時間內的行為趨勢。 使用 [!DNL Cohort Report Builder] 不需要任何 [!DNL SQL] 精明，如果您剛開始使用，可以毫不猶豫地直接開始使用。
 
-| **這對……** | **這對……** |
+| **這是最適合……** | **這個不太適合……** |
 |---|---|
-| 中級/高級分析師 | 初學者 — 你需要定義練習的同伴。 |
-| 確定隨時間推移的行為趨勢 | 定性分析 — 可 [完成](../dev-reports/create-qual-cohort-analysis.md)，但需要Adobe幫助。 |
+| 中級/進階分析師 | 初學者 — 您需要實務定義同類群組。 |
+| 識別一段時間的行為趨勢 | 定性分析 — 可以是 [完成](../dev-reports/create-qual-cohort-analysis.md)，但需要Adobe協助。 |
 
-## 更新週期後重建查詢
+## 在更新週期後重建查詢
 
-您不必重新生成查詢。 使用 [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) 被保存得跟傳統 `Report Builder`。 更新流程 [!DNL SQL] 圖表是相同的 — 更新資料後，將重新計算並重新顯示圖表中的值。
+您不需要重新建立查詢。 使用建立的報表 [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) 會像在傳統檔案中建立的檔案一樣儲存 `Report Builder`. 的更新程式 [!DNL SQL] 圖表相同 — 更新資料後，圖表中的值將重新計算並重新顯示。
 
 >[!NOTE]
 >
->刪除 [!DNL SQL] 報表/查詢，它不會從Data Warehouse中刪除基礎列。 不管您如何構建列，您都不會丟失任何列。
+>刪除時 [!DNL SQL] report/query，它不會從Data Warehouse中刪除基礎欄。 無論如何建立欄，都不會遺失任何欄。
 
-* 如果刪除使用Data Warehouse管理器的報表或查詢，則使用它們建立的列不會受到影響。
+* 如果您刪除使用欄的報表或查詢，則使用「Data Warehouse管理員」建立的欄不會受到影響。
 
-* 使用SQLReport Builder建立的列不會保存到Data Warehouse。
+* 使用SQLReport Builder建立的欄不會儲存至您的Data Warehouse。
 
-## 收尾 {#wrapup}
+## 正在結束 {#wrapup}
 
-如果您想嘗試一些更具挑戰性的內容，為什麼不嘗試編寫針對可視化而優化的查詢？ 查看 [從建立可視化 [!DNL SQL] 查詢教程](../../tutorials/create-visuals-from-sql.md){:target=&quot;_blank&quot;}開始。
+如果您想要嘗試更具挑戰性的事情，為什麼不嘗試編寫針對視覺效果最佳化的查詢？ 檢視 [建立視覺效果來源 [!DNL SQL] 查詢教學課程](../../tutorials/create-visuals-from-sql.md){： target=&quot;_blank&quot;}開始使用。

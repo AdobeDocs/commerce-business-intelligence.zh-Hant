@@ -1,6 +1,6 @@
 ---
-title: 建立定性隊列分析
-description: 瞭解一個定性群體是什麼，你為什麼可能對構建這種分析感興趣，以及如何在Commerce Intelligence中建立它。
+title: 建立定性同類群組分析
+description: 瞭解什麼是質化同類群組、您為什麼可能有興趣建立此分析，以及如何在Commerce Intelligence中建立它。
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -11,70 +11,70 @@ ht-degree: 0%
 
 # 建立 `Qualitative Cohort Analysis`
 
-你知道 [!DNL Google Adwords] — 購買的客戶群與從有機搜索中購買的客戶相比，增加了他們的LTV? 你有沒有想過 `cohort` 是否在同一報告中並排分析不同客戶細分市場？ 如果是，a `qualitative cohort analysis` 幫助你回答這些問題。
+您知道您的 [!DNL Google Adwords] — 相較於從有機搜尋獲得的客戶，獲得的客戶區段會增加其LTV？ 您是否曾考慮過執行 `cohort` 在相同報表中對不同客戶區段進行並排分析？ 若有的話， `qualitative cohort analysis` 可協助您回答這些問題。
 
-這個主題深入闡述了質的群體是什麼，你為什麼可能對構建這個分析感興趣，以及你如何在 [!DNL Commerce Intelligence]。
+本主題說明什麼是質化同類群組、您為什麼可能有興趣建立此分析，以及如何在中建立此分析 [!DNL Commerce Intelligence].
 
-## 什麼是 `qualitative cohorts`不管怎樣？ {#whatare}
+## 什麼是 `qualitative cohorts`反正呢？ {#whatare}
 
-`Cohort` 分析一般可以廣義地定義為對在其生命週期中具有相似特徵的用戶組的分析。 它允許您識別不同用戶組的行為趨勢。
+`Cohort` 一般而言，分析可以寬泛地定義為分析在其生命週期內具有類似特徵的使用者群組。 它可讓您識別不同使用者群組中的行為趨勢。
 
-請參閱 [隊列分析](https://www.cohortanalysis.com/)。
+另請參閱 [同類群組分析](https://www.cohortanalysis.com/).
 
-最多 `cohort` 分析 [!DNL Commerce Intelligence] 按公用日期將用戶分組在一起（例如，在給定月份首次購買的所有客戶集）。 A `qualitative cohort` 有點不同：它是由不基於時間的特徵定義的用戶組。 示例包括：
+最多 `cohort` 分析 [!DNL Commerce Intelligence] 依共同日期將使用者分組（例如，在指定月份首次購買的所有客戶集）。 A `qualitative cohort` 稍有不同：這是由非時間型特性定義的使用者群組。 範例包括：
 
-* 從廣告活動獲取的所有用戶集
-* 第一次購買時包括優惠券（或沒有）的所有用戶集
-* 特定年齡的所有用戶集
+* 從廣告行銷活動取得的所有使用者集
+* 首次購買包含優惠券（或未包含）的所有使用者集
+* 屬於某個年齡段的所有使用者集
 
-## 這和正常情況有什麼不同 `cohort` 建築師？ {#different}
+## 這跟正常情況有何不同 `cohort` 產生器？ {#different}
 
-的 [`Cohort Analysis Builder`](../dev-reports/cohort-rpt-bldr.md) 使用基於時間的特徵對分組組合進行優化。 這非常適用於針對特定用戶段（例如，通過付費搜索市場活動獲得的所有用戶）的分析。 在 `Cohort Analysis Builder`，可以(1)關注該特定用戶組，和(2) `cohort` 日期（如他們的首次訂單日期）。
+此 [`Cohort Analysis Builder`](../dev-reports/cohort-rpt-bldr.md) 已針對使用時間型特性來分組同類群組而最佳化。 這非常適合聚焦於特定使用者區段的分析（例如，透過付費搜尋促銷活動取得的所有使用者）。 在 `Cohort Analysis Builder`，您可以(1)專注於該特定使用者群組，以及(2) `cohort` 日期（如其首次訂購日期）。
 
-但是，如果要分析同一隊列報告中多個用戶段的隊列行為(`paid` 搜索 `organic` 搜索與直接通信，可能？)，可以在 `Report Builder`。
+不過，如果您想要分析相同同類群組報表中多個使用者區段的同類群組行為(`paid` 搜尋與 `organic` 搜尋與直接流量？)，此更進階的分析可建構在 `Report Builder`.
 
-## 我應發送哪些資訊以支援設定分析？ {#support}
+## 我應該傳送哪些資訊給支援以設定我的分析？ {#support}
 
-建立 `qualitative cohort` 報告 `Report Builder` 涉及Adobe分析團隊建立 [高級計算列](../data-warehouse-mgr/creating-calculated-columns.md) 在必要的桌子上。
+建立 `qualitative cohort` 報告於 `Report Builder` 涉及Adobe分析人員團隊建立一些 [進階計算欄](../data-warehouse-mgr/creating-calculated-columns.md) 在必要的表格上。
 
-要構建這些，請提交 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （並參考本文！） 以下是您需要瞭解的：
+若要建置這些專案，請提交 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （並參考本文章！）。 以下是您需要瞭解的事項：
 
-* 的 `metric` 您想使用及使用什麼表來執行隊列分析(例如： `Revenue`，在 `orders` )的正平方根。
+* 此 `metric` 您要使用及其使用的表格執行同類群組分析(例如： `Revenue`，建立在 `orders` 表格)。
 
-* 的 `user segments` 您希望定義該資訊並將其放在資料庫中的位置(例如：不同值 `User's referral source`，本機 `users` 然後重新定位到 `orders`)。
+* 此 `user segments` 您想要定義該資訊在資料庫中的存留位置(範例：不同的值 `User's referral source`，原生於 `users` 表格並下移至 `orders`)。
 
-* 的 `cohort date` 要使用分析(例如：這樣 `User's first order date` 時間戳)。 此示例允許我們查看每個段並詢問 `How does a user's revenue grow in the months following their first order date?`。
+* 此 `cohort date` 您希望您的分析使用(例如： `User's first order date` timestamp)。 此範例可讓我們檢視每個區段並詢問 `How does a user's revenue grow in the months following their first order date?`.
 
-* 的 `time interval` 要查看的分析(例如： `weeks`。 `months`或 `quarters` 在 `User's first order date`)。
+* 此 `time interval` 您想要檢視其分析(範例： `weeks`， `months`，或 `quarters` 晚於 `User's first order date`)。
 
-一旦Adobe分析團隊響應了上述問題，您就有幾個新的高級計算列來構建報告！ 然後，您可以按照以下指示執行此操作。
+一旦Adobe分析團隊對上述內容做出回應，您就會有一些新的進階計算欄來建置您的報表！ 然後您可以依照以下說明執行此操作。
 
-## 建立定性隊列分析 {#create}
+## 建立定性同類群組分析 {#create}
 
-首先，您希望添加您感興趣的度量，每個 `cohort` 你在分析。 在此示例中，您要查看累積 `Revenue` 在客戶第一次訂單後的幾個月內完成， `User's referral source`。 這意味著，對於每個段，您都添加一個 `Revenue` 特定段的度量和篩選：
+首先，您想要新增您想要加入同類群組的量度，每個量度一次 `cohort` 您正在分析。 在此範例中，您想要檢視累積 `Revenue` 在客戶首次訂購後的幾個月內完成，並以 `User's referral source`. 這表示您需為每個區段新增一個 `Revenue` 特定區段的量度和篩選器：
 
 ![](../../assets/qualcohort1.gif)
 
-其次，應對報告的時間選項進行兩項更改：
+其次，您應該對報表的時間選項進行兩項變更：
 
-1. 設定 `time interval` 至 `None`。 這是因為您最終將時間間隔分組為維，而不是使用通常的時間選項。
+1. 設定 `time interval` 至 `None`. 這是因為您最後會依時間間隔分組為維度，而不使用通常的時間選項。
 
-1. 設定 `time range` 到您希望報告覆蓋的時間窗口。
+1. 設定 `time range` 至您要報表涵蓋的時間視窗。
 
-在本例中，您看到 `all time` 視圖 `Revenue`。 在此之後，你最後應該看到一串點：
+在此範例中，您會看到 `all time` 檢視 `Revenue`. 之後，您最後應該會看到一系列點：
 
 ![](../../assets/qualcohort2.gif)
 
-第三，調整以設定 `cohorts`。 基於 `cohort date` 和 `time interval` 您指定給Adobe分析師團隊的維，您的帳戶中有一個維 `cohort` 約會。 在本示例中，該自定義維稱為 `Months between this order and customer's first order date`。 使用此維時，應：
+第三，您可以調整以設定 `cohorts`. 根據 `cohort date` 和 `time interval` 您指定給Adobe分析人員團隊時，您的帳戶中有一個維度可執行 `cohort` 約會。 在此範例中，該自訂維度稱為 `Months between this order and customer's first order date`. 使用此維度，您應該：
 
-* `Group by` 具有 `group by` 選項
+* `Group by` 具有的維度 `group by` option
 
-* 選擇 `dimension` 你感興趣的
+* 選取 `dimension` 您感興趣的
 
-* 使用 `Show top/bottom option`，選擇您感興趣的前X個月，並按 `Months between this order and customer's first order date` 尺寸
+* 使用 `Show top/bottom option`，選取您感興趣的前X個月，並依 `Months between this order and customer's first order date` 維度
 
-現在，你可以看到每條線 `cohort` 你指定的。 現在查看示例 — 您看到 `Revenue` 由每個推薦來源的用戶提供， `grouped by` 第一個訂單和任何後續訂單之間的月數。 該示例還添加了 `Cumulative perspective` 查看 `cohorts'` 聚合增長 — 查看結果表以瞭解更細的粒度。
+現在，您可以看到每一行對應一行 `cohort` 您所指定的。 立即檢視範例 — 您會看到 `Revenue` 由每個反向連結來源的使用者所貢獻， `grouped by` 第一筆訂單與任何後續訂單之間的月數。 此範例也新增了 `Cumulative perspective` 以檢視 `cohorts'` 彙總成長 — 檢視結果表格以瞭解詳細程度。
 
-這告訴我們什麼？ 這裡，具體的推薦來源 `Paid search` 在客戶購買生命週期的第一個月中很有價值，但無法以重複的收入保留其客戶群。 同時 `Direct Traffic` 從較低金額開始，隨後幾個月的收入實際上以類似的速度累積。
+這告訴我們什麼？ 在此，特定的反向連結來源 `Paid search` 在客戶購買期限的第一個月很有價值，但無法透過重複收入保留其客戶群。 當 `Direct Traffic` 開始時數額較低，但隨後幾個月的收入實際會以類似速度累積。
 
-不管你怎麼切， `cohort` 分析是分析工具箱中的強大工具。 此類分析可為您的業務提供一些有趣的見解，傳統 `time-based cohorts` 可能不會，使您能夠做出更好的資料驅動決策。
+無論您如何選擇， `cohort` analysis是分析工具箱中功能強大的工具。 此類分析可針對您的業務產生一些傳統且有趣的見解 `time-based cohorts` 但可能不會，讓您能夠做出更好的資料導向式決策。

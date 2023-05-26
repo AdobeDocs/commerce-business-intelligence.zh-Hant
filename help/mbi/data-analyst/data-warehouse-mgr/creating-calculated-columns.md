@@ -1,6 +1,6 @@
 ---
-title: 建立計算列
-description: 瞭解如何整合來自不同來源的資料。
+title: 建立計算欄
+description: 瞭解如何合併來自不同來源的資料。
 exl-id: 668cbc77-6a96-4687-9f40-3635b1be5c66
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
@@ -9,48 +9,48 @@ ht-degree: 0%
 
 ---
 
-# 建立計算列
+# 建立計算欄
 
-分析資料時，整合來自不同來源的資料會很有幫助。 希望按收購來源對收入進行分組，將資料與 `orders` 表格 [!DNL Google Analytics] 資料？ 您可能希望按客戶性別對收入進行分組，或將客戶屬性加入交易資料以進行細分。 本主題討論如何做到這一點。
+在分析您的資料時，合併來自不同來源的資料會很有幫助。 想要依贏取來源將收入分組，連結以下來源的資料： `orders` 表格和 [!DNL Google Analytics] 資料？ 您可能想要依客戶性別將收入分組，或針對細分將客戶屬性加入交易資料。 本主題說明如何執行此操作。
 
-開始之前，Adobe建議您查看 [計算列類型指南](../../data-analyst/data-warehouse-mgr/calc-column-types.md) 有關可以在Data Warehouse管理器中建立的列類型及其定義和示例的資訊。
+開始之前，Adobe建議您先檢閱 [Calculated Column Types指南](../../data-analyst/data-warehouse-mgr/calc-column-types.md) 以取得您可以在「Data Warehouse管理員」中建立的欄型別相關資訊，以及其定義和範例。
 
-1. 要開始，請按一下 **[!DNL Manage Data > Data Warehouse]**。
+1. 若要開始使用，請按一下 **[!DNL Manage Data > Data Warehouse]**.
 
-1. 按一下要在其中建立列的表。 例如，如果要建立 `Customer Gender` 列以進行收入分段，您將選擇 `sales_flat_order` 的子菜單。
+1. 按一下要建立欄的表格。 例如，如果您想要建立 `Customer Gender` 欄中的收入細分，您可以選取 `sales_flat_order` 表格。
 
-1. 將顯示表格方案。 按一下 **[!UICONTROL Create New Column]**。
+1. 表格配置隨即顯示。 按一下 **[!UICONTROL Create New Column]**.
 
-1. 給列命名。 比如說， `Customer Gender`。
+1. 為欄命名。 例如， `Customer Gender`.
 
-1. 選擇列的定義。 這裡 [計算列類型指南](../data-warehouse-mgr/calc-column-types.md) 派上用場了！
+1. 選取欄的定義。 這就是 [Calculated Column Types指南](../data-warehouse-mgr/calc-column-types.md) 隨手可得！
 
-1. 對於某些類型的列，需要稍多一些資訊才能正確建立列：
+1. 對於某些型別的欄，需要更多資訊才能正確建立欄：
 
-   * 對於 `One to Many` （已加入） `Many to One` （聚合）列，需要選擇表和列。
+   * 對象 `One to Many` （已加入）和 `Many to One` （彙總）欄，您必須選取表格和欄。
 
-   * 對於 `Same Table calculation`，您需要從下拉清單中選擇所需的日期欄位。
+   * 對於 `Same Table calculation`，您需要從下拉式選單中選取所需的日期欄位。
 
-如果要建立 `One to Many` （已加入）或 `Many to One` (aggregate)列中，需要選擇連接兩個表的路徑。 在此步驟中，可以使用現有路徑或建立路徑。
+如果您要建立 `One to Many` （已加入）或 `Many to One` （彙總）欄中，您必須選取一個路徑來連線兩個表格。 在此步驟中，您可以使用現有路徑或建立路徑。
 
 >[!NOTE]
 >
->切記將表正確定義為多個或一個！
+>請記得將表格正確定義為多個或一個！
 
-* 如果需要，可以應用 [篩選](../../data-user/reports/ess-manage-data-filters.md) 的子菜單。
+* 如有需要，您可以套用 [篩選器](../../data-user/reports/ess-manage-data-filters.md) 至新欄。
 
-* 完成後，按一下 **[!UICONTROL Save]**。
+* 完成後，按一下 **[!UICONTROL Save]**.
 
-新列將顯示在當前表中 `Pending` 狀態。 下次更新完成後，您的列將可用於度量和報告。
+您的新欄會顯示在目前表格中，並帶有 `Pending` 狀態。 下次更新完成後，您的欄便可用於量度和報表。
 
-## 方便的參考地圖 {#map}
+## 便利的參考地圖 {#map}
 
-如果您在建立計算列時記不住所有輸入內容，請嘗試在構建時使此參考圖保持方便：
+如果您在建立計算欄時無法記住所有輸入內容，請嘗試在建立時讓此參考地圖方便使用：
 
 ![](../../assets/Calculated_Columns_Example.png)
 
-## 相關文檔
+## 相關檔案
 
-* [計算列類型](../data-warehouse-mgr/calc-column-types.md)
-* [高級計算列類型](../data-warehouse-mgr/adv-calc-columns.md)
-* [大樓 [!DNL Google ECommerce] 包含訂單和客戶資料的維](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [計算欄型別](../data-warehouse-mgr/calc-column-types.md)
+* [進階計算欄型別](../data-warehouse-mgr/adv-calc-columns.md)
+* [建置 [!DNL Google ECommerce] 包含訂單和客戶資料的維度](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
