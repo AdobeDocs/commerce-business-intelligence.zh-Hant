@@ -2,7 +2,9 @@
 title: 根據量度追蹤目標
 description: 瞭解如何設定儀表板，協助您根據實際資料（包括收入、新註冊使用者和一段時間的訂單）追蹤業務目標。
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
@@ -54,51 +56,46 @@ ht-degree: 0%
 * **達成目標所剩的收入**
 * 量度 `A`： `Revenue`
 * 
-
-   [！UICONTROL公制]: `Revenue`
+  [！UICONTROL公制]: `Revenue`
 
 * 量度 `B`： `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
 * 
-   [！UICONTROL公式]: `(B-A)`
+  [！UICONTROL公式]: `(B-A)`
 * 
-
-   [!UICONTROL Format]: `Number`
+  [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]：（您想要的任何相關時段）
 * 
-   [!UICONTROL Interval]: `Month`
+  [!UICONTROL Interval]: `Month`
 * 
-
-   [！UICONTROL圖表型別]: `Scalar`
+  [！UICONTROL圖表型別]: `Scalar`
 
 * **收入目標**
 * 量度 `A`： `Revenue`
 * 
-
-   [！UICONTROL公制]: `Revenue`
+  [！UICONTROL公制]: `Revenue`
 
 * 量度 `B`： `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * 量度 `C`： `Revenue (amount change since previous year)` （隱藏）
 * 
-   [！UICONTROL公制]: `Revenue`
+  [！UICONTROL公制]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]：（去年這個月）
 * 
-   [！UICONTROL公式]: `(A-C)`
+  [！UICONTROL公式]: `(A-C)`
 * 
-
-   [!UICONTROL Format]: `Currency`
+  [!UICONTROL Format]: `Currency`
 
 * 關閉 `Multiple Y-Axes`
 * [!UICONTROL Time period]：（您想要的任何相關時段）*
 * 
-   [!UICONTROL Interval]: `Month`
+  [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 
 完成上述收入目標報表後，您可以針對訂單、註冊帳戶或已包含於目標檔案上傳中的任何其他值，建立相同的目標報表。

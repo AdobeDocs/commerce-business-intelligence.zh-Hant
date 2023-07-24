@@ -2,7 +2,9 @@
 title: 瞭解您的 [!DNL Commerce Intelligence] 環境
 description: 瞭解如何使用並改善您的 [!DNL Commerce Intelligence] 環境。
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -19,7 +21,7 @@ ht-degree: 0%
 
 例如， `sales\_order` 表格為唯一順序。 此表格中的主索引鍵稱為 `entity\_id`. 可將此欄視為 `order\_id`. 在另一個表格中， `customer\_entity`，每一列代表一個不重複客戶。 此表格中的主索引鍵也稱為 `entity\_id`，這可以視為 `customer\_id`.
 
-在這些表格中， `sales\_order.entity\_id` 不等於 `customer\_entity.entity\_id`. 這適用於包含下列專案的所有資料表集： true `entity\_id`： `table\_A.entity\_id` 不等於 `table\_B.entity\_id`.
+在這些表格中， `sales\_order.entity\_id` 不等於 `customer\_entity.entity\_id`. 這適用於包含下列專案的所有資料表集： true `entity\_id`： `table\_A.entity\_id` 不等於 `table\_B.entity\_id`.
 
 ## [!DNL Guest orders]
 

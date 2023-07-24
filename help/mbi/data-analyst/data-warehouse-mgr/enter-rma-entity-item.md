@@ -2,7 +2,9 @@
 title: Enterprise_Rma_Item_Entity表格
 description: 瞭解如何從要求的傳回中分析有關特定專案的資訊。
 exl-id: aa71cb3f-3e0b-4b6b-b4cc-dad103f79c51
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 0%
@@ -64,4 +66,4 @@ ht-degree: 0%
 * 在上建立聯結欄  `enterprise_rma_item_entity` 表格透過下列聯結：
 
 * Commerce 1.x： `enterprise_rma_item_entity.order_item_id ` （許多） => `sales_flat_order_item.item_id` （一）
-* Commerce 2.x： `magento_rma_item_entity.order_item_id ` （許多） => `sales_order_item.item_id` （一）
+* Commerce 2.x： `magento_rma_item_entity.order_item_id ` （許多） => `sales_order_item.item_id` （一）

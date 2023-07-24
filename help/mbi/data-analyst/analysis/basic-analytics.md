@@ -2,7 +2,9 @@
 title: 瞭解並建置基本分析
 description: 瞭解如何瞭解和建立基本分析。
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Dashboards, Data Integration
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '3113'
 ht-degree: 0%
@@ -153,7 +155,7 @@ ht-degree: 0%
    * **[!UICONTROL Time Interval]**: `By Month`
    * **[!UICONTROL Group By]**： `Customer's Order Number`，然後選取 `2` 和 `3`
 
-   ![](../../assets/2nd_and_3rd_purchases_last_year.png)
+  ![](../../assets/2nd_and_3rd_purchases_last_year.png)
 
 * **報表範例2**：去年的重複客戶數
    * **[!UICONTROL Metric]**: `Distinct Customers`
@@ -161,7 +163,7 @@ ht-degree: 0%
    * **[!UICONTROL Time Range]**: `Moving range > Last Year`
    * **[!UICONTROL Time Interval]**: `By Month`
 
-   ![去年回頭客戶](../../assets/Repeat_customers_last_year.png)<!--{: width="929"}-->
+  ![去年回頭客戶](../../assets/Repeat_customers_last_year.png)<!--{: width="929"}-->
 
 ### 依期限訂單數排名的前幾個客戶
 
@@ -174,7 +176,7 @@ ht-degree: 0%
    * **[!UICONTROL Group By]**: `customer_email`
    * **[!UICONTROL Show Top/Bottom]**：依訂單排序的前25項
 
-   ![前25名客戶（依訂單）](../../assets/Top_25_customers_by_lifetime_orders.png)<!--{: width="929"}-->
+  ![前25名客戶（依訂單）](../../assets/Top_25_customers_by_lifetime_orders.png)<!--{: width="929"}-->
 
 ### 依期限收入排名的前幾個客戶
 
@@ -187,7 +189,7 @@ ht-degree: 0%
    * **[!UICONTROL Group By]**: `customer_email`
    * **[!UICONTROL Show Top Bottom]**：依期限收入排序的前25項
 
-   ![前25名客戶（依收入）](../../assets/top_25_customers_by_lifetime_revneue.png)<!--{: width="929"}-->
+  ![前25名客戶（依收入）](../../assets/top_25_customers_by_lifetime_revneue.png)<!--{: width="929"}-->
 
 ### 依同類群組的平均期限收入
 
@@ -202,7 +204,7 @@ ht-degree: 0%
    * **[!UICONTROL Table]**: `Customer_entity`
    * **[!UICONTROL Perspective]**：每個同類群組成員的累積平均值
 
-   ![依同類群組的客戶期限收入](../../assets/Avg_customer_lifetime_revenue_by_cohort.png)<!--{: width="929"}-->
+  ![依同類群組的客戶期限收入](../../assets/Avg_customer_lifetime_revenue_by_cohort.png)<!--{: width="929"}-->
 
 ### 依優惠券使用情況區分的客戶
 
@@ -218,7 +220,7 @@ ht-degree: 0%
    * **[!UICONTROL Time range]**: `All Time`
    * **[!UICONTROL Time interval]**: `By Month`
 
-   ![依優惠券使用情況劃分的客戶](../../assets/Customers_by_coupon_usage.png)<!--{: width="929"}-->
+  ![依優惠券使用情況劃分的客戶](../../assets/Customers_by_coupon_usage.png)<!--{: width="929"}-->
 
 * **報表範例2**：按月的優惠券與非優惠券客戶的百分比
    * **[!UICONTROL Metric A]**： `Non coupon customers` （隱藏量度）
@@ -300,7 +302,7 @@ ht-degree: 0%
    * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
    * **[!UICONTROL Time Interval]**: `By Month`
 
-   ![訂購的產品](../../assets/products_ordered_pic1.png)<!--{: width="929"}-->
+  ![訂購的產品](../../assets/products_ordered_pic1.png)<!--{: width="929"}-->
 
 * 將此量度與您的訂單數量量度結合，以計算每筆訂單的專案數量。 接下來，將優惠券代碼新增至報表，以判斷您的促銷活動對購物車大小有何影響，或依新訂單與重複訂單進行細分，以便更清楚瞭解您的客戶行為。
 * **報表範例**：每筆訂單的產品：第一筆訂單與重複訂單
@@ -337,7 +339,7 @@ ht-degree: 0%
    * **[!UICONTROL Time Interval]**: `By Month`
    * **[!UICONTROL Perspective]**: `Amount Change vs Previous Year`
 
-   ![AOV](../../assets/aov_pic.png)<!--{: width="929"}-->
+  ![AOV](../../assets/aov_pic.png)<!--{: width="929"}-->
 
 ### 最多購買含優惠券的產品
 
@@ -351,7 +353,7 @@ ht-degree: 0%
    * **[!UICONTROL Group By**]： `name` (或 `SKU`或任何其他產品識別碼)
    * **[!UICONTROL Show top/bottom]**：依訂購的產品排序的前25項
 
-   ![優惠券產品](../../assets/prod_coupons_pic.png)<!--{: width="929"}-->
+  ![優惠券產品](../../assets/prod_coupons_pic.png)<!--{: width="929"}-->
 
 ### 訂單之間的時間
 
@@ -398,7 +400,7 @@ ht-degree: 0%
    * **[!UICONTROL Time Range]**: `1 Year Ago to 3 Months Ago`
    * **[!UICONTROL Time Interval]**: `By Day`
 
-   ![廣告曝光次數](../../assets/ad_impressions.png)<!--{: width="929"}-->
+  ![廣告曝光次數](../../assets/ad_impressions.png)<!--{: width="929"}-->
 
 ### 點進率(CTR)
 
@@ -438,7 +440,7 @@ ht-degree: 0%
 
 ### 依贏取來源劃分的客戶
 
-* **說明**：如果您使用追蹤訂單的來源、媒體及行銷活動 [!DNL Google eCommerce]，您可以依客戶的贏取來源來分析客戶。 這可協助您識別哪些行銷來源正在爭取客戶，並回答下列問題：「您的大多數客戶都是透過以下方式發出第一筆訂單 [!DNL Google]， [!DNL Facebook]，還是其他來源？」
+* **說明**：如果您使用追蹤訂單的來源、媒體及促銷活動 [!DNL Google eCommerce]，您可以依客戶的贏取來源來分析客戶。 這可協助您識別哪些行銷來源正在爭取客戶，並回答下列問題：「您的大多數客戶都是透過以下方式發出第一筆訂單 [!DNL Google]， [!DNL Facebook]，還是其他來源？」
 * **報表範例**：依贏取來源劃分的客戶
    * **[!UICONTROL Metric Used]**: `New Customers`
    * **[!UICONTROL Time Range]**: `All-Time`
@@ -482,7 +484,7 @@ ht-degree: 0%
       * 針對量度 `A`，選取 `Customer's first order's campaign`
       * 針對量度 `B`，選取 `campaign`
 
-   ![新使用者。](../../assets/New_Users_Last_Month.png)
+  ![新使用者。](../../assets/New_Users_Last_Month.png)
 
 >[!NOTE]
 >

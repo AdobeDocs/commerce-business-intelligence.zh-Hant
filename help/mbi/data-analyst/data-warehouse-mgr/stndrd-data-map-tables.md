@@ -2,7 +2,9 @@
 title: 使用對應表格標準化資料
 description: 瞭解如何使用對應表格。
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
@@ -37,7 +39,7 @@ ht-degree: 0%
 
 潛入之前，Adobe建議您 [匯出原始資料表資料](../../tutorials/export-raw-data.md). 首先檢視原始資料表示您可以探索您需要清理的資料的所有可能組合，從而確保對應表格涵蓋所有內容。
 
-若要建立對映表格，您需要建立一個兩欄式試算表，並遵循 [檔案上傳的格式化規則](../../data-analyst/importing-data/connecting-data/using-file-uploader.md).
+若要建立對映表格，您需要建立一個兩欄式試算表，其應遵循 [檔案上傳的格式化規則](../../data-analyst/importing-data/connecting-data/using-file-uploader.md).
 
 在第一欄中，輸入儲存在資料庫中的值 **每列只有一個值**. 例如， `pa` 和 `PA` 不能在同一行 — 每個輸入必須有自己的列。 如需範例，請參閱下文。
 
@@ -64,7 +66,7 @@ ht-degree: 0%
    * 於 `One` 側，選取 `mapping` 表格和 `Primary key` 欄。 在此情況下，您可以選取 `state_input` 欄來自 `mapping_state` 表格。
    * 以下是該路徑的外觀：
 
-      ![](../../assets/State_Mapping_Path.png)
+     ![](../../assets/State_Mapping_Path.png)
 
 1. 完成後，按一下 **[!UICONTROL Save]** 以建立路徑。
 1. 路徑在儲存後可能不會立即填入 — 如果發生這種情況，請按一下 `Path` 方塊並選取您建立的路徑。

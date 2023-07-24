@@ -2,7 +2,9 @@
 title: 瞭解並評估表格關係
 description: 瞭解如何瞭解一個表格中可能屬於另一個實體的人數。
 exl-id: e7256f46-879a-41da-9919-b700f2691013
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -120,7 +122,7 @@ ht-degree: 0%
 如果下列任一項為true，則關係為 `many-to-many`：
 
 * `Non-primary key` 資料行用來連結兩個資料表
-   ![](../../assets/many-to-many1.png)
+  ![](../../assets/many-to-many1.png)
 * 複合的一部分 `primary key` 用於連結兩個表格
 
 ![](../../assets/many-to-mnay2.png)

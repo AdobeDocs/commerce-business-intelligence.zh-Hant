@@ -2,7 +2,9 @@
 title: 分析重複概率衰減和流失
 description: 瞭解並瞭解訂單之間的時間流逝情況以及客戶預計何時流失。
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
@@ -72,7 +74,7 @@ ht-degree: 0%
 
 ## 我還要分析哪些專案？
 
-建立上述分析並決定流失臨界值後，您可以建立更多分析來識別流失使用者的共同趨勢。 例如，客戶流失是在相同時段內購買，還是在上次訂單中購買類似產品？ 設定流失臨界值後，您可以進一步深入探究這些流失客戶的特定特徵。
+建立上述分析並決定流失臨界值後，您可以建立更多分析來識別流失使用者的共同趨勢。 例如，客戶流失是在相同時段內購買，還是在上次訂購時購買了類似產品？ 設定流失臨界值後，您可以進一步深入探究這些流失客戶的特定特徵。
 
 如果您提供多種產品，您可能會想知道購買特定產品的客戶與其他客戶在一段時間內的行為有何不同。 想瞭解更多嗎？ 請參閱本教學課程，探索客戶同類群組（根據他們購買的特定產品）的終身購買行為。
 

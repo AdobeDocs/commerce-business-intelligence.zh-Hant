@@ -2,7 +2,9 @@
 title: 在Adobe Commerce中儲存資料
 description: 瞭解如何產生資料、導致新列插入的原因，以及如何將動作記錄到Adobe Commerce資料庫中。
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 3%
@@ -61,7 +63,7 @@ ht-degree: 3%
 
 帳戶建立完成後， `Sammy Customer` 已準備好開始購買。 在網站上，客戶新增兩對的 `Throwback Bellbottoms` 和一個 `V-Neck T-Shirt` 至購物車。 對選擇滿意，客戶移至結帳並提交訂單，並在以下位置建立以下專案： [sales flat order table （銷售統一訂單表格）](../data-warehouse-mgr/sales-flat-order-table.md)：
 
-| **`entity id`** | **`customer id**`**`subtotal`****`created at`** |
+| **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
 |---|---|---|---|
 | 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 

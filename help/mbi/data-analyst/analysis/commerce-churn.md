@@ -2,7 +2,9 @@
 title: Commerce流失
 description: 瞭解如何產生及分析您的Commerce流失率。
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 2%
@@ -55,9 +57,9 @@ ht-degree: 2%
 * **新客戶（依上次訂購日期）**
    * 被計數的客戶
 
-   >[!NOTE]
-   >
-   >此量度可能存在於您的帳戶中。
+  >[!NOTE]
+  >
+  >此量度可能存在於您的帳戶中。
 
 * 在 **`customer_entity`** 表格
 * 此量度會執行 **計數**
@@ -75,7 +77,7 @@ ht-degree: 2%
    * [!UICONTROL Metric]：新客戶（依第一筆訂單日期）
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
    * 
-      [!UICONTROL Perspective]: `Cumulative`
+     [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
    * 自客戶上次訂購日期以來的秒數>= [您為流失客戶定義的截止日期&#x200B;]**`^`**
@@ -84,11 +86,10 @@ ht-degree: 2%
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
    * 
-      [!UICONTROL Perspective]: Cumulative
+     [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]: `(B / ((A + B) - C)`
    * 
-
-      [!UICONTROL Format]: Percentage
+     [!UICONTROL Format]: Percentage
 
 * *量度 `A`：`New customers cumulative`*
 * *量度 `B`：`Churned customers by last order date`*

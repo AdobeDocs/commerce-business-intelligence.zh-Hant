@@ -2,7 +2,9 @@
 title: Commerce Intelligence
 description: 瞭解如何使用 [!DNL Commerce Intelligence] Adobe Commerce可用的功能。
 breadcrumb-title: Commerce Intelligence使用手冊
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, Leader, User
+feature: Business Performance
+source-git-commit: 903e839e8bd8a4e7b6d21b6a7ebcae49f2dfe6e4
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%

@@ -2,7 +2,9 @@
 title: 行銷ROI
 description: 瞭解如何設定儀表板來追蹤您的管道分析，包括彙總的ROI和依行銷活動。
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin,  User
+feature: Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 0%
@@ -41,26 +43,25 @@ ht-degree: 0%
       * 選取定義： `Joined Column`
       * [!UICONTROL Create Path]:
       * 
-         [!UICONTROL Many]: `sales_flat_order.increment_id`
+        [!UICONTROL Many]: `sales_flat_order.increment_id`
       * 
-
-         [!UICONTROL One]: `ecommerce####.transaction_id`
+        [!UICONTROL One]: `ecommerce####.transaction_id`
 
       * 選取 [!UICONTROL table]： `ecommerce####`
       * 選取 [!UICONTROL column]： `campaign`
       * [!UICONTROL Path]: `sales_flat_order.increment_id = ecommerce#####.transactionID`
+
    * **`Order's GA medium`**
       * 選取定義：聯結資料行
       * 選取 [!UICONTROL table]： `ecommerce####`
       * 選取 [!UICONTROL column]： `medium`
       * [!UICONTROL Path]： sales_flat_order.increment_id = e-commerce#####.transactionId
+
    * **`Order's GA source`**
       * 選取定義：聯結資料行
       * 選取 [!UICONTROL table]： `ecommerce####`
       * 選取 [!UICONTROL column]： `source`
       * [!UICONTROL Path]： sales_flat_order.increment_id = e-commerce####.transactionId ^
-
-
 
 * **`customer_entity`** 表格
 * **`Customer's first order GA campaign`**
@@ -141,10 +142,9 @@ ht-degree: 0%
 * 量度 `A`：廣告支出
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL間隔]: `None`
+  [！UICONTROL間隔]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **廣告客戶贏取（所有時間）**
    * [!UICONTROL Metric]: `New customers`
@@ -158,10 +158,9 @@ ht-degree: 0%
 * 量度 `A`： `Ad customer acquisitions`
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL間隔]: `None`
+  [！UICONTROL間隔]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **廣告ROI**
    * [!UICONTROL Metric]：廣告支出
@@ -173,6 +172,7 @@ ht-degree: 0%
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * 篩選邏輯： ([`A`] 或 [`B`] 或 [`C`])和 [`D`]
+
    * [!UICONTROL Metric]：平均期限收入
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
@@ -180,12 +180,10 @@ ht-degree: 0%
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * 篩選邏輯： ([`A`] 或 [`B`] 或 [`C`])和 [`D`]
+
    * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
    * 
-
-      [!UICONTROL Format]: `Percentage`
-
-
+     [!UICONTROL Format]: `Percentage`
 
 * 量度 `A`： `Ad Spend (hide)`
 * 量度 `B`： `Ad customer acquisitions (hide)`
@@ -193,23 +191,20 @@ ht-degree: 0%
 * [!UICONTROL Formula]: `Ads ROI`
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL間隔]: `None`
+  [！UICONTROL間隔]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **按Ga媒體顯示的訂單**
    * 
-
-      [！UICONTROL公制]: `Orders`
+     [！UICONTROL公制]: `Orders`
 
 * 量度 `A`： `Orders`
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By Month`
 * [!UICONTROL Group by]: `Order's medium`
 * 
-
-   [!UICONTROL Chart Type]: `Area`
+  [!UICONTROL Chart Type]: `Area`
 
 * **依行銷活動的廣告ROI**
    * [!UICONTROL Metric]: `Ad Spend`
@@ -221,6 +216,7 @@ ht-degree: 0%
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * 篩選邏輯： ([`A`] 或 [`B`] 或 [`C`])和 [`D`]
+
    * [!UICONTROL Metric]：平均期限收入
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
@@ -228,6 +224,7 @@ ht-degree: 0%
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * 篩選邏輯： ([`A`] 或 [`B`] 或 [`C`])和 [`D`]
+
    * [!UICONTROL Metric]：平均期限訂單數
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
@@ -235,20 +232,18 @@ ht-degree: 0%
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
       * 篩選邏輯： ([`A`] 或 [`B`] 或 [`C`])和 [`D`]
+
    * [!UICONTROL Formula]: `(A / B)`
    * 
-
-      [!UICONTROL Format]: `Currency`
+     [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]: `(C - (A / B))`
    * 
-
-      [!UICONTROL Format]: `Currency`
+     [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
    * 
-
-      [!UICONTROL Format]: `Percentage`
+     [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Metric]: `Ad Clicks`
 
@@ -256,39 +251,33 @@ ht-degree: 0%
 
    * [!UICONTROL Formula]: `(H / I)`
    * 
-
-      [!UICONTROL Format]: `Percentage`
+     [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Formula]: `(A / H)`
    * 
-
-      [!UICONTROL Format]: `Currency`
-
-
-
+     [!UICONTROL Format]: `Currency`
 
 * 量度 `A`： `Ad Spend` （隱藏）
 * 量度 `B`： `Ad customer acquisitions`
 * 量度 `C`： `Average LTV`
 * 量度 `D`： `Average lifetime # of orders`
 * 
-   [！UICONTROL公式]: `CAC`
+  [！UICONTROL公式]: `CAC`
 * [!UICONTROL Formula]: `Avg return`
 * [!UICONTROL Formula]: `Ads ROI`
 * 量度 `H`： `adClicks`
 * 量度 `I`： `Impressions`
 * 
-   [！UICONTROL公式]: `CTR`
+  [！UICONTROL公式]: `CTR`
 * 
-   [！UICONTROL公式]: `CPC`
+  [！UICONTROL公式]: `CPC`
 * [!UICONTROL Time period]: `All time`
 * 
-   [！UICONTROL間隔]: `None`
+  [！UICONTROL間隔]: `None`
 * 
-   [！UICONTROL分組依據]: `campaign` (將「客戶的第一個訂單」行銷活動用於非廣告支出表格量度)
+  [！UICONTROL分組依據]: `campaign` (將「客戶的第一個訂單」行銷活動用於非廣告支出表格量度)
 * 
-
-   [!UICONTROL Chart Type]: `Table`
+  [!UICONTROL Chart Type]: `Table`
 
 如果您在建立此分析時遇到任何問題，或只是想與Professional Services團隊互動， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 

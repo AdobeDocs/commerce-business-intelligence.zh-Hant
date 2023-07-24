@@ -2,7 +2,9 @@
 title: 來賓訂單
 description: 瞭解訪客訂單對您資料的影響，以及您對於訪客訂單必須正確考慮哪些選項。 [!DNL Commerce Intelligence] Data Warehouse。
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%
@@ -21,13 +23,13 @@ ht-degree: 0%
 
 * **如果所有客戶都已註冊** 而且不允許客服訂單，這表示 `orders` 表格中有一個 `customer\_id` 欄。 因此，每個訂單都會聯結回 `customers` 表格。
 
-   ![](../../assets/guest-orders-4.png)
+  ![](../../assets/guest-orders-4.png)
 
 * **如果允許來賓訂單**，這表示有些訂單在 `customer\_id` 欄。 只有註冊客戶會獲指定的 `customer\_id` 上的欄 `orders` 表格。 未註冊的客戶會收到 `NULL` （或空白）值。 因此，並非所有訂單記錄在 `customers` 表格。
 
-   >[!NOTE]
-   >
-   >若要識別發出訂單的唯一個人，必須在旁邊有另一個唯一的使用者屬性 `customer\_id` 附加至訂單。 通常會使用客戶的電子郵件地址。
+  >[!NOTE]
+  >
+  >若要識別發出訂單的唯一個人，必須在旁邊有另一個唯一的使用者屬性 `customer\_id` 附加至訂單。 通常會使用客戶的電子郵件地址。
 
 ## 如何在Data Warehouse設定中說明來賓訂單
 

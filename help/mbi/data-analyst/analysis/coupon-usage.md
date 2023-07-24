@@ -2,7 +2,9 @@
 title: 分析優惠券使用量
 description: 瞭解如何分析吸引和留住客戶時的優惠券使用情況。
 exl-id: d4d1393f-1695-43f2-980a-84525f84031e
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 2%

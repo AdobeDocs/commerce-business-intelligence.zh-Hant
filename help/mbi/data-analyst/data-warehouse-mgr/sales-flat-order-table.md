@@ -2,7 +2,9 @@
 title: sales_order表格
 description: 瞭解如何使用sales_order表格。
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1197'
 ht-degree: 0%
@@ -11,7 +13,7 @@ ht-degree: 0%
 
 # `sales_order` 表格
 
-此 `sales_order` 表格(`sales_flat_order` （位於M1）是擷取每個訂單的位置。 雖然Commerce有一些自訂實作，會導致將訂單分割為個別的列，但通常每列都代表一個不重複的訂單。
+此 `sales_order` 表格(`sales_flat_order` （位於M1）是擷取每個訂單的位置。 雖然Commerce有一些自訂實作，會導致將訂單分割為個別的列，但通常每一列都代表一個不重複的訂單。
 
 此表格包含所有客戶訂單，無論該訂單是否透過訪客結帳處理。 如果您的商店接受訪客結帳，您可以找到更多相關資訊 [使用案例](../data-warehouse-mgr/guest-orders.md).
 
@@ -69,7 +71,7 @@ ht-degree: 0%
 | **量度名稱** | **說明** | **建構** |
 |---|---|---|
 | `Avg order value` | 每筆訂單的平均收入，其中收入定義為 `base_grand_total` | `Operation: Average`<br/>`Operand: base_grand_total`<br/>`Timestamp: created_at` |
-| `Avg time between orders` | 客戶(n-1)訂單與第n筆訂單之間的平均時間（針對所有客戶和訂單） | `Operation: Average`<br/>`Operand: Seconds since previous order`<br/>`Timestamp:` `created_at` |
+| `Avg time between orders` | 所有客戶和訂單的客戶(n-1)訂單與第n筆訂單之間的平均時間 | `Operation: Average`<br/>`Operand: Seconds since previous order`<br/>`Timestamp:` `created_at` |
 | `GMV` | 在套用所有稅金和折扣之前，所有訂單的商品總值總和（其中GMV定義為小計） | `Operation: Sum`<br/>`Operand: base_subtotal`<br/>`Timestamp: created_at` |
 | `Median time between orders` | 客戶(n-1)訂單與第n筆訂單之間的中位時間（針對所有客戶和訂單） | `Operation: Median`<br/>`Operand: Seconds since previous order`<br/>`Timestamp:` `created_at` |
 | `Orders` | 訂購總數 | `Operation: Count`<br/>`Operand: entity_id`<br/>`Timestamp:` `created_at` |

@@ -2,7 +2,9 @@
 title: 在零售行事曆上建立報表
 description: 瞭解如何設定結構，以在您的 [!DNL Commerce Intelligence] 帳戶。
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -49,18 +51,19 @@ ht-degree: 0%
       * [!UICONTROL Column type]: `Same table > Calculation`
       * [!UICONTROL Inputs]: `Date Retail`
       * 
-         [！UICONTROL資料型別]: `Datetime`
+        [！UICONTROL資料型別]: `Datetime`
       * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
-         >[!NOTE]
-         >
-         >此 `now()` 以上函式為PostgreSQL專屬函式。 雖然最多 [!DNL Commerce Intelligence] 資料倉儲是在PostgreSQL上託管，有些可能會在Redshift上託管。 如果上述計算傳回錯誤，您可能需要使用Redshift函式 `getdate()` 而非 `now()`.
+        >[!NOTE]
+        >
+        >此 `now()` 以上函式為PostgreSQL專屬函式。 雖然最多 [!DNL Commerce Intelligence] 資料倉儲是在PostgreSQL上託管，有些可能會在Redshift上託管。 如果上述計算傳回錯誤，您可能需要使用Redshift函式 `getdate()` 而非 `now()`.
+
    * **目前零售年份** （必須由支援分析人員建立）
       * [!UICONTROL Column type]：E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
       * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
       * 
-         [!UICONTROL Operation]: `Max`
+        [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value]: `Year Retail`
    * **包含在目前的零售年度中？ （是/否）**
       * [!UICONTROL Column type]: `Same table > Calculation`
@@ -68,7 +71,7 @@ ht-degree: 0%
          * `A` - `Year Retail`
          * `B` - `Current retail year`
       * 
-         [！UICONTROL資料型別]: `String`
+        [！UICONTROL資料型別]: `String`
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
    * **是否包含在上一個零售年度？ （是/否）**
       * [!UICONTROL Column type]: `Same table > Calculation`
@@ -76,9 +79,8 @@ ht-degree: 0%
          * `A` - `Year Retail`
          * `B` - `Current retail year`
       * 
-         [！UICONTROL資料型別]: String
+        [！UICONTROL資料型別]: String
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
-
 
 * **sales\_order** 表格
    * **建立時間\_at （零售年份）**
@@ -138,64 +140,62 @@ ht-degree: 0%
          * `Created\_at (retail Year) = 2015`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * 
-      [!UICONTROL Group by]: `Created\_at` (retail week)
+     [!UICONTROL Group by]: `Created\_at` (retail week)
    * 
-      [!UICONTROL Chart type]: `Line`
+     [!UICONTROL Chart type]: `Line`
       * 關閉 `multiple Y-axes`
 
 * **零售行事曆概觀（目前零售年份/月）**
    * 量度 `A`： `Revenue`
       * 
-         [！UICONTROL公制]: `Revenue`
+        [！UICONTROL公制]: `Revenue`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * 量度 `B`： `Orders`
       * [!UICONTROL Metric]: `Number of orders`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * 量度 `C`： `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * 
-      [!UICONTROL Group by]: `Created\_at` (retail month)
+     [!UICONTROL Group by]: `Created\_at` (retail month)
    * 
-
-      [!UICONTROL Chart type]: `Line`
+     [!UICONTROL Chart type]: `Line`
 
 * **零售行事曆概觀（前一個零售年度，按月）**
    * 量度 `A`： `Revenue`
       * 
-         [！UICONTROL公制]: `Revenue`
+        [！UICONTROL公制]: `Revenue`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * 量度 `B`： `Orders`
       * [!UICONTROL Metric]：訂單數
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * 量度 `C`： `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * 
-      [!UICONTROL Group by]: `Created\_at` (retail month)
+     [!UICONTROL Group by]: `Created\_at` (retail month)
    * 
-
-      [!UICONTROL Chart type]: `Line`
+     [!UICONTROL Chart type]: `Line`
 
 ## 後續步驟
 

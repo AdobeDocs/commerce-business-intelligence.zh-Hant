@@ -2,7 +2,7 @@
 title: Mixpanel中的資料驗證
 description: 瞭解如何確認您已同步可直接在Mixpanel中使用的所有相同資料。
 exl-id: d18ce954-26fe-4440-ad8b-4f266c007b2f
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+source-git-commit: 903e839e8bd8a4e7b6d21b6a7ebcae49f2dfe6e4
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 時間 [!DNL Adobe Commerce Intelligence] 首先連線至您的 [!DNL Mixpanel] 資料，您的客戶經理或分析師可能會要求您提供資料匯出來源 [!DNL Mixpanel] 以進行驗證。 這可讓您確認已同步可直接在中取得的所有相同資料 [!DNL Mixpanel].
 
-## 資料匯出程式： `Events`
+## 資料匯出程式： `Events`
 
 1. 造訪您的 `Segmentation` 截面和檢視 `Your Top Events`.
 

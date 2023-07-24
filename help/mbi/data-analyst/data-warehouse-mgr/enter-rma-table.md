@@ -2,7 +2,9 @@
 title: enterprise_rma表格
 description: 瞭解如何分析有關特定回訪請求的資訊。
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -44,10 +46,10 @@ ht-degree: 0%
 
 | **量度名稱** | **說明** | **建構** |
 |---|---|---|
-| `Number of returns` | 要求的傳回次數。 | `Operation` 欄： `entity id`<br>`Operation`： `Count`<br>`Timestamp` 欄： `date requested` |
-| `Total returned amount` | 傳回的總金額。 | `Operation `欄： `Return's total value`<br>`Operation`：總和<br>`Timestamp` 欄：要求的日期 |
-| `Average returned amount` | 傳回的平均貨幣金額。 | `Operation`` Column: Return's total value`<br>`Operation`： `Average`<br>`Timestamp` 欄： `date requested` |
-| `Average time to return` | 從訂單到退貨的平均時間。 | `Operation` 欄：訂單建立日期與退貨請求日期之間的秒數<br>`Operation`： `Average`<br>`Timestamp` 欄： `date requested` |
+| `Number of returns` | 要求的傳回次數。 | `Operation` 欄： `entity id`<br>`Operation`： `Count`<br>`Timestamp` 欄： `date requested` |
+| `Total returned amount` | 傳回的總金額。 | `Operation `欄： `Return's total value`<br>`Operation`：總和<br>`Timestamp` 欄：要求的日期 |
+| `Average returned amount` | 傳回的平均貨幣金額。 | `Operation`` Column: Return's total value`<br>`Operation`： `Average`<br>`Timestamp` 欄： `date requested` |
+| `Average time to return` | 從訂單到退貨的平均時間。 | `Operation` 欄：訂單建立日期與退貨請求日期之間的秒數<br>`Operation`： `Average`<br>`Timestamp` 欄： `date requested` |
 
 {style="table-layout:auto"}
 

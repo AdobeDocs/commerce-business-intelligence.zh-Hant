@@ -2,9 +2,11 @@
 title: 免費送貨閾值
 description: 瞭解如何設定儀表板來追蹤您免運費運送臨界值的效能。
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin,  User
+feature: Data Warehouse Manager, Dashboards, Reports
+source-git-commit: 6bdbdbcc652d476fa2a22589ac99678d5855e6fe
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -33,19 +35,19 @@ ht-degree: 0%
 * **`Order subtotal (buckets)`** 原始架構：由分析師建立，隸屬於 `[FREE SHIPPING ANALYSIS]` 票證
 * **`Order subtotal (buckets)`** 新架構：
    * 如上所述，此計算會以相對於您一般購物車大小的增量建立貯體。 如果您有原生小計欄，例如 `base_subtotal`，可作為此新欄的基礎。 如果沒有，它可以是計算欄，不包含收入的送貨和折扣。
-   >[!NOTE]
-   >
-   >「貯體」大小取決於適合您作為使用者端的尺寸。 您可以先從您的 `average order value` 並建立小於或大於該數量的值區。 檢視以下計算時，您會看到如何輕鬆複製部分查詢、編輯查詢以及建立其他值區。 範例以50為增量完成。
+
+  >[!NOTE]
+  >
+  >「貯體」大小取決於適合您作為使用者端的尺寸。 您可以先從您的 `average order value` 並建立小於或大於該數量的值區。 檢視以下計算時，您會看到如何輕鬆複製部分查詢、編輯查詢以及建立其他值區。 範例以50為增量完成。
 
    * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`，或 `calculated column`， `Datatype`： `Integer`
    * [!UICONTROL Calculation]： `case when A >= 0 and A<=200 then 0 - 200`
-當 `A< 200` 和 `A <= 250` 則 `201 - 250`
+時間 `A< 200` 和 `A <= 250` 則 `201 - 250`
 時間 `A<251` 和 `A<= 300` 則 `251 - 300`
 時間 `A<301` 和 `A<= 350` 則 `301 - 350`
 時間 `A<351` 和 `A<=400` 則 `351 - 400`
 時間 `A<401` 和 `A<=450` 則 `401 - 450`
 否則&#39;超過450&#39;結尾
-
 
 
 ## 量度
@@ -64,75 +66,67 @@ ht-degree: 0%
 * 量度 `A`： `Average Order Value`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **具有出貨規則A的訂單小計時段數**
    * [!UICONTROL Metric]: `Number of orders`
 
-   >[!NOTE]
-   >
-   >您可以顯示頂端來截斷尾端 `X` `sorted by` `Order subtotal` （貯體） `Show top/bottom`.
+  >[!NOTE]
+  >
+  >您可以顯示頂端來截斷尾端 `X` `sorted by` `Order subtotal` （貯體） `Show top/bottom`.
 
 * 量度 `A`： `Number of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
 * 
-
-   [!UICONTROL Chart Type]: `Column`
+  [!UICONTROL Chart Type]: `Column`
 
 * **具有出貨規則A之小計的訂單百分比**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
    * 
-      [！UICONTROL分組依據]: `Independent`
+     [！UICONTROL分組依據]: `Independent`
    * [!UICONTROL Formula]: `(A / B)`
    * 
-
-      [!UICONTROL Format]: `%`
+     [!UICONTROL Format]: `%`
 
 * 量度 `A`： `Number of orders by subtotal (hide)`
 * 量度 `B`： `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
 * 
-
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 * **小計超過出貨規則A的訂單百分比**
    * [!UICONTROL Metric]: `Number of orders`
    * 
-
-      [!UICONTROL Perspective]: `Cumulative`
+     [!UICONTROL Perspective]: `Cumulative`
 
    * [!UICONTROL Metric]: `Number of orders`
    * 
-
-      [！UICONTROL分組依據]: `Independent`
+     [！UICONTROL分組依據]: `Independent`
 
    * [!UICONTROL Formula]: `1- (A / B)`
    * 
-
-      [!UICONTROL Format]: `%`
+     [!UICONTROL Format]: `%`
 
 * 量度 `A`： `Number of orders by subtotal`
 * 量度 `B`： `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
 * 
-
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 
 針對「出貨B」及具有出貨規則B的時間期間，重複上述步驟與報表。

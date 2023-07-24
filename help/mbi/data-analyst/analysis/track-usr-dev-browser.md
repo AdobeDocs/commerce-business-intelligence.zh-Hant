@@ -2,7 +2,9 @@
 title: Google Analytics — 追蹤資料庫中的使用者裝置和瀏覽器資料
 description: 瞭解實際有多少使用者透過行動裝置登入，以及這如何影響這些使用者的期限值。
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
@@ -20,8 +22,7 @@ ht-degree: 0%
 1. `Mozilla/5.0 (Macintosh; Intel Mac OS X 10\_8\_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36`
 1. `Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/17.0 Firefox/17.0`
 1. `Mozilla/5.0 (iPhone; U; CPU iPhone OS 4\_0 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8A293 Safari/6531.22.7`
-1.
-` Mozilla/5.0 (iPad; CPU OS 5\_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3`
+1.` Mozilla/5.0 (iPad; CPU OS 5\_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3`
 1. `Mozilla/5.0 (Linux; U; Android 2.2; en-us; Nexus One Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1`
 
 如果您仔細檢視，會發現字串包含使用者作業系統、瀏覽器及其使用裝置名稱（如果有的話）的相關資訊。 雖然使用者代理字串在各平台之間甚至同一平台的版本之間差異極大，但平台名稱通常確實會存在於其內部。 例如，上#1是具有Chrome瀏覽器的Mac，#2上則是具有Firefox瀏覽器的Windows電腦、#3是iPhone、#4是iPad，#5是Android裝置。

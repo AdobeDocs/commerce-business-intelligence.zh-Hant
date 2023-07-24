@@ -2,7 +2,9 @@
 title: 定義客戶流失
 description: 瞭解如何設定儀表板，協助您定義交易式客戶的流失率。
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
@@ -68,29 +70,27 @@ ht-degree: 0%
 
 * [!UICONTROL Formula]：初始重複順序機率
 * 
-   [！UICONTROL公式]: `A/B`
+  [！UICONTROL公式]: `A/B`
 * 
-
-   [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 
-
-   [!UICONTROL Chart type]: `Scalar`
+  [!UICONTROL Chart type]: `Scalar`
 
 * **重複訂購機率自訂購以來的指定月份**
 * 量度A：重複訂購間隔月數（隱藏）
 * [!UICONTROL Metric]: `Number of orders`
 * 
-   [!UICONTROL Perspective]: `Cumulative`
+  [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 量度B：按訂購後月份的最後訂單（隱藏）
 * [!UICONTROL Metric]: `Number of orders`
 * 
-   [!UICONTROL Perspective]: `Cumulative`
+  [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * 量度C：所有時間重複訂單（隱藏）
@@ -98,33 +98,29 @@ ht-degree: 0%
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 
-
-   [！UICONTROL分組依據]: `Independent`
+  [！UICONTROL分組依據]: `Independent`
 
 * 量度D：所有上次訂單（隱藏）
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * 
-
-   [！UICONTROL分組依據]: `Independent`
+  [！UICONTROL分組依據]: `Independent`
 
 * [!UICONTROL Formula]：初始重複順序機率
 * 
-   [！UICONTROL公式]: `(C-A)/(C+D-A-B)`
+  [！UICONTROL公式]: `(C-A)/(C+D-A-B)`
 * 
-
-   [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
 * 顯示top.bottom：前24個類別，依類別名稱排序
 
 * 
-
-   [!UICONTROL Chart type]: `Line`
+  [!UICONTROL Chart type]: `Line`
 
 初始重複訂購機率報表代表「重複訂購總數/訂購總數」。 每個訂單都是產生重複訂單的機會；重複訂單的數量是實際發生的訂單的子集。
 

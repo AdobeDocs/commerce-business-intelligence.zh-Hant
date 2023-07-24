@@ -2,7 +2,9 @@
 title: 實體關係圖
 description: 瞭解一些ER圖表，幫助您視覺化一些常見Commerce資料庫表格之間的關係。
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%

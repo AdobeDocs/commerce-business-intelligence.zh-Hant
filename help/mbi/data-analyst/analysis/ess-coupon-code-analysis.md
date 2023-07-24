@@ -2,7 +2,9 @@
 title: 抵用券代碼分析（基本）
 description: 瞭解您企業的優惠券成效，是細分訂單，並更好地瞭解客戶習慣的有趣方式。
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
@@ -57,142 +59,140 @@ ht-degree: 0%
 
 * **含優惠券的訂單**
    * 
-      [！UICONTROL公制]: `Orders`
+     [！UICONTROL公制]: `Orders`
       * 新增篩選器：
          * [`A`] `coupon_code` **不是** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [！UICONTROL間隔]: `None`
+     [！UICONTROL間隔]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
-
 
 * **沒有優惠券的訂單**
    * 
-      [！UICONTROL公制]: `Orders`
+     [！UICONTROL公制]: `Orders`
       * 新增篩選器：
          * [`A`] `coupon_code` **是** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [！UICONTROL間隔]: `None`
+     [！UICONTROL間隔]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
-
 
 * **含抵用券的訂單淨收入**
    * 
-      [！UICONTROL公制]: `Revenue`
+     [！UICONTROL公制]: `Revenue`
       * 新增篩選器：
          * [`A`] `coupon_code` **不是** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [！UICONTROL間隔]: `None`
+     [！UICONTROL間隔]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
-
 
 * **優惠券折扣**
    * [!UICONTROL Metric]: `Coupon discount amount`
    * [!UICONTROL Time period]: `All time`
    * 
-      [！UICONTROL間隔]: `None`
+     [！UICONTROL間隔]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
 * **平均期限收入：獲得優惠券的客戶**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * 新增篩選器：
          * [`A`] `Customer's first order's coupon_code` **不是** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [！UICONTROL間隔]: `None`
+     [！UICONTROL間隔]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
-
 
 * **平均期限收入：非優惠券取得的客戶**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * 新增篩選器：
          * [A] `Customer's first order's coupon_code` **是**`[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [！UICONTROL間隔]: `None`
+     [！UICONTROL間隔]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
-
 
 * **優惠券使用量詳細資料（首次訂購）**
    * 量度 `1`： `Orders`
       * 新增篩選器：
          * [`A`] `coupon_code` **不是**`[NULL]`
          * [`B`] `Customer's order number` **等於** `1`
+
    * 量度 `2`： `Revenue`
       * 新增篩選器：
          * [`A`] `coupon_code` **不是**`[NULL]`
          * [`B`] `Customer's order number` **等於** `1`
+
       * 重新命名：  `Net revenue`
+
    * 量度 `3`： `Coupon discount amount`
       * 新增篩選器：
          * [`A`] `coupon_code` **不是**`[NULL]`
          * [`B`] `Customer's order number` **等於** `1`
+
    * 建立公式： `Gross revenue`
       * [!UICONTROL Formula]: `(B – C)`
       * 
-         [!UICONTROL Format]: `Currency`
+        [!UICONTROL Format]: `Currency`
+
    * 建立公式：**折扣百分比**
       * 公式： `(C / (B - C))`
       * 
-         [!UICONTROL Format]: `Percentage`
+        [!UICONTROL Format]: `Percentage`
+
    * 建立公式： `Average order discount`
       * [!UICONTROL Formula]: `(C / A)`
       * 
-         [!UICONTROL Format]: `Percentage`
+        [!UICONTROL Format]: `Percentage`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [！UICONTROL間隔]: `None`
+     [！UICONTROL間隔]: `None`
    * 
-
-      [！UICONTROL圖表型別]: `Table`
-
-
-
-
-
-
-
+     [！UICONTROL圖表型別]: `Table`
 
 * **依第一筆抵用券的平均期限收入**
    * [!UICONTROL Metric]：**平均期限收入**
       * 新增篩選器：
          * [`A`] `coupon_code` **是**`[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [！UICONTROL間隔]: `None`
+     [！UICONTROL間隔]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
-
 
 * **優惠券使用量詳細資料（首次訂購）**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * 新增篩選器：
          * [`A`] `Customer's first order's coupon_code` **不是** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [！UICONTROL間隔]: `None`
+     [！UICONTROL間隔]: `None`
    * [!UICONTROL Group by]: `Customer's first order's coupon_code`
    * 
-
-      [！UICONTROL圖表型別]: **Column**
-
+     [！UICONTROL圖表型別]: **Column**
 
 * **依優惠券/非優惠券贏取的新客戶**
    * 量度 `1`： `New customers`
       * 新增篩選器：
          * [`A`] `Customer's first order's coupon_code` **不是** `[NULL]`
+
       * [!UICONTROL Rename]: `Coupon acquisition customer`
+
    * 量度 `2`： `New customers`
       * 新增篩選器：
          * [`A`] `coupon_code` **是**`[NULL]`
+
       * [!UICONTROL Rename]: `Non-coupon acquisition customer`
+
    * [!UICONTROL Time period]: `All time`
    * [!UICONTROL Interval]: `By Month`
    * [!UICONTROL Chart type]: `Stacked Column`
-
-
-
-
 
 建立報表後，請參閱本主題頂端的影像，瞭解如何在控制面板上組織報表。

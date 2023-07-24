@@ -2,7 +2,9 @@
 title: 識別您最有價值的行銷資源和管道
 description: 瞭解可用來揭露您最有價值行銷管道的一些報告。
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 0%

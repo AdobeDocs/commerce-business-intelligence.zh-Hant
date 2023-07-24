@@ -2,7 +2,9 @@
 title: 年度、每月和每週報告
 description: 瞭解如何輕鬆檢視一段時間的趨勢，並變更您可能想要比較之時間期間的觀點。
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, Data Architect, Data Engineer, Leader, User
+feature: Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -39,8 +41,7 @@ Report Builder可讓您輕鬆檢視一段時間的趨勢，並變更您可能想
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]： **to_char(A， &#39;dd&#39;)**
    * `created_at (day of the week)` [!UICONTROL Calculation]： **to_char(A， &#39;d-Day&#39;)**
    * **`created_at (hour of the day)` [!UICONTROL Calculation]： **to_char(A， &#39;hh24&#39;)**
-
-      ![](../../assets/new-arch-create-calc.png)
+     ![](../../assets/new-arch-create-calc.png)
 
 ## 量度
 
@@ -64,10 +65,10 @@ Report Builder可讓您輕鬆檢視一段時間的趨勢，並變更您可能想
 * 量度 `B`： `Last year`
 * [!UICONTROL Time period]: `1 year ago to 0 years ago`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (month-day)`
 * 
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 * **MoM圖表**
    * [!UICONTROL Metric]: `Number of orders`
@@ -81,10 +82,10 @@ Report Builder可讓您輕鬆檢視一段時間的趨勢，並變更您可能想
 * 量度 `B`：上個月*
 * [!UICONTROL Time period]：一個月前至0個月前
 * 
-   [!UICONTROL Interval]: None
+  [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
 * 
-   [!UICONTROL Chart Type]: Line
+  [!UICONTROL Chart Type]: Line
 
 * **WoW圖表**
    * [!UICONTROL Metric]: `Number of orders`
@@ -98,10 +99,10 @@ Report Builder可讓您輕鬆檢視一段時間的趨勢，並變更您可能想
 * 量度 `B`： `Last week`
 * [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (day of week)`
 * 
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 * **DoD圖表**
    * [!UICONTROL Metric]: `Number of orders`
@@ -115,9 +116,9 @@ Report Builder可讓您輕鬆檢視一段時間的趨勢，並變更您可能想
 * 量度B： `Yesterday`
 * [!UICONTROL Time period]: `1 day ago to 0 days ago`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (hour of day)`
 * 
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 編譯所有報表後，您可以視需要在控制面板上組織報表。 結果看起來可能像這個頁面頂端的影像。
