@@ -2,7 +2,9 @@
 title: 連線Google Adwords
 description: 瞭解如何將您的廣告成本與從行銷活動所獲得的使用者的客戶期限值(CLV)結合，以評估行銷活動ROI。
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%

@@ -2,7 +2,9 @@
 title: 儀表板
 description: 瞭解如何建立和使用儀表板。
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -41,14 +43,13 @@ ht-degree: 0%
 
    * 若要建立 `Group` 對於圖示板，輸入群組的名稱。
 
-      例如，如果您的Commerce安裝有多個商店檢視，您可能會為每個商店檢視建立一個群組。
+     例如，如果您的Commerce安裝有多個商店檢視，您可能會為每個商店檢視建立一個群組。
 
    * 按一下 **[!UICONTROL Create]**.
 
    ![儀表板名稱](../../assets/magento-bi-dashboard-create-name.png)
 
    * 新圖示板的名稱會出現在左上角。 按一下向下箭頭(![](../../assets/magento-bi-btn-down.png))以顯示選項。 如果您已建立群組，則新圖示板會顯示在清單中該群組的下方。
-
 
 ### 新增報告
 
@@ -58,7 +59,7 @@ ht-degree: 0%
 
    * 在控制面板標題中，按一下 **[!UICONTROL Add Report]**.
 
-      ![新增報告](../../assets/magento-bi-dashboard-create-add-report.png)
+     ![新增報告](../../assets/magento-bi-dashboard-create-add-report.png)
 
 1. 按一下 **[!UICONTROL Create Report]** 以顯示 **[!UICONTROL Report Builder Options]**.
 
@@ -107,6 +108,7 @@ ht-degree: 0%
       * `View`
       * `Edit`
       * `None`
+
    1. 提示確認時，按一下 **[!UICONTROL OK]** 更新每個使用者的許可權層級。
 
    1. 若要變更個人的許可權層級，請在清單中尋找使用者以變更許可權層級。 變更會自動儲存。

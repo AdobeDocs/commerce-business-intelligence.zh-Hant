@@ -2,7 +2,9 @@
 title: 透過直接連線連線MySQL
 description: 瞭解如何連線 [!DNL MongoDB] 透過直接連線。
 exl-id: 53765844-c9bb-4a16-b00c-ce9672f87415
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -58,7 +60,7 @@ ht-degree: 0%
 * `Port`：伺服器上的MySQL連線埠(`3306` 預設值)
 * `Host`：預設為localhost。 一般而言，它是的繫結位址值， [!DNL MySQL] 伺服器，預設為 `127.0.0.1 (localhost)`，但也可能是某些本機網路位址(例如， `192.168.0.1`)或伺服器的公用IP位址。
 
-   值可在以下連結中找到： `my.cnf` 檔案(位於 `/etc/my.cnf`)的行底下有 `\[mysqld\]`. 如果在該檔案中註解了bind-address行，則您的伺服器會受外部連線嘗試保護。
+  值可在以下連結中找到： `my.cnf` 檔案(位於 `/etc/my.cnf`)的行底下有 `\[mysqld\]`. 如果在該檔案中註解了bind-address行，則您的伺服器會受外部連線嘗試保護。
 
 完成後，按一下 **[!UICONTROL Save & Test]** 以完成設定。
 

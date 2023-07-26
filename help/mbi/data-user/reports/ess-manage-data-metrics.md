@@ -2,7 +2,9 @@
 title: 建立量度
 description: 瞭解如何使用量度建立圖表。
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -45,12 +47,12 @@ ht-degree: 0%
       * `Median`  — 此作業會計算資料欄值的中位數
       * `First and Third Quartiles`  — 這些作業會分別計算資料欄值的第25個百分位和第75個百分位
       * `Tenth and Ninetieth Percentiles`  — 這些作業會分別計算資料欄值的第10個百分位和第90個百分位
+
    * 選擇要對其執行作業的欄。 例如，如果您想找出總收入，您可以對下列專案執行加總作業： `order total` 欄。
 
-      如果您正在編輯現有量度，您也可以 [變更量度的作業表格](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) 在本節中。
+     如果您正在編輯現有量度，您也可以 [變更量度的作業表格](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) 在本節中。
 
    * 選擇可用來分析量度趨勢的日期維度。 例如， `order date`.
-
 
 ## 新增篩選器 {#filters}
 

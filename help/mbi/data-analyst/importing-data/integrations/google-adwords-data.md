@@ -2,7 +2,9 @@
 title: 預期Google Adwords資料
 description: 瞭解如何使用Data Warehouse管理員輕鬆追蹤相關資料欄位以進行分析。
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 0%

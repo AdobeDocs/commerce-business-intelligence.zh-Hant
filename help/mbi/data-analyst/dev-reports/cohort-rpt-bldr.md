@@ -2,7 +2,9 @@
 title: 同類群組Report Builder
 description: 瞭解分析在其生命週期內具有類似特性的使用者群組。
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 0%
@@ -181,7 +183,7 @@ ht-degree: 0%
 
 ### 我想知道使用者在其期限內的不同時間點平均下多少訂單。
 
-!![Average number of orders users make at different points in their lifetimes](../../assets/cohort2.gif
+(../../assets/cohort2.gif
 
 在此範例中，您已分析 `Number of orders` 量度，依下列專案將您的同類群組分組： `customer's first order date`，並包括最近八個同類群組(定義於 `Time Period` 功能表)。 若要檢視每個同類群組的平均訂單數，您將 `perspective` 至 `Average Value per Cohort Member`.
 

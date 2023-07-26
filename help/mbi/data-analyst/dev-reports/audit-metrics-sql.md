@@ -2,7 +2,9 @@
 title: 使用SQLReport Builder
 description: 瞭解如何使用SQLReport Builder稽核資料和測量結果，以便將結果與本機資料庫的資料進行比較。
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Reports, Data Warehouse Manager, SQL Report Builder
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%

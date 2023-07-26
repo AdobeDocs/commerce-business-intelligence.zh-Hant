@@ -2,7 +2,9 @@
 title: 篩選器
 description: 瞭解如何使用篩選器。
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
@@ -37,21 +39,21 @@ ht-degree: 0%
 
    * 按一下篩選器的第一部分，然後選擇您要用作運算式主旨的欄。
 
-      ![選擇篩選器的第一部分](../../assets/magento-bi-report-builder-filter-part1.png)
+     ![選擇篩選器的第一部分](../../assets/magento-bi-report-builder-filter-part1.png)
 
    * 按一下篩選器的第二個部分，然後選擇運運算元。
 
-      ![選擇運運算元](../../assets/magento-bi-report-builder-filter-part2.png)
+     ![選擇運運算元](../../assets/magento-bi-report-builder-filter-part2.png)
 
    * 在篩選的第三部分，輸入完成運算式所需的值。
 
-      ![輸入值](../../assets/magento-bi-report-builder-filter-part3.png)
+     ![輸入值](../../assets/magento-bi-report-builder-filter-part3.png)
 
    * 篩選完成後，按一下 **[!UICONTROL Apply]**.
 
-      報表現在僅包含回頭客戶，針對報表擷取的客戶記錄數已從33,000筆減少至12,600筆。
+     報表現在僅包含回頭客戶，針對報表擷取的客戶記錄數已從33,000筆減少至12,600筆。
 
-      ![已篩選的報告](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
+     ![已篩選的報告](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
 1. 在側邊欄中，按一下透視( ![](../../assets/magento-bi-btn-perspective.png))圖示。
 

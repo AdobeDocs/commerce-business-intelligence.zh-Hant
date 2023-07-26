@@ -2,7 +2,9 @@
 title: 將SQL查詢轉譯為Commerce Intelligence報表
 description: 瞭解SQL查詢如何轉換為計算量度（您在Commerce Intelligence中使用的量度）。
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: fa65bd909495d4d73cabbc264e9a47b3e0a0da3b
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%

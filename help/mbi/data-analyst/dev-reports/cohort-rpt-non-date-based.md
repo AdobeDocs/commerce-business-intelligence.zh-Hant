@@ -2,7 +2,9 @@
 title: 非日期同類群組的同類群組Report Builder
 description: 瞭解如何依類似活動或屬性將使用者分組。
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 76c5329c3f55570fa4e46601e902dc5a09e319e7
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
@@ -51,7 +53,7 @@ ht-degree: 0%
 
 ![同類群組群組](../../assets/2-cohort-groups.png)<!--{: width="200" height="224"}-->
 
-!![cohort-first-action-time-range]<!--(../../assets/3-cohort-first-action-time-range.png){: width="400" height="554"}-->
+
 
 #### 1.分組 `cohorts`
 

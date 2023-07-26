@@ -2,7 +2,9 @@
 title: 在視覺Report Builder中使用時間選項
 description: 瞭解如何分析特定時段內的報表資料。
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 0%
@@ -82,6 +84,7 @@ ht-degree: 0%
    * `Time Interval`：將此項設為 `None`.
 
    * `Time Range`：將此項設為 `From 14 Months Ago To 13 Months Ago` 按一下 **[!UICONTROL Custom]** 則 **[!UICONTROL Moving Range]**. 使用功能表頂端的欄位和下拉式清單來設定範圍。 此設定可讓我們檢視上個月的收入，但同時也是上一年度的收入。
+
    如果量度從報表中消失，不必擔心，設定獨立時間選項會自動隱藏報表中的量度。 若要重新顯示，請按一下 **[!UICONTROL Show]** 量度旁邊。
 
    ![](../assets/Different_Time_Ranges.gif)
@@ -95,8 +98,6 @@ ht-degree: 0%
    ![](../assets/TO4.png)
 
    * 重新命名量度。 在此範例中，第一個量度是 `Revenue - 2015` 第二個是 `Revenue - 2014`.
-
-
 
 自訂的另一個常見用法 `Time Options` 是決定供應的周數。 特別是在節日季節或特殊促銷期間，您可能想要考量過去一週、一個月和上一個促銷期間所出售的料號，以做出明智的購買決定。
 
@@ -129,13 +130,13 @@ ht-degree: 0%
 * 對於 `last 7 days time period`，輸入 `D / A` 在 `Formula` 欄位。
 * 對於 `last 28 days time period`，輸入 `D / (B/4)` 在 `Formula` 欄位。
 
-   >[!NOTE]
-   >
-   >請務必在此標準化您所選取的時間範圍。 在此範例中，將28天分成四周。 您可能需要將不同的邏輯套用至公式。
+  >[!NOTE]
+  >
+  >請務必在此標準化您所選取的時間範圍。 在此範例中，將28天分成四周。 您可能需要將不同的邏輯套用至公式。
 
 * 對於 `last promo period`，輸入 `D / C` 在 `Formula` 欄位。
 
-   ![](../assets/Different_Time_Ranges_2.png)
+  ![](../assets/Different_Time_Ranges_2.png)
 
 * 最後，隱藏量度並新增「 」來自訂報表 `SKU` 或與報表類似的維度 `Group By`.
 
