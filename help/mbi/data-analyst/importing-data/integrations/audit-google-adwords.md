@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 稽核 [!DNL Google Adwords] 資料
 
-在中發現一些奇怪的地方 [[!DNL Google Adwords]](../integrations/google-adwords.md)？ 若要查明問題，您需要探索您的資料。 這可透過匯出 [!DNL Google Adwords] 資料至 `.csv` 檔案。
+在中發現一些奇怪的內容 [[!DNL Google Adwords]](../integrations/google-adwords.md)？ 若要查明問題，您需要探索資料。 這可透過匯出 [!DNL Google Adwords] 資料至 `.csv` 檔案。
 
 1. 下載並安裝免費的 [[!DNL Google Adwords] 編輯者](https://ads.google.com/home/tools/ads-editor/) 應用程式。
 
@@ -23,6 +23,6 @@ ht-degree: 0%
 
 1. 將您的帳戶新增至之後 [!DNL Google Adwords] 編輯者，選取 **[!UICONTROL File** > **&#x200B;匯出試算表(CSV)**> **匯出整個帳戶]**
 
-這會建立 `.csv` 包含所有儲存在您目前檔案中資訊的檔案 [!DNL Google Adwords] 帳戶。 此時，請提交 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （請務必附加此檔案！） 以便進一步瞭解您的資料。 如果檔案太大，請將它與 [!DNL Commerce Intelligence] 團隊透過 [!DNL Dropbox] 或 [!DNL Google Drive].
+這會建置 `.csv` 包含所有儲存在您目前檔案中之資訊的檔案 [!DNL Google Adwords] 帳戶。 此時，請提交 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （請務必附加此檔案！） 以便進一步瞭解您的資料。 如果檔案太大，請將它與 [!DNL Commerce Intelligence] 團隊透過 [!DNL Dropbox] 或 [!DNL Google Drive].
 
-如需有關的詳細資訊 [!DNL Google Adwords] `.csv` 檔案匯出，請參閱官方檔案 [[!DNL Google Adwords] 檔案](https://support.google.com/google-ads/editor/answer/38657?hl=en).
+有關詳細資訊 [!DNL Google Adwords] `.csv` 檔案匯出，請參閱官方檔案 [[!DNL Google Adwords] 檔案](https://support.google.com/google-ads/editor/answer/38657?hl=en).

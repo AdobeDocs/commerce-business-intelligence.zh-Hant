@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 建立投資者儀表板
 
-許多客戶都與投資者合作，並且需要從平台分享資訊，但您為進行日常業務決策而建立的儀表板可能不是投資者所尋求的。 以下說明如何建立完整但簡單的控制面板，以便與活躍和潛在投資者分享的一些最佳實務。
+許多客戶都與投資者合作，並且需要從平台分享資訊，但您為進行日常業務決策而建立的儀表板可能不是投資者所尋求的。 以下說明如何建立完整但簡單的儀表板的一些最佳實務，最適合與活躍和潛在投資者分享。
 
-以下是建立投資者儀表板報告所需的內容：
+以下是為投資者儀表板建立報告所需的內容：
 
 ## 純量報表
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 * **[!UICONTROL AOV]**
 * **[!UICONTROL Items sold]**
 
-## 視覺報表
+## 視覺化報表
 
 * **[!UICONTROL Revenue by quarter]**
    * 量度 — 收入
@@ -50,8 +50,8 @@ ht-degree: 0%
    * 量度 — 產品收入
       * 隱藏圖表
       * 依產品名稱分組。 選取所有產品。
-      * 將時間範圍設定為「全部」
-      * 將時間間隔設定為無
+      * 將時間範圍設定為「所有時間」
+      * 將時間間隔設定為「無」
       * 在「顯示排名前/最後」中，僅顯示依產品利潤排列的排名前10位
 * **[!UICONTROL Cumulative distinct buyers by quarter]**
    * 量度 — 不同的購買者
@@ -64,17 +64,17 @@ ht-degree: 0%
 * 網站造訪
 * 轉換率
 
-使用 [Commerce資料擴充服務](https://business.adobe.com/products/magento/magento-commerce.html)，您可加入以下報表：
+使用 [Commerce資料擴充服務](https://business.adobe.com/products/magento/magento-commerce.html)，您可加入有關以下專案的報表：
 
 * 依州/地區、年齡、性別區分的不重複客戶。
 
 ## 其他秘訣
 
 * 使用簡潔明瞭 [命名慣例](../best-practices/naming-elements.md)
-* 與投資者使用者共用儀表板
-* 或透過以下方式傳送： **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
-* 僅建立一個儀表板。 這可讓內容更易於維護，而且您清楚知道您的投資者在看什麼。
+* 與投資者使用者共用控制面板
+* 或透過傳送 **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
+* 僅建立一個儀表板。 這樣可讓內容更容易維護，而且您清楚知道投資者在看什麼。
 
-周詳地組織報表，並注意詳細資訊。 完成後，儀表板看起來類似以下：
+周詳地組織報告，並注意詳細資訊。 完成後，控制面板看起來類似以下畫面：
 
 ![](../../mbi/assets/investor-dboard-example.png)

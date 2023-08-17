@@ -1,5 +1,5 @@
 ---
-title: 保留（取消共用）控制面板
+title: 離開（取消共用）控制面板
 description: 瞭解如何從儀表板離開或取消共用您自己。
 exl-id: c84e7145-aded-4f66-8e52-a61c7e6ac804
 role: Admin, Data Architect, Data Engineer, User
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# 保留（取消共用）控制面板
+# 離開（取消共用）控制面板
 
-變更團隊？ 在春天中清洗您的 [!DNL Commerce Intelligence] 帳戶？ 若要離開儀表板或取消共用您自己，請按一下 **[!UICONTROL Shared]** 位於熒幕頂端時，如果您想離開儀表板。 按一下 **[!UICONTROL Leave this Dashboard]** 以移除您自己。
+變更團隊？ 在春天中清潔您的 [!DNL Commerce Intelligence] 帳戶？ 若要離開儀表板或取消共用您自己，請按一下 **[!UICONTROL Shared]** 位於畫面頂端時，在儀表板中您想要離開。 按一下 **[!UICONTROL Leave this Dashboard]** 以移除您自己。
 
 範例：
 

@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # 預期 [!DNL Salesforce] 資料
 
-晚於 [[!DNL Salesforce] 設定](../integrations/salesforce.md) 完整，每個可查詢專案都有一個表格 [物件](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm)  — 已命名 `sf_/\{sobject-name}`  — 在您的Data Warehouse中建立。
+在 [[!DNL Salesforce] 設定](../integrations/salesforce.md) 完整，每個可查詢專案各有一個表格 [物件](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm)  — 已命名 `sf_/\{sobject-name}`  — 在您的Data Warehouse中建立。
 
 >[!NOTE]
 >
 >每個表格的結構（欄）取決於物件中包含的欄位。
 
-若要取得貴組織可用的物件清單，請參閱 [!DNL Salesforce] [取得物件清單檔案](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm). 擁有物件清單後，請出庫 [實體關係圖(ERD)區段](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm) 之 [!DNL Salesforce] 說明檔案以瞭解實體如何相互關聯。
+若要取得貴組織可用的物件清單，請參閱 [!DNL Salesforce] [取得物件清單檔案](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm). 擁有物件清單之後，請出庫 [實體關係圖(ERD)區段](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm) 之 [!DNL Salesforce] 說明檔案以瞭解實體如何相互關聯。
 
 ## 不支援的物件
 

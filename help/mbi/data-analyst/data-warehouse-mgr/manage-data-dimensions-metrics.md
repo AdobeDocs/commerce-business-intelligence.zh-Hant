@@ -1,6 +1,6 @@
 ---
 title: 管理資料維度
-description: 瞭解維度是什麼，且可用於根據量度篩選或劃分圖表。
+description: 瞭解維度是什麼，並且可用於根據量度篩選或劃分圖表。
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -33,7 +33,7 @@ ht-degree: 0%
 
    ![](../../assets/Add_Dimensions.png)
 
-1. 如果您想要依報表上的任何資料維度來劃分或分組，請務必指出這些維度是 _可分組_.
+1. 如果您想要依報表中的任何資料維度來劃分或分組，請務必指出這些維度是 _可分組_.
 
 1. 按一下 **[!UICONTROL Add]**.
 
@@ -47,11 +47,11 @@ ht-degree: 0%
 
 1. 選擇包含維度的表格。
 
-1. 在左側選取您要移除的量度，並在右側選取您要移除的維度。
+1. 選取您要從左側移除維度的量度，以及您要從右側移除的維度。
 
 1. 按一下 **[!UICONTROL Remove]**.
 
-1. 如果維度已在報表中使用，則會顯示警告與正在使用維度的圖表清單。 按一下 **[!UICONTROL Delete]** 刪除已核取的維度及其所有相依項，包括報表。
+1. 如果維度正在報表中使用，則會顯示警告與正在使用維度的圖表清單。 按一下 **[!UICONTROL Delete]** 刪除已核取的維度及其所有相依項，包括報表。
 
 ## 管理量度中的維度
 
@@ -59,27 +59,27 @@ ht-degree: 0%
 
 1. 前往 **[!UICONTROL Data > Metrics]**.
 
-1. 按一下 **[!UICONTROL Edit]** 在您想要新維度的量度上。
+1. 按一下 **[!UICONTROL Edit]** 在您要新維度的量度上。
 
-1. 在 `Dimensions` 區段，使用 `Add a dimension` 下拉式清單，以選取要新增的維度。
+1. 在 `Dimensions` 區段，使用 `Add a dimension` 下拉式清單以選取要新增的維度。
 
 >[!NOTE]
 >
->您想要篩選或分組依據的任何維度都必須已在下列位置進行追蹤： [!DNL Commerce Intelligence]. 如果您找不到所需的維度，您可能需要開始透過以下方式追蹤資料庫中的新資料欄： [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 頁面。
+>您必須先在中追蹤您要篩選或分組依據的任何維度 [!DNL Commerce Intelligence]. 如果您找不到所需的維度，您可能需要開始透過 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 頁面。
 
 
 **若要從量度刪除維度：**
 
 1. 前往 **[!UICONTROL Manage Data > Metrics]**.
 
-1. 按一下 **[!UICONTROL Edit]** 在您想要新維度的量度上。
+1. 按一下 **[!UICONTROL Edit]** 在您要新維度的量度上。
 
-1. 在 `Dimensions` 區段中，選取您要移除之維度旁邊「刪除」欄中的核取方塊。
+1. 在 `Dimensions` 區段，勾選您要移除之維度旁邊「刪除」欄中的核取方塊。
 
 >[!NOTE]
 >
->即使在刪除維度後，它仍會作為欄存在於您的Data Warehouse的表格中。 您可以將其新增回任何量度，並使用這些維度建立新量度。 若要移除維度對應的資料欄，請執行下列動作 [!DNL Commerce Intelligence]，只要取消追蹤資料欄，透過 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 頁面。
+>即使刪除維度後，它仍會以欄的形式存在於您Data Warehouse的表格中。 您可以將其新增回任何量度，並使用這些維度建立新量度。 若要移除與維度對應的資料欄，請執行下列動作： [!DNL Commerce Intelligence]，只要取消追蹤資料欄，透過 [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) 頁面。
 
 ## 相關檔案
 
-* [細分和篩選的最佳實務](../../best-practices/segment-filter.md)
+* [細分和篩選的最佳作法](../../best-practices/segment-filter.md)

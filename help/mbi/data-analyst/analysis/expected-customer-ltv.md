@@ -1,6 +1,6 @@
 ---
 title: Pro的預期期限值(LTV)分析
-description: 瞭解如何設定儀表板，協助您瞭解客戶期限值成長和客戶的預期期限值。
+description: 瞭解如何設定儀表板，協助您瞭解客戶期限值成長情況及客戶的預期期限值。
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # 預期期限值分析
 
-此主題示範如何設定儀表板，協助您瞭解客戶期限值成長和客戶的預期期限值。
+本主題說明如何設定儀表板，協助您瞭解客戶期限值成長與客戶的預期期限值。
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
-此分析僅供使用新架構的Pro客戶使用。 如果您的帳戶有權存取 `Persistent Views` 下的功能 `Manage Data` 側欄中，您所使用的是新架構，可以依照此處列出的指示，自行建立此分析。
+此分析僅供使用新架構的Pro客戶使用。 如果您的帳戶可存取 `Persistent Views` 下的功能 `Manage Data` 側邊欄，表示您使用新架構，並可依照此處列出的指示，自行建立此分析。
 
 開始使用前，請先熟悉 [同類群組report builder。](../dev-reports/cohort-rpt-bldr.md)
 
@@ -81,23 +81,23 @@ ht-degree: 0%
 
 要建立的量度
 
-* **依第一筆訂單日期區分的不同客戶**
+* **依第一訂單日期區分的獨特客戶**
    * 如果您啟用來賓訂單，請使用 `customer_email`
 
 * 在 **`orders`** 表格
 * 此量度會執行 **計算不同的值**
-* 於 **`customer_id`** 欄
+* 在 **`customer_id`** 欄
 * 排序依據： **`Customer's first order date`** timestamp
 
 >[!NOTE]
 >
->請確定 [將所有新欄新增為量度的維度](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 建立新報表之前。
+>確定 [將所有新欄新增為量度的維度](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 建立新報表之前。
 
 ## 報表
 
 ### 報表指示
 
-**每個客戶的預期收入（按月）**
+**每個客戶的預期月收入**
 
 * 量度 `A`： `Revenue (hide)`
    * `Calendar months between first order and this order` `<= X` （為X選取一些合理的數字，例如24個月）
@@ -130,8 +130,8 @@ ht-degree: 0%
 * [!UICONTROL Time period]: `All time`
 * 時間間隔： `None`
 * [!UICONTROL Group by]： `Calendar months between first order and this order`  — 全部顯示
-* 變更 `group by` 的 `All time customers` 量度變更為獨立(使用 `group by`
-* 編輯 `Show top/bottom` 欄位如下所示：
+* 變更 `group by` 針對 `All time customers` 量度使用「獨立」旁的鉛筆圖示 `group by`
+* 編輯 `Show top/bottom` 欄位如下：
    * [!UICONTROL Revenue]: `Top 24 sorted by Calendar months between first order and this order`
    * [!UICONTROL All time customers]: `Top 24 sorted by All time customers`
    * [!UICONTROL All time customers by month since first order]: `Top 24 sorted by All time customers by month since first order`
@@ -144,7 +144,7 @@ ht-degree: 0%
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Average value per cohort member`
 
-**按同類群組分類的每月累計平均收入**
+**依同類群組區分的每月累計平均收入**
 
 * 量度 `A`： `Revenue`
 * 
@@ -154,4 +154,4 @@ ht-degree: 0%
 
 編譯所有報表後，您可以視需要在控制面板上組織報表。 結果看起來可能像頁面頂端的影像。
 
-如果您在建立此分析時遇到任何問題，或只是想與Professional Services團隊互動， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+如果您在建立此分析時遇到任何問題，或只是想與Professional Services團隊互動， [聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

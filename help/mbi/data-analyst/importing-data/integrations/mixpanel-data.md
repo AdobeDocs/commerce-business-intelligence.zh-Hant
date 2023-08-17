@@ -1,6 +1,6 @@
 ---
 title: 預期Mixpanel資料
-description: 探索您可以從Mixpanel匯入的主要資料表 [!DNL Commerce Intelligence] 帳戶。
+description: 探索可從Mixpanel匯入您的的主要資料表 [!DNL Commerce Intelligence] 帳戶。
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 晚於 [您已連線 [!DNL Mixpanel] 帳戶](../integrations/mixpanel.md)，您可以使用 [Data Warehouse管理員](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 以輕鬆追蹤相關資料欄位以供分析。
 
-本主題會探索您可從其中匯入的主要資料表格 [!DNL Mixpanel] 至您的 [!DNL Commerce Intelligence] 帳戶。 下清單格將在連線後於您的Data Warehouse中建立 [!DNL Mixpanel]. 若要檢視所有可供追蹤的欄位，請按一下表格名稱欄中的連結。
+本主題會探索您可從其中匯入的主要資料表 [!DNL Mixpanel] 至您的 [!DNL Commerce Intelligence] 帳戶。 連線之後，將會在您的Data Warehouse中建立下清單格 [!DNL Mixpanel]. 若要檢視所有可用於追蹤的欄位，請按一下表格名稱欄中的連結。
 
 >[!NOTE]
 >

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 中的資料驗證 [!DNL Mixpanel]
 
-時間 [!DNL Adobe Commerce Intelligence] 首先連線至您的 [!DNL Mixpanel] 資料，您的客戶經理或分析師可能會要求您提供資料匯出來源 [!DNL Mixpanel] 以進行驗證。 這可讓您確認已同步可直接在中取得的所有相同資料 [!DNL Mixpanel].
+時間 [!DNL Adobe Commerce Intelligence] 首先連線至您的 [!DNL Mixpanel] 資料，您的客戶經理或分析師可能會要求您提供資料匯出來源 [!DNL Mixpanel] 以進行驗證。 這可讓您確認您已同步可直接在中取得的所有相同資料 [!DNL Mixpanel].
 
 ## 資料匯出程式： `Events`
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
    ![](../../../assets/your-top-events.png)
 
-1. 選取 `Past 96 Hours` 時間範圍
+1. 選取 `Past 96 Hours` 針對時間範圍
 
    ![](../../../assets/past-96-hours.png)
 
@@ -29,4 +29,4 @@ ht-degree: 0%
 
    ![](../../../assets/export-csv-mixpanel.png)
 
-1. 傳送 `.csv` 檔案至您正在處理此驗證程式的客戶經理或分析人員。
+1. 傳送 `.csv` 將檔案傳送給您正在處理此驗證程式的客戶經理或分析師。

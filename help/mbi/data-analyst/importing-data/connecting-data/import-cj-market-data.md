@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 匯入 [!DNL CJ Affiliate] 資料
 
-匯入 [!DNL CJ Affiliate (Commission Junction)] 資料匯入 [!DNL Adobe Commerce Intelligence]，只需遵循下列步驟，並將產生的檔案附加至 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). Adobe會設定您帳戶的資料表，並允許您繼續獨立上傳資料。
+匯入 [!DNL CJ Affiliate (Commission Junction)] 資料到 [!DNL Adobe Commerce Intelligence]，只需依照下列步驟，並將產生的檔案附加至 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). Adobe會設定您帳戶的資料表，並允許您繼續獨立上傳資料。
 
 ## 匯出 [!DNL CJ Affiliate] 資料
 
@@ -31,4 +31,4 @@ ht-degree: 0%
 
 1. 下載檔案後，您可以 [上傳檔案](../connecting-data/using-file-uploader.md) 至您的 [!DNL Commerce Intelligence] Data Warehouse。
 
-   這樣會在中建立表格 [!DNL Commerce Intelligence] 可繼續定期將最新資料上傳至的Data Warehouse。 上傳檔案時，請遵循下列格式要求： [使用檔案上傳程式](../connecting-data/using-file-uploader.md).
+   這會在您的資料庫中建立一個表格 [!DNL Commerce Intelligence] 可繼續定期上傳新資料至的Data Warehouse。 上傳檔案時，請遵循中列出的格式要求 [使用檔案上傳程式](../connecting-data/using-file-uploader.md).

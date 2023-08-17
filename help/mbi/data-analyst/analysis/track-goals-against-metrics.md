@@ -1,6 +1,6 @@
 ---
 title: 根據量度追蹤目標
-description: 瞭解如何設定儀表板，協助您根據實際資料（包括收入、新註冊使用者和一段時間的訂單）追蹤業務目標。
+description: 瞭解如何設定儀表板，協助您根據實際資料（包括收入、新註冊使用者和一段時間內的訂單）追蹤業務目標。
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards, Reports
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # 根據效能度量追蹤目標
 
-大部分的客戶都想要追蹤其 **業務目標**，但並未意識到這在中是可能的 [!DNL Adobe Commerce Intelligence]. 本主題說明如何設定儀表板，協助您根據實際資料（包括收入、新註冊的使用者和一段時間的訂單）追蹤業務目標。 您也會瞭解如何比較年度與年度績效，全都透過如下的儀表板進行：
+大部分的客戶都想要追蹤其 **業務目標**，但並未意識到這在中是可能的 [!DNL Adobe Commerce Intelligence]. 本主題將示範如何設定儀表板，協助您根據實際資料（包括收入、新註冊使用者和一段時間內的訂單）追蹤業務目標。 您也會瞭解如何比較年度與年度績效，全都透過如下的儀表板進行：
 
 ![](../../assets/Goals-_dashboard_2.png)
 
-開始之前，您應該先檢閱 [檔案上傳程式](../importing-data/connecting-data/using-file-uploader.md) 並確保您已定義指定期間的業務目標。
+開始使用前，您應先檢閱 [檔案上傳程式](../importing-data/connecting-data/using-file-uploader.md) 並確保您已定義指定期間的業務目標。
 
 ## 快速入門
 
-您必須先上傳包含您企業的特定每日/每月/每季目標的檔案。
+您必須先上傳包含企業特定每日/每月/每季目標的檔案。
 
 您可以使用 [檔案上傳程式](../importing-data/connecting-data/using-file-uploader.md) 和下圖來格式化您的檔案。 使用者端追蹤的最常見目標 [!DNL Commerce Intelligence] 包括「訂購」、「收入」和「新註冊的帳戶」。
 
@@ -33,27 +33,27 @@ ht-degree: 0%
 
 * **每月收入目標**
 * 在 **`Monthly goals`** 表格
-* 此量度會執行 **總和**
-* 於 **`Revenue target`** 欄
+* 此量度會執行 **Sum**
+* 在 **`Revenue target`** 欄
 * 排序依據： **`Month`** timestamp
 
 * **每月訂單目標**
 * 在 **`Monthly goals`** 表格
-* 此量度會執行 **總和**
-* 於 **`Orders target`** 欄
+* 此量度會執行 **Sum**
+* 在 **`Orders target`** 欄
 * 排序依據： **`Month`** timestamp
 
 * **每月新註冊帳戶目標**
 * 在 **`Monthly goals`** 表格
-* 此量度會執行 **總和**
-* 於 **`New registered accounts target`** 欄
+* 此量度會執行 **Sum**
+* 在 **`New registered accounts target`** 欄
 * 排序依據： **`Month`** timestamp
 
 ## 報表
 
-在分析目標時，將靜態值和視覺圖表混合使用會很有幫助。 以下是三個報表範例，可協助您開始追蹤收入表現。
+在分析目標時，將靜態值和視覺化圖表混合使用會很有幫助。 以下是三個報表範例，可協助您開始追蹤收入成績。
 
-* **達成目標所剩的收入**
+* **達成目標所剩收入**
 * 量度 `A`： `Revenue`
 * 
   [！UICONTROL公制]: `Revenue`
@@ -98,6 +98,6 @@ ht-degree: 0%
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 
-完成上述收入目標報表後，您可以針對訂單、註冊帳戶或已包含於目標檔案上傳中的任何其他值，建立相同的目標報表。
+完成上述收入目標報表後，您即可針對訂單、註冊帳戶或已包含於目標檔案上傳中的任何其他值，建立相同的目標報表。
 
 編譯所有報表後，您可以視需要在控制面板上組織報表。 結果看起來可能像這個頁面頂端的影像。

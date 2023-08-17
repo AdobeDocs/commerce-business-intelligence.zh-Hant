@@ -17,7 +17,7 @@ ht-degree: 2%
 
 **說明**
 
-此 `Date Difference` column type會根據事件時間戳記，計算屬於單一記錄之兩個事件之間的時間。 此欄中計算的原始值以秒為單位，但會自動轉換為分鐘、小時、天等值，以便顯示在報表中。 不過，當您作為篩選/群組使用時，您想要以秒為單位使用該值。
+此 `Date Difference` 欄型別會根據事件時間戳記，計算屬於單一記錄之兩個事件之間的時間。 此欄中計算的原始值以秒為單位，但會自動轉換為分鐘、小時、天等等，以便顯示在報表上。 但是，當您作為篩選/群組使用時，您想要以秒為單位使用值。
 
 A `date difference` 「計算」欄可用來建立量度，以計算兩個事件之間的平均或中間時間，例如客戶註冊與其第一筆訂單之間的平均時間。
 
@@ -33,7 +33,7 @@ A `date difference` 「計算」欄可用來建立量度，以計算兩個事件
 
 在上述範例中， `Date Difference` 欄是 `Seconds between timestamp_2 and timestamp_1` 欄。 它會執行計算 `timestamp_2 minus timestamp_1`.
 
-**機械**
+**力學**
 
 下列步驟說明如何建立 `Date Difference` 欄。
 
@@ -43,9 +43,9 @@ A `date difference` 「計算」欄可用來建立量度，以計算兩個事件
    * 選取 `Column Definition Type` > `Same Table`
    * 選取 `Column Definition Equation` > `DATE_DIFF = (Ending DATETIME - Starting DATETIME)`
    * 選取 `Ending DATETIME` 欄>選擇結束日期時間欄位，這通常是稍後發生的事件
-   * 選取 `Starting DATETIME` column** >選擇開始日期時間欄位，這通常是較早發生的事件
+   * 選取 `Starting DATETIME` 欄** >選擇開始日期時間欄位，這通常是較早發生的事件
 
-1. 為欄命名，然後按一下 **[!UICONTROL Save]**.
+1. 提供欄的名稱，然後按一下 **[!UICONTROL Save]**.
 1. 欄可供使用 *立即*.
 
 例如，下列範例設定為計算 `Seconds between order date and customer's creation date`：

@@ -1,6 +1,6 @@
 ---
 title: 定義客戶集中度
-description: 瞭解如何設定儀表板，協助您測量總收入在客戶群之間的分配方式。
+description: 瞭解如何設定儀表板，協助您評估總收入如何在客戶群間分配。
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
@@ -11,15 +11,15 @@ ht-degree: 0%
 
 ---
 
-# 客戶集中
+# 客戶集中度
 
-此主題示範如何設定儀表板，協助您測量總收入在客戶群之間的分配方式。 瞭解客戶貢獻了多少百分比的收入，並建立分段清單以將市場最佳化，並留住貢獻最多的客戶。
+此主題示範如何設定儀表板，協助您測量總收入在客戶群之間的分配方式。 瞭解客戶貢獻了多少百分比的收入，並建立分段清單以將市場最佳化並留住貢獻最多的客戶。
 
 此分析包含 [進階計算欄](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## 快速入門
 
-您必須先上傳僅包含主索引鍵（值為1）的檔案。 這允許建立一些分析所需的計算欄。
+您必須先上傳只包含主索引鍵（值為1）的檔案。 這允許建立一些分析所需的計算欄。
 
 您可以使用 [檔案上傳程式](../importing-data/connecting-data/using-file-uploader.md) 和下圖來格式化您的檔案。
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 * [!UICONTROL Calculation]： - **A為null然後為null的情況，否則1結束**
 * [!UICONTROL Datatype]: – `Integer`
 
-* `Customer concentration` 表格（這是您上傳且編號為的檔案） `1`)
+* `Customer concentration` 表格(這是您上傳的檔案，編號為 `1`)
 * 客戶數量
 * [!UICONTROL Column type]: – `Many to One > Count Distinct`
 * 路徑 —  `sales_flat_order.(input) reference > Customer Concentration.Primary Key` 或 `customer_entity.(input)reference > Customer Concentration.Primary Key`
@@ -58,7 +58,7 @@ ht-degree: 0%
 * 客戶的收入百分位數
 * [!UICONTROL Column type]: – `Same table > Calculation`
 * [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]： - **A為空值然後為空值的情況除外(A/B)* 100個結尾&#x200B;**
+* [!UICONTROL Calculation]： - **當A為null然後為null時的情況，否則(A/B)* 100個結尾&#x200B;**
 * [!UICONTROL Datatype]: – `Decimal`
 
 * `Sales_flat_order` 表格
@@ -67,7 +67,7 @@ ht-degree: 0%
 * 路徑 —  `sales_flat_order.(input) reference > Customer Concentration.Primary Key`
 * 選取的欄 —  `Number of customers`
 
-* （輸入）依客戶期限收入的排名
+* （輸入）依客戶期限收入排名
 * [!UICONTROL Column type]: – `Same table > Event Number`
 * 事件所有者 —  `Number of customers`
 * 事件排名 —  `Customer's lifetime revenue`
@@ -76,24 +76,24 @@ ht-degree: 0%
 * 客戶的收入百分位數
 * [!UICONTROL Column type]: – `Same table > Calculation`
 * [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]： - **A為空值然後為空值的情況除外(A/B)* 100個結尾&#x200B;**
+* [!UICONTROL Calculation]： - **當A為null然後為null時的情況，否則(A/B)* 100個結尾&#x200B;**
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
 >
->使用的百分位數是客戶的分割，代表客戶群的第X個百分位數。 每個客戶都與1到100的整數相關聯，這可以視為其期限收入 *排名*. 例如，如果特定客戶的客戶收入百分位數為 **5**，此客戶位於 ***第五個百分位數*** 終生收入方面所有客戶的總和。
+>使用的百分位數是甚至分段的客戶，代表客戶群的第X個百分位。 每個客戶都與1到100的整數相關聯，這可以視為其期限收入 *排名*. 例如，如果特定客戶的客戶收入百分位數為 **5**，此客戶位於 ***第五個百分位數*** 終身收入的所有客戶中。
 
 ## 量度
 
 * **客戶期限值總計**
 * 在 `customer_entity` 表格
-* 此量度會執行 **總和**
-* 於 `Customer's lifetime revenue` 欄
+* 此量度會執行 **Sum**
+* 在 `Customer's lifetime revenue` 欄
 * 排序依據： `Customer's first order date` timestamp
 
 ## 報表
 
-* **客戶集中**
+* **客戶集中度**
 * [!UICONTROL Metric]: `Total customer lifetime value`
 * [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 * [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
 * 
-  [！UICONTROL分組依據]: `Independent`
+  [！UICONTROL群組依據]: `Independent`
 * 量度 `A`： `Total customer lifetime revenue by percentile`
 * 量度 `B`： `Total customer lifetime revenue (ungrouped)`
 * [!UICONTROL Time period]: `All time`
@@ -121,7 +121,7 @@ ht-degree: 0%
   [!UICONTROL Interval]: `None`
 * 隱藏圖表
 * 
-  [！UICONTROL分組依據]: `Email`
+  [！UICONTROL群組依據]: `Email`
 * 
   [!UICONTROL Chart type]: `Table`
 
@@ -137,11 +137,11 @@ ht-degree: 0%
   [!UICONTROL Interval]: `None`
 * 隱藏圖表
 * 
-  [！UICONTROL分組依據]: `Email`
+  [！UICONTROL群組依據]: `Email`
 * 
   [!UICONTROL Chart type]: `Table`
 
-* **最後10%的濃度**
+* **底部10%濃度**
 * [!UICONTROL Filter]: `Customer's revenue percentile > 90`
 
 * 量度 `A`： `Total customer lifetime revenue`
@@ -150,10 +150,10 @@ ht-degree: 0%
   [!UICONTROL Interval]: `None`
 * 隱藏圖表
 * 
-  [！UICONTROL分組依據]: `Email`
+  [！UICONTROL群組依據]: `Email`
 * 
   [!UICONTROL Chart type]: `Table`
 
-編譯所有報表後，您可以視需要在控制面板上組織報表。 結果看起來可能像上面的範例儀表板。
+編譯所有報表後，您可以視需要在控制面板上組織報表。 結果可能如上述範例控制面板所示。
 
-如果您在建立此分析時遇到任何問題，或只是想與Professional Services團隊互動， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+如果您在建立此分析時遇到任何問題，或只是想與Professional Services團隊互動， [聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

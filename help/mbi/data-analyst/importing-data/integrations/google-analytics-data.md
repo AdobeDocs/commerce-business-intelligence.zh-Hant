@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 預期 [!DNL Google Analytics] 資料
 
-在您連線至 [!DNL Google Analytics] 整合，您可與 [!DNL Google Analytics] 量度 *立即在`Visual Report Builder`*. 當您輸入 `Visual Report Builder`，如果您按一下 **[!UICONTROL Add a Metric]**，您的的一系列量度 [!DNL Google Analytics] 設定檔會顯示在您Data Warehouse中量度下方的下拉式清單中。
+在您連線至 [!DNL Google Analytics] 整合，您可與 [!DNL Google Analytics] 量度 *立即在`Visual Report Builder`*. 當您輸入 `Visual Report Builder`，如果您按一下 **[!UICONTROL Add a Metric]**，您的一系列量度 [!DNL Google Analytics] 設定檔會顯示在下拉式清單中，緊接在您Data Warehouse的量度下方。
 
-此 [!DNL Google Analytics] 整合為 *live*  — 這表示 `Report Builder` 要求資料來源 [!DNL Google Analytics] *立即* 將量度新增至報表時。 這也表示您可以存取的量度與其中的量度完全相同 [!DNL Google Analytics]，而這些值不是 *倉儲* 在您的 [!DNL Commerce Intelligence] 帳戶 — 僅以視覺化方式顯示在您的報表中。
+此 [!DNL Google Analytics] 整合為 *即時*  — 這表示 `Report Builder` 要求資料來源 [!DNL Google Analytics] *立即* 將量度新增至報表時。 這也表示您可以存取的量度與其中的量度完全相同 [!DNL Google Analytics]，則這些值不會 *倉儲* 在您的 [!DNL Commerce Intelligence] 帳戶 — 僅以視覺化方式顯示在您的報表中。
 
 +++支援的量度和Dimension(Google Analytics3或Universal Analytics)
 
@@ -23,11 +23,11 @@ ht-degree: 0%
 >
 >在2023年7月1日，標準Universal Analytics ([!DNL Google Analytics] 3)屬性將不再處理資料。 在2023年7月1日之後，您將能夠檢視您的Universal Analytics報表。 不過，新資料只會流入 [!DNL Google Analytics] 4個屬性。
 
-[!DNL Google Analytics] 中的整合 [!DNL Commerce Intelligence] 使用 [!DNL Google Analytics] [核心報告API](https://developers.google.com/analytics/devguides/reporting/core/v3/)，並支援下列量度和維度。
+[!DNL Google Analytics] 中的整合 [!DNL Commerce Intelligence] 使用 [!DNL Google Analytics] [核心報表API](https://developers.google.com/analytics/devguides/reporting/core/v3/)，並支援下列量度和維度。
 
 >[!NOTE]
 >
->為避免意外或無意義的結果，請確認您使用的任何維度與一個或多個您在中使用的量度相容 `Report Builder`. 您可以檢查 [此處](https://ga-dev-tools.google/dimensions-metrics-explorer/).
+>為避免產生非預期或無意義的結果，請確認您使用的任何維度都與一或多個您在中使用的量度相容 `Report Builder`. 您可以檢查 [此處](https://ga-dev-tools.google/dimensions-metrics-explorer/).
 
 ## 支援的量度
 
@@ -162,6 +162,6 @@ ht-degree: 0%
 >
 > Commerce Intelligence不支援下列維度： `cohort`， `cohortNthDay`， `cohortNthMonth`、和 `cohortNthWeek`.
 >
->為避免意外或無意義的結果，請確認您使用的任何維度與一個或多個您在中使用的量度相容 `Visual Report Builder`. 您可以檢查 [GA4Dimension與量度總管](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/).
+>為避免產生非預期或無意義的結果，請確認您使用的任何維度都與一或多個您在中使用的量度相容 `Visual Report Builder`. 您可以檢查 [GA4Dimension與量度總管](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/).
 
 +++

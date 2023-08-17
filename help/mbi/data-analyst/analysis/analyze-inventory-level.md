@@ -1,6 +1,6 @@
 ---
 title: 分析存貨層次
-description: 瞭解如何分析庫存水準。
+description: 瞭解如何分析存貨層次。
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Reports
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 分析存貨層次
 
-此主題示範如何設定儀表板，提供您目前詳細目錄的分析，並包含舊版架構或新架構的客戶說明。 如果您沒有以下許可權，則可以使用舊版架構： **[!UICONTROL Data Warehouse Views]** 下的選項 **[!UICONTROL Manage Data]** 功能表。 如果您使用舊版架構，請提交 [新的支援要求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 與主旨 **[!UICONTROL INVENTORY ANALYSIS]** 一旦您到達 _已計算的欄_ 以下說明。
+此主題示範如何設定儀表板，其中提供您目前詳細目錄的分析，並包含舊版架構或新架構的客戶說明。 如果您沒有在舊版架構中 **[!UICONTROL Data Warehouse Views]** 下的選項 **[!UICONTROL Manage Data]** 功能表。 如果您使用舊版架構，請提交 [新支援要求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 與主旨 **[!UICONTROL INVENTORY ANALYSIS]** 一旦您到達 _已計算的欄_ 說明如下。
 
 ## 要追蹤的欄：
 
@@ -29,7 +29,7 @@ ht-degree: 0%
    * **`sku`**
    * **`created_at`**
 
-## 計算資料行：
+## 計算的欄：
 
 +++ 新架構
 
@@ -77,7 +77,7 @@ ht-degree: 0%
       * 
         [!UICONTROL Datatype]: `Decimal`
       * 定義：
-         * 當A為null或B為null時，則為空值，否則四捨五入(A：：decimal/(extract(epoch from (current_timestamp - B))：：decimal/604800.0)，2)結束
+         * 當A為null或B為null時則為空值，否則四捨五入(A：：decimal/(extract(epoch from (current_timestamp - B))：：decimal/604800.0)，2)結束
 
 * **[!UICONTROL cataloginventory_stock_item]** 表格：
    * **`Sku`**
@@ -118,7 +118,7 @@ ht-degree: 0%
       * 
         [!UICONTROL Datatype]: `Decimal`
       * 定義：
-         * 當A為null或B為null或B = 0.0時則為空值，否則四捨五入(A：：decimal/B，2)結束
+         * 當A為null或B為null或B = 0.0則為null，否則四捨五入(A：：decimal/B，2)結束
 
 +++
 +++ 舊版架構
@@ -158,7 +158,7 @@ ht-degree: 0%
          * [A] `Ordered products we count`
 
    * **`Avg products sold per week (all time)`**
-      * 由分析師在您提交您的檔案時建立 **[詳細目錄分析]** 支援要求
+      * 由分析人員建立，當您提交您的檔案 **[詳細目錄分析]** 支援要求
 
 * **[!UICONTROL cataloginventory_stock_item]** 表格：
    * **`Sku`**
@@ -190,7 +190,7 @@ ht-degree: 0%
       * 選取 [!UICONTROL column]： `Avg products sold per week (all time)`
 
    * **`Weeks on hand`**
-      * 由分析師在您提交您的檔案時建立 **[!UICONTROL INVENTORY ANALYSIS]** 支援要求
+      * 由分析人員建立，當您提交您的檔案 **[!UICONTROL INVENTORY ANALYSIS]** 支援要求
 
 +++
 
@@ -199,9 +199,9 @@ ht-degree: 0%
 ### 量度指示
 
 * **[!UICONTROL cataloginventory_stock_item]** 表格：
-   * **`Inventory on hand`**：此量度執行
-      * **總和** 於
-      * **`qty`** 欄排序依據
+   * **`Inventory on hand`**：此量度會執行
+      * **Sum** 於
+      * **`qty`** 欄排序依據：
       * [無] 欄
 
 ## 報表
@@ -226,7 +226,7 @@ ht-degree: 0%
    * [!UICONTROL Time period]: `All time`
    * 時間間隔： `None`
    * 
-     [！UICONTROL分組依據]: `Sku`
+     [！UICONTROL群組依據]: `Sku`
    * 
      [!UICONTROL Chart type]: `Table`
 
@@ -238,8 +238,8 @@ ht-degree: 0%
    * [!UICONTROL Time period]: `All time`
    * 時間間隔： `None`
    * 
-     [！UICONTROL分組依據]: `Sku`
+     [！UICONTROL群組依據]: `Sku`
    * 
      [!UICONTROL Chart type]: `Table`
 
-如果您在建立此分析時遇到任何問題，或只是想與Professional Services團隊互動， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+如果您在建立此分析時遇到任何問題，或只是想與Professional Services團隊互動， [聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

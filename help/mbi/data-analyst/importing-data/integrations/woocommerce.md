@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Connect [!DNL WooCommerce]
+# 連線 [!DNL WooCommerce]
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 想要瞭解您的業務表現或尋找您最有價值的贏取來源和管道？ 正在連線您的 [!DNL WooCommerce] 資料目標 [!DNL Commerce Intelligence] 可讓您回答這些問題及其他問題。
 
-此 [!DNL WooCommerce] 資料庫基礎 [!DNL MySQL]，您可以將其連線至 [!DNL Commerce Intelligence] 透過 [直接連線](../integrations/mysql-via-a-direct-connection.md)， [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)，或 [透過 `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). Adobe建議使用SSH方法，因為這是最安全的方法。
+此 [!DNL WooCommerce] 資料庫基礎為 [!DNL MySQL]，您可以將其連線至 [!DNL Commerce Intelligence] 透過 [直接連線](../integrations/mysql-via-a-direct-connection.md)， [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)，或 [透過 `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). Adobe建議您使用SSH方法，因為此方法最安全。
 
 ## 相關：
 

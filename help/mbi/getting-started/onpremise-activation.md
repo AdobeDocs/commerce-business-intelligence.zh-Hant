@@ -13,8 +13,8 @@ ht-degree: 0%
 
 # 啟用您的 [!DNL Commerce Intelligence] 帳戶
 
-啟動 [!DNL Commerce Intelligence] 適用於內部部署或 `Cloud Pro` 訂閱， [聯絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+啟動 [!DNL Commerce Intelligence] 適用於內部部署或 `Cloud Pro` 訂閱， [聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >
->Adobe不再支援新功能 `Cloud Starter` 訂閱。
+>Adobe不再支援新的 `Cloud Starter` 訂閱。

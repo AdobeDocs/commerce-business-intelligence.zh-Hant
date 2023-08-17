@@ -1,6 +1,6 @@
 ---
 title: Zendesk服務檯報告
-description: 瞭解您最重視的轉介管道。
+description: 瞭解您最有價值的轉介管道。
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->這僅適用於位於「 」的使用者端。 `Pro` 規劃並使用新架構。 如果您擁有以下優勢，即可使用新架構： `Data Warehouse Views` 選取後可用的區段 `Manage Data` 從主工具列。
+>這僅適用於位於以下位置的使用者端： `Pro` 規劃並使用新架構。 如果您擁有以下優勢，即可使用新架構： `Data Warehouse Views` 部分在選取後可用 `Manage Data` 從主工具列。
 
-整合您的 [!DNL Zendesk] 透過交易式資料庫取得資料，是您深入瞭解客戶與銷售或客戶成功團隊互動情況的絕佳方式。 它還有助於您瞭解哪些型別的客戶正在使用您的支援平台。 本主題示範如何設定控制面板，以取得與您的網站相關的精細報表。 [!DNL Zendesk] 交易式客戶的效能和時間。
+整合您的 [!DNL Zendesk] 使用交易式資料庫的資料是瞭解客戶如何與您的銷售或客戶成功團隊互動的絕佳方式。 它還有助於您瞭解哪些型別的客戶正在使用您的支援平台。 此主題示範如何設定控制面板，以取得有關您的詳細報表。 [!DNL Zendesk] 與交易客戶互動的效能與時間。
 
-開始之前，您想要連線 [[!DNL Zendesk]](../integrations/zendesk.md). 此分析包含 [進階計算欄](../../data-warehouse-mgr/adv-calc-columns.md).
+開始之前，您想要連線至 [[!DNL Zendesk]](../integrations/zendesk.md). 此分析包含 [進階計算欄](../../data-warehouse-mgr/adv-calc-columns.md).
 
 <!-- Getting Started -->
 
@@ -82,9 +82,9 @@ ht-degree: 0%
 
       * `Input columns` - `role`, `email`
 
-      * `SQL Calculation` `- case when `A` is not `null` and `答！=`end-user` 則 `Yes` 時間 `B` 不是 `null` 和 `B` 按讚 `%@magento.com` 則 `Yes` 否則 `No` 結束
+      * `SQL Calculation` `- case when `A` is not `null` and `答！=`end-user` 則 `Yes` 當 `B` 不是 `null` 和 `B` 按讚 `%@magento.com` 則 `Yes` 否則 `No` 結束
 
-      * Replace `@magento.com` 與您的網域
+      * 取代 `@magento.com` 與您的網域
 
       * `Datatype` - `String`
 
@@ -164,13 +164,13 @@ ht-degree: 0%
    * 
       * `Column type` - `Same Table > Date Difference`
 
-      * `Ticket's latest solved date` 減號 `created_at`
+      * `Ticket's latest solved date` 減 `created_at`
 
 * **`Seconds to first response`**
    * 
       * `Column type` - `Same Table > Date Difference`
 
-      * `First agent response date` 減號 `created_at`
+      * `First agent response date` 減 `created_at`
 
 * **`Requester's ticket number`**
    * 
@@ -238,7 +238,7 @@ ht-degree: 0%
 
 * 在 **`[!DNL Zendesk] tickets`** 表格
 * 此量度會執行 **計數**
-* 於 **`id`** 欄
+* 在 **`id`** 欄
 * 排序依據： **`created_at`** timestamp
 * [!UICONTROL Filter]:
 
@@ -248,7 +248,7 @@ ht-degree: 0%
 
 * 在 **`[!DNL Zendesk] tickets`** 表格
 * 此量度會執行 **計數**
-* 於 **`id`** 欄
+* 在 **`id`** 欄
 * 排序依據： **`created_at`** timestamp
 * [!UICONTROL Filter]:
 
@@ -257,7 +257,7 @@ ht-degree: 0%
 
 * 在 **`[!DNL Zendesk] tickets`** 表格
 * 此量度會執行 **相異計數**
-* 於 **`requester_id`** 欄
+* 在 **`requester_id`** 欄
 * 排序依據： **`created_at`** timestamp
 * [!UICONTROL Filter]:
 
@@ -266,24 +266,24 @@ ht-degree: 0%
    * 中的狀態 `closed, solved`
 
 * 在 **`[!DNL Zendesk] tickets`** 表格
-* 此量度會執行 **平均（或中位數）**
-* 於 **`Seconds to resolution`** 欄
+* 此量度會執行 **平均值（或中位數）**
+* 在 **`Seconds to resolution`** 欄
 * 排序依據： **`created_at`** timestamp
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]首次回應的平均/中位時間**
+* **[!DNL Zendesk]第一次回應的平均/中間時間**
    * 已計票的票證
    * 狀態為關閉，已解決
 
 * 在 **`[!DNL Zendesk] tickets`** 表格
-* 此量度會執行 **平均（或中位數）**
-* 於 **`Seconds to first response`** 欄
+* 此量度會執行 **平均值（或中位數）**
+* 在 **`Seconds to first response`** 欄
 * 排序依據： **`created_at`** timestamp
 * [!UICONTROL Filter]:
 
 >[!NOTE]
 >
->請確定 [將所有新欄新增為量度的維度](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 建立新報表之前。
+>確定 [將所有新欄新增為量度的維度](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 建立新報表之前。
 
 ### 報表
 

@@ -13,11 +13,11 @@ ht-degree: 2%
 
 # 流失率
 
-本主題說明如何計算 **流失率** 您的 **commerce客戶**. 與SaaS或傳統訂閱公司不同，商務客戶通常沒有具體專案 **&quot;流失事件&quot;** 以向您顯示，他們不應該再指望您的活躍客戶。 因此，下列指示可讓您根據客戶自上次訂購以來經過的確定時間量，將客戶定義為「流失」。
+本主題說明如何計算 **流失率** 針對您的 **商務客戶**. 與SaaS或傳統訂閱公司不同，商務客戶通常沒有具體的 **「流失事件」** 以向您顯示，他們不應該再計入您的活躍客戶。 因此，下列指示可讓您根據客戶自上次訂購以來經過的確定時間量，將客戶定義為「已流失」。
 
 ![](../../assets/Churn_rate_image.png)
 
-許多客戶都希望獲得協助，以開始概念化 **時間範圍** 他們應該根據其資料使用。 如果您想要使用歷史客戶行為來定義此專案 **流失時間範圍**，請熟悉 [定義流失](../analysis/define-cust-churn.md) 主題。 然後，您便可以在以下說明中使用流失率公式中的結果。
+許多客戶希望能協助開始概念化哪些內容 **時間範圍** 他們應該根據其資料使用。 如果您想使用歷史客戶行為來定義此專案 **流失時間範圍**，請熟悉 [定義流失](../analysis/define-cust-churn.md) 主題。 然後，您便可以在以下說明中使用流失率公式中的結果。
 
 ## 計算欄
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->請確定 [將所有新欄新增為量度的維度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 建立新報表之前。
+>確定 [將所有新欄新增為量度的維度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 建立新報表之前。
 
 ## 量度
 
@@ -46,11 +46,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->此量度可能存在於您的帳戶中。
+>此量度可能存在於您的帳戶上。
 
 * 在 **`customer_entity`** 表格
 * 此量度會執行 **計數**
-* 於 **`entity_id`** 欄
+* 在 **`entity_id`** 欄
 * 排序依據： **`Customer's first order date`** timestamp
 * [!UICONTROL Filter]:
 
@@ -59,17 +59,17 @@ ht-degree: 2%
 
   >[!NOTE]
   >
-  >此量度可能存在於您的帳戶中。
+  >此量度可能存在於您的帳戶上。
 
 * 在 **`customer_entity`** 表格
 * 此量度會執行 **計數**
-* 於 **`entity_id`** 欄
+* 在 **`entity_id`** 欄
 * 排序依據： **`Customer's last order date`** timestamp
 * [!UICONTROL Filter]:
 
 >[!NOTE]
 >
->請確定 [將所有新欄新增為量度的維度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 建立新報表之前。
+>確定 [將所有新欄新增為量度的維度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 建立新報表之前。
 
 ## 報表
 
@@ -80,7 +80,7 @@ ht-degree: 2%
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
-   * 自客戶上次訂購日期以來的秒數>= [您為流失客戶定義的截止日期&#x200B;]**`^`**
+   * 自客戶上次訂購日期起的秒數>= [您為流失客戶定義的截止日期&#x200B;]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]: `New customers (by last order date)`
@@ -99,7 +99,7 @@ ht-degree: 2%
 * *`Group by`:`Customer's order number`*
 * *`Chart Type`:`Column`*
 
-以下是一些常見的月份>秒轉換，但Google提供其他值，包括您可能尋找的任何自訂值的周>秒轉換。
+以下是一些常見的月份>秒轉換，但Google提供其他值，包括您正在尋找的任何自訂值的周>秒轉換。
 
 | **月** | **秒** |
 |---|---|
@@ -108,4 +108,4 @@ ht-degree: 2%
 | 9 | 23,328,000 |
 | 12 | 31,104,000 |
 
-編譯所有報表後，您可以視需要在控制面板上組織報表。 結果看起來可能像上面的範例儀表板。
+編譯所有報表後，您可以視需要在控制面板上組織報表。 結果可能如上述範例控制面板所示。

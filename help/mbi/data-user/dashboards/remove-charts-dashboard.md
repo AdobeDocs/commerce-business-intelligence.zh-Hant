@@ -17,6 +17,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->移除圖表的方式與不同 [刪除它](../../data-user/dashboards/delete-chart.md). 此外， [圖表可讀入儀表板](../../data-user/dashboards/add-charts-dashboard.md) 隨時。
+>移除圖表與移除圖表不同 [刪除它](../../data-user/dashboards/delete-chart.md). 另外， [圖表可以讀入儀表板](../../data-user/dashboards/add-charts-dashboard.md) 隨時。
 
 ![移除圖表](../../assets/Removing_Charts_from_Dashboards.gif)

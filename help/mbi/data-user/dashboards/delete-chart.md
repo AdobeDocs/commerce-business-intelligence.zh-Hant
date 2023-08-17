@@ -7,17 +7,17 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '103'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 永久刪除圖表
 
-即使您 [從儀表板移除圖表](../../data-user/dashboards/remove-charts-dashboard.md)，則它仍存在於您的 [!DNL Commerce Intelligence] 帳戶。
+即使您 [從儀表板移除圖表](../../data-user/dashboards/remove-charts-dashboard.md)，但您的中仍存在此變數： [!DNL Commerce Intelligence] 帳戶。
 
 若要永久刪除圖表：
 
-1. 按一下 **[!UICONTROL Account Setting]** 在側欄中。
+1. 按一下 **[!UICONTROL Account Setting]** 在側邊欄中。
 
 1. 按一下 **[!UICONTROL Charts]**.
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果圖表用於儀表板或電子郵件摘要，則會顯示通知。 若要繼續，您必須確認刪除，然後按一下 **[!UICONTROL Force Deletion]**.
+   >如果圖表用於控制面板或電子郵件摘要，則會顯示通知。 若要繼續，您必須確認刪除，然後按一下 **[!UICONTROL Force Deletion]**.
 
 範例：
 

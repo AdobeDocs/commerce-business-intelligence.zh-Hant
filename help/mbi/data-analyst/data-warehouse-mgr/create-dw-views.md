@@ -1,6 +1,6 @@
 ---
 title: 建立及使用Data Warehouse檢視
-description: 瞭解藉由修改現有表格或使用SQL將多個表格聯結或合併在一起來建立新倉儲表格的方法。
+description: 瞭解透過修改現有表格或使用SQL將多個表格聯結或合併在一起來建立新倉儲表格的方法。
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
@@ -13,17 +13,17 @@ ht-degree: 9%
 
 # 使用Data Warehouse檢視
 
-本檔案概述的用途與用途 `Data Warehouse Views` 可透過導覽至 **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**. 以下說明其功用以及如何建立檢視，並舉例說明如何使用 `Data Warehouse Views` 合併 [!DNL Facebook] 和 [!DNL AdWords] 支出資料。
+本檔案概述的用途與用途 `Data Warehouse Views` 可透過導覽至 **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**. 以下是其功用以及如何建立檢視的解釋，以及如何使用的範例 `Data Warehouse Views` 若要合併 [!DNL Facebook] 和 [!DNL AdWords] 支出資料。
 
 ## 一般用途
 
-此 `Data Warehouse Views` 功能是透過修改現有表格或使用SQL將多個表格聯結或合併在一起來建立新倉儲表格的方法。 一次a `Data Warehouse View` 已透過更新週期建立及處理，則會在Data Warehouse中填入新表格，位於 `Data Warehouse Views` 下拉式清單，如下所示：
+此 `Data Warehouse Views` 功能是藉由修改現有表格或使用SQL將多個表格聯結或合併在一起，來建立新倉儲表格的方法。 一次a `Data Warehouse View` 已由更新週期建立及處理，則會在Data Warehouse中填入為下的新表格 `Data Warehouse Views` 下拉式清單，如下所示：
 
 ![](../../assets/Data_Warehouse.png)
 
-從此處，您的新檢視功能會與任何其他表格類似，讓您能夠建立新的計算欄，或在其上建立量度和報表。
+從這裡，您的新檢視功能與任何其他表格一樣，讓您能夠建立新的計算欄，或在其上建立量度和報表。
 
-`Data Warehouse Views` 主要用於合併多個相似但不同的表格，以便所有報表都建立在單一新表格上。 常見的範例包括合併舊版資料庫和即時資料庫的表格，以結合歷史資料和目前資料，或將多個廣告來源(例如Facebook和AdWords)合併為單一 `Consolidated ad spend` 表格。
+`Data Warehouse Views` 主要用於合併多個類似但不同的表格，以便所有報表都建立在單一新表格上。 常見的範例包括合併來自舊版資料庫和即時資料庫的表格，以結合歷史資料和目前的資料，或將多個廣告來源(如Facebook和AdWords)合併為單一 `Consolidated ad spend` 表格。
 
 如果您熟悉SQL，這兩個合併範例都會使用 `UNION` 函式，但您可在建立新檢視時使用任何PostgreSQL語法和函式。
 
@@ -33,23 +33,23 @@ ht-degree: 9%
 
 ![](../../assets/Data_Warehouse_Views.png)
 
-您可以在此處依照下列範例指示建立檢視：
+您可以在此處依照下列範例說明建立檢視：
 
 1. 如果觀察現有檢視，請按一下 **[!UICONTROL New Data Warehouse View]** 以開啟空白查詢視窗。 如果已經開啟空白查詢視窗，請繼續進行下一個步驟。
-1. 輸入檢視的名稱 `View Name` 欄位。 此處提供的名稱會決定Data Warehouse中檢視的顯示名稱。 `View names` 僅限於小寫字母、數字和底線(_)。 禁止使用所有其他字元。
+1. 輸入檢視的名稱 `View Name` 欄位。 此處提供的名稱會決定Data Warehouse中檢視的顯示名稱。 `View names` 僅限於小寫字母、數字和底線(_)。 所有其他字元皆禁止使用。
 1. 在標題為的視窗中輸入查詢 `Select Query`，使用標準PostgreSQL語法。
 
    >[!NOTE]
    >
    >您的查詢必須參考特定的欄名稱。 使用 `*`不允許字元選取所有欄。
 
-1. 完成後，按一下 **[!UICONTROL Save]** 以儲存您的檢視。 您的檢視暫時 `Pending` 狀態，直到下一次完整更新週期處理為止，此時狀態會變更為 `Active`. 更新處理完後，您的檢視即可在報告中使用。
+1. 完成後，按一下 **[!UICONTROL Save]** 以儲存您的檢視。 您的檢視暫時 `Pending` 狀態，直到下一次完整更新週期處理為止，此時狀態會變更為 `Active`. 經更新處理之後，您的檢視即可在報表中使用。
 
-請務必注意，在儲存後，用於產生 `Data Warehouse View` 無法編輯。 如果您需要調整的結構 `Data Warehouse View`，您必須建立檢視，並手動將任何計算欄、量度或報表從原始檢視移轉到新檢視。 移轉完成後，您可以安全地刪除原始檢視。 因為 `Data Warehouse Views` 不可編輯，Adobe建議您使用 `SQL Report Builder` 將查詢儲存為Data Warehouse檢視之前。
+請務必注意，在儲存後，用於產生 `Data Warehouse View` 無法編輯。 如果您需要調整 `Data Warehouse View`，您必須建立檢視，並手動將任何計算欄、量度或報表從原始檢視移轉至新檢視。 移轉完成後，您可以安全地刪除原始檢視。 因為 `Data Warehouse Views` 不可編輯，Adobe建議您使用 `SQL Report Builder` 將查詢儲存為Data Warehouse檢視之前。
 
 ## 範例： [!DNL Facebook] 和 [!DNL Google AdWords] 資料
 
-請仔細檢視本文前面提到的其中一個範例：合併 [!DNL Facebook] 和 [!DNL AdWords] 將資料放入新的整合式廣告表格中。 這通常涉及兩個表格的合併，範例資料集如下：
+進一步瞭解本文前面提到的其中一個範例：合併 [!DNL Facebook] 和 [!DNL AdWords] 將資料放入新的合併ads表格中。 這通常涉及兩個表格的合併，範例資料集如下：
 
 `Ad source: Google AdWords`
 
@@ -88,7 +88,7 @@ ht-degree: 9%
 
 執行時 `UNION` 或 `UNION ALL` 陳述式中，最終輸出中的資料行名稱會反映第一個查詢中的資料行命名。
 
-通常，合併您的 [!DNL Facebook] 和 [!DNL Google AdWords] 將資料花費到 `Data Warehouse View` 需要建立包含七欄的表格，其查詢類似於以下內容：
+通常，整合您的 [!DNL Facebook] 和 [!DNL Google AdWords] 將資料花費到 `Data Warehouse View` 需要建立包含七欄的表格，其查詢類似於以下內容：
 
 ```sql
     SELECT
@@ -114,8 +114,8 @@ ht-degree: 9%
 
 關於上述的幾個要點：
 
-* 為了清楚起見，所有欄都使用上面的別名，以便名稱在所有查詢中相符。 但這並非必要條件。 在SELECT查詢中呼叫欄的順序指示了它們的排列方式。
-* 名為的新欄 `ad_source` 是為了更易於篩選而建立的 [!DNL AdWords] 或 [!DNL Facebook] 資料。 請記住，此查詢會結合來自兩個表格的所有資料。 如果您不建立欄，例如 `ad_source`，要識別來自特定來源的支出並不容易。
+* 為了清楚起見，所有欄都會加上上述的別名，以便名稱在所有查詢中相符。 但這並非必要條件。 在SELECT查詢中呼叫欄的順序指示了它們的排列方式。
+* 名為的新欄 `ad_source` 的建立方式使得篩選更容易 [!DNL AdWords] 或 [!DNL Facebook] 資料。 請記住，此查詢會結合來自兩個表格的所有資料。 如果您不建立欄，例如 `ad_source`，要識別來自特定來源的支出並不容易。
 
 將以上查詢儲存為 `Data Warehouse View` 建立同時包含兩者的表格 [!DNL Facebook] 和 [!DNL AdWords] 支出，如下所示：
 
@@ -132,11 +132,11 @@ ht-degree: 9%
 | **5** | [!DNL Facebook] | 2017-07-06 00:00:00 | ccc | 1.2 | 300 | 5 |
 | **5** | [!DNL Google AdWords] | 2017-07-10 00:00:00 | fff | 28.5 | 10200 | 280 |
 
-與其為每個廣告來源建立個別的行銷量度集，您可以利用上表建立單一量度集來擷取所有廣告。
+與其為每個廣告來源建立個別的行銷量度集，您可以利用上表建立單一量度集以擷取所有廣告。
 
-**需要其他協助嗎？**
+**正在尋找其他協助嗎？**
 
-寫入SQL和建立 `Data Warehouse Views` 技術支援中未提供。 不過， [服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 在建立檢視方面提供協助。 從使用新資料庫移轉舊版資料庫到建立單一Data Warehouse檢視用於特定分析，支援團隊可以提供協助。
+正在寫入SQL和建立 `Data Warehouse Views` 未隨附於技術支援。 然而， [服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 在建立檢視方面提供協助。 支援團隊可以提供協助，處理從使用新資料庫移轉舊版資料庫以建立單一Data Warehouse檢視以進行特定分析的所有工作。
 
 通常，建立新的 `Data Warehouse View` 為了合併2-3個類似結構的表格，需要5小時的服務時間，這相當於大約1,250美元的工作。 不過，以下是一些可能會增加所需預期投資的常見因素：
 

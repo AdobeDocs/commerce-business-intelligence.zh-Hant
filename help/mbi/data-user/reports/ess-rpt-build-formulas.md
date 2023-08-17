@@ -29,9 +29,9 @@ ht-degree: 0%
 
    在此範例中， `New Customers` 量度已使用。
 
-1. 在側邊欄中，按一下 **[!UICONTROL Details]** 以顯示每個量度的相關資訊。
+1. 在側邊欄中，按一下 **[!UICONTROL Details]** 顯示每個量度的相關資訊。
 
-   ![依訂購產品區分的收入](../../assets/magento-bi-report-builder-revenue-by-products.png)
+   ![依訂購的產品區分的收入](../../assets/magento-bi-report-builder-revenue-by-products.png)
 
 1. 在側邊欄中，按一下每個量度的名稱，以在新的瀏覽器分頁中開啟設定頁面。 向下捲動以檢視量度的每個元件，包括量度查詢、篩選器和維度。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 1. 在側邊欄頂端，按一下 **[!UICONTROL Add Formula]**.
 
-   公式方塊會將量度顯示為可用的輸入 `A` 和 `B`，並包含一個輸入方塊，您可以在其中輸入公式。
+   公式方塊會將量度顯示為可用的輸入 `A` 和 `B`，並包含輸入方塊，您可在其中輸入公式。
 
    執行下列動作：
 
@@ -61,21 +61,21 @@ ht-degree: 0%
 
 1. 完成後，按一下 **[!UICONTROL Apply]**.
 
-   報表現在有公式的新行， `New Customer Revenue`，而側邊欄會顯示新客戶產生的收入總額。
+   報表現在有公式的新行， `New Customer Revenue`，而側邊欄會顯示新客戶所產生的收入總額。
 
    ![含公式的報表](../../assets/magento-bi-report-builder-revenue-by-products-formula-report.png)
 
 ## 步驟3：新增日期範圍
 
-1. 按一下 **[!UICONTROL Date Range]** 右上角。
+1. 按一下 **[!UICONTROL Date Range]** 位於右上角。
 
-1. 於 `Fixed Date Range` 索引標籤中，執行下列動作：
+1. 在 `Fixed Date Range` 標籤中，執行下列動作：
 
    * 在行事曆上，選擇日期範圍。
 
      在此範例中，假日季節來自 `November 1` 到 `December 31`.
 
-   * 下 `Select Time Interval`，選擇 `Day`.
+   * 在 `Select Time Interval`，選擇 `Day`.
 
      ![固定日期範圍](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
 
@@ -91,19 +91,19 @@ ht-degree: 0%
 
 1. 按一下 `Untitled Report` 在頁面頂端並輸入描述性標題。 在此範例中，報告標題為 `2017 Holiday Sales`.
 
-   然後，執行下列動作：
+   接著，執行下列動作：
 
    * 在右上角，按一下 **[!UICONTROL Save]**.
 
-   * 對象 `Type`，接受預設值 `Chart` 設定。
+   * 的 `Type`，接受預設值 `Chart` 設定。
 
    * 選擇 `Dashboard` 報表可用位置。
 
    * 按一下 **[!UICONTROL Save to Dashboard]**.
 
-1. 按一下報告標題並變更名稱。 在此範例中，報告標題已變更為 `2017 Holiday Sales Data`.
+1. 按一下報告標題並變更名稱。 在此範例中，報表標題會變更為 `2017 Holiday Sales Data`.
 
-   然後，執行下列動作：
+   接著，執行下列動作：
 
    * 在右上角，按一下 **[!UICONTROL Save a Copy]**.
 
@@ -113,8 +113,8 @@ ht-degree: 0%
 
    * 按一下 **[!UICONTROL Save a Copy to Dashboard]**.
 
-1. 若要在儀表板中檢視報表，請執行下列任一項作業：
+1. 若要在控制面板中檢視報表，請執行下列任一項作業：
 
    * 按一下 **[!UICONTROL Go to Dashboard]** 在頁面頂端的訊息中。
 
-   * 在功能表中，選擇 **[!UICONTROL Dashboards]**. 按一下目前圖示板的名稱以顯示清單。 然後，按一下儲存報告的儀表板名稱。
+   * 在功能表中，選擇 **[!UICONTROL Dashboards]**. 按一下目前圖示板的名稱以顯示清單。 然後，按一下儲存報表之控制面板的名稱。

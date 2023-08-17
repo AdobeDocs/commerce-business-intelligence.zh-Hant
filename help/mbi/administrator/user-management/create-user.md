@@ -13,18 +13,18 @@ ht-degree: 0%
 
 # 新增 [!DNL Adobe Commercer Intelligence] 使用者
 
-1. 按一下右上角的公司名稱，然後選取 **[!UICONTROL Invite User]** 下拉式清單中的。
+1. 按一下右上角的貴公司名稱，然後選取「 」 **[!UICONTROL Invite User]** 下拉式清單中的。
 1. 輸入使用者名稱和電子郵件。
 1. 設定使用者的 **[!UICONTROL general permission level]**： `Admin`， `Standard`，或 `Read Only`.
 1. 指出此新使用者是否也應負責 **[!UICONTROL billing]** 或 **[!UICONTROL technical]** 核取適當方塊時的問題。
 
    >[!NOTE]
    >
-   >若要檢視、新增或變更帳戶的帳單資訊，您必須擁有 `Billing` 許可權。 [許可權是逐個使用者設定的](../../administrator/user-management/user-management.md) 建立使用者帳戶時。 如果您需要 `Billing` 許可權，請聯絡您帳戶的管理員。
+   >若要檢視、新增或變更帳戶的帳單資訊，您必須擁有 `Billing` 許可權。 [許可權是逐位使用者設定的](../../administrator/user-management/user-management.md) 建立使用者帳戶時。 如果您需要 `Billing` 許可權，請聯絡您帳戶的管理員。
 
 1. 按一下 **[!UICONTROL Save]**.
 
-新使用者會收到一封包含登入和密碼詳細資訊的電子郵件。
+新使用者會收到一封電子郵件，其中包含登入和密碼詳細資訊。
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## 更新您的電子郵件地址或密碼
 
-您可以按一下右上角的公司名稱來更新您的電子郵件地址和/或密碼，然後按一下 **[!UICONTROL Edit Profile]**.
+您可以按一下右上角的公司名稱，然後按一下「 」，更新您的電子郵件地址和/或密碼 **[!UICONTROL Edit Profile]**.
 
 ## 重新傳送邀請
 
@@ -40,4 +40,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->每個帳戶都有合約數量的授權或名額。 如果您達到上限或想瞭解更多， [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>每個帳戶都有合約數量的授權或名額。 如果您達到限制或想瞭解更多， [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
