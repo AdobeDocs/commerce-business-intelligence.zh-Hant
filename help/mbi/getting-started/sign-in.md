@@ -4,9 +4,9 @@ description: 瞭解如何登入您的Commerce Intelligence帳戶。
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Accounts
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 988a7bee27a0c381d1c84db960e978ca73eb3615
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 0%
 # 存取您啟用的專案 [!DNL Adobe Commerce Intelligence] 帳戶
 
 在您啟動您的 [!DNL Commerce Intelligence] 帳戶為 [內部部署或雲端](../getting-started/onpremise-activation.md) 並已與您的Adobe客戶團隊合作完成設定步驟，您現在可以登入您的帳戶。
-
-您可以使用您的 [!DNL Adobe ID] 或使用 [!DNL Commerce Intelligence] 電子郵件地址和密碼。
-
-![登入](../assets/sign-in.png)
 
 ## 使用您的 [!DNL Adobe ID]
 
