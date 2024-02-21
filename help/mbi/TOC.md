@@ -4,7 +4,7 @@ description: 瞭解如何使用 [!DNL Commerce Intelligence] Adobe Commerce可�
 breadcrumb-title: Commerce Intelligence使用手冊
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Business Performance
-source-git-commit: 903e839e8bd8a4e7b6d21b6a7ebcae49f2dfe6e4
+source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
@@ -12,9 +12,9 @@ ht-degree: 0%
 ---
 
 
-# [!DNL Commerce Intelligence] 使用者指南 {#mbi}
+# [!DNL Commerce Intelligence] 使用手冊 {#mbi}
 
-- [[!DNL Commerce Intelligence] 使用者指南](guide-overview.md)
+- [[!DNL Commerce Intelligence] 使用手冊](guide-overview.md)
 - [[!DNL Commerce Intelligence] 簡介](getting-started/getting-started.md)
 - 快速入門 {#start}
    - [入門](getting-started/onboarding.md)
@@ -57,10 +57,10 @@ ht-degree: 0%
       - [使用對應表格標準化資料](data-analyst/data-warehouse-mgr/stndrd-data-map-tables.md)
       - [將SQL查詢轉譯為 [!DNL Commerce Intelligence] 報表](data-analyst/dev-reports/sql-queries-reports.md)
       - [瞭解並評估表格關係](data-analyst/data-warehouse-mgr/table-relationships.md)
-      - [使用已計算的日期差異](data-analyst/data-warehouse-mgr/using-date-diff-calc-column-.md)
+      - [使用已計算的日期差異](data-analyst/data-warehouse-mgr/using-date-diff-calc-column.md)
       - [使用儀表板範圍篩選](data-analyst/data-warehouse-mgr/using-dshbrd-wide-filter-date-ranges.md)
       - [使用事件編號計算欄](data-analyst/data-warehouse-mgr/using-event-num-calc-column.md)
-      - [使用循序比較計算欄](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column-.md)
+      - [使用循序比較計算欄](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column.md)
    - 常見Commerce表格 {#tables}
       - [簡介](data-analyst/data-warehouse-mgr/common-mage-tables.md)
       - [[!DNL customer_entity]](data-analyst/data-warehouse-mgr/cust-ent-table.md)
@@ -231,7 +231,7 @@ ht-degree: 0%
    - 使用儀表板 {#working-dashboards}
       - [共用儀表板](best-practices/share-dashboard-best-practice.md)
       - [建立投資者儀表板](best-practices/build-investor-dashboard.md)
-- 教學課程 {#tutorials}
+- Tutorials {#tutorials}
    - [使用 [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [在中使用時間選項 [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [建立視覺效果 [!DNL SQL] 查詢](tutorials/create-visuals-from-sql.md)
