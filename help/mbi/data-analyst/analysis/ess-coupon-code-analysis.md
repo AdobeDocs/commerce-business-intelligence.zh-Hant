@@ -4,9 +4,9 @@ description: 瞭解企業的優惠券成效，是細分訂單，以及更清楚�
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: d8fc96a58b72c601a5700f35ea1f3dc982d76571
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ ht-degree: 0%
 * 優惠券代碼會儲存在 `coupon_code` 欄位。 如果此欄位為NULL （空白），則訂單沒有相關聯的抵用券。
 * 折扣金額儲存在 `base_discount_amount`. 根據您的設定，此值可能顯示為負數或正數。
 
+自Commerce 2.4.7起，客戶可將多個抵用券代碼套用至訂單。 在此案例中：
+
+* 所有套用的優惠券代碼都會儲存在 `coupon_code` 欄位 `sales_order_coupons`. 套用的第一個抵用券代碼也會儲存在 `coupon_code` 欄位 `sales_order`. 如果此欄位為NULL （空白），則訂單沒有相關聯的抵用券。
+
 ## 建立量度
 
 第一步是透過下列步驟建構新的量度：
@@ -35,7 +39,7 @@ ht-degree: 0%
 
 * 選取 `sales_order`.
 * 此量度會執行 **Sum** 於 **base_discount_amount** 欄，排序依據： **created_at**.
-   * [!UICONTROL Filters]:
+   * [!UICONTROL Filters]：
       * 新增 `Orders we count` （儲存的篩選器集）
       * 新增下列專案：
          * `coupon_code`**不是**`[NULL]`
@@ -63,10 +67,10 @@ ht-degree: 0%
       * 新增篩選器：
          * [`A`] `coupon_code` **不是** `[NULL]`
 
-   * [!UICONTROL Time period]: `All time`
+   * [!UICONTROL Time period]： `All time`
    * 
      [！UICONTROL間隔]: `None`
-   * [!UICONTROL Chart type]:`Number (scalar)`
+   * [!UICONTROL Chart type]：`Number (scalar)`
 
 * **沒有優惠券的訂單**
    * 
@@ -74,10 +78,10 @@ ht-degree: 0%
       * 新增篩選器：
          * [`A`] `coupon_code` **是** `[NULL]`
 
-   * [!UICONTROL Time period]: `All time`
+   * [!UICONTROL Time period]： `All time`
    * 
      [！UICONTROL間隔]: `None`
-   * [!UICONTROL Chart type]:`Number (scalar)`
+   * [!UICONTROL Chart type]：`Number (scalar)`
 
 * **含抵用券的訂單淨收入**
    * 
@@ -85,37 +89,37 @@ ht-degree: 0%
       * 新增篩選器：
          * [`A`] `coupon_code` **不是** `[NULL]`
 
-   * [!UICONTROL Time period]: `All time`
+   * [!UICONTROL Time period]： `All time`
    * 
      [！UICONTROL間隔]: `None`
-   * [!UICONTROL Chart type]: `Number (scalar)`
+   * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **優惠券折扣**
-   * [!UICONTROL Metric]: `Coupon discount amount`
-   * [!UICONTROL Time period]: `All time`
+   * [!UICONTROL Metric]： `Coupon discount amount`
+   * [!UICONTROL Time period]： `All time`
    * 
      [！UICONTROL間隔]: `None`
-   * [!UICONTROL Chart type]: `Number (scalar)`
+   * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **平均期限收入：獲得優惠券的客戶**
-   * [!UICONTROL Metric]: `Avg lifetime revenue`
+   * [!UICONTROL Metric]： `Avg lifetime revenue`
       * 新增篩選器：
          * [`A`] `Customer's first order's coupon_code` **不是** `[NULL]`
 
-   * [!UICONTROL Time period]: `All time`
+   * [!UICONTROL Time period]： `All time`
    * 
      [！UICONTROL間隔]: `None`
-   * [!UICONTROL Chart type]: `Number (scalar)`
+   * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **平均期限收入：非優惠券取得的客戶**
-   * [!UICONTROL Metric]: `Avg lifetime revenue`
+   * [!UICONTROL Metric]： `Avg lifetime revenue`
       * 新增篩選器：
          * [A] `Customer's first order's coupon_code` **是**`[NULL]`
 
-   * [!UICONTROL Time period]: `All time`
+   * [!UICONTROL Time period]： `All time`
    * 
      [！UICONTROL間隔]: `None`
-   * [!UICONTROL Chart type]: `Number (scalar)`
+   * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **抵用券使用量詳細資料（首次訂單）**
    * 量度 `1`： `Orders`
@@ -136,7 +140,7 @@ ht-degree: 0%
          * [`B`] `Customer's order number` **等於** `1`
 
    * 建立公式： `Gross revenue`
-      * [!UICONTROL Formula]: `(B – C)`
+      * [!UICONTROL Formula]： `(B – C)`
       * 
         [!UICONTROL Format]: `Currency`
 
@@ -146,11 +150,11 @@ ht-degree: 0%
         [!UICONTROL Format]: `Percentage`
 
    * 建立公式： `Average order discount`
-      * [!UICONTROL Formula]: `(C / A)`
+      * [!UICONTROL Formula]： `(C / A)`
       * 
         [!UICONTROL Format]: `Percentage`
 
-   * [!UICONTROL Time period]: `All time`
+   * [!UICONTROL Time period]： `All time`
    * 
      [！UICONTROL間隔]: `None`
    * 
@@ -161,20 +165,20 @@ ht-degree: 0%
       * 新增篩選器：
          * [`A`] `coupon_code` **是**`[NULL]`
 
-   * [!UICONTROL Time period]: `All time`
+   * [!UICONTROL Time period]： `All time`
    * 
      [！UICONTROL間隔]: `None`
-   * [!UICONTROL Chart type]: `Number (scalar)`
+   * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **抵用券使用量詳細資料（首次訂單）**
-   * [!UICONTROL Metric]: `Avg lifetime revenue`
+   * [!UICONTROL Metric]： `Avg lifetime revenue`
       * 新增篩選器：
          * [`A`] `Customer's first order's coupon_code` **不是** `[NULL]`
 
-   * [!UICONTROL Time period]: `All time`
+   * [!UICONTROL Time period]： `All time`
    * 
      [！UICONTROL間隔]: `None`
-   * [!UICONTROL Group by]: `Customer's first order's coupon_code`
+   * [!UICONTROL Group by]： `Customer's first order's coupon_code`
    * 
      [！UICONTROL圖表型別]: **Column**
 
@@ -183,16 +187,22 @@ ht-degree: 0%
       * 新增篩選器：
          * [`A`] `Customer's first order's coupon_code` **不是** `[NULL]`
 
-      * [!UICONTROL Rename]: `Coupon acquisition customer`
+      * [!UICONTROL Rename]： `Coupon acquisition customer`
 
    * 量度 `2`： `New customers`
       * 新增篩選器：
          * [`A`] `coupon_code` **是**`[NULL]`
 
-      * [!UICONTROL Rename]: `Non-coupon acquisition customer`
+      * [!UICONTROL Rename]： `Non-coupon acquisition customer`
 
-   * [!UICONTROL Time period]: `All time`
-   * [!UICONTROL Interval]: `By Month`
-   * [!UICONTROL Chart type]: `Stacked Column`
+   * [!UICONTROL Time period]： `All time`
+   * [!UICONTROL Interval]： `By Month`
+   * [!UICONTROL Chart type]： `Stacked Column`
 
 建立報表後，請參閱本主題頂端的影像，瞭解如何在控制面板上組織報表。
+
+>[!NOTE]
+>
+>截至Adobe Commerce 2.4.7，客戶可使用 **quote_coupons** 和 **sales_order_coupons** 取得客戶如何使用多張抵用券的深入分析表格。
+
+![](../../assets/multicoupon_relationship_tables.png)
