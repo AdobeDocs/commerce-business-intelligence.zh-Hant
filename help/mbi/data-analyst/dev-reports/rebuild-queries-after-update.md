@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # 在更新週期後重建查詢
 
-您不需要重新建置查詢。 使用建立的報表 [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) 會像傳統方式中建立一樣儲存 `Report Builder`. SQL圖表的更新程式相同 — 更新資料後，圖表中的值將會重新計算並重新顯示。
+您不需要重新建置查詢。 使用[`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md)建立的報告會像在傳統`Report Builder`中建立的報告一樣儲存。 SQL圖表的更新程式相同 — 更新資料後，圖表中的值將會重新計算並重新顯示。

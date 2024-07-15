@@ -16,10 +16,10 @@ ht-degree: 0%
 您可以輕鬆設計查詢，也能直接進行資料分析。 您知道如何尋找資料問題的特定答案，並且希望促進同事的自助體驗。
 
 本節將示範如何：
-* 連線並匯入資料至 [!DNL Commerce Intelligence]
+* 連線並匯入資料至[!DNL Commerce Intelligence]
 * 檢視資料在您的Data Warehouse中如何儲存和建構
 * 分析您的資料
-* 使用 [!DNL SQL Report Builder]
+* 使用[!DNL SQL Report Builder]
 
 ## 相關
 

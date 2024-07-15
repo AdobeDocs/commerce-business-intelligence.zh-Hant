@@ -6,16 +6,16 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
 
 # 瞭解並評估表格關係
 
-評估兩個給定表格之間的關係時，您需要瞭解一個表格中可能屬於另一個實體可能的出現次數，反之亦然。 例如，使用 `users` 表格和 `orders` 表格。 在此案例中，您想知道有多少個 **訂購** 給定 **使用者** 已放置以及可能的數量 **使用者** 一個 **訂購** 可能屬於。
+評估兩個給定表格之間的關係時，您需要瞭解一個表格中可能屬於另一個實體可能的出現次數，反之亦然。 例如，使用`users`表格和`orders`表格。 在此案例中，您想要瞭解指定的&#x200B;**使用者**&#x200B;已下多少&#x200B;**訂單**，以及可能屬於多少個&#x200B;**使用者** **訂單**。
 
-瞭解關係對維護資料完整性至關重要，因為它會影響 [已計算的欄](../data-warehouse-mgr/creating-calculated-columns.md) 和 [維度](../data-warehouse-mgr/manage-data-dimensions-metrics.md). 若要深入瞭解，請參閱 [關係型別](#types) 和 [如何評估Data Warehouse中的表格。](#eval)
+瞭解關聯性對於維護資料完整性至關重要，因為它會影響您[計算的資料行](../data-warehouse-mgr/creating-calculated-columns.md)和[維度](../data-warehouse-mgr/manage-data-dimensions-metrics.md)的正確性。 若要深入瞭解，請參閱[關聯性型別](#types)和[如何評估您Data Warehouse中的資料表。](#eval)
 
 ## 關係型別 {#types}
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ### `One-to-One` {#onetoone}
 
-在 `one-to-one` 關聯，表格中的記錄 `B` 只屬於表格中的一個記錄 `A`. 和表格中的記錄 `A` 只屬於表格中的一個記錄 `B`.
+在`one-to-one`關聯性中，資料表`B`中的記錄只屬於資料表`A`中的一個記錄。 而且資料表`A`中的記錄只屬於資料表`B`中的一個記錄。
 
 例如，在人與駕照號碼之間的關係中，一個人只能有一個駕照號碼，而一個駕照號碼只屬於個人。
 
@@ -35,23 +35,23 @@ ht-degree: 0%
 
 ### `One-to-Many` {#onetomany}
 
-在 `one-to-many` 關聯，表格中的記錄 `A` 可能屬於表格中的數個記錄 `B`. 考慮以下兩者的關係： `orders` 和 `items`  — 訂單可以包含許多料號，但料號屬於單一訂單。 在此案例中， `orders` 表格是一側而 `items` 表格是多面。
+在`one-to-many`關聯性中，資料表`A`中的記錄可能屬於資料表`B`中的數個記錄。 想一想`orders`與`items`之間的關係 — 一個訂單可以包含許多專案，但一個專案屬於單一訂單。 在這種情況下，`orders`表格是一面，`items`表格是多面。
 
 ![](../../assets/one-to-many_001.png)
 
 ### `Many-to-Many` {#manytomany}
 
-在 `many-to-many` 關聯，表格中的記錄 `B` 可能屬於表格中的數個記錄 `A`. 反之亦然，表格中的記錄 `A` 可能屬於表格中的數筆記錄 `B`.
+在`many-to-many`關聯性中，資料表`B`中的記錄可能屬於資料表`A`中的數個記錄。 反之亦然，資料表`A`中的記錄可能屬於資料表`B`中的數個記錄。
 
-考慮以下兩者的關係： **產品** 和 **類別**：一個產品可屬於許多類別，而一個類別可包含許多產品。
+想一想&#x200B;**產品**&#x200B;和&#x200B;**類別**&#x200B;之間的關係：一個產品可以屬於許多類別，而一個類別可以包含許多產品。
 
 ![](../../assets/many-to-many.png)
 
 ## 評估表格 {#eval}
 
-根據表格之間存在的關係型別，您可以瞭解如何評估Data Warehouse中的表格。 由於這些關係決定多表格計算欄的定義方式，因此請務必瞭解如何識別表格關係以及哪一邊 —  `one` 或 `many`  — 資料表所屬的。
+根據表格之間存在的關係型別，您可以瞭解如何評估Data Warehouse中的表格。 由於這些關係塑造了多資料表計算資料行的定義方式，因此請務必瞭解如何識別資料表關係，以及資料表屬於哪一邊 — `one`或`many`。
 
-有兩種方法可用來評估Data Warehouse中指定表格對的關係。 第一個方法採用 [概念架構](#concept) 會考慮表格實體彼此互動的方式。 第二個方法使用 [表格的綱要](#schema).
+有兩種方法可用來評估Data Warehouse中指定表格對的關係。 第一個方法採用[概念架構](#concept)，考量資料表的實體彼此互動的方式。 第二個方法使用[資料表的結構描述](#schema)。
 
 ### 使用概念架構 {#concept}
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 若要使用此方法：
 
-1. 識別每個表格中描述的實體。 **提示：它通常是名詞**. 例如， `user` 和 `orders` 表格明確說明使用者和順序。
+1. 識別每個表格中描述的實體。 **提示：它通常是名詞**。 例如，`user`和`orders`資料表明確說明使用者和順序。
 
 1. 識別一或多個描述這些實體如何互動的動詞。 例如，將使用者與訂單比較時，使用者會「下單」。 另一方面，訂單「屬於」使用者。
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 一個指定人員只能有一個駕駛執照號碼。 一個特定駕照號碼只屬於個人。
 
-這是 `one-to-one` 每個資料表為單面的關係。
+這是`one-to-one`關係，其中每個資料表都是單面。
 
 ![](../../assets/one-to-one3.png)
 
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 一個特定訂單可能包含許多專案。 一個指定專案只屬於一個訂單。
 
-這是 `one-to-many` 訂單表格為一側，而料號表格為多側的關係。
+這是一種`one-to-many`關係，其中訂購表格是一面，而料號表格是多面。
 
 ![](../../assets/one-to-many3.png)
 
@@ -89,21 +89,21 @@ ht-degree: 0%
 
 一個特定產品可能屬於多個類別。 一個指定類別可以包含許多產品。
 
-這是 `many-to-many` 每個資料表為多面的關係。
+這是`many-to-many`關係，其中每個資料表都是多面。
 
 ![](../../assets/many-to-many3.png)
 
 ### 使用表格的綱要 {#schema}
 
-第二個方法使用表格結構描述。 此結構描述會定義哪些欄是 [`Primary`](https://en.wikipedia.org/wiki/Unique_key) 和 [`Foreign`](https://en.wikipedia.org/wiki/Foreign_key) 金鑰。 您可以使用這些鍵將表格連結在一起，並協助判斷關係型別。
+第二個方法使用表格結構描述。 結構描述會定義哪些資料行是[`Primary`](https://en.wikipedia.org/wiki/Unique_key)和[`Foreign`](https://en.wikipedia.org/wiki/Foreign_key)索引鍵。 您可以使用這些鍵將表格連結在一起，並協助判斷關係型別。
 
 識別將兩個表格連結在一起的欄之後，請使用欄型別來評估表格關係。 以下是一些範例：
 
 ### `One-to-one`
 
-如果表格是使用 `primary key` 則每個表格中會說明相同的唯一實體，而且關聯性為 `one-to-one`.
+如果使用兩個資料表的`primary key`連結資料表，則每個資料表中會說明相同的唯一實體，而且關聯性為`one-to-one`。
 
-例如， `users` 表格可能會擷取大部分的使用者屬性（例如名稱），而這是補充資料 `user_source` 表格會擷取使用者註冊來源。 在每個表格中，一列代表一位使用者。
+例如，`users`表格可能會擷取大部分的使用者屬性（例如名稱），而補充`user_source`表格則會擷取使用者註冊來源。 在每個表格中，一列代表一位使用者。
 
 ![](../../assets/one-to-one1.png)
 
@@ -111,22 +111,22 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您接受客服訂單嗎？ 另請參閱 [賓客訂單](../data-warehouse-mgr/guest-orders.md) 以瞭解訪客訂單如何影響您的表格關係。
+>您接受客服訂單嗎？ 請參閱[訪客訂單](../data-warehouse-mgr/guest-orders.md)，瞭解訪客訂單如何影響您的資料表關係。
 
-使用連結表格時 `Foreign key` 指向 `primary key`，此設定會說明 `one-to-many` 關係。 一側是包含 `primary key` 多面是包含 `foreign key`.
+使用指向`primary key`的`Foreign key`連結資料表時，此設定會說明`one-to-many`關係。 一方是包含`primary key`的資料表，而多面是包含`foreign key`的資料表。
 
 ![](../../assets/one-to-many1.png)
 
 ### `Many-to-many`
 
-如果下列任一項為true，則關係為 `many-to-many`：
+如果下列任一專案為true，則關聯性為`many-to-many`：
 
-* `Non-primary key` 資料行用來連結兩個資料表
+* `Non-primary key`欄正用於連結兩個資料表
   ![](../../assets/many-to-many1.png)
-* 複合的一部分 `primary key` 用於連結兩個表格
+* 複合`primary key`的一部分用於連結兩個資料表
 
 ![](../../assets/many-to-mnay2.png)
 
 ## 後續步驟
 
-正確評估表格關係是精確建立資料模型的關鍵。 現在您已瞭解表格如何相互關聯，請參閱 [您可以使用Data Warehouse管理員做什麼](../data-warehouse-mgr/tour-dwm.md).
+正確評估表格關係是精確建立資料模型的關鍵。 現在您已瞭解資料表如何相互關聯，請參閱[您可以使用Data Warehouse管理員](../data-warehouse-mgr/tour-dwm.md)做什麼。

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 共用控制面板
 
-共用儀表板表示您和您的團隊在任何指定時間都擁有相同的資訊，這允許共同作業和討論。 以下是共用控制面板和保留的一些建議 [!DNL Adobe Commerce Intelligence] 帳戶整潔。
+共用儀表板表示您和您的團隊在任何指定時間都擁有相同的資訊，這允許共同作業和討論。 以下是共用控制面板和保持您的[!DNL Adobe Commerce Intelligence]帳戶整潔的一些建議。
 
 ## 避免報告面板重複
 
@@ -26,8 +26,8 @@ ht-degree: 0%
 若要移除所有重複的控制面板：
 
 1. 與您的團隊同步，並識別應該維護儀表板的人員。
-1. [取消共用您自己](../data-user/dashboards/leave-dashboard.md) 從所有類似的儀表板，除了主要使用者共用的儀表板。
-1. 如果您有控制面板的副本， [刪除它](../data-user/dashboards/deleting-dashboard.md).
+1. [從所有類似的儀表板（主要使用者共用的儀表板除外）取消共用您自己](../data-user/dashboards/leave-dashboard.md)。
+1. 如果您有儀表板的復本，請[刪除它](../data-user/dashboards/deleting-dashboard.md)。
 1. 要求其他人刪除他們的儀表板版本。
 
 ## 建立核心儀表板集
@@ -36,11 +36,11 @@ ht-degree: 0%
 
 ## 與新使用者共用儀表板
 
-新使用者也可以受益於對某些未在整個組織內共用的儀表板的存取。 在這些情況下，Adobe會建議控制面板擁有者 [共用相關儀表板](../data-user/dashboards/share-dashboard-with-users.md) 建立帳號時的新使用者。
+新使用者也可以受益於對某些未在整個組織內共用的儀表板的存取。 在這些情況下，Adobe建議儀表板擁有者在建立帳戶時[與新使用者共用相關的儀表板](../data-user/dashboards/share-dashboard-with-users.md)。
 
 ## 具有編輯許可權的選擇性專案
 
-`Edit` 許可權為使用者提供大量許可權。 但強大的功能也帶來極大的責任。 為避免圖表和控制面板意外變更，Adobe建議您選擇提供對象 `Edit` 的許可權。
+`Edit`許可權可為使用者提供大量許可權。 但強大的功能也帶來極大的責任。 為避免圖表和儀表板意外變更，Adobe建議您選擇您授予`Edit`許可權的對象。
 
 ## 為圖表加上註釋
 

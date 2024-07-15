@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Import/Export
 source-git-commit: ddda796c9f32d22b1d679fc245eb11b92cd491cf
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
 # 新架構
 
-[!DNL Adobe Commerce Intelligence] 過去一年，產品及工程團隊一直專注於進行最全面、要求最高的改善工作。 Adobe很高興宣佈推出一款新產品 [!DNL Commerce Intelligence] 讓這些改善成為現實的產品架構。
+[!DNL Adobe Commerce Intelligence]產品和工程團隊在過去一年中專注於儘可能進行最全面、要求最高的改進。 Adobe很高興宣佈推出新的[!DNL Commerce Intelligence]產品架構，讓這些改進成為現實。
 
 ## 新架構的優點
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ### 取得協助
 
-此 [!DNL Adobe Commerce Intelligence] [服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 您只需額外付費即可執行重新實作。 連絡您的 [Adobe客戶團隊](../../guide-overview.md#Submitting-a-Support-Ticket) 並準備好提供您想要優先在新帳戶中建立的控制面板/報告清單
+[!DNL Adobe Commerce Intelligence] [服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)可以執行您的重新實作，但需額外付費。 請連絡您的[Adobe帳戶團隊](../../guide-overview.md#Submitting-a-Support-Ticket)，並準備好提供您想要優先在新帳戶中建立的控制面板/報告清單
 
 ### 繼續使用現有架構
 

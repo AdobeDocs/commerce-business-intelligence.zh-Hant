@@ -11,26 +11,26 @@ ht-degree: 0%
 
 ---
 
-# 入門 [!DNL Adobe Commerce Intelligence]
+# 上線[!DNL Adobe Commerce Intelligence]
 
-與相關的入門問題 `store` 和 `database` 設定可確保您正確設定報表。 有了這些答案，Adobe就能提供您專為商店設定量身打造的報表。
+與`store`和`database`設定相關的上線問題可確保您正確設定您的報告。 有了這些答案，Adobe就能提供您專為商店設定量身打造的報表。
 
 ## 商店設定
 
-- *您的商店是否接受訪客結帳？*  — 選取 **是** 如果您允許客戶在商店購買商品，而不需註冊帳戶。
+- *您的商店是否接受訪客結帳？* — 如果您允許客戶在您商店購買但不註冊帳戶，請選取&#x200B;**是**。
 
-- `Timezone`  — 選取 `timezone` 您希望在中檢視報告的內容。
+- `Timezone` — 選取您想要在其中檢視報告的`timezone`。
 
-- `Currency`  — 選取 `currency` 您的商店營運所在的地區。
+- `Currency` — 選取您的商店營運所在的`currency`。
 
-- `Your week starts on...`  — 在報表中選取您要作為一週開始的一週中的某天。
+- `Your week starts on...` — 在報表中選取您要作為一週開始的一週中的某天。
 
-- *您使用哪個版本的Commerce？*  — 選取 `currency` 您的商店營運所在的地區。
+- *您使用哪個Commerce版本？* — 選取您的商店營運所在的`currency`。
 
-- *您的商店位於歐盟嗎？*  — 如果您回答 `Yes` 針對此問題，Adobe會遵循GDPR規定，將您的Data Warehouse和所有資料託管於歐盟。
+- *您的商店是否位於歐盟？* — 如果您回答`Yes`此問題，Adobe會根據GDPR將您的Data Warehouse和所有資料託管於歐盟。
 
 ## 資料庫設定
 
-- `Database name`  — 什麼是 *的名稱 [!DNL MySQL] 資料庫* 您的Commerce交易資料位於何處？
+- `Database name` - Commerce交易資料所在的[!DNL MySQL]資料庫&#x200B;*的*&#x200B;名稱為何？
 
-- `Table prefix (optional)`  — 您的Commerce資料庫中包含的表格是否會在前面加上任何內容(例如 `store_`)？ 情況通常並非如此，但這是可以進行的自訂。
+- `Table prefix (optional)` — 您Commerce資料庫中包含的資料表是否前面有任何字元（例如`store_`）？ 情況通常並非如此，但這是可以進行的自訂。

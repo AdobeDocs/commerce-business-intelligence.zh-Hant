@@ -6,7 +6,7 @@ role: Admin,  User
 feature: Data Warehouse Manager, Dashboards, Reports
 source-git-commit: 6bdbdbcc652d476fa2a22589ac99678d5855e6fe
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -15,39 +15,40 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此主題包含使用原始架構和新架構的使用者端指示。 如果您擁有以下優勢，即可使用新架構： `Data Warehouse Views` 部分在選取後可用 `Manage Data` 從主工具列。
+>此主題包含使用原始架構和新架構的使用者端指示。 如果您在選取主工具列中的`Manage Data`後有`Data Warehouse Views`區段可用，則表示您使用新架構。
 
-本主題將示範如何設定追蹤免運費運送臨界值績效的控制面板。 這個儀表板（如下所示）是A/B測試兩個免運費臨界值的好方法。 例如，貴公司可能不確定您應以$50或$100的價格提供免運費。 您應該對客戶的兩個隨機子集執行A/B測試，並在中執行分析 [!DNL Commerce Intelligence].
+本主題將示範如何設定追蹤免運費運送臨界值績效的控制面板。 這個儀表板（如下所示）是A/B測試兩個免運費臨界值的好方法。 例如，貴公司可能不確定您應以$50或$100的價格提供免運費。 您應該針對客戶的兩個隨機子集執行A/B測試，並在[!DNL Commerce Intelligence]中執行分析。
 
 開始之前，您想要識別兩個獨立的時段，您在此時段擁有不同的商店免運費臨界值。
 
 ![](../../assets/free_shipping_threshold.png)
 
-此分析包含 [進階計算欄](../data-warehouse-mgr/adv-calc-columns.md).
+此分析包含[進階計算資料行](../data-warehouse-mgr/adv-calc-columns.md)。
 
 ## 計算欄
 
-如果您使用原始架構(例如，如果您沒有 `Data Warehouse Views` 下的選項 `Manage Data` 選單)，您想要聯絡支援團隊以建置以下欄。 在新架構上，這些欄可從以下網址建立： `Manage Data > Data Warehouse` 頁面。 詳細指示如下。
+如果您使用原始架構（例如，如果您的「`Manage Data`」功能表下沒有「`Data Warehouse Views`」選項），您希望聯絡支援團隊以建置以下欄。 在新架構上，可從`Manage Data > Data Warehouse`頁面建立這些欄。 詳細指示如下。
 
-* **`sales_flat_order`** 表格
+* **`sales_flat_order`**&#x200B;資料表
    * 此計算會以相對於您一般購物車大小的增量建立值區。 增量範圍包括5、10、50、100
 
-* **`Order subtotal (buckets)`** 原始架構：由分析師建立，屬於您的 `[FREE SHIPPING ANALYSIS]` 票證
-* **`Order subtotal (buckets)`** 新架構：
-   * 如上所述，這項計算會以相對於您一般購物車大小的增量建立值區。 如果您有原生小計欄，例如 `base_subtotal`，可作為此新欄的基礎。 如果沒有，它可以是計算欄，其中不包含收入的送貨和折扣。
+* **`Order subtotal (buckets)`**&#x200B;原始架構：由分析人員建立，作為您`[FREE SHIPPING ANALYSIS]`票證的一部分
+* **`Order subtotal (buckets)`**&#x200B;新架構：
+   * 如上所述，這項計算會以相對於您一般購物車大小的增量建立值區。 如果您有原生小計資料行，例如`base_subtotal`，可以做為這個新資料行的基礎。 如果沒有，它可以是計算欄，其中不包含收入的送貨和折扣。
 
   >[!NOTE]
   >
-  >「貯體」大小取決於適合您作為使用者端的尺寸。 您可以先從 `average order value` 並建立小於或大於該數量的貯體。 檢視以下計算時，您會瞭解如何輕鬆複製部分查詢、編輯查詢及建立其他值區。 範例是以50為增量完成。
+  >「貯體」大小取決於適合您作為使用者端的尺寸。 您可以從`average order value`開始，建立一些小於或大於該數量的值區。 檢視以下計算時，您會瞭解如何輕鬆複製部分查詢、編輯查詢及建立其他值區。 範例是以50為增量完成。
 
-   * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`，或 `calculated column`， `Datatype`： `Integer`
+   * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`或`calculated column`，`Datatype`： `Integer`
    * [!UICONTROL Calculation]： `case when A >= 0 and A<=200 then 0 - 200`
-當 `A< 200` 和 `A <= 250` 則 `201 - 250`
-當 `A<251` 和 `A<= 300` 則 `251 - 300`
-當 `A<301` 和 `A<= 350` 則 `301 - 350`
-當 `A<351` 和 `A<=400` 則 `351 - 400`
-當 `A<401` 和 `A<=450` 則 `401 - 450`
-否則&#39;over 450&#39;結尾
+當`A< 200`和`A <= 250`然後`201 - 250`
+當`A<251`和`A<= 300`然後`251 - 300`
+當`A<301`和`A<= 350`然後`301 - 350`
+當`A<351`與`A<=400`然後`351 - 400`
+當`A<401`與`A<=450`然後`401 - 450`
+否則&#39;超過450&#39;
+結束
 
 
 ## 量度
@@ -56,75 +57,75 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->確定 [將所有新欄新增為量度的維度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 建立新報表之前。
+>在建立新報表之前，請務必[將所有新欄新增為量度](../data-warehouse-mgr/manage-data-dimensions-metrics.md)的維度。
 
 ## 報表
 
-* **具有出貨規則A的平均訂單值**
-   * [!UICONTROL Metric]: `Average order value`
+* **平均訂單值（送貨規則A**）
+   * [!UICONTROL Metric]： `Average order value`
 
-* 量度 `A`： `Average Order Value`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
+* 量度`A`： `Average Order Value`
+* [!UICONTROL Time period]： `Time period with shipping rule A`
 * 
   [!UICONTROL Interval]: `None`
 * 
   [!UICONTROL Chart Type]: `Scalar`
 
-* **具有出貨規則A的訂單小計時段數**
-   * [!UICONTROL Metric]: `Number of orders`
+* **根據小計貯體排列的訂單數（送貨規則為A**）
+   * [!UICONTROL Metric]： `Number of orders`
 
   >[!NOTE]
   >
-  >您可以顯示頂端來截斷尾端 `X` `sorted by` `Order subtotal` （貯體） `Show top/bottom`.
+  >您可以顯示`Show top/bottom`中的前`X` `sorted by` `Order subtotal` （貯體）以截斷尾端。
 
-* 量度 `A`： `Number of orders`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
+* 量度`A`： `Number of orders`
+* [!UICONTROL Time period]： `Time period with shipping rule A`
 * 
   [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Order subtotal (buckets)`
+* [!UICONTROL Group by]： `Order subtotal (buckets)`
 * 
   [!UICONTROL Chart Type]: `Column`
 
-* **含出貨規則A之小計的訂單百分比**
-   * [!UICONTROL Metric]: `Number of orders`
+* 送貨規則為A **之小計訂單的**&#x200B;百分比
+   * [!UICONTROL Metric]： `Number of orders`
 
-   * [!UICONTROL Metric]: `Number of orders`
+   * [!UICONTROL Metric]： `Number of orders`
    * 
      [！UICONTROL群組依據]: `Independent`
-   * [!UICONTROL Formula]: `(A / B)`
+   * [!UICONTROL Formula]： `(A / B)`
    * 
      [!UICONTROL Format]: `%`
 
-* 量度 `A`： `Number of orders by subtotal (hide)`
-* 量度 `B`： `Total number of orders (hide)`
-* [!UICONTROL Formula]: `% of orders`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
+* 量度`A`： `Number of orders by subtotal (hide)`
+* 量度`B`： `Total number of orders (hide)`
+* [!UICONTROL Formula]： `% of orders`
+* [!UICONTROL Time period]： `Time period with shipping rule A`
 * 
   [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Order subtotal (buckets)`
+* [!UICONTROL Group by]： `Order subtotal (buckets)`
 * 
   [!UICONTROL Chart Type]: `Line`
 
-* **小計超過出貨規則A的訂單百分比**
-   * [!UICONTROL Metric]: `Number of orders`
+* 小計超過送貨規則A **的訂單的**&#x200B;百分比
+   * [!UICONTROL Metric]： `Number of orders`
    * 
      [!UICONTROL Perspective]: `Cumulative`
 
-   * [!UICONTROL Metric]: `Number of orders`
+   * [!UICONTROL Metric]： `Number of orders`
    * 
      [！UICONTROL群組依據]: `Independent`
 
-   * [!UICONTROL Formula]: `1- (A / B)`
+   * [!UICONTROL Formula]： `1- (A / B)`
    * 
      [!UICONTROL Format]: `%`
 
-* 量度 `A`： `Number of orders by subtotal`
-* 量度 `B`： `Total number of orders (hide)`
-* [!UICONTROL Formula]: `% of orders`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
+* 量度`A`： `Number of orders by subtotal`
+* 量度`B`： `Total number of orders (hide)`
+* [!UICONTROL Formula]： `% of orders`
+* [!UICONTROL Time period]： `Time period with shipping rule A`
 * 
   [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Order subtotal (buckets)`
+* [!UICONTROL Group by]： `Order subtotal (buckets)`
 * 
   [!UICONTROL Chart Type]: `Line`
 

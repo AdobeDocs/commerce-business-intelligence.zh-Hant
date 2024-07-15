@@ -13,18 +13,18 @@ ht-degree: 0%
 
 # 篩選器選項
 
-本主題探討幾項特殊優惠 `operators` 使用位置 `filters` 當 [建立報告](../../tutorials/using-visual-report-builder.md){： target=&quot;_blank&quot;}或 [建立量度](../../data-user/reports/ess-manage-data-metrics.md){： target=&quot;_blank&quot;}.
+本主題探討[建立報告](../../tutorials/using-visual-report-builder.md){： target=&quot;_blank&quot;}或[建立量度](../../data-user/reports/ess-manage-data-metrics.md){： target=&quot;_blank&quot;}時`filters`使用的一些特殊`operators`。
 
 ## `Filter Operators`
 
-* `LIKE` 模式比對。 這必須搭配萬用字元% （適用於包含可變字母數的萬用字元）或_ （適用於萬用字元單一字母）。  例如，限制 `LIKE \_ake%` 會傳回true `Jake Stein`， `Jake Smith`，或 `Fake Smith`.  針對，系統會傳回false `Drake Smith`.
+* `LIKE`模式比對。 這必須搭配萬用字元% （適用於包含可變字母數的萬用字元）或_ （適用於萬用字元單一字母）。  例如，限制`LIKE \_ake%`會針對`Jake Stein`、`Jake Smith`或`Fake Smith`傳回true。  會針對`Drake Smith`傳回false。
 
-* `NOT LIKE` 類似於上述的模式比對，但檢查哪些模式不相符。
+* `NOT LIKE`類似於上述的模式比對，但檢查哪些模式不相符。
 
-* `IS` 檢查欄是否為 `NULL`，或空白。
+* `IS`檢查資料行是`NULL`或空白。
 
-* `IS NOT` 與 `IS` 運運算元，但檢查非NULL欄。
+* `IS NOT`類似於上面的`IS`運運算元，但檢查非NULL資料行。
 
-* `IN` 檢查以逗號分隔的清單中是否有值的存在。 (例如，「顏色」 `IN` 紅色，橘色」等同於顏色 `equal to` 紅色OR顏色 `equal to` 橙色)。
+* `IN`檢查逗號分隔清單中是否有值。 （例如，「Color `IN` red，orange」等於`equal to` red或`equal to` orange的顏色）。
 
-* `NOT IN` 類似 `IN` 上方，但檢查某值的缺失。
+* `NOT IN`與上述`IN`類似，但檢查某值是否缺席。

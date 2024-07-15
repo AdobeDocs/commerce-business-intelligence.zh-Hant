@@ -12,4 +12,4 @@ ht-degree: 25%
 
 # 教學課程
 
-按照這些自我引導式教學課程，瞭解的強大功能 [!DNL Adobe Commerce Intelligence].
+按照這些自我引導式教學課程來瞭解[!DNL Adobe Commerce Intelligence]的強大功能。

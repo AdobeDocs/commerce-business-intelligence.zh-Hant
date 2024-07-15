@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # 合併您的表格
 
-如果您經營多個店面或在多個市場，可能會有個別儲存的類似資料庫。 在 [!DNL Adobe Commerce Intelligence]，將不同資料庫的類似表格輕鬆整合在一起。
+如果您經營多個店面或在多個市場，可能會有個別儲存的類似資料庫。 在[!DNL Adobe Commerce Intelligence]中，將來自不同資料庫的類似資料表合併在一起很容易。
 
-例如，您可能會 `orders` 表格 `Market A`和類似專案 `orders` 表格 `Market B`. [!DNL Commerce Intelligence] 可以合併兩個表格，並允許您檢視來自兩者的彙總訂單資料 `Market A` 和 `B`，以及依特定市場進行細分。
+例如，您可能有適用於`Market A`的`orders`資料表以及適用於`Market B`的類似`orders`資料表。 [!DNL Commerce Intelligence]可以合併兩個資料表，並可讓您檢視來自`Market A`和`B`的彙總訂單資料，以及依特定市場進行分段。
 
-若要讓資料表合併生效，輸入資料表必須 **類似結構**. 換言之，所有輸入表格都必須包含統一表格中所需的資料欄。
+若要讓資料表的合併生效，輸入資料表必須是&#x200B;**類似結構**。 換言之，所有輸入表格都必須包含統一表格中所需的資料欄。
 
 本主題討論整合表格的一些最常見的使用案例，以及建立自己的表格所需的後續步驟。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 如果您在不同品牌和網站下銷售產品，每個品牌或網站的表格結構可能會類似。
 
-例如，您可能會 `orders` 網站的表格 `A` 和一個單獨的，但相似的， `orders` 網站的表格 `B`. 在此情況下，合併 `orders` 來自網站的表格 `A` 和 `B`. 這可讓您檢視網站的合併收入和訂單數 `A` 和 `B`，此外還能夠依這兩個網站劃分量度。
+例如，您可能有網站`A`的`orders`資料表，以及網站`B`的個別但類似的`orders`資料表。 在此情況下，從網站`A`與`B`合併`orders`資料表可能很有用。 這可讓您檢視網站`A`和`B`的合併收入與訂單數，以及這兩個網站劃分量度的能力。
 
 ### 整合舊資料
 
@@ -45,8 +45,8 @@ ht-degree: 0%
 
 ## 建立、檢視或更新統一表格
 
-如果您有興趣將整合表格新增至您的Data Warehouse，請聯絡 [!DNL Commerce Intelligence] [支援](../guide-overview.md#Submitting-a-Support-Ticket).
+如果您有興趣將整合資料表新增至您的Data Warehouse，請連絡[!DNL Commerce Intelligence] [支援](../guide-overview.md#Submitting-a-Support-Ticket)。
 
 >[!NOTE]
 >
->由於無法檢視整合表格，因此 `Data Warehouse Manager`，檢視和更新這些表格只能由以下人員完成 [!DNL Commerce Intelligence] 支援。
+>由於無法在`Data Warehouse Manager`中檢視整合的資料表，因此檢視和更新這些資料表只能由[!DNL Commerce Intelligence]支援完成。

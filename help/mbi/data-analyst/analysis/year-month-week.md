@@ -15,27 +15,27 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此主題包含使用原始架構和新架構的使用者端指示。 您位於 [新架構](../../administrator/account-management/new-architecture.md) 如果您擁有 [!DNL _Data Warehouse檢視_] 部分在選取後可用 [!DNL Manage Data] 從主工具列。
+>此主題包含使用原始架構和新架構的使用者端指示。 如果您從主工具列選取[!DNL Manage Data]後有&#x200B;[!DNL _Data Warehouse檢視_]&#x200B;區段可用，則您位於[新架構](../../administrator/account-management/new-architecture.md)。
 
 Report Builder可讓您輕鬆檢視一段時間的趨勢，以及變更您想比較之時段的觀點。 本主題將示範如何設定控制面板，以更深入的方式讓您建立每週、每月、每年和每月的報表。
 
 ![](../../assets/Wow__mom__yoy.png)
 
-開始之前，您應該檢視瀏覽透檢視的更多詳細資訊 [此處](../../tutorials/using-visual-report-builder.md) 和獨立時間選項 [此處](../../tutorials/time-options-visual-rpt-bldr.md).
+開始之前，您應該檢閱更詳細的探索觀點[這裡](../../tutorials/using-visual-report-builder.md)和獨立的時間選項[這裡](../../tutorials/time-options-visual-rpt-bldr.md)。
 
-此分析包含 [進階計算欄](../data-warehouse-mgr/adv-calc-columns.md).
+此分析包含[進階計算資料行](../data-warehouse-mgr/adv-calc-columns.md)。
 
 ## 計算欄
 
-* **`Sales_flat_order`** 表格
-* **原始架構：** 以下欄是由分析人員建立，作為您的一部分 `[YoY WoW MoM ANALYSIS]` 票證
+* **`Sales_flat_order`**&#x200B;資料表
+* **原始架構：**&#x200B;以下資料行是由分析人員建立為您`[YoY WoW MoM ANALYSIS]`票證的一部分
 * `created_at (month-day)`
 * `created_at (month)`
 * `created_at (day of the month)`
 * `created_at (day of the week)`
 * `created_at (hour of the day)`
 
-* **新架構：** 下列SQL包含如何建立此計算的範例像片
+* **新架構：** SQL如下所列，其中包含如何建立此計算的範例像片
    * `created_at (month-day)` [!UICONTROL Calculation]： **to_char(A， &#39;mm-dd&#39;)**
    * `created_at (month)` [!UICONTROL Calculation]： **to_char(A， &#39;mm-month&#39;)**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]： **to_char(A， &#39;dd&#39;)**
@@ -49,75 +49,75 @@ Report Builder可讓您輕鬆檢視一段時間的趨勢，以及變更您想比
 
 >[!NOTE]
 >
->確定 [將所有新欄新增為量度的維度](../data-warehouse-mgr/manage-data-dimensions-metrics.md) 建立新報表之前。
+>在建立新報表之前，請務必[將所有新欄新增為量度](../data-warehouse-mgr/manage-data-dimensions-metrics.md)的維度。
 
 ## 報表
 
-* **YoY圖**
-   * [!UICONTROL Metric]: `Number of orders`
+* **YoY圖表**
+   * [!UICONTROL Metric]： `Number of orders`
 
-   * [!UICONTROL Metric]: `Number of orders`
-   * [!UICONTROL Time options]: `Time range (Custom)`: `2 years ago to 1 year ago`
+   * [!UICONTROL Metric]： `Number of orders`
+   * [!UICONTROL Time options]： `Time range (Custom)`： `2 years ago to 1 year ago`
 
-   * [!UICONTROL Show top/bottom]：前100%排序依據 **`created_at (month-day)`***
+   * [!UICONTROL Show top/bottom]：前100%依&#x200B;**`created_at (month-day)`**&#x200B;排序*
 
-* 量度 `A`： `This year`
-* 量度 `B`： `Last year`
-* [!UICONTROL Time period]: `1 year ago to 0 years ago`
+* 量度`A`： `This year`
+* 量度`B`： `Last year`
+* [!UICONTROL Time period]： `1 year ago to 0 years ago`
 * 
   [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `created_at (month-day)`
+* [!UICONTROL Group by]： `created_at (month-day)`
 * 
   [!UICONTROL Chart Type]: `Line`
 
 * **MoM圖表**
-   * [!UICONTROL Metric]: `Number of orders`
+   * [!UICONTROL Metric]： `Number of orders`
 
-   * [!UICONTROL Metric]: `Number of orders`
+   * [!UICONTROL Metric]： `Number of orders`
    * 時間選項： `Time range (Custom)`： `2 months ago to 1 month ago`
 
-   * 顯示前/後：前100%排序依據 **`created_at (day of month)`***
+   * 顯示前/後：前100%依&#x200B;**`created_at (day of month)`**&#x200B;排序*
 
-* 量度 `A`：本月*
-* 量度 `B`：上個月*
+* 量度`A`：本月*
+* 量度`B`：上個月*
 * [!UICONTROL Time period]：一個月前至0個月前
 * 
   [!UICONTROL Interval]: None
-* [!UICONTROL Group by]: `created_at (day of month)`
+* [!UICONTROL Group by]： `created_at (day of month)`
 * 
   [!UICONTROL Chart Type]: Line
 
 * **WoW圖表**
-   * [!UICONTROL Metric]: `Number of orders`
+   * [!UICONTROL Metric]： `Number of orders`
 
-   * [!UICONTROL Metric]: `Number of orders`
-   * [!UICONTROL Time options]: `Time range (Custom)`: `2 weeks ago to 1 week ago`
+   * [!UICONTROL Metric]： `Number of orders`
+   * [!UICONTROL Time options]： `Time range (Custom)`： `2 weeks ago to 1 week ago`
 
-   * [!UICONTROL Show top/bottom]：前100%排序依據 `created_at (day of week)`
+   * [!UICONTROL Show top/bottom]：前100%依`created_at (day of week)`排序
 
-* 量度 `A`： `This week`
-* 量度 `B`： `Last week`
-* [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
+* 量度`A`： `This week`
+* 量度`B`： `Last week`
+* [!UICONTROL Time period]： `1 week ago to 0 weeks ago`
 * 
   [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `created_at (day of week)`
+* [!UICONTROL Group by]： `created_at (day of week)`
 * 
   [!UICONTROL Chart Type]: `Line`
 
 * **DoD圖表**
-   * [!UICONTROL Metric]: `Number of orders`
+   * [!UICONTROL Metric]： `Number of orders`
 
-   * [!UICONTROL Metric]: `Number of orders`
-   * [!UICONTROL Time options]: `Time range (Custom)`: `2 days ago to 1 day ago`
+   * [!UICONTROL Metric]： `Number of orders`
+   * [!UICONTROL Time options]： `Time range (Custom)`： `2 days ago to 1 day ago`
 
-   * [!UICONTROL Show top/bottom]：前100%排序依據 `created_at (hour of day)`
+   * [!UICONTROL Show top/bottom]：前100%依`created_at (hour of day)`排序
 
-* 量度 `A`： `Today`
+* 量度`A`： `Today`
 * 量度B： `Yesterday`
-* [!UICONTROL Time period]: `1 day ago to 0 days ago`
+* [!UICONTROL Time period]： `1 day ago to 0 days ago`
 * 
   [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `created_at (hour of day)`
+* [!UICONTROL Group by]： `created_at (hour of day)`
 * 
   [!UICONTROL Chart Type]: `Line`
 

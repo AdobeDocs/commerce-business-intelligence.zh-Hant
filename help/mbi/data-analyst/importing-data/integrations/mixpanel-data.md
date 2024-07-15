@@ -1,27 +1,27 @@
 ---
 title: 預期Mixpanel資料
-description: 探索可從Mixpanel匯入您的的主要資料表 [!DNL Commerce Intelligence] 帳戶。
+description: 探索可從Mixpanel匯入至 [!DNL Commerce Intelligence] 帳戶的主要資料表。
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---
 
-# 預期 [!DNL Mixpanel] 資料
+# 必須有[!DNL Mixpanel]個資料
 
-晚於 [您已連線 [!DNL Mixpanel] 帳戶](../integrations/mixpanel.md)，您可以使用 [Data Warehouse管理員](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) 以輕鬆追蹤相關資料欄位以供分析。
+在連線[您的 [!DNL Mixpanel] 帳戶](../integrations/mixpanel.md)之後，您可以使用[Data Warehouse管理員](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)輕鬆追蹤相關的資料欄位以進行分析。
 
-本主題會探索您可從其中匯入的主要資料表 [!DNL Mixpanel] 至您的 [!DNL Commerce Intelligence] 帳戶。 連線之後，將會在您的Data Warehouse中建立下清單格 [!DNL Mixpanel]. 若要檢視所有可用於追蹤的欄位，請按一下表格名稱欄中的連結。
+本主題探索可從[!DNL Mixpanel]匯入至[!DNL Commerce Intelligence]帳戶的主要資料表。 連線[!DNL Mixpanel]後，將在您的Data Warehouse中建立下列資料表。 若要檢視所有可用於追蹤的欄位，請按一下表格名稱欄中的連結。
 
 >[!NOTE]
 >
->由於 [!DNL Mixpanel] API、歷史資料 — 從連線日期起七(7)天以前的資料 [!DNL Commerce Intelligence]  — 未復寫。
+>由於[!DNL Mixpanel] API的限制，不會復寫歷史資料(從連線到[!DNL Commerce Intelligence]的日期起七(7)天以前的資料)。
 
-| **表格名稱** | **說明** |
+| **資料表名稱** | **描述** |
 |-----|-----|
 | [`mixpanel\_export`](https://developer.mixpanel.com/reference/raw-data-export-api#datafeed) | 此表格包含原始事件資料，包括事件、事件日期和平台貯體。 |
 | [`mixpanel\_funnels`](https://developer.mixpanel.com/reference/raw-data-export-api#funnels-default) | 此表格包含有關漏斗的資料，包括漏斗ID、漏斗長度（使用者必須完成漏斗的天數）以及漏斗的開始和結束日期。 |
@@ -32,4 +32,4 @@ ht-degree: 0%
 ## 相關檔案
 
 * [正在連線 [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

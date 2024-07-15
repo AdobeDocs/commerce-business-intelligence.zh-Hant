@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 建議的量度
 
-分析假日季節績效時，請考慮分析([或建置](../../data-user/reports/ess-manage-data-metrics.md))這些量度：
+分析假日季節績效時，請考慮分析（[或建置](../../data-user/reports/ess-manage-data-metrics.md)）這些量度：
 
 ### 新客戶數、訂單數、收入
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 現在您知道要分析的量度了，您可以檢視2014年和2015年11月和12月假日季節月份的一些收入資料範例。
 
-![2014及2015年每日假日季節收入](../../assets/Analyzing_holiday_season.png)
+![2014和2015年每日假日季節收入](../../assets/Analyzing_holiday_season.png)
 
 在此範例中，2014年和2015年的收入有兩個大幅上升：這些增加同時出現「黑色星期五」和「網路星期一」。 請注意2014年和2015年的尖峰並非在同一天。 這是因為2014年11月27日的黑色星期五和2015年11月28日的黑色星期五是同一天。 同樣地，「網路星期一」在2014年是11月30日，在2015年是12月1日。
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 另一個選項是在節日季節期間依行銷活動分析您的ROI。 您對於在節日季節執行的特定行銷活動的ROI是否較高？ 在這些季節中，您應該為具有高ROI的行銷活動增加支出嗎？
 
-此外，您可以分析折扣訂單數與完整價格訂單數。 [大多數客戶是否等待銷售至採購單](../analysis/coupon-usage.md) 您在節日期間，或是購買全價商品？
+此外，您可以分析折扣訂單數與完整價格訂單數。 [大多數客戶在假期期間是否等待銷售以購買訂單](../analysis/coupon-usage.md)，或是否購買全價商品？
 
 ### 相關
 

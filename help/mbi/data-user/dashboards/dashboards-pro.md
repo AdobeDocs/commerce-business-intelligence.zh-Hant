@@ -6,22 +6,22 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1950'
 ht-degree: 0%
 
 ---
 
 # 現成可用的儀表板
 
-[!DNL Adobe Commerce Intelligence] 包含現成可用的儀表板，可提供對業務的深入分析。 使用控制面板，您可以檢查基本度量的健康狀況，例如使用者期限收入、重複購買次數、指定時段內購買的熱門產品等。 這些預先設定的儀表板是用來協助您做出明智的業務決策。
+[!DNL Adobe Commerce Intelligence]包含現成可用的儀表板，可提供對業務的深入分析。 使用控制面板，您可以檢查基本度量的健康狀況，例如使用者期限收入、重複購買次數、指定時段內購買的熱門產品等。 這些預先設定的儀表板是用來協助您做出明智的業務決策。
 
 >[!NOTE]
 >
->這些儀表板的存取權取決於您的帳戶型別和存取層級。 如果您沒有看到這些儀表板，請聯絡 [支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>這些儀表板的存取權取決於您的帳戶型別和存取層級。 如果您沒有看到這些儀表板，請連絡[支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ## 報告可用性
 
-對於 `Customers` 和 `Executive Summary` 儀表板，部分報表的提供僅取決於您商店的結帳設定。 具體來說，如果您的商店允許訪客結帳或不允許訪客結帳。
+對於`Customers`和`Executive Summary`儀表板，部分報告僅根據您商店的結帳設定提供。 具體來說，如果您的商店允許訪客結帳或不允許訪客結帳。
 
 ## 客戶（允許訪客結帳）
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 | `Time Between Orders` | 客戶在訂單之間花費的平均和中位時間，依訂單編號細分（即訂單一到二、二到三等之間的時間）。 |
 | `Number of Customers - Lifetime Orders` | 對於客戶期限內的指定訂單數，下過該數量訂單的客戶人數以及該數字代表的整個客戶基礎百分比。 |
 | `One-Time Customers who Bought 3-6 Months Ago` | 三到六個月前首次購買且僅購買的客戶。 |
-| `Avg LTV by First Order` | 比較各同類群組的累計平均客戶期限收入。 同類群組是根據客戶首次購買的月份來定義。 例如， `Jan 2020` 同類群組針對2020年1月首次購買的客戶顯示累積平均LTV。 |
+| `Avg LTV by First Order` | 比較各同類群組的累計平均客戶期限收入。 同類群組是根據客戶首次購買的月份來定義。 例如，`Jan 2020`同類群組針對在2020年1月首次購買的客戶顯示累積平均LTV。 |
 | `Customer's First 30 Day vs Lifetime Revenue` | 比較客戶首次購買後30天內的平均收入與其整個期限內的收入。 每個泡泡對應一個航運區域，每個泡泡的大小代表從該區域取得的客戶數。 |
 
 ## 客戶（不允許訪客結帳）
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ## 產品
 
-「產品」儀表板會顯示一般產品績效，包括訂購的產品、其商品總值(GMV)，以及購買與退款的頂級產品。 這可協助您平衡購買與回報，並判斷產品成功與受歡迎程度。 您的商店必須 [設定為追蹤退款](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) 用於要填入的圖表。
+「產品」儀表板會顯示一般產品績效，包括訂購的產品、其商品總值(GMV)，以及購買與退款的頂級產品。 這可協助您平衡購買與回報，並判斷產品成功與受歡迎程度。 您的商店必須設定[以追蹤退款](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html)，才能填入這些圖表。
 
 >[!NOTE]
 >

@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 建議的量度
 
-分析重複概率衰減和流失時，請考慮使用([或建置](../../data-user/reports/ess-manage-data-metrics.md))這些量度：
+分析重複機率衰減和流失時，請考慮使用（[或建立](../../data-user/reports/ess-manage-data-metrics.md)）這些量度：
 
 ### 初始重複順序機率
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 檢視典型電子商務業務的重複概率衰減。
 
-![初始重複訂購機率重複訂購機率自訂購以來的指定月份。](../../assets/Order_probability_reports.png)
+![自訂購以來指定月份的初始重複訂購機率重複訂購機率。](../../assets/Order_probability_reports.png)
 
 ### 初始重複順序機率
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 如果您提供多個產品，您可能會想知道購買特定產品的客戶與其他客戶在一段時間內的行為有何不同。 想進一步瞭解嗎？ 請參閱本教學課程，探索客戶同類群組根據所購買特定產品而定的終身購買行為。
 
-此最佳實務由提供 [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS)。 [聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 以取得更多資訊。
+此最佳實務由[!DNL Adobe Commerce Intelligence]資料分析服務(DAS)提供。 [連絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以取得更多資訊。
 
 ### 相關
 

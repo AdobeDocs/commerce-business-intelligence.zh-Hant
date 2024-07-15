@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 5%
+source-wordcount: '77'
+ht-degree: 2%
 
 ---
 
-# [!DNL Commerce Intelligence Essentials] 與 [!DNL Commerce Intelligence Pro]
+# [!DNL Commerce Intelligence Essentials]與[!DNL Commerce Intelligence Pro]
 
-下表說明舊版所包含的元素 `Essentials` 帳戶與目前的Commerce Intelligence帳戶。 Adobe不再提供 `Essentials`.
+下表說明舊版`Essentials`帳戶與目前Commerce Intelligence帳戶所包含的元素。 Adobe不再提供`Essentials`。
 
 |   | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|
@@ -38,7 +38,7 @@ ht-degree: 5%
 >
 >資料表的數量取決於訪客簽出。
 
-**包含的表格**
+**包含的資料表**
 
 * `sales\_order`
 * `sales\_order\_item`

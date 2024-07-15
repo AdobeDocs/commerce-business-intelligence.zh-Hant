@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # 設定預設儀表板
 
-預設儀表板是您在開啟時看到的第一個儀表板 [!DNL Commerce Intelligence].
+預設儀表板是您在開啟[!DNL Commerce Intelligence]時看到的第一個儀表板。
 
-1. 在控制面板中，按一下 **[!UICONTROL Dashboard Options]** 位於熒幕頂端。
+1. 在儀表板中，按一下位於熒幕上方的&#x200B;**[!UICONTROL Dashboard Options]**。
 
-1. 按一下 **[!UICONTROL Make Default]** 在下拉式清單中。
+1. 在下拉式清單中按一下&#x200B;**[!UICONTROL Make Default]**。
 
-1. 當確認提示顯示時，按一下 **[!UICONTROL Yes]** 以變更預設儀表板。
+1. 顯示確認提示時，按一下&#x200B;**[!UICONTROL Yes]**&#x200B;以變更預設儀表板。
 
 現在這是您的新預設儀表板。
 

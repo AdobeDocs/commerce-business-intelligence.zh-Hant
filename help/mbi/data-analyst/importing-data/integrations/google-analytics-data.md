@@ -6,32 +6,32 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
-# 預期 [!DNL Google Analytics] 資料
+# 必須有[!DNL Google Analytics]個資料
 
-在您連線至 [!DNL Google Analytics] 整合，您可與 [!DNL Google Analytics] 量度 *立即在`Visual Report Builder`*. 當您輸入 `Visual Report Builder`，如果您按一下 **[!UICONTROL Add a Metric]**，您的一系列量度 [!DNL Google Analytics] 設定檔會顯示在下拉式清單中，緊接在您Data Warehouse的量度下方。
+連線[!DNL Google Analytics]整合後，您可以在&#x200B;`Visual Report Builder`*中立即與您的[!DNL Google Analytics]量度*&#x200B;互動。 當您輸入`Visual Report Builder`時，如果按一下&#x200B;**[!UICONTROL Add a Metric]**，您的[!DNL Google Analytics]設定檔中的一系列量度會出現在您Data Warehouse中量度正下方的下拉式清單中。
 
-此 [!DNL Google Analytics] 整合為 *即時*  — 這表示 `Report Builder` 要求資料來源 [!DNL Google Analytics] *立即* 將量度新增至報表時。 這也表示您可以存取的量度與其中的量度完全相同 [!DNL Google Analytics]，則這些值不會 *倉儲* 在您的 [!DNL Commerce Intelligence] 帳戶 — 僅以視覺化方式顯示在您的報表中。
+[!DNL Google Analytics]整合為&#x200B;*即時* — 這表示當您新增量度至報告時，`Report Builder`會立即向[!DNL Google Analytics] *要求資料*。 這也表示您可以存取的量度定義方式與[!DNL Google Analytics]中的完全相同，且這些值並非在您的[!DNL Commerce Intelligence]帳戶中為&#x200B;*倉儲* — 僅以視覺化方式顯示在您的報表中。
 
 +++支援的量度和Dimension(Google Analytics3或Universal Analytics)
 
 >[!NOTE]
 >
->在2023年7月1日，標準Universal Analytics ([!DNL Google Analytics] 3)屬性將不再處理資料。 在2023年7月1日之後，您將能夠檢視您的Universal Analytics報表。 不過，新資料只會流入 [!DNL Google Analytics] 4個屬性。
+>自2023年7月1日起，標準Universal Analytics ([!DNL Google Analytics] 3)屬性將不再處理資料。 在2023年7月1日之後，您將能夠檢視您的Universal Analytics報表。 不過，新資料只會流入[!DNL Google Analytics] 4個屬性。
 
-[!DNL Google Analytics] 中的整合 [!DNL Commerce Intelligence] 使用 [!DNL Google Analytics] [核心報表API](https://developers.google.com/analytics/devguides/reporting/core/v3/)，並支援下列量度和維度。
+[!DNL Commerce Intelligence]中的[!DNL Google Analytics]整合使用[!DNL Google Analytics] [核心報表API](https://developers.google.com/analytics/devguides/reporting/core/v3/)，並支援下列量度和維度。
 
 >[!NOTE]
 >
->為避免產生非預期或無意義的結果，請確認您使用的任何維度都與一或多個您在中使用的量度相容 `Report Builder`. 您可以檢查 [此處](https://ga-dev-tools.google/dimensions-metrics-explorer/).
+>若要避免非預期或無意義的結果，請確認您使用的任何維度與`Report Builder`中使用的一或多個量度相容。 您可以在[這裡](https://ga-dev-tools.google/dimensions-metrics-explorer/)檢視。
 
 ## 支援的量度
 
-| [!DNL Commerce Intelligence] 顯示名稱 | [!DNL Google Analytics] 名稱/公式 |
+| [!DNL Commerce Intelligence]顯示名稱 | [!DNL Google Analytics]名稱/公式 |
 | --- | --- |
 | `Page Views` | `ga:pageviews` |
 | `Total Time Spent On Page` | `ga:timeOnPage` |
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 ## 支援的Dimension
 
-| [!DNL Commerce Intelligence] 顯示名稱 | [!DNL Google Analytics] 名稱/公式 | 可分組？ |
+| [!DNL Commerce Intelligence]顯示名稱 | [!DNL Google Analytics]名稱/公式 | 可分組？ |
 | --- | --- | --- |
 | `Ad Content` | `ga:adContent` | `Yes` |
 | `Ad Group` | `ga:adGroup` | `Yes` |
@@ -156,12 +156,12 @@ ht-degree: 0%
 
 +++支援的量度和Dimension(Google Analytics4)
 
-[!DNL Google Analytics] 中的整合 [!DNL Commerce Intelligence] 使用 [!DNL Google Analytics] [資料API v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
+[!DNL Commerce Intelligence]中的[!DNL Google Analytics]整合使用[!DNL Google Analytics] [資料API v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1)。
 
 >[!NOTE]
 >
-> Commerce Intelligence不支援下列維度： `cohort`， `cohortNthDay`， `cohortNthMonth`、和 `cohortNthWeek`.
+> Commerce Intelligence不支援下列維度： `cohort`、`cohortNthDay`、`cohortNthMonth`和`cohortNthWeek`。
 >
->為避免產生非預期或無意義的結果，請確認您使用的任何維度都與一或多個您在中使用的量度相容 `Visual Report Builder`. 您可以檢查 [GA4Dimension與量度總管](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/).
+>若要避免非預期或無意義的結果，請確認您使用的任何維度與`Visual Report Builder`中使用的一或多個量度相容。 您可以檢查[GA4Dimension與度量總管](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/)。
 
 +++

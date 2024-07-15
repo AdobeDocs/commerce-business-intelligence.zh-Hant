@@ -31,11 +31,11 @@ ht-degree: 0%
 
    ![建立儀表板群組](../../assets/create-dashboard-groups-new-dashboard.png)
 
-1. 變更現有儀表板的群組時，從 `Manage Data > Dashboards` 頁面：
+1. 變更現有儀表板的群組時，從`Manage Data > Dashboards`頁面：
 
    1. 按一下您要建立群組的控制面板。
 
-   1. 在 `Dashboard Group (optional)`，就會顯示目前的儀表板群組。
+   1. 在`Dashboard Group (optional)`下方，會顯示目前的儀表板群組。
 
    1. 若要建立群組，請輸入新群組的名稱，然後按一下方塊外部。
 
@@ -43,11 +43,11 @@ ht-degree: 0%
 
 ## 將現有儀表板新增到現有群組
 
-1. 在 `Manage Data > Dashboards` 頁面，選擇要變更群組的儀表板。
+1. 在`Manage Data > Dashboards`頁面上，選擇要變更群組的儀表板。
 
-1. 底下的文字 `Dashboard Group (optional)` 顯示儀表板目前的儀表板群組。
+1. `Dashboard Group (optional)`下的文字會顯示儀表板目前的儀表板群組。
 
-1. 若要變更儀表板的群組，請從清單中選擇另一個群組 — 在此案例中為 `PS`， `Campaigns`.
+1. 若要變更儀表板的群組，請從清單中選擇另一個群組 — 在此案例中為`PS`、`Campaigns`。
 
    ![變更群組儀表板](../../assets/add-existing-dashboard-existing-group.png)
 

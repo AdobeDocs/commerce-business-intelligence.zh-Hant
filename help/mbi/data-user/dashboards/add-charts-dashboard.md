@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # 新增圖表至儀表板
 
-您可使用以下專案將現有圖表新增至控制面板： [!UICONTROL Add Report] 函式，位於畫面的右上角區域。 相同圖表可新增至多個儀表板，這表示如果編輯了圖表，所有含有此圖表的儀表板都會反映這項變更。
+現有圖表可使用位於畫面右上角區域的[!UICONTROL Add Report]功能新增到儀表板。 相同圖表可新增至多個儀表板，這表示如果編輯了圖表，所有含有此圖表的儀表板都會反映這項變更。
 
 >[!NOTE]
 >
->按一下 **[!UICONTROL Add Report]** 與按一下不同 **[!UICONTROL Save As]** 在圖表編輯器中。 `Add Report` 只是將圖表新增到儀表板，而 `Save As` 建立現有圖表的版本。
+>按一下&#x200B;**[!UICONTROL Add Report]**&#x200B;與按一下圖表編輯器中的&#x200B;**[!UICONTROL Save As]**&#x200B;不同。 `Add Report`僅將圖表新增到儀表板，而`Save As`會建立現有圖表的版本。
 
 ## 新增圖表
 
-1. 按一下 **[!UICONTROL Add Report]**. 此時會顯示現有圖表的清單。
+1. 按一下&#x200B;**[!UICONTROL Add Report]**。 此時會顯示現有圖表的清單。
 
 1. 搜尋或按一下您要新增的圖表名稱。
 

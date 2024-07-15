@@ -6,34 +6,34 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 1%
+source-wordcount: '267'
+ht-degree: 0%
 
 ---
 
 # enterprise_rma表格
 
-中的每一列 `enterprise_rma` 表格(通常稱為 `magento_rma` Adobe Commerce （但可自訂名稱）包含特定回訪請求的相關資訊。
+`enterprise_rma`表格中的每一列(在Adobe Commerce 2.x中通常稱為`magento_rma`，但可自訂名稱)都包含特定回訪請求的資訊。
 
 >[!NOTE]
 >
->唯有當您是Adobe Commerce帳戶成員時，此表格才會隨附於標準配備 `Enterprise Edition` 或 `Enterprise Cloud Edition` 客戶。
+>唯有當您是`Enterprise Edition`或`Enterprise Cloud Edition`客戶時，此表格才會與您的Adobe Commerce帳戶搭配使用。
 
 ## 通用原生欄
 
-| **欄名稱** | **說明** |
+| **資料行名稱** | **描述** |
 |---|---|
-| `entity\_id` | 表格的唯一識別碼。 每個 `entity\_id` 代表傳回要求。 |
+| `entity\_id` | 表格的唯一識別碼。 每個`entity\_id`代表一個傳回要求。 |
 | `date\_requested` | 要求傳回的日期。 |
 | `status` | 傳回的狀態。 值包括「received」、「pending」、「authorized」等。 |
-| `order\_id` | 與關聯的外部索引鍵 `sales\_flat\_order` 表格。 |
-| `customer\_id` | 與關聯的外部索引鍵 `customer\_entity` 表格。 |
+| `order\_id` | 與`sales\_flat\_order`資料表相關聯的外部索引鍵。 |
+| `customer\_id` | 與`customer\_entity`資料表相關聯的外部索引鍵。 |
 
 {style="table-layout:auto"}
 
 ## 通用計算欄
 
-| **欄名稱** | **說明** |
+| **資料行名稱** | **描述** |
 |---|---|
 | `Order's created\_at` | 這是原始訂單的日期。 這可用來取得訂單與退貨要求之間的時間。 |
 | `Customer's order number` | 這是與原始訂單相關聯的客戶訂單編號。 |
@@ -44,12 +44,12 @@ ht-degree: 1%
 
 ## 通用量度
 
-| **量度名稱** | **說明** | **建構** |
+| **量度名稱** | **描述** | **建構** |
 |---|---|---|
-| `Number of returns` | 要求的傳回次數。 | `Operation` 欄： `entity id`<br>`Operation`： `Count`<br>`Timestamp` 欄： `date requested` |
-| `Total returned amount` | 傳回的總金額。 | `Operation `欄： `Return's total value`<br>`Operation`：總和<br>`Timestamp` 欄：要求的日期 |
-| `Average returned amount` | 傳回的平均金額。 | `Operation`` Column: Return's total value`<br>`Operation`： `Average`<br>`Timestamp` 欄： `date requested` |
-| `Average time to return` | 從訂單到退貨的平均時間。 | `Operation` 欄：訂單建立日期與傳回請求日期之間的秒數<br>`Operation`： `Average`<br>`Timestamp` 欄： `date requested` |
+| `Number of returns` | 要求的傳回次數。 | `Operation`欄： `entity id`<br>`Operation`： `Count`<br>`Timestamp`欄： `date requested` |
+| `Total returned amount` | 傳回的總金額。 | `Operation `資料行： `Return's total value`<br>`Operation`： Sum<br>`Timestamp`資料行：要求的日期 |
+| `Average returned amount` | 傳回的平均金額。 | `Operation`` Column: Return's total value`<br>`Operation`： `Average`<br>`Timestamp`欄： `date requested` |
+| `Average time to return` | 從訂單到退貨的平均時間。 | `Operation`欄：訂單建立日期與傳回請求日期之間的秒數<br>`Operation`： `Average`<br>`Timestamp`欄： `date requested` |
 
 {style="table-layout:auto"}
 
@@ -57,12 +57,12 @@ ht-degree: 1%
 
 `sale_flat_order`
 
-* 建立聯結欄以區段並依據上的訂單層級屬性進行篩選 `enterprise_rma` 表格透過下列聯結：
-   * Commerce 1.x： `enterprise_rma.order_id` （許多） => `sales_flat_order.entity_id` （一）
-   * Commerce 2.x： `magento_rma.order_id` （許多） => `sales_order.entity_id` （一）
+* 建立聯結資料行，以透過下列聯結依據`enterprise_rma`資料表的訂單層級屬性進行區段和篩選：
+   * Commerce 1.x： `enterprise_rma.order_id` （許多） => `sales_flat_order.entity_id` （一個）
+   * Commerce 2.x： `magento_rma.order_id` （許多） => `sales_order.entity_id` （一個）
 
 `enterprise_rma_item_entity`
 
-* 建立多對一的欄，例如 `Return's total value` 於 `enterprise_rma` 表格透過下列聯結：
-   * Commerce 1.x： `enterprise_rma_item_entity.rma_entity_id` （許多） => `enterprise_rma.entity_id` （一）
-   * Commerce 2.x： `magento_rma_item_entity.rma_entity_id ` （許多） => `magento_rma.entity_id` （一）
+* 透過下列聯結，在`enterprise_rma`資料表上建立多對一資料行，例如`Return's total value`：
+   * Commerce 1.x： `enterprise_rma_item_entity.rma_entity_id` （許多） => `enterprise_rma.entity_id` （一個）
+   * Commerce 2.x： `magento_rma_item_entity.rma_entity_id ` （許多） => `magento_rma.entity_id` （一個）

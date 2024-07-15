@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # 變更共用儀表板的存取權
 
-您可以隨時變更對控制面板的存取權，使用與以下相同的步驟： [最初共用控制面板](../../data-user/dashboards/share-dashboard-with-users.md){： target=&quot;_blank&quot;}. 顯示在中的使用者清單中 `Share Dashboard` 功能表，視需要更新使用者/組織許可權，然後按一下 **[!UICONTROL Save Changes]** 以更新。
+您可以隨時使用相同的步驟變更儀表板的存取權，以[開始共用儀表板](../../data-user/dashboards/share-dashboard-with-users.md){： target=&quot;_blank&quot;}。 在`Share Dashboard`功能表中顯示的使用者清單中，視需要更新使用者/組織許可權，然後按一下&#x200B;**[!UICONTROL Save Changes]**&#x200B;以更新。

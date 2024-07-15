@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
       * A/B
 * **[!UICONTROL All-time revenue by source]**
    * 量度 — 收入
-   * 依客戶的群組 `utm_source`
+   * 依客戶的`utm_source`分組
 * **[!UICONTROL Revenue from top 10 products]**
    * 量度 — 產品收入
       * 隱藏圖表
@@ -59,20 +59,20 @@ ht-degree: 0%
 * **[!UICONTROL Site visits - New vs. repeat by month]**
 * 工作階段
 
-使用 [!DNL Google Analytics] 整合，您可加入以下報表：
+透過[!DNL Google Analytics]整合，您可以包含下列報表：
 
 * 網站造訪
 * 轉換率
 
-使用 [Commerce資料擴充服務](https://business.adobe.com/products/magento/magento-commerce.html)，您可加入有關以下專案的報表：
+透過[Commerce資料擴充服務](https://business.adobe.com/products/magento/magento-commerce.html)，您可以包含下列報表：
 
 * 依州/地區、年齡、性別區分的不重複客戶。
 
 ## 其他秘訣
 
-* 使用簡潔明瞭 [命名慣例](../best-practices/naming-elements.md)
+* 使用簡潔明瞭的[命名慣例](../best-practices/naming-elements.md)
 * 與投資者使用者共用控制面板
-* 或透過傳送 **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
+* 或透過&#x200B;**[!UICONTROL Automated email summary]**&#x200B;傳送(../data-user/export-data/email-summaries.md)
 * 僅建立一個儀表板。 這樣可讓內容更容易維護，而且您清楚知道投資者在看什麼。
 
 周詳地組織報告，並注意詳細資訊。 完成後，控制面板看起來類似以下畫面：

@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # 日期差異計算欄
 
-本主題概述了 `Date Difference` 中可用的計算欄 **[!DNL Manage Data > Data Warehouse]** 頁面。 以下是其功能的說明，隨後是一個範例，以及建立它的機制。
+此主題概述&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;頁面中可用`Date Difference`計算欄的用途和用途。 以下是其功能的說明，隨後是一個範例，以及建立它的機制。
 
 **說明**
 
-此 `Date Difference` 欄型別會根據事件時間戳記，計算屬於單一記錄之兩個事件之間的時間。 此欄中計算的原始值以秒為單位，但會自動轉換為分鐘、小時、天等等，以便顯示在報表上。 但是，當您作為篩選/群組使用時，您想要以秒為單位使用值。
+`Date Difference`欄型別會根據事件時間戳記，計算屬於單一記錄的兩個事件之間的時間。 此欄中計算的原始值以秒為單位，但會自動轉換為分鐘、小時、天等等，以便顯示在報表上。 但是，當您作為篩選/群組使用時，您想要以秒為單位使用值。
 
-A `date difference` 「計算」欄可用來建立量度，以計算兩個事件之間的平均或中間時間，例如客戶註冊與其第一筆訂單之間的平均時間。
+`date difference`計算欄可用來建立量度，以計算兩個事件之間的平均或中間時間，例如客戶註冊與其第一筆訂單之間的平均時間。
 
 **範例**
 
@@ -31,23 +31,23 @@ A `date difference` 「計算」欄可用來建立量度，以計算兩個事件
 {style="table-layout:auto"}
 
 
-在上述範例中， `Date Difference` 欄是 `Seconds between timestamp_2 and timestamp_1` 欄。 它會執行計算 `timestamp_2 minus timestamp_1`.
+在上述範例中，`Date Difference`欄是`Seconds between timestamp_2 and timestamp_1`欄。 它執行計算`timestamp_2 minus timestamp_1`。
 
-**力學**
+**機械**
 
-下列步驟說明如何建立 `Date Difference` 欄。
+下列步驟說明如何建立`Date Difference`欄。
 
-1. 導覽至 **[!DNL Manage Data > Data Warehouse]** 頁面。
+1. 導覽至&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;頁面。
 1. 導覽至您要建立此欄的表格。
-1. 按一下 **[!UICONTROL Create a Column]** 並依照以下方式設定您的欄：
-   * 選取 `Column Definition Type` > `Same Table`
-   * 選取 `Column Definition Equation` > `DATE_DIFF = (Ending DATETIME - Starting DATETIME)`
-   * 選取 `Ending DATETIME` 欄>選擇結束日期時間欄位，這通常是稍後發生的事件
-   * 選取 `Starting DATETIME` 欄** >選擇開始日期時間欄位，這通常是較早發生的事件
+1. 按一下&#x200B;**[!UICONTROL Create a Column]**&#x200B;並依照以下方式設定您的欄：
+   * 選取`Column Definition Type` > `Same Table`
+   * 選取`Column Definition Equation` > `DATE_DIFF = (Ending DATETIME - Starting DATETIME)`
+   * 選取`Ending DATETIME`欄>選擇結束日期時間欄位，這通常是稍後發生的事件
+   * 選取`Starting DATETIME`欄** >選擇開始日期時間欄位，這通常是較早發生的事件
 
-1. 提供欄的名稱，然後按一下 **[!UICONTROL Save]**.
-1. 欄可供使用 *立即*.
+1. 提供資料行的名稱，然後按一下&#x200B;**[!UICONTROL Save]**。
+1. 資料行可以立即使用&#x200B;**。
 
-例如，下列範例設定為計算 `Seconds between order date and customer's creation date`：
+例如，下列範例設定為計算`Seconds between order date and customer's creation date`：
 
 ![](../../assets/date_diff.png)

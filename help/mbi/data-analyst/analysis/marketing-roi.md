@@ -6,7 +6,7 @@ role: Admin,  User
 feature: Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -15,148 +15,149 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此主題包含使用原始架構和新架構的使用者端指示。 您位於 [新架構](../../administrator/account-management/new-architecture.md) 如果您在從主工具列選取「管理資料」後，有「Data Warehouse檢視」區段可用。
+>此主題包含使用原始架構和新架構的使用者端指示。 如果您在主工具列選取「管理資料」後有「Data Warehouse檢視」區段可用，即表示[新架構](../../administrator/account-management/new-architecture.md)。
 
 如果您正線上上廣告上花錢，您想要追蹤此花費的回報，並針對進一步的投資做出資料導向式決策。 此主題示範如何設定追蹤管道分析的控制面板，包括彙總及依行銷活動的ROI。
 
 ![](../../assets/Marketing_dashboard_example.png)
 
-開始之前，您想要連線至 [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md)， [!DNL [Adwords]](../importing-data/integrations/google-adwords.md)、和 [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md) 帳戶，並帶入任何其他線上廣告支出資料。 此分析包含 [進階計算欄](../data-warehouse-mgr/adv-calc-columns.md).
+開始之前，您想要連線您的[!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md)、[!DNL [Adwords]](../importing-data/integrations/google-adwords.md)和[!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md)帳戶，並引進任何其他線上廣告支出資料。 此分析包含[進階計算資料行](../data-warehouse-mgr/adv-calc-columns.md)。
 
 ## 整合的表格
 
-**原始架構：** 將來自各種來源的支出彙集在一起，例如 [!DNL Facebook Ads] 或 [!DNL Google Adwords]，Adobe建議建立 **合併的表格** 所有廣告支出。 您需要分析人員為您完成此步驟。 如果您沒有， [提出支援要求](../../guide-overview.md#Submitting-a-Support-Ticket) 與主旨 `[MARKETING ROI ANALYSIS]`，分析師會建立此表格。
+**原始架構：**&#x200B;若要將各種來源（如[!DNL Facebook Ads]或[!DNL Google Adwords]）的花費彙整在一起，Adobe建議建立您所有廣告花費的&#x200B;**整合表格**。 您需要分析人員為您完成此步驟。 如果您尚未提出支援要求，請[提出主旨為`[MARKETING ROI ANALYSIS]`的支援要求](../../guide-overview.md#Submitting-a-Support-Ticket)，分析人員會建立此表格。
 
-**新架構：** 您可以依照以下範例操作： [此分析程式庫](../../data-analyst/data-warehouse-mgr/create-dw-views.md) 主題。 在新架構中，整合表格現在稱為Data Warehouse檢視。
+**新架構：**&#x200B;您可以依照[此分析程式庫](../../data-analyst/data-warehouse-mgr/create-dw-views.md)主題中的範例操作。 在新架構中，整合表格現在稱為Data Warehouse檢視。
 
 ## 計算欄
 
 要建立的欄
 
-* **`Consolidated Digital Ad Spend`** 表格
-* **`Campaign name`** 由Adobe分析人員建立，作為您的一部分 **[行銷ROI分析]** 票證
+* **`Consolidated Digital Ad Spend`**&#x200B;資料表
+* **`Campaign name`**&#x200B;由Adobe分析人員建立，是您&#x200B;**[行銷ROI ANALYSIS]**&#x200B;票證的一部分
 
 **原始架構與新架構：**
 
-* **`sales_flat_order`** 表格
+* **`sales_flat_order`**&#x200B;資料表
    * **`Order's GA campaign`**
       * 選取定義： `Joined Column`
-      * [!UICONTROL Create Path]:
+      * [!UICONTROL Create Path]：
       * 
         [!UICONTROL Many]: `sales_flat_order.increment_id`
       * 
         [!UICONTROL One]: `ecommerce####.transaction_id`
 
-      * 選取 [!UICONTROL table]： `ecommerce####`
-      * 選取 [!UICONTROL column]： `campaign`
-      * [!UICONTROL Path]: `sales_flat_order.increment_id = ecommerce#####.transactionID`
+      * 選取[!UICONTROL table]： `ecommerce####`
+      * 選取[!UICONTROL column]： `campaign`
+      * [!UICONTROL Path]： `sales_flat_order.increment_id = ecommerce#####.transactionID`
 
    * **`Order's GA medium`**
       * 選取定義：聯結欄
-      * 選取 [!UICONTROL table]： `ecommerce####`
-      * 選取 [!UICONTROL column]： `medium`
-      * [!UICONTROL Path]： sales_flat_order.increment_id = e-commerce####.transactionId
+      * 選取[!UICONTROL table]： `ecommerce####`
+      * 選取[!UICONTROL column]： `medium`
+      * [!UICONTROL Path]： sales_flat_order.increment_id = e-commerce#####.transactionId
 
    * **`Order's GA source`**
       * 選取定義：聯結欄
-      * 選取 [!UICONTROL table]： `ecommerce####`
-      * 選取 [!UICONTROL column]： `source`
-      * [!UICONTROL Path]： sales_flat_order.increment_id = e-commerce####.transactionId ^
+      * 選取[!UICONTROL table]： `ecommerce####`
+      * 選取[!UICONTROL column]： `source`
+      * [!UICONTROL Path]： sales_flat_order.increment_id = e-commerce#####.transactionId
+^
 
-* **`customer_entity`** 表格
+* **`customer_entity`**&#x200B;資料表
 * **`Customer's first order GA campaign`**
    * 選取定義： `Max`
-   * 選取 [!UICONTROL table]： `sales_flat_order`
-   * 選取 [!UICONTROL column]： `Order's GA campaign`
-   * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
-   * [!UICONTROL Filter]:
+   * 選取[!UICONTROL table]： `sales_flat_order`
+   * 選取[!UICONTROL column]： `Order's GA campaign`
+   * [!UICONTROL Path]： `sales_flat_order.customer_id = customer_entity.entity_id`
+   * [!UICONTROL Filter]：
       * `Orders we count`
       * `Customer's order number = 1`
 
 * **`Customer's first order GA source`**
    * 選取定義： `Max`
-   * 選取 [!UICONTROL table]： `sales_flat_order`
-   * 選取 [!UICONTROL column]： `Order's GA source`
+   * 選取[!UICONTROL table]： `sales_flat_order`
+   * 選取[!UICONTROL column]： `Order's GA source`
    * [!UICONTROL Path]： sales_flat_order.customer_id = customer_entity.entity_id
-   * [!UICONTROL Filter]:
+   * [!UICONTROL Filter]：
       * `Orders we count`
       * `Customer's order number = 1`
 
 * **`Customer's first order GA medium`**
    * 選取定義： `Max`
-   * 選取 [!UICONTROL table]： `sales_flat_order`
-   * 選取 [!UICONTROL column]： `Order's GA medium`
-   * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
-   * [!UICONTROL Filter]:
+   * 選取[!UICONTROL table]： `sales_flat_order`
+   * 選取[!UICONTROL column]： `Order's GA medium`
+   * [!UICONTROL Path]： `sales_flat_order.customer_id = customer_entity.entity_id`
+   * [!UICONTROL Filter]：
       * `Orders we count`
       * `Customer's order number = 1`
 
-* **`sales_flat_order`** 表格
+* **`sales_flat_order`**&#x200B;資料表
 * **`Customer's first order GA campaign`**
    * 選取定義： `Joined Column`
-   * 選取 [!UICONTROL table]： `customer_entity`
-   * 選取 [!UICONTROL column]： `Customer's first order GA campaign`
-   * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
+   * 選取[!UICONTROL table]： `customer_entity`
+   * 選取[!UICONTROL column]： `Customer's first order GA campaign`
+   * [!UICONTROL Path]： `sales_flat_order.customer_id = customer_entity.entity_id`
 
 * **`Customer's first order GA source`**
    * 選取定義：聯結欄
-   * 選取 [!UICONTROL table]： `customer_entity`
-   * 選取 [!UICONTROL column]： `Customer's first order GA source`
-   * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
+   * 選取[!UICONTROL table]： `customer_entity`
+   * 選取[!UICONTROL column]： `Customer's first order GA source`
+   * [!UICONTROL Path]： `sales_flat_order.customer_id = customer_entity.entity_id`
 
 * **`Customer's first order GA medium`**
    * 選取定義： `Joined Column`
-   * 選取 [!UICONTROL table]： `customer_entity`
-   * 選取 [!UICONTROL column]： `Customer's first order GA medium`
-   * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
+   * 選取[!UICONTROL table]： `customer_entity`
+   * 選取[!UICONTROL column]： `Customer's first order GA medium`
+   * [!UICONTROL Path]： `sales_flat_order.customer_id = customer_entity.entity_id`
 
 ## 量度
 
 * **廣告支出**
-* 在 **`Consolidated Digital Ad Spend`** 表格
-* 此量度會執行 **Sum**
-* 在 **`adCost`** 欄
-* 排序依據： **`date`** timestamp
+* 在&#x200B;**`Consolidated Digital Ad Spend`**&#x200B;資料表中
+* 此量度執行&#x200B;**總和**
+* 在&#x200B;**`adCost`**&#x200B;欄上
+* 依&#x200B;**`date`**&#x200B;時間戳記排序
 
-* **廣告印象**
-* 在 **`Consolidated Digital Ad Spend`** 表格
-* 此量度會執行 **Sum**
-* 在 **`Impressions`** 欄
-* 排序依據： **`Month`** timestamp
+* **廣告曝光次數**
+* 在&#x200B;**`Consolidated Digital Ad Spend`**&#x200B;資料表中
+* 此量度執行&#x200B;**總和**
+* 在&#x200B;**`Impressions`**&#x200B;欄上
+* 依&#x200B;**`Month`**&#x200B;時間戳記排序
 
-* **廣告點按次數**
-* 在 **`Consolidated Digital Ad Spend`** 表格
-* 此量度會執行 **Sum**
-* 在 **`adClicks`** 欄
-* 排序依據： **`Month`** timestamp
+* **廣告點按**
+* 在&#x200B;**`Consolidated Digital Ad Spend`**&#x200B;資料表中
+* 此量度執行&#x200B;**總和**
+* 在&#x200B;**`adClicks`**&#x200B;欄上
+* 依&#x200B;**`Month`**&#x200B;時間戳記排序
 
 >[!NOTE]
 >
->確定 [將所有新欄新增為量度的維度](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) 建立新報表之前。
+>在建立新報表之前，請務必[將所有新欄新增為量度](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md)的維度。
 
 ## 報表
 
-* **廣告支出（所有時間）**
+* **廣告花費（所有時間）**
    * [!UICONTROL Metric]：廣告支出
 
-* 量度 `A`：廣告支出
-* [!UICONTROL Time period]: `All time`
+* 量度`A`：廣告支出
+* [!UICONTROL Time period]： `All time`
 * 
   [！UICONTROL間隔]: `None`
 * 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **廣告客戶贏取（所有時間）**
-   * [!UICONTROL Metric]: `New customers`
-   * [!UICONTROL Filters]:
+   * [!UICONTROL Metric]： `New customers`
+   * [!UICONTROL Filters]：
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
-      * 篩選器邏輯： ([`A`] 或 [`B`] 或 [`C`])和 [`D`]
+      * 篩選器邏輯： （[`A`]或[`B`]或[`C`]）和[`D`]
 
-* 量度 `A`： `Ad customer acquisitions`
-* [!UICONTROL Time period]: `All time`
+* 量度`A`： `Ad customer acquisitions`
+* [!UICONTROL Time period]： `All time`
 * 
   [！UICONTROL間隔]: `None`
 * 
@@ -165,113 +166,113 @@ ht-degree: 0%
 * **廣告ROI**
    * [!UICONTROL Metric]：廣告支出
 
-   * [!UICONTROL Metric]: `New customers`
-   * [!UICONTROL Filters]:
+   * [!UICONTROL Metric]： `New customers`
+   * [!UICONTROL Filters]：
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
-      * 篩選器邏輯： ([`A`] 或 [`B`] 或 [`C`])和 [`D`]
+      * 篩選器邏輯： （[`A`]或[`B`]或[`C`]）和[`D`]
 
    * [!UICONTROL Metric]：平均期限收入
-   * [!UICONTROL Filters]:
+   * [!UICONTROL Filters]：
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
-      * 篩選器邏輯： ([`A`] 或 [`B`] 或 [`C`])和 [`D`]
+      * 篩選器邏輯： （[`A`]或[`B`]或[`C`]）和[`D`]
 
-   * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
+   * [!UICONTROL Formula]： `((C - (A / B)) / (A / B))`
    * 
      [!UICONTROL Format]: `Percentage`
 
-* 量度 `A`： `Ad Spend (hide)`
-* 量度 `B`： `Ad customer acquisitions (hide)`
-* 量度 `C`： `Average LTV (hide)`
-* [!UICONTROL Formula]: `Ads ROI`
-* [!UICONTROL Time period]: `All time`
+* 量度`A`： `Ad Spend (hide)`
+* 量度`B`： `Ad customer acquisitions (hide)`
+* 量度`C`： `Average LTV (hide)`
+* [!UICONTROL Formula]： `Ads ROI`
+* [!UICONTROL Time period]： `All time`
 * 
   [！UICONTROL間隔]: `None`
 * 
   [!UICONTROL Chart Type]: `Scalar`
 
-* **依一般媒體的訂單**
+* **訂單（依ga中）**
    * 
      [！UICONTROL公制]: `Orders`
 
-* 量度 `A`： `Orders`
-* [!UICONTROL Time period]: `All time`
-* [!UICONTROL Interval]: `By Month`
-* [!UICONTROL Group by]: `Order's medium`
+* 量度`A`： `Orders`
+* [!UICONTROL Time period]： `All time`
+* [!UICONTROL Interval]： `By Month`
+* [!UICONTROL Group by]： `Order's medium`
 * 
   [!UICONTROL Chart Type]: `Area`
 
 * **依據行銷活動的廣告ROI**
-   * [!UICONTROL Metric]: `Ad Spend`
+   * [!UICONTROL Metric]： `Ad Spend`
 
-   * [!UICONTROL Metric]:`New customers`
-   * [!UICONTROL Filters]:
+   * [!UICONTROL Metric]：`New customers`
+   * [!UICONTROL Filters]：
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
-      * 篩選器邏輯： ([`A`] 或 [`B`] 或 [`C`])和 [`D`]
+      * 篩選器邏輯： （[`A`]或[`B`]或[`C`]）和[`D`]
 
    * [!UICONTROL Metric]：平均期限收入
-   * [!UICONTROL Filters]:
+   * [!UICONTROL Filters]：
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
-      * 篩選器邏輯： ([`A`] 或 [`B`] 或 [`C`])和 [`D`]
+      * 篩選器邏輯： （[`A`]或[`B`]或[`C`]）和[`D`]
 
    * [!UICONTROL Metric]：平均期限訂單數
-   * [!UICONTROL Filters]:
+   * [!UICONTROL Filters]：
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`
       * `User's first order's source LIKE %fb%`
       * `User's first order's medium IN cpc, ppc`
-      * 篩選器邏輯： ([`A`] 或 [`B`] 或 [`C`])和 [`D`]
+      * 篩選器邏輯： （[`A`]或[`B`]或[`C`]）和[`D`]
 
-   * [!UICONTROL Formula]: `(A / B)`
+   * [!UICONTROL Formula]： `(A / B)`
    * 
      [!UICONTROL Format]: `Currency`
 
-   * [!UICONTROL Formula]: `(C - (A / B))`
+   * [!UICONTROL Formula]： `(C - (A / B))`
    * 
      [!UICONTROL Format]: `Currency`
 
-   * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
+   * [!UICONTROL Formula]： `((C - (A / B)) / (A / B))`
    * 
      [!UICONTROL Format]: `Percentage`
 
-   * [!UICONTROL Metric]: `Ad Clicks`
+   * [!UICONTROL Metric]： `Ad Clicks`
 
-   * [!UICONTROL Metric]: `Ad Impressions`
+   * [!UICONTROL Metric]： `Ad Impressions`
 
-   * [!UICONTROL Formula]: `(H / I)`
+   * [!UICONTROL Formula]： `(H / I)`
    * 
      [!UICONTROL Format]: `Percentage`
 
-   * [!UICONTROL Formula]: `(A / H)`
+   * [!UICONTROL Formula]： `(A / H)`
    * 
      [!UICONTROL Format]: `Currency`
 
-* 量度 `A`： `Ad Spend` （隱藏）
-* 量度 `B`： `Ad customer acquisitions`
-* 量度 `C`： `Average LTV`
-* 量度 `D`： `Average lifetime # of orders`
+* 量度`A`： `Ad Spend` （隱藏）
+* 量度`B`： `Ad customer acquisitions`
+* 量度`C`： `Average LTV`
+* 量度`D`： `Average lifetime # of orders`
 * 
   [！UICONTROL公式]: `CAC`
-* [!UICONTROL Formula]: `Avg return`
-* [!UICONTROL Formula]: `Ads ROI`
-* 量度 `H`： `adClicks`
-* 量度 `I`： `Impressions`
+* [!UICONTROL Formula]： `Avg return`
+* [!UICONTROL Formula]： `Ads ROI`
+* 量度`H`： `adClicks`
+* 量度`I`： `Impressions`
 * 
   [！UICONTROL公式]: `CTR`
 * 
   [！UICONTROL公式]: `CPC`
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period]： `All time`
 * 
   [！UICONTROL間隔]: `None`
 * 
@@ -279,9 +280,9 @@ ht-degree: 0%
 * 
   [!UICONTROL Chart Type]: `Table`
 
-如果您在建立此分析時遇到任何問題，或只是想與Professional Services團隊互動， [聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+如果您在建立此分析時遇到任何問題，或只是想與專業服務團隊互動，請[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ### 相關
 
-* [中的UTM標籤最佳作法 [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)
-* [如何 [!DNL Google Analytics] UTM歸因工作？](../analysis/utm-attributes.md)
+* [在 [!DNL Google Analytics]中進行UTM標籤的最佳作法](../../best-practices/utm-tagging-google.md)
+* [ [!DNL Google Analytics] UTM歸因如何運作？](../analysis/utm-attributes.md)

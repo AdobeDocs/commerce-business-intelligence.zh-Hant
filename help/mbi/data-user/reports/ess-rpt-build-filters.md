@@ -6,20 +6,20 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
 
 # 篩選器
 
-可新增一或多個篩選器，以限制用於產生報表的資料。 每個篩選器都是一個運算式，其中包含關聯表格中的欄、運運算元和值。 例如，若只要包含回頭客戶，您可以建立僅包含已下多張訂單的客戶的篩選器。 邏輯可使用多個篩選器 `AND/OR` 運運算元，將邏輯新增至報表。
+可新增一或多個篩選器，以限制用於產生報表的資料。 每個篩選器都是一個運算式，其中包含關聯表格中的欄、運運算元和值。 例如，若只要包含回頭客戶，您可以建立僅包含已下多張訂單的客戶的篩選器。 多個篩選器可以與邏輯`AND/OR`運運算元一起使用，以將邏輯新增至報表。
 
 >[!TIP]
 >
 >報表最多可包含3,500個資料點。 若要減少資料點的數量，請使用篩選器來減少用於產生報表的資料量。
 
-[!DNL Adobe Commerce Intelligence] 包含一系列篩選器，您可使用「立即可用(OOTB)」或修改以符合需求。 您可以建立的篩選器數量沒有限制。
+[!DNL Adobe Commerce Intelligence]包含您可以「立即使用(OOTB)」或修改以符合您需求的篩選選項。 您可以建立的篩選器數量沒有限制。
 
 ## 若要新增篩選器：
 
@@ -27,19 +27,19 @@ ht-degree: 0%
 
    在此報表中，每個資料點會顯示當月客戶總數。
 
-1. 在左側面板中，按一下篩選器(![](../../assets/magento-bi-btn-filter.png))圖示。
+1. 在左側面板中，按一下「篩選器」 (![](../../assets/magento-bi-btn-filter.png))圖示。
 
    ![新增篩選器](../../assets/magento-bi-report-builder-filter-add.png)
 
-1. 按一下 **[!UICONTROL Add Filter]**.
+1. 按一下&#x200B;**[!UICONTROL Add Filter]**。
 
-   篩選器會依字母順序編號，第一個是 `[A]`. 篩選的前兩個部分是下拉式選項，第三個部分是值。
+   篩選器依字母順序編號，第一個是`[A]`。 篩選的前兩個部分是下拉式選項，第三個部分是值。
 
    ![](../../assets/magento-bi-report-builder-filter-add-a.png)
 
    * 按一下篩選的第一個部分，然後選擇您要用來作為運算式主旨的欄。
 
-     ![選擇篩選器的第一部分](../../assets/magento-bi-report-builder-filter-part1.png)
+     ![選擇篩選條件的第一部分](../../assets/magento-bi-report-builder-filter-part1.png)
 
    * 按一下篩選的第二個部分，然後選擇運運算元。
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
      ![輸入值](../../assets/magento-bi-report-builder-filter-part3.png)
 
-   * 篩選完成後，按一下 **[!UICONTROL Apply]**.
+   * 篩選完成時，按一下&#x200B;**[!UICONTROL Apply]**。
 
      報表現在僅包含回頭客戶，針對報表擷取的客戶記錄數量從33,000筆減少至12,600筆。
 
@@ -59,12 +59,12 @@ ht-degree: 0%
 
    ![透視](../../assets/magento-bi-report-builder-filter-perspective.png)<!--{: .zoom}-->
 
-1. 在設定清單中，選擇 `Cumulative`. 然後，按一下 **[!UICONTROL Apply]**.
+1. 在設定清單中，選擇`Cumulative`。 然後，按一下&#x200B;**[!UICONTROL Apply]**。
 
    ![累積透視](../../assets/magento-bi-report-builder-filter-perspective-cumulative.png)
 
-   此 `Cumulative` 透檢視會隨時間分佈變化，而不是顯示每個月的鋸齒狀升降。
+   `Cumulative`觀點會隨時間分配變更，而不是顯示每個月的鋸齒狀上下變化。
 
-1. 輸入 `Title` ，然後按一下 **[!UICONTROL Save]** 它作為 `Chart` 至您的儀表板。
+1. 輸入報告的`Title`，然後按一下&#x200B;**[!UICONTROL Save]**&#x200B;將它當成`Chart`加入您的儀表板。
 
-   ![儲存至控制面板](../../assets/magento-bi-report-builder-filter-perspective-cumulative-save.png)
+   ![儲存至儀表板](../../assets/magento-bi-report-builder-filter-perspective-cumulative-save.png)

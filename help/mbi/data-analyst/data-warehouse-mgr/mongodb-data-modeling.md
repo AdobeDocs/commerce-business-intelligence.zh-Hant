@@ -11,17 +11,17 @@ ht-degree: 1%
 
 ---
 
-# [!DNL MongoDB] 資料模式
+# [!DNL MongoDB]資料模式
 
-時間 [!DNL Adobe Commerce Intelligence] 拉入 [!DNL MongoDB] 資料，這些資料會轉換為關聯式模型。
+當[!DNL Adobe Commerce Intelligence]提取[!DNL MongoDB]資料時，該資料會轉換為關聯式模型。
 
-壞消息：雖然大部分的資料模式不會造成問題，但有少數不受支援 [!DNL Commerce Intelligence]，因為轉換至關聯模型。
+壞消息：雖然大部分的資料模式不會造成問題，但有一些是[!DNL Commerce Intelligence]不支援的，因為轉換為關聯模型。
 
 好消息：可以避免所有這些模式。
 
 ## 子巢狀陣列 {#subnested}
 
-如果您的集合如以下範例所示， [!DNL Commerce Intelligence] 只會複製專案陣列中的資料。 不會提取子專案陣列中的資料。
+如果您的集合如下列範例所示，[!DNL Commerce Intelligence]只會複製專案陣列中的資料。 不會提取子專案陣列中的資料。
 
 ```bash
     {
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 ## 變數物件索引鍵 {#varobjectkeys}
 
-包含具有可變物件金鑰之物件的集合不會在中復寫 [!DNL Commerce Intelligence]. 例如：
+包含具有變數物件金鑰之物件的集合不會在[!DNL Commerce Intelligence]中復寫。 例如：
 
 ```bash
     {

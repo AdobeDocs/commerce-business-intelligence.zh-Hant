@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Business Performance, Data Integration, Data Import/Export, Data Warehouse Manager
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
 
 # 最佳化您的資料庫
 
-使用作業資料庫的主要優點 [!DNL Adobe Commerce Intelligence] 收集資料不需要建置或修改任何專案。 有價值資訊已經存在 — 您只需要解除鎖定即可。
+對[!DNL Adobe Commerce Intelligence]使用作業資料庫的主要優點是，不需要建立或修改任何內容即可收集資料。 有價值資訊已經存在 — 您只需要解除鎖定即可。
 
 本主題包含一些建議，可協助您最佳化資料庫以進行分析，以及從原始資料中得出可行的深入分析。
 
@@ -35,17 +35,17 @@ ht-degree: 0%
 
 一般而言，如果您因某類使用者動作而更新記錄，請勿覆寫有關先前或個別使用者動作的資訊。
 
-## 包含 `Updated_at` 隨時間更新的資料欄
+## 包含`Updated_at`個資料行，這些資料會隨著時間更新
 
-例如，如果表格的列具有隨時間變化的值， **order\_status** 變更來源`processing` 至 `complete`，包括 **已更新\_at** 要記錄最新變更發生時間的欄。 確保 **已更新\_at** 值可在首次插入新資料列時使用，當 **已更新\_at** 日期對應至 **created\_at** 日期。
+如果資料表的資料列會隨著時間而變更值（例如&#x200B;**order\_status**&#x200B;從`processing`變更為`complete`），請包含&#x200B;**updated\_at**&#x200B;資料行，以便在最新變更發生時加以記錄。 當&#x200B;**updated\_at**&#x200B;日期對應至&#x200B;**created\_at**&#x200B;日期時，請確定第一次插入新資料列時有&#x200B;**updated\_at**&#x200B;值可用。
 
-除了針對分析最佳化， **已更新\_at** 欄也可讓您使用 [增量複製方法](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md)，這有助於縮短更新週期的長度。
+除了針對分析最佳化，**updated\_at**&#x200B;資料行也可讓您使用[增量復寫方法](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md)，以協助縮短更新週期的長度。
 
-## 存放區使用者贏取來源
+## 商店使用者贏取Source
 
-最常見的錯誤之一是 [使用者贏取來源](../data-analyst/analysis/google-track-user-acq.md) (UAS)未儲存在作業資料庫中。 在多數情況下，當這是問題發生時，只能透過追蹤UAS [!DNL Google Analytics] 或其他網站分析工具。 雖然這些工具可能很有價值，但僅在這些工具中儲存UAS有一些缺點；例如，您無法從這些工具中擷取使用者層級的資料。 如果可能的話，這通常是一個困難的過程。 應該可以輕鬆取得這些資訊，並將其與其他來源的資料結合，例如也儲存在資料庫中的行為和交易式資訊。
+最常見的錯誤之一是[使用者贏取來源](../data-analyst/analysis/google-track-user-acq.md) (UAS)未儲存在作業資料庫中。 在多數情況下，當這個問題出現時，只會透過[!DNL Google Analytics]或其他網站分析工具來追蹤UAS。 雖然這些工具可能很有價值，但僅在這些工具中儲存UAS有一些缺點；例如，您無法從這些工具中擷取使用者層級的資料。 如果可能的話，這通常是一個困難的過程。 應該可以輕鬆取得這些資訊，並將其與其他來源的資料結合，例如也儲存在資料庫中的行為和交易式資訊。
 
-將UAS儲存在您自己的資料庫中，通常是線上企業對其分析能力所能做的最大改進。 這可讓UAS分析銷售額、使用者參與度、回收期、客戶期限值、流失率和其他關鍵量度。 [在決定要將行銷資源投資於何處時，此資料至關重要](../data-analyst/analysis/most-value-source-channel.md).
+將UAS儲存在您自己的資料庫中，通常是線上企業對其分析能力所能做的最大改進。 這可讓UAS分析銷售額、使用者參與度、回收期、客戶期限值、流失率和其他關鍵量度。 [此資料在決定投資行銷資源的位置時十分重要](../data-analyst/analysis/most-value-source-channel.md)。
 
 太多公司只關注尋找以最低成本提供新使用者的管道。 如果您沒有追蹤從每個管道取得的使用者品質，就有可能吸引未帶來業務價值的使用者。
 
@@ -53,16 +53,16 @@ ht-degree: 0%
 
 ### 設定主索引鍵
 
-A [主索引鍵](https://en.wikipedia.org/wiki/Unique_key) 是未變更的欄（或欄集），會在表格中產生唯一值。 主鍵非常重要，因為它們會確保您的表格正確地在中複製 [!DNL Commerce Intelligence].
+[主索引鍵](https://en.wikipedia.org/wiki/Unique_key)是在資料表中產生唯一值的未變更資料行（或資料行集）。 主索引鍵非常重要，因為它們可確保您的資料表在[!DNL Commerce Intelligence]中正確複製。
 
 建立主索引鍵時，請為自動增加的欄使用整數資料型別。 Adobe建議您儘可能避免使用多欄主索引鍵。
 
-如果您的表格是SQL檢視，請新增可以當作主索引鍵的資料行。 [!DNL Commerce Intelligence] 能夠自動將此欄識別為主索引鍵。
+如果您的表格是SQL檢視，請新增可以當作主索引鍵的資料行。 [!DNL Commerce Intelligence]能夠自動識別此資料行為主索引鍵。
 
 ### 指派資料型別至您的資料欄
 
-如果資料欄未指派 [資料型別](https://en.wikipedia.org/wiki/Data_type)， [!DNL Commerce Intelligence] 猜出要使用哪種資料型別。 如果系統猜測不正確，在Adobe支援團隊將欄調整為適當的資料型別之前，您可能無法執行相關的分析。 例如，如果日期欄猜測為數值資料型別，您可以使用日期維度來分析一段時間內的趨勢。
+如果資料欄沒有指派的[資料型別](https://en.wikipedia.org/wiki/Data_type)，[!DNL Commerce Intelligence]會猜測要使用哪個資料型別。 如果系統猜測不正確，在Adobe支援團隊將欄調整為適當的資料型別之前，您可能無法執行相關的分析。 例如，如果日期欄猜測為數值資料型別，您可以使用日期維度來分析一段時間內的趨勢。
 
 ### 如果您有多個資料庫，請在資料表格中新增前置詞
 
-如果您有多個資料庫連線到 [!DNL Commerce Intelligence]，Adobe建議您在表格中新增首碼以避免混淆。 字首可協助您記住量度或資料維度的來源位置。
+如果您有一個以上的資料庫連線到[!DNL Commerce Intelligence]，Adobe建議您新增首碼到表格以避免混淆。 字首可協助您記住量度或資料維度的來源位置。

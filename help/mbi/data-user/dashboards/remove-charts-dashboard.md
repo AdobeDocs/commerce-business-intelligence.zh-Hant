@@ -13,10 +13,10 @@ ht-degree: 0%
 
 # 從儀表板移除圖表
 
-若要從儀表板移除圖表，請按一下齒輪(![](../../assets/gear-icon.png))圖示並按一下 **[!UICONTROL Remove from Dashboard]**.
+若要從儀表板移除圖表，請按一下圖表右上角的齒輪(![](../../assets/gear-icon.png))圖示，然後按一下&#x200B;**[!UICONTROL Remove from Dashboard]**。
 
 >[!NOTE]
 >
->移除圖表與移除圖表不同 [刪除它](../../data-user/dashboards/delete-chart.md). 另外， [圖表可以讀入儀表板](../../data-user/dashboards/add-charts-dashboard.md) 隨時。
+>移除圖表與[刪除圖表](../../data-user/dashboards/delete-chart.md)不同。 此外，您隨時可以將[圖表讀取到儀表板](../../data-user/dashboards/add-charts-dashboard.md)。
 
 ![移除圖表](../../assets/Removing_Charts_from_Dashboards.gif)

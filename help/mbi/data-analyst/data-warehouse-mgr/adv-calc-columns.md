@@ -6,21 +6,21 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 4%
+source-wordcount: '931'
+ht-degree: 2%
 
 ---
 
 # 進階計算欄型別
 
-您可能要建立的許多分析都涉及使用 **新欄** 您想要的 `group by` 或 `filter by`. 此 [建立計算欄](../data-warehouse-mgr/creating-calculated-columns.md) 教學課程涵蓋大部分使用案例的基本知識，但您可能會想要讓計算欄比Data Warehouse管理員可建立的要複雜一些。
+您想要建立的許多分析都涉及使用您要`group by`或`filter by`的&#x200B;**新資料行**。 [建立計算資料行](../data-warehouse-mgr/creating-calculated-columns.md)教學課程涵蓋大部分使用案例的基本知識，但您可能會想要的計算資料行比Data Warehouse管理員可建立的資料行更複雜。
 {： #top}
 
 這些型別的欄可由Data Warehouse分析師的Adobe團隊建立。 若要定義新的計算欄，請提供下列資訊：
 
-1. 此 **`definition`** 欄的（包括輸入、公式或格式）
-1. 此 **`table`** 要在其上建立欄的位置
-1. 任何 **`example data points`** 說明欄應包含的內容
+1. 此欄的&#x200B;**`definition`** （包括輸入、公式或格式）
+1. 您要建立欄的&#x200B;**`table`**
+1. 任何說明資料行應包含內容的&#x200B;**`example data points`**
 
 以下是進階計算欄的一些常見範例，使用者經常會發現這些範例很實用：
 
@@ -33,7 +33,7 @@ ht-degree: 4%
 
 ## 我正在嘗試依序排序事件 {#compareevents}
 
-這稱為 **事件編號** 計算欄。 這表示您正嘗試尋找特定事件擁有者（例如客戶或使用者）發生事件的順序。
+這稱為&#x200B;**事件編號**&#x200B;計算資料行。 這表示您正嘗試尋找特定事件擁有者（例如客戶或使用者）發生事件的順序。
 
 範例如下：
 
@@ -51,19 +51,19 @@ ht-degree: 4%
 
 想要檢視實際運作中的客戶訂單編號欄位嗎？ 按一下影像，可檢視在報表中做為分組依據維度使用的影像。
 
-![使用事件編號計算欄位至「依客戶訂單編號分組」。](../../assets/EventNumber.gif)<!--{: style="max-width: 500px;"}-->
+![使用事件編號計算資料行，依客戶的訂單編號分組。](../../assets/EventNumber.gif)<!--{: style="max-width: 500px;"}-->
 
 若要建立此型別的計算欄，您需要知道：
 
 * 您要在其上建立此欄的表格
-* 識別事件擁有者的欄位(`owner\_id` 在此範例中)
-* 您要用來排序事件的欄位(`timestamp` 在此範例中)
+* 識別事件擁有者的欄位（此範例中為`owner\_id`）
+* 您要排序事件的欄位（此範例中為`timestamp`）
 
 [返回頂端](#top)
 
 ## 我正在嘗試尋找兩個事件之間的時間。 {#twoevents}
 
-這稱為 `date difference` 計算欄。 這表示您正在根據事件時間戳記，嘗試尋找屬於單一記錄之兩個事件之間的時間。
+這稱為`date difference`計算資料行。 這表示您正在根據事件時間戳記，嘗試尋找屬於單一記錄之兩個事件之間的時間。
 
 範例如下：
 
@@ -74,9 +74,9 @@ ht-degree: 4%
 
 {style="table-layout:auto"}
 
-日期差異計算欄可用來建立量度，以計算兩個事件之間的平均或中間時間。 按一下下方影像，檢視 `Average time to first order` 量度用於報表中。
+日期差異計算欄可用來建立量度，以計算兩個事件之間的平均或中間時間。 按一下下方影像以檢視`Average time to first order`量度在報表中的使用方式。
 
-![使用日期差異計算欄來計算平均第一筆訂購時間。](../../assets/DateDifference.gif)<!--{: style="max-width: 500px;"}-->
+![使用日期差異計算資料行來計算平均第一階時間。](../../assets/DateDifference.gif)<!--{: style="max-width: 500px;"}-->
 
 若要建立此型別的計算欄，您需要知道：
 
@@ -87,7 +87,7 @@ ht-degree: 4%
 
 ## 我正在嘗試比較循序事件值。 {#sequence}
 
-這稱為 **循序事件比較**. 這表示您正嘗試尋找值（貨幣、數字、時間戳記）與擁有者上一個事件對應值之間的差值。
+這稱為&#x200B;**循序事件比較**。 這表示您正嘗試尋找值（貨幣、數字、時間戳記）與擁有者上一個事件對應值之間的差值。
 
 範例如下：
 
@@ -101,21 +101,21 @@ ht-degree: 4%
 
 {style="table-layout:auto"}
 
-循序事件比較可用來尋找每個循序事件之間的平均或中間時間。 按一下下方影像以檢視 **平均和中位數訂單間隔時間** 量度運作中。
+循序事件比較可用來尋找每個循序事件之間的平均或中間時間。 按一下下方的影像，檢視作用中的&#x200B;**平均與中間訂單**&#x200B;量度之間的時間。
 
-=![使用循序事件比較計算欄來計算訂單之間的平均和中位時間。](../../assets/SeqEventComp.gif)<!--{: style="max-width: 500px;"}-->
+=![使用循序事件比較計算資料行，以計算訂單之間的平均和中位時間。](../../assets/SeqEventComp.gif)<!--{: style="max-width: 500px;"}-->
 
 若要建立此型別的計算欄，您需要知道：
 
 * 您要在其上建立此欄的表格
-* 識別事件擁有者的欄位(`owner\_id` 在範例中)
-* 您想要檢視每個循序事件之間差異的值欄位(`timestamp` 在此範例中)
+* 識別事件擁有者的欄位（範例中為`owner\_id`）
+* 您想要檢視每個循序事件之間差異的值欄位（此範例中為`timestamp`）
 
 [返回頂端](#top)
 
 ## 我正在嘗試轉換貨幣。 {#currency}
 
-A **貨幣轉換** 計算欄會根據事件時的匯率，將交易金額從記錄的幣別轉換為報表幣別。
+**貨幣轉換**&#x200B;計算欄會根據事件時的匯率，將交易金額從記錄的貨幣轉換為報表貨幣。
 
 範例如下：
 
@@ -137,7 +137,7 @@ A **貨幣轉換** 計算欄會根據事件時的匯率，將交易金額從記�
 
 ## 我正在嘗試轉換時區。 {#timezone}
 
-A **時區轉換** 計算欄會將特定資料來源的時間戳記從記錄的時區轉換為報表時區。
+**時區轉換**&#x200B;計算欄會將特定資料來源的時間戳記從記錄的時區轉換為報表時區。
 
 範例如下：
 
@@ -161,10 +161,10 @@ A **時區轉換** 計算欄會將特定資料來源的時間戳記從記錄的�
 
 不用擔心。 這裡未列出並不表示不可能。 Data Warehouse分析師的Adobe團隊可提供協助。
 
-若要定義新的計算欄， [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 其中包含您想要建置的確切內容的詳細資訊。
+若要定義新的計算資料行，請[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)，其中包含您要建置之專案的詳細資料。
 
 ## 相關檔案
 
 * [建立計算欄](../data-warehouse-mgr/creating-calculated-columns.md)
 * [計算欄型別](../data-warehouse-mgr/calc-column-types.md)
-* [建置 [!DNL Google ECommerce] 包含訂單和客戶資料的維度](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [使用訂單和客戶資料建置 [!DNL Google ECommerce] 維度](../data-warehouse-mgr/bldg-google-ecomm-dim.md)

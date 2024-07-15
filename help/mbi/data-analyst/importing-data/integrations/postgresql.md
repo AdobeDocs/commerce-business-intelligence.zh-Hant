@@ -1,50 +1,50 @@
 ---
 title: 透過SSH通道連線PostgreSQL
-description: 瞭解如何透過SSH通道將您的PostgreSQL資料庫連結至Commerce Intelligence。
+description: 瞭解如何透過SSH通道將PostgreSQL資料庫連線至Commerce Intelligence。
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
 
-# 連線 [!DNL PostgreSQL] via [!DNL SSH Tunnel]
+# 透過[!DNL SSH Tunnel]連線[!DNL PostgreSQL]
 
-連線您的 [!DNL PostgreSQL] 資料庫至 [!DNL Commerce Intelligence] 透過 `SSH tunnel`，您必須執行下列動作：
+若要透過`SSH tunnel`將您的[!DNL PostgreSQL]資料庫連線至[!DNL Commerce Intelligence]，您必須執行下列幾個動作：
 
 1. [擷取 [!DNL Commerce Intelligence] 公開金鑰](#retrieve)
 1. [允許存取 [!DNL Commerce Intelligence] IP位址](#allowlist)
-1. [建立 [!DNL Linux] 使用者 [!DNL Commerce Intelligence]](#linux)
-1. [建立 [!DNL PostgreSQL] 使用者 [!DNL Commerce Intelligence]](#postgres)
-1. [在中輸入連線和使用者資訊 [!DNL Commerce Intelligence]](#finish)
+1. [為 [!DNL Commerce Intelligence]建立 [!DNL Linux] 使用者](#linux)
+1. [為 [!DNL Commerce Intelligence]建立 [!DNL PostgreSQL] 使用者](#postgres)
+1. [在 [!DNL Commerce Intelligence]中輸入連線和使用者資訊](#finish)
 
-## 正在擷取 [!DNL Commerce Intelligence] [!DNL public key] {#retrieve}
+## 正在擷取[!DNL Commerce Intelligence] [!DNL public key] {#retrieve}
 
-此 `public key` 用於授權 [!DNL Commerce Intelligence] [!DNL Linux] 使用者。 現在，您將建立使用者並匯入金鑰。
+`public key`用於授權[!DNL Commerce Intelligence] [!DNL Linux]使用者。 現在，您將建立使用者並匯入金鑰。
 
-1. 前往 **[!UICONTROL Manage Data** > **Connections]** 並按一下 **[!UICONTROL Add a Data Source]**.
-1. 按一下 [!DNL PostgreSQL] 圖示。
-1. 在 `PostgreSQL credentials` 頁面開啟，設定 `Encrypted` 切換至 `Yes`. 這會顯示 `SSH` 設定表單。
-1. 此 `public key` 位在此表單下方。
+1. 移至&#x200B;**[!UICONTROL Manage Data** > **Connections]**&#x200B;並按一下&#x200B;**[!UICONTROL Add a Data Source]**。
+1. 按一下[!DNL PostgreSQL]圖示。
+1. 在`PostgreSQL credentials`頁面開啟後，將`Encrypted`切換設定為`Yes`。 這會顯示`SSH`設定表單。
+1. `public key`位於此表單下方。
 
 在本教學課程中保持此頁面開啟 — 您需要在下一節及結尾使用它。
 
-以下示範如何瀏覽 [!DNL Commerce Intelligence] 擷取金鑰：
+以下示範如何瀏覽[!DNL Commerce Intelligence]以擷取金鑰：
 
 ![正在擷取RJMetrics公開金鑰](../../../assets/get-mbi-public-key.gif)
 
-## 允許存取 [!DNL Commerce Intelligence] IP位址 {#allowlist}
+## 允許存取[!DNL Commerce Intelligence] IP位址 {#allowlist}
 
-為了連線成功，您必須將防火牆設定為允許從IP位址存取。 它是 `54.88.76.97/32`，但也在 `PostgreSQL` 證明資料頁面。 請參閱上方GIF中的藍色方塊。
+為了連線成功，您必須將防火牆設定為允許從IP位址存取。 它是`54.88.76.97/32`，但它也在`PostgreSQL`認證頁面上。 請參閱上方GIF中的藍色方塊。
 
-## 建立 [!DNL Linux] 使用者 [!DNL Commerce Intelligence] {#linux}
+## 正在建立[!DNL Commerce Intelligence]的[!DNL Linux]使用者 {#linux}
 
-只要包含即時（或經常更新）資料，這可以是生產或次要機器。 您可以 [限制此使用者](../../../administrator/account-management/restrict-db-access.md) 任何您喜歡的方式，只要它保留連線至 [!DNL PostgreSQL] 伺服器。
+只要包含即時（或經常更新）資料，這可以是生產或次要機器。 您可以用任何您喜歡的方式[限制此使用者](../../../administrator/account-management/restrict-db-access.md)，只要它保留連線至[!DNL PostgreSQL]伺服器的權利。
 
-1. 若要新增使用者，請以root身分在 [!DNL Linux] 伺服器：
+1. 若要新增使用者，請以root身分在[!DNL Linux]伺服器上執行下列命令：
 
 ```bash
         adduser rjmetric -p<password>
@@ -52,16 +52,16 @@ ht-degree: 0%
         mkdir /home/rjmetric/.ssh
 ```
 
-1. 記住 `public key` 您在第一節中擷取了嗎？ 為確保使用者有權存取資料庫，您需要將金鑰匯入 `authorized\_keys`.
+1. 還記得在第一節中擷取的`public key`嗎？ 若要確保使用者可以存取資料庫，您必須將金鑰匯入`authorized\_keys`。
 
-   將整個金鑰複製到 `authorized\_keys` 檔案如下所示：
+   將整個金鑰複製到`authorized\_keys`檔案，如下所示：
 
 ```bash
         touch /home/rjmetric/.ssh/authorized_keys
         "<PASTE KEY HERE>" >> /home/rjmetric/.ssh/authorized_keys
 ```
 
-1. 若要完成建立使用者，請變更以下專案的許可權： `/home/rjmetric` 允許透過存取的目錄 `SSH`：
+1. 若要完成建立使用者，請變更`/home/rjmetric`目錄上的許可權，以允許透過`SSH`存取：
 
 ```bash
         chown -R rjmetric:rjmetric /home/rjmetric
@@ -70,39 +70,39 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->如果 `sshd\_config` 與伺服器關聯的檔案未設定為預設選項，只有特定使用者擁有伺服器存取權 — 這會防止成功連線至 [!DNL Commerce Intelligence]. 在這些情況下，必須執行類似以下的命令 `AllowUsers` 允許rjmetric使用者存取伺服器。
+>如果與伺服器相關聯的`sshd\_config`檔案未設定為預設選項，則只有特定使用者具有伺服器存取權 — 這會防止成功連線到[!DNL Commerce Intelligence]。 在這些情況下，必須執行`AllowUsers`之類的命令，才能允許rjmetric使用者存取伺服器。
 
-## 建立 [!DNL Commerce Intelligence] [!DNL Postgres] 使用者 {#postgres}
+## 正在建立[!DNL Commerce Intelligence] [!DNL Postgres]使用者 {#postgres}
 
-您的組織可能需要不同的流程，但建立此使用者最簡單的方法是在以有權授予許可權的使用者身分登入Postgres時執行以下查詢。 該使用者也應擁有結構描述，該結構描述 [!DNL Commerce Intelligence] 正在被授予存取權。
+您的組織可能需要不同的流程，但建立此使用者最簡單的方法是在以有權授予許可權的使用者身分登入Postgres時執行以下查詢。 使用者也應擁有[!DNL Commerce Intelligence]被授予存取權的結構描述。
 
 ```sql
     GRANT CONNECT ON DATABASE <database name> TO rjmetric WITH PASSWORD <secure password>;GRANT USAGE ON SCHEMA <schema name> TO rjmetric;GRANT SELECT ON ALL TABLES IN SCHEMA <schema name> TO rjmetric;ALTER DEFAULT PRIVILEGES IN SCHEMA <schema name> GRANT SELECT ON TABLES TO rjmetric;
 ```
 
-取代 `secure password` ，此密碼可與SSH密碼不同。 此外，請務必取代 `database name` 和 `schema name` 在資料庫中使用適當的名稱。
+以您自己的安全密碼取代`secure password`，此密碼可能與SSH密碼不同。 此外，請確定您用資料庫中適當的名稱取代`database name`和`schema name`。
 
 如果要連線多個資料庫或結構描述，請視需要重複此程式。
 
-## 將連線和使用者資訊輸入到 [!DNL Commerce Intelligence] {#finish}
+## 正在將連線和使用者資訊輸入[!DNL Commerce Intelligence] {#finish}
 
-若要完成工作，您必須在中輸入連線和使用者資訊 [!DNL Commerce Intelligence]. 您是否離開 [!DNL PostgreSQL] 憑證頁面是否開啟？ 如果沒有，請前往 **[!UICONTROL Manage Data > Connections]** 並按一下 **[!UICONTROL Add a Data Source]**，然後 [!DNL PostgreSQL] 圖示。 別忘了設定 `Encrypted` 切換至 `Yes`.
+若要完成工作，您必須在[!DNL Commerce Intelligence]中輸入連線和使用者資訊。 您是否讓[!DNL PostgreSQL]認證頁面保持開啟狀態？ 如果沒有，請移至&#x200B;**[!UICONTROL Manage Data > Connections]**&#x200B;並按一下&#x200B;**[!UICONTROL Add a Data Source]**，然後按一下[!DNL PostgreSQL]圖示。 別忘了將`Encrypted`切換設為`Yes`。
 
-在此頁面中輸入以下資訊，從 `Database Connection` 區段：
+在此頁面中輸入下列資訊，從`Database Connection`區段開始：
 
 * `Username`： RJMetrics Postgres使用者名稱（應為rjmetric）
 * `Password`： RJMetrics Postgres密碼
 * `Port`：伺服器上的PostgreSQL連線埠（預設為5432）
-* `Host`: 127.0.0.1
+* `Host`： 127.0.0.1
 
-在 `SSH Connection`：
+在`SSH Connection`下：
 
-* `Remote Address`：您要透過SSH連線的伺服器IP位址或主機名稱
+* `Remote Address`：您要SSH連線的伺服器IP位址或主機名稱
 * `Username`：您的SSH登入名稱（應為rjmetric）
 * `SSH Port`：伺服器上的SSH連線埠（預設為22）
 
-完成後，按一下 **儲存並測試** 以完成設定。
+完成時，按一下&#x200B;**儲存並測試**&#x200B;以完成設定。
 
 ### 相關
 
-* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -13,11 +13,11 @@ ht-degree: 2%
 ---
 
 
-# [!DNL Adobe Commerce Intelligence] 使用手冊
+# [!DNL Adobe Commerce Intelligence]使用手冊
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce Intelligence] 先前稱為 [!DNL Magento Business Intelligence]. 本指南目前正在進行一系列更新，以擷取相關變更。
+>[!DNL Adobe Commerce Intelligence]先前稱為[!DNL Magento Business Intelligence]。 本指南目前正在進行一系列更新，以擷取相關變更。
 
 資料管理員有兩個區域：
 
@@ -29,25 +29,25 @@ ht-degree: 2%
 本指南包含根據您在組織中可能擁有的角色而整理的下列章節。
 
 - [資料使用者](data-user.md)：您使用資料來協助制定業務決策。 您可能會收到來自團隊中資料分析師的報告和儀表板，但您也想瞭解如何建立這些報告和儀表板。
-- [資料分析師](data-analyst.md)：您可以輕鬆設計查詢，也能直接前往資料分析。 您知道如何尋找資料問題的特定答案，並且希望促進同事的自助體驗。
-- 管理員：您管理 [!DNL Commerce Intelligence] 帳戶，包括授權、新增和移除使用者，以及處理基本的管理工作。
+- [資料分析員](data-analyst.md)：您可以輕鬆設計查詢，也能直接處理資料分析。 您知道如何尋找資料問題的特定答案，並且希望促進同事的自助體驗。
+- 管理員：您管理[!DNL Commerce Intelligence]帳戶，包括授權、新增和移除使用者，以及處理必要的管理工作。
 
 除了上述角色型工作流程以外，本指南也包含：
 
-- 最佳實務： [!UICONTROL Commerce Intelligence] 是穩定而有彈性的平台，表示有許多不同的方式可執行類似工作。 本節將 [!DNL Commerce Intelligence] 擷取、分析和檢視您資料的建議方法。
-- Tutorials：請依照這些自我引導式教學課程，瞭解的強大功能 [!DNL Commerce Intelligence].
+- 最佳實務： [!UICONTROL Commerce Intelligence]是健全且有彈性的平台，這表示有許多不同的方式可執行類似的工作。 此區段彙集了[!DNL Commerce Intelligence]擷取、分析和檢視您資料的建議方法。
+- Tutorials：請依照這些自我引導式教學課程，瞭解[!DNL Commerce Intelligence]的強大功能。
 
 ## 如何取得協助
 
-聯絡 [支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) 如果您有疑問，並且想要利用您的部分Professional Services，或是您的帳戶發生問題。
+如果您有任何問題，並且想要利用您的部分專業服務，或是您的帳戶發生問題，請連絡[支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ### 服務原則
 
-檢視 [客戶支援團隊提供的服務清單](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+檢視客戶支援團隊提供哪些服務的[清單](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ### 提交支援票證
 
-需要建置進階計算欄的協助嗎？ 發生缺陷或連線問題？ 如果您需要聯絡支援團隊，Adobe會要求您使用 [支援票證准則](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). 這些准則概述了Adobe解決問題所需的資訊。
+需要建置進階計算欄的協助嗎？ 發生缺陷或連線問題？ 若您需要聯絡支援團隊，Adobe會要求您使用[支援票證准則](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。 這些准則概述了Adobe解決問題所需的資訊。
 
 ## 可用檔案
 

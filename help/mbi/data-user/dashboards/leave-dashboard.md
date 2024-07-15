@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 離開（取消共用）控制面板
 
-變更團隊？ 在春天中清潔您的 [!DNL Commerce Intelligence] 帳戶？ 若要離開儀表板或取消共用您自己，請按一下 **[!UICONTROL Shared]** 位於畫面頂端時，在儀表板中您想要離開。 按一下 **[!UICONTROL Leave this Dashboard]** 以移除您自己。
+變更團隊？ 在春天中清理您的[!DNL Commerce Intelligence]帳戶嗎？ 若要離開或取消從儀表板共用您自己，請在您要離開儀表板的同時按一下畫面頂端的&#x200B;**[!UICONTROL Shared]**。 按一下「**[!UICONTROL Leave this Dashboard]**」以移除您自己。
 
 範例：
 

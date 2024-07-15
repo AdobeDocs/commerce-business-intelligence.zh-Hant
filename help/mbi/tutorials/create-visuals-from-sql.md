@@ -6,42 +6,42 @@ role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
 # 從SQL查詢建立視覺效果
 
-本教學課程的目標是協助您熟悉 [!DNL SQL Report Builder] 並為您建立網站奠定堅實的基礎 `SQL visualizations`.
+本教學課程的目標是讓您熟悉[!DNL SQL Report Builder]中使用的術語，並為您建立`SQL visualizations`奠定堅實的基礎。
 
-此 [[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md) 是具選項的report builder：您可以僅為了擷取資料表目的而執行查詢，也可以將這些結果轉換為報表。 本教學課程說明如何從SQL查詢建立視覺效果。
+[[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md)是具有選項的Report Builder：您可以僅為了擷取資料表的目的而執行查詢，也可以將這些結果轉換為報表。 本教學課程說明如何從SQL查詢建立視覺效果。
 
 ## 術語
 
-在開始本教學課程之前，請先參閱以下在 `SQL Report Builder`.
+開始此教學課程之前，請參閱`SQL Report Builder`中使用的下列術語。
 
-- `Series`：您要測量的欄在SQLReport Builder中稱為序列。 常見範例為 `revenue`， `items sold`、和 `marketing spend`. 至少必須有一個欄設為 `Series` 以建立視覺效果。
+- `Series`：您要測量的資料行在SQLReport Builder中稱為Series。 常見的範例是`revenue`、`items sold`和`marketing spend`。 至少必須有一個資料行設定為`Series`才能建立視覺效果。
 
-- `Category`：您要用來區隔資料的欄稱為 `Category` 這就像是 `Group By` 中的功能 [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md). 例如，如果您想要依客戶贏取來源來劃分客戶的期限收入，則會將包含贏取來源的欄指定為 `Category`. 可將多個欄設為 `Category`.
+- `Category`：您要用來劃分資料的資料行稱為`Category`，就像[`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md)中的`Group By`功能一樣。 例如，如果您想要依客戶的贏取來源來劃分客戶期限收入，則會將包含贏取來源的欄指定為`Category`。 可以將多個資料行設定為`Category`。
 
 >[!NOTE]
 >
->日期和時間戳記也可作為 `Categories`. 它們只是查詢中的另一欄資料，必須在查詢中視需要設定格式和排序。
+>日期和時間戳記也可當作`Categories`使用。 它們只是查詢中的另一欄資料，必須在查詢中視需要設定格式和排序。
 
-- `Labels`：這些標籤會套用為x軸標籤。 分析一段時間的資料趨勢時，會將年份和月份欄指定為標籤。 可以將多個欄設定為Label。
+- `Labels`：這些會套用為x軸標籤。 分析一段時間的資料趨勢時，會將年份和月份欄指定為標籤。 可以將多個欄設定為Label。
 
 ## 步驟1：撰寫查詢
 
 請牢記以下事項：
 
-- 此 [!DNL SQL Report Builder] 使用 [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
+- [!DNL SQL Report Builder]使用[`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html)。
 
-- 如果您要建立含有時間序列的報告，請務必 `ORDER BY` 時間戳記欄。 這樣可確保時間戳記在報表上的繪製順序正確無誤。
+- 如果您要建立具有時間序列的報告，請務必`ORDER BY`時間戳記欄。 這樣可確保時間戳記在報表上的繪製順序正確無誤。
 
-- 此 `EXTRACT` 函式非常適合用於剖析時間戳記的日、周、月或年。 這在下列情況下相當實用： `time interval` 您要用於報告的是 `daily`， `weekly`， `monthly`，或 `yearly`.
+- `EXTRACT`函式非常適合用於剖析時間戳記的日、周、月或年。 當您要在報告上使用的`time interval`是`daily`、`weekly`、`monthly`或`yearly`時，這會很有用。
 
-若要開始使用，請開啟 [!DNL SQL Report Builder] 按一下 **[!UICONTROL Report Builder** > **SQL Report Builder]**.
+若要開始，請按一下&#x200B;**[!UICONTROL Report Builder** > **SQL Report Builder]**&#x200B;以開啟[!DNL SQL Report Builder]。
 
 例如，假設此查詢傳回每個產品每月的銷售專案總數：
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ## 步驟2：建立視覺效果
 
-有了這些結果， *如何建立視覺效果？* 若要開始，請按一下 **[!UICONTROL Chart]** 索引標籤中的 `Results` 窗格。 這會顯示 `Chart settings` 標籤。
+使用這些結果，*您如何建立視覺效果？*&#x200B;若要開始，請按一下`Results`窗格中的&#x200B;**[!UICONTROL Chart]**&#x200B;索引標籤。 這會顯示`Chart settings`標籤。
 
 第一次執行查詢時，報表可能看起來難以捉摸，因為查詢中的所有欄都繪製為序列：
 
@@ -70,32 +70,32 @@ ht-degree: 0%
 
 在此範例中，您希望這會是隨時間變化的折線圖。 若要建立檔案，請使用下列設定：
 
-- `Series`：選取 `Items sold` 欄作為 `Series` 因為您想要測量它。 定義 `Series` 欄中，您會看到報表中繪製了一行。
+- `Series`：選取`Items sold`資料行作為`Series`，因為您想要測量它。 定義`Series`欄後，您會在報表中看到繪製的單一線條。
 
-- `Category`：在此範例中，您想要以報表中的不同行檢視每個產品。 若要這麼做，請設定 `Product name` 作為 `Category`.
+- `Category`：在此範例中，您想要以報表中不同的行來檢視每個產品。 若要這麼做，請將`Product name`設為`Category`。
 
-- `Labels`：使用欄 `year` 和 `month` 作為x軸上的標籤以便檢視 `Items Sold` 隨著時間推移成為趨勢。
+- `Labels`：使用資料行`year`和`month`做為x軸上的標籤，以便檢視`Items Sold`隨時間的趨勢。
 
 >[!NOTE]
 >
->查詢必須包含 `ORDER BY` 標籤上的子句(如果是 `date`/`time` 欄。
+>如果標籤為`date`/`time`欄，則查詢必須在標籤上包含`ORDER BY`子句。
 
 以下快速瞭解您如何建立此視覺效果，從執行查詢到設定報表：
 
 ![](../assets/SQL_report_settings.gif)
 
-## 步驟3：選取 `Chart Type`
+## 步驟3：選取`Chart Type`
 
-此範例使用 `Line` 圖表型別。 使用不同的 `chart type`，按一下圖表選項區段上方的圖示進行變更：
+此範例使用`Line`圖表型別。 若要使用其他`chart type`，請按一下圖表選項區段上方的圖示以變更它：
 
 ![](../assets/Chart_types.png)
 
 ## 步驟4：儲存視覺效果
 
-如果您想要再次使用此報表，請為報表命名，然後按一下 **[!UICONTROL Save]** 在右上角。
+如果您想要再次使用此報表，請為報表命名，然後按一下右上角的&#x200B;**[!UICONTROL Save]**。
 
-在下拉式清單中，選取 `Chart` 作為 `Type` 然後是報告儲存目標的控制面板。
+在下拉式清單中，選取`Chart`作為`Type`，然後選取要儲存報告的儀表板。
 
 ## 正在結束
 
-想要更進一步嗎？ 檢視 [查詢最佳化最佳化最佳實務](../best-practices/optimizing-your-sql-queries.md).
+想要更進一步嗎？ 請檢視[查詢最佳化最佳實務](../best-practices/optimizing-your-sql-queries.md)。
