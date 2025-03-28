@@ -4,9 +4,9 @@ description: 瞭解如何使用Adobe Commerce提供的 [!DNL Commerce Intelligen
 breadcrumb-title: Commerce Intelligence使用手冊
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Business Performance
-source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
+source-git-commit: cea314102fb3b2164c1498ce1efa60e83c41b188
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 0%
       - [管理使用者許可權](administrator/user-management/user-management.md)
       - [重設密碼](../mbi/administrator/user-management/reset-password.md)
       - [限制量度存取](../mbi/administrator/user-management/restrict-metric-access.md)
+      - [進階使用者管理](../mbi/administrator/user-management/advanced.md)
 - 分析資料{#analyze}
    - [資料分析師](data-analyst.md)
    - Data Warehouse管理員{#warehouse-manager}
@@ -70,7 +71,7 @@ ht-degree: 0%
       - [[!DNL sales_order_item]](data-analyst/data-warehouse-mgr/sales-flat-order-item-table.md)
       - [[!DNL quote]](data-analyst/data-warehouse-mgr/sales-flat-quote-table.md)
       - [[!DNL quote_item]](data-analyst/data-warehouse-mgr/sales-flat-quote-item-table.md)
-   - SQLReport Builder{#sql}
+   - SQL Report Builder {#sql}
       - [使用 [!DNL Cohort Report Builder]](data-analyst/dev-reports/cohort-rpt-bldr.md)
       - [將 [!DNL Cohort Report Builder] 用於非日期型同類群組](data-analyst/dev-reports/cohort-rpt-non-date-based.md)
       - [建立質化同類群組分析](data-analyst/dev-reports/create-qual-cohort-analysis.md)
@@ -217,7 +218,7 @@ ht-degree: 0%
       - [使用資料](best-practices/work-data.md)
       - [ [!DNL Google Analytics]中的UTM標籤](best-practices/utm-tagging-google.md)
       - [格式化及匯入財務資料](best-practices/format-import-financial-data.md)
-      - [分段和篩選的建議資料Dimension](best-practices/segment-filter.md)
+      - [分段和篩選的建議資料維度](best-practices/segment-filter.md)
       - [檢查更新週期狀態](best-practices/check-update-cycle.md)
       - [縮短更新週期時間](best-practices/reduce-update-cycle-time.md)
       - [修改資料庫以支援增量複製](best-practices/mod-db-inc-replication.md)
@@ -231,7 +232,7 @@ ht-degree: 0%
    - 使用儀表板{#working-dashboards}
       - [共用儀表板](best-practices/share-dashboard-best-practice.md)
       - [建立投資者儀表板](best-practices/build-investor-dashboard.md)
-- Tutorials{#tutorials}
+- 教學課程{#tutorials}
    - [使用 [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [在 [!DNL Visual Report Builder]中使用時間選項](tutorials/time-options-visual-rpt-bldr.md)
    - [建立 [!DNL SQL] 查詢的視覺效果](tutorials/create-visuals-from-sql.md)
