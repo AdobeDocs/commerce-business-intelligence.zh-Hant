@@ -57,6 +57,6 @@ ht-degree: 0%
 
 1. 選取的報表套裝會顯示在表格中。 按一下&#x200B;**[!UICONTROL Save]**&#x200B;以確認您的選擇。
 
-1. 通知[!DNL Commerce Intelligence] [支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)您的整合已獲得授權，他們將為您執行初始連線程式。
+1. 通知[!DNL Commerce Intelligence] [支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)您的整合已獲得授權，他們將為您執行初始連線程式。
 
 初始連線程式執行後，您的資料表將可在`All Tables`標籤下的Data Warehouse頁面中使用。 選取您要復寫的欄，資料將在下次完整更新後顯示。

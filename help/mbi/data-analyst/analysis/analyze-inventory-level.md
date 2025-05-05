@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 分析存貨層次
 
-此主題示範如何設定儀表板，其中提供您目前詳細目錄的分析，並包含舊版架構或新架構的客戶說明。 如果您在&#x200B;**[!UICONTROL Manage Data]**&#x200B;功能表下沒有&#x200B;**[!UICONTROL Data Warehouse Views]**&#x200B;選項，表示您使用的是舊版架構。 如果您使用舊版架構，請在到達以下&#x200B;_計算欄_&#x200B;指示中的指定區段後，提交主旨為&#x200B;**[!UICONTROL INVENTORY ANALYSIS]**&#x200B;的[新支援要求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+此主題示範如何設定儀表板，其中提供您目前詳細目錄的分析，並包含舊版架構或新架構的客戶說明。 如果您在&#x200B;**[!UICONTROL Manage Data]**&#x200B;功能表下沒有&#x200B;**[!UICONTROL Data Warehouse Views]**&#x200B;選項，表示您使用的是舊版架構。 如果您使用舊版架構，請在到達以下&#x200B;_計算欄_&#x200B;指示中的指定區段後，提交主旨為&#x200B;**[!UICONTROL INVENTORY ANALYSIS]**&#x200B;的[新支援要求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
 
 ## 要追蹤的欄：
 
@@ -267,4 +267,4 @@ ht-degree: 0%
 
      [!UICONTROL Chart type]: `Table`
 
-如果您在建立此分析時遇到任何問題，或只是想與專業服務團隊互動，請[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+如果您在建立此分析時遇到任何問題，或只是想與專業服務團隊互動，請[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。

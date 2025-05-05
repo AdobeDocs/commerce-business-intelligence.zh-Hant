@@ -82,4 +82,4 @@ ht-degree: 0%
 
 一旦您找出流失發生的原因，您就可以使用分析來建置`reactivation`行銷活動。 您可以利用此資料識別已停用的使用者、自上次造訪以來已過去多久時間、上次購買內容等等。 這可讓您做出可操作的決策，以吸引客戶回來。
 
-如需分析方面的協助，[請連絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+如需分析方面的協助，[請連絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。

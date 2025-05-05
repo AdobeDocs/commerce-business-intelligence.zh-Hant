@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 匯入[!DNL CJ Affiliate]資料
 
-若要將[!DNL CJ Affiliate (Commission Junction)]資料匯入[!DNL Adobe Commerce Intelligence]，只要依照下列步驟將結果檔案附加至[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)即可。 Adobe會設定您帳戶的資料表，並允許您繼續獨立上傳資料。
+若要將[!DNL CJ Affiliate (Commission Junction)]資料匯入[!DNL Adobe Commerce Intelligence]，只要依照下列步驟將結果檔案附加至[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)即可。 Adobe會設定您帳戶的資料表，並允許您繼續獨立上傳資料。
 
 ## 匯出[!DNL CJ Affiliate]資料
 

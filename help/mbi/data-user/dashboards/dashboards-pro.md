@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->這些儀表板的存取權取決於您的帳戶型別和存取層級。 如果您沒有看到這些儀表板，請連絡[支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+>這些儀表板的存取權取決於您的帳戶型別和存取層級。 如果您沒有看到這些儀表板，請連絡[支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
 
 ## 報告可用性
 
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ## 產品
 
-「產品」儀表板會顯示一般產品績效，包括訂購的產品、其商品總值(GMV)，以及購買與退款的頂級產品。 這可協助您平衡購買與回報，並判斷產品成功與受歡迎程度。 您的商店必須設定[以追蹤退款](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html)，才能填入這些圖表。
+「產品」儀表板會顯示一般產品績效，包括訂購的產品、其商品總值(GMV)，以及購買與退款的頂級產品。 這可協助您平衡購買與回報，並判斷產品成功與受歡迎程度。 您的商店必須設定[以追蹤退款](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=zh-Hant)，才能填入這些圖表。
 
 >[!NOTE]
 >

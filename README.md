@@ -15,13 +15,13 @@ ht-degree: 4%
 
 ## 關於您對Adobe內容的貢獻
 
-請參閱 [Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+請參閱 [Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant).
 
 貢獻方式取決於您的身分和您要貢獻的變更型別：
 
 ### 微幅變更
 
-若您出於好意想貢獻微幅更新內容，請前往文章，並按一下 **編輯** 文章中前往主題GitHub來源的連結。 然後，只需使用GitHub UI進行更新即可。 檢視一般 [Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 以取得詳細資訊。
+若您出於好意想貢獻微幅更新內容，請前往文章，並按一下 **編輯** 文章中前往主題GitHub來源的連結。 然後，只需使用GitHub UI進行更新即可。 檢視一般 [Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant) 以取得詳細資訊。
 
 Adobe使用條款涵蓋您在本存放庫為檔案和程式碼範例提交的小幅更正或釐清。
 
@@ -43,7 +43,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 社群投稿人可以使用GitHub UI進行基本編輯或建立存放庫復本，以做出重大貢獻。
 
-請參閱 [Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 以取得詳細資訊。
+請參閱 [Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant) 以取得詳細資訊。
 
 ## 如何使用Markdown將主題格式化
 

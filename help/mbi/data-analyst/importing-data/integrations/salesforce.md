@@ -36,4 +36,4 @@ ht-degree: 0%
 如果您比較精通技術，[[!DNL Salesforce] API檔案](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm)可以成為瞭解更多有關Salesforce如何與[!DNL Commerce Intelligence]整合的實用資源。
 
 * [預期 [!DNL Salesforce] 資料](../integrations/salesforce-data.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)

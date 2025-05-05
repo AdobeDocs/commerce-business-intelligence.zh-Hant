@@ -65,4 +65,4 @@ ht-degree: 0%
 
 您是否在上述範例中注意到公式的`timestamp`、`groupings`、`perspectives`和`filters`繼承自其輸入量度？ 請記得，公式可以用來使用`perspectives`和[獨立時間選項](../../tutorials/time-options-visual-rpt-bldr.md){： target=&quot;_blank&quot;}，就像量度一樣。
 
-若您有關於在`Report Builder`中使用公式的任何其他問題，[請聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+若您有關於在`Report Builder`中使用公式的任何其他問題，[請聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。

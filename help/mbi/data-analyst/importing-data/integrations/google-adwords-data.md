@@ -89,4 +89,4 @@ ht-degree: 0%
 
 如果您沒有整合表格，但您在`adwords`表格上建置了精美的儀表板，則需要復寫報告或建立重複的量度，以便將該資料與您的[!DNL Facebook Ads]資料進行比較。 使用合併表格可讓您順暢地將[!DNL Facebook Ads]資料與現有的[!DNL Adwords]報告合併。 您也可以依廣告平台分段。
 
-如果您已同步上述欄位，[請連絡我們](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以整合您的廣告支出。
+如果您已同步上述欄位，[請連絡我們](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)以整合您的廣告支出。

@@ -40,4 +40,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->每個帳戶都有合約數量的授權或名額。 若您已達到限制或想進一步瞭解，請[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+>每個帳戶都有合約數量的授權或名額。 若您已達到限制或想進一步瞭解，請[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。

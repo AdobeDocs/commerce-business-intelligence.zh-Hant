@@ -46,7 +46,7 @@ ht-degree: 0%
 
 **您接受來賓訂單嗎？**
 
-*若是如此，此表格可能不會包含您的所有客戶。 請連絡[支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)，以確保您的客戶分析包括所有客戶。*
+*若是如此，此表格可能不會包含您的所有客戶。 請連絡[支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)，以確保您的客戶分析包括所有客戶。*
 
 *不確定您是否接受來賓訂單？ 請參考[此主題](../data-warehouse-mgr/guest-orders.md)以深入瞭解！*
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 * **[!UICONTROL Created_at]**：建立或下訂單的日期。
 * **[!UICONTROL Customer_email]**：下訂單的客戶的電子郵件地址。 這也可能是客戶的唯一識別碼。
 * **[!UICONTROL Customer's lifetime number of orders]**： `Customers`資料表上有相同名稱的資料行復本。
-* **[!UICONTROL Customer's order number]**：與訂單關聯之客戶的循序訂單編號。 例如，如果您正在檢視的資料列是客戶的第一個訂單，則此欄為「1」；但如果這是客戶的第十五個訂單，則此欄會顯示此訂單的「15」。 如果您的`Customers`資料表中不存在此維度，請要求[支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)協助您建立它。
+* **[!UICONTROL Customer's order number]**：與訂單關聯之客戶的循序訂單編號。 例如，如果您正在檢視的資料列是客戶的第一個訂單，則此欄為「1」；但如果這是客戶的第十五個訂單，則此欄會顯示此訂單的「15」。 如果您的`Customers`資料表中不存在此維度，請要求[支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)協助您建立它。
 * **[!UICONTROL Customer's order number (previous-current)]**： **[!UICONTROL Customer's order number]**&#x200B;欄中兩個值的串連。 它用於以下的範例報表中，以顯示任意兩份訂單之間經過的時間。 例如，使用此計算方式，客戶第一個訂單日期與第二個訂單日期之間的時間會顯示為「1-2」。
 * **[!UICONTROL Coupon_code]**：顯示每個訂單使用了哪些優惠券。
 * **[!UICONTROL Seconds since previous order]**：客戶訂單之間的時間（秒）。
