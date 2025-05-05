@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 必要條件
 
-**匯入您的廣告成本資料** — 將[!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md)連線至[!DNL Adobe Commerce Intelligence] — 這會自動同步您[!DNL AdWords]在Commerce Intelligence中的支出。
+**匯入您的廣告成本資料** — 將[[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md)連線至[!DNL Adobe Commerce Intelligence] — 這會自動同步您[!DNL AdWords]在Commerce Intelligence中的支出。
 
 **追蹤使用者贏取管道資料** — 若要將您的[!DNL Google AdWords]資料繫結至資料庫中的特定訂單，您必須[透過[!DNL Google Analytics E-commerce]追蹤使用者贏取](../analysis/google-track-user-acq.md)。 這可讓您以utm來源和中型來連線每個訂單。
 

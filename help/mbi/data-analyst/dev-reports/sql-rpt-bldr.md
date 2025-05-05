@@ -55,7 +55,7 @@ ht-degree: 0%
 >
 >[!DNL SQL Report Builder]個查詢區分大小寫。 在撰寫查詢時，請務必使用正確的大小寫，否則可能會出現非預期的結果或錯誤。
 
-依照查詢最佳化](../../best-practices/optimizing-your-sql-queries.md)的[准則，在[!DNL SQL]編輯器中寫入查詢。
+依照查詢最佳化[&#128279;](../../best-practices/optimizing-your-sql-queries.md)的准則，在[!DNL SQL]編輯器中寫入查詢。
 
 >[!IMPORTANT]
 >

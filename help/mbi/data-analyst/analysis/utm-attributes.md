@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ### 最終點按歸因
 
-最後點按歸因是[!DNL Google Analytics]最常用的歸因模型。 在此案例中，[!DNL Google Analytics] Cookie代表轉換事件前最新來源的UTM引數，而這是記錄在資料庫](../../data-analyst/analysis/google-track-user-acq.md)中的[。 如果使用者點按包含新UTM引數集的新URL，[!DNL Google Analytics] Cookie只會覆寫先前的UTM引數。
+最後點按歸因是[!DNL Google Analytics]最常用的歸因模型。 在此案例中，[!DNL Google Analytics] Cookie代表轉換事件前最新來源的UTM引數，而這是記錄在資料庫[&#128279;](../../data-analyst/analysis/google-track-user-acq.md)中的。 如果使用者點按包含新UTM引數集的新URL，[!DNL Google Analytics] Cookie只會覆寫先前的UTM引數。
 
 例如，假設某個使用者先透過[!DNL Google Analytics] *付費搜尋*&#x200B;造訪網站，然後透過&#x200B;*有機搜尋*&#x200B;傳回，最後在轉換事件之前直接或透過&#x200B;*電子郵件連結* **（不含UTM引數**）返回&#x200B;*網站*。 在此範例中，[!DNL Google Analytics] Cookie指出使用者的來源是有機的，因為這是轉換前的最後一個來源。 已忽略最終轉換事件之前使用者的&#x200B;*路徑*。 如果使用者改為透過包含UTM的電子郵件連結造訪網站，則[!DNL Google Analytics] Cookie會指出來源為「電子郵件」。 因此，如果Cookie中存在UTM引數，且使用者透過直接進入，則[!DNL Google Analytics] Cookie會顯示UTM引數而非「直接」。
 

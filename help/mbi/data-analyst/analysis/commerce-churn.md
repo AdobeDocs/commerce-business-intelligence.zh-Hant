@@ -76,19 +76,22 @@ ht-degree: 2%
 * **流失率**
    * [!UICONTROL Metric]：新客戶（依第一筆訂單日期）
    * [!UICONTROL Filter]： `Lifetime number of orders Greater Than 0`
-   * 
+   * &#x200B;
+
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]： `New customers (by last order date)`
    * [!UICONTROL Filter]：
-   * 自客戶上次訂購日期起的秒數>= [您為流失客戶定義的截止日期&#x200B;]**`^`**
+   * 自客戶上次訂購日期起的秒數>= [您為流失客戶定義的截止日期&#x200B;]&#x200B;**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]： `New customers (by last order date)`
    * [!UICONTROL Filter]： `Lifetime number of orders Greater Than 0`
-   * 
+   * &#x200B;
+
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]： `(B / ((A + B) - C)`
-   * 
+   * &#x200B;
+
      [!UICONTROL Format]: Percentage
 
 * *量度`A`：`New customers cumulative`*

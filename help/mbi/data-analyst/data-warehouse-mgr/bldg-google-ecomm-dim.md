@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 必要條件和概覽
 
-若要在此主題中建立維度，您需要[!DNL Google ECommerce]表格、`orders`表格和`customers`表格。 這些資料表必須先與您的Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md)同步[，才能建立維度。 已同步的資料表會顯示在`Data Warehouse Manager`的`Synced Tables`區段中。
+若要在此主題中建立維度，您需要[!DNL Google ECommerce]表格、`orders`表格和`customers`表格。 這些資料表必須先與您的Data Warehouse[&#128279;](../../data-analyst/data-warehouse-mgr/tour-dwm.md)同步，才能建立維度。 已同步的資料表會顯示在`Data Warehouse Manager`的`Synced Tables`區段中。
 
 如果您需要重新整理程式，以下快速瞭解同步表格和欄：
 

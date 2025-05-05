@@ -50,7 +50,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->_您可以限制&#x200B;**[!UICONTROL Standard]**使用者對特定量度的[存取權](../../administrator/user-management/restrict-metric-access.md)。_
+>_您可以限制&#x200B;**[!UICONTROL Standard]**&#x200B;使用者對特定量度的[存取權](../../administrator/user-management/restrict-metric-access.md)。_
 >
 >**[!UICONTROL Standard] _使用者可以使用額外的許可權設定來存取帳單。_
 >

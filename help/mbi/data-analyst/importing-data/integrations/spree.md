@@ -17,7 +17,7 @@ ht-degree: 0%
 
 想要瞭解您的業務表現或尋找您最有價值的贏取來源和管道？ 將您的[!DNL Spree]資料連線至[!DNL Commerce Intelligence]可讓您回答這些問題等等。
 
-[!DNL Spree]資料庫是以[!DNL PostgreSQL]為基礎，您可以使用與一般 [!DNL Postgres] 連線](../integrations/postgresql.md)相同的[步驟，將其連線至[!DNL Commerce Intelligence]。
+[!DNL Spree]資料庫是以[!DNL PostgreSQL]為基礎，您可以使用與一般 [!DNL Postgres] 連線[&#128279;](../integrations/postgresql.md)相同的步驟，將其連線至[!DNL Commerce Intelligence]。
 
 ## 相關檔案
 
