@@ -4,14 +4,14 @@ description: 瞭解如何新增新的 [!DNL Commerce Intelligence] 使用者以�
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
 role: Admin, User
 feature: User Management
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 99fc6c26017b5da4d066d400be1888ab4032590d
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-# 新增[!DNL Adobe Commercer Intelligence]位使用者
+# 新增[!DNL Adobe Commerce Intelligence]位使用者
 
 1. 按一下右上角的公司名稱，然後從下拉式清單中選取&#x200B;**[!UICONTROL Invite User]**。
 1. 輸入使用者名稱和電子郵件。
@@ -40,4 +40,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->每個帳戶都有合約數量的授權或名額。 若您已達到限制或想進一步瞭解，請[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+>每個帳戶都有合約數量的授權或名額。 若您已達到限制或想進一步瞭解，請[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
