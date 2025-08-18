@@ -15,7 +15,7 @@ ht-degree: 0%
 
 如果[!DNL Commerce Intelligence]中有多個量度需要以類似方式篩選（例如，篩選掉測試訂單），您可以建立已儲存的「篩選設定」並將它們套用至量度。 這樣可節省您的時間，因為在建立或編輯量度時，您不必新增個別篩選器。
 
-如需詳細資訊，請參閱[訓練影片](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html)。
+如需詳細資訊，請參閱[訓練影片](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=zh-Hant)。
 
 >[!NOTE]
 >

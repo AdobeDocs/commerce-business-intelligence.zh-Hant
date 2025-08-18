@@ -60,7 +60,7 @@ ht-degree: 0%
 ## 相關：
 
 * [預期 [!DNL Google ECommerce] 資料](../integrations/google-ecommerce-data.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
 * [正在設定 [!DNL Google ECommerce] 追蹤](https://support.google.com/analytics/answer/1009612?hl=en)
 * [探索您最有價值的贏取來源和管道](../../analysis/most-value-source-channel.md)
 * [提高廣告行銷活動的ROI](../../analysis/roi-ad-camp.md)

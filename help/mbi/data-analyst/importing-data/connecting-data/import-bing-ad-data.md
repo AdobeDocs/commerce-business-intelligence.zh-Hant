@@ -26,4 +26,4 @@ ht-degree: 0%
 1. 在`Save As`對話方塊中，按一下您想要儲存匯出檔案的資料夾。
 1. 在`File name`方塊中，選擇檔案匯出的名稱。
 1. 按一下&#x200B;**[!UICONTROL Save]**。
-1. 下載檔案後，[請連絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)代表您執行第一次上傳，並設定必要的後端維度。
+1. 下載檔案後，[請連絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)代表您執行第一次上傳，並設定必要的後端維度。

@@ -151,4 +151,4 @@ ht-degree: 1%
 
 ## 正在結束 {#wrapup}
 
-您可以建立許多分析，以更清楚瞭解客戶如何使用抵用券。 想過分析客戶如何使用優惠券或使用優惠券的時間嗎？ 如何找出最佳折扣金額 — 哪些金額可鼓勵重複購買者、更高的平均訂單值和更高的期限收入？ 如需這些型別問題的協助，請[連絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+您可以建立許多分析，以更清楚瞭解客戶如何使用抵用券。 想過分析客戶如何使用優惠券或使用優惠券的時間嗎？ 如何找出最佳折扣金額 — 哪些金額可鼓勵重複購買者、更高的平均訂單值和更高的期限收入？ 如需這些型別問題的協助，請[連絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。

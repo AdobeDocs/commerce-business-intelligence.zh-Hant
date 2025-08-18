@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ## 相關
 
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
 * [透過 [!DNL Google ECommerce]追蹤訂單轉介來源](../integrations/google-ecommerce.md)
 * [追蹤資料庫中的使用者反向連結來源](../../analysis/google-track-user-acq.md)
 * [探索您最有價值的贏取來源和管道](../../analysis/most-value-source-channel.md)

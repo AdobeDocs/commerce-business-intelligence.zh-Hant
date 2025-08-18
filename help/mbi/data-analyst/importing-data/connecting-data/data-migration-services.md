@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 資料移轉
 
-移轉至新的資料庫結構描述、伺服器或報告資料庫並不一定會有壓力。 [[!DNL Adobe] 服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)提供移轉協助。
+移轉至新的資料庫結構描述、伺服器或報告資料庫並不一定會有壓力。 [[!DNL Adobe] 服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)提供移轉協助。
 
 為確保轉換儘可能順暢，提交移轉請求時請務必儘可能詳細說明。 本主題提供提交請求並開始移轉所需的一切。 提供您需求的全面資訊，確保您的專案範圍設定正確，而且估計準確。
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ## 如何提交請求？ {#submitreq}
 
-您可以透過[提交支援要求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)與我們聯絡。
+您可以透過[提交支援要求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)與我們聯絡。
 
 如果您依照上一節中的步驟建立欄位比對試算表，別忘了附加試算表。
 
