@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 必須有[!DNL Zendesk]個資料
 
-在連線[您的 [!DNL Zendesk] 帳戶](../integrations/zendesk.md)之後，您可以使用[Data Warehouse管理員](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)輕鬆追蹤相關的資料欄位以進行分析。
+在連線[您的 [!DNL Zendesk] 帳戶](../integrations/zendesk.md)後，您可以使用[Data Warehouse管理員](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)輕鬆追蹤相關的資料欄位以進行分析。
 
 本主題探索您可以從[!DNL Zendesk]匯入至[!DNL Adobe Commerce Intelligence]的主要資料表，包括有關[!DNL Zendesk]資料的其他檔案的連結。
 
@@ -35,4 +35,4 @@ ht-degree: 0%
 ## 相關
 
 * [正在連線Zendesk](../integrations/zendesk.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

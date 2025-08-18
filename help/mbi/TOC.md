@@ -16,27 +16,27 @@ ht-degree: 0%
 
 - [[!DNL Commerce Intelligence]使用手冊](guide-overview.md)
 - [[!DNL Commerce Intelligence]簡介](getting-started/getting-started.md)
-- 快速入門{#start}
+- 快速入門 {#start}
    - [入門](getting-started/onboarding.md)
    - [啟用您的 [!DNL Commerce Intelligence] 帳戶](getting-started/onpremise-activation.md)
    - [登入您的 [!DNL Commerce Intelligence] 帳戶](getting-started/sign-in.md)
    - [Commerce Intelligence Essentials與Commerce Intelligence Pro](getting-started/essentials-vs-pro.md)
-- 管理員{#administrator}
-   - 帳戶管理{#acct-mgmt}
+- 管理員 {#administrator}
+   - 帳戶管理 {#acct-mgmt}
       - [ [!DNL New Architecture]的優點](../mbi/administrator/account-management/new-architecture.md)
       - [在辦公室周圍顯示儀表板](../mbi/administrator/account-management/display-dashboards-office.md)
       - [管理您的帳戶](administrator/account-management/managing-account-settings.md)
       - [限制資料庫存取](../mbi/administrator/account-management/restrict-db-access.md)
-   - 使用者管理{#user-mgmt}
+   - User Management {#user-mgmt}
       - [建立/編輯使用者](../mbi/administrator/user-management/create-user.md)
       - [刪除/重新啟用使用者](../mbi/administrator/user-management/delete-user.md)
       - [管理使用者許可權](administrator/user-management/user-management.md)
       - [重設密碼](../mbi/administrator/user-management/reset-password.md)
       - [限制量度存取](../mbi/administrator/user-management/restrict-metric-access.md)
       - [進階使用者管理](../mbi/administrator/user-management/advanced.md)
-- 分析資料{#analyze}
+- 分析資料 {#analyze}
    - [資料分析師](data-analyst.md)
-   - Data Warehouse管理員{#warehouse-manager}
+   - Data Warehouse Manager {#warehouse-manager}
       - [簡介](data-analyst/data-warehouse-mgr/tour-dwm.md)
       - [進階計算欄型別](data-analyst/data-warehouse-mgr/adv-calc-columns.md)
       - [正在建置 [!DNL Google Ecommerce] 維度](data-analyst/data-warehouse-mgr/bldg-google-ecomm-dim.md)
@@ -62,7 +62,7 @@ ht-degree: 0%
       - [使用儀表板範圍篩選](data-analyst/data-warehouse-mgr/using-dshbrd-wide-filter-date-ranges.md)
       - [使用事件編號計算欄](data-analyst/data-warehouse-mgr/using-event-num-calc-column.md)
       - [使用循序比較計算欄](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column.md)
-   - 一般Commerce資料表{#tables}
+   - 常見Commerce表格 {#tables}
       - [簡介](data-analyst/data-warehouse-mgr/common-mage-tables.md)
       - [[!DNL customer_entity]](data-analyst/data-warehouse-mgr/cust-ent-table.md)
       - [[!DNL enterprise_rma]](data-analyst/data-warehouse-mgr/enter-rma-table.md)
@@ -71,7 +71,7 @@ ht-degree: 0%
       - [[!DNL sales_order_item]](data-analyst/data-warehouse-mgr/sales-flat-order-item-table.md)
       - [[!DNL quote]](data-analyst/data-warehouse-mgr/sales-flat-quote-table.md)
       - [[!DNL quote_item]](data-analyst/data-warehouse-mgr/sales-flat-quote-item-table.md)
-   - SQL Report Builder {#sql}
+   - SQL REPORT BUILDER {#sql}
       - [使用 [!DNL Cohort Report Builder]](data-analyst/dev-reports/cohort-rpt-bldr.md)
       - [將 [!DNL Cohort Report Builder] 用於非日期型同類群組](data-analyst/dev-reports/cohort-rpt-non-date-based.md)
       - [建立質化同類群組分析](data-analyst/dev-reports/create-qual-cohort-analysis.md)
@@ -86,7 +86,7 @@ ht-degree: 0%
       - [瞭解 [!DNL Repeat Order Probability Report]](data-analyst/dev-reports/repeat-order-probability.md)
       - [使用 [!DNL SQL Report Builder]稽核量度](data-analyst/dev-reports/audit-metrics-sql.md)
       - [ [!DNL SQL] 和 [!DNL Data Warehouse Manager]之間的資料行差異](data-analyst/dev-reports/columns-sql-dwm.md)
-   - 正在連線資料{#connecting}
+   - 正在連線資料 {#connecting}
       - [簡介](data-analyst/importing-data/connecting-data/connecting-data.md)
       - [格式化及匯入電子商務資料](data-analyst/importing-data/connecting-data/format-import-ecom-data.md)
       - [正在匯入 [!DNL Bing Ad Spend] 資料](data-analyst/importing-data/connecting-data/import-bing-ad-data.md)
@@ -96,7 +96,7 @@ ht-degree: 0%
       - [匯入離線/其他廣告支出資料](data-analyst/importing-data/connecting-data/import-offline-ad-data.md)
       - [使用檔案上傳程式](data-analyst/importing-data/connecting-data/using-file-uploader.md)
       - [資料移轉服務](data-analyst/importing-data/connecting-data/data-migration-services.md)
-   - SaaS整合{#saas}
+   - SaaS整合 {#saas}
       - [SaaS整合](data-analyst/importing-data/integrations/integrations.md)
       - [瞭解 [!DNL Database] 和 [!DNL SQL] 編輯器之間的結果](data-analyst/importing-data/integrations/last-success-update.md)
       - [正在連線 [!DNL Adobe Analytics]](data-analyst/importing-data/integrations/adobe-analytics.md)
@@ -129,19 +129,19 @@ ht-degree: 0%
       - [預期 [!DNL Zendesk] 資料](data-analyst/importing-data/integrations/exp-zendesk-data.md)
       - [正在分析 [!DNL Zendesk] 資料](data-analyst/importing-data/integrations/help-desk-zendesk.md)
       - [正在稽核 [!DNL Zendesk] 資料](data-analyst/importing-data/integrations/audit-zendesk-data.md)
-   - 資料庫整合{#integration}
+   - 資料庫整合 {#integration}
       - [正在連線 [!DNL Amazon RDS]](data-analyst/importing-data/integrations/amazon-rds.md)
       - [透過VPN連線資料庫](data-analyst/importing-data/integrations/databases-via-a-vpn.md)
       - [將您的 [!DNL MySQL Database] 連線至 [!DNL Commerce Intelligence]](data-analyst/importing-data/integrations/db-to-mbi.md)
       - [正在連線Adobe Commerce](data-analyst/importing-data/integrations/magento.md)
       - [預期Commerce資料](data-analyst/importing-data/integrations/magento-data.md)
       - [正在連線 [!DNL Microsoft SQL Server]](data-analyst/importing-data/integrations/microsoft-sql-server.md)
-      - [正在透過 [!DNL SSH Tunnel]連線 [!DNL MongoDB] ](data-analyst/importing-data/integrations/mongodb-via-ssh-tunnel.md)
-      - [正在透過 [!DNL direct connection]連線 [!DNL MySQL] ](data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)
-      - [正在透過 [!DNL cPanel]連線 [!DNL MySQL] ](data-analyst/importing-data/integrations/mysql-via-cpanel.md)
-      - [正在透過 [!DNL SSH Tunnel]連線 [!DNL MySQL] ](data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md)
+      - [正在透過 [!DNL MongoDB] 連線 [!DNL SSH Tunnel]](data-analyst/importing-data/integrations/mongodb-via-ssh-tunnel.md)
+      - [正在透過 [!DNL MySQL] 連線 [!DNL direct connection]](data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)
+      - [正在透過 [!DNL MySQL] 連線 [!DNL cPanel]](data-analyst/importing-data/integrations/mysql-via-cpanel.md)
+      - [正在透過 [!DNL MySQL] 連線 [!DNL SSH Tunnel]](data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md)
       - [正在連線 [!DNL PostgreSQ]](data-analyst/importing-data/integrations/postgresql.md)
-   - 分析行銷活動{#campaigns}
+   - 分析行銷活動 {#campaigns}
       - [抵用券程式碼分析（基本）](data-analyst/analysis/ess-coupon-code-analysis.md)
       - [抵用券程式碼分析（進階）](data-analyst/analysis/coupon-code-analysis.md)
       - [免運費臨界值](data-analyst/analysis/free-ship-thresh.md)
@@ -149,7 +149,7 @@ ht-degree: 0%
       - [分析優惠券使用狀況](data-analyst/analysis/coupon-usage.md)
       - [提高廣告行銷活動的ROI](data-analyst/analysis/roi-ad-camp.md)
       - [行銷ROI](data-analyst/analysis/marketing-roi.md)
-   - 分析客戶{#customers}
+   - 分析客戶 {#customers}
       - [計算Commerce流失率](data-analyst/analysis/commerce-churn.md)
       - [定義客戶集中度](data-analyst/analysis/define-cust-concent.md)
       - [定義客戶流失](data-analyst/analysis/define-cust-churn.md)
@@ -160,7 +160,7 @@ ht-degree: 0%
       - [分析客戶回購行為](data-analyst/analysis/repurchase-behavior.md)
       - [分析網站活動和客戶轉換率](data-analyst/analysis/web-act-cust-conversion.md)
       - [時近、頻率、貨幣(RFM)分析](data-analyst/analysis/rfm-analysis.md)
-   - 分析業務績效{#performance}
+   - 分析業務績效 {#performance}
       - [根據實際量度追蹤目標](data-analyst/analysis/track-goals-against-metrics.md)
       - [分析退回的訂單](data-analyst/analysis/returned-order-analysis.md)
       - [逐年比較、逐月比較、逐周比較](data-analyst/analysis/year-month-week.md)
@@ -171,9 +171,9 @@ ht-degree: 0%
       - [瞭解 [!DNL Google Analytics] UTM歸因](data-analyst/analysis/utm-attributes.md)
       - [分析存貨層次](data-analyst/analysis/analyze-inventory-level.md)
       - [報告零售日曆](data-analyst/analysis/report-retail-calendar.md)
-   - 正在預測{#forecasting}
+   - 預測 {#forecasting}
       - [簡介](data-analyst/analysis/forecasting.md)
-- 建置報告並共用資料{#build}
+- 建立報表及共用資料 {#build}
    - [資料使用者](../mbi/data-user.md)
    - 報表 {#reports}
       - [報表基礎知識](data-user/reports/rpt-fundamentals.md)
@@ -187,7 +187,7 @@ ht-degree: 0%
       - [篩選器集](data-user/reports/ess-manage-data-filters.md)
       - [複製報告](data-user/reports/copy-report.md)
       - [圖表分析](data-user/reports/what-is-chart-analyzing.md)
-   - 儀表板{#dashboards}
+   - 儀表板 {#dashboards}
       - [建立儀表板](data-user/dashboards/ess-dashboards.md)
       - [現成可用的儀表板](data-user/dashboards/ootb-dashboards.md)
       - [Dashboard Pro](data-user/dashboards/dashboards-pro.md)
@@ -209,12 +209,12 @@ ht-degree: 0%
       - [存取共用儀表板](data-user/dashboards/access-shared-dashboard.md)
       - [變更共用儀表板的存取權](data-user/dashboards/change-access-dashboard.md)
       - [離開（取消共用）控制面板](data-user/dashboards/leave-dashboard.md)
-   - 共用資料{#share}
+   - 共用資料 {#share}
       - [共用資料](data-user/export-data/share-data.md)
       - [匯出圖表資料](data-user/export-data/exp-chart-dash.md)
       - [自動化電子郵件摘要](data-user/export-data/email-summaries.md)
-- 最佳實務{#best-practices}
-   - 使用資料{#data}
+- 最佳實務 {#best-practices}
+   - 使用資料 {#data}
       - [使用資料](best-practices/work-data.md)
       - [ [!DNL Google Analytics]中的UTM標籤](best-practices/utm-tagging-google.md)
       - [格式化及匯入財務資料](best-practices/format-import-financial-data.md)
@@ -225,14 +225,14 @@ ht-degree: 0%
       - [最佳化資料庫以進行分析](best-practices/opt-db-analysis.md)
       - [正在最佳化您的 [!DNL SQL] 查詢](best-practices/optimizing-your-sql-queries.md)
       - [瞭解您的 [!DNL Commerce Intelligence] 環境](best-practices/understanding-magento.md)
-   - 專案組織{#project}
+   - 專案組織 {#project}
       - [為 [!DNL Commerce Intelligence]中的報告和元素命名](best-practices/naming-elements.md)
       - [合併您的表格](best-practices/consolidating-your-tables.md)
       - [清除您的 [!DNL Commerce Intelligence] 帳戶](best-practices/declutter-account.md)
-   - 使用儀表板{#working-dashboards}
+   - 使用儀表板 {#working-dashboards}
       - [共用儀表板](best-practices/share-dashboard-best-practice.md)
       - [建立投資者儀表板](best-practices/build-investor-dashboard.md)
-- 教學課程{#tutorials}
+- 教學課程 {#tutorials}
    - [使用 [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [在 [!DNL Visual Report Builder]中使用時間選項](tutorials/time-options-visual-rpt-bldr.md)
    - [建立 [!DNL SQL] 查詢的視覺效果](tutorials/create-visuals-from-sql.md)

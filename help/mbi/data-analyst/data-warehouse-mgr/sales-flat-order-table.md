@@ -27,17 +27,17 @@ ht-degree: 0%
 | `base_subtotal` | 訂單中包含之所有專案的商品總值。 不包含稅金、運費、折扣等 |
 | `base_shipping_amount` | 套用至訂單的送貨值 |
 | `base_tax_amount` | 套用至訂單的稅捐值 |
-| `billing_address_id` | 與`sales_order_address`資料表關聯的`Foreign key`。 加入`sales_order_address.entity_id`以決定與訂單相關聯的帳單地址詳細資料 |
+| `billing_address_id` | 與`Foreign key`資料表關聯的`sales_order_address`。 加入`sales_order_address.entity_id`以決定與訂單相關聯的帳單地址詳細資料 |
 | `coupon_code` | 適用於訂單的優惠券。 若未套用任何抵用券，此欄位為`NULL` |
 | `created_at` | 訂單的建立時間戳記，以UTC儲存在本機。 視您在[!DNL Commerce Intelligence]中的設定而定，此時間戳記可能會轉換為[!DNL Commerce Intelligence]中與您的資料庫時區不同的報表時區 |
 | `customer_email` | 下訂單客戶的電子郵件地址。 所有情況下都會填入此值，包括透過訪客結帳處理的訂單 |
 | `customer_group_id` | 與`customer_group`資料表相關聯的外部索引鍵。 加入`customer_group.customer_group_id`以決定與訂單相關聯的客戶群組 |
-| `customer_id` | 與`customer_entity`資料表關聯的`Foreign key` （如果客戶已註冊）。 加入`customer_entity.entity_id`以決定與訂單相關聯的客戶屬性。 如果訂單是透過訪客結帳下單，則此欄位為`NULL` |
+| `customer_id` | 與`Foreign key`資料表關聯的`customer_entity` （如果客戶已註冊）。 加入`customer_entity.entity_id`以決定與訂單相關聯的客戶屬性。 如果訂單是透過訪客結帳下單，則此欄位為`NULL` |
 | `entity_id` (PK) | 表格的唯一識別碼，常用於聯結Commerce執行個體內其他表格 |
 | `increment_id` | 訂單的唯一識別碼，在Adobe Commerce中通常稱為`order_id`。 `increment_id`最常用於聯結至外部來源，例如[!DNL Google Ecommerce] |
 | `shipping_address_id` | 與`sales_order_address`資料表相關聯的外部索引鍵。 加入`sales_order_address.entity_id`以決定與訂單關聯的送貨地址詳細資料 |
 | `status` | 訂單的狀態。 可能會傳回「完成」、「處理」、「已取消」、「已退款」等值，以及在Commerce執行個體上實作的任何自訂狀態。 訂單處理時可能會有所變更 |
-| `store_id` | 與`store`資料表關聯的`Foreign key`。 加入`store`。`store_id`以判斷與訂單相關聯的Commerce商店檢視 |
+| `store_id` | 與`Foreign key`資料表關聯的`store`。 加入`store`。`store_id`以判斷與訂單相關聯的Commerce商店檢視 |
 
 {style="table-layout:auto"}
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 | `Customer's order number (previous-current)` | 客戶先前訂單的排名與此訂單的排名串連，以`-`字元分隔。 計算方式為將(&quot;`Customer's order number` - 1&quot;)與&quot;`-`&quot;串連，然後是&quot;`Customer's order number`&quot;。 例如，對於與客戶第二次購買相關聯的訂單，此欄會傳回`1-2`的值。 最常用於表示兩個訂單事件之間的時間（即在「訂單之間的時間」圖表中） |
 | `Is customer's last order?` | 決定訂單是否對應至客戶的上次或最近訂單。 比較`Customer's order number`值與`Customer's lifetime number of orders`進行計算。 當這兩個欄位在指定的順序中相等時，此欄會傳回`Yes`；否則會傳回`No` |
 | `Number of items in order` | 訂單中包含的料號總數。 透過加入`sales_order`計算。`entity_id`至`sales_order_item`。`order_id`並加總`sales_order_item`。`qty_ordered`欄位 |
-| `Seconds between customer's first order date and this order` | 此訂單與客戶第一筆訂單之間的經過時間。 計算方式為從每個訂單的`created_at`中減去`Customer's first order date`，並以整數秒數傳回 |
+| `Seconds between customer's first order date and this order` | 此訂單與客戶第一筆訂單之間的經過時間。 計算方式為從每個訂單的`Customer's first order date`中減去`created_at`，並以整數秒數傳回 |
 | `Seconds since previous order` | 此訂單與客戶之前訂單之間經過的時間。 計算方式是將此順序的`created_at`減去先前順序的`created_at`，傳回為整數秒數。 例如，針對與客戶第三筆訂單相對應的訂單記錄，此欄會傳回客戶第二筆訂單與第三筆訂單之間的秒數。 對於客戶的第一筆訂單，此欄位會傳回`NULL` |
 | `Shipping address city` | 訂單的送貨城市。 透過加入`sales_order`計算。`shipping_address_id`至`sales_order_address`。`entity_id`並傳回`city`欄位 |
 | `Shipping address country` | 訂單的出貨國家/地區代碼。 透過加入`sales_order`計算。`Shipping_address_id`至`sales_order_address`。`entity_id`並傳回`country_id` |

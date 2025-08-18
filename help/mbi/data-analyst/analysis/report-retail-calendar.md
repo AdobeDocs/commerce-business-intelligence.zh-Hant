@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 在零售行事曆上建立報表
 
-此主題示範如何設定結構以在您的[!DNL Adobe Commerce Intelligence]帳戶中使用[4-5-4零售行事曆](https://nrf.com/resources/4-5-4-calendar)。 視覺化Report Builder提供極為靈活的時間範圍、間隔和獨立設定。 不過，所有這些設定都可以搭配現有的傳統每月行事曆運作。
+此主題示範如何設定結構以在您的[帳戶中使用](https://nrf.com/resources/4-5-4-calendar)4-5-4零售行事曆[!DNL Adobe Commerce Intelligence]。 視覺化Report Builder提供極為靈活的時間範圍、間隔和獨立設定。 不過，所有這些設定都可以搭配現有的傳統每月行事曆運作。
 
 由於許多客戶會變更其行事曆以使用零售或會計日期，以下步驟說明如何使用零售日期來使用您的資料並建立報表。 雖然以下指示參考4-5-4零售日曆，但您可以為團隊使用的任何特定日曆更改它們，無論是財務日曆還是自訂時間範圍。
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 快速入門
 
-您可以[下載](../../assets/454-calendar.csv)2&rbrace;版本的4-5-4零售日曆，適用於2014至2017年的零售業。 `.csv`您可能需要根據內部零售日曆調整此檔案，並擴大日期範圍以支援您的歷史和目前時間範圍。 下載檔案後，使用檔案上傳程式在[!DNL Commerce Intelligence]Data Warehouse中建立零售業行事曆表格。 如果您使用4-5-4零售行事曆的未變更版本，請確保此表格中欄位的結構和資料型別符合以下內容：
+您可以[下載](../../assets/454-calendar.csv)2}版本的4-5-4零售日曆，適用於2014至2017年的零售業。 `.csv`您可能需要根據內部零售日曆調整此檔案，並擴大日期範圍以支援您的歷史和目前時間範圍。 下載檔案後，使用檔案上傳程式在[!DNL Commerce Intelligence] Data Warehouse中建立零售業行事曆表格。 如果您使用4-5-4零售行事曆的未變更版本，請確保此表格中欄位的結構和資料型別符合以下內容：
 
 | 欄名稱 | 欄資料型別 | 主索引鍵 |
 | --- | --- | --- |
@@ -50,9 +50,8 @@ ht-degree: 0%
    * **目前日期**
       * [!UICONTROL Column type]： `Same table > Calculation`
       * [!UICONTROL Inputs]： `Date Retail`
-      * &#x200B;
-
-        [!UICONTROL 資料型別]: `Datetime`
+      * 
+        [！UICONTROL資料型別]: `Datetime`
       * [!UICONTROL Calculation]： `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
         >[!NOTE]
@@ -63,8 +62,7 @@ ht-degree: 0%
       * [!UICONTROL Column type]： E`vent Counter`
       * [!UICONTROL Local Key]： `Current date`
       * [!UICONTROL Remote Key]： `Retail calendar.Date Retail`
-      * &#x200B;
-
+      * 
         [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value]： `Year Retail`
    * **包含在目前的零售年度中？ （是/否）**
@@ -72,18 +70,16 @@ ht-degree: 0%
       * [!UICONTROL Inputs]：
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * &#x200B;
-
-        [!UICONTROL 資料型別]: `String`
+      * 
+        [！UICONTROL資料型別]: `String`
       * [!UICONTROL Calculation]： `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
    * **包含在上一個零售年度？ （是/否）**
       * [!UICONTROL Column type]： `Same table > Calculation`
       * [!UICONTROL Inputs]：
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * &#x200B;
-
-        [!UICONTROL 資料型別]: String
+      * 
+        [！UICONTROL資料型別]: String
       * [!UICONTROL Calculation]： `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
 
 * **sales\_order**&#x200B;資料表
@@ -143,85 +139,68 @@ ht-degree: 0%
       * [!UICONTROL Filter]：
          * `Created\_at (retail Year) = 2015`
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
-
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail week)
-   * &#x200B;
-
+   * 
      [!UICONTROL Chart type]: `Line`
       * 關閉`multiple Y-axes`
 
 * **零售行事曆總覽（目前零售年份，依月份）**
    * 量度`A`： `Revenue`
-      * &#x200B;
-
-        [!UICONTROL 公制]: `Revenue`
+      * 
+        [！UICONTROL公制]: `Revenue`
       * [!UICONTROL Filter]：
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * 量度`B`： `Orders`
       * [!UICONTROL Metric]： `Number of orders`
       * [!UICONTROL Filter]：
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * 量度`C`： `Avg order value`
       * [!UICONTROL Metric]： `Avg order value`
       * [!UICONTROL Filter]：
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
-
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * &#x200B;
-
+   * 
      [!UICONTROL Chart type]: `Line`
 
 * **零售行事曆總覽（前一個零售年度，依月份）**
    * 量度`A`： `Revenue`
-      * &#x200B;
-
-        [!UICONTROL 公制]: `Revenue`
+      * 
+        [！UICONTROL公制]: `Revenue`
       * [!UICONTROL Filter]：
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * 量度`B`： `Orders`
       * [!UICONTROL Metric]：訂單數
       * [!UICONTROL Filter]：
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * 量度`C`： `Avg order value`
       * [!UICONTROL Metric]： `Avg order value`
       * [!UICONTROL Filter]：
-         * &#x200B;
-
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
-
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * &#x200B;
-
+   * 
      [!UICONTROL Chart type]: `Line`
 
 ## 後續步驟
 
 上述說明如何設定零售行事曆以與您`sales\_order`資料表上建置的任何量度相容（例如`Revenue`或`Orders`）。 您也可以擴充此功能，以支援任何表格上建立之量度的零售業行事曆。 此表格唯一需要的是一個有效的日期時間欄位，可用來聯結至「零售業行事曆」表格。
 
-例如，若要在4-5-4零售行事曆上檢視客戶層級量度，請在`customer\_entity`表格中建立`Same Table`計算，類似於上述`\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`。 然後，您可以使用此資料行將`customer\_entity`資料表加入`Retail Calendar`資料表，以重新產生`One to Many` JOINED\_COLUMN計算（例如`Created_at (retail year)`）和`Include in previous retail year? (Yes/No)`。
+例如，若要在4-5-4零售行事曆上檢視客戶層級量度，請在`Same Table`表格中建立`customer\_entity`計算，類似於上述`\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`。 然後，您可以使用此資料行將`One to Many`資料表加入`Created_at (retail year)`資料表，以重新產生`Include in previous retail year? (Yes/No)` JOINED\_COLUMN計算（例如`customer\_entity`）和`Retail Calendar`。
 
 在建立新報表之前，別忘了[將所有新欄新增為量度](../data-warehouse-mgr/manage-data-dimensions-metrics.md)的維度。

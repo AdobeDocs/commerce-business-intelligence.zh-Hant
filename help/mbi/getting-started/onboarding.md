@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 上線[!DNL Adobe Commerce Intelligence]
 
-與`store`和`database`設定相關的上線問題可確保您正確設定您的報告。 有了這些答案，Adobe就能提供您專為商店設定量身打造的報表。
+與`store`和`database`設定相關的上線問題可確保您正確設定您的報告。 有了這些答案，Adobe便可針對商店設定提供量身打造的報表。
 
 ## 商店設定
 
@@ -27,10 +27,10 @@ ht-degree: 0%
 
 - *您使用哪個Commerce版本？* — 選取您的商店營運所在的`currency`。
 
-- *您的商店是否位於歐盟？* — 如果您回答`Yes`此問題，Adobe會根據GDPR將您的Data Warehouse和所有資料託管於歐盟。
+- *您的商店是否位於歐盟？* — 如果您回答`Yes`此問題，Adobe會依照GDPR將您的Data Warehouse和所有資料託管於歐盟。
 
 ## 資料庫設定
 
-- `Database name` - Commerce交易資料所在的[!DNL MySQL]資料庫&#x200B;*的*&#x200B;名稱為何？
+- `Database name` - Commerce交易資料所在的&#x200B;*資料庫[!DNL MySQL]的*&#x200B;名稱為何？
 
 - `Table prefix (optional)` — 您Commerce資料庫中包含的資料表是否前面有任何字元（例如`store_`）？ 情況通常並非如此，但這是可以進行的自訂。

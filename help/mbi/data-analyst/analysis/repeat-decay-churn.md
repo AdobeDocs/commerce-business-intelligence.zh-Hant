@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ### 重複訂購機率自訂購以來的指定月份
 
-此報表會顯示客戶自上次訂購以來經過了幾個月後，再次訂購的可能性。 雖然在此報表中，流失臨界值並無單一定義，但Adobe建議將流失定義為機率衰減超過初始重複機率一半值的點。
+此報表會顯示客戶自上次訂購以來經過了幾個月後，再次訂購的可能性。 雖然在此報表中，流失臨界值並無單一定義，Adobe仍建議將流失定義為機率衰減超過初始重複機率一半的值。
 
 由於此範例的初始重複機率是60%，流失日期會是重複訂購機率降至60%/2 = 30%以下（或約6個月）的時間。 在60%的預期後續訂單中，有一半是在前6個月內下達。
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 ## 我應該考慮哪些問題？
 
-為了協助您瞭解適用於您企業的重複訂購機率，Adobe建議您在探索自己的資料時考慮以下問題：
+為了協助您瞭解適用於您企業的重複訂購可能性，Adobe建議您在探索自己的資料時，考慮以下問題：
 
 * 是否預期初始重複訂購機率？ 如果沒有，為什麼您認為應該更高或更低？
 * 自上次訂購以來，特定月份的重複訂購機率是否有任何大幅降低？ 若是如此，這些變更是否預期發生？
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 如果您提供多個產品，您可能會想知道購買特定產品的客戶與其他客戶在一段時間內的行為有何不同。 想進一步瞭解嗎？ 請參閱本教學課程，探索客戶同類群組根據所購買特定產品而定的終身購買行為。
 
-此最佳實務由[!DNL Adobe Commerce Intelligence]資料分析服務(DAS)提供。 [連絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)以取得更多資訊。
+此最佳實務由[!DNL Adobe Commerce Intelligence]資料分析服務(DAS)提供。 [連絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以取得更多資訊。
 
 ### 相關
 

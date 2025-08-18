@@ -1,6 +1,6 @@
 ---
 title: 視覺Report Builder中的視覺效果選項
-description: 瞭解如何使用視覺Report Builder中的視覺效果選項。
+description: 瞭解如何使用Visual Report Builder中的視覺效果選項。
 exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration

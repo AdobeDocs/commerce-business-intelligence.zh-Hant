@@ -19,7 +19,7 @@ ht-degree: 0%
 
 想要瞭解您的業務表現或尋找您最有價值的贏取來源和管道？ 將您的[!DNL Adobe Commerce]資料連線至[!DNL Commerce Intelligence]可讓您回答這些問題等等。
 
-由於[!DNL Adobe Commerce]資料庫是以MySQL為基礎，您可以透過[直接連線](../integrations/mysql-via-a-direct-connection.md)、[[!DNL cPanel]](../integrations/mysql-via-cpanel.md)或[透過SSH通道](../integrations/mysql-via-ssh-tunnel.md)連線至[!DNL Commerce Intelligence]。 建議使用SSH方法，因為它是最安全的方法。
+由於[!DNL Adobe Commerce]資料庫是以MySQL為基礎，您可以透過[!DNL Commerce Intelligence]直接連線[、](../integrations/mysql-via-a-direct-connection.md)或[[!DNL cPanel]](../integrations/mysql-via-cpanel.md)透過SSH通道[連線至](../integrations/mysql-via-ssh-tunnel.md)。 建議使用SSH方法，因為它是最安全的方法。
 
 ## 相關資訊
 

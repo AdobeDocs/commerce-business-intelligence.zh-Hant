@@ -21,7 +21,7 @@ ht-degree: 0%
 
 1. 在下拉式清單中，按一下&#x200B;**[!UICONTROL Save As]**。
 
-1. 出現提示時，請輸入`New Dashboard Name`。 Adobe會推薦可以讓您一目瞭然地知道儀表板中包含哪些資訊的名稱。
+1. 出現提示時，請輸入`New Dashboard Name`。 Adobe會推薦可讓您一目瞭然地知道儀表板中包含哪些資訊的名稱。
 
    例如，您正在複製名為`Customer Activity`的控制面板。 此儀表板包含您費城地點的客戶活動資訊，但現在您想要為紐約市地點建立儀表板。 此儀表板可命名為`New York City - Customer Activity`。
 

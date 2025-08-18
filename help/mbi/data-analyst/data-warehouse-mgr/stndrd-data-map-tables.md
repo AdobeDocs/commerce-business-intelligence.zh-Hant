@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果沒有Adobe支援團隊的協助，您就無法建立統一表格的對映表。
+>如果沒有來自Adobe支援團隊的協助，您無法為整合表格建立對應表格。
 
 ## 如何建立？ {#how}
 
@@ -49,21 +49,21 @@ ht-degree: 0%
 
 ## 我在[!DNL Commerce Intelligence]中需要做什麼才能使用它？ {#use}
 
-完成建立對應資料表之後，您必須[將檔案](../../data-analyst/importing-data/connecting-data/using-file-uploader.md)上傳到[!DNL Commerce Intelligence]，然後[建立聯結資料行](../../data-analyst/data-warehouse-mgr/calc-column-types.md)，將新欄位重新定位到所要的資料表。 檔案同步至Data Warehouse後，您就可以執行此動作。
+完成建立對應資料表之後，您必須[將檔案](../../data-analyst/importing-data/connecting-data/using-file-uploader.md)上傳到[!DNL Commerce Intelligence]，然後[建立聯結資料行](../../data-analyst/data-warehouse-mgr/calc-column-types.md)，將新欄位重新定位到所要的資料表。 檔案同步至您的Data Warehouse後，您就可以執行此動作。
 
 此範例使用聯結資料行將您在`mapping_state`資料表(`state_input`)上建立的資料行移至`customer_address`資料表。 這可讓我們在報表中依乾淨的`state_input`欄（而非`state`欄）來分組。
 
 若要建立`joined`欄，請導覽至Data Warehouse管理員中要重新定位欄位的資料表。 在此範例中，這會是`customer_address`資料表。
 
 1. 按一下&#x200B;**[!UICONTROL Create a Column]**。
-1. 從`Definition`下拉式清單中選取`Joined Column`。
+1. 從`Joined Column`下拉式清單中選取`Definition`。
 1. 請為資料行指定名稱，使其與資料庫中的`state`資料行不同。 為欄`billing state (mapped)`命名，以便您分辨在Report Builder中分段時要使用的欄。
-1. 連線表格所需的路徑不存在，因此您需要建立一個路徑。 在`Select a table and column`下拉式清單中按一下&#x200B;**[!UICONTROL Create new path]**。
+1. 連線表格所需的路徑不存在，因此您需要建立一個路徑。 在&#x200B;**[!UICONTROL Create new path]**&#x200B;下拉式清單中按一下`Select a table and column`。
 
    如果您不確定資料表關聯性是什麼，或不確定如何正確定義主索引鍵和外索引鍵，請檢視[教學課程](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)以取得協助。
 
    * 在`Many`側，選取您要重新定位欄位的資料表（再次說明，它是`customer_address`）以及範例中的`Foreign Key`資料行或`state`資料行。
-   * 在`One`側，選取`mapping`資料表和`Primary key`資料行。 在此情況下，您可以從`mapping_state`資料表選取`state_input`資料行。
+   * 在`One`側，選取`mapping`資料表和`Primary key`資料行。 在此情況下，您可以從`state_input`資料表選取`mapping_state`資料行。
    * 以下是該路徑的外觀：
 
      ![](../../assets/State_Mapping_Path.png)
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 ![](../../assets/Clean_State_Segments.png)
 
-當您想要清除Data Warehouse中某些可能亂七八糟的資料時，隨時都能使用對應表格。 不過，對應表格也可以用於其他酷炫的使用案例，例如[在 [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md)中複製 [!DNL Google Analytics channels] 。
+當您想要清除Data Warehouse中某些可能亂七八糟的資料時，隨時都能使用對應表格。 不過，對應表格也可以用於其他酷炫的使用案例，例如[在 [!DNL Google Analytics channels] 中複製 [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md)。
 
 ### 相關
 

@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 事件編號計算欄
 
-此主題概述&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;頁面中可用`Event Number`計算欄的用途和用途。 以下是其功能的說明，隨後是一個範例，以及建立它的機制。
+此主題概述`Event Number`頁面中可用&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;計算欄的用途和用途。 以下是其功能的說明，隨後是一個範例，以及建立它的機制。
 
 **說明**
 
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 1. 導覽至您要建立此欄的表格。
 
-1. 按一下&#x200B;**[!UICONTROL Create a Column]**&#x200B;並選擇`Same Table`區段下的`EVENT_NUMBER (…)`欄型別： 。
+1. 按一下&#x200B;**[!UICONTROL Create a Column]**&#x200B;並選擇`EVENT_NUMBER (…)`區段下的`Same Table`欄型別： 。
 
 1. 第一個下拉式清單`Event Owner`指定要決定排名的實體。 在`Customer's order number`的情況下，`customer_id`或`customer_email`等客戶識別碼將是`Event Owner`。
 

@@ -21,7 +21,7 @@ ht-degree: 0%
 
 在[!DNL Commerce Intelligence]中，您可以使用量度來[建立圖表](../../data-user/reports/ess-rpt-build-visual.md)。 例如，量度`revenue`是訂單總數。 量度`average customer revenue per order`是平均客戶每筆訂單花費的金額。
 
-在報表中使用時，可以在指定的時段內分析量度，並依不同類別篩選或分段[&#128279;](../../best-practices/segment-filter.md)。 請考慮分析依性別分組的平均客戶收入 — 在此案例中，`average customer revenue per order`是量度，而性別是分組。
+在報表中使用時，可以在指定的時段內分析量度，並依不同類別篩選或分段[](../../best-practices/segment-filter.md)。 請考慮分析依性別分組的平均客戶收入 — 在此案例中，`average customer revenue per order`是量度，而性別是分組。
 
 ## 定義量度 {#define}
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 * 「\[`A`\]和\[`B`\]」只允許同時符合篩選器\[`A`\]和\[`B`\]的資料
 * 「（\[`A`\]和\[`B`\]） OR \[`C`\]」僅允許同時滿足篩選器\[`A`\]和\[`B`\]的資料，或僅滿足篩選器\[`C`\]的資料
 
-## 新增Dimension {#dimensions}
+## 新增維度 {#dimensions}
 
 [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md)區段會顯示所有可用於篩選或分組的資料維度；依預設，所有可用的資料欄都會列為維度。 繼續此範例，如果您想依反向連結來源劃分收入，可在此執行。
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 可以在同時使用`Group By`和`Time Interval of None`的報表中完成這種資料排序和排序。 當這兩個元素都在報表中時，`Show Top/Bottom`功能會顯示在圖表預覽上方。 此功能可讓您根據您設定的引數，檢視頂端（最高至最低）和底部（最低至最高）的資料點。
 
-![在視覺Report Builder中顯示頂端/底部功能。](../../assets/Show_Top_Bottom.png)
+![在Visual Report Builder中顯示頂端/底部功能。](../../assets/Show_Top_Bottom.png)
 
 ## 我該如何使用此功能？ {#how}
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 假設您同時使用`Revenue`和`Number of orders`量度建立報告，並按轉介來源分組。 `Revenue`只能依`Revenue`或轉介來源排序，`Number of orders`只能依`Number of orders`或轉介來源排序。
 
-這表示雖然您可以只顯示前`5`個產生收入的轉介來源的`Revenue`，但無法同時顯示前`5`個產生收入的轉介來源的訂單數。 簡單地說：有多個量度時，最好依分組排序每個量度。
+這表示雖然您可以只顯示前`Revenue`個產生收入的轉介來源的`5`，但無法同時顯示前`5`個產生收入的轉介來源的訂單數。 簡單地說：有多個量度時，最好依分組排序每個量度。
 
 以下是圖表範例，此圖表會單獨排序`Revenue`量度，而非依分組排序。 如您所見，若未依分組排序量度，會建立奇怪（且最終無用）的報告：
 

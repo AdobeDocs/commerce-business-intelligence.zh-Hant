@@ -6,19 +6,19 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
 
-# 透過[!DNL SSH Tunnel]連線[!DNL PostgreSQL]
+# 透過[!DNL PostgreSQL]連線[!DNL SSH Tunnel]
 
-若要透過`SSH tunnel`將您的[!DNL PostgreSQL]資料庫連線至[!DNL Commerce Intelligence]，您必須執行下列幾個動作：
+若要透過[!DNL PostgreSQL]將您的[!DNL Commerce Intelligence]資料庫連線至`SSH tunnel`，您必須執行下列幾個動作：
 
 1. [擷取 [!DNL Commerce Intelligence] 公開金鑰](#retrieve)
 1. [允許存取 [!DNL Commerce Intelligence] IP位址](#allowlist)
-1. [為 [!DNL Commerce Intelligence]建立 [!DNL Linux] 使用者](#linux)
-1. [為 [!DNL Commerce Intelligence]建立 [!DNL PostgreSQL] 使用者](#postgres)
+1. [為 [!DNL Linux] 建立 [!DNL Commerce Intelligence]使用者](#linux)
+1. [為 [!DNL PostgreSQL] 建立 [!DNL Commerce Intelligence]使用者](#postgres)
 1. [在 [!DNL Commerce Intelligence]中輸入連線和使用者資訊](#finish)
 
 ## 正在擷取[!DNL Commerce Intelligence] [!DNL public key] {#retrieve}
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 為了連線成功，您必須將防火牆設定為允許從IP位址存取。 它是`54.88.76.97/32`，但它也在`PostgreSQL`認證頁面上。 請參閱上方GIF中的藍色方塊。
 
-## 正在建立[!DNL Commerce Intelligence]的[!DNL Linux]使用者 {#linux}
+## 正在建立[!DNL Linux]的[!DNL Commerce Intelligence]使用者 {#linux}
 
 只要包含即時（或經常更新）資料，這可以是生產或次要機器。 您可以用任何您喜歡的方式[限制此使用者](../../../administrator/account-management/restrict-db-access.md)，只要它保留連線至[!DNL PostgreSQL]伺服器的權利。
 
@@ -105,4 +105,4 @@ ht-degree: 0%
 
 ### 相關
 
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -21,9 +21,9 @@ ht-degree: 0%
 
 想要瞭解您的業務表現或尋找您最有價值的贏取來源和管道？ 將您的[!DNL WooCommerce]資料連線至[!DNL Commerce Intelligence]可讓您回答這些問題等等。
 
-[!DNL WooCommerce]資料庫以[!DNL MySQL]為基礎，您可以透過[直接連線](../integrations/mysql-via-a-direct-connection.md)、[[!DNL cPanel]](../integrations/mysql-via-cpanel.md)或[透過`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md)連線至[!DNL Commerce Intelligence]。 Adobe建議您使用SSH方法，因為此方法最安全。
+[!DNL WooCommerce]資料庫以[!DNL MySQL]為基礎，您可以透過[!DNL Commerce Intelligence]直接連線[、](../integrations/mysql-via-a-direct-connection.md)或[[!DNL cPanel]](../integrations/mysql-via-cpanel.md)透過[連線至`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md)。 Adobe建議您使用SSH方法，因為此方法最安全。
 
 ## 相關：
 
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [分段和篩選的建議資料維度](../../../best-practices/segment-filter.md)

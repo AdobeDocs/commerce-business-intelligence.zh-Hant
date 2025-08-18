@@ -29,6 +29,6 @@ ht-degree: 0%
 
 ## 尋找其他使用者擁有的儀表板 {#other}
 
-正在尋找其他使用者擁有的儀表板？ 如果其他人可以檢視該儀表板，您可以按一下`Dashboard Options`下拉式清單中的&#x200B;**[!UICONTROL Find]**&#x200B;進行搜尋。
+正在尋找其他使用者擁有的儀表板？ 如果其他人可以檢視該儀表板，您可以按一下&#x200B;**[!UICONTROL Find]**&#x200B;下拉式清單中的`Dashboard Options`進行搜尋。
 
 ![尋找儀表板](../../assets/find-dboards-other-owners.png)

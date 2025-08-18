@@ -1,20 +1,20 @@
 ---
 title: 進階計算欄型別
-description: 瞭解大部分使用欄案例的基本知識 — 但您可能希望計算欄比Data Warehouse管理員可以建立的要複雜一些。
+description: 瞭解大部分使用欄案例的基本知識 — 但您可能想要比Data Warehouse Manager可建立的計算欄更複雜。
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 2%
 
 ---
 
 # 進階計算欄型別
 
-您想要建立的許多分析都涉及使用您要`group by`或`filter by`的&#x200B;**新資料行**。 [建立計算資料行](../data-warehouse-mgr/creating-calculated-columns.md)教學課程涵蓋大部分使用案例的基本知識，但您可能會想要的計算資料行比Data Warehouse管理員可建立的資料行更複雜。
-{： #top}
+您想要建立的許多分析都涉及使用您要&#x200B;**或**&#x200B;的`group by`新資料行`filter by`。 [建立計算欄](../data-warehouse-mgr/creating-calculated-columns.md)教學課程涵蓋大部分使用案例的基本知識，但您可能會想要的計算欄比Data Warehouse管理員可建立的要複雜一些。
+{: #top}
 
 這些型別的欄可由Data Warehouse分析師的Adobe團隊建立。 若要定義新的計算欄，請提供下列資訊：
 
@@ -161,7 +161,7 @@ ht-degree: 2%
 
 不用擔心。 這裡未列出並不表示不可能。 Data Warehouse分析師的Adobe團隊可提供協助。
 
-若要定義新的計算資料行，請[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)，其中包含您要建置之專案的詳細資料。
+若要定義新的計算資料行，請[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)，其中包含您要建置之專案的詳細資料。
 
 ## 相關檔案
 

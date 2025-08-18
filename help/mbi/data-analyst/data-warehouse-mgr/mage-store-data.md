@@ -21,7 +21,7 @@ ht-degree: 2%
 
 若要討論這些概念，請參閱下列範例：
 
-`Clothes4U`是服裝零售商，同時擁有線上和實體店。 它在其網站後使用[!DNL Magento Open Source]來收集及組織資料。
+`Clothes4U`是服裝retailer，具有線上和實體存在。 它在其網站後使用[!DNL Magento Open Source]來收集及組織資料。
 
 ## `catalog\_product\_entity`
 
@@ -70,7 +70,7 @@ ht-degree: 2%
 * `entity_id` — 這是`sales_flat_order`資料表的主索引鍵。
    * 當Sammy客戶下此訂單，且將上列寫入`sales_flat_order`表格時，已指派訂單`entity_id` = 227。
 * `customer_id` — 此欄是下此特定訂單之客戶的唯一識別碼
-   * 與此訂單關聯的`customer_id`為214，這是`customer_entity`資料表上Sammy客戶的`entity_id`。
+   * 與此訂單關聯的`customer_id`為214，這是`entity_id`資料表上Sammy客戶的`customer_entity`。
 * `subtotal` — 此欄是針對訂單向客戶收取的總金額
    * 兩雙「Rewback Bellbottoms」和「V領T恤」總共花費$94.85美元
 * `created_at` — 此欄傳回每個訂單建立時的時間戳記
@@ -90,10 +90,10 @@ ht-degree: 2%
    * `Sammy Customer`的訂單已在此資料表上建立兩行，因為訂單包含兩個不同的產品
 * `name` — 此欄是產品的名稱
 * `product_id` — 此欄是此列所參考之產品的唯一識別碼
-   * 上方的第一列有`product_id` = 205，因為`Throwback Bellbottoms`在`catalog_product_entity`資料表上有`entity_id` / 205
+   * 上方的第一列有`product_id` = 205，因為`Throwback Bellbottoms`在`entity_id`資料表上有`catalog_product_entity` / 205
 * `order_id` — 此欄是包含這些特定訂單專案的訂單的`entity_id`
-   * 以上兩個資料列都有`order_id` = 227，因為它們都是`Sammy Customer`所下訂單的一部分，`sales_flat_order`資料表上有`entity_id` = 227
+   * 以上兩個資料列都有`order_id` = 227，因為它們都是`Sammy Customer`所下訂單的一部分，`entity_id`資料表上有`sales_flat_order` = 227
 * `qty_ordered` — 此欄是包含在此特定訂單中的產品單位數
    * `Sammy Customer`的訂單包含兩對`Throwback Bellbottoms`
 * `price` — 此欄是訂單專案的單一單位價格
-   * 在`sales_flat_order`資料表中來自`Sammy Customer`順序的`subtotal`為94.85，這是兩個`Throwback Bellbottoms` （每個$39.95）和1 `V-Neck T-Shirt` (1$14.95)的配對總和。
+   * 在`subtotal`資料表中來自`Sammy Customer`順序的`sales_flat_order`為94.85，這是兩個`Throwback Bellbottoms` （每個$39.95）和1 `V-Neck T-Shirt` (1$14.95)的配對總和。

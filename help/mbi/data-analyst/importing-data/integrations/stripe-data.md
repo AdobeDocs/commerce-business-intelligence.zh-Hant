@@ -1,5 +1,5 @@
 ---
-title: 預期的Stripe資料
+title: 預期Stripe資料
 description: 探索可從Stripe匯入Commerce Intelligence的主要資料表。
 exl-id: 694577b2-48f9-4376-850d-acae1776afe3
 role: Admin, Data Architect, Data Engineer, User
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 必須有[!DNL Stripe]個資料
 
-在連線[您的 [!DNL Stripe] 帳戶](../integrations/stripe.md)之後，您可以使用[Data Warehouse管理員](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)輕鬆追蹤相關的資料欄位以進行分析。
+在連線[您的 [!DNL Stripe] 帳戶](../integrations/stripe.md)後，您可以使用[Data Warehouse管理員](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)輕鬆追蹤相關的資料欄位以進行分析。
 
-本主題探索可從[!DNL Stripe]匯入至[!DNL Commerce Intelligence]的主要資料表。 安裝完成後，會在您的Data Warehouse中建立下清單格。 按一下「表格名稱」資料欄中的連結，以進一步瞭解每個表格中的屬性。
+本主題探索可從[!DNL Stripe]匯入至[!DNL Commerce Intelligence]的主要資料表。 完成設定後，會在Data Warehouse中建立下清單格。 按一下「表格名稱」資料欄中的連結，以進一步瞭解每個表格中的屬性。
 
 | **資料表名稱** | **描述** |
 |-----|-----|
@@ -36,4 +36,4 @@ ht-degree: 0%
 ## 相關：
 
 * [正在連線 [!DNL Stripe]](../integrations/stripe.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

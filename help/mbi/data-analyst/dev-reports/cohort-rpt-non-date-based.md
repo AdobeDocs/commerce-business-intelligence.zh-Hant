@@ -27,7 +27,7 @@ ht-degree: 0%
 
 1. 按一下左側標籤上的&#x200B;**[!UICONTROL Report Builder]**&#x200B;或任何儀表板中的&#x200B;**[!UICONTROL Add Report** > **Create Report]**。
 
-1. 在`Report Builder Selection`畫面中，按一下`Visual Report Builder`選項旁的&#x200B;**[!UICONTROL Create Report]**。
+1. 在`Report Builder Selection`畫面中，按一下&#x200B;**[!UICONTROL Create Report]**&#x200B;選項旁的`Visual Report Builder`。
 
 ### 新增量度
 
@@ -75,13 +75,13 @@ ht-degree: 0%
 
 #### 5. `Time range after cohort occurrence`
 
-您想要依月、周或年檢視一段時間的`cohorts`嗎？ 您可在以下位置進行這些選取。 在該區段底下，您將會在`cohort action timestamp`發生後選取`time range`。 例如，對於在動作時間範圍內下第一筆訂單的客戶，這會向您顯示12個月的資料。
+您想要依月、周或年檢視一段時間的`cohorts`嗎？ 您可在以下位置進行這些選取。 在該區段底下，您將會在`time range`發生後選取`cohort action timestamp`。 例如，對於在動作時間範圍內下第一筆訂單的客戶，這會向您顯示12個月的資料。
 
 ![cohort-first-action-time-range](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 
 >[!NOTE]
 >
->當您在`Standard`和`Cohort`檢視之間切換時，套用至量度的[!UICONTROL Filters]將維持不變。
+>當您在[!UICONTROL Filters]和`Standard`檢視之間切換時，套用至量度的`Cohort`將維持不變。
 
 ### 相關
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 使用`Replication`方法和[重新檢查](../data-warehouse-mgr/cfg-data-rechecks.md)來識別資料庫表格中的新資料或更新資料。 正確設定這些變數對於確保資料正確性和最佳化更新時間至關重要。 本主題著重於復寫方法。
 
-在[Data Warehouse管理員](../data-warehouse-mgr/tour-dwm.md)中同步新資料表時，會自動為資料表選擇復寫方法。 瞭解各種複製方法、表格的組織方式，以及表格資料的行為方式，讓您為表格選擇最佳的複製方法。
+在[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)中同步新資料表時，會自動為該資料表選擇復寫方法。 瞭解各種複製方法、表格的組織方式，以及表格資料的行為方式，讓您為表格選擇最佳的複製方法。
 
 ## 什麼是復寫方法？
 
@@ -37,9 +37,9 @@ ht-degree: 0%
 * `datetime`資料行絕不為Null；
 * 不會從表格中刪除列
 
-除了這些條件之外，Adobe建議為用於`Modified At`復寫的`datetime`資料行&#x200B;**編制索引**，因為這樣有助於最佳化復寫速度。
+除了這些條件外，Adobe還建議為用於&#x200B;**復寫的**&#x200B;資料行`datetime`編制索引`Modified At`，因為這有助於最佳化復寫速度。
 
-當更新執行時，透過搜尋在最近更新之後發生的`datetime`欄中有值的列，可識別新資料或已變更的資料。 當發現新資料列時，會將它們復寫到您的Data Warehouse。 如果[Data Warehouse管理員](../data-warehouse-mgr/tour-dwm.md)中有任何資料列，則會以目前的資料庫值覆寫。
+當更新執行時，透過搜尋在最近更新之後發生的`datetime`欄中有值的列，可識別新資料或已變更的資料。 探索到新列時，會將它們復寫到您的Data Warehouse。 如果[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)中有任何資料列存在，則會以目前的資料庫值覆寫。
 
 例如，資料表可能有一個名為`modified\_at`的資料行，指出上次變更資料的時間。 如果最新的更新在星期二中午執行，則更新會搜尋所有具有大於星期二中午的`modified\_at`值的列。 自星期二中午以來建立或修改的任何發現列都會複製到Data Warehouse。
 
@@ -58,13 +58,13 @@ ht-degree: 0%
 * `primary key`資料型別是`integer`；以及
 * `auto incrementing`個主索引鍵值。
 
-當資料表使用`Single Auto Incrementing Primary Key`復寫時，搜尋大於Data Warehouse中目前最高值的主索引鍵值來探索新資料。 例如，如果Data Warehouse中的最高主鍵值為500，則下次更新執行時，將會搜尋主鍵值為501或更高的列。
+當資料表使用`Single Auto Incrementing Primary Key`復寫時，搜尋大於Data Warehouse中目前最高值的主索引鍵值，即可探索新資料。 例如，如果Data Warehouse中的最高主鍵值為500，則下次更新執行時，將會搜尋主鍵值為501或更高的列。
 
 ### 新增日期
 
 `Add Date`方法的功能與`Single Auto Incrementing Primary Key`方法類似。 這個方法不是使用整數以取得資料表的主索引鍵，而是使用`timestamped`資料行來檢查新資料列。
 
-當資料表使用`Add Date`復寫時，透過搜尋晚於同步至您Data Warehouse的最新日期的時間戳記值，會探索新資料。 例如，如果更新上次執行時間為20/12/2015 09:00:00，則時間戳記大於此的任何列都將標示為新資料並複製。
+當資料表使用`Add Date`復寫時，透過搜尋晚於同步至您Data Warehouse的最新日期的時間戳記值來探索新資料。 例如，如果更新上次執行時間為20/12/2015 09:00:00，則時間戳記大於此的任何列都將標示為新資料並複製。
 
 >[!NOTE]
 >
@@ -97,13 +97,13 @@ ht-degree: 0%
 * 複合索引鍵（包含主索引鍵的多個欄） — 請注意，複合主索引鍵中使用的欄永遠不能有null值；或
 * 單欄、整數、不自動增加主索引鍵值。
 
-此方法並不理想，因為為了檢查批次和尋找變更而必須執行的處理量太大，所以速度非常慢。 Adobe建議不要使用此方法，除非無法進行必要的修改以支援其他複製方法。 如果必須使用這個方法，預期更新時間會增加。
+此方法並不理想，因為為了檢查批次和尋找變更而必須執行的處理量太大，所以速度非常慢。 Adobe建議您不要使用此方法，除非無法進行必要的修改以支援其他複製方法。 如果必須使用這個方法，預期更新時間會增加。
 
 ## 設定復寫方法
 
-複製方法是以表格為基礎設定的。 若要設定資料表的復寫方法，您需要[`Admin`](../../administrator/user-management/user-management.md)許可權，才能存取Data Warehouse管理員。
+複製方法是以表格為基礎設定的。 若要設定資料表的復寫方法，您需要[`Admin`](../../administrator/user-management/user-management.md)許可權，才能存取Data Warehouse Manager。
 
-1. 進入Data Warehouse管理員後，從`Synced Tables`清單中選取表格以顯示表格的結構描述。
+1. 進入Data Warehouse Manager後，從`Synced Tables`清單中選取表格以顯示表格的結構描述。
 1. 目前的複製方法列在表格名稱下方。 若要變更，請按一下連結。
 1. 在顯示的快顯視窗中，按一下`Incremental`或`Full Table`復寫旁的選項按鈕以選取復寫型別。
 1. 接著，按一下&#x200B;**[!UICONTROL Replication Method]**&#x200B;下拉式清單以選取方法。 例如，`Paused`或`Modified At`。
@@ -112,7 +112,7 @@ ht-degree: 0%
    >
    >**有些增量方法需要您設定`Replication Key`**。 [!DNL Commerce Intelligence]將使用此索引鍵來決定下一個更新週期應該從何處開始。
    >
-   >例如，如果您想要對`orders`資料表使用`modified at`方法，您必須將`date column`設定為復寫金鑰。 復寫金鑰可能有數個選項，但您選取`created at`或建立訂單的時間。 如果上次更新週期在12/1/2015 00:10:00停止，則下一個週期會開始複製日期大於此日期的`created at`資料。
+   >例如，如果您想要對`modified at`資料表使用`orders`方法，您必須將`date column`設定為復寫金鑰。 復寫金鑰可能有數個選項，但您選取`created at`或建立訂單的時間。 如果上次更新週期在12/1/2015 00:10:00停止，則下一個週期會開始複製日期大於此日期的`created at`資料。
 
 1. 完成時，按一下&#x200B;**[!UICONTROL Save]**。
 

@@ -31,7 +31,7 @@ ht-degree: 0%
 * [MySQL](../integrations/mysql-via-a-direct-connection.md)
 * [PostgreSQL](../integrations/postgresql.md)
 
-## 正在建立[!DNL Commerce Intelligence]的`VPN`使用者 {#vpn}
+## 正在建立`VPN`的[!DNL Commerce Intelligence]使用者 {#vpn}
 
 如前所述，任何有效的`VPN`使用者都可以運作，但Adobe建議您建立使用者僅供[!DNL Commerce Intelligence]使用。
 

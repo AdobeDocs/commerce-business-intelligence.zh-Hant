@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ## 正在上傳廣告成本資料
 
-分析廣告支出資料的第一步是取得資料。 由於大部分的廣告平台都可讓您匯出報表，因此Adobe建議您從廣告平台匯出原始資料，並直接上傳至[!DNL Commerce Intelligence]，無需進行任何操作。 您可以對Data Warehouse中的資料執行操作，因此無需加倍努力。
+分析廣告支出資料的第一步是取得資料。 由於大部分的廣告平台都可讓您匯出報表，因此Adobe建議您從廣告平台匯出原始資料，並直接上傳至[!DNL Commerce Intelligence]，而不需進行任何操作。 您可以對Data Warehouse中的資料執行操作，因此不需要加倍努力。
 
-在您匯出廣告支出資料後，請使用[`File Upload`功能](../connecting-data/using-file-uploader.md)將資料帶入您的Data Warehouse。 您可以隨時間將新資料上傳到相同的[!DNL Commerce Intelligence]資料表。
+匯出廣告支出資料後，請使用[`File Upload`功能](../connecting-data/using-file-uploader.md)將資料匯入Data Warehouse。 您可以隨時間將新資料上傳到相同的[!DNL Commerce Intelligence]資料表。
 
 ## 離線來源
 

@@ -1,5 +1,5 @@
 ---
-title: 透過SSH通道連線 [!DNL MySQL]
+title: '透過SSH通道連線 [!DNL MySQL] '
 description: 瞭解如何透過SSH通道連線 [!DNL MySQL] 。
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
 role: Admin, Data Architect, Data Engineer, User
@@ -11,12 +11,12 @@ ht-degree: 0%
 
 ---
 
-# 透過[!DNL SSH Tunnel]連線[!DNL MySQL]
+# 透過[!DNL MySQL]連線[!DNL SSH Tunnel]
 
 * [擷取 [!DNL Commerce Intelligence] 公開金鑰](#retrieve)
 * [允許存取 [!DNL Commerce Intelligence] IP位址](#allowlist)
 * [建立 [!DNL Commerce Intelligence]的Linux使用者](#linux)
-* [為 [!DNL Commerce Intelligence]建立 [!DNL MySQL] 使用者](#mysql)
+* [為 [!DNL MySQL] 建立 [!DNL Commerce Intelligence]使用者](#mysql)
 * [在 [!DNL Commerce Intelligence]中輸入連線和使用者資訊](#finish)
 
 ## 跳轉到
@@ -24,12 +24,12 @@ ht-degree: 0%
 * [[!DNL MySQL]透過 ](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL]透過 [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
-若要透過`SSH tunnel`將您的[!DNL MySQL]資料庫連線至[!DNL Commerce Intelligence]，您必須執行下列幾個動作：
+若要透過[!DNL MySQL]將您的[!DNL Commerce Intelligence]資料庫連線至`SSH tunnel`，您必須執行下列幾個動作：
 
 1. 擷取[!DNL Commerce Intelligence] `public key`
 1. 允許存取[!DNL Commerce Intelligence] `IP address`
-1. 建立[!DNL Commerce Intelligence]的`Linux`使用者
-1. 建立[!DNL Commerce Intelligence]的`MySQL`使用者
+1. 建立`Linux`的[!DNL Commerce Intelligence]使用者
+1. 建立`MySQL`的[!DNL Commerce Intelligence]使用者
 1. 在[!DNL Commerce Intelligence]中輸入連線和使用者資訊
 
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 為了連線成功，您必須將防火牆設定為允許從IP位址存取。 他們是`54.88.76.97`和`34.250.211.151`，但他們也在`MySQL credentials`頁面上。 請參閱上方GIF中的藍色方塊。
 
-## 正在建立[!DNL Commerce Intelligence]的[!DNL Linux]使用者 {#linux}
+## 正在建立[!DNL Linux]的[!DNL Commerce Intelligence]使用者 {#linux}
 
 只要包含即時（或經常更新）資料，這可以是生產或次要機器。 您可以用任何您喜歡的方式[限制此使用者](../../../administrator/account-management/restrict-db-access.md)，只要它保留連線至`MySQL`伺服器的權利。
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 >
 >如果與伺服器相關聯的`sshd\_config`檔案未設定為預設選項，則只有特定使用者具有伺服器存取權 — 這會防止成功連線到[!DNL Commerce Intelligence]。 在這些情況下，必須執行`AllowUsers`之類的命令，才能允許`rjmetric`使用者存取伺服器。
 
-## 正在建立[!DNL Commerce Intelligence]的[!DNL MySQL]使用者 {#mysql}
+## 正在建立[!DNL MySQL]的[!DNL Commerce Intelligence]使用者 {#mysql}
 
 您的組織可能需要不同的程式，但建立此使用者最簡單的方法是在以有權授予許可權的使用者身分登入[!DNL MySQL]時執行以下查詢：
 
@@ -120,4 +120,4 @@ ht-degree: 0%
 
 ## 相關：
 
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -40,8 +40,8 @@ ht-degree: 0%
 
 ## 為什麼[!DNL Google ECommerce]資料與我的資料庫不同？ {#ecommdatabase}
 
-[!DNL Google Analytics]和您的資料庫之間的差異可能因各種原因而產生。 追蹤功能未正確啟用、使用者造訪無痕內容，以及點選事件無法正常運作只是幾個例子。 如果您的收入和訂單看起來不正確，[請參閱此主題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=zh-Hant)以診斷問題。
+[!DNL Google Analytics]和您的資料庫之間的差異可能因各種原因而產生。 追蹤功能未正確啟用、使用者造訪無痕內容，以及點選事件無法正常運作只是幾個例子。 如果您的收入和訂單看起來不正確，[請參閱此主題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html)以診斷問題。
 
 ## 如何疑難排解資料差異？ {#datadiscrepancy}
 
-Adobe知道看到不一致的資料可能會讓人感到挫折。 嘗試使用[資料差異檢查清單](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=zh-Hant)或[資料匯出教學課程](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=zh-Hant)來診斷問題。 如果您仍然被截斷，[請連絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+Adobe知道看到不一致的資料可能會讓人感到挫折。 嘗試使用[資料差異檢查清單](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html)或[資料匯出教學課程](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html)來診斷問題。 如果您仍然被截斷，[請連絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

@@ -25,7 +25,7 @@ ht-degree: 0%
 
 1. 選擇量度後，您可以選取想要檢視的`time period`、`interval`和資料`perspectives`，繼續使用此圖表，就像任何其他圖表一樣。
 
-1. 這裡的主要差異在於`√`使用規則運算式進行篩選。 規則運算式（簡稱regex）是用於描述搜尋模式的特殊文字字串。 請參閱Analytics規則運算式[&#128279;](https://support.google.com/analytics/answer/1034324?hl=en)的[!DNL Google] 指南中的規則運算式語法範例。
+1. 這裡的主要差異在於`√`使用規則運算式進行篩選。 規則運算式（簡稱regex）是用於描述搜尋模式的特殊文字字串。 請參閱Analytics規則運算式[[!DNL Google] 的](https://support.google.com/analytics/answer/1034324?hl=en)指南中的規則運算式語法範例。
 
 >[!NOTE]
 >

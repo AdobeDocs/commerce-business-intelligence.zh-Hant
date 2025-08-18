@@ -15,7 +15,7 @@ ht-degree: 0%
 
 評估兩個給定表格之間的關係時，您需要瞭解一個表格中可能屬於另一個實體可能的出現次數，反之亦然。 例如，使用`users`表格和`orders`表格。 在此案例中，您想要瞭解指定的&#x200B;**使用者**&#x200B;已下多少&#x200B;**訂單**，以及可能屬於多少個&#x200B;**使用者** **訂單**。
 
-瞭解關聯性對於維護資料完整性至關重要，因為它會影響您[計算的資料行](../data-warehouse-mgr/creating-calculated-columns.md)和[維度](../data-warehouse-mgr/manage-data-dimensions-metrics.md)的正確性。 若要深入瞭解，請參閱[關聯性型別](#types)和[如何評估您Data Warehouse中的資料表。](#eval)
+瞭解關聯性對於維護資料完整性至關重要，因為它會影響您[計算的資料行](../data-warehouse-mgr/creating-calculated-columns.md)和[維度](../data-warehouse-mgr/manage-data-dimensions-metrics.md)的正確性。 若要深入瞭解，請參閱[關聯性型別](#types)和[如何評估Data Warehouse中的資料表。](#eval)
 
 ## 關係型別 {#types}
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 根據表格之間存在的關係型別，您可以瞭解如何評估Data Warehouse中的表格。 由於這些關係塑造了多資料表計算資料行的定義方式，因此請務必瞭解如何識別資料表關係，以及資料表屬於哪一邊 — `one`或`many`。
 
-有兩種方法可用來評估Data Warehouse中指定表格對的關係。 第一個方法採用[概念架構](#concept)，考量資料表的實體彼此互動的方式。 第二個方法使用[資料表的結構描述](#schema)。
+在Data Warehouse中，有兩種方法可用來評估指定表格組的關係。 第一個方法採用[概念架構](#concept)，考量資料表的實體彼此互動的方式。 第二個方法使用[資料表的結構描述](#schema)。
 
 ### 使用概念架構 {#concept}
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 >
 >您接受客服訂單嗎？ 請參閱[訪客訂單](../data-warehouse-mgr/guest-orders.md)，瞭解訪客訂單如何影響您的資料表關係。
 
-使用指向`primary key`的`Foreign key`連結資料表時，此設定會說明`one-to-many`關係。 一方是包含`primary key`的資料表，而多面是包含`foreign key`的資料表。
+使用指向`Foreign key`的`primary key`連結資料表時，此設定會說明`one-to-many`關係。 一方是包含`primary key`的資料表，而多面是包含`foreign key`的資料表。
 
 ![](../../assets/one-to-many1.png)
 
@@ -129,4 +129,4 @@ ht-degree: 0%
 
 ## 後續步驟
 
-正確評估表格關係是精確建立資料模型的關鍵。 現在您已瞭解資料表如何相互關聯，請參閱[您可以使用Data Warehouse管理員](../data-warehouse-mgr/tour-dwm.md)做什麼。
+正確評估表格關係是精確建立資料模型的關鍵。 現在您已瞭解資料表如何相互關聯，請參閱[您可以使用Data Warehouse管理員做什麼](../data-warehouse-mgr/tour-dwm.md)。

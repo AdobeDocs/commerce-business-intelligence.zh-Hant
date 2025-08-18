@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此主題包含使用原始架構和新架構的使用者端指示。 如果您在選取主工具列中的`Manage Data`後有`Data Warehouse Views`區段可用，則表示您使用新架構。
+>此主題包含使用原始架構和新架構的使用者端指示。 如果您在選取主工具列中的`Data Warehouse Views`後有`Manage Data`區段可用，則表示您使用新架構。
 
 本主題將示範如何設定追蹤免運費運送臨界值績效的控制面板。 這個儀表板（如下所示）是A/B測試兩個免運費臨界值的好方法。 例如，貴公司可能不確定您應以$50或$100的價格提供免運費。 您應該針對客戶的兩個隨機子集執行A/B測試，並在[!DNL Commerce Intelligence]中執行分析。
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 計算欄
 
-如果您使用原始架構（例如，如果您的「`Manage Data`」功能表下沒有「`Data Warehouse Views`」選項），您希望聯絡支援團隊以建置以下欄。 在新架構上，可從`Manage Data > Data Warehouse`頁面建立這些欄。 詳細指示如下。
+如果您使用原始架構（例如，如果您的「`Data Warehouse Views`」功能表下沒有「`Manage Data`」選項），您希望聯絡支援團隊以建置以下欄。 在新架構上，可從`Manage Data > Data Warehouse`頁面建立這些欄。 詳細指示如下。
 
 * **`sales_flat_order`**&#x200B;資料表
    * 此計算會以相對於您一般購物車大小的增量建立值區。 增量範圍包括5、10、50、100
@@ -66,9 +66,9 @@ ht-degree: 0%
 
 * 量度`A`： `Average Order Value`
 * [!UICONTROL Time period]： `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **根據小計貯體排列的訂單數（送貨規則為A**）
@@ -76,62 +76,57 @@ ht-degree: 0%
 
   >[!NOTE]
   >
-  >您可以顯示`Show top/bottom`中的前`X` `sorted by` `Order subtotal` （貯體）以截斷尾端。
+  >您可以顯示`X`中的前`sorted by` `Order subtotal` `Show top/bottom` （貯體）以截斷尾端。
 
 * 量度`A`： `Number of orders`
 * [!UICONTROL Time period]： `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]： `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Column`
 
 * 送貨規則為A **之小計訂單的**&#x200B;百分比
    * [!UICONTROL Metric]： `Number of orders`
 
    * [!UICONTROL Metric]： `Number of orders`
-   * &#x200B;
-
-     [!UICONTROL 群組依據]: `Independent`
+   * 
+     [！UICONTROL群組依據]: `Independent`
    * [!UICONTROL Formula]： `(A / B)`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `%`
 
 * 量度`A`： `Number of orders by subtotal (hide)`
 * 量度`B`： `Total number of orders (hide)`
 * [!UICONTROL Formula]： `% of orders`
 * [!UICONTROL Time period]： `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]： `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * 小計超過送貨規則A **的訂單的**&#x200B;百分比
    * [!UICONTROL Metric]： `Number of orders`
-   * &#x200B;
-
+   * 
      [!UICONTROL Perspective]: `Cumulative`
 
    * [!UICONTROL Metric]： `Number of orders`
-   * &#x200B;
-
-     [!UICONTROL 群組依據]: `Independent`
+   * 
+     [！UICONTROL群組依據]: `Independent`
 
    * [!UICONTROL Formula]： `1- (A / B)`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `%`
 
 * 量度`A`： `Number of orders by subtotal`
 * 量度`B`： `Total number of orders (hide)`
 * [!UICONTROL Formula]： `% of orders`
 * [!UICONTROL Time period]： `Time period with shipping rule A`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]： `Order subtotal (buckets)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 

@@ -29,12 +29,12 @@ ht-degree: 0%
 
 1. 您可以自行設定，方法是在Data Warehouse管理員中選取欄旁的核取方塊，按一下「**[!UICONTROL Set Recheck Frequency]**」，然後選取您應檢查變更的適當時間間隔。
 
-1. [!DNL Adobe Commerce Intelligence]Data Warehouse團隊的成員可以手動標示要重新簽入您Data Warehouse中的資料行。 如果您知道可變更欄，請聯絡團隊以請求設定重新檢查。 在您的要求中包含欄清單，以及頻率。
+1. [!DNL Adobe Commerce Intelligence] Data Warehouse團隊的成員可以在Data Warehouse中手動標示要重新檢查的欄。 如果您知道可變更欄，請聯絡團隊以請求設定重新檢查。 在您的要求中包含欄清單，以及頻率。
 
 ## 重新檢查頻率 {#frequency}
 
 **您知道嗎？**
-在`primary key`資料行上設定重新檢查並不會檢查資料行是否有變更值。 系統會檢查表格中是否有已刪除的列，且會從Data Warehouse中清除任何刪除。
+在`primary key`資料行上設定重新檢查並不會檢查資料行是否有變更值。 系統會檢查表格中是否有已刪除的列，且任何刪除都會從Data Warehouse中清除。
 
 當欄被標籤為要重新檢查時，您也可以設定重新檢查發生的頻率。 如果特定資料行不經常變更，則選擇較不頻繁的重新檢查可以[最佳化您的更新週期](../../best-practices/reduce-update-cycle-time.md)。
 
@@ -56,9 +56,9 @@ ht-degree: 0%
 
 ![](../../assets/dwm-recheck.png)
 
-您有時可能會在`Changes?`欄中看到`Paused`。 當表格的[復寫方法](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)設定為`Paused`時，會顯示這個值。
+您有時可能會在`Paused`欄中看到`Changes?`。 當表格的[復寫方法](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)設定為`Paused`時，會顯示這個值。
 
-[!DNL Adobe]建議檢閱這些欄，以最佳化您的更新並確保重新檢查可變更的欄。 如果根據資料變更的頻率，欄的重新檢查頻率很高，Adobe建議將其降低，以最佳化更新。
+[!DNL Adobe]建議檢閱這些欄，以最佳化您的更新並確保重新檢查可變更的欄。 如果根據資料變更的頻率，欄的重新檢查頻率很高，Adobe建議將其降低，以最佳化您的更新。
 
 如有疑問，請聯絡我們，或查詢目前的復寫方法或重新檢查。
 

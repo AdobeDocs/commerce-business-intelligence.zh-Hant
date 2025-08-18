@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 循序比較計算欄
 
-此主題概述&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;頁面中可用`Sequential Comparison`計算欄的用途和用途。 以下是其功能的說明，然後是一個範例和建立它的機制。
+此主題概述`Sequential Comparison`頁面中可用&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;計算欄的用途和用途。 以下是其功能的說明，然後是一個範例和建立它的機制。
 
 **說明**
 

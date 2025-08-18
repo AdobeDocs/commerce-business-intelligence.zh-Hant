@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 在Commerce Intelligence中翻譯SQL查詢
 
-曾經想過如何將SQL查詢轉譯為您在[!DNL Commerce Intelligence]中使用的[計算資料行](../data-warehouse-mgr/creating-calculated-columns.md)、[量度](../../data-user/reports/ess-manage-data-metrics.md)和[報表](../../tutorials/using-visual-report-builder.md)？ 如果您是大量的SQL使用者，瞭解[!DNL Commerce Intelligence]中的SQL轉譯方式可讓您更聰明地在[Data Warehouse管理員](../data-warehouse-mgr/tour-dwm.md)中工作，並充分利用[!DNL Commerce Intelligence]平台。
+曾經想過如何將SQL查詢轉譯為您在[中使用的](../data-warehouse-mgr/creating-calculated-columns.md)計算資料行[、](../../data-user/reports/ess-manage-data-metrics.md)量度[和](../../tutorials/using-visual-report-builder.md)報表[!DNL Commerce Intelligence]？ 如果您是大量的SQL使用者，瞭解[!DNL Commerce Intelligence]中的SQL轉譯方式可讓您更聰明地在[Data Warehouse管理員](../data-warehouse-mgr/tour-dwm.md)中工作，並充分利用[!DNL Commerce Intelligence]平台。
 
-在本主題結束時，您找到SQL查詢子句和[!DNL Commerce Intelligence]專案的&#x200B;**轉譯矩陣**。
+在本主題結束時，您找到SQL查詢子句和&#x200B;**專案的**&#x200B;轉譯矩陣[!DNL Commerce Intelligence]。
 
 從檢視一般查詢開始：
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ## 彙總函式
 
-查詢中的彙總函式（例如，`count`、`sum`、`average`、`max`、`min`）採用[!DNL Commerce Intelligence]中的&#x200B;**量度彙總**&#x200B;或&#x200B;**資料行彙總**&#x200B;的形式。 差異因子是執行彙總是否需要聯結。
+查詢中的彙總函式（例如，`count`、`sum`、`average`、`max`、`min`）採用&#x200B;**中的**&#x200B;量度彙總&#x200B;**或**&#x200B;資料行彙總[!DNL Commerce Intelligence]的形式。 差異因子是執行彙總是否需要聯結。
 
 檢視上述每個專案的範例。
 
@@ -73,9 +73,9 @@ ht-degree: 0%
 | `ON c.customer_id = o.customer_id` | 路徑 |
 | `WHERE o.status = 'success'` | 彙總篩選器 |
 
-在[!DNL Commerce Intelligence]中設定此專案需要使用您的Data Warehouse管理員，您可以在此建立`orders`與`customers`資料表之間的路徑，然後在客戶資料表中建立名為`Customer LTV`的資料行。
+在[!DNL Commerce Intelligence]中設定此專案需要使用您的Data Warehouse管理員，您可以在其中建立`orders`與`customers`資料表之間的路徑，然後在客戶資料表中建立名為`Customer LTV`的資料行。
 
-檢視如何在`customers`和`orders`之間建立新路徑。 最終目標是在`customers`資料表中建立新的彙總資料行，因此請先導覽至您Data Warehouse中的`customers`資料表，然後按一下&#x200B;**[!UICONTROL Create a Column** > **&#x200B;選取定義&#x200B;**> **SUM]**。
+檢視如何在`customers`和`orders`之間建立新路徑。 最終目標是在`customers`資料表中建立新的彙總資料行，因此請先導覽至Data Warehouse中的`customers`資料表，然後按一下&#x200B;**[!UICONTROL Create a Column** > **&#x200B;選取定義&#x200B;**> **SUM]**。
 
 接下來，您需要選取來源表格。 如果`orders`表格的路徑存在，只要從下拉式清單中選取它即可。 不過，如果您正在建立新路徑，請按一下「**[!UICONTROL Create new path]**」，下列畫面會顯示您：
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 ![](../../assets/Customer_LTV.gif)
 
-現在您已在`customers`資料表中建立新的`Customer LTV`資料行，您已準備好使用此資料行建立[量度彙總](#aggregate) （例如，找出每位客戶的平均LTV）。 您也可以`group by`或`filter`，依報表中的計算資料行，使用建置在`customers`資料表上的現有量度。
+現在您已在`Customer LTV`資料表中建立新的`customers`資料行，您已準備好使用此資料行建立[量度彙總](#aggregate) （例如，找出每位客戶的平均LTV）。 您也可以`group by`或`filter`，依報表中的計算資料行，使用建置在`customers`資料表上的現有量度。
 
 >[!NOTE]
 >

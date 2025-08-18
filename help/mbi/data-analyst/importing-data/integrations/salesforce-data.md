@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # 必須有[!DNL Salesforce]個資料
 
-在[[!DNL Salesforce] 設定](../integrations/salesforce.md)完成之後，會在您的Data Warehouse中建立每個可查詢物件[物件](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) （名為`sf_/\{sobject-name}`）的資料表。
+在[[!DNL Salesforce] 設定](../integrations/salesforce.md)完成之後，會在Data Warehouse中為每個可查詢的[物件](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) （名為`sf_/\{sobject-name}`）建立資料表。
 
 >[!NOTE]
 >
 >每個表格的結構（欄）取決於物件中包含的欄位。
 
-若要取得貴組織可用的物件清單，請參閱[!DNL Salesforce] [取得物件清單檔案](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm)。 取得物件清單之後，請檢視[!DNL Salesforce]檔案的[實體關聯圖(ERD)區段](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm)，瞭解實體如何相互關聯。
+若要取得貴組織可用的物件清單，請參閱[!DNL Salesforce] [取得物件清單檔案](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm)。 取得物件清單之後，請檢視[檔案的](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm)實體關聯圖(ERD)區段[!DNL Salesforce]，瞭解實體如何相互關聯。
 
 ## 不支援的物件
 
@@ -50,4 +50,4 @@ ht-degree: 0%
 ## 相關：
 
 * [正在連線 [!DNL Salesforce]](../integrations/salesforce.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

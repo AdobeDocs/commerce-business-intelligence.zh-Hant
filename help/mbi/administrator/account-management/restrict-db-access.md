@@ -23,7 +23,7 @@ ht-degree: 0%
 
 1. 確定執行的殼層是`bash -r`
 
-這兩項作業都可在使用者本位`dir/.ssh`目錄的`authorized_keys`檔案中完成，做為使用者登入時執行命令的一部分。 看起來像這樣：
+這兩項作業都可在使用者本位`authorized_keys`目錄的`dir/.ssh`檔案中完成，做為使用者登入時執行命令的一部分。 看起來像這樣：
 
 ```bash
 ... other keys ...

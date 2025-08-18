@@ -1,6 +1,6 @@
 ---
 title: 從SQL查詢建立視覺效果
-description: 瞭解如何熟悉SQLReport Builder中使用的術語，並為您建立SQL視覺效果奠定堅實的基礎。
+description: 瞭解如何熟悉SQL Report Builder中使用的術語，並為您建立SQL視覺效果奠定堅實的基礎。
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 開始此教學課程之前，請參閱`SQL Report Builder`中使用的下列術語。
 
-- `Series`：您要測量的資料行在SQLReport Builder中稱為Series。 常見的範例是`revenue`、`items sold`和`marketing spend`。 至少必須有一個資料行設定為`Series`才能建立視覺效果。
+- `Series`：您要測量的資料行在SQL Report Builder中稱為序列。 常見的範例是`revenue`、`items sold`和`marketing spend`。 至少必須有一個資料行設定為`Series`才能建立視覺效果。
 
-- `Category`：您要用來劃分資料的資料行稱為`Category`，就像[`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md)中的`Group By`功能一樣。 例如，如果您想要依客戶的贏取來源來劃分客戶期限收入，則會將包含贏取來源的欄指定為`Category`。 可以將多個資料行設定為`Category`。
+- `Category`：您要用來劃分資料的資料行稱為`Category`，就像`Group By`中的[`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md)功能一樣。 例如，如果您想要依客戶的贏取來源來劃分客戶期限收入，則會將包含贏取來源的欄指定為`Category`。 可以將多個資料行設定為`Category`。
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 - `EXTRACT`函式非常適合用於剖析時間戳記的日、周、月或年。 當您要在報告上使用的`time interval`是`daily`、`weekly`、`monthly`或`yearly`時，這會很有用。
 
-若要開始，請按一下&#x200B;**[!UICONTROL Report Builder** > **SQL Report Builder]**&#x200B;以開啟[!DNL SQL Report Builder]。
+若要開始，請按一下[!DNL SQL Report Builder]以開啟&#x200B;**[!UICONTROL Report Builder** > **SQL Report Builder]**。
 
 例如，假設此查詢傳回每個產品每月的銷售專案總數：
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ## 步驟2：建立視覺效果
 
-使用這些結果，*您如何建立視覺效果？*&#x200B;若要開始，請按一下`Results`窗格中的&#x200B;**[!UICONTROL Chart]**&#x200B;索引標籤。 這會顯示`Chart settings`標籤。
+使用這些結果，*您如何建立視覺效果？*&#x200B;若要開始，請按一下&#x200B;**[!UICONTROL Chart]**&#x200B;窗格中的`Results`索引標籤。 這會顯示`Chart settings`標籤。
 
 第一次執行查詢時，報表可能看起來難以捉摸，因為查詢中的所有欄都繪製為序列：
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果標籤為`date`/`time`欄，則查詢必須在標籤上包含`ORDER BY`子句。
+>如果標籤為`ORDER BY`/`date`欄，則查詢必須在標籤上包含`time`子句。
 
 以下快速瞭解您如何建立此視覺效果，從執行查詢到設定報表：
 

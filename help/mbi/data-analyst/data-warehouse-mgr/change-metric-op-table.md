@@ -16,7 +16,7 @@ ht-degree: 0%
 在某些情況下，您可以決定變更量度用來執行操作的資料表格。 例如，如果您有新的使用者表格，您想要從`Users\_Old`表格移轉與使用者相關的量度，以改用`Users\_New`表格。
 
 1. 前往&#x200B;**[!UICONTROL Data]** > **[!UICONTROL Metrics]**
-1. 按一下您要切換`operational`資料表的量度旁的&#x200B;**[!UICONTROL Edit]**。
+1. 按一下您要切換&#x200B;**[!UICONTROL Edit]**&#x200B;資料表的量度旁的`operational`。
 1. 在編輯器中，按一下&#x200B;**[!UICONTROL Change]**。
 
    ![](../../assets/change-metrics-1.png)
@@ -25,6 +25,6 @@ ht-degree: 0%
 
    ![](../../assets/change-metrics-2.png)
 
-1. 如果您在新資料表中沒有相符的資料行，您可以&#x200B;**在資料表中建立它**，或者[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant) （如果它是由[!DNL Commerce Intelligence]建立的計算資料行或維度）。 您也可以&#x200B;**從量度**&#x200B;中刪除維度。 若要刪除您不再需要的維度，只要返回量度的編輯器，並在「`Dimensions`」下選取要刪除的維度即可。
+1. 如果您在新資料表中沒有相符的資料行，您可以&#x200B;**在資料表中建立它**，或者[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （如果它是由[!DNL Commerce Intelligence]建立的計算資料行或維度）。 您也可以&#x200B;**從量度**&#x200B;中刪除維度。 若要刪除您不再需要的維度，只要返回量度的編輯器，並在「`Dimensions`」下選取要刪除的維度即可。
 
    ![](../../assets/change-metrics-3.png)

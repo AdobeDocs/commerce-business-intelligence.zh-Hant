@@ -26,8 +26,8 @@ ht-degree: 0%
 
 ## 將[!DNL Stripe]新增為資料來源 {#stepone}
 
-1. 移至&#x200B;**[!UICONTROL Admin** > **Connections]**&#x200B;下的`Connections`頁面。
-1. 按一下`Data Sources`表格上方熒幕右側的&#x200B;**[!UICONTROL Add a Data Source]**。
+1. 移至`Connections`下的&#x200B;**[!UICONTROL Admin** > **Connections]**&#x200B;頁面。
+1. 按一下&#x200B;**[!UICONTROL Add a Data Source]**&#x200B;表格上方熒幕右側的`Data Sources`。
 1. 按一下[!DNL Stripe]圖示。 這會顯示`[!DNL Stripe] authorization`頁面。
 1. 按一下&#x200B;**[!UICONTROL Connect with Stripe]**。
 
@@ -48,4 +48,4 @@ ht-degree: 0%
 [[!DNL Stripe] API檔案](https://stripe.com/docs/api)可以成為瞭解更多有關[!DNL Stripe]如何與[!DNL Commerce Intelligence]整合的實用資源。
 
 * [預期 [!DNL Stripe] 資料](../integrations/stripe-data.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

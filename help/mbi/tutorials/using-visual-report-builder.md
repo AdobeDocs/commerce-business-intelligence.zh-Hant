@@ -1,5 +1,5 @@
 ---
-title: 使用視覺Report Builder
+title: 使用Visual Report Builder
 description: 瞭解如何分析特定時段內的報表資料。
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
 role: Admin, Data Architect, Data Engineer, User
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## 步驟3：新增`Formulas`
 
-按一下位於報表中量度清單正上方的&#x200B;**[!UICONTROL Add Formula]**，即可將`Formulas`新增至報表。 在[公式編輯器](../data-analyst/dev-reports/formulas-in-rpt-bldr.md)中，報表中包含的任何量度都可當作輸入使用。 基本的數學運運算元可用來控制不同的量度。
+按一下位於報表中量度清單正上方的`Formulas`，即可將&#x200B;**[!UICONTROL Add Formula]**&#x200B;新增至報表。 在[公式編輯器](../data-analyst/dev-reports/formulas-in-rpt-bldr.md)中，報表中包含的任何量度都可當作輸入使用。 基本的數學運運算元可用來控制不同的量度。
 
 假設您想要建立報表，顯示每筆訂單的平均收入。 在此情況下，您會將`Revenue`量度除以`Number of orders`量度。
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 設定時段的特定日期範圍時，請確定開始日期是間隔的開始，結束日期是間隔的結束。
 
-例如，設定從`January 1st`到`March 1st`的時間段並選擇`monthly`間隔會將`March`顯示為資料點，但忽略`March`中除了`March 1`之外的每一天。 在這種情況下，您應該從`January 1 to March 31`製作您的`Time Period`。
+例如，設定從`January 1st`到`March 1st`的時間段並選擇`monthly`間隔會將`March`顯示為資料點，但忽略`March`中除了`March 1`之外的每一天。 在這種情況下，您應該從`Time Period`製作您的`January 1 to March 31`。
 
 ## 步驟5： `Group by` / `Segmenting the Analysis` {#groupby}
 
@@ -125,9 +125,9 @@ ht-degree: 0%
 
 ## 步驟7：儲存報表
 
-建立圖表時，按一下`Visual Report Builder`右上角的&#x200B;**[!UICONTROL Save]**&#x200B;即可儲存圖表。
+建立圖表時，按一下&#x200B;**[!UICONTROL Save]**&#x200B;右上角的`Visual Report Builder`即可儲存圖表。
 
-您可選擇使用`Type`下拉式清單儲存圖表、表格或數字(`scalar`)，以及使用`Location`下拉式清單儲存報告的儀表板。
+您可選擇使用`scalar`下拉式清單儲存圖表、表格或數字(`Type`)，以及使用`Location`下拉式清單儲存報告的儀表板。
 
 然後，您可以按一下「**[!UICONTROL Save to Dashboard]**」以儲存報表。
 

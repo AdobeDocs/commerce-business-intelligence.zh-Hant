@@ -1,6 +1,6 @@
 ---
 title: 連線您的資料
-description: 瞭解如何在Data Warehouse管理員中瀏覽可用於同步的表格。
+description: 瞭解如何在Data Warehouse Manager中瀏覽可供同步的表格。
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 連線您的資料
 
-在[!DNL Adobe Commerce Intelligence]中，資料來源稱為`integrations`。 成功連線`integration`之後，您將能夠在Data Warehouse管理員中瀏覽可供同步的資料表。
+在[!DNL Adobe Commerce Intelligence]中，資料來源稱為`integrations`。 成功連線`integration`之後，您就可以在Data Warehouse管理員中瀏覽可供同步的資料表。
 
 使用`Connections`頁面新增及管理整合，按一下&#x200B;**[!UICONTROL Manage Data** > **Connections]**&#x200B;即可存取該頁面。 在這裡，您會看到：
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 整合型別
 
-有四種方式可將您的資料匯入[!DNL Commerce Intelligence]：連線資料庫、連線SaaS整合、上傳`.csv`檔案或使用AdobeAPI。
+有四種方式可將您的資料匯入[!DNL Commerce Intelligence]：連線資料庫、連線SaaS整合、上傳`.csv`檔案或使用Adobe API。
 
 ## 資料庫整合
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence]支援SQL和NoSQL資料庫，例如[MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md)、[Microsoft SQL](../integrations/microsoft-sql-server.md)、[MongoDB](../integrations/mongodb-via-ssh-tunnel.md)和[PostgreSQL](../integrations/postgresql.md)。
 
-雖然您可以使用資料庫認證直接將資料庫連線到[!DNL Commerce Intelligence]，但Adobe建議您使用SSH通道等經驗證的加密方法。 這可確保您的資料在進入Data Warehouse時保持安全和安全。
+雖然您可以使用資料庫認證直接將資料庫連線至[!DNL Commerce Intelligence]，但Adobe建議您使用SSH通道等經驗證的加密方法。 這可確保您的資料在進入Data Warehouse時保持安全和安全。
 
 視連線方法和資料庫型別而定，可能需要一些技術專業才能完成設定。
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## 檔案上傳
 
-不確定如何將補充來源的資料匯入Data Warehouse？ [使用`File Upload`功能](../connecting-data/using-file-uploader.md)是提取您日常決策不需要的資料的好方法。 依照格式化規則，您可以快速上傳`.csv`檔案至您的Data Warehouse，並將其與其他資料來源聯結。
+不確定如何將補充來源的資料匯入Data Warehouse？ [使用`File Upload`功能](../connecting-data/using-file-uploader.md)是提取您日常決策不需要的資料的好方法。 依照格式化規則，您可以快速將`.csv`個檔案上傳到您的Data Warehouse中，並將其與其他資料來源聯結。
 
 ## [!DNL Commerce Intelligence] `Import API`
 
@@ -70,6 +70,6 @@ ht-degree: 0%
 * [合併您的表格](../../../best-practices/consolidating-your-tables.md)
 * [限制對資料庫的存取](../../../administrator/account-management/restrict-db-access.md)
 
-**沒有看見您想要的整合？**&#x200B;必須啟用部分整合，才會在您的帳戶中顯示。 如果您正在尋找[!DNL Facebook]之類的專案，但它並未列出，請[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+**沒有看見您想要的整合？**&#x200B;必須啟用部分整合，才會在您的帳戶中顯示。 如果您正在尋找[!DNL Facebook]之類的專案，但它並未列出，請[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 **如果您看到整合的錯誤狀態**，請參閱[疑難排解小節](https://support.magento.com/hc/en-us/sections/360003078151)以取得說明。

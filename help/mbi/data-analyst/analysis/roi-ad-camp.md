@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Intelligence]可讓您從資料庫輕鬆[結合廣告成本資料和收入資料](../../data-analyst/importing-data/integrations/google-adwords.md)。 這可幫助您識別哪些行銷活動具有最高的投資報酬率(ROI)。 本主題會探索幾種評估行銷活動績效的不同方法。
 
-## 必要條件
+## 先決條件
 
 * 匯入您的廣告成本資料：
    * [將您的 [!DNL Google AdWords] 連線至 [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md)：這會同步處理您的[!DNL Adwords]在[!DNL Commerce Intelligence]中的支出
@@ -43,9 +43,9 @@ ht-degree: 0%
 
 1. 建立一段時間內總支出的[!UICONTROL Metric]
 1. 前往[!UICONTROL Data > Metrics]
-1. 選取`Add New Metric`並選取正在記錄您的[!DNL AdWords]成本資料的[!DNL `Adwords...`]資料表。
+1. 選取`Add New Metric`並選取正在記錄您的[!DNL `Adwords...`]成本資料的[!DNL AdWords]資料表。
 1. 在量度編輯器中，為您的量度命名（例如，[!UICONTROL AdWord Cost]）
-1. 使用下拉式清單，對依`date`欄排序的[!DNL Adwords...]資料表（變更）中的`adCost`欄執行&#x200B;**總和**。
+1. 使用下拉式清單，對依&#x200B;**欄排序的**&#x200B;資料表（變更）中的`adCost`欄執行[!DNL Adwords...]總和`date`。
    ![](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
 1. 按一下頂端的「`Back to Metric List`」並前往任何儀表板。
 
@@ -99,7 +99,7 @@ ht-degree: 0%
 >
 >此範例假設所有行銷活動成本都專門用於產生特定產品的購買。 假設所有成本都花在產生購買上，則產生的ROI會考慮最壞的情況（最高每次購買成本）。 您可以確定您的實際ROI高於此計算。 範例：假設您在產生10名新使用者和10次購買的行銷活動上花費$20，則您的每次購買實際成本為$1。 假設所有成本都是為了取得新使用者，則每次購買的成本為$2。
 
-開始之前，[送出支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)以將下列維度聯結到您的行專案表格(`sales\_flat\_order\_item, order\_item`)：
+開始之前，[送出支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以將下列維度聯結到您的行專案表格(`sales\_flat\_order\_item, order\_item`)：
 
 * 訂單的來源（如果您只追蹤使用者層級的轉介來源，則加入使用者的來源）
 * 訂單的行銷活動（如果您只追蹤使用者層級的轉介來源，則加入使用者的行銷活動）
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 1. 在任何儀表板中，按一下&#x200B;**[!UICONTROL Add Report > Create new report]**
 1. 新增`Revenue by items`量度，依照上方特定產品報表之行銷活動的篩選器和說明分組，然後按一下量度純量值下方的&#x200B;**[!UICONTROL Hide]**
-1. 現在依照您在上述`User acquisition campaigns`區段中探索的`Ad cost by campaigns`報告中的篩選器和群組方式方向，新增[!DNL AdWords Cost]量度；然後按一下量度純量值下方的&#x200B;**[!UICONTROL Hide]**
+1. 現在依照您在上述[!DNL AdWords Cost]區段中探索的`Ad cost by campaigns`報告中的篩選器和群組方式方向，新增`User acquisition campaigns`量度；然後按一下量度純量值下方的&#x200B;**[!UICONTROL Hide]**
 1. 設定好這些量度後，即可新增公式：
 1. [!UICONTROL ROI]：輸入公式`\[A\]/\[B\]`，如果`\[A\]`代表`Revenue per campaign for specific product(s)`，`\[B\]`代表`Ad cost by campaigns`。 這會傳回（特定產品的收入） / （行銷活動成本）的比率
 1. [!UICONTROL Return]：輸入公式`\[A\]-\[B\]`。 這會透過計算（平均使用者LTV）傳回使用者的平均利潤 — （每次收購的平均成本）

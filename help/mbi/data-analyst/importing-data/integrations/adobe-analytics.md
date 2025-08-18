@@ -19,9 +19,9 @@ ht-degree: 0%
 
 ![](../../../assets/adobe-analytic-slogo.png)
 
-[!DNL Adobe Commerce Intelligence]的[!DNL Adobe Analytics]整合可讓您將[!DNL Adobe Analytics]的端對端客戶歷程重點與您從[!DNL Commerce Intelligence]所仰賴的電子商務重點結合在一起。 這可讓您全面瞭解商店的整體效能。
+[!DNL Adobe Analytics]的[!DNL Adobe Commerce Intelligence]整合可讓您將[!DNL Adobe Analytics]的端對端客戶歷程重點與您從[!DNL Commerce Intelligence]所仰賴的電子商務重點結合在一起。 這可讓您全面瞭解商店的整體效能。
 
-更具體來說，[!DNL Commerce Intelligence]的[!DNL Adobe Analytics]整合提供商戶開始合併其[!DNL Adobe Commerce]和[!DNL Adobe Analytics]資料集的功能。
+更具體來說，[!DNL Adobe Analytics]的[!DNL Commerce Intelligence]整合提供商戶開始合併其[!DNL Adobe Commerce]和[!DNL Adobe Analytics]資料集的功能。
 
 - 從您現有的[!DNL Adobe Analytics]帳戶建立與[!DNL Commerce Intelligence]的連線。
 
@@ -39,9 +39,9 @@ ht-degree: 0%
 
 - 要復寫至[!DNL Commerce Intelligence]的量度和維度清單
 
-## 正在連線[!DNL Commerce Intelligence]的[!DNL Adobe Analytics]整合
+## 正在連線[!DNL Adobe Analytics]的[!DNL Commerce Intelligence]整合
 
-1. 移至&#x200B;**[!DNL Manage Data** > **Integrations]**&#x200B;下的`Integrations`頁面。
+1. 移至`Integrations`下的&#x200B;**[!DNL Manage Data** > **Integrations]**&#x200B;頁面。
 
 1. 按一下&#x200B;**[!UICONTROL Add an Integration]**。
 
@@ -57,6 +57,6 @@ ht-degree: 0%
 
 1. 選取的報表套裝會顯示在表格中。 按一下&#x200B;**[!UICONTROL Save]**&#x200B;以確認您的選擇。
 
-1. 通知[!DNL Commerce Intelligence] [支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)您的整合已獲得授權，他們將為您執行初始連線程式。
+1. 通知[!DNL Commerce Intelligence] [支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)您的整合已獲得授權，他們將為您執行初始連線程式。
 
-初始連線程式執行後，您的資料表將可在`All Tables`標籤下的Data Warehouse頁面中使用。 選取您要復寫的欄，資料將在下次完整更新後顯示。
+初始連線程式執行後，您的表格將可在Data Warehouse頁面的`All Tables`標籤下使用。 選取您要復寫的欄，資料將在下次完整更新後顯示。

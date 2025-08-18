@@ -25,7 +25,7 @@ ht-degree: 0%
 | `Customer` | 下訂單的客戶。 |
 | `Order total` | 訂單總計。 這可能是以計算為基礎的欄，其他欄中的值（例如小計和運送）構成此欄的總計。 |
 | `Currency` | 支付訂單所用的貨幣。 包含（若相關）。 |
-| ` Order status` | 訂單的狀態，例如`In Progress`、`Refunded`或`Complete`。 此欄的值會變更（如果不完整）。 新的和更新的資料可以使用`File Uploads`頁面上的[附加資料功能](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md)匯入。 |
+| ` Order status` | 訂單的狀態，例如`In Progress`、`Refunded`或`Complete`。 此欄的值會變更（如果不完整）。 新的和更新的資料可以使用[頁面上的](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md)附加資料功能`File Uploads`匯入。 |
 | `Acquisition/marketing channel` | 下訂單的客戶反向連結的贏取或行銷管道。 |
 | `Order datetime` | 建立訂單的日期和時間。 |
 | `Order updated at` | 上次修改訂單記錄的日期和時間。 |

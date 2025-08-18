@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '143'
 ht-degree: 0%
 
 ---
 
 # 篩選器選項
 
-本主題探討[建立報告](../../tutorials/using-visual-report-builder.md){： target=&quot;_blank&quot;}或[建立量度](../../data-user/reports/ess-manage-data-metrics.md){： target=&quot;_blank&quot;}時`filters`使用的一些特殊`operators`。
+本主題探討`operators`建立報告`filters`或[建立量度](../../tutorials/using-visual-report-builder.md){: target="_blank"}時[中使用的一些特殊](../../data-user/reports/ess-manage-data-metrics.md){: target="_blank"}。
 
 ## `Filter Operators`
 

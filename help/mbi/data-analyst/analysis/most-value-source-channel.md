@@ -15,7 +15,7 @@ ht-degree: 0%
 
 您調查了對象、建立了行銷活動、投資了幾個行銷管道。 現在時間已經過去，這些管道的表現如何？ 哪個頻道吸引的新使用者最多？ 哪一個來源對您的總收入貢獻最大？
 
-透過[!DNL Adobe Commerce Intelligence]，您可以透過反向連結來源輕鬆將收入和使用者分段，不論是對應至[[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en)或自訂資料欄位。 此細分可讓您找到績效最佳的管道，並更好地投入行銷預算。
+透過[!DNL Adobe Commerce Intelligence]，您可以透過反向連結來源輕鬆將收入和使用者分段，不論是對應至[!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en)或自訂資料欄位。 此細分可讓您找到績效最佳的管道，並更好地投入行銷預算。
 
 本主題會探索一些可用來發掘您最有價值行銷管道的報告：
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 * [依使用者註冊日期和來源列出的收入](#revbyregdateandsource)
 * [依使用者來源重複訂單](#repeatordersbysource)
 
-## 必要條件 {#prereqs}
+## 先決條件 {#prereqs}
 
 若要在此主題中建立分析，您必須存取行銷贏取/轉介來源資料。 如果您尚未追蹤此專案，您必須先將[訂單轉介來源資料從 [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md)匯入[!DNL Adobe Commerce Intelligence]，才能繼續。 此外，將使用者裝置資訊新增至分析時，可讓您檢視反向連結所使用的技術。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 評估反向連結來源的效能，是決定您最具價值管道的關鍵。 此報表會依贏取來源顯示一段時間內新註冊的使用者數量，以便您追蹤反向連結來源在贏取新註冊使用者時的效能。
 
-若要以[Report Builder](../../tutorials/using-visual-report-builder.md)建立此報告，請將&#x200B;**新使用者**&#x200B;量度（或計算一段時間內新使用者人數的同等量度）新增至報告。 然後執行下列動作：
+若要在[Report Builder](../../tutorials/using-visual-report-builder.md)中建立此報表，請將&#x200B;**新使用者**&#x200B;量度（或計算一段時間內新使用者人數的同等量度）新增至報表。 然後執行下列動作：
 
 1. 將[!UICONTROL Time Period]設定為您要分析的註冊期間。
 1. 將[!UICONTROL Interval]設定為每月。
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 「平均訂單值」報表平均會顯示從特定來源取得的使用者在下訂單時花費的金額。 但是，這些相同的使用者是否為回頭客戶，此報表不會向您顯示。 但是透過使用者來源的重複訂單，您可以檢視特定來源的使用者是否進行多次購買。
 
-若要以[Report Builder](../../tutorials/using-visual-report-builder.md)建立此報表，請新增&#x200B;**訂單數**&#x200B;量度，然後執行下列動作：
+若要在[Report Builder](../../tutorials/using-visual-report-builder.md)中建立此報表，請新增&#x200B;**訂單數**&#x200B;量度，然後執行下列動作：
 
 1. 將[!UICONTROL Time Period]設定為您要分析的註冊期間。
 1. 將[!UICONTROL Time Interval]設定為每月。

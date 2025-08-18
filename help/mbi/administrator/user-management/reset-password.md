@@ -13,8 +13,8 @@ ht-degree: 0%
 
 # 重設密碼
 
-若要重設密碼，請按一下[!DNL Adobe Commerce Intelligence]登入頁面密碼欄位下方的&#x200B;**[!UICONTROL Reset Password]**。 輸入使用者帳戶的電子郵件地址，並傳送包含密碼重設連結的電子郵件。
+若要重設密碼，請按一下&#x200B;**[!UICONTROL Reset Password]**&#x200B;登入頁面密碼欄位下方的[!DNL Adobe Commerce Intelligence]。 輸入使用者帳戶的電子郵件地址，並傳送包含密碼重設連結的電子郵件。
 
-此外，您可以使用&#x200B;**[!UICONTROL Personal Settings]**&#x200B;頁面在[!DNL Commerce Intelligence]內變更密碼。
+此外，您可以使用[!DNL Commerce Intelligence]頁面在&#x200B;**[!UICONTROL Personal Settings]**&#x200B;內變更密碼。
 
-如果您重設密碼，但帳戶仍然被鎖定，請依照[這些提示](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html?lang=zh-Hant)來協助找出問題。
+如果您重設密碼，但帳戶仍然被鎖定，請依照[這些提示](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html)來協助找出問題。

@@ -1,6 +1,6 @@
 ---
 title: 連線Salesforce
-description: 瞭解Salesforce資料如何啟用一系列分析，從評分和最佳化銷售機會，到為轉換的機會達成目標。
+description: 瞭解Salesforce資料如何啟用一系列分析，從評分和最佳化銷售機會，到實現轉換機會的目標。
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -25,7 +25,7 @@ ht-degree: 0%
 >
 >[!DNL Salesforce]聯結器要求您擁有[[!DNL Salesforce] API存取權](../integrations/salesforce.md)，以作為您[!DNL Salesforce]訂閱的一部分。 開始使用前，請先確認此功能已啟用。
 
-1. 若要將[!DNL Salesforce]整合新增至您的帳戶，請導覽至「**[!UICONTROL Manage Data** > **Connections]**」下的「`Connections`」頁面。
+1. 若要將[!DNL Salesforce]整合新增至您的帳戶，請導覽至「`Connections`」下的「**[!UICONTROL Manage Data** > **Connections]**」頁面。
 1. 按一下位於畫面右側[資料來源]表格上方的&#x200B;**[!UICONTROL Add a Data Source]**。
 1. 按一下[!DNL Salesforce]圖示。
 1. 按一下&#x200B;**[!UICONTROL Connect to Salesforce]**。
@@ -36,4 +36,4 @@ ht-degree: 0%
 如果您比較精通技術，[[!DNL Salesforce] API檔案](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm)可以成為瞭解更多有關Salesforce如何與[!DNL Commerce Intelligence]整合的實用資源。
 
 * [預期 [!DNL Salesforce] 資料](../integrations/salesforce-data.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

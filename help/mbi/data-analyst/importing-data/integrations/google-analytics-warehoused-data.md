@@ -1,5 +1,5 @@
 ---
-title: 預期的Google Analytics倉儲資料
+title: 預期的Google Analytics Warehoused資料
 description: 瞭解如何與您的Google Analytics倉儲資料互動。
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
 role: Admin, Data Architect, Data Engineer, User
@@ -21,17 +21,17 @@ ht-degree: 0%
 >
 >某些資訊已在朋友的許可下使用於[[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics)。
 
-[!DNL Commerce Intelligence]中的[!DNL Google Analytics Warehoused]整合使用[!DNL Google Analytics] [核心報表API](https://developers.google.com/analytics/devguides/reporting/core/v3/)。
+[!DNL Google Analytics Warehoused]中的[!DNL Commerce Intelligence]整合使用[!DNL Google Analytics] [核心報表API](https://developers.google.com/analytics/devguides/reporting/core/v3/)。
 
 >[!NOTE]
 >
->若要避免非預期或無意義的結果，請確認您使用的任何維度都與您在`Report Builder`中使用的一或多個量度[&#128279;](https://ga-dev-tools.google/dimensions-metrics-explorer/)相容。
+>若要避免非預期或無意義的結果，請確認您使用的任何維度都與您在[中使用的一或多個量度](https://ga-dev-tools.google/dimensions-metrics-explorer/)相容`Report Builder`。
 
-已在您的Data Warehouse中建立名為`report`的單一資料表。
+在您的Data Warehouse中建立單一資料表（稱為`report`）。
 
-此資料表的結構描述是由您在設定程式期間選取的量度和Dimension以及兩個其他資料行所組成： `start-date`和`end-date`。
+此資料表的結構描述是由您在設定程式期間選取的量度和維度以及另外兩個資料行所組成： `start-date`和`end-date`。
 
-例如，如果您在設定期間選取以下量度和Dimension：
+例如，如果您在設定期間選取以下量度和維度：
 
 * `Metrics`： `ga:users`
 * `Dimensions`： `ga:month`
@@ -56,9 +56,9 @@ ht-degree: 0%
 
 檢視[!DNL Google Analytics]個廣告行銷活動，以取得從操作觀點可以做些什麼的範例。 假設您在第四季有多個名稱不同的廣告行銷活動。 行銷活動是特定行銷活動的結果。 使用倉儲資料，您可以建立欄，找出有問題的行銷活動名稱，並傳回`Operation Dumbo`的第4季方案名稱。
 
-組合方面可讓[!DNL Google Analytics]資料與其他資料結合，以進行分析。 例如，從[!DNL Google Analytics]取得`Total Time On Site By Ad Campaign`個資料，並與[!DNL Facebook Ads]的`Total Spent Per Campaign`個資料結合，以完整瞭解有多少參與導致您成本。
+組合方面可讓[!DNL Google Analytics]資料與其他資料結合，以進行分析。 例如，從`Total Time On Site By Ad Campaign`取得[!DNL Google Analytics]個資料，並與`Total Spent Per Campaign`的[!DNL Facebook Ads]個資料結合，以完整瞭解有多少參與導致您成本。
 
-另一方面，透過[!DNL Google Analytics Live]整合，每個[!DNL Google Analytics]圖表都像是未儲存在您[!DNL Commerce Intelligence]Data Warehouse中的小型定址接收器。
+另一方面，透過[!DNL Google Analytics Live]整合，每個[!DNL Google Analytics]圖表都像是未儲存在[!DNL Commerce Intelligence] Data Warehouse中的小型定址接收器。
 
 ## 相關：
 

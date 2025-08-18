@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# 透過[!DNL cPanel]連線[!DNL MySQL]
+# 透過[!DNL MySQL]連線[!DNL cPanel]
 
-* [在 [!DNL cPanel]中建立 [!DNL Commerce Intelligence] [!DNL MySQL]使用者](#cpanel)
+* [在 [!DNL Commerce Intelligence] [!DNL MySQL]中建立 [!DNL cPanel]使用者](#cpanel)
 * [在 [!DNL Commerce Intelligence]中輸入連線和使用者資訊](#finish)
 
 ## 跳轉到
@@ -25,17 +25,17 @@ ht-degree: 0%
 >
 >[!DNL Adobe]建議您使用SSH或其他加密形式來保護您的資料！ 如果這不是選項，您仍然可以使用本主題中的指示直接將[!DNL Commerce Intelligence]連線到您的資料庫。
 
-此主題將引導您使用[!DNL cPanel]直接將您的[!DNL MySQL]資料庫連線到[!DNL Commerce Intelligence]。 此處理程式也可用來將[!DNL Adobe Commerce]和任何其他以MySQL為基礎的電子商務資料庫連線到[!DNL Commerce Intelligence]。
+此主題將引導您使用[!DNL MySQL]直接將您的[!DNL Commerce Intelligence]資料庫連線到[!DNL cPanel]。 此處理程式也可用來將[!DNL Adobe Commerce]和任何其他以MySQL為基礎的電子商務資料庫連線到[!DNL Commerce Intelligence]。
 
-1. 在[!DNL cPanel]中建立[!DNL Commerce Intelligence] [!DNL MySQL]使用者
+1. 在[!DNL Commerce Intelligence]中建立[!DNL MySQL] [!DNL cPanel]使用者
 1. 在[!DNL Commerce Intelligence]中輸入連線和使用者資訊
 
 開始使用。
 
-## 在[!DNL cPanel]中建立[!DNL Commerce Intelligence] [!DNL MySQL]使用者 {#cpanel}
+## 在[!DNL Commerce Intelligence]中建立[!DNL MySQL] [!DNL cPanel]使用者 {#cpanel}
 
 1. 透過您的託管提供者登入[!DNL cPanel]。
-1. 按一下位於`Database`區段中的&#x200B;**[!UICONTROL [!DNL MySQL] Databases]**。
+1. 按一下位於&#x200B;**[!UICONTROL [!DNL MySQL] Databases]**&#x200B;區段中的`Database`。
 1. 向下捲動至`Add New User`區段並建立[!DNL Commerce Intelligence]的使用者：
 
    ![](../../../assets/create-mbi-mysql-user-cpanel.png)
@@ -69,4 +69,4 @@ ht-degree: 0%
 
 ## 相關：
 
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

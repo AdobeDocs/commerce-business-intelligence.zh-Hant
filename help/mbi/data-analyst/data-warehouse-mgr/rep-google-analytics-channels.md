@@ -1,6 +1,6 @@
 ---
 title: 使用贏取來源複製Google Analytics管道
-description: 瞭解如何使用贏取來源來復寫Google Analytics管道。
+description: 瞭解如何使用贏取來源複製Google Analytics管道。
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 1. **啟用您的[!DNL Google ECommerce]整合**
 
-   [啟用](../importing-data/integrations/google-ecommerce.md)時，請確定[同步](../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing)您Data Warehouse中的&#x200B;**媒體**&#x200B;和&#x200B;**來源**&#x200B;欄位。 完成此作業後，媒體與來源贏取資料將會帶入您的Data Warehouse。
+   [啟用](../importing-data/integrations/google-ecommerce.md)時，請確定[同步]&#x200B;(../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) Data Warehouse中的&#x200B;**媒體**&#x200B;和&#x200B;**來源**&#x200B;欄位。 完成此程式後，媒體與來源贏取資料會匯入您的Data Warehouse。
 
 1. **上傳Google頻道群組的對應**
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
    如果您是[!DNL Google Analytics] Pro並建立自己的管道，您想要先將特定規則新增至對應表格，然後再將檔案上傳至[!DNL Commerce Intelligence]。
 
-   將它作為[檔案上傳](../importing-data/connecting-data/using-file-uploader.md)帶入您的Data Warehouse。
+   將其作為[檔案上傳](../importing-data/connecting-data/using-file-uploader.md)帶入您的Data Warehouse。
 
    ![](../../assets/Setting_Primary_Keys.png)
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
    若要建立[!DNL Google ECommerce]與對應表之間的關係，[請向您的資料分析團隊提交支援要求](../../guide-overview.md#Submitting-a-Support-Ticket)並參考此主題。 分析師在電子商務表格中建立名為&#x200B;**Channel**&#x200B;的新計算欄。 **在完整的更新週期**&#x200B;之後，此資料行將在`Filter`或`Group by`中準備就緒。
 
-您的Data Warehouse中現在有[!DNL Google Analytics Channel]個群組，這表示您可以從新的角度分析您的資料：
+您現在在Data Warehouse中有[!DNL Google Analytics Channel]個群組，這表示您可以從新的角度分析您的資料：
 
 ![依管道將訂單數量量度分段](../../assets/GA_Channel_Gif.gif)
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 日期差異計算欄
 
-此主題概述&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;頁面中可用`Date Difference`計算欄的用途和用途。 以下是其功能的說明，隨後是一個範例，以及建立它的機制。
+此主題概述`Date Difference`頁面中可用&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;計算欄的用途和用途。 以下是其功能的說明，隨後是一個範例，以及建立它的機制。
 
 **說明**
 

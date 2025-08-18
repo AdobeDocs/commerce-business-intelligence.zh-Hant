@@ -61,8 +61,8 @@ ht-degree: 0%
 
 ### 指派資料型別至您的資料欄
 
-如果資料欄沒有指派的[資料型別](https://en.wikipedia.org/wiki/Data_type)，[!DNL Commerce Intelligence]會猜測要使用哪個資料型別。 如果系統猜測不正確，在Adobe支援團隊將欄調整為適當的資料型別之前，您可能無法執行相關的分析。 例如，如果日期欄猜測為數值資料型別，您可以使用日期維度來分析一段時間內的趨勢。
+如果資料欄沒有指派的[資料型別](https://en.wikipedia.org/wiki/Data_type)，[!DNL Commerce Intelligence]會猜測要使用哪個資料型別。 如果系統猜測不正確，您可能無法執行相關的分析，直到Adobe支援團隊將欄調整為適當的資料型別。 例如，如果日期欄猜測為數值資料型別，您可以使用日期維度來分析一段時間內的趨勢。
 
 ### 如果您有多個資料庫，請在資料表格中新增前置詞
 
-如果您有一個以上的資料庫連線到[!DNL Commerce Intelligence]，Adobe建議您新增首碼到表格以避免混淆。 字首可協助您記住量度或資料維度的來源位置。
+如果您有多個資料庫連線至[!DNL Commerce Intelligence]，Adobe建議您新增首碼至表格，以避免混淆。 字首可協助您記住量度或資料維度的來源位置。

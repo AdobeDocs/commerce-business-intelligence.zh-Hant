@@ -57,7 +57,7 @@ ht-degree: 0%
 
 `enterprise_rma`
 
-* 透過下列聯結，在`enterprise_rma_item_entity`資料表上建立聯結資料行，例如`Return date\_requested`：
+* 透過下列聯結，在`Return date\_requested`資料表上建立聯結資料行，例如`enterprise_rma_item_entity`：
 * Commerce 1.x： `enterprise_rma_item_entity.rma_entity_id ` （許多） => `enterprise_rma.entity_id` （一個）
 * Commerce 2.x： `magento_rma_item_entity.rma_entity_id ` （許多） => `magento_rma.entity_id` （一個）
 

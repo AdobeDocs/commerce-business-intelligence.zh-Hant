@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 報價表
 
-`quote`資料表（`sales_flat_quote`位於M1）包含您商店中建立的每個購物車記錄，無論這些記錄是否已被捨棄或轉換為購買。 每一列代表一個購物車。 由於此表格可能會有大小，Adobe建議您在符合某些條件時（例如有任何未轉換的購物車超過60天）定期刪除記錄。
+`quote`資料表（`sales_flat_quote`位於M1）包含您商店中建立的每個購物車記錄，無論這些記錄是否已被捨棄或轉換為購買。 每一列代表一個購物車。 由於此表格可能會有相當的大小，Adobe建議您在符合某些條件時（例如有任何未轉換的購物車超過60天）定期刪除記錄。
 
 >[!NOTE]
 >
@@ -28,12 +28,12 @@ ht-degree: 0%
 | `base_subtotal` | 購物車中包含之所有專案的商品總值。 不包含稅金、運費、折扣等 |
 | `created_at` | 購物車的建立時間戳記，儲存在UTC本機。 視您在[!DNL Commerce Intelligence]中的設定而定，此時間戳記可能會轉換為[!DNL Commerce Intelligence]中與您的資料庫時區不同的報表時區 |
 | `customer_email` | 建立購物車的客戶的電子郵件地址 |
-| `customer_id` | 與`customer_entity`資料表關聯的`Foreign key` （如果客戶已註冊）。 加入`customer_entity.entity_id`以決定與建立購物車之使用者相關聯的客戶屬性。 如果購物車是透過訪客結帳建立的，則此欄位為`NULL` |
+| `customer_id` | 與`Foreign key`資料表關聯的`customer_entity` （如果客戶已註冊）。 加入`customer_entity.entity_id`以決定與建立購物車之使用者相關聯的客戶屬性。 如果購物車是透過訪客結帳建立的，則此欄位為`NULL` |
 | `entity_id` (PK) | 表格的唯一識別碼，常用於聯結Commerce執行個體內其他表格 |
 | `is_active` | 如果購物車是由客戶建立且尚未轉換為訂單，則傳回「1」的布林欄位。 針對轉換後的購物車或透過管理員建立的購物車，傳回「0」 |
 | `items_qty` | 購物車中包含之所有專案的總數量 |
-| `reserved_order_id` | 與`sales_order`資料表關聯的`Foreign key`。 加入`sales_order.increment_id`以決定與已轉換購物車相關聯的訂單詳細資料。 若購物車未與轉換的訂單關聯，`reserved_order_id`仍為`NULL` |
-| `store_id` | 與`store`資料表關聯的`Foreign key`。 加入`store`。`store_id`以判斷哪個Commerce商店檢視與購物車相關聯 |
+| `reserved_order_id` | 與`Foreign key`資料表關聯的`sales_order`。 加入`sales_order.increment_id`以決定與已轉換購物車相關聯的訂單詳細資料。 若購物車未與轉換的訂單關聯，`reserved_order_id`仍為`NULL` |
+| `store_id` | 與`Foreign key`資料表關聯的`store`。 加入`store`。`store_id`以判斷哪個Commerce商店檢視與購物車相關聯 |
 
 {style="table-layout:auto"}
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 | **資料行名稱** | **描述** |
 |---|---|
 | `Order date` | 反映已轉換購物車訂單建立日期的時間戳記。 透過加入`quote.reserved_order_id`至`sales_order.increment_id`並傳回`sales_order.created_at`欄位進行計算 |
-| `Seconds between cart creation and order` | 從購物車建立到訂單建立之間經過的時間。 從`Order date`減去`created_at`計算，傳回為整數秒數 |
+| `Seconds between cart creation and order` | 從購物車建立到訂單建立之間經過的時間。 從`created_at`減去`Order date`計算，傳回為整數秒數 |
 | `Seconds since cart creation` | 從購物車建立日期到現在之間經過的時間。 計算方式為在執行查詢時從伺服器時間戳記中減去`created_at`，並以整數秒數傳回。 最常用於識別購物車的年齡 |
 | `Store name` | 與此訂單相關聯的Commerce商店名稱。 透過加入`quote.store_id`至`store.store_id`並傳回`name`欄位進行計算 |
 

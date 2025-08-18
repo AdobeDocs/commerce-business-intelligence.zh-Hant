@@ -15,7 +15,7 @@ ht-degree: 0%
 
 無論您與[!DNL Commerce Intelligence]已合作六個月或六年，維護整潔的帳戶對貴組織充分利用平台至關重要。 長期下來，通常會有一些使用者、控制面板、報表、量度和欄不再需要這些專案。 您可能建立了報表以供一次性使用，但已忘記該報表，或離開貴公司的使用者從未停用帳戶。
 
-透過[!DNL Commerce Intelligence]帳戶的[標準化、清除所有元素](../best-practices/naming-elements.md))的命名，下列帳戶稽核步驟可協助您減少使用者的雜亂和不必要的分析。 一個額外優點包括[可能更快的更新週期](../best-practices/reduce-update-cycle-time.md)。
+透過[帳戶的](../best-practices/naming-elements.md)標準化、清除所有元素[!DNL Commerce Intelligence])的命名，下列帳戶稽核步驟可協助您減少使用者的雜亂和不必要的分析。 一個額外優點包括[可能更快的更新週期](../best-practices/reduce-update-cycle-time.md)。
 
 ## 步驟1：識別非作用中的使用者
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 **刪除整個儀表板**
 
-1. 選取&#x200B;**[!UICONTROL Manage Data]**，然後選取&#x200B;**[!UICONTROL Dashboards**]。
+1. 選取&#x200B;**[!UICONTROL Manage Data]**，然後選取**[!UICONTROL Dashboards**]。
 1. 按一下您要刪除的控制面板。
 1. 按一下&#x200B;**[!UICONTROL Delete Dashboard]**。
 
@@ -95,13 +95,13 @@ ht-degree: 0%
 
 ![](../../mbi/assets/report_dependecies.png)
 
-如果您決定不再需要該量度，請按一下&#x200B;**[!UICONTROL Back to Metric List]**&#x200B;以導覽回&#x200B;**[!UICONTROL Metrics]**&#x200B;頁面，並尋找您要刪除的量度。 按一下&#x200B;**[!UICONTROL Delete]**。
+如果您決定不再需要該量度，請按一下&#x200B;**[!UICONTROL Metrics]**&#x200B;以導覽回&#x200B;**[!UICONTROL Back to Metric List]**&#x200B;頁面，並尋找您要刪除的量度。 按一下&#x200B;**[!UICONTROL Delete]**。
 
 ## 步驟4：評估您的同步欄
 
-最後一個步驟是評估Data Warehouse中目前同步的欄。 取消同步資料行不僅會減少帳戶的負擔，還有可能縮短更新時間。
+最後一個步驟是評估目前在Data Warehouse中同步處理的欄。 取消同步資料行不僅會減少帳戶的負擔，還有可能縮短更新時間。
 
-如果您想要追蹤此專案，請連絡[!DNL Commerce Intelligence] [支援](../guide-overview.md#Submitting-a-Support-Ticket)。 支援團隊可建立一份報表，其中包含所有未在任何使用者的控制面板中使用，以及未用於電子郵件摘要的所有欄，但不包括SQL報表。 然後，您可以使用此報表作為透過「Data Warehouse管理員」選取要取消同步之欄的指南。
+如果您想要追蹤此專案，請連絡[!DNL Commerce Intelligence] [支援](../guide-overview.md#Submitting-a-Support-Ticket)。 支援團隊可建立一份報表，其中包含所有未在任何使用者的控制面板中使用，以及未用於電子郵件摘要的所有欄，但不包括SQL報表。 然後，您可以使用此報表作為透過Data Warehouse Manager選取要取消同步之欄的指南。
 
 >[!NOTE]
 >

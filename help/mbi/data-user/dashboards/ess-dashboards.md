@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 建立儀表板 {#createdash}
 
-控制面板是可共用的主題貯體，用於您在Report Builder中建立的分析。 這就是您鼓勵團隊共同作業，並在整個組織中維持單一信任來源的方法。
+控制面板是可共用的主題值區，適用於您在Report Builder中建立的分析。 這就是您鼓勵團隊共同作業，並在整個組織中維持單一信任來源的方法。
 
 *如果您是管理員或Standard使用者*，您可以按一下`Dashboard Options`下拉式清單，然後選擇`Create New dashboard`來建立儀表板。
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 ### 共用您的儀表板 {#sharingdash}
 
-為了真正在整個組織中擴展[!DNL Commerce Intelligence]並提供有價值的深入分析，Adobe鼓勵您與其他團隊成員共用您建立的儀表板。 *您可以按一下頁面頂端的`Share Dashboard`選項，共用您擁有的控制面板*。
+為了真正在整個組織中擴展[!DNL Commerce Intelligence]並提供有價值的深入分析，Adobe鼓勵您與其他團隊成員共用您建立的儀表板。 *您可以按一下頁面頂端的*&#x200B;選項，共用您擁有的控制面板`Share Dashboard`。
 
 當您共用控制面板時，可以指派許可權給整個組織或依個人基礎，這表示您可以決定哪些人可以檢視和編輯您的報告。
 

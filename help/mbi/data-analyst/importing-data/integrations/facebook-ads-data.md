@@ -1,6 +1,6 @@
 ---
-title: 預期的Facebook Ads資料
-description: 瞭解建議同步至Data Warehouse的表格之簡短概觀
+title: 預期Facebook廣告資料
+description: 瞭解建議同步至Data Warehouse的表格概述
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 連線[您的 [!DNL Facebook Ads] 帳戶](../integrations/facebook-ads.md)後，您可以使用[Data Warehouse管理員](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)輕鬆追蹤相關資料欄位以進行分析。
 
-本主題提供表格Adobe的簡短概觀，建議您同步至您的Data Warehouse。 這只會反白顯示核心表格，因為有相當多的子表格。
+本主題為您提供Adobe建議您同步至Data Warehouse的表格之簡短概觀。 這只會反白顯示核心表格，因為有相當多的子表格。
 
 ## 核心廣告行銷活動表格
 
@@ -60,4 +60,4 @@ ht-degree: 0%
 ## 相關
 
 * [正在連線 [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

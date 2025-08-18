@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->這僅適用於處於`Pro`計畫且使用新架構的使用者端。 如果您在選取主工具列中的`Manage Data`後有`Data Warehouse Views`區段可用，則表示您使用新架構。
+>這僅適用於處於`Pro`計畫且使用新架構的使用者端。 如果您在選取主工具列中的`Data Warehouse Views`後有`Manage Data`區段可用，則表示您使用新架構。
 
 將您的[!DNL Zendesk]資料與交易式資料庫合併，是瞭解客戶如何與您的銷售或客戶成功團隊互動的絕佳方式。 它還有助於您瞭解哪些型別的客戶正在使用您的支援平台。 此主題示範如何設定儀表板，以取得有關您[!DNL Zendesk]效能和關聯交易式客戶的精細報告。
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 * **`[!DNL Zendesk] user's`**&#x200B;資料表
    * `User is agent? (Yes/No) `
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Calculation`
 
       * `Input columns` - `role`，`email`
@@ -161,19 +161,19 @@ ht-degree: 0%
 * `Ticket's latest solved date`
 * `First agent response date`
 * `Seconds to resolution`
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Date Difference`
 
       * `Ticket's latest solved date`減去`created_at`
 
 * **`Seconds to first response`**
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Date Difference`
 
       * `First agent response date`減去`created_at`
 
 * **`Requester's ticket number`**
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Event Number`
 
       * `Event Owner` - `requester_id`
@@ -181,7 +181,7 @@ ht-degree: 0%
       * `Event Rank` - `created_at`
 
 * **`Ticket created_at (hour of day)`**
-   * &#x200B;
+   * 
       * `Column type` - 「相同表格>計算」
 
       * `Input columns` - `created_at`
@@ -191,7 +191,7 @@ ht-degree: 0%
       * `Datatype` — 整數
 
 * **`Ticket created_at (day of week)`**
-   * &#x200B;
+   * 
       * `Column type` - 「相同表格>計算」
 
       * `Input columns` - `created_at`
@@ -204,9 +204,8 @@ ht-degree: 0%
    * 選取定義： `Count`
    * [!UICONTROL Create Path]：
    * [!UICONTROL Many]： `[!DNL Zendesk] tickets.email`
-   * &#x200B;
-
-     [!UICONTROL One]: `customer_entity.email`
+   * 
+     [！UICONTROL One]: `customer_entity.email`
 
    * 選取[!UICONTROL table]： `[!DNL Zendesk] tickets`
    * [!UICONTROL Path]： `[!DNL Zendesk] tickets.email = customer_entity.email`
@@ -215,7 +214,7 @@ ht-degree: 0%
 
 * **`User's lifetime number of support tickets requested`**
 * **`Has user filed a support ticket? (Yes/No)`**
-   * &#x200B;
+   * 
       * `Column type` - 「相同表格>計算」
 
       * `Input columns` - `User's lifetime number of support tickets requested`
@@ -402,9 +401,8 @@ ht-degree: 0%
 * `Chart Type`： `Column`
 
 * **[!UICONTROL Number of new users who have and have not filed tickets]**
-   * &#x200B;
-
-     [!UICONTROL 公制]: Users
+   * 
+     [！UICONTROL公制]: Users
 
 * 量度`A`： `New users`
 * `Time period`： `All time`

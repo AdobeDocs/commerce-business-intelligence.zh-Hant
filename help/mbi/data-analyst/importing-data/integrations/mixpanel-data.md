@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 必須有[!DNL Mixpanel]個資料
 
-在連線[您的 [!DNL Mixpanel] 帳戶](../integrations/mixpanel.md)之後，您可以使用[Data Warehouse管理員](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)輕鬆追蹤相關的資料欄位以進行分析。
+在連線[您的 [!DNL Mixpanel] 帳戶](../integrations/mixpanel.md)後，您可以使用[Data Warehouse管理員](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)輕鬆追蹤相關的資料欄位以進行分析。
 
-本主題探索可從[!DNL Mixpanel]匯入至[!DNL Commerce Intelligence]帳戶的主要資料表。 連線[!DNL Mixpanel]後，將在您的Data Warehouse中建立下列資料表。 若要檢視所有可用於追蹤的欄位，請按一下表格名稱欄中的連結。
+本主題探索可從[!DNL Mixpanel]匯入至[!DNL Commerce Intelligence]帳戶的主要資料表。 在連線[!DNL Mixpanel]之後，將會在您的Data Warehouse中建立下列資料表。 若要檢視所有可用於追蹤的欄位，請按一下表格名稱欄中的連結。
 
 >[!NOTE]
 >
@@ -32,4 +32,4 @@ ht-degree: 0%
 ## 相關檔案
 
 * [正在連線 [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

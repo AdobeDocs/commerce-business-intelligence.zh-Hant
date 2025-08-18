@@ -21,4 +21,4 @@ ht-degree: 0%
 
 ## 現有使用者
 
-若要再次檢視共用控制面板的清單，使用者可以在`Global Search`功能表中按一下&#x200B;**[!UICONTROL Find]**。
+若要再次檢視共用控制面板的清單，使用者可以在&#x200B;**[!UICONTROL Find]**&#x200B;功能表中按一下`Global Search`。

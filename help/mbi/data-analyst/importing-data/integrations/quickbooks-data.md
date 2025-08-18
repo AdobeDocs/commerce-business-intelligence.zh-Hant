@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 必須有[!DNL QuickBooks]個資料
 
-在連線[您的 [!DNL QuickBooks] 帳戶](../../../data-analyst/importing-data/integrations/quickbooks.md)之後，您可以使用[Data Warehouse管理員](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)輕鬆追蹤相關的資料欄位以進行分析。 在您的Data Warehouse中建立下清單格：
+在連線[您的 [!DNL QuickBooks] 帳戶](../../../data-analyst/importing-data/integrations/quickbooks.md)後，您可以使用[Data Warehouse管理員](../../../data-analyst/data-warehouse-mgr/tour-dwm.md)輕鬆追蹤相關的資料欄位以進行分析。 下清單格會在您的Data Warehouse中建立：
 
 若要檢視所有可用於追蹤的欄位，請按一下表格名稱欄中的連結。
 
@@ -62,4 +62,4 @@ ht-degree: 0%
 ## 相關：
 
 * [正在連線 [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

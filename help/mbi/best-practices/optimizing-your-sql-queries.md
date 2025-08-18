@@ -15,13 +15,13 @@ ht-degree: 0%
 
 [!DNL SQL Report Builder]可讓您在任何指定時間查詢及反複處理這些查詢。 當您需要修改查詢而不必等待更新週期完成才能實現您建立的欄或報告需要更新時，這會很有用。
 
-在執行查詢之前，[[!DNL Commerce Intelligence] 會估計其成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=zh-Hant)。 成本會考慮執行查詢所需的時間長度和資源數量。 如果該成本被認為太高，或者如果傳回的列數超過[!DNL Commerce Intelligence]限制，則查詢會失敗。 為了查詢您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) （可確保您撰寫儘可能精簡的查詢），Adobe建議下列事項。
+在執行查詢之前，[[!DNL Commerce Intelligence] 會估計其成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html)。 成本會考慮執行查詢所需的時間長度和資源數量。 如果該成本被認為太高，或者如果傳回的列數超過[!DNL Commerce Intelligence]限制，則查詢會失敗。 為了查詢您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) （可確保您撰寫的查詢儘可能簡化），Adobe建議下列事項。
 
 ## 使用SELECT或選取所有欄
 
 選取所有欄無法進行即時、輕鬆執行的查詢。 使用`SELECT *`的查詢可能需要相當長的時間才能執行，特別是如果您的表格有許多資料行。
 
-因此，Adobe建議您儘可能避免使用`SELECT *`，而僅包含您需要的欄：
+因此，Adobe建議您儘可能避免使用`SELECT *`，僅包含您需要的欄：
 
 | **代替這個……** | **試試這個！** |
 |-----|-----|
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## 使用多重聯結
 
-雖然您可以在查詢中包含多個聯結，但請記住，這會增加查詢的成本。 為避免達到成本臨界值，Adobe建議儘可能避免多個聯結。
+雖然您可以在查詢中包含多個聯結，但請記住，這會增加查詢的成本。 為避免達到成本臨界值，Adobe建議儘可能避免多個結合。
 
 ## 使用篩選器
 

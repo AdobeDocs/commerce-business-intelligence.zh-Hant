@@ -6,7 +6,7 @@ role: Admin, User
 feature: User Management
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->_您可以限制&#x200B;**[!UICONTROL Standard]**&#x200B;使用者對特定量度的[存取權](../../administrator/user-management/restrict-metric-access.md)。_
+>_您可以限制&#x200B;**[!UICONTROL Standard]**使用者對特定量度的[存取權](../../administrator/user-management/restrict-metric-access.md)。_
 >
 >**[!UICONTROL Standard] _使用者可以使用額外的許可權設定來存取帳單。_
 >
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ### 帳單
 
-`Billing`個使用者有權存取帳單頁面，並可以變更付款資訊。 此外，Adobe也可能就帳單問題聯絡他們。
+`Billing`個使用者有權存取帳單頁面，並可以變更付款資訊。 此外，Adobe也可能會聯絡他們以詢問帳單問題。
 
 `Admin`使用者預設有權存取`Billing`標籤，但`Standard`使用者如果在他們的設定檔中選取`Billing`核取方塊，也可以取得存取權。
 

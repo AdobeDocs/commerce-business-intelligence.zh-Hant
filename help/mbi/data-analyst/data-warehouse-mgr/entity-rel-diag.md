@@ -37,7 +37,7 @@ ht-degree: 0%
 >
 >`customer\_entity.entity\_id`不等於`sales\_flat\_order.entity\_id`。 第一個可視為為`customer\_id`，第二個則可視為為`order\_id.`
 
-在[!DNL Commerce Intelligence]內，如果這兩個資料表之間的路徑不存在，您可以[在Data Warehouse索引標籤內建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md)。 當您準備好建立路徑時，其定義如下：
+在[!DNL Commerce Intelligence]內，如果這兩個資料表之間的路徑不存在，您可以在Data Warehouse索引標籤中[建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md)。 當您準備好建立路徑時，其定義如下：
 
 ![](../../assets/SFO___CE_path.png)
 
@@ -57,6 +57,6 @@ ht-degree: 0%
 
 一個產品可以購買許多專案。 這兩個資料表之間的關係是`catalog\_product\_entity.entity\_id = sales\_flat\_order\_item.product`。
 
-在[!DNL Commerce Intelligence]內，如果這兩個資料表之間的路徑不存在，您可以[在Data Warehouse索引標籤內建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md)。 當您準備好建立路徑時，請如下所示定義路徑。
+在[!DNL Commerce Intelligence]內，如果這兩個資料表之間的路徑不存在，您可以在Data Warehouse索引標籤中[建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md)。 當您準備好建立路徑時，請如下所示定義路徑。
 
 ![](../../assets/SFOI___CPE_path.png)

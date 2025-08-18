@@ -30,7 +30,7 @@ ht-degree: 0%
   >此量度建構於的資料表（可能是`customer_entity`或`sales_order`，視您的存放區接受訪客結帳的能力而定。）
 
    * 按一下&#x200B;**[!UICONTROL Create New Metric]**&#x200B;並從上方選取表格。
-   * 此量度在`Customer's lifetime revenue`欄上執行&#x200B;**中位數**，排序依據`created_at`。
+   * 此量度在&#x200B;**欄上執行**&#x200B;中位數`Customer's lifetime revenue`，排序依據`created_at`。
       * [!UICONTROL Filters]：
          * 新增`Customers we count (Saved Filter Set)` （或`Registered accounts we count`）
 
@@ -53,9 +53,8 @@ ht-degree: 0%
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]： `Avg lifetime revenue`
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-
-     [!UICONTROL 間隔]: `None`
+   * 
+     [！UICONTROL間隔]: `None`
    * [!UICONTROL Chart Type]： `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
@@ -65,9 +64,8 @@ ht-degree: 0%
          * [`B`] `Customer's lifetime number of orders` **大於**`0`
 
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-
-     [!UICONTROL 間隔]: `None`
+   * 
+     [！UICONTROL間隔]: `None`
    * [!UICONTROL Chart Type]： `Number (scalar)`
 
 * **[!UICONTROL Average and Median LTV]**
@@ -75,22 +73,19 @@ ht-degree: 0%
    * 量度`2`： `Median lifetime revenue`
    * [!UICONTROL Time period]： `All time`
    * [!UICONTROL Interval]： `By Month`
-   * &#x200B;
-
-     [!UICONTROL 圖表型別]: `Line`
+   * 
+     [！UICONTROL圖表型別]: `Line`
    * 取消核取`Multiple Y-Axes`
 
 * **LTV （依存留期訂單數）**
    * 量度`1`： `Avg lifetime revenue`
    * 量度`2`： `New customers`
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-
-     [!UICONTROL 間隔]: `None`
+   * 
+     [！UICONTROL間隔]: `None`
    * [!UICONTROL Group by]： `Customer's lifetime number of orders`
-   * &#x200B;
-
-     [!UICONTROL 圖表型別]: `Line`
+   * 
+     [！UICONTROL圖表型別]: `Line`
 
   >[!NOTE]
   >

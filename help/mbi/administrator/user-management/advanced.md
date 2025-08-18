@@ -3,13 +3,13 @@ title: 進階使用者管理
 description: 提升資料可見度、簡化報告、依使用者群組量身打造存取權、簡化儀表板共用，並確保組織的安全性與擴充性。
 role: Admin, User
 feature: User Management
-source-git-commit: 42871886d12b97ee52aa270da6f0186a9a4eaddc
+exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
+source-git-commit: df408b8947a62cdb498b56370be965c89c45f6ff
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
 
 ---
-
 
 # 進階使用者管理
 
@@ -392,7 +392,7 @@ ht-degree: 0%
 
 若要設定使用者群組：
 
-1. 移至&#x200B;[!UICONTROL **管理使用者**] > [!UICONTROL **User Groups]**&#x200B;以檢視現有的使用者群組。
+1. 移至&#x200B;[!UICONTROL **管理使用者**] > [!UICONTROL **User Groups]**以檢視現有的使用者群組。
 
    ![設定使用者群組](../../assets/configure-user-groups.png)
 

@@ -1,6 +1,6 @@
 ---
 title: 預期Google Adwords資料
-description: 瞭解如何使用Data Warehouse管理員輕鬆追蹤相關資料欄位以進行分析。
+description: 瞭解如何使用Data Warehouse Manager輕鬆追蹤相關資料欄位以進行分析。
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 必須有[!DNL Google Adwords]個資料
 
-在連線[您的 [!DNL Google Adwords] 帳戶](../integrations/google-adwords.md)之後，您可以使用[Data Warehouse管理員](../../data-warehouse-mgr/tour-dwm.md)輕鬆追蹤相關的資料欄位以進行分析。
+在連線[您的 [!DNL Google Adwords] 帳戶](../integrations/google-adwords.md)後，您可以使用[Data Warehouse管理員](../../data-warehouse-mgr/tour-dwm.md)輕鬆追蹤相關的資料欄位以進行分析。
 
-您在該處注意到有兩個表格可用於復寫至Data Warehouse：
+您在該處注意到兩個可用於復寫至Data Warehouse的表格：
 
 * `campaigns[account-id]`
 * `adwords[account-id]`
@@ -45,12 +45,12 @@ ht-degree: 0%
 |-----|-----|
 | `\_id` | 表格的主索引鍵 |
 | `accountId` | 帳戶ID |
-| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | 當天的點按總數 |
-| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | 當天行銷活動的總成本 |
-| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | [!DNL Adwords]行銷活動識別碼 |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | 行銷活動名稱（例如，[utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)） |
-| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | 行銷活動執行的日期 |
-| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | 當天的曝光次數 |
+| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adclicks) | 當天的點按總數 |
+| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adcost) | 當天行銷活動的總成本 |
+| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adwordscampaignid) | [!DNL Adwords]行銷活動識別碼 |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=traffic_sources&jump=ga_campaign) | 行銷活動名稱（例如，[utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)） |
+| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=time&jump=ga_date) | 行銷活動執行的日期 |
+| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_impressions) | 當天的曝光次數 |
 | `profileId` | 設定檔ID |
 | `profileName` | 設定檔名稱 |
 | `\_updated\_at` | 此列最後一次更新的日期和時間 |
@@ -65,12 +65,12 @@ ht-degree: 0%
 |-----|-----|
 | `\_id` | 表格的主索引鍵 |
 | `accountId` | 帳戶ID |
-| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | 當天的點按總數 |
-| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | 當天行銷活動的總成本 |
-| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | [!DNL Adwords]行銷活動識別碼 |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | 行銷活動名稱（例如，[utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)） |
-| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | 行銷活動執行的日期 |
-| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | 當天的曝光次數 |
+| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adclicks) | 當天的點按總數 |
+| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adcost) | 當天行銷活動的總成本 |
+| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adwordscampaignid) | [!DNL Adwords]行銷活動識別碼 |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=traffic_sources&jump=ga_campaign) | 行銷活動名稱（例如，[utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)） |
+| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=time&jump=ga_date) | 行銷活動執行的日期 |
+| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_impressions) | 當天的曝光次數 |
 | `profileId` | 設定檔ID |
 | `profileName` | 設定檔名稱 |
 | `\_updated\_at` | 此列最後一次更新的日期和時間 |
@@ -89,4 +89,4 @@ ht-degree: 0%
 
 如果您沒有整合表格，但您在`adwords`表格上建置了精美的儀表板，則需要復寫報告或建立重複的量度，以便將該資料與您的[!DNL Facebook Ads]資料進行比較。 使用合併表格可讓您順暢地將[!DNL Facebook Ads]資料與現有的[!DNL Adwords]報告合併。 您也可以依廣告平台分段。
 
-如果您已同步上述欄位，[請連絡我們](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)以整合您的廣告支出。
+如果您已同步上述欄位，[請連絡我們](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以整合您的廣告支出。

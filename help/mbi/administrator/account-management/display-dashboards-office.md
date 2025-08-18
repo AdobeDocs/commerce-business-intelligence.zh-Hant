@@ -23,6 +23,6 @@ ht-degree: 0%
 
 1. **USB鍵盤和滑鼠**&#x200B;可控制您的硬體鎖。
 
-1. **瀏覽器延伸功能可一次在數個索引標籤之間旋轉。**&#x200B;這可讓您設定您顯示在唯一標籤中的任何選定儀表板。 如果您使用[!DNL Chrome]，請Adobe建議[Revolver Tabs](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en)副檔名。
+1. **瀏覽器延伸功能可一次在數個索引標籤之間旋轉。**&#x200B;這可讓您設定您顯示在唯一標籤中的任何選定儀表板。 如果您使用[，Adobe建議使用](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en)Revolver Tabs[!DNL Chrome]副檔名。
 
 擁有上述硬體後，您就可以在熒幕上開啟一個瀏覽器視窗，其中包含您想要顯示在每個標籤中的特定儀表板。 最後，將瀏覽器設定為以所需頻率旋轉每個儀表板。

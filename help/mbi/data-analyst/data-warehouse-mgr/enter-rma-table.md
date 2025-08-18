@@ -48,7 +48,7 @@ ht-degree: 0%
 |---|---|---|
 | `Number of returns` | 要求的傳回次數。 | `Operation`欄： `entity id`<br>`Operation`： `Count`<br>`Timestamp`欄： `date requested` |
 | `Total returned amount` | 傳回的總金額。 | `Operation `資料行： `Return's total value`<br>`Operation`： Sum<br>`Timestamp`資料行：要求的日期 |
-| `Average returned amount` | 傳回的平均金額。 | `Operation` ` Column: Return's total value`<br>`Operation`： `Average`<br>`Timestamp`欄： `date requested` |
+| `Average returned amount` | 傳回的平均金額。 | `Operation`` Column: Return's total value`<br>`Operation`： `Average`<br>`Timestamp`欄： `date requested` |
 | `Average time to return` | 從訂單到退貨的平均時間。 | `Operation`欄：訂單建立日期與傳回請求日期之間的秒數<br>`Operation`： `Average`<br>`Timestamp`欄： `date requested` |
 
 {style="table-layout:auto"}
@@ -63,6 +63,6 @@ ht-degree: 0%
 
 `enterprise_rma_item_entity`
 
-* 透過下列聯結，在`enterprise_rma`資料表上建立多對一資料行，例如`Return's total value`：
+* 透過下列聯結，在`Return's total value`資料表上建立多對一資料行，例如`enterprise_rma`：
    * Commerce 1.x： `enterprise_rma_item_entity.rma_entity_id` （許多） => `enterprise_rma.entity_id` （一個）
    * Commerce 2.x： `magento_rma_item_entity.rma_entity_id ` （許多） => `magento_rma.entity_id` （一個）

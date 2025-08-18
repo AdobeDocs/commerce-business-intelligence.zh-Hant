@@ -15,7 +15,7 @@ ht-degree: 0%
 
 分析資料時，合併來自不同來源的資料會很有幫助。 想要依贏取來源將收入分組，連結來自`orders`資料表的資料和[!DNL Google Analytics]資料？ 您可能想要依客戶性別將收入分組，或將客戶屬性加入交易資料以進行分段。 本主題說明如何執行此作業。
 
-在開始使用之前，Adobe建議您檢閱[計算資料行型別指南](../../data-analyst/data-warehouse-mgr/calc-column-types.md)，以取得您可以在Data Warehouse管理員中建立的資料行型別相關資訊，以及其定義和範例。
+開始使用前，Adobe建議您檢閱[計算資料行型別指南](../../data-analyst/data-warehouse-mgr/calc-column-types.md)，以取得您可以在Data Warehouse Manager中建立的資料行型別相關資訊，以及其定義和範例。
 
 1. 若要開始，請按一下&#x200B;**[!DNL Manage Data > Data Warehouse]**。
 

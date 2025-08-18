@@ -16,7 +16,7 @@ ht-degree: 0%
 ## 在此主題中
 
 * [允許存取 [!DNL Commerce Intelligence] IP位址](#allowlist)
-* [為 [!DNL Commerce Intelligence]建立 [!DNL MySQL] 使用者](#steptwo)
+* [為 [!DNL MySQL] 建立 [!DNL Commerce Intelligence]使用者](#steptwo)
 * [在 [!DNL Commerce Intelligence]中輸入連線資訊](#stepthree)
 
 ## 跳轉到
@@ -36,9 +36,9 @@ ht-degree: 0%
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## 建立[!DNL Commerce Intelligence]的[!DNL MySQL]使用者
+## 建立[!DNL MySQL]的[!DNL Commerce Intelligence]使用者
 
-為[!DNL Commerce Intelligence]建立`MySQL`使用者最簡單的方法是在以`GRANT`許可權登入`MySQL`時執行下列查詢。 將`Commerce Intelligence IP Address`取代為[!DNL Commerce Intelligence] IP位址，並將`secure password`取代為您選擇的安全密碼：
+為`MySQL`建立[!DNL Commerce Intelligence]使用者最簡單的方法是在以`MySQL`許可權登入`GRANT`時執行下列查詢。 將`Commerce Intelligence IP Address`取代為[!DNL Commerce Intelligence] IP位址，並將`secure password`取代為您選擇的安全密碼：
 
 ```sql
     GRANT SELECT ON *.* TO 'magentobi'@'<Commerce Intelligence IP address>' IDENTIFIED BY '<secure password>';
@@ -66,4 +66,4 @@ ht-degree: 0%
 
 ## 相關檔案
 
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

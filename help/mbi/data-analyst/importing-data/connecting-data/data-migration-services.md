@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 資料移轉
 
-移轉至新的資料庫結構描述、伺服器或報告資料庫並不一定會有壓力。 [[!DNL Adobe] 服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)提供移轉協助。
+移轉至新的資料庫結構描述、伺服器或報告資料庫並不一定會有壓力。 [[!DNL Adobe] 服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)提供移轉協助。
 
 為確保轉換儘可能順暢，提交移轉請求時請務必儘可能詳細說明。 本主題提供提交請求並開始移轉所需的一切。 提供您需求的全面資訊，確保您的專案範圍設定正確，而且估計準確。
 
@@ -45,13 +45,13 @@ ht-degree: 0%
 
 如果您覺得可以自行比對，請依照下列指示，將完成的試算表附加至您的請求：
 
-1. 檢閱目前同步處理至您Data Warehouse(**[!UICONTROL Manage Data** > **Data Warehouse]**)的所有資料表和資料行。
+1. 檢閱目前同步處理至Data Warehouse (**[!UICONTROL Manage Data** > **Data Warehouse]**)的所有表格和欄。
 
 1. 在試算表中，為每個要移轉至新資料庫的表格建立一個標籤。
 
 1. 在每個索引標籤中，為需要移轉的所有現有欄建立一個欄。 Adobe建議將其命名為類似`Existing column name`。
 
-1. 您還需要在試算表的每個索引標籤中，為新資料庫中的欄對應內容建立另一個欄。 Adobe建議將資料行命名為類似`New column name`的名稱。
+1. 您還需要在試算表的每個索引標籤中，為新資料庫中的欄對應內容建立另一個欄。 Adobe建議將欄命名為類似`New column name`的名稱。
 
 1. 輸入現有欄及其對應欄。 如果現有資料行沒有新的對等專案，請輸入`N/A`。
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ## 如何提交請求？ {#submitreq}
 
-您可以透過[提交支援要求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)與我們聯絡。
+您可以透過[提交支援要求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)與我們聯絡。
 
 如果您依照上一節中的步驟建立欄位比對試算表，別忘了附加試算表。
 

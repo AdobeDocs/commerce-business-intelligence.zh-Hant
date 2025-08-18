@@ -33,10 +33,10 @@ ht-degree: 0%
 
 | **資料行名稱** | **描述** |
 |---|---|
-| `Customer's first 30 day revenue` | 此客戶在第一個訂單日期起的30天內所下所有訂單的收入總和。 計算方式為將`customer_entity.entity_id`加入`sales_order.customer_id`並加總`sales_order.Seconds between customer's first order date and this order`≤2592000之所有訂單的`base_grand_total`欄位，即30天內的秒數 |
+| `Customer's first 30 day revenue` | 此客戶在第一個訂單日期起的30天內所下所有訂單的收入總和。 計算方式為將`customer_entity.entity_id`加入`sales_order.customer_id`並加總`base_grand_total`≤2592000之所有訂單的`sales_order.Seconds between customer's first order date and this order`欄位，即30天內的秒數 |
 | `Customer's first order date` | 此客戶下第一個訂單的時間戳記。 計算方式為將`customer_entity.entity_id`加入`sales_order.customer_id`並傳回最小值`sales_order`。`created_at`值 |
-| `Customer's first order's billing region` | 與客戶第一筆訂單相關聯的帳單區域。 透過加入`customer_entity.entity_id`到`sales_order.customer_id`並傳回`sales_order.Customer's order number` = 1的`Billing address region`進行計算 |
-| `Customer's first order's coupon_code` | 與客戶第一筆訂單相關聯的抵用券代碼。 透過加入`customer_entity.entity_id`到`sales_order.customer_id`並傳回`sales_order.Customer's order number` = 1的`sales_order.coupon_code`進行計算 |
+| `Customer's first order's billing region` | 與客戶第一筆訂單相關聯的帳單區域。 透過加入`customer_entity.entity_id`到`sales_order.customer_id`並傳回`Billing address region` = 1的`sales_order.Customer's order number`進行計算 |
+| `Customer's first order's coupon_code` | 與客戶第一筆訂單相關聯的抵用券代碼。 透過加入`customer_entity.entity_id`到`sales_order.customer_id`並傳回`sales_order.coupon_code` = 1的`sales_order.Customer's order number`進行計算 |
 | `Customer's group code` | 註冊客戶的群組名稱。 透過將`customer_entity.group_id`加入`customer_group`進行計算。`customer_group_id`並傳回`customer_group_code`欄位 |
 | `Customer's lifetime number of coupons` | 套用至此客戶所下所有訂單的優惠券總數。 計算方式為將`customer_entity.entity_id`加入`sales_order.customer_id`並計算`sales_order.coupon_code`不是`NULL`的訂單數 |
 | `Customer's lifetime number of orders` | 此客戶下單的訂單總數。 計算方式為將`customer_entity.entity_id`加入`sales_order.customer_id`並計算`sales_order`資料表中的資料列數目 |

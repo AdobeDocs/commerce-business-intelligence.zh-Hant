@@ -19,7 +19,7 @@ ht-degree: 0%
 * [[!DNL Microsoft SQL]](../integrations/microsoft-sql-server.md)
 * [[!DNL PostgreSQL]](../integrations/postgresql.md)
 
-根據您使用的資料庫型別以及您是否使用加密連線（例如[`SSH tunnel for MySQL`](../integrations/mysql-via-ssh-tunnel.md)），連線[!DNL RDS]執行個體的步驟會有所不同，但以下是基本資訊。
+根據您使用的資料庫型別以及您是否使用加密連線（例如[!DNL RDS]），連線[`SSH tunnel for MySQL`](../integrations/mysql-via-ssh-tunnel.md)執行個體的步驟會有所不同，但以下是基本資訊。
 
 ## 授權[!DNL Commerce Intelligence]存取您的資料庫
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 新增[!DNL Commerce Intelligence] IP位址時，請務必在位址結尾新增`/32`，以指示[!DNL Amazon]它是確切的IP位址。 別擔心，AWS介面會明確說明此為必要專案。
 
-## 建立[!DNL Commerce Intelligence]的`Linux`使用者 {#linux}
+## 建立`Linux`的[!DNL Commerce Intelligence]使用者 {#linux}
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 在您授予[!DNL Commerce Intelligence]執行個體的存取權並為我們建立使用者之後，您最後需要做的就是在[!DNL Commerce Intelligence]中輸入連線資訊。
 
-按一下&#x200B;**[!UICONTROL Add Integration]**，即可透過`Integrations`頁面(**[!UICONTROL Manage Data** > **Integrations]**)存取`MySQL`、`Microsoft SQL`和`PostgreSQL`的認證頁面。 顯示整合清單時，按一下您要用來移至證明資料頁面的資料庫圖示。 如果您目前無法存取所需的整合，請聯絡您的Adobe客戶團隊。
+按一下`MySQL`，即可透過`Microsoft SQL`頁面(`PostgreSQL`)存取`Integrations`、**[!UICONTROL Manage Data** > **Integrations]**&#x200B;和&#x200B;**[!UICONTROL Add Integration]**&#x200B;的認證頁面。 顯示整合清單時，按一下您要用來移至證明資料頁面的資料庫圖示。 如果您目前無法存取所需的整合，請聯絡您的Adobe客戶團隊。
 
 若要完成連線的建立，您需要下列資訊：
 

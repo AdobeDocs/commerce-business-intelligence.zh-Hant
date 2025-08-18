@@ -64,7 +64,7 @@ ht-degree: 0%
 
 這兩個欄位都必須在使用者層級（例如，`user`資料表）建立。 這可讓使用者標準化平均分析（換言之，此平均計算中的分母是使用者計數）。
 
-這是[!DNL Commerce Intelligence]步驟的所在位置！ 您可以使用您的[!DNL Commerce Intelligence]Data Warehouse來建立上述欄。 請聯絡Adobe分析團隊，向我們提供建立新欄的特定定義。 您也可以使用[資料行編輯器](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)。
+這是[!DNL Commerce Intelligence]步驟的所在位置！ 您可以使用您的[!DNL Commerce Intelligence] Data Warehouse來建立上述欄。 請聯絡Adobe分析團隊，向我們提供建立所需新欄的特定定義。 您也可以使用[資料行編輯器](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)。
 
 最佳實務是避免直接在資料庫中建立這些計算資料欄位，因為這會給生產伺服器帶來不必要的負擔。
 
@@ -77,11 +77,11 @@ ht-degree: 0%
 
 _[總和`Time between a customer's registration date and first purchase date`] / [註冊並購買的客戶總數]_
 
-而且您想根據客戶的註冊日期，檢視這項計算在一段時間內的繪製或趨勢。 以下說明如何在[!DNL Commerce Intelligence]中[建立此量度](../../data-user/reports/ess-manage-data-metrics.md)：
+而且您想根據客戶的註冊日期，檢視這項計算在一段時間內的繪製或趨勢。 以下說明如何在[中](../../data-user/reports/ess-manage-data-metrics.md)建立此量度[!DNL Commerce Intelligence]：
 
 1. 移至&#x200B;**[!UICONTROL Data]**&#x200B;並選取`Metrics`標籤。
 1. 按一下&#x200B;**[!UICONTROL Add New Metric]**&#x200B;並選取`user`表格（您建立上述維度的位置）。
-1. 從下拉式清單中，選取依`Customer's registration date`欄排序之`user`表格中`Time between a customer's registration date and first purchase date`欄的`Average`。
+1. 從下拉式清單中，選取依`Average`欄排序之`Time between a customer's registration date and first purchase date`表格中`user`欄的`Customer's registration date`。
 1. 新增任何相關的篩選器或篩選器集。
 
 此量度現已準備就緒。
@@ -94,7 +94,7 @@ _[總和`Time between a customer's registration date and first purchase date`] /
 
 ### `Visual Report Builder` {#visualrb}
 
-[以視覺化方式呈現您的資料時，`Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md)是最簡單的方式。 如果您不熟悉SQL或想要快速建立報表，最好選擇視覺Report Builder。 只要按幾下，您就能新增量度、劃分資料，以及在整個組織中建立報表。 此選項不需要任何技術專業知識，是初學者和專家的完美選擇。
+[以視覺化方式呈現您的資料時，`Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md)是最簡單的方式。 如果您不熟悉SQL或想要快速建立報表，最好使用Visual Report Builder。 只要按幾下，您就能新增量度、劃分資料，以及在整個組織中建立報表。 此選項不需要任何技術專業知識，是初學者和專家的完美選擇。
 
 |  |  |
 |--- |--- |

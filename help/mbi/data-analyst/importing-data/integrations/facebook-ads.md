@@ -1,5 +1,5 @@
 ---
-title: 連線Facebook Ads
+title: 連線Facebook廣告
 description: 瞭解如何分析您的廣告支出資料，並瞭解您的錢是否花得有效率。
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
 role: Admin, Data Architect, Data Engineer, User
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 將[!DNL Facebook]新增為[!DNL Commerce Intelligence]中的資料來源 {#stepone}
 
-1. 若要將[!DNL Facebook]整合新增至您的[!DNL Commerce Intelligence]帳戶，請瀏覽至&#x200B;**[!UICONTROL Manage Data** > **Integrations]**&#x200B;下的`Connections`頁面。
+1. 若要將[!DNL Facebook]整合新增至您的[!DNL Commerce Intelligence]帳戶，請瀏覽至`Connections`下的&#x200B;**[!UICONTROL Manage Data** > **Integrations]**&#x200B;頁面。
 1. 按一下右側的&#x200B;**[!UICONTROL Add Integration]**。
 1. 按一下[!DNL Facebook]圖示。 這會顯示[!DNL Facebook]授權頁面。
 1. 按一下&#x200B;**[!UICONTROL Authorize]**。
@@ -54,11 +54,11 @@ ht-degree: 0%
 
 ## 接下來呢？ {#next}
 
-請確定您正在追蹤[!DNL Google Analytics]中的[!DNL Facebook]個行銷活動。 這可確保已針對您的[!DNL Facebook]行銷活動正確填入[!DNL Google Analytics]中的`utm\_campaign`欄位。
+請確定您正在追蹤[!DNL Facebook]中的[!DNL Google Analytics]個行銷活動。 這可確保已針對您的`utm\_campaign`行銷活動正確填入[!DNL Google Analytics]中的[!DNL Facebook]欄位。
 
 ## 相關
 
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [連線您的 [!DNL Google Adwords] 帳戶](../integrations/google-ecommerce.md)
 * [透過 [!DNL Google eCommerce]追蹤訂單轉介來源](../integrations/google-ecommerce.md)
 * [追蹤資料庫中的使用者反向連結來源](../../analysis/google-track-user-acq.md)

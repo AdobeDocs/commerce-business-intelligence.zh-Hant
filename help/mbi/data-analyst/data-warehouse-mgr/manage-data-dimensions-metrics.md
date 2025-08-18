@@ -78,7 +78,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->即使刪除維度後，它仍會以欄的形式存在於您Data Warehouse的表格中。 您可以將其新增回任何量度，並使用這些維度建立新量度。 若要從[!DNL Commerce Intelligence]移除維度對應的資料欄，只要透過[Data Warehouse](../data-warehouse-mgr/tour-dwm.md)頁面取消追蹤資料欄即可。
+>即使刪除維度後，它仍會作為欄存在於Data Warehouse的表格中。 您可以將其新增回任何量度，並使用這些維度建立新量度。 若要從[!DNL Commerce Intelligence]移除維度對應的資料欄，只要透過[Data Warehouse](../data-warehouse-mgr/tour-dwm.md)頁面取消追蹤資料欄即可。
 
 ## 相關檔案
 

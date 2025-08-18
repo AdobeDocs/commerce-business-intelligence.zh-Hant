@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 * [方便的參考地圖](#map)
 * [進階計算欄](#advanced)
 
-在[Data Warehouse管理員](../data-warehouse-mgr/tour-dwm.md)內，您可以建立欄來增加和最佳化您的資料以進行分析。 [您可以選取Data Warehouse管理員中的任何資料表並按一下&#x200B;**[!UICONTROL Create New Column]**&#x200B;來存取此功能](../data-warehouse-mgr/creating-calculated-columns.md)。
+在[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)中，您可以建立欄，以擴充和最佳化您的資料以進行分析。 [您可以選取Data Warehouse管理員中的任何資料表並按一下](../data-warehouse-mgr/creating-calculated-columns.md)來存取此功能&#x200B;**[!UICONTROL Create New Column]**。
 
-本主題說明您可以使用「Data Warehouse管理員」建立的欄型別。 它也會涵蓋說明、該欄的視覺化逐步說明，以及建立欄所需的所有輸入的[參考地圖](#map)。 建立計算欄的方式有三種：
+本主題說明您可以使用Data Warehouse Manager建立的欄型別。 它也會涵蓋說明、該欄的視覺化逐步說明，以及建立欄所需的所有輸入的[參考地圖](#map)。 建立計算欄的方式有三種：
 
 1. [相同表格計算欄](#sametable)
 1. [一對多計算欄](#onetomany)
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 期限計算欄會傳回目前時間與某個輸入時間之間的秒數。
 
-下列範例會在`customers`資料表中建立`Seconds since customer's most recent order`。 這可用來建構未在`X days`內進行購買（有時稱為流失）之客戶的使用者清單。
+下列範例會在`Seconds since customer's most recent order`資料表中建立`customers`。 這可用來建構未在`X days`內進行購買（有時稱為流失）之客戶的使用者清單。
 
 ![](../../assets/age.gif)
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 在下列範例中，維度`Customer's lifetime number of canceled orders`是在`customers`資料表上建立的（具有`orders.status`的篩選器）。
 
-![](../../assets/many_to_one.gif){： width=&quot;699&quot; height=&quot;351&quot;}
+![](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### Sum {#sum}
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 當您想要分析和回答有關業務的問題時，可能會遇到無法建立所需確切欄位的情況。
 
-為了確保快速週轉，Adobe建議檢視[進階計算資料行型別](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md)指南，以瞭解Adobe支援團隊可以建立哪些型別的資料行。 該主題也涵蓋您建立欄所需的資訊 — 將其包含在您的請求中。
+為確保快速週轉，Adobe建議檢視[進階計算資料行型別](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md)指南，以瞭解Adobe支援團隊可建立的資料行型別。 該主題也涵蓋您建立欄所需的資訊 — 將其包含在您的請求中。
 
 ## 相關檔案
 

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# 建置[!DNL Google ECommerce]Dimension
+# 建置[!DNL Google ECommerce]維度
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 必要條件和概覽
 
-若要在此主題中建立維度，您需要[!DNL Google ECommerce]表格、`orders`表格和`customers`表格。 這些資料表必須先與您的Data Warehouse[&#128279;](../../data-analyst/data-warehouse-mgr/tour-dwm.md)同步，才能建立維度。 已同步的資料表會顯示在`Data Warehouse Manager`的`Synced Tables`區段中。
+若要在此主題中建立維度，您需要[!DNL Google ECommerce]表格、`orders`表格和`customers`表格。 這些資料表必須先同步至[您的Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md)，才能建立維度。 已同步的資料表會顯示在`Synced Tables`的`Data Warehouse Manager`區段中。
 
 如果您需要重新整理程式，以下快速瞭解同步表格和欄：
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ## 建立維度
 
-若要建立維度，請按一下&#x200B;**[!UICONTROL Data]** > **[!UICONTROL Data Warehouse]**&#x200B;以開啟[Data Warehouse管理員](../data-warehouse-mgr/tour-dwm.md)。
+若要建立維度，請按一下[ > ](../data-warehouse-mgr/tour-dwm.md)以開啟&#x200B;**[!UICONTROL Data]** Data Warehouse管理員&#x200B;**[!UICONTROL Data Warehouse]**。
 
 ### 訂單表格，第1回合
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 1. 從Data Warehouse中的表格清單中，按一下包含訂單資訊的表格（在此例中為`orders`）。
 1. 按一下&#x200B;**[!UICONTROL Create a Column]**。
 1. 為欄命名。
-1. 從[定義下拉式清單](../data-warehouse-mgr/calc-column-types.md)中選取`Joined Column`。 此範例適用於[一對一關係](../data-warehouse-mgr/table-relationships.md)，將`eCommerce.transactionID`資料行與`orders`資料表的一列相符。
+1. 從`Joined Column`定義下拉式清單[中選取](../data-warehouse-mgr/calc-column-types.md)。 此範例適用於[一對一關係](../data-warehouse-mgr/table-relationships.md)，將`eCommerce.transactionID`資料行與`orders`資料表的一列相符。
 1. 接下來，您需要定義路徑，或定義所使用的表格和欄的連線方式。 按一下`Select a table and column`下拉式清單。
 1. 您需要的路徑無法使用，因此您需要建立新的路徑。 按一下&#x200B;**[!UICONTROL Create new Path]**。
 1. 在顯示的視窗中，將`Many`端設定為`orders.order\_id`，或將`orders`表格中包含訂單ID的欄設定為。
@@ -85,7 +85,7 @@ ht-degree: 0%
 1. 從Data Warehouse中的表格清單中，按一下包含客戶資訊的表格（在此例中為`customers`）。
 1. 按一下&#x200B;**[!UICONTROL Create a Column]**。
 1. 為欄命名。
-1. 在此範例中，從[定義下拉式清單](../../data-analyst/data-warehouse-mgr/calc-column-types.md)中選取`is MAX`定義。 如果套用至只有一個可能值的文字欄，`is MIN`定義也可以運作。 重要部分是確保設定正確的篩選器，您稍後再執行。
+1. 在此範例中，從`is MAX`定義下拉式清單[中選取](../../data-analyst/data-warehouse-mgr/calc-column-types.md)定義。 如果套用至只有一個可能值的文字欄，`is MIN`定義也可以運作。 重要部分是確保設定正確的篩選器，您稍後再執行。
 1. 按一下&#x200B;**[!UICONTROL Select a table and column]**&#x200B;下拉式清單，選取`orders`資料表，然後選取`Order's [!DNL Google Analytics] source`資料行。
 1. 按一下&#x200B;**[!UICONTROL Save]**。
 1. 回到表格結構描述後，按一下`Options`下拉式清單，然後`Filters`。
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 ### 額外優點：訂單表格，第2回合
 
-您可以視需要在此停止，但此區段會將您在[最後一個區段](#customers)中建立的&#x200B;**客戶第一訂單的[!DNL Google Analytics]維度**&#x200B;帶入`orders`表格，以啟用進一步分析。 在此區段中建立維度可讓您使用客戶第一張訂單的[!DNL Google Analytics]屬性，分析在`orders`表格（`Revenue`、`Number of orders`、`Distinct buyers`等等）上建置的所有量度。
+您可以視需要在此停止，但此區段會將您在&#x200B;**最後一個區段[!DNL Google Analytics]中建立的**&#x200B;客戶第一訂單的[維度](#customers)帶入`orders`表格，以啟用進一步分析。 在此區段中建立維度可讓您使用客戶第一張訂單的`orders`屬性，分析在`Revenue`表格（`Number of orders`、`Distinct buyers`、[!DNL Google Analytics]等等）上建置的所有量度。
 
 此範例將`Customer's first order's [!DNL Google Analytics] source`維度聯結至`orders`資料表。
 

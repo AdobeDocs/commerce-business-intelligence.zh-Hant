@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 您的[!DNL Adobe Commerce Intelligence]環境
 
-當您分析商務資料時，請注意這些因素和常見的誤解。 若您需要協助以確保您正確使用Commerce結構描述，請立即[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+當您分析商務資料時，請注意這些因素和常見的誤解。 若您需要協助以確保您正確使用Commerce結構描述，請立即[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ## [!DNL entity\_id]
 
@@ -25,9 +25,9 @@ ht-degree: 0%
 
 ## [!DNL Guest orders]
 
-如果您允許客戶在沒有帳戶（訪客訂單）的情況下從您的網站訂購，則這些客戶不會填入為您`customer\_entity`表格中的列。 此外，客體所下的每個訂單在`sales\_order`資料表上都有空的`customer\_id`值。
+如果您允許客戶在沒有帳戶（訪客訂單）的情況下從您的網站訂購，則這些客戶不會填入為您`customer\_entity`表格中的列。 此外，客體所下的每個訂單在`customer\_id`資料表上都有空的`sales\_order`值。
 
-因此，如果您想要追蹤來賓在一段時間內的行為，所有客戶層級的欄都必須使用客戶識別碼（例如`customer\_email`）在`sales\_order`表格上計算。
+因此，如果您想要追蹤來賓在一段時間內的行為，所有客戶層級的欄都必須使用客戶識別碼（例如`sales\_order`）在`customer\_email`表格上計算。
 
 如果您使用`sales\_order`表格做為Customer表格，則在建立客戶層級量度時必須小心。 例如，考慮平均期限收入量度。 此量度用於識別整個客戶群的平均期限收入。 首先，需要新欄，讓每個客戶傳回其期限收入。 接著，您必須對此欄進行平均值，以取得客戶的平均期限收入。
 
@@ -43,4 +43,4 @@ ht-degree: 0%
 
 在移動任何資料之前，您必須先知道適當的連線和篩選器，以確保您抓取正確的類別。 對於某些分析，您可能需要知道「褲子」，但在其他分析中，「衣服」可能更合適。 這些是需個別識別的相異類別。 瞭解每個類別層次定義的方式，可確保您將單位銷售歸因到適合您特定分析的類別。
 
-現在，假設您的網站首頁上也有`Our Favorites`頂層類別。 也許您已實作Commerce商店將這些牛仔褲納入`Clothing`類別和`Our Favorites`類別。 若是如此，這雙牛仔褲會有多個頂層類別。 在這種情況下，將單一最上層類別移至`sales\_order\_item`表格沒有意義，因為有多個選項。 為了說明這個問題，Adobe建議建立檢查特定類別的是/否欄。 例如，`Is product in Clothing category?`和`Is product in Our Favorites category?`欄可讓您檢查產品是否屬於這些特定類別。
+現在，假設您的網站首頁上也有`Our Favorites`頂層類別。 也許您已實作Commerce商店將這些牛仔褲納入`Clothing`類別和`Our Favorites`類別。 若是如此，這雙牛仔褲會有多個頂層類別。 在這種情況下，將單一最上層類別移至`sales\_order\_item`表格沒有意義，因為有多個選項。 為了說明這個問題，Adobe建議建立是/否要檢查特定類別的欄。 例如，`Is product in Clothing category?`和`Is product in Our Favorites category?`欄可讓您檢查產品是否屬於這些特定類別。

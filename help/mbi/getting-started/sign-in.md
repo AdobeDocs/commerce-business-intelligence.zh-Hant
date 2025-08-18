@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 存取您已啟用的[!DNL Adobe Commerce Intelligence]帳戶
 
-在您針對[內部部署或雲端](../getting-started/onpremise-activation.md)啟動[!DNL Commerce Intelligence]帳戶並與Adobe帳戶團隊合作完成設定步驟後，您現在可以登入您的帳戶。
+在您針對[!DNL Commerce Intelligence]內部部署或雲端[啟用](../getting-started/onpremise-activation.md)帳戶，並已與Adobe帳戶團隊合作完成設定步驟後，您現在可以登入您的帳戶。
 
 ## 使用您的[!DNL Adobe ID]登入
 

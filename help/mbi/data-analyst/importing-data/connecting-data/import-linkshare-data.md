@@ -26,7 +26,7 @@ ht-degree: 0%
 
 1. 將所有其他下拉式清單選項保留為預設選項。
 
-1. 在`Date Range`下拉式清單中，選取與您在[!DNL Commerce Intelligence]中的`Start of Week`設定相符的任何選項(`Sun - Sat`、`Mon - Sun`)。
+1. 在`Date Range`下拉式清單中，選取與您在`Sun - Sat`中的`Mon - Sun`設定相符的任何選項(`Start of Week`、[!DNL Commerce Intelligence])。
 
 1. 清除`Compare Year-Over-Year Data`核取方塊。
 
@@ -40,4 +40,4 @@ ht-degree: 0%
 
    此時，已下載一個`.csv`檔案。
 
-下載檔案後，您可以使用[`File Upload`功能](../connecting-data/using-file-uploader.md)將其上傳至[!DNL Commerce Intelligence]。
+下載檔案後，您可以使用[!DNL Commerce Intelligence]功能[`File Upload`將其上傳至](../connecting-data/using-file-uploader.md)。

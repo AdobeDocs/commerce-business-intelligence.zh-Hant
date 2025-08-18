@@ -21,11 +21,11 @@ ht-degree: 0%
 
 您有穩定的流量和訂單流，這表示您有效地觸及和贏取客戶。 但您最有價值的轉介管道為何？ 從某個來源取得的客戶平均期限值相對於從另一個來源取得的客戶為何？ 將您的訂單轉介來源資料從[!DNL Google ECommerce]連線至[!DNL Commerce Intelligence]，即可建置分析，協助您識別[最有價值的行銷管道](../../../data-analyst/analysis/most-value-source-channel.md)。
 
-在[!DNL Commerce Intelligence]中輸入您的[!DNL Google ECommerce]認證以開始使用：
+在[!DNL Google ECommerce]中輸入您的[!DNL Commerce Intelligence]認證以開始使用：
 
-1. 移至&#x200B;**[!UICONTROL Admin** > **Connections]**&#x200B;下的`Connections`頁面。
+1. 移至`Connections`下的&#x200B;**[!UICONTROL Admin** > **Connections]**&#x200B;頁面。
 
-1. 按一下`Data Sources`表格上方熒幕右側的&#x200B;**[!UICONTROL Add a New Source]**。
+1. 按一下&#x200B;**[!UICONTROL Add a New Source]**&#x200B;表格上方熒幕右側的`Data Sources`。
 
 1. 按一下[!DNL Google ECommerce]圖示。 這會開啟[!DNL Google ECommerce]認證頁面。
 
@@ -51,16 +51,16 @@ ht-degree: 0%
 
    `www.google.com/analytics/web/#home/a11345062w43527078p**XXXXXXXX**/`
 
-## 正在從[!DNL Commerce Intelligence]中斷連線[!DNL Google ECommerce] {#disconnect}
+## 正在從[!DNL Google ECommerce]中斷連線[!DNL Commerce Intelligence] {#disconnect}
 
 1. 造訪您的[!DNL Google Analytics] [帳戶設定](https://www.google.com/account/about/?hl=en)頁面。
-1. 在`Security`區段下，按一下`Authorizing`應用程式和網站旁的&#x200B;**[!UICONTROL edit]**。
-1. 按一下[!DNL Commerce Intelligence]旁的&#x200B;**[!UICONTROL revoke access]**。
+1. 在`Security`區段下，按一下&#x200B;**[!UICONTROL edit]**&#x200B;應用程式和網站旁的`Authorizing`。
+1. 按一下&#x200B;**[!UICONTROL revoke access]**&#x200B;旁的[!DNL Commerce Intelligence]。
 
 ## 相關：
 
 * [預期 [!DNL Google ECommerce] 資料](../integrations/google-ecommerce-data.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [正在設定 [!DNL Google ECommerce] 追蹤](https://support.google.com/analytics/answer/1009612?hl=en)
 * [探索您最有價值的贏取來源和管道](../../analysis/most-value-source-channel.md)
 * [提高廣告行銷活動的ROI](../../analysis/roi-ad-camp.md)

@@ -34,7 +34,7 @@ ht-degree: 0%
 
 如果您的資料庫中目前不存在這些計算中的其中一部分，則您帳戶中的任何管理員使用者都可以建立它們。 此外，您也要確定這些維度可群組至所有適用的量度。
 
-**Dimension**
+**維度**
 
 * **[!UICONTROL Entity_id]**：每個客戶的唯一識別碼。 這可能也是不重複的客戶號碼或客戶電子郵件地址，應作為您訂單表格的參考索引鍵。
 * **[!UICONTROL Created_at]**：建立客戶帳戶並新增至您資料庫的日期。
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 **您接受來賓訂單嗎？**
 
-*若是如此，此表格可能不會包含您的所有客戶。 請連絡[支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)，以確保您的客戶分析包括所有客戶。*
+*若是如此，此表格可能不會包含您的所有客戶。 請連絡[支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)，以確保您的客戶分析包括所有客戶。*
 
 *不確定您是否接受來賓訂單？ 請參考[此主題](../data-warehouse-mgr/guest-orders.md)以深入瞭解！*
 
@@ -54,13 +54,13 @@ ht-degree: 0%
 
 在此表格中，每一列代表一個順序。 此表格中的欄包含每個訂單的基本資訊，例如訂單的ID、建立日期、狀態、下訂單的客戶的ID等。 下列範例使用&#x200B;**[!UICONTROL sales_flat_order]**&#x200B;作為範例訂單表格的名稱。
 
-**Dimension**
+**維度**
 
-* **[!UICONTROL Customer_id]**：下訂單之客戶的唯一識別碼。 這通常用於在customer與orders表格之間移動資訊。 在這些範例中，您預期&#x200B;**[!UICONTROL sales_flat_order]**&#x200B;表格上的customer_id會與&#x200B;**[!UICONTROL customer_entity]**&#x200B;表格上的&#x200B;**[!UICONTROL entitiy_id]**&#x200B;一致。
+* **[!UICONTROL Customer_id]**：下訂單之客戶的唯一識別碼。 這通常用於在customer與orders表格之間移動資訊。 在這些範例中，您預期&#x200B;**[!UICONTROL sales_flat_order]**&#x200B;表格上的customer_id會與&#x200B;**[!UICONTROL entitiy_id]**&#x200B;表格上的&#x200B;**[!UICONTROL customer_entity]**&#x200B;一致。
 * **[!UICONTROL Created_at]**：建立或下訂單的日期。
 * **[!UICONTROL Customer_email]**：下訂單的客戶的電子郵件地址。 這也可能是客戶的唯一識別碼。
 * **[!UICONTROL Customer's lifetime number of orders]**： `Customers`資料表上有相同名稱的資料行復本。
-* **[!UICONTROL Customer's order number]**：與訂單關聯之客戶的循序訂單編號。 例如，如果您正在檢視的資料列是客戶的第一個訂單，則此欄為「1」；但如果這是客戶的第十五個訂單，則此欄會顯示此訂單的「15」。 如果您的`Customers`資料表中不存在此維度，請要求[支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)協助您建立它。
+* **[!UICONTROL Customer's order number]**：與訂單關聯之客戶的循序訂單編號。 例如，如果您正在檢視的資料列是客戶的第一個訂單，則此欄為「1」；但如果這是客戶的第十五個訂單，則此欄會顯示此訂單的「15」。 如果您的`Customers`資料表中不存在此維度，請要求[支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)協助您建立它。
 * **[!UICONTROL Customer's order number (previous-current)]**： **[!UICONTROL Customer's order number]**&#x200B;欄中兩個值的串連。 它用於以下的範例報表中，以顯示任意兩份訂單之間經過的時間。 例如，使用此計算方式，客戶第一個訂單日期與第二個訂單日期之間的時間會顯示為「1-2」。
 * **[!UICONTROL Coupon_code]**：顯示每個訂單使用了哪些優惠券。
 * **[!UICONTROL Seconds since previous order]**：客戶訂單之間的時間（秒）。
@@ -69,35 +69,35 @@ ht-degree: 0%
 
 在此表格中，每一列代表售出的一個專案。 此表格包含每個訂單中銷售之料號的相關資訊，例如訂單參考編號、產品編號、數量等。 下列範例使用`sales_flat_order_item`作為範例訂單專案表格的名稱。
 
-**Dimension**
+**維度**
 
 * **[!UICONTROL Item_id]**：資料表中每一列的唯一識別碼。
 * **[!UICONTROL Order_id]**：您的`Orders`資料表的參考索引鍵，可告訴您哪些專案是以相同順序購買的。 如果訂單包含多個專案，則會重複此值。
 * **[!UICONTROL Product_id]**：如果您想要瞭解所購買特定產品的相關資訊（例如顏色、大小等），可以使用此欄位從產品表格中提取該資訊。
-* **[!UICONTROL Order's created_at]**：下訂單的時間戳記，通常會從`Orders`資料表複製到您的`order line items`資料表中。
+* **[!UICONTROL Order's created_at]**：下訂單的時間戳記，通常會從`order line items`資料表複製到您的`Orders`資料表中。
 * **[!UICONTROL Order's coupon_code]**：與`Order's created_at`維度類似，此欄是從您的訂單表格複製而來。
 
 ## 訂閱表格
 
 此表用於管理您的訂閱資訊，例如訂閱ID、訂閱者的電子郵件地址、訂閱開始日期等。
 
-**Dimension**
+**維度**
 
-* **[!UICONTROL Customer_id]**：下訂單之客戶的唯一識別碼。 這是在Customers表格和Orders表格之間建立路徑的常見方式。 在這些範例中，您預期&#x200B;**sales_flat_order**&#x200B;資料表上的customer_id會與`customer_entity`資料表上的`entitiy_id`一致。
+* **[!UICONTROL Customer_id]**：下訂單之客戶的唯一識別碼。 這是在Customers表格和Orders表格之間建立路徑的常見方式。 在這些範例中，您預期&#x200B;**sales_flat_order**&#x200B;資料表上的customer_id會與`entitiy_id`資料表上的`customer_entity`一致。
 * **[!UICONTROL Start date]**：客戶開始訂閱的日期。
 
 ## 行銷支出表格
 
 分析行銷支出時，您可以在分析中包含[!DNL Facebook]、[!DNL Google AdWords]或其他來源。 如果您有多個行銷支出來源，請連絡[Managed Services團隊](https://business.adobe.com/products/magento/fully-managed-service.html)，以取得為行銷活動設定整合表格的協助。
 
-**Dimension**
+**維度**
 
-* **[!UICONTROL Spend]**：廣告總支出。 在[!DNL Facebook]中，這會是`facebook_ads_insights_####`表格中的支出欄。 若為[!DNL Google AdWords]，這會是`campaigns####`資料表中的`adCost`資料行。
+* **[!UICONTROL Spend]**：廣告總支出。 在[!DNL Facebook]中，這會是`facebook_ads_insights_####`表格中的支出欄。 若為[!DNL Google AdWords]，這會是`adCost`資料表中的`campaigns####`資料行。
 * 附加到每個資料表的`####`與您[!DNL Facebook]或[!DNL Google AdWords]帳戶的特定帳戶ID有關。
 * **[!UICONTROL Clicks]**：點按總數。 在[!DNL Facebook]中，這會是`facebook_ads_insights_####`資料表中的點按資料行。 在[!DNL Google AdWords]中，這會是`campaigns####`資料表中的adClicks資料行。
 * **[!UICONTROL Impressions]**：曝光總數。 在[!DNL Facebook]中，這就是`facebook_ads_insights_####`資料表中的曝光數。 在[!DNL Google AdWords]中，這會是`campaigns####`資料表的曝光數。
 * **[!UICONTROL Campaign]**：點按總數。 在[!DNL Facebook]中，這會是`facebook_ads_insights_####`表格中的campaign_name欄。 在[!DNL Google AdWords]中，這會是`campaigns####`表格中的行銷活動資料行。
-* **[!UICONTROL Date]**：特定行銷活動發生活動（支出、點按或印象）的時間和日期。 在[!DNL Facebook]中，這會是`facebook_ads_insights_####`資料表中的`date_start`資料行。 在[!DNL Google AdWords]中，這會是`campaigns####`表格中的日期欄。
+* **[!UICONTROL Date]**：特定行銷活動發生活動（支出、點按或印象）的時間和日期。 在[!DNL Facebook]中，這會是`date_start`資料表中的`facebook_ads_insights_####`資料行。 在[!DNL Google AdWords]中，這會是`campaigns####`表格中的日期欄。
 * **[!UICONTROL Customer's first order's source]**：來自客戶第一筆訂單的訂單來源。 首先，檢查您的帳戶中是否有名為`customer's first order's source`的欄。 如果沒有看到此欄，您可以使用這些指示建立所需的欄。
 * **[!UICONTROL Customer's first order's medium]**：來自客戶第一筆訂單的訂單媒體。 首先，檢查您的帳戶中是否有名為`customer's first order's source`的欄。 如果沒有看到此欄，您可以使用這些指示建立所需的欄。
 * **[!UICONTROL Customer's first order's campaign]**：來自客戶第一筆訂單的訂單行銷活動。 首先，檢查您的帳戶中是否有名為`customer's first order's source`的欄。 如果沒有看到此欄，您可以使用這些指示建立所需的欄。
@@ -115,7 +115,7 @@ ht-degree: 0%
 ### 新使用者
 
 * **描述**：指定期間內新取得的使用者總數的計數。 `New Users`與`Unique Customers`不同，因為`New Users`具有使用您的服務建立帳戶的時間戳記（這並不表示他們一定下訂單），而`Unique Customers`已下至少一份訂單。
-* **量度定義**：此量度執行`created_at`所排序之`customer_entity`資料表中的&#x200B;**計數** （共`entity_id`個）。
+* **量度定義**：此量度執行&#x200B;**所排序之**&#x200B;資料表中的`entity_id`計數`customer_entity` （共`created_at`個）。
 * **報告範例**：上個月建立的新使用者數目
    * **[!UICONTROL Metric]**： `New Users`
    * **[!UICONTROL Time Range]**： `Last Month`
@@ -126,7 +126,7 @@ ht-degree: 0%
 ### 不重複客戶
 
 * **描述**：指定期間內不同客戶的總數。 這與`New Users`不同，因為它只會追蹤至少下過一次訂單的客戶。 不同的客戶報表只會在指定時間間隔內追蹤客戶一次。 如果您將時間間隔設為`By Day`，而客戶當天進行了多次購買，則客戶只會被計算一次。 如果您想檢視一般購買總數，請檢視`Number of Orders`。
-* **量度定義**：此量度會執行`created_at`所排序之`sales_flat_order`資料表中之`customer_id`的&#x200B;**相異計數**。
+* **量度定義**：此量度會執行&#x200B;**所排序之**&#x200B;資料表中之`customer_id`的`sales_flat_order`相異計數`created_at`。
 * **報告範例**：過去90天各周的不同客戶
    * **[!UICONTROL Metric]**： `Distinct Customers`
    * **[!UICONTROL Time Range]**： `Moving range > Last 90 Days`
@@ -137,7 +137,7 @@ ht-degree: 0%
 ### 新訂閱者
 
 * **描述**：在指定期間內取得的新訂閱者總數的計數。
-* **量度定義**：此量度會執行`start_date`所排序之`subscriptions`資料表中之`customer_id`的&#x200B;**相異計數**。
+* **量度定義**：此量度會執行&#x200B;**所排序之**&#x200B;資料表中之`customer_id`的`subscriptions`相異計數`start_date`。
 * **報表範例**：今年新的訂閱者依月份
    * **[!UICONTROL Metric]**： `New Subscribers`
    * **[!UICONTROL Time Range]**： `1 Year Ago to 0 Days Ago`
@@ -147,7 +147,7 @@ ht-degree: 0%
 
 ### 回頭客戶
 
-* **說明**：在某期間內下超過一個訂單的客戶總數。 在重複客戶報表中，您可以使用`orders`表格中的`Distinct Customers`量度和`Customer's Order Number`維度。
+* **說明**：在某期間內下超過一個訂單的客戶總數。 在重複客戶報表中，您可以使用`Distinct Customers`表格中的`Customer's Order Number`量度和`orders`維度。
 * **使用的量度**： `Distinct Customers`
 * **報告範例**：去年進行的第2次和第3次購買次數
    * **[!UICONTROL Metric]**： `Distinct Customers`
@@ -193,7 +193,7 @@ ht-degree: 0%
 
 ### 依同類群組區分的平均期限收入
 
-* **說明**：追蹤不同同類群組[&#128279;](../dev-reports/lifetime-rev-cohort-analysis.md)使用者在一段時間內的平均期限收入，以識別表現最佳的同類群組。 同類群組會依一般日期（例如首次訂購日期或建立日期）分組。
+* **說明**：追蹤不同同類群組[使用者在一段時間內的平均期限收入，以識別表現最佳的同類群組。 ](../dev-reports/lifetime-rev-cohort-analysis.md)同類群組會依一般日期（例如首次訂購日期或建立日期）分組。
 * **使用的量度**： `Revenue`
 * **報表範例**：同類群組的平均客戶期限收入
    * **[!UICONTROL Metric]**： `Revenue`
@@ -242,7 +242,7 @@ ht-degree: 0%
 ### 平均前30天收入
 
 * **說明**：客戶在前30天內作為客戶所產生的平均收入金額。
-* **量度說明**：此量度執行`created_at`所排序之`customer_entity`資料表中的&#x200B;**平均** （共`Customer's First 30 Day Revenue`個）。
+* **量度說明**：此量度執行&#x200B;**所排序之**&#x200B;資料表中的`Customer's First 30 Day Revenue`平均`customer_entity` （共`created_at`個）。
 * **報表說明**：客戶前30天收入的所有時間平均值
 * **[!UICONTROL Metric]**： `Average First 30 Day Revenue`
 * **[!UICONTROL Time Range]**： `All Time`
@@ -253,7 +253,7 @@ ht-degree: 0%
 ### 平均客戶期限收入
 
 * **說明**：客戶在其期限內的平均收入金額。
-* **量度說明**：此量度會根據`created_at`在`customer_entity`資料表上執行`Customer's Lifetime Revenue`資料行的&#x200B;**平均**。
+* **量度說明**：此量度會根據&#x200B;**在**&#x200B;資料表上執行`Customer's Lifetime Revenue`資料行的`customer_entity`平均`created_at`。
 * **報表說明**：客戶期限收入的所有時間平均值
    * **[!UICONTROL Metric]**： `Average Customer Lifetime Revenue`
    * **[!UICONTROL Time Range]**： `All Time`
@@ -266,7 +266,7 @@ ht-degree: 0%
 ### 收入
 
 * **說明**：收入量度會顯示所選時段所獲的總收入。
-* 此量度執行`created_at`排序的`sales_flat_order`資料表中`grand_total`的&#x200B;**總和**。
+* 此量度執行&#x200B;**排序的**&#x200B;資料表中`grand_total`的`sales_flat_order`總和`created_at`。
 * **報表範例**：依月份、年度累計的收入
    * **[!UICONTROL Metric]**： `Revenue`
    * **[!UICONTROL Time Range]**： `1 Year Ago to 1 Month Ago`
@@ -281,7 +281,7 @@ ht-degree: 0%
 ### 訂購
 
 * **描述**：指定期間內的訂單總數計數。 「訂單」報表會追蹤新產品供應、促銷或其他任何可能增加（或減少）交易量的專案所造成的訂單量變更。 您常會想要依某些變數將此量度細分，以回答您的問題。
-* **量度定義**：此量度執行`created_at`所排序之`sales_flat_order`資料表中的&#x200B;**計數** （共`entity_id`個）。
+* **量度定義**：此量度執行&#x200B;**所排序之**&#x200B;資料表中的`entity_id`計數`sales_flat_order` （共`created_at`個）。
 * **報表範例**：按月份、YTD的訂單
    * **[!UICONTROL Metric]**： `number of orders`
    * **[!UICONTROL Time Range]**： `1 Year Ago to 1 Month Ago`
@@ -296,7 +296,7 @@ ht-degree: 0%
 ### 訂購的產品
 
 * **說明**：訂購的產品量度會告訴您特定時段內已售出的料號數量。
-* **量度定義**：此量度會執行`created_at`所排序之`sales_flat_order_item`資料表中的&#x200B;**總和** （共`qty_ordered`個）。
+* **量度定義**：此量度會執行&#x200B;**所排序之**&#x200B;資料表中的`qty_ordered`總和`sales_flat_order_item` （共`created_at`個）。
 * **報表範例**：依月份、年度累計出售的專案
    * **[!UICONTROL Metric]**： `Products ordered`
    * **[!UICONTROL Time Range]**： `1 Year Ago to 1 Month Ago`
@@ -332,7 +332,7 @@ ht-degree: 0%
 ### 平均訂購值
 
 * **描述**：追蹤一段期間所下訂單的平均值。 使用此量度可快速判斷您的平均訂單值(AOV)如何隨著您的行銷工作、產品供應和/或業務的其他變更而波動。
-* **量度定義**：此量度執行`created_at`所排序之`sales_flat_order`資料表中的&#x200B;**平均** （共`grand_total`個）。
+* **量度定義**：此量度執行&#x200B;**所排序之**&#x200B;資料表中的`grand_total`平均`sales_flat_order` （共`created_at`個）。
 * **報告範例**： AOV與去年、YTD
    * **[!UICONTROL Metric]**： `Average order value`
    * **[!UICONTROL Time Range]**： `1 Year Ago to 1 Month Ago`
@@ -343,7 +343,7 @@ ht-degree: 0%
 
 ### 最多人購買含優惠券的產品
 
-* **說明**：此報表可讓您深入瞭解當您提供促銷活動或優惠券時，售出哪些產品。
+* **說明**：此報表會提供insight在您提供促銷或優惠券時，要銷售哪些產品。
 * **使用的量度**：訂購的產品
 * **報告範例**：最多購買含抵用券的產品
    * **[!UICONTROL Metric]**： `Products ordered`
@@ -357,8 +357,8 @@ ht-degree: 0%
 
 ### 訂單之間的時間
 
-* **說明**：以&#x200B;**訂單間隔時間**&#x200B;分析(檢視平均值（或中位數！）)來測試您對客戶購買週期的假設和期望 兩次購買之間的時間長度。 在下圖中，您可以看到您的最佳客戶（下超過3筆訂單的客戶）在不到六個月的時間裡完成第二次購買。 尚未下第四筆訂單的客戶，會在第二次購買前等待14個月。
-* **量度定義**：此量度執行`created_at`所排序的`sales_flat_order`的&#x200B;**平均** （共`Time since previous order`個）。
+* **說明**：以&#x200B;**訂單間隔時間**&#x200B;分析來測試您對客戶購買週期的假設和期望，該分析會檢視平均購買間隔時間（或中位數！）。 在下圖中，您可以看到您的最佳客戶（下超過3筆訂單的客戶）在不到六個月的時間裡完成第二次購買。 尚未下第四筆訂單的客戶，會在第二次購買前等待14個月。
+* **量度定義**：此量度執行&#x200B;**所排序的**&#x200B;的`Time since previous order`平均`sales_flat_order` （共`created_at`個）。
 * **報告範例**：
    * **量度1**： ≤ 3個訂單
       * **[!UICONTROL Metric]**： `Average time between orders`
@@ -512,7 +512,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->對於這兩個篩選器，您可以新增任何其他被視為您企業「付費」媒體的媒體（例如cpc或付費搜尋）。 您也可以新增任何其他要分析的來源，例如Facebook。 檢視[本文章](../analysis/roi-ad-camp.md)，瞭解更多有關CAC、LTV和ROI的詳細資訊。
+>對於這兩個篩選器，您可以新增任何其他被視為您企業「付費」媒體的媒體（例如cpc或付費搜尋）。 您也可以新增您要分析的任何其他來源，例如Facebook。 檢視[本文章](../analysis/roi-ad-camp.md)，瞭解更多有關CAC、LTV和ROI的詳細資訊。
 
 ![依贏取來源、媒體及促銷活動區分的期限值](../../assets/LTV_2.png)<!--{: width="929"}-->
 

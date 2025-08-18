@@ -17,11 +17,11 @@ ht-degree: 0%
 
 此主題示範如何設定控制面板來追蹤網站活動（包括頁面檢視次數、工作階段和使用者），以及客戶在一段時間內的轉換率。
 
-## 必要條件
+## 先決條件
 
-**匯入您的廣告成本資料** — 將[[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md)連線至[!DNL Adobe Commerce Intelligence] — 這會自動同步您[!DNL AdWords]在Commerce Intelligence中的支出。
+**匯入您的廣告成本資料** — 將[!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md)連線至[!DNL Adobe Commerce Intelligence] — 這會自動同步您[!DNL AdWords]在Commerce Intelligence中的支出。
 
-**追蹤使用者贏取管道資料** — 若要將您的[!DNL Google AdWords]資料繫結至資料庫中的特定訂單，您必須[透過[!DNL Google Analytics E-commerce]追蹤使用者贏取](../analysis/google-track-user-acq.md)。 這可讓您以utm來源和中型來連線每個訂單。
+**追蹤使用者贏取管道資料** — 若要將您的[!DNL Google AdWords]資料繫結至資料庫中的特定訂單，您必須[透過](../analysis/google-track-user-acq.md)追蹤使用者贏取[!DNL Google Analytics E-commerce]。 這可讓您以utm來源和中型來連線每個訂單。
 
 ## 使用者贏取行銷活動
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 * 連線[!DNL Google AdWords]資料時自動產生的量度
 * 基本量度應該已在您的帳戶中可用，例如`Number of orders`和`New users`
-* 將[!DNL Google Analytics Ecommerce]資料加入資料庫時建立的Dimension，例如訂單的utm來源和訂單的utm媒體。 如果您的帳戶目前沒有這些欄位，請聯絡支援團隊
+* 將[!DNL Google Analytics Ecommerce]資料加入資料庫時建立的維度，例如訂單的utm來源和訂單的utm媒體。 如果您的帳戶目前沒有這些欄位，請聯絡支援團隊
 
 ## 建立報告
 

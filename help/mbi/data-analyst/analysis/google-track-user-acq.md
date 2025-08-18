@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ### （選項1）透過[!DNL Google Analytics E-Commerce]追蹤訂單轉介來源資料
 
-如果您使用[!DNL Google Analytics E-Commerce]追蹤您的訂單與銷售資料，則可以使用[[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md)同步每個訂單的轉介來源資料。 這可讓您依反向連結來源（例如，`utm_source`或`utm_medium`）來劃分收入與訂單。 您也可透過[!DNL Commerce Intelligence]自訂維度（例如`User's first order source`）瞭解客戶贏取來源。
+如果您使用[!DNL Google Analytics E-Commerce]追蹤您的訂單與銷售資料，則可以使用[!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md)同步每個訂單的轉介來源資料。 這可讓您依反向連結來源（例如，`utm_source`或`utm_medium`）來劃分收入與訂單。 您也可透過[!DNL Commerce Intelligence]自訂維度（例如`User's first order source`）瞭解客戶贏取來源。
 
 ### （選項2）將[!DNL Google Analytics]的贏取來源資料儲存在資料庫中
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 #### 為什麼？
 
-如果您只是檢視預設的[!DNL Google Analytics]轉換和贏取量度，就代表您並未掌握全貌。 雖然檢視有機搜尋與付費搜尋的轉換次數很有趣，您可以如何處理這些資訊？ 您應該在付費搜尋上花更多錢嗎？ 這取決於來自該管道的客戶的價值，而非Google Analytics提供的東西。
+如果您只是檢視預設的[!DNL Google Analytics]轉換和贏取量度，就代表您並未掌握全貌。 雖然檢視有機搜尋與付費搜尋的轉換次數很有趣，您可以如何處理這些資訊？ 您應該在付費搜尋上花更多錢嗎？ 這取決於來自該管道的客戶的價值，而非Google Analytics所提供的功能。
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 很明顯有些贏取來源資料會編碼為字串。 測試以確認這是訪客的最新贏取來源和相關聯的行銷活動資料。 現在您需要瞭解如何擷取資料。
 
-此程式碼已轉譯為github[&#128279;](https://github.com/RJMetrics/referral-grabber-php)上託管的PHP程式庫。 若要使用程式庫，`include`對`ReferralGrabber.php`的參照，然後呼叫
+此程式碼已轉譯為github[上託管的](https://github.com/RJMetrics/referral-grabber-php)PHP程式庫。 若要使用程式庫，`include`對`ReferralGrabber.php`的參照，然後呼叫
 
 `$data = ReferralGrabber::parseGoogleCookie($_COOKIE['__utmz']);`
 

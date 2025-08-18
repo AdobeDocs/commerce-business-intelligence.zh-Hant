@@ -1,5 +1,5 @@
 ---
-title: 視覺Report Builder
+title: Visual Report Builder
 description: 瞭解如何使用視覺Report Builder。
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Data Architect, Data Engineer, User
@@ -43,7 +43,7 @@ ht-degree: 0%
 
    **`Group By`**
 
-   `Group By`控制項可讓您依群組或區段新增多個維度。 Dimension是表格中可用來將資料分組的欄。
+   `Group By`控制項可讓您依群組或區段新增多個維度。 維度是表格中可用來將資料分組的欄。
 
    * 從`Group By`選項清單中選擇一個可用的維度。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
    * 按一下&#x200B;**[!UICONTROL Apply]**&#x200B;關閉「群組依據」詳細資料。
 
-     ![多個Dimension](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
+     ![多個維度](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
 
    * 將游標停留在每行上的幾個資料點上，可檢視當月首次訂購時使用該抵用券的客戶人數。
 
@@ -101,7 +101,7 @@ ht-degree: 0%
      | ![](../../assets/magento-bi-btn-chart-vert-bar.png) | 垂直條 |
      | ![](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | 垂直棧疊長條圖 |
      | ![](../../assets/magento-bi-btn-chart-pie.png) | 圓形圖 |
-     | ![](../../assets/magento-bi-btn-chart-area.png) | 區域 |
+     | ![](../../assets/magento-bi-btn-chart-area.png) | 區域圖 |
      | ![](../../assets/magento-bi-btn-chart-funnel.png) | 漏斗 |
 
      {style="table-layout:auto"}

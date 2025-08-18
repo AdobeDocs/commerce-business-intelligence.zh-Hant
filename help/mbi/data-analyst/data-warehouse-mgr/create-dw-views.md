@@ -13,23 +13,23 @@ ht-degree: 6%
 
 # 使用Data Warehouse檢視
 
-本檔案概述可透過導覽至&#x200B;**[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**&#x200B;存取`Data Warehouse Views`的用途與用途。 以下是其功用以及如何建立檢視的說明，以及如何使用`Data Warehouse Views`合併[!DNL Facebook]和[!DNL AdWords]支出資料的範例。
+本檔案概述可透過導覽至`Data Warehouse Views` > **[!UICONTROL Manage Data]**&#x200B;存取&#x200B;**[!UICONTROL Data Warehouse Views]**&#x200B;的用途與用途。 以下是其功用以及如何建立檢視的說明，以及如何使用`Data Warehouse Views`合併[!DNL Facebook]和[!DNL AdWords]支出資料的範例。
 
 ## 一般用途
 
-`Data Warehouse Views`功能是藉由修改現有資料表，或使用SQL將多個資料表聯結或合併在一起，來建立新倉儲資料表的方法。 建立`Data Warehouse View`並由更新週期處理之後，它就會在您的Data Warehouse中填入`Data Warehouse Views`下拉式清單下的新表格，如下所示：
+`Data Warehouse Views`功能是藉由修改現有資料表，或使用SQL將多個資料表聯結或合併在一起，來建立新倉儲資料表的方法。 建立`Data Warehouse View`並由更新週期處理後，它就會在Data Warehouse中填入`Data Warehouse Views`下拉式清單下的新表格，如下所示：
 
 ![](../../assets/Data_Warehouse.png)
 
 從這裡，您的新檢視功能與任何其他表格一樣，讓您能夠建立新的計算欄，或在其上建立量度和報表。
 
-`Data Warehouse Views`主要用於合併多個相似但不同的表格，以便所有報表都建立在單一新表格上。 常見的範例包括合併來自舊版資料庫和即時資料庫的表格以結合歷史資料和目前資料，或將多個廣告來源(如Facebook和AdWords)合併為單一`Consolidated ad spend`表格。
+`Data Warehouse Views`主要用於合併多個相似但不同的表格，以便所有報表都建立在單一新表格上。 常見的範例包括合併來自舊版資料庫和即時資料庫的表格，以結合歷史和目前的資料，或將多個廣告來源（如Facebook和AdWords）合併為單一`Consolidated ad spend`表格。
 
 如果您熟悉SQL，這兩個合併範例都會使用`UNION`函式，但當您建立新檢視時，可以使用任何PostgreSQL語法和函式。
 
 ## 建立和管理Data Warehouse檢視
 
-導覽至「**[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**」可以建立新的`Data Warehouse Views`並刪除現有的檢視，如下所示：
+導覽至「`Data Warehouse Views` > **[!UICONTROL Manage Data]**」可以建立新的&#x200B;**[!UICONTROL Data Warehouse Views]**&#x200B;並刪除現有的檢視，如下所示：
 
 ![](../../assets/Data_Warehouse_Views.png)
 
@@ -136,7 +136,7 @@ ht-degree: 6%
 
 **正在尋找其他說明嗎？**
 
-技術支援不包含寫入SQL和建立`Data Warehouse Views`。 不過，[服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)確實提供建立檢視的協助。 支援團隊可以提供協助，處理從使用新資料庫移轉舊版資料庫以建立單一Data Warehouse檢視以進行特定分析的所有工作。
+技術支援不包含寫入SQL和建立`Data Warehouse Views`。 不過，[服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)確實提供建立檢視的協助。 從使用新資料庫移轉舊版資料庫以建立單一Data Warehouse檢視進行特定分析的所有作業，支援團隊都能提供協助。
 
 通常，為了合併2-3個類似結構的表格而建立新的`Data Warehouse View`需要五個小時的服務時間，這相當於大約1,250美元的工作。 不過，以下是一些可能會增加所需預期投資的常見因素：
 

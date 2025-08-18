@@ -19,13 +19,13 @@ ht-degree: 0%
 >
 >部分儀表板的可用性取決於您的資料集。
 
-如果您有問題或有興趣將套件新增至您的帳戶，請提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)以尋求協助。
+如果您有問題或有興趣將套件新增至您的帳戶，請提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以尋求協助。
 
 ## 執行概覽
 
 `executive overview`儀表板是從其他儀表板上的圖表建置的。 此儀表板是資料的高層級概觀，包含每天都會檢閱的圖表，而其他儀表板則包含更詳細的資訊。 最初，它被設定為每個帳戶中的預設儀表板。
 
-其中有一組圖表可供您使用。 Adobe建議您新增您最常使用的其他圖表，根據自己的需求量身打造此儀表板。
+其中有一組圖表可供您使用。 Adobe建議您新增您最常使用的其他圖表，以根據自己的需求量身打造此儀表板。
 
 ## 同類群組分析
 

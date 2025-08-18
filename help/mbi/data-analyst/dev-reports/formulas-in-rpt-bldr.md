@@ -1,12 +1,12 @@
 ---
 title: Report Builder中的公式
-description: 瞭解公式在Report Builder中的使用方式。
+description: 瞭解公式如何在Report Builder中使用。
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 在[`Report Builder`](../../tutorials/using-visual-report-builder.md)中，您可以使用帳戶中的[定義量度](../../data-user/reports/ess-manage-data-metrics.md)來建立強大的視覺效果。 在公式中組合這些量度，可讓您從資料中取得其他深入分析。 本主題探討如何在`Report Builder`中使用公式 — 讓您可以跳入！
 
-## 什麼是`formula`？{#what}
+## 什麼是`formula`？ {#what}
 
 在`Report Builder`中，`formula`只是根據某些數學邏輯的一或多個量度的組合。 典型的範例看起來像這樣：
 
@@ -63,6 +63,6 @@ ht-degree: 0%
 
 ## 正在結束 {#wrapup}
 
-您是否在上述範例中注意到公式的`timestamp`、`groupings`、`perspectives`和`filters`繼承自其輸入量度？ 請記得，公式可以用來使用`perspectives`和[獨立時間選項](../../tutorials/time-options-visual-rpt-bldr.md){： target=&quot;_blank&quot;}，就像量度一樣。
+您是否在上述範例中注意到公式的`timestamp`、`groupings`、`perspectives`和`filters`繼承自其輸入量度？ 請記得，公式可以像量度一樣，用來使用`perspectives`和[獨立的時間選項](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"}。
 
-若您有關於在`Report Builder`中使用公式的任何其他問題，[請聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+若您有關於在`Report Builder`中使用公式的任何其他問題，[請聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

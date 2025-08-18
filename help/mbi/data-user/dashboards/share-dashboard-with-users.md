@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
 # 與其他使用者共用儀表板
 
-共用儀表板是讓您的團隊處於循環中並鼓勵合作討論的絕佳方法。 透過建立和共用中央儀表板，您可以在維持控制權的同時，為團隊提供所需的資訊。 [[!DNL Adobe] 建議](../../best-practices/share-dashboard-best-practice.md){： target=&quot;_blank&quot;}您授予`Edit`許可權給選定的少數人，以儘量減少意外變更。
+共用儀表板是讓您的團隊處於循環中並鼓勵合作討論的絕佳方法。 透過建立和共用中央儀表板，您可以在維持控制權的同時，為團隊提供所需的資訊。 [[!DNL Adobe] 建議](../../best-practices/share-dashboard-best-practice.md){: target="_blank"}您將`Edit`許可權授與少數幾個選定的使用者，以儘量減少意外的變更。
 
 >[!NOTE]
 >

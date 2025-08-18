@@ -21,7 +21,7 @@ ht-degree: 0%
 
 理想情況下，每次發生轉換事件時，都會記錄轉介來源。 但來源是如何決定的？
 
-事實上，使用者在點選/認可微或巨集轉換之前，通常來自許多來源。 例如，他們可能透過有機方式造訪網站，然後離開，接著透過付費搜尋造訪，然後離開，接著直接造訪網站本身。 這些來源追蹤資訊通常透過UTM引數提供給網站，但也有更複雜的系統。 基於您的目的，請專注於[UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998)。
+事實上，使用者在點選/認可微或巨集轉換之前，通常來自許多來源。 例如，他們可能透過有機方式造訪網站，然後離開，接著透過付費搜尋造訪，然後離開，接著直接造訪網站本身。 這些來源追蹤資訊通常透過UTM引數提供給網站，但也有更複雜的系統。 基於您的目的，請專注於[UTM](https://support.google.com/analytics/answer/1033867?hl=en&ref_topic=1032998)。
 
 ## [!DNL Google Analytics]如何透過UTM引數來認定反向連結來源？
 
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 ### 最終點按歸因
 
-最後點按歸因是[!DNL Google Analytics]最常用的歸因模型。 在此案例中，[!DNL Google Analytics] Cookie代表轉換事件前最新來源的UTM引數，而這是記錄在資料庫[&#128279;](../../data-analyst/analysis/google-track-user-acq.md)中的。 如果使用者點按包含新UTM引數集的新URL，[!DNL Google Analytics] Cookie只會覆寫先前的UTM引數。
+最後點按歸因是[!DNL Google Analytics]最常用的歸因模型。 在此案例中，[!DNL Google Analytics] Cookie代表轉換事件前最新來源的UTM引數，而這是記錄在資料庫[中的](../../data-analyst/analysis/google-track-user-acq.md)。 如果使用者點按包含新UTM引數集的新URL，[!DNL Google Analytics] Cookie只會覆寫先前的UTM引數。
 
-例如，假設某個使用者先透過[!DNL Google Analytics] *付費搜尋*&#x200B;造訪網站，然後透過&#x200B;*有機搜尋*&#x200B;傳回，最後在轉換事件之前直接或透過&#x200B;*電子郵件連結* **（不含UTM引數**）返回&#x200B;*網站*。 在此範例中，[!DNL Google Analytics] Cookie指出使用者的來源是有機的，因為這是轉換前的最後一個來源。 已忽略最終轉換事件之前使用者的&#x200B;*路徑*。 如果使用者改為透過包含UTM的電子郵件連結造訪網站，則[!DNL Google Analytics] Cookie會指出來源為「電子郵件」。 因此，如果Cookie中存在UTM引數，且使用者透過直接進入，則[!DNL Google Analytics] Cookie會顯示UTM引數而非「直接」。
+例如，假設某個使用者先透過[!DNL Google Analytics] *付費搜尋*&#x200B;造訪網站，然後透過&#x200B;*有機搜尋*&#x200B;傳回，最後在轉換事件之前直接或透過&#x200B;*電子郵件連結* *（不含UTM引數*）返回&#x200B;**網站**。 在此範例中，[!DNL Google Analytics] Cookie指出使用者的來源是有機的，因為這是轉換前的最後一個來源。 已忽略最終轉換事件之前使用者的&#x200B;*路徑*。 如果使用者改為透過包含UTM的電子郵件連結造訪網站，則[!DNL Google Analytics] Cookie會指出來源為「電子郵件」。 因此，如果Cookie中存在UTM引數，且使用者透過直接進入，則[!DNL Google Analytics] Cookie會顯示UTM引數而非「直接」。
 
 >[!NOTE]
 >
->當Cookie [過期](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)或使用者在瀏覽器中清除其Cookie時，特定使用者的[!DNL Google Analytics] Cookie引數會被清除。*
+>當Cookie [!DNL Google Analytics]過期[或使用者在瀏覽器中清除其Cookie時，特定使用者的](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage) Cookie引數會被清除。*
 
 ### 首次點按歸因
 

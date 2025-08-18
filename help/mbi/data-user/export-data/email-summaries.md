@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ### 儲存電子郵件摘要以供稍後傳送
 
-1. 從`Set when to send the Email Summary`欄位中選取`Manual`。
+1. 從`Manual`欄位中選取`Set when to send the Email Summary`。
 
 1. 按一下&#x200B;**[!UICONTROL Save]**。
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 ### 傳送電子郵件摘要一次
 
-1. 從`Set when to send the Email Summary`欄位中選取`Once`。
+1. 從`Once`欄位中選取`Set when to send the Email Summary`。
 
 1. 在`Select Start Date`行事曆中指定開始日期。
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 ### 建立重複排程
 
-1. 從`Set when to send the Email Summary`欄位中選取`Repeating`。
+1. 從`Repeating`欄位中選取`Set when to send the Email Summary`。
 
 1. 在`Set Frequency`欄位中，選取`Daily`、`Weekly`或`Monthly`。
 

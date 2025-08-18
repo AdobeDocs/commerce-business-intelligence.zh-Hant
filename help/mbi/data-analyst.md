@@ -17,13 +17,13 @@ ht-degree: 0%
 
 本節將示範如何：
 * 連線並匯入資料至[!DNL Commerce Intelligence]
-* 檢視資料在您的Data Warehouse中如何儲存和建構
+* 檢視資料在Data Warehouse中的儲存和結構方式
 * 分析您的資料
 * 使用[!DNL SQL Report Builder]
 
 ## 相關
 
-* [Data Warehouse管理員](../mbi/data-analyst/data-warehouse-mgr/tour-dwm.md)
+* [Data Warehouse Manager](../mbi/data-analyst/data-warehouse-mgr/tour-dwm.md)
 * [[!DNL SQL Report Builder]](data-analyst/dev-reports/sql-rpt-bldr.md)
 * [正在連線資料](../mbi/data-analyst/importing-data/connecting-data/connecting-data.md)
 * [整合](../mbi/data-analyst/importing-data/integrations/magento.md)
