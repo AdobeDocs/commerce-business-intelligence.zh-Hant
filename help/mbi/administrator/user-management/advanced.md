@@ -392,7 +392,7 @@ ht-degree: 0%
 
 若要設定使用者群組：
 
-1. 移至&#x200B;[!UICONTROL **管理使用者**] > [!UICONTROL **User Groups]**以檢視現有的使用者群組。
+1. 移至&#x200B;[!UICONTROL **管理使用者**] > [!UICONTROL **User Groups]**&#x200B;以檢視現有的使用者群組。
 
    ![設定使用者群組](../../assets/configure-user-groups.png)
 

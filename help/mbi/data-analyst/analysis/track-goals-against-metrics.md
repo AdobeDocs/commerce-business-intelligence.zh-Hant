@@ -55,46 +55,46 @@ ht-degree: 0%
 
 * 剩餘&#x200B;**個收入可達成目標**
 * 量度`A`： `Revenue`
-* 
-  [！UICONTROL公制]: `Revenue`
+* &#x200B;
+  [!UICONTROL 公制]: `Revenue`
 
 * 量度`B`： `Target Revenue`
 * [!UICONTROL Metric]： `Monthly Revenue Target`
 
 * [!UICONTROL Formula]： `Revenue left to achieve target`
-* 
-  [！UICONTROL公式]: `(B-A)`
-* 
+* &#x200B;
+  [!UICONTROL 公式]: `(B-A)`
+* &#x200B;
   [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]： （無論您想要哪個相關時段）
-* 
+* &#x200B;
   [!UICONTROL Interval]: `Month`
-* 
-  [！UICONTROL圖表型別]: `Scalar`
+* &#x200B;
+  [!UICONTROL 圖表型別]: `Scalar`
 
 * **收入目標**
 * 量度`A`： `Revenue`
-* 
-  [！UICONTROL公制]: `Revenue`
+* &#x200B;
+  [!UICONTROL 公制]: `Revenue`
 
 * 量度`B`： `Target Revenue`
 * [!UICONTROL Metric]： `Monthly Revenue Target`
 
 * 量度`C`： `Revenue (amount change since previous year)` （隱藏）
-* 
-  [！UICONTROL公制]: `Revenue`
+* &#x200B;
+  [!UICONTROL 公制]: `Revenue`
 * [!UICONTROL Perspective]： `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]： （去年這個月）
-* 
-  [！UICONTROL公式]: `(A-C)`
-* 
+* &#x200B;
+  [!UICONTROL 公式]: `(A-C)`
+* &#x200B;
   [!UICONTROL Format]: `Currency`
 
 * 關閉`Multiple Y-Axes`
 * [!UICONTROL Time period]： （無論您想要哪個相關時段）*
-* 
+* &#x200B;
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]： `Line Chart`
 

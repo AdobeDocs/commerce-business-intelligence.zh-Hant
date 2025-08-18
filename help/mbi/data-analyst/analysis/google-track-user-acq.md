@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ### （選項1）透過[!DNL Google Analytics E-Commerce]追蹤訂單轉介來源資料
 
-如果您使用[!DNL Google Analytics E-Commerce]追蹤您的訂單與銷售資料，則可以使用[!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md)同步每個訂單的轉介來源資料。 這可讓您依反向連結來源（例如，`utm_source`或`utm_medium`）來劃分收入與訂單。 您也可透過[!DNL Commerce Intelligence]自訂維度（例如`User's first order source`）瞭解客戶贏取來源。
+如果您使用[!DNL Google Analytics E-Commerce]追蹤您的訂單與銷售資料，則可以使用[[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md)同步每個訂單的轉介來源資料。 這可讓您依反向連結來源（例如，`utm_source`或`utm_medium`）來劃分收入與訂單。 您也可透過[!DNL Commerce Intelligence]自訂維度（例如`User's first order source`）瞭解客戶贏取來源。
 
 ### （選項2）將[!DNL Google Analytics]的贏取來源資料儲存在資料庫中
 

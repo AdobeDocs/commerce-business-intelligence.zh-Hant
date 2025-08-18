@@ -42,18 +42,18 @@ ht-degree: 0%
 * 已選取[!UICONTROL column]： `created_at`
 * [!UICONTROL Filter]： `Orders we count`
 
-* 
+* &#x200B;
   自客戶上次訂購日期起    秒
   * [!UICONTROL Column type]： -     「相同表格>年齡
 * 已選取[!UICONTROL column]： `Customer's last order date`
 
 * （輸入）計數參考
 * [!UICONTROL Column type]： `Same table > Calculation`
-* 
-  [！UICONTROL輸入]: `entity_id`
+* &#x200B;
+  [!UICONTROL 輸入]: `entity_id`
 * [!UICONTROL Calculation]： `**case when A is null then null else 1 end**`
-* 
-  [！UICONTROL資料型別]: `Integer`
+* &#x200B;
+  [!UICONTROL 資料型別]: `Integer`
 
 * **計數參考**&#x200B;資料表（這是您以數字「1」上傳的檔案）
 * 客戶數量
@@ -76,15 +76,15 @@ ht-degree: 0%
 * [!UICONTROL Column type]： `Same table > Calculation`
 * [!UICONTROL Inputs]： `(input) Ranking by customer lifetime revenue`，`Number of customers`
 * [!UICONTROL Calculation]： `case when A is null then null else (B-(A-1)) end`
-* 
-  [！UICONTROL資料型別]: `Integer`
+* &#x200B;
+  [!UICONTROL 資料型別]: `Integer`
 
 * 客戶的貨幣分數（依百分位數）
 * [!UICONTROL Column type]： `Same table > Calculation`
 * [!UICONTROL Inputs]： `(input) Ranking by customer lifetime revenue`，`Number of customers`
 * [!UICONTROL Calculation]： `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
-* 
-  [！UICONTROL資料型別]: `Integer`
+* &#x200B;
+  [!UICONTROL 資料型別]: `Integer`
 
 * （輸入）依客戶期限訂單數排名
 * [!UICONTROL Column type]： `Same table > Event Number`
@@ -92,8 +92,8 @@ ht-degree: 0%
 * [!UICONTROL Event rank]： `Customer's lifetime number of orders`
 
 * 依客戶期限訂單數排名
-* 
-  [！UICONTROL欄型別]: – "相同表格>計算"
+* &#x200B;
+  [!UICONTROL 欄型別]: – "相同表格>計算"
 * [!UICONTROL Inputs]： - **（輸入）依客戶期限訂單數**&#x200B;排名，**客戶數**
 * [!UICONTROL Calculation]： - **當A為Null然後為Null時，否則(B-(A-1))結束**
 * [!UICONTROL Datatype]： — 整數
@@ -102,8 +102,8 @@ ht-degree: 0%
 * [!UICONTROL Column type]： `Same table > Calculation`
 * [!UICONTROL Inputs]： `(input) Ranking by customer lifetime number of orders`，`Number of customers`
 * [!UICONTROL Calculation]： `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
-* 
-  [！UICONTROL資料型別]: `Integer`
+* &#x200B;
+  [!UICONTROL 資料型別]: `Integer`
 
 * 自客戶上次訂購日期起的秒數排名
 * [!UICONTROL Column type]： `Same table > Event Number`
@@ -114,15 +114,15 @@ ht-degree: 0%
 * [!UICONTROL Column type]： `Same table > Calculation`
 * [!UICONTROL Inputs]： `(input) Ranking by customer lifetime number of orders`，`Number of customers`
 * [!UICONTROL Calculation]： `Case when (A * 100/B,0) <= 20 then 5 when (A * 100/B,0) <= 40 then 4 when (A * 100/B,0) <= 60 then 3 when (A * 100/B,0) <= 80 then 2 when (A * 100/B,0) <= 100 then 1 else 0 end`
-* 
-  [！UICONTROL資料型別]: `Integer`
+* &#x200B;
+  [!UICONTROL 資料型別]: `Integer`
 
 * 客戶的造訪間隔分數（依百分位數）
 * [!UICONTROL Column type]： `Same table > Calculation`
 * [!UICONTROL Inputs]： `Customer's recency score (by percentiles)`，`Customer's frequency score (by percentiles)`，`Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]： `case when (A IS NULL or B IS NULL or C IS NULL) then null else concat(A,B,C) end`
-* 
-  [！UICONTROL資料型別]: String
+* &#x200B;
+  [!UICONTROL 資料型別]: String
 
 * **計數參考**&#x200B;資料表
 * [!UICONTROL Number of customers]： `(RFM > 0)`
@@ -141,8 +141,8 @@ ht-degree: 0%
 * [!UICONTROL Column type]： `Same table > Calculation`
 * [!UICONTROL Inputs]： - `Customer's recency score (by percentiles)`， `Customer's frequency score (by percentiles)`， `Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]： `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
-* 
-  [！UICONTROL資料型別]: `Integer`
+* &#x200B;
+  [!UICONTROL 資料型別]: `Integer`
 
 * （輸入）依客戶的整體RFM分數排名
 * [!UICONTROL Column type]： `Same table > Event Number`
@@ -154,15 +154,15 @@ ht-degree: 0%
 * [!UICONTROL Column type]： `Same table > Calculation`
 * [!UICONTROL Inputs]： `(input) Ranking by customer's overall RFM score`，`Number of customers (RFM > 0)`
 * [!UICONTROL Calculation]： `case when A is null then null else (B-(A-1)) end`
-* 
-  [！UICONTROL資料型別]: `Integer`
+* &#x200B;
+  [!UICONTROL 資料型別]: `Integer`
 
 * 客戶的RFM群組
 * [!UICONTROL Column type]： `Same table > Calculation`
 * [!UICONTROL Inputs]： `(input) Ranking by customer lifetime revenue`，`Number of customers`
 * [!UICONTROL Calculation]： `Case when round(A * 100/B,0) <= 20 then '5. copper' when round(A * 100/B,0) <= 40 then '4. bronze' when round(A * 100/B,0) <= 60 then '3. silver' when round(A * 100/B,0)<= 80 then '2. gold' else '1. Platinum' end`
-* 
-  [！UICONTROL資料型別]: `Integer`
+* &#x200B;
+  [!UICONTROL 資料型別]: `Integer`
 
 >[!NOTE]
 >
@@ -184,13 +184,13 @@ ht-degree: 0%
 * [!UICONTROL Filter]： `Customer's RFM score (by percentiles) Not Equal to 000`
 
 * [!UICONTROL Time period]： `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * 隱藏圖表
 * [!UICONTROL Group by]： `Customer's RFM group`
-* 
-  [！UICONTROL群組依據]: `Email`
-* 
+* &#x200B;
+  [!UICONTROL 群組依據]: `Email`
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 * **具有5個造訪間隔分數的客戶**
@@ -199,15 +199,15 @@ ht-degree: 0%
 * [!UICONTROL Filter]： `Customer's recency score (by percentiles) Equal to 5`
 
 * [!UICONTROL Time period]： `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Scalar`
 * 隱藏圖表
-* 
-  [！UICONTROL群組依據]: `Email`
+* &#x200B;
+  [!UICONTROL 群組依據]: `Email`
 * [!UICONTROL Group by]： `Customer's RFM score (R+F+M)`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 * **具有一個造訪間隔分數的客戶**
@@ -216,15 +216,15 @@ ht-degree: 0%
 * [!UICONTROL Filter]： `Customer's recency score (by percentiles) Equal to 1`
 
 * [!UICONTROL Time period]： `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Scalar`
 * 隱藏圖表
-* 
-  [！UICONTROL群組依據]: `Email`
+* &#x200B;
+  [!UICONTROL 群組依據]: `Email`
 * [!UICONTROL Group by]： `Customer's RFM score (R+F+M)`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Table`
 
 編譯所有報表後，您可以視需要在控制面板上組織報表。 結果看起來可能像上面的範例儀表板，但三個產生的表格只是您可執行的客戶細分型別的範例。

@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 快速入門
 
-您可以[下載](../../assets/454-calendar.csv)2}版本的4-5-4零售日曆，適用於2014至2017年的零售業。 `.csv`您可能需要根據內部零售日曆調整此檔案，並擴大日期範圍以支援您的歷史和目前時間範圍。 下載檔案後，使用檔案上傳程式在[!DNL Commerce Intelligence] Data Warehouse中建立零售業行事曆表格。 如果您使用4-5-4零售行事曆的未變更版本，請確保此表格中欄位的結構和資料型別符合以下內容：
+您可以[下載](../../assets/454-calendar.csv)2&rbrace;版本的4-5-4零售日曆，適用於2014至2017年的零售業。 `.csv`您可能需要根據內部零售日曆調整此檔案，並擴大日期範圍以支援您的歷史和目前時間範圍。 下載檔案後，使用檔案上傳程式在[!DNL Commerce Intelligence] Data Warehouse中建立零售業行事曆表格。 如果您使用4-5-4零售行事曆的未變更版本，請確保此表格中欄位的結構和資料型別符合以下內容：
 
 | 欄名稱 | 欄資料型別 | 主索引鍵 |
 | --- | --- | --- |
@@ -50,8 +50,8 @@ ht-degree: 0%
    * **目前日期**
       * [!UICONTROL Column type]： `Same table > Calculation`
       * [!UICONTROL Inputs]： `Date Retail`
-      * 
-        [！UICONTROL資料型別]: `Datetime`
+      * &#x200B;
+        [!UICONTROL 資料型別]: `Datetime`
       * [!UICONTROL Calculation]： `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
         >[!NOTE]
@@ -62,7 +62,7 @@ ht-degree: 0%
       * [!UICONTROL Column type]： E`vent Counter`
       * [!UICONTROL Local Key]： `Current date`
       * [!UICONTROL Remote Key]： `Retail calendar.Date Retail`
-      * 
+      * &#x200B;
         [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value]： `Year Retail`
    * **包含在目前的零售年度中？ （是/否）**
@@ -70,16 +70,16 @@ ht-degree: 0%
       * [!UICONTROL Inputs]：
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * 
-        [！UICONTROL資料型別]: `String`
+      * &#x200B;
+        [!UICONTROL 資料型別]: `String`
       * [!UICONTROL Calculation]： `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
    * **包含在上一個零售年度？ （是/否）**
       * [!UICONTROL Column type]： `Same table > Calculation`
       * [!UICONTROL Inputs]：
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * 
-        [！UICONTROL資料型別]: String
+      * &#x200B;
+        [!UICONTROL 資料型別]: String
       * [!UICONTROL Calculation]： `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
 
 * **sales\_order**&#x200B;資料表
@@ -139,62 +139,62 @@ ht-degree: 0%
       * [!UICONTROL Filter]：
          * `Created\_at (retail Year) = 2015`
    * [!UICONTROL Time period]： `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
      [!UICONTROL Group by]: `Created\_at` (retail week)
-   * 
+   * &#x200B;
      [!UICONTROL Chart type]: `Line`
       * 關閉`multiple Y-axes`
 
 * **零售行事曆總覽（目前零售年份，依月份）**
    * 量度`A`： `Revenue`
-      * 
-        [！UICONTROL公制]: `Revenue`
+      * &#x200B;
+        [!UICONTROL 公制]: `Revenue`
       * [!UICONTROL Filter]：
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * 量度`B`： `Orders`
       * [!UICONTROL Metric]： `Number of orders`
       * [!UICONTROL Filter]：
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * 量度`C`： `Avg order value`
       * [!UICONTROL Metric]： `Avg order value`
       * [!UICONTROL Filter]：
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]： `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * 
+   * &#x200B;
      [!UICONTROL Chart type]: `Line`
 
 * **零售行事曆總覽（前一個零售年度，依月份）**
    * 量度`A`： `Revenue`
-      * 
-        [！UICONTROL公制]: `Revenue`
+      * &#x200B;
+        [!UICONTROL 公制]: `Revenue`
       * [!UICONTROL Filter]：
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * 量度`B`： `Orders`
       * [!UICONTROL Metric]：訂單數
       * [!UICONTROL Filter]：
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * 量度`C`： `Avg order value`
       * [!UICONTROL Metric]： `Avg order value`
       * [!UICONTROL Filter]：
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]： `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * 
+   * &#x200B;
      [!UICONTROL Chart type]: `Line`
 
 ## 後續步驟
