@@ -10,9 +10,10 @@ feature-set: Commerce Intelligence
 level: Beginner, Intermediate
 topic: Commerce
 index: true
-source-git-commit: c212256ff32e308cb67a84afd3fd86b0f756ae24
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
+source-git-commit: aae7508da07dcf464401a4e5681f76cee20f01c9
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 # 內部使用的中繼資料
 
-此 `metadata.md` 檔案包含傳遞至使用手冊的存放庫層級中繼資料 `TOC.md` 存放庫中的檔案。 如果您想要變更任何使用手冊的metadata.md內容，請在任何 `TOC.md` 檔案。
+`metadata.md`檔案包含存放庫層級中繼資料，這些中繼資料會傳遞至存放庫中的使用手冊`TOC.md`檔案。 如果您想要變更任何使用手冊的metadata.md內容，請在任何`TOC.md`檔案中進行變更。
 
 | 中繼資料 | 作用 |
 |--- |--- |
