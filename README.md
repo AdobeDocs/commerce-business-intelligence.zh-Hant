@@ -1,8 +1,8 @@
 ---
-source-git-commit: f4dbe7367d0aa3d452d1f963d208b503a74cff90
+source-git-commit: 6233779ba2e2a99ed229f8aa97497eb8d9d877f7
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 7%
+source-wordcount: '454'
+ht-degree: 5%
 
 ---
 # Adobe Commerce Intelligence技術檔案
@@ -15,13 +15,13 @@ ht-degree: 7%
 
 ## 關於您對Adobe內容的貢獻
 
-請參閱[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
+請參閱[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 貢獻方式取決於您的身分和您要貢獻的變更型別：
 
 ### 微幅變更
 
-如果您要提出微幅更新，請瀏覽文章，然後按一下文章底部的意見區域，按一下&#x200B;**詳細的意見選項**，然後按一下&#x200B;**建議編輯**，即可前往GitHub的Markdown來源檔案。 使用GitHub UI進行更新。 如需詳細資訊，請參閱一般[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
+如果您要提出微幅更新，請瀏覽文章，然後按一下文章底部的意見區域，按一下&#x200B;**詳細的意見選項**，然後按一下&#x200B;**建議編輯**，即可前往GitHub的Markdown來源檔案。 使用GitHub UI進行更新。 如需詳細資訊，請參閱一般[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 您在本存放庫為檔案和程式碼範例提交的小幅更正或釐清均包含在Adobe使用條款中。
 
@@ -37,7 +37,7 @@ ht-degree: 7%
 
 社群投稿人可以使用GitHub UI進行基本編輯或建立存放庫復本，以做出重大貢獻。
 
-如需詳細資訊，請參閱[Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
+如需詳細資訊，請參閱[Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 ## 如何使用Markdown將主題格式化
 
@@ -45,3 +45,31 @@ ht-degree: 7%
 
 - [Markdown基本介紹](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 - [可列印的Markdown速查表](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
+## 影像最佳化的預先提交鉤點
+
+此存放庫包括自動預先提交掛接，可在提交前最佳化影像。 **所有貢獻者都應該啟用這些鉤點**，以確保一致的影像最佳化並降低存放庫大小。
+
+### 快速設定
+
+複製存放庫後，請執行：
+
+```bash
+.githooks/setup-hooks.sh
+```
+
+### 鉤子會做什麼
+
+- 自動偵測分階段影像檔案(PNG、JPG、JPEG、GIF、SVG)
+- 執行`image_optim`以壓縮和最佳化影像
+- 自動重新存放最佳化的影像
+- 確保所有認可的影像都已適當最佳化
+
+### 優點
+
+- 縮小存放庫大小
+- 加速說明檔案的頁面載入
+- 所有貢獻者的影像品質一致
+- 不需要手動最佳化
+
+如需詳細的設定指示、疑難排解和組態，請參閱[`.githooks/README.md`](.githooks/README.md)。
