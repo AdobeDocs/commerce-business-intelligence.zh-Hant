@@ -4,9 +4,9 @@ description: 瞭解您的企業財務現在如何與銷售和行銷資料並存�
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 32b1e1be4e372164da757cb339ba1618d33a75ea
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 0%
 ![](../../../assets/Quickbooks.png)
 
 透過[!DNL QuickBooks]整合，您的企業財務現在可以與您的銷售和行銷資料一起運作，讓您快速輕鬆地監視您的費用、識別超支等等。
+
+>[!NOTE]
+>
+>Adobe Commerce Intelligence與QuickBooks Online （非桌上型電腦）整合，並需要以雲端連線登入Intuit帳戶，以符合QuickBooks Online SaaS結構，而非本機安裝的QuickBooks Desktop模型。
 
 ## 將[!DNL QuickBooks]新增為[!DNL Commerce Intelligence]中的資料來源
 
@@ -40,4 +44,4 @@ ht-degree: 0%
 ## 相關
 
 * [預期 [!DNL QuickBooks] 資料](../integrations/quickbooks-data.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
