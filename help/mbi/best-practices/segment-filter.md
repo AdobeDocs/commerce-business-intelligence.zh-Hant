@@ -42,7 +42,7 @@ ht-degree: 0%
 
 * **[!UICONTROL Billing / Shipping Address]**：您大部分的訂單來自何處？ 帳單和運送地址之間是否有差異？
 * **[!UICONTROL Status]**：您有多少訂單無法完成？ 過去七天擱置訂單的比率是多少？
-* **[!UICONTROL Customer acquisition source]**：除了在使用者層級追蹤使用者贏取資料之外，您還可以在訂單或事件層級[追蹤資料。 ](../data-analyst/analysis/google-track-user-acq.md)透過一個來源註冊的使用者完全可以繼續透過其他來源存取您的網站。
+* **[!UICONTROL Customer acquisition source]**：除了在使用者層級追蹤使用者贏取資料之外，您還可以在訂單或事件層級[追蹤資料。 &#x200B;](../data-analyst/analysis/google-track-user-acq.md)透過一個來源註冊的使用者完全可以繼續透過其他來源存取您的網站。
 * **[!UICONTROL Device]**：行動訂單的數量是否增加？ 您的收入中有多少是透過行動裝置購買產生的？ (如果您尚未追蹤此專案，請參閱此主題[關於追蹤順序裝置資料](../data-analyst/analysis/track-usr-dev-browser.md)。
 * **[!UICONTROL Fulfillment Center]**：您的哪個履行中心產生最多收入？ 如果您正在分析訂單時間與出貨時間之間的差異，哪一個履行中心的回應速度最快？
 * **[!UICONTROL Delivery Carrier]**：哪一個是最受歡迎的電信業者？ 哪個電信業者傳回的專案數最少？

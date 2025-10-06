@@ -61,7 +61,7 @@ ht-degree: 0%
 
 **刪除整個儀表板**
 
-1. 選取&#x200B;**[!UICONTROL Manage Data]**，然後選取**[!UICONTROL Dashboards**]。
+1. 選取&#x200B;**[!UICONTROL Manage Data]**，然後選取&#x200B;**[!UICONTROL Dashboards**]。
 1. 按一下您要刪除的控制面板。
 1. 按一下&#x200B;**[!UICONTROL Delete Dashboard]**。
 

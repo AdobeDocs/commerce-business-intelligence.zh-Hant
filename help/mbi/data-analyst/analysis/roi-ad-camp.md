@@ -136,5 +136,5 @@ ht-degree: 0%
 * [追蹤資料庫中的使用者裝置、瀏覽器和作業系統資料](../analysis/track-usr-dev-browser.md)
 * [探索您最有價值的贏取來源和管道](../analysis/most-value-source-channel.md)
 * [連線您的 [!DNL Google Adwords] 帳戶](../importing-data/integrations/google-adwords.md)
-* [ [!DNL Google Analytics] UTM歸因如何運作？](../analysis/utm-attributes.md)
+* [&#x200B; [!DNL Google Analytics] UTM歸因如何運作？](../analysis/utm-attributes.md)
 * [在 [!DNL Google Analytics]中進行UTM標籤的五個最佳實務](../../best-practices/utm-tagging-google.md)

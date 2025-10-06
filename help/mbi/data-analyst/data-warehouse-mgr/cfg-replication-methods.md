@@ -135,6 +135,6 @@ ht-degree: 0%
 ## 相關檔案
 
 * [瞭解資料重新檢查](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [修改資料庫以支援 ](../../best-practices/mod-db-inc-replication.md)
+* [修改資料庫以支援 &#x200B;](../../best-practices/mod-db-inc-replication.md)
 * [最佳化資料庫以進行分析](../../best-practices/opt-db-analysis.md)
 * [縮短更新時間](../../best-practices/reduce-update-cycle-time.md)
