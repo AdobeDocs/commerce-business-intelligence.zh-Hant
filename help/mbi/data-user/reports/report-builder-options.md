@@ -4,9 +4,9 @@ description: 瞭解如何選擇您的Report Builder。
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 # 選擇Report Builder
 
 >[!NOTE]
->&#x200B;>需要[管理員許可權](../../administrator/user-management/user-management.md)。
+>>需要[管理員許可權](../../administrator/user-management/user-management.md)。
 
 現在您有了更多建立分析的選項，有時候可能很難確切知道Report Builder的哪一種風格適合您的需求。 本主題將引導您選擇最佳方法來建置分析。
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 假設將單一產品視為多個產品類別的一部分，而您想要檢視與每個產品的每個類別相關聯的收入。 嘗試使用DWM建立此關聯性可能既繁瑣又困難，但撰寫[!DNL SQL]查詢可能更簡單明瞭：
 
-![](../../assets/When_should_I_use_the_RB_2.png)
+![SQL查詢顯示具有一對多關係的產品類別收入](../../assets/When_should_I_use_the_RB_2.png)
 
 ## 我何時應使用傳統Report Builder？ {#whentraditionalrb}
 

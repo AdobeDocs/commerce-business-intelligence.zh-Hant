@@ -4,9 +4,9 @@ description: 瞭解細分和篩選的最佳實務。
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 本主題涵蓋經常向客戶建議的關鍵區段。 此外，也會詳細說明這些區段可協助您回答的問題。 技術上，區段是資料庫中的資料欄。 在[!DNL Adobe Commerce Intelligence]中，這些維度稱為維度。
 
-![](../../mbi/assets/mbi-critical-segments.png)
+![顯示關鍵客戶區段和篩選器的儀表板](../../mbi/assets/mbi-critical-segments.png)
 
 
 ## 使用者區段
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 依照上述維度來劃分量度的第一個步驟，就是確定您正在資料庫中追蹤此資料。 如果未受到追蹤，請和您的技術團隊會面，並找到開始追蹤此資料的方法。
 
-確認資料庫已追蹤資料後，[請連絡支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)，將維度推送至[!DNL Commerce Intelligence]量度和圖表。 您也可以使用&#x200B;*欄位管理*&#x200B;工具來追蹤[!DNL Commerce Intelligence]中的這些欄位。
+確認資料庫已追蹤資料後，[請連絡支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)，將維度推送至[!DNL Commerce Intelligence]量度和圖表。 您也可以使用&#x200B;*欄位管理*&#x200B;工具來追蹤[!DNL Commerce Intelligence]中的這些欄位。
 
 ## 相關
 

@@ -4,9 +4,9 @@ description: 瞭解如何使用Visual Report Builder中的視覺效果選項。
 exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1823'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ ht-degree: 0%
 
 `Scalar`個報告會顯示為單一數值。 這通常用於顯示關鍵量度（例如收入或訂單）的「所有時間」值，或用來比較具有兩個單獨純量報表的收入累計與預算。 在以下範例中，只會顯示指定報告間隔的訂單總數：
 
-![](../../assets/blobid0.png)
+![將訂單總數顯示為單一數值的純量報告](../../assets/blobid0.png)
 
 若要將報表儲存為純量，請設定篩選器和時間設定，然後按一下報表右上角的&#x200B;**[!UICONTROL Save]**&#x200B;或&#x200B;**[!UICONTROL Update]**。 在`Type`下拉式清單中，選擇「數字：量度名稱」 ，將報表儲存為左側邊欄中顯示的值。
 
-![](../../assets/blobid1.png)
+![儲存報告對話方塊，其中的「型別」下拉式清單顯示「數目」量度名稱選項](../../assets/blobid1.png)
 
 **需求**：
 
@@ -51,11 +51,11 @@ ht-degree: 0%
 
 顧名思義，`table`個報告非常適合用於顯示表格式詳細資訊。 當需要在單一報告中依值或量度顯示許多群組時，表格通常是最好的方式。 例如，「客戶詳細資料」表格底下顯示依客戶電子郵件分組的訂單和收入：
 
-![](../../assets/blobid2.png)
+![資料表報告，依據客戶電子郵件顯示訂單和收入的客戶詳細資料](../../assets/blobid2.png)
 
 與純量報表類似，您可以在Report Builder中按一下&#x200B;**[!UICONTROL Save]**&#x200B;或&#x200B;**[!UICONTROL Update]**，然後選取`Type`下拉式清單下的「表格」選項，將報表儲存為表格。
 
-![](../../assets/blobid3.png)
+![儲存報告對話方塊，其中的[型別]下拉式清單顯示已選取的[資料表]選項](../../assets/blobid3.png)
 
 **需求：**
 
@@ -65,13 +65,13 @@ ht-degree: 0%
 
 `Line`圖表是比較類似量度同類群組效能的完美選擇。 例如，分析兩個區域在相同時段內的收入，或比較履行訂單中年與年的成長率，如下所示：
 
-![](../../assets/blobid0.png)
+![比較兩個量度在一段時間內與多個線段的折線圖](../../assets/blobid0.png)
 
 新增到報表的每個量度和公式都會以自己的行表示。 比較具有類似單位和比例的量度時，別忘了清除`Multiple Y-Axes`的核取方塊，以相同比例顯示所有量度。
 
 若要將報表儲存為折線圖，請將報表`Type`調整為`Chart`，然後從Report Builder中選取適當的視覺效果，如下所示：
 
-![](../../assets/blobid1.png)
+![已選取圖表型別，並反白線條圖視覺效果選項的Report Builder](../../assets/blobid1.png)
 
 **需求：**
 
@@ -81,13 +81,13 @@ ht-degree: 0%
 
 `Bar`圖表將您的資料顯示為一系列水準條，最適合顯示有限量度或按值群組的整體效能。 例如，長條圖可用來比較各商店的收入：
 
-![](../../assets/blobid2.png)
+![橫條圖顯示依商店的收入比較](../../assets/blobid2.png)
 
 每個不同的量度、分組依據和時間間隔組合都會顯示為其本身的長條圖。 如果您有兩個量度，其中有一個`group by`，包含三個不同的`group by`值，則您的報表會顯示六個個別的橫條。
 
 若要將報告儲存為長條圖，請將報告`Type`調整為`Chart`並選取`Bar`選項，如下所示：
 
-![](../../assets/blobid3.png)
+![已選取圖表型別，且醒目提示長條圖視覺效果選項的Report Builder](../../assets/blobid3.png)
 
 **需求：**
 
@@ -99,13 +99,13 @@ ht-degree: 0%
 
 例如，以下報表有兩個相同的收入量度，其中一個是初次篩選訂單，另一個是篩選重複訂單。 依商店分組後，您可以看到每個商店的總收入貢獻（由橫條的總寬度表示），以及每個商店的第一次與重複收入劃分。
 
-![](../../assets/blobid4.png)
+![棧疊水準長條圖，依商店顯示首次和重複收入](../../assets/blobid4.png)
 
 設定如上所述的報告時，請確定未勾選`Multiple Y-Axes`方塊。
 
 若要將報表儲存為棧疊長條圖，請將報表`Type`調整為`Chart`，然後從Report Builder中選取棧疊長條圖選項：
 
-![](../../assets/blobid5.png)
+![已選取圖表型別，且醒目提示棧疊長條圖視覺效果選項的Report Builder](../../assets/blobid5.png)
 
 **需求：**
 
@@ -117,11 +117,11 @@ ht-degree: 0%
 
 在下列範例中，您會看到兩個收入量度，一個是篩選第一次收入，另一個是篩選重複收入，依月在一段時間內的趨勢：
 
-![](../../assets/blobid6.png)
+![按月份顯示首次和重複收入的垂直柱狀圖](../../assets/blobid6.png)
 
 將報表`Type`變更為`Chart`，並選取欄視覺效果選項，即可儲存欄報表：
 
-![](../../assets/blobid7.png)
+![已選取圖表型別，並反白顯示欄視覺效果選項的Report Builder](../../assets/blobid7.png)
 
 **需求：**
 
@@ -133,13 +133,13 @@ ht-degree: 0%
 
 使用上述`Column`區段中所述的相同報表設定，具有兩個收入量度（首次篩選並重複）的報表看起來類似以下具有棧疊欄視覺效果的報表：
 
-![](../../assets/blobid8.png)
+![棧疊垂直直條圖，按月份顯示首次和重複收入](../../assets/blobid8.png)
 
 同樣重要的是，使用棧疊欄視覺效果顯示多個量度時，`Multiple Y-Axes`核取方塊必須清除。
 
 若要將報表儲存為棧疊欄，請將報表`Type`設定為`Chart`並選取`stacked column`選項：
 
-![](../../assets/blobid9.png)
+![已選取圖表型別，並反白顯示棧疊欄視覺效果選項的Report Builder](../../assets/blobid9.png)
 
 **需求：**
 
@@ -149,11 +149,11 @@ ht-degree: 0%
 
 `Pie`圖表最適合顯示具有一個或多個群組框的單一量度，或沒有群組框的多個量度。 不論使用何種方法，時間間隔都必須設為none，才能在圓餅圖中顯示資料。 在以下範例中，單一訂單量度是依商店名稱分組，以顯示依商店的訂單劃分：
 
-![](../../assets/blobid10.png)
+![圓餅圖，顯示依商店名稱的訂單分佈](../../assets/blobid10.png)
 
 若要將報告儲存為圓餅圖，請將報告`Type`設定為`Chart`並選取`pie`選項，如下所示：
 
-![](../../assets/blobid11.png)
+![已選取圖表型別且圓形圖視覺效果選項醒目提示的Report Builder](../../assets/blobid11.png)
 
 **需求：**
 
@@ -168,11 +168,11 @@ ht-degree: 0%
 
 以`stacked column`區段的相同範例為例，以下報表以區域圖視覺效果顯示首次與重複收入：
 
-![](../../assets/blobid12.png)
+![顯示初次和重複收入隨時間變化的區域圖](../../assets/blobid12.png)
 
 若要將報表儲存為區域圖，請將`Type`調整為`Chart`並選取區域選項：
 
-![](../../assets/blobid13.png)
+![已選取圖表型別，並反白區域圖視覺效果選項的Report Builder](../../assets/blobid13.png)
 
 **需求：**
 
@@ -180,19 +180,19 @@ ht-degree: 0%
 
 ## `Funnel`
 
-`Funnel`個圖表可完美地以視覺效果呈現預期事件順序的轉換。 幾個範例包括分析銷售漏斗中從銷售線索到成交的潛在收入，或衡量客戶在第一與第二筆訂單、第二筆與第三筆訂單之間的減少量，依此類推。 後者的範例顯示如下：
+`Funnel`個圖表可完美地以視覺效果呈現預期事件順序的轉換。 某些範例包括分析銷售funnel中從銷售線索到成交的潛在收入，或衡量客戶在第一與第二訂單、第二和第三筆訂單之間的減少量，依此類推。 後者的範例顯示如下：
 
-![](../../assets/blobid4.png)
+![Funnel圖表顯示跨循序訂單的客戶轉換](../../assets/blobid4.png)
 
-在漏斗報表中，漏斗的指定步驟的相對值會以步驟的高度反映出來。 報表組態會決定步驟的顯示順序。 設定漏斗報表的方式有兩種：
+在funnel報表中，funnel指定步驟的相對值會由步驟的高度反映。 報表組態會決定步驟的顯示順序。 設定funnel報表的方式有兩種：
 
-* `Single metric with one group by`： — 由群組依據的「顯示頂端/底部」設定所決定的步驟順序。 依預設，漏斗步驟會依最大到最小值的順序顯示，但您也可以依名稱的群組按字母順序排序。
+* `Single metric with one group by`： — 由群組依據的「顯示頂端/底部」設定所決定的步驟順序。 依預設，funnel步驟會依最大到最小值的順序顯示，但您也可以依名稱的群組按字母順序排序。
 
 * `Multiple metrics with no group by`： — 步驟的順序，由量度新增至報表的順序決定。
 
-若要將報表儲存為漏斗圖，請將報表`Type`調整為`Chart`並從Report Builder中選取適當的視覺效果。
+若要將報表儲存為funnel圖表，請將報表`Type`調整為`Chart`並在Report Builder中選取適當的視覺效果。
 
-![](../../assets/blobid5.png)
+![已選取圖表型別，並醒目提示funnel視覺效果選項的Report Builder](../../assets/blobid5.png)
 
 **需求：**
 
@@ -205,13 +205,13 @@ ht-degree: 0%
 
 `scatter plot`用於檢查量度與兩個不同變數的關係，以便您輕鬆識別關聯和離群值。 此型別的視覺效果最好僅搭配數值維度使用 — 請搭配訂購量度以及`Customer's lifetime number of coupons`和`Customer's lifetime revenue`維度試用，以檢視優惠券使用與收入的相關性。 您可以選擇使用或不使用趨勢線的散佈圖：
 
-![](../../assets/scatter-plot-1.png)
+![散點圖顯示客戶量度之間的關聯](../../assets/scatter-plot-1.png)
 
-![沒有趨勢線](../../assets/scatter-plot-2.png)
+![不含趨勢線的散佈圖，顯示資料點分佈](../../assets/scatter-plot-2.png)
 
-![](../../assets/scatter-plot-3.png)
+![包含資料點和相關模式的散佈圖](../../assets/scatter-plot-3.png)
 
-![趨勢線](../../assets/scatter-plot-4.png)
+![趨勢線散佈圖顯示量度間的關聯](../../assets/scatter-plot-4.png)
 
 **需求：**
 
@@ -233,11 +233,11 @@ ht-degree: 0%
 
 例如，下列圖表顯示依特定贏取來源（泡泡顏色）和狀態（特定顏色的各種泡泡）分組的客戶數量（泡泡大小），並依據總收入和平均期限訂單繪圖。
 
-![](../../assets/bubble-1.png)
+![泡泡圖顯示依贏取來源和狀態的客戶計數與收入及訂單的比較](../../assets/bubble-1.png)
 
 下圖顯示依贏取來源（泡泡顏色）和狀態（特定顏色的各種泡泡）分組的客戶數量（泡泡大小），並依據平均期限值和總收入繪圖。
 
-![](../../assets/bubble-2.png)
+![泡泡圖顯示依贏取來源和狀態的客戶量度](../../assets/bubble-2.png)
 
 **單一數列泡泡圖的要求：**
 
@@ -265,7 +265,7 @@ ht-degree: 0%
 
 下列熱度圖會以彙總方式顯示數週內，按一週中的某天或按某小時排列的訂單。
 
-![](../../assets/heat-map.png)<!--{: width="650"}-->
+![熱度圖顯示依一週的某天和每天某小時的訂單強度](../../assets/heat-map.png)<!--{: width="650"}-->
 
 **需求：**
 

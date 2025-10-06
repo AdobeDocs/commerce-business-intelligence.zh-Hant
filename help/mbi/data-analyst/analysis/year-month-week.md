@@ -4,9 +4,9 @@ description: 瞭解如何輕鬆檢視一段時間內的趨勢，並變更您想�
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Report Builder可讓您輕鬆檢視一段時間的趨勢，以及變更您想比較之時段的觀點。 本主題將示範如何設定控制面板，以更深入的方式讓您建立每週、每月、每年和每月的報表。
 
-![](../../assets/Wow__mom__yoy.png)
+![顯示逐周、逐月和逐年比較的儀表板](../../assets/Wow__mom__yoy.png)
 
 開始之前，您應該檢閱更詳細的探索觀點[這裡](../../tutorials/using-visual-report-builder.md)和獨立的時間選項[這裡](../../tutorials/time-options-visual-rpt-bldr.md)。
 
@@ -40,8 +40,8 @@ Report Builder可讓您輕鬆檢視一段時間的趨勢，以及變更您想比
    * `created_at (month)` [!UICONTROL Calculation]： **to_char(A， &#39;mm-month&#39;)**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]： **to_char(A， &#39;dd&#39;)**
    * `created_at (day of the week)` [!UICONTROL Calculation]： **to_char(A， &#39;d-Day&#39;)**
-   * **`created_at (hour of the day)` [!UICONTROL Calculation]： &#x200B;** to_char(A， &#39;hh24&#39;)**
-     ![](../../assets/new-arch-create-calc.png)
+   * **`created_at (hour of the day)` [!UICONTROL Calculation]： **to_char(A， &#39;hh24&#39;)**
+     ![在Data Warehouse Manager中建立計算資料行介面](../../assets/new-arch-create-calc.png)
 
 ## 量度
 
@@ -64,10 +64,10 @@ Report Builder可讓您輕鬆檢視一段時間的趨勢，以及變更您想比
 * 量度`A`： `This year`
 * 量度`B`： `Last year`
 * [!UICONTROL Time period]： `1 year ago to 0 years ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]： `created_at (month-day)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **MoM圖表**
@@ -81,10 +81,10 @@ Report Builder可讓您輕鬆檢視一段時間的趨勢，以及變更您想比
 * 量度`A`：本月*
 * 量度`B`：上個月*
 * [!UICONTROL Time period]：一個月前至0個月前
-* &#x200B;
+* 
   [!UICONTROL Interval]: None
 * [!UICONTROL Group by]： `created_at (day of month)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: Line
 
 * **WoW圖表**
@@ -98,10 +98,10 @@ Report Builder可讓您輕鬆檢視一段時間的趨勢，以及變更您想比
 * 量度`A`： `This week`
 * 量度`B`： `Last week`
 * [!UICONTROL Time period]： `1 week ago to 0 weeks ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]： `created_at (day of week)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **DoD圖表**
@@ -115,10 +115,10 @@ Report Builder可讓您輕鬆檢視一段時間的趨勢，以及變更您想比
 * 量度`A`： `Today`
 * 量度B： `Yesterday`
 * [!UICONTROL Time period]： `1 day ago to 0 days ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]： `created_at (hour of day)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 編譯所有報表後，您可以視需要在控制面板上組織報表。 結果看起來可能像這個頁面頂端的影像。

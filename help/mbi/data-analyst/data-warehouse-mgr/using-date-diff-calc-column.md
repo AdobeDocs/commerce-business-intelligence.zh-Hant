@@ -4,9 +4,9 @@ description: 瞭解日期差異計算欄的用途和用途。
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
@@ -50,4 +50,4 @@ ht-degree: 0%
 
 例如，下列範例設定為計算`Seconds between order date and customer's creation date`：
 
-![](../../assets/date_diff.png)
+![日期差異計算組態顯示日期時間資料行選取專案](../../assets/date_diff.png)

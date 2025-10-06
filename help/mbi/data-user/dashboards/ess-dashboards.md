@@ -4,9 +4,9 @@ description: 瞭解如何建立和使用儀表板。
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '628'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 1. 在功能表上，按一下&#x200B;**[!UICONTROL Dashboards]**。
 
-1. 預設圖示板的名稱會出現在圖示板標題的左上角。 按一下向下箭頭(![](../../assets/magento-bi-btn-down.png))以顯示可用的選項。
+1. 預設圖示板的名稱會出現在圖示板標題的左上角。 按一下向下箭頭（![向下箭頭圖示](../../assets/magento-bi-btn-down.png)）以顯示可用的選項。
 
    ![建立儀表板](../../assets/magento-bi-dashboard-create.png)
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
    ![儀表板名稱](../../assets/magento-bi-dashboard-create-name.png)
 
-   * 新圖示板的名稱會出現在左上角。 按一下向下箭頭(![](../../assets/magento-bi-btn-down.png))以顯示選項。 如果您已建立群組，新圖示板會顯示在清單中該群組的下方。
+   * 新圖示板的名稱會出現在左上角。 按一下向下箭頭（![向下箭頭圖示](../../assets/magento-bi-btn-down.png)）以顯示選項。 如果您已建立群組，新圖示板會顯示在清單中該群組的下方。
 
 ### 新增報表
 

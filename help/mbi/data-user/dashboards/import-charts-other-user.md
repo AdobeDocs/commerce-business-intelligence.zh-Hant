@@ -4,9 +4,9 @@ description: 瞭解如何編輯其他使用者擁有的圖表，或建立類似�
 exl-id: defcb72d-6027-4ae7-b974-e2f39773fe32
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '171'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 復製圖表
 
-在共用控制面板中，挑選您要複製到自己帳戶的圖表。 按一下齒輪(![](../../assets/gear-icon.png))圖示，然後按一下&#x200B;**[!UICONTROL Save As]**。
+在共用控制面板中，挑選您要複製到自己帳戶的圖表。 按一下齒輪（![齒輪圖示](../../assets/gear-icon.png)）圖示，然後按一下&#x200B;**[!UICONTROL Save As]**。
 
 系統會提示您命名圖表的復本，並將其新增至任何現有儀表板。 如果您未選取儀表板，它會新增到您現有的圖表清單中，而且您可以[稍後再新增它](../../data-user/dashboards/add-charts-dashboard.md)。
 

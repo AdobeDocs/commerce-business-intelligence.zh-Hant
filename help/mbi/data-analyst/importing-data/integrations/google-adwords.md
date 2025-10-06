@@ -4,9 +4,9 @@ description: 瞭解如何將您的廣告成本與從您的行銷活動取得的�
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >需要[管理員許可權](../../../administrator/user-management/user-management.md)。
 
-![](../../../assets/Google_Adwords_logo.png)
+![Google AdWords標誌](../../../assets/Google_Adwords_logo.png)
 
 您做了調查、製作了自己的廣告、啟動了[!DNL Google]行銷活動。 現在，您可以分析廣告支出資料，看看您的錢是否花得有效率。 使用您的廣告支出資料，您可以將您的廣告成本與客戶期限值(CLV)配對[評估行銷活動ROI （從行銷活動取得的使用者）](../../analysis/roi-ad-camp.md)。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 1. 輸入您的[!DNL Google Analytics]認證。 完成授權程式後，系統會將您重新導向回[!DNL Commerce Intelligence]。
 1. 設定檔ID清單隨即顯示。 檢查您要連線至[!DNL Commerce Intelligence]的設定檔。
 
-   ![](../../../assets/cnnct-profile.png)
+   ![Google AdWords連線對話方塊顯示設定檔選取專案](../../../assets/cnnct-profile.png)
 
 1. 變更會自動儲存，因此完成時請按一下&#x200B;**[!UICONTROL Back to Connections]**。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ## 相關
 
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [透過 [!DNL Google ECommerce]追蹤訂單轉介來源](../integrations/google-ecommerce.md)
 * [追蹤資料庫中的使用者反向連結來源](../../analysis/google-track-user-acq.md)
 * [探索您最有價值的贏取來源和管道](../../analysis/most-value-source-channel.md)

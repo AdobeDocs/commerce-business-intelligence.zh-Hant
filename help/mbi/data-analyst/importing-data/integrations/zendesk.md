@@ -4,9 +4,9 @@ description: 瞭解如何在 [!DNL Commerce Intelligence]中合併服務檯報�
 exl-id: 1c7f7c5c-4b1c-4bcf-8f1d-2b4cf9cdb0fb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >需要[管理員許可權](../../../administrator/user-management/user-management.md)。
 
-![](../../../assets/Zendesk_logo.png)
+![Zendesk標誌](../../../assets/Zendesk_logo.png)
 
 連線您的[!DNL Zendesk]資料可讓您在[!DNL Commerce Intelligence]中合併服務檯報告。 這可讓您最佳化客戶支援，並監控服務檯績效與您的收入。
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ## 在[!DNL Zendesk]中開啟[!DNL Commerce Intelligence]認證頁面 {#stepone}
 
-1. 移至`Integrations`資料來源&#x200B;**[!UICONTROL Manage Data** > **&#x200B; > &#x200B;** 整合&#x200B;**下的]**&#x200B;頁面。
+1. 移至`Integrations`資料來源&#x200B;**[!UICONTROL Manage Data** > ** > **整合&#x200B;**下的]**&#x200B;頁面。
 1. 按一下畫面右側的&#x200B;**[!UICONTROL Add Integration]**。
 1. 按一下[!DNL Zendesk]圖示。 這會開啟[!DNL Zendesk]認證頁面。
 
@@ -54,4 +54,4 @@ ht-degree: 0%
 ## 相關：
 
 * [預期 [!DNL Zendesk] 資料](../integrations/exp-zendesk-data.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

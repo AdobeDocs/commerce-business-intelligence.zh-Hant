@@ -4,9 +4,9 @@ description: 瞭解什麼是質化同類群組、您為什麼可能有興趣建�
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 在`qualitative cohort`中建立`Report Builder`報告時，Adobe分析團隊會在必要的資料表上建立一些[進階計算資料行](../data-warehouse-mgr/creating-calculated-columns.md)。
 
-若要建置這些專案，請提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant) （並參考此文章！）。 以下是您需要瞭解的事項：
+若要建置這些專案，請提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （並參考此文章！）。 以下是您需要瞭解的事項：
 
 * 您要使用執行同類群組分析的`metric`及其使用的表格（範例： `Revenue`，建置在`orders`表格上）。
 
@@ -55,7 +55,7 @@ Adobe分析團隊回應上述要求後，您就會有一些新的進階計算欄
 
 首先，您想要新增您想要加入同類群組的量度，針對您正在分析的每個`cohort`新增一次。 在此範例中，您想要檢視在客戶第一筆訂單後幾個月內完成的累積`Revenue` （以`User's referral source`分段）。 這表示您會為每個區段新增一個`Revenue`量度，並針對特定區段進行篩選：
 
-![](../../assets/qualcohort1.gif)
+![建立定性同類群組分析的動畫示範](../../assets/qualcohort1.gif)
 
 第二，您應該對報表的時間選項進行兩項變更：
 
@@ -65,7 +65,7 @@ Adobe分析團隊回應上述要求後，您就會有一些新的進階計算欄
 
 在此範例中，您檢視了`all time`的`Revenue`檢視。 接著，您應該會看到一連串的點：
 
-![](../../assets/qualcohort2.gif)
+![同類群組群組和分析選項的動畫示範](../../assets/qualcohort2.gif)
 
 第三，您調整以設定`cohorts`。 根據您指定給Adobe分析團隊的`cohort date`和`time interval`，您的帳戶中有一個維度可執行`cohort`約會。 在此範例中，該自訂維度稱為`Months between this order and customer's first order date`。 使用此維度，您應該：
 

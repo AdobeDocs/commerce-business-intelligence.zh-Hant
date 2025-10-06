@@ -4,9 +4,9 @@ description: 瞭解如何分析使用者如何導覽及使用您的網站和應�
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >需要[管理員許可權](../../../administrator/user-management/user-management.md)。
 
-![](../../../assets/Mixpanel_logo.png)
+![Mixpanel標誌](../../../assets/Mixpanel_logo.png)
 
 透過[!DNL Mixpanel]，您可以分析使用者如何導覽及使用您的網站和應用程式。 仔細檢視使用者行為資料可導致更聰明的設計和開發決策，也就是說總體上可獲得更好的產品。 將[!DNL Mixpanel]連線至[!DNL Commerce Intelligence]可讓您分析使用者的行為以及該行為轉化為收入的方式。
 
@@ -65,4 +65,4 @@ ht-degree: 0%
 ### 相關
 
 * [預期 [!DNL Mixpanel] 資料](../integrations/mixpanel-data.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

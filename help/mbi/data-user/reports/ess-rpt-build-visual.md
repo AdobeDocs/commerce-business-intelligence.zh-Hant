@@ -4,9 +4,9 @@ description: 瞭解如何使用視覺Report Builder。
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 0%
 
      ![依資料表資料分組](../../assets/magento-bi-report-builder-group-by-table-data.png)
 
-   * 按一下表格右上角的「調換(![](../../assets/magento-bi-btn-transpose.png))」控制項，以變更資料的方向。
+   * 按一下表格右上角的「調換」 （![調換圖示](../../assets/magento-bi-btn-transpose.png)）控制項，以變更資料的方向。
 
      資料軸隨即反向，表格現在包含每個抵用券代碼各一欄，以及每個月的列。 您可能會發現此方向更易於閱讀。
 
@@ -95,14 +95,14 @@ ht-degree: 0%
 
      | | |
      |-----|-----|
-     | ![](../../assets/magento-bi-btn-chart-line.png) | 折線圖 |
-     | ![](../../assets/magento-bi-btn-chart-horz-bar.png) | 橫條圖 |
-     | ![](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | 水準棧疊長條圖 |
-     | ![](../../assets/magento-bi-btn-chart-vert-bar.png) | 垂直條 |
-     | ![](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | 垂直棧疊長條圖 |
-     | ![](../../assets/magento-bi-btn-chart-pie.png) | 圓形圖 |
-     | ![](../../assets/magento-bi-btn-chart-area.png) | 區域圖 |
-     | ![](../../assets/magento-bi-btn-chart-funnel.png) | 漏斗 |
+     | ![折線圖圖示](../../assets/magento-bi-btn-chart-line.png) | 折線圖 |
+     | ![橫條圖示](../../assets/magento-bi-btn-chart-horz-bar.png) | 橫條圖 |
+     | ![水準棧疊長條圖示](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | 水準棧疊長條圖 |
+     | ![垂直列圖示](../../assets/magento-bi-btn-chart-vert-bar.png) | 垂直條 |
+     | ![垂直棧疊長條圖示](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | 垂直棧疊長條圖 |
+     | ![圓形圖圖示](../../assets/magento-bi-btn-chart-pie.png) | 圓形圖 |
+     | ![區域圖圖示](../../assets/magento-bi-btn-chart-area.png) | 區域圖 |
+     | ![Funnel圖表圖示](../../assets/magento-bi-btn-chart-funnel.png) | 漏斗 |
 
      {style="table-layout:auto"}
 

@@ -4,9 +4,9 @@ description: 瞭解使用SQL Report Builder的來去去。
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1397'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 0%
 >
 >需要[管理員許可權](../../administrator/user-management/user-management.md)才能建立和編輯SQL圖表。 `Standard`個使用者可以在儀表板上重新排列這些圖表，並且`Read-only`個使用者具有與傳統圖表相同的體驗。 此外，`Read-only`個使用者沒有查詢文字的存取權。
 
-請觀看[訓練影片](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=zh-Hant)以瞭解更多資訊。
+請觀看[訓練影片](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)以瞭解更多資訊。
 
 [!DNL SQL]或結構化查詢語言是一種用來與資料庫通訊的程式設計語言。 在[!DNL Commerce Intelligence]中，[!DNL SQL]用於查詢或擷取您Data Warehouse中的資料。 檢視您控制面板上的報告 — 在幕後，每個報告都由[!DNL SQL]查詢提供技術支援。
 
 您可以使用[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)直接查詢您的Data Warehouse、檢視結果，並將其轉換為圖表。 您可以按一下[!DNL SQL Report Builder]，開始使用&#x200B;**[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**&#x200B;建立報告。
 
-請觀看[訓練影片](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=zh-Hant)以瞭解更多資訊。
+請觀看[訓練影片](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)以瞭解更多資訊。
 
 [!DNL SQL Report Builder]可讓您直接查詢您的Data Warehouse、檢視結果，並快速將其轉換為圖表。 使用[!DNL SQL]建立報告的最佳部分是，您不需要等待更新週期來重複您建立的欄。 如果結果看起來不正確，您可以快速編輯並重新執行查詢，直到符合您的預期為止。
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## 開始使用
 
-若要編輯報告，請按一下以![](../../assets/gear-icon.png)為基礎的圖表右上角的齒輪([!DNL SQL])圖示，然後按一下&#x200B;**[!UICONTROL Edit]**。
+若要編輯報表，請按一下![圖表右上角的齒輪（](../../assets/gear-icon.png)齒輪圖示[!DNL SQL]）圖示，然後按一下&#x200B;**[!UICONTROL Edit]**。
 
 ## 撰寫查詢 {#writing}
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 以下是視覺化流程的外觀：
 
-![](../../assets/SQL_RB_viz_overview.gif)
+![SQL Report Builder視覺效果概觀的動畫示範](../../assets/SQL_RB_viz_overview.gif)
 
 如需如何建立視覺效果的詳細逐步解說，請參閱[從SQL查詢建立視覺效果教學課程](../../tutorials/create-visuals-from-sql.md){: target="_blank"}。
 
@@ -107,7 +107,7 @@ ht-degree: 0%
 
 按一下&#x200B;**[!UICONTROL Save]**&#x200B;編輯器右上角的[!DNL SQL]，然後選取報告`Type` （`Chart`或`Table`）。 若要完成工作，請選取要儲存報告的儀表板，然後按一下&#x200B;**[!UICONTROL Save to Dashboard]**。
 
-![](../../assets/SQL_Save_Report.gif)
+![將SQL報告儲存到儀表板的動畫示範](../../assets/SQL_Save_Report.gif)
 
 ### 分析您的資料
 
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 大多數時間，結果的差異可歸因於更新週期。 如果[!DNL Commerce Intelligence]正在將資料從您的資料庫復寫到Data Warehouse，即使使用相同的查詢，您也可能會看到不同的結果。
 
-連線問題也可能導致不一致。 按一下「`Connections`」以瀏覽至「**[!DNL Manage Data** > **Connections]**」頁面以將其簽出 — 有問題的資料庫整合是否有錯誤？ 若是如此，您可能需要[重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)，才能重新執行專案。
+連線問題也可能導致不一致。 按一下「`Connections`」以瀏覽至「**[!DNL Manage Data** > **Connections]**」頁面以將其簽出 — 有問題的資料庫整合是否有錯誤？ 若是如此，您可能需要[重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)，才能重新執行專案。
 
 如果所有的整合都已成功連線，而且您並未處於更新週期中，則可能有其他問題發生。
 

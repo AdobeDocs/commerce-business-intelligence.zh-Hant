@@ -4,9 +4,9 @@ description: 瞭解公式如何在Report Builder中使用。
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 在`Report Builder`中，`formula`只是根據某些數學邏輯的一或多個量度的組合。 典型的範例看起來像這樣：
 
-![](../../assets/formula-example.png)
+![在Report Builder中顯示計算的公式範例](../../assets/formula-example.png)
 
 在此範例中，您使用`Number of orders metric (A)`和`Distinct buyers metric (B)`，目標是回答以下問題：我的買家每個月平均訂購數是多少？ 公式的引數為：
 
@@ -65,4 +65,4 @@ ht-degree: 0%
 
 您是否在上述範例中注意到公式的`timestamp`、`groupings`、`perspectives`和`filters`繼承自其輸入量度？ 請記得，公式可以像量度一樣，用來使用`perspectives`和[獨立的時間選項](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"}。
 
-若您有關於在`Report Builder`中使用公式的任何其他問題，[請聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+若您有關於在`Report Builder`中使用公式的任何其他問題，[請聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

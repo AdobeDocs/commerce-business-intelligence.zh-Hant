@@ -4,9 +4,9 @@ description: 瞭解如何將SQL查詢轉譯為您在Commerce Intelligence中使�
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 儲存路徑之後，您就可以建立`Customer LTV`欄！ 請參閱下文：
 
-![](../../assets/Customer_LTV.gif)
+![使用SQL的客戶期限值分析動畫示範](../../assets/Customer_LTV.gif)
 
 現在您已在`Customer LTV`資料表中建立新的`customers`資料行，您已準備好使用此資料行建立[量度彙總](#aggregate) （例如，找出每位客戶的平均LTV）。 您也可以`group by`或`filter`，依報表中的計算資料行，使用建置在`customers`資料表上的現有量度。
 

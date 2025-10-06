@@ -4,9 +4,9 @@ description: 瞭解如何管理您的Commerce Intelligence使用者。
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
 role: Admin, User
 feature: User Management
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->_您可以限制&#x200B;**[!UICONTROL Standard]**&#x200B;使用者對特定量度的[存取權](../../administrator/user-management/restrict-metric-access.md)。_
+>_您可以限制&#x200B;**[!UICONTROL Standard]**使用者對特定量度的[存取權](../../administrator/user-management/restrict-metric-access.md)。_
 >
 >**[!UICONTROL Standard] _使用者可以使用額外的許可權設定來存取帳單。_
 >
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 `Admin`使用者預設有權存取`Billing`標籤，但`Standard`使用者如果在他們的設定檔中選取`Billing`核取方塊，也可以取得存取權。
 
-![帳單](../../assets/billing.png)<!--{: width="550" height="363"}-->
+![帳單頁面](../../assets/billing.png)<!--{: width="550" height="363"}-->
 
 ### 技術
 

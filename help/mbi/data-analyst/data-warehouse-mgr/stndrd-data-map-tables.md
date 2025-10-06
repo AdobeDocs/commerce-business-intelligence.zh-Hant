@@ -4,9 +4,9 @@ description: 瞭解如何使用對應表格。
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 想像您正在`Report Builder`建置`Revenue by State`報告。 在您嘗試將`billing state`分組新增到您的報告並且看到以下內容之前，一切進展順利：
 
-![](../../assets/Messy_State_Segments.png)
+![圖表顯示具有不一致命名之雜亂狀態區段](../../assets/Messy_State_Segments.png)
 
 ## 這怎麼會發生？
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 在第二欄中，輸入這些值&#x200B;**應該是**&#x200B;的內容。 繼續以計費狀態範例為例，如果您希望`pa`、`PA`、`Pennsylvania`和`pennsylvania`只是`PA`，您應該在此欄位中輸入每個輸入值的`PA`。
 
-![](../../assets/Mapping_table_examples.jpg)
+![顯示原始值和標準化值的對應表範例](../../assets/Mapping_table_examples.jpg)
 
 ## 我在[!DNL Commerce Intelligence]中需要做什麼才能使用它？ {#use}
 
@@ -66,7 +66,7 @@ ht-degree: 0%
    * 在`One`側，選取`mapping`資料表和`Primary key`資料行。 在此情況下，您可以從`state_input`資料表選取`mapping_state`資料行。
    * 以下是該路徑的外觀：
 
-     ![](../../assets/State_Mapping_Path.png)
+     ![Data Warehouse管理員顯示狀態對應計算路徑](../../assets/State_Mapping_Path.png)
 
 1. 完成後，按一下&#x200B;**[!UICONTROL Save]**&#x200B;建立路徑。
 1. 儲存後路徑可能不會立即填入 — 如果發生這種情況，請按一下`Path`方塊並選取您建立的路徑。
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 更新週期完成後，您將能夠使用新的聯結欄來正確地劃分您的資料，而不是從資料庫中劃分亂七八糟的欄。 立即檢視您的分組選項 — 不再有壓力混亂：
 
-![](../../assets/Clean_State_Segments.png)
+![在標準化後顯示乾淨狀態區段的圖表](../../assets/Clean_State_Segments.png)
 
 當您想要清除Data Warehouse中某些可能亂七八糟的資料時，隨時都能使用對應表格。 不過，對應表格也可以用於其他酷炫的使用案例，例如[在 [!DNL Google Analytics channels] 中複製 [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md)。
 

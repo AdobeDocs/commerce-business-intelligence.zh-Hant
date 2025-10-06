@@ -4,9 +4,9 @@ description: 瞭解如何在新的Adobe Commerce Intelligence架構上以SQL計�
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: 8090c2e0f17f0e8d3bdec668ce546206bf024691
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 大多數帳戶的`Is customer's last order?`表格中都有名為`orders`的欄，以分析重複購買率和流失的客戶。 如果您的帳戶使用新架構，則此欄是使用`Calculation`欄建置的，並可在以下熒幕擷取中看見：
 
-![](../../assets/Is_customer_s_last_order.png)
+用於識別客戶最後訂單的![SQL計算資料行定義](../../assets/Is_customer_s_last_order.png)
 
 `Is customer's last order?`資料行使用分別別為`Customer's lifetime number of orders`和`Customer's order number`的輸入`A`和`B`。
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 若要啟用產品收入分析，大部分帳戶的`Order item total value (quantity * price)`表格中都有名為`Orders Items`的欄。 如果您的帳戶使用新架構，則此欄也是使用`Calculation`欄建置的，並可在以下熒幕擷圖中看到：
 
-![](../../assets/Order_item_total_value.png)
+訂單專案總計值的![SQL計算資料行定義](../../assets/Order_item_total_value.png)
 
 在Commerce結構描述中，`Order item total value (quantity * price)`資料行使用分別別為`qty ordered`和`base price`的輸入`A`和`B`。
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 導覽至`Calculation`，可將新的&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;資料行新增至資料表，如下所示：
 
-![](../../assets/blobid2.png)
+![顯示計算資料行結果的資料表檢視](../../assets/blobid2.png)
 
 您可以在此處執行下列步驟來建立`Calculation`欄：
 

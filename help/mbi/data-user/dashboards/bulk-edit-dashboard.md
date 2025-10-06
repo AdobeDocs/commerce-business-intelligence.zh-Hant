@@ -4,9 +4,9 @@ description: 瞭解如何在 [!DNL Commerce Intelligence]中使用大量編輯�
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 使用[!DNL Find/Replace] {#findreplace}
 
-1. 按一下儀表板名稱旁的齒輪(![](../../assets/gear-icon.png))圖示，然後按一下[!UICONTROL Bulk Edit Reports]視窗。
+1. 按一下儀表板名稱旁的齒輪（![齒輪圖示](../../assets/gear-icon.png)）圖示，然後按一下[!UICONTROL Bulk Edit Reports]視窗。
 
 1. 在快顯視窗中按一下&#x200B;**[!UICONTROL Chart Title Find and Replace]**。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ## 前置詞`Chart Names` {#prepend}
 
-1. 按一下儀表板名稱旁的齒輪(![](../../assets/gear-icon.png))圖示，然後按一下[!UICONTROL Bulk Edit Reports]視窗。
+1. 按一下儀表板名稱旁的齒輪（![齒輪圖示](../../assets/gear-icon.png)）圖示，然後按一下[!UICONTROL Bulk Edit Reports]視窗。
 
 1. 在快顯視窗中按一下&#x200B;**[!UICONTROL Prepend Report Names]**。
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 ## 正在變更`Dates` {#dates}
 
-1. 按一下儀表板名稱旁的齒輪(![](../../assets/gear-icon.png))圖示，然後選取[!UICONTROL Bulk Edit Reports]視窗。
+1. 按一下儀表板名稱旁的齒輪（![齒輪圖示](../../assets/gear-icon.png)）圖示，然後選取[!UICONTROL Bulk Edit Reports]視窗。
 
 1. 按一下彈出式視窗中的&#x200B;**[!UICONTROL Change Dates]**。
 

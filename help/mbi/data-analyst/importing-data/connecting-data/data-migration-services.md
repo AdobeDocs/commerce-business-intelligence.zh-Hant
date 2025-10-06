@@ -4,16 +4,16 @@ description: 瞭解提交請求並開始移轉所需的一切。
 exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
 
 # 資料移轉
 
-移轉至新的資料庫結構描述、伺服器或報告資料庫並不一定會有壓力。 [[!DNL Adobe] 服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)提供移轉協助。
+移轉至新的資料庫結構描述、伺服器或報告資料庫並不一定會有壓力。 [[!DNL Adobe] 服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)提供移轉協助。
 
 為確保轉換儘可能順暢，提交移轉請求時請務必儘可能詳細說明。 本主題提供提交請求並開始移轉所需的一切。 提供您需求的全面資訊，確保您的專案範圍設定正確，而且估計準確。
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 以下是範例說明：
 
-![](../../../assets/Migration_Spreadsheet.png)
+![具有資料庫結構描述和資料表結構的移轉試算表範本](../../../assets/Migration_Spreadsheet.png)
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ## 如何提交請求？ {#submitreq}
 
-您可以透過[提交支援要求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)與我們聯絡。
+您可以透過[提交支援要求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)與我們聯絡。
 
 如果您依照上一節中的步驟建立欄位比對試算表，別忘了附加試算表。
 

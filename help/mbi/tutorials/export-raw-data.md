@@ -4,16 +4,16 @@ description: 瞭解如何從您的 [!DNL Commerce Intelligence] Data Warehouse�
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
 
 # 匯出原始資料
 
-使用原始資料匯出，您可以從Data Warehouse匯出記錄，以更密切地瞭解為您的儀表板提供動力的內容。 此外，原始資料匯出可協助您[精確找出資料差異](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=zh-Hant)。
+使用原始資料匯出，您可以從Data Warehouse匯出記錄，以更密切地瞭解為您的儀表板提供動力的內容。 此外，原始資料匯出可協助您[精確找出資料差異](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html)。
 
 原始資料匯出可讓您存取透過取消標準化及預先彙總相關量度而產生的其他欄和維度。 例如，`User's first order date`是可為[!DNL Commerce Intelligence]中的每個使用者匯出的維度，但資料庫中可能無法使用。
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 在圖表層級檢視整個程式。
 
-![](../assets/Chart-level_export.gif)
+![從圖表匯出原始資料的動畫示範](../assets/Chart-level_export.gif)
 
 ## 步驟2：下載匯出 {#download}
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 若要檢查您的匯出是否已就緒，請按一下畫面右上角的&#x200B;**[!UICONTROL Raw Data Exports]**。 按一下&#x200B;**[!UICONTROL Download]**&#x200B;下載您匯出的壓縮`.csv`檔案。
 
-![](../assets/Downloading_export.gif)
+![下載匯出CSV檔案的動畫示範](../assets/Downloading_export.gif)
 
 ## 步驟3：存取歷史匯出 {#historical}
 

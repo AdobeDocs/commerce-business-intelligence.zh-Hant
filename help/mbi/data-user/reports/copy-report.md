@@ -4,9 +4,9 @@ description: 瞭解如何建立報告副本。
 exl-id: c57783b4-32ae-4054-a85a-5ddf63cfd34b
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '101'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,4 @@ ht-degree: 0%
 
 在這些情況下，請啟動`Chart Editor`並按一下右上角的&#x200B;**[!UICONTROL Save As]**。 這會複製您現有的圖表，並以您選取的新名稱將其新增到您目前的儀表板，並允許您立即編輯新圖表的設定。
 
-![](../../assets/create-report-copy.png)
+![圖表編輯器顯示[另存新檔]選項，以建立報告的復本](../../assets/create-report-copy.png)

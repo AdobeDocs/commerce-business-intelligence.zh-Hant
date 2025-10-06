@@ -4,9 +4,9 @@ description: 瞭解企業的優惠券成效，是細分訂單，以及更清楚�
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: d8fc96a58b72c601a5700f35ea1f3dc982d76571
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 本主題記錄建立此分析所需的步驟，以瞭解取得優惠券的客戶如何執行、檢視趨勢以及追蹤個別優惠券程式碼的使用情況。
 
-![](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
+![優惠券代碼分析儀表板顯示使用情況和績效量度](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
 
 ## 快速入門
 
@@ -59,46 +59,46 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->每個報告的**0&rbrace;列為[!UICONTROL Time Period]。 `All-time`您可以根據分析需求隨意變更。 Adobe建議此儀表板上的所有報告涵蓋相同時段，例如`All time`、`Year-to-date`或`Last 365 days`。
+>每個報告的**0}列為[!UICONTROL Time Period]。 `All-time`您可以根據分析需求隨意變更。 Adobe建議此儀表板上的所有報告涵蓋相同時段，例如`All time`、`Year-to-date`或`Last 365 days`。
 
 * **含優惠券的訂單**
-   * &#x200B;
-     [!UICONTROL 公制]: `Orders`
+   * 
+     [！UICONTROL公制]: `Orders`
       * 新增篩選器：
          * [`A`] `coupon_code` **不是** `[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 間隔]: `None`
+   * 
+     [！UICONTROL間隔]: `None`
    * [!UICONTROL Chart type]：`Number (scalar)`
 
 * **沒有優惠券的訂單**
-   * &#x200B;
-     [!UICONTROL 公制]: `Orders`
+   * 
+     [！UICONTROL公制]: `Orders`
       * 新增篩選器：
          * [`A`] `coupon_code` **是** `[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 間隔]: `None`
+   * 
+     [！UICONTROL間隔]: `None`
    * [!UICONTROL Chart type]：`Number (scalar)`
 
 * **含優惠券的訂單淨收入**
-   * &#x200B;
-     [!UICONTROL 公制]: `Revenue`
+   * 
+     [！UICONTROL公制]: `Revenue`
       * 新增篩選器：
          * [`A`] `coupon_code` **不是** `[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 間隔]: `None`
+   * 
+     [！UICONTROL間隔]: `None`
    * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **優惠券折扣**
    * [!UICONTROL Metric]： `Coupon discount amount`
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 間隔]: `None`
+   * 
+     [！UICONTROL間隔]: `None`
    * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **平均期限收入：已取得優惠券的客戶**
@@ -107,8 +107,8 @@ ht-degree: 0%
          * [`A`] `Customer's first order's coupon_code` **不是** `[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 間隔]: `None`
+   * 
+     [！UICONTROL間隔]: `None`
    * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **平均期限收入：非優惠券取得的客戶**
@@ -117,8 +117,8 @@ ht-degree: 0%
          * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 間隔]: `None`
+   * 
+     [！UICONTROL間隔]: `None`
    * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **優惠券使用詳細資料（首次訂購）**
@@ -141,24 +141,24 @@ ht-degree: 0%
 
    * 建立公式： `Gross revenue`
       * [!UICONTROL Formula]： `(B – C)`
-      * &#x200B;
+      * 
         [!UICONTROL Format]: `Currency`
 
    * 建立公式： **%已折扣**
       * 公式： `(C / (B - C))`
-      * &#x200B;
+      * 
         [!UICONTROL Format]: `Percentage`
 
    * 建立公式： `Average order discount`
       * [!UICONTROL Formula]： `(C / A)`
-      * &#x200B;
+      * 
         [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 間隔]: `None`
-   * &#x200B;
-     [!UICONTROL 圖表型別]: `Table`
+   * 
+     [！UICONTROL間隔]: `None`
+   * 
+     [！UICONTROL圖表型別]: `Table`
 
 * **依第一筆贈券的平均期限收入**
    * [!UICONTROL Metric]：**平均期限收入**
@@ -166,8 +166,8 @@ ht-degree: 0%
          * [`A`] `coupon_code` **是**`[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 間隔]: `None`
+   * 
+     [！UICONTROL間隔]: `None`
    * [!UICONTROL Chart type]： `Number (scalar)`
 
 * **優惠券使用詳細資料（首次訂購）**
@@ -176,11 +176,11 @@ ht-degree: 0%
          * [`A`] `Customer's first order's coupon_code` **不是** `[NULL]`
 
    * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 間隔]: `None`
+   * 
+     [！UICONTROL間隔]: `None`
    * [!UICONTROL Group by]： `Customer's first order's coupon_code`
-   * &#x200B;
-     [!UICONTROL 圖表型別]: **Column**
+   * 
+     [！UICONTROL圖表型別]: **Column**
 
 * **依優惠券/非優惠券贏取的新客戶**
    * 量度`1`： `New customers`
@@ -205,4 +205,4 @@ ht-degree: 0%
 >
 >截至Adobe Commerce 2.4.7，客戶可以使用&#x200B;**quote_coupons**&#x200B;和&#x200B;**sales_order_coupons**&#x200B;資料表，深入瞭解客戶如何使用多張優惠券。
 
-![](../../assets/multicoupon_relationship_tables.png)
+![多折價券分析的資料表關係圖](../../assets/multicoupon_relationship_tables.png)

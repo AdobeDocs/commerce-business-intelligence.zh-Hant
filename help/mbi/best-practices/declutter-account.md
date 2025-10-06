@@ -4,9 +4,9 @@ description: 瞭解如何清除您的 [!DNL Commerce Intelligence] 帳戶。
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
 role: Admin, User
 feature: Accounts
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -61,13 +61,13 @@ ht-degree: 0%
 
 **刪除整個儀表板**
 
-1. 選取&#x200B;**[!UICONTROL Manage Data]**，然後選取&#x200B;**[!UICONTROL Dashboards**]。
+1. 選取&#x200B;**[!UICONTROL Manage Data]**，然後選取**[!UICONTROL Dashboards**]。
 1. 按一下您要刪除的控制面板。
 1. 按一下&#x200B;**[!UICONTROL Delete Dashboard]**。
 
 您也可以從儀表板本身選取&#x200B;**[!UICONTROL Dashboard Options]**，然後選取&#x200B;**[!UICONTROL Delete]**。
 
-![](../../mbi/assets/Delete_from_dashboard.png)
+![刪除儀表板齒輪選單中的選項](../../mbi/assets/Delete_from_dashboard.png)
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 以下是未使用報表刪除程式的概覽：
 
-![](../../mbi/assets/unused_reports.png)
+![未使用的報告清單顯示不在任何儀表板上報告](../../mbi/assets/unused_reports.png)
 
 ## 步驟3：刪除未使用的量度
 
@@ -93,7 +93,7 @@ ht-degree: 0%
 1. 在頁面底部，您會看到名為&#x200B;**[!UICONTROL Dependent Charts]**&#x200B;的區段。 按一下連結，即可產生此量度的相依報表清單。
 1. 系統完成檢查後，[!DNL Commerce Intelligence]會顯示使用此量度的儀表板、報表和使用者清單。
 
-![](../../mbi/assets/report_dependecies.png)
+![報告相依性對話方塊，顯示哪些報告使用選取的資料行](../../mbi/assets/report_dependecies.png)
 
 如果您決定不再需要該量度，請按一下&#x200B;**[!UICONTROL Metrics]**&#x200B;以導覽回&#x200B;**[!UICONTROL Back to Metric List]**&#x200B;頁面，並尋找您要刪除的量度。 按一下&#x200B;**[!UICONTROL Delete]**。
 
@@ -112,6 +112,7 @@ ht-degree: 0%
 1. 前往&#x200B;**[!DNL Manage Data]**，然後&#x200B;**[!UICONTROL Data Warehouse]**。
 1. 在&#x200B;**[!UICONTROL Synced Tables]**&#x200B;清單中，導覽至包含資料行的資料表。
 1. 勾選一或多個要取消同步之欄旁的一或多個方塊。
+
    >[!NOTE]
    >
    >您不刪除整個資料表就無法取消同步處理主索引鍵資料行。
@@ -120,7 +121,7 @@ ht-degree: 0%
 
 以下是整個程式的概況：
 
-![](../../mbi/assets/drop_column.png)
+在Data Warehouse Manager中![卸除資料行選項](../../mbi/assets/drop_column.png)
 
 ## 正在結束
 

@@ -4,9 +4,9 @@ description: 瞭解如何建立將您的電子商務資料與您的訂單和客�
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 如果您需要重新整理程式，以下快速瞭解同步表格和欄：
 
-![](../../assets/Syncing_New_Columns.gif)
+![在Data Warehouse中同步新欄的動畫示範](../../assets/Syncing_New_Columns.gif)
 
 從`orders`表格建立連結至[!DNL Google eCommerce]表格之後，您會在下列清單中建立前三個維度。 接著，使用這些維度在`customers`表格中建立三個使用者/客戶維度。 若要完成，請將這些資料行加入`orders`資料表。
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 1. 在顯示的視窗中，將`Many`端設定為`orders.order\_id`，或將`orders`表格中包含訂單ID的欄設定為。
 1. 在`One`端，找到`Google ECommerce`資料表，然後將資料行設定為`transactionID`。
 
-   ![](../../assets/google-ecommerce-table.png)
+   ![Google電子商務表格結構顯示可用的維度](../../assets/google-ecommerce-table.png)
 
 1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;以建立路徑。
 1. 新增路徑後，再按一下&#x200B;**[!UICONTROL Select table and column]**&#x200B;下拉式清單。
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 以下是整個程式的概況：
 
-![](../../assets/help_center.gif)
+![建立Google Analytics來源維度的動畫示範](../../assets/help_center.gif)
 
 接下來，嘗試建立&#x200B;**訂單的[!DNL Google Analytics]媒體**&#x200B;和`campaign`。 這些維度沒有太多變更，所以請嘗試一下。 但如果您卡住了，可以檢視[本文結尾](#stuck)，看看有什麼不同之處。
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 以下是整個程式的概況：
 
-![](../../assets/help_center2.gif)
+![建立客戶贏取維度的動畫示範](../../assets/help_center2.gif)
 
 將`Customer's first order's`媒體和`campaign`維度加入`orders`表格以完成作業。 加入維度，如果發生問題，則在您需要協助時檢視[文章結尾](#stuck)。
 

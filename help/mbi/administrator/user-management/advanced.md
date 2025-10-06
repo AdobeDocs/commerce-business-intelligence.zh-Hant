@@ -4,9 +4,9 @@ description: 提升資料可見度、簡化報告、依使用者群組量身打�
 role: Admin, User
 feature: User Management
 exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
-source-git-commit: df408b8947a62cdb498b56370be965c89c45f6ff
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -392,7 +392,7 @@ ht-degree: 0%
 
 若要設定使用者群組：
 
-1. 移至&#x200B;[!UICONTROL **管理使用者**] > [!UICONTROL **User Groups]**&#x200B;以檢視現有的使用者群組。
+1. 移至&#x200B;[!UICONTROL **管理使用者**] > [!UICONTROL **User Groups]**以檢視現有的使用者群組。
 
    ![設定使用者群組](../../assets/configure-user-groups.png)
 
@@ -460,7 +460,7 @@ ht-degree: 0%
 
 不過，使用者可檢視根據使用者設定期間對應至他們的存放區進行篩選的儀表板資料。
 
-![檢視儀表板管理員](../../assets/view-dashboard-user.png)
+![檢視已篩選管理員的控制面板](../../assets/view-dashboard-user.png)
 
 >[!TIP]
 >

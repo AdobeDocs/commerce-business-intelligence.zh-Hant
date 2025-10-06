@@ -4,9 +4,9 @@ description: 瞭解訪客訂單對您資料的影響，以及在 [!DNL Commerce 
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 * **如果所有客戶皆已註冊**，且不允許來賓訂單，則表示`orders`資料表中的每筆記錄在`customer\_id`資料行中都有一個值。 因此，每個訂單都會聯結回`customers`表格。
 
-  ![](../../assets/guest-orders-4.png)
+  ![客服訂單資料表顯示客戶資訊](../../assets/guest-orders-4.png)
 
 * **如果允許來賓訂單**，這表示某些訂單在`customer\_id`欄中沒有值。 在`customer\_id`資料表上，`orders`資料行的值只提供給已註冊客戶。 未註冊的客戶會收到此欄的`NULL` （或空白）值。 因此，並非所有訂單記錄在`customers`資料表中都有相符的記錄。
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 您可能會注意到，在此設定型別中設定的`Customers we count`篩選器有`Customer's order number = 1`的篩選器。
 
-![](../../assets/guest-orders-filter-set.png)
+![用於排除來賓訂單的篩選器集組態](../../assets/guest-orders-filter-set.png)
 
 在沒有訪客訂單的情況下，每個客戶在客戶表格中都以唯一資料列存在（請參閱圖1）。 `New customers`之類的量度可以僅根據`created\_at`日期計算此資料表的ID，以根據註冊日期瞭解新客戶。
 

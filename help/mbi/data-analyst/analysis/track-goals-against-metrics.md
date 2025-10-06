@@ -4,9 +4,9 @@ description: 瞭解如何設定儀表板，協助您根據實際資料（包括�
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 大多數使用者端想要追蹤其&#x200B;**業務目標**，但未意識到這在[!DNL Adobe Commerce Intelligence]中可行。 本主題將示範如何設定儀表板，協助您根據實際資料（包括收入、新註冊使用者和一段時間內的訂單）追蹤業務目標。 您也會瞭解如何比較年度與年度績效，全都透過如下的儀表板進行：
 
-![](../../assets/Goals-_dashboard_2.png)
+![顯示目標追蹤實際量度績效的控制面板](../../assets/Goals-_dashboard_2.png)
 
 開始之前，您應該檢閱[檔案上傳程式](../importing-data/connecting-data/using-file-uploader.md)，並確定您已定義指定期間的業務目標。
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 您可以使用[檔案上傳程式](../importing-data/connecting-data/using-file-uploader.md)及下列影像來格式化您的檔案。 使用者端在[!DNL Commerce Intelligence]中追蹤的最常見目標包括「訂購」、「收入」和「新註冊帳戶」。
 
-![](../../assets/Goals-_Excel.png)
+追蹤目標與量度的![Excel試算表範本](../../assets/Goals-_Excel.png)
 
 ## 量度
 
@@ -55,46 +55,46 @@ ht-degree: 0%
 
 * 剩餘&#x200B;**個收入可達成目標**
 * 量度`A`： `Revenue`
-* &#x200B;
-  [!UICONTROL 公制]: `Revenue`
+* 
+  [！UICONTROL公制]: `Revenue`
 
 * 量度`B`： `Target Revenue`
 * [!UICONTROL Metric]： `Monthly Revenue Target`
 
 * [!UICONTROL Formula]： `Revenue left to achieve target`
-* &#x200B;
-  [!UICONTROL 公式]: `(B-A)`
-* &#x200B;
+* 
+  [！UICONTROL公式]: `(B-A)`
+* 
   [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]： （無論您想要哪個相關時段）
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
-* &#x200B;
-  [!UICONTROL 圖表型別]: `Scalar`
+* 
+  [！UICONTROL圖表型別]: `Scalar`
 
 * **收入目標**
 * 量度`A`： `Revenue`
-* &#x200B;
-  [!UICONTROL 公制]: `Revenue`
+* 
+  [！UICONTROL公制]: `Revenue`
 
 * 量度`B`： `Target Revenue`
 * [!UICONTROL Metric]： `Monthly Revenue Target`
 
 * 量度`C`： `Revenue (amount change since previous year)` （隱藏）
-* &#x200B;
-  [!UICONTROL 公制]: `Revenue`
+* 
+  [！UICONTROL公制]: `Revenue`
 * [!UICONTROL Perspective]： `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]： （去年這個月）
-* &#x200B;
-  [!UICONTROL 公式]: `(A-C)`
-* &#x200B;
+* 
+  [！UICONTROL公式]: `(A-C)`
+* 
   [!UICONTROL Format]: `Currency`
 
 * 關閉`Multiple Y-Axes`
 * [!UICONTROL Time period]： （無論您想要哪個相關時段）*
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]： `Line Chart`
 

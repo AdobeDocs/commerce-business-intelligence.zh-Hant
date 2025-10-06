@@ -4,9 +4,9 @@ description: 瞭解如何使用及共用您的儀表板。
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
 role: Admin, User
 feature: Dashboards
-source-git-commit: d40a04cedb3aee3385a8c34e0919f954431e0897
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 若要檢視誰擁有儀表板，請按一下左上角的儀表板下拉式清單。 任何下方沒有名稱的儀表板都屬於您。
 
-![](../../mbi/assets/Dash_ownership.png)
+![顯示建立者與許可權的儀表板擁有權指標](../../mbi/assets/Dash_ownership.png)
 
 若要移除所有重複的控制面板：
 

@@ -4,9 +4,9 @@ description: 瞭解連線RDS執行個體的步驟。
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 在每個資料庫的認證頁面(**[!UICONTROL Manage Data** > **Integrations]**)上，您會看到一個方塊，其中包含您必須授權才能將R[!DNL RDS]連線至[!DNL Commerce Intelligence]的IP位址： `54.88.76.97`與`34.250.211.151`。 請檢視`MySQL credentials`頁面，其中您醒目提示IP位址方塊：
 
-![](../../../assets/RDS_IP.png)
+![Amazon RDS安全性群組設定顯示IP位址組態](../../../assets/RDS_IP.png)
 
 若要讓[!DNL Commerce Intelligence]成功連線至您的[!DNL RDS]執行個體，您必須透過AWS管理主控台將這些IP位址新增至適當的資料庫安全性群組。 這些IP位址可以新增至現有群組，或者您可以建立一個IP位址 — 重要的是，群組已獲得存取您要連線至[!DNL Commerce Intelligence]的執行個體的授權。
 
@@ -55,6 +55,6 @@ ht-degree: 0%
 
 如果您使用加密連線，請將資料庫認證頁面上的`Encrypted`切換變更為`Yes`。 這會顯示一個額外表單來設定加密：
 
-![](../../../assets/sql-integration-encrypted-yes.png)
+啟用加密的![SQL整合表單顯示[是]選項](../../../assets/sql-integration-encrypted-yes.png)
 
 

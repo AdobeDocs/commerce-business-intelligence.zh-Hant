@@ -4,9 +4,9 @@ description: 瞭解透過修改現有表格或使用SQL將多個表格聯結或�
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1120'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 `Data Warehouse Views`功能是藉由修改現有資料表，或使用SQL將多個資料表聯結或合併在一起，來建立新倉儲資料表的方法。 建立`Data Warehouse View`並由更新週期處理後，它就會在Data Warehouse中填入`Data Warehouse Views`下拉式清單下的新表格，如下所示：
 
-![](../../assets/Data_Warehouse.png)
+![Data Warehouse介面顯示資料表管理選項](../../assets/Data_Warehouse.png)
 
 從這裡，您的新檢視功能與任何其他表格一樣，讓您能夠建立新的計算欄，或在其上建立量度和報表。
 
@@ -31,7 +31,7 @@ ht-degree: 6%
 
 導覽至「`Data Warehouse Views` > **[!UICONTROL Manage Data]**」可以建立新的&#x200B;**[!UICONTROL Data Warehouse Views]**&#x200B;並刪除現有的檢視，如下所示：
 
-![](../../assets/Data_Warehouse_Views.png)
+![Data Warehouse檢視區段顯示自訂檢視設定](../../assets/Data_Warehouse_Views.png)
 
 您可以在此處依照下列範例說明建立檢視：
 
@@ -136,7 +136,7 @@ ht-degree: 6%
 
 **正在尋找其他說明嗎？**
 
-技術支援不包含寫入SQL和建立`Data Warehouse Views`。 不過，[服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)確實提供建立檢視的協助。 從使用新資料庫移轉舊版資料庫以建立單一Data Warehouse檢視進行特定分析的所有作業，支援團隊都能提供協助。
+技術支援不包含寫入SQL和建立`Data Warehouse Views`。 不過，[服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)確實提供建立檢視的協助。 從使用新資料庫移轉舊版資料庫以建立單一Data Warehouse檢視進行特定分析的所有作業，支援團隊都能提供協助。
 
 通常，為了合併2-3個類似結構的表格而建立新的`Data Warehouse View`需要五個小時的服務時間，這相當於大約1,250美元的工作。 不過，以下是一些可能會增加所需預期投資的常見因素：
 

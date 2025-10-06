@@ -4,9 +4,9 @@ description: 瞭解如何使用您的報告資料。
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -128,4 +128,4 @@ _[總和`Time between a customer's registration date and first purchase date`] /
 
 請參閱下文：
 
-![](../../assets/exp-rep-as-image.gif)
+![將報表匯出為影像檔案的動畫示範](../../assets/exp-rep-as-image.gif)

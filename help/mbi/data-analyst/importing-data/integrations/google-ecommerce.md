@@ -4,9 +4,9 @@ description: 瞭解您最有價值的轉介管道。
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >需要[管理員許可權](../../../administrator/user-management/user-management.md)。
 
-![](../../../assets/google-ecommerce-logo.png)
+![Google電子商務標誌](../../../assets/google-ecommerce-logo.png)
 
 您有穩定的流量和訂單流，這表示您有效地觸及和贏取客戶。 但您最有價值的轉介管道為何？ 從某個來源取得的客戶平均期限值相對於從另一個來源取得的客戶為何？ 將您的訂單轉介來源資料從[!DNL Google ECommerce]連線至[!DNL Commerce Intelligence]，即可建置分析，協助您識別[最有價值的行銷管道](../../../data-analyst/analysis/most-value-source-channel.md)。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
    如果您有多個設定檔且需要一些協助來識別哪一個，請參閱下面的**連線多個[!DNL Google Analytics]設定檔區段。
 
-   ![](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
+   ![顯示連線多個Google Analytics設定檔之選項的表單](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
 
 1. 變更會自動儲存，因此完成時請按一下&#x200B;**[!UICONTROL Back to Connections]**。
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 ## 相關：
 
 * [預期 [!DNL Google ECommerce] 資料](../integrations/google-ecommerce-data.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [正在設定 [!DNL Google ECommerce] 追蹤](https://support.google.com/analytics/answer/1009612?hl=en)
 * [探索您最有價值的贏取來源和管道](../../analysis/most-value-source-channel.md)
 * [提高廣告行銷活動的ROI](../../analysis/roi-ad-camp.md)

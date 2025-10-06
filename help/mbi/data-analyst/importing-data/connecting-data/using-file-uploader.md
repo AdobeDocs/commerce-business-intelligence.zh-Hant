@@ -4,9 +4,9 @@ description: 瞭解如何將您的所有資料都放入單一Data Warehouse。
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1298'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 ## 限制和需求 {#require}
 
 1. **唯一支援的檔案上傳格式為`CSV`或`comma separated values`**。 如果您使用Excel，可以使用「另存新檔」功能將檔案儲存為`.csv`格式。
-1. **`CSV`檔案必須使用`UTF-8 encoding`**。 在大多數情況下，這不是問題。 如果您在上傳檔案時發生此錯誤，[請參閱此支援文章](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=zh-Hant)。
+1. **`CSV`檔案必須使用`UTF-8 encoding`**。 在大多數情況下，這不是問題。 如果您在上傳檔案時發生此錯誤，[請參閱此支援文章](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html)。
 1. **檔案不能大於100MB**。 如果檔案大於此值，請將表格分割為多個區塊，然後另存為個別檔案。 您可以在載入初始檔案後附加資料。
 1. **所有資料表都必須有`primary key`**。 表格中至少要有一欄可用作`primary key`，或表格中每一列的唯一識別碼。 任何指定為`primary key`的資料行都可以&#x200B;*永不*&#x200B;為Null。 `primary key`可以簡單到只新增為每一列提供數字的資料行，也可以串連為兩個資料行，組成唯一值的資料行（例如，`campaign name`和`date`）。
 
@@ -105,11 +105,11 @@ ht-degree: 0%
 
 如果您需要視覺效果，請檢視整個程式：
 
-![](../../../assets/fileupload.gif)
+![以動畫方式展示檔案上傳程式，顯示正在新增的資料](../../../assets/fileupload.gif)
 
 上傳的表格會顯示在Data Warehouse Manager中表格清單的&#x200B;**檔案上傳**&#x200B;區段（在「所有表格」和「同步表格」選項中）下：
 
-![](../../../assets/upload-tables.png)
+![上傳資料表介面顯示可用的資料匯入資料表](../../../assets/upload-tables.png)
 
 ## 更新資料或將資料附加至現有表格 {#appending}
 

@@ -4,9 +4,9 @@ description: 瞭解如何透過四個步驟程式將Microsoft SQL資料庫連線
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 >
 >需要[管理員許可權](../../../administrator/user-management/user-management.md)。
 
-![](../../../assets/MicrosoftSQLServer-logo.png)
+![Microsoft SQL Server標誌](../../../assets/MicrosoftSQLServer-logo.png)
 
 本主題說明如何在四步驟程式中將[!DNL Microsoft SQL]資料庫連線至[!DNL Commerce Intelligence]。 此程式需要伺服器連線和SQL的相關技術專業知識，並且可能需要團隊開發人員的支援。
 
-[!DNL Commerce Intelligence]支援[!DNL Amazon RDS]、[!DNL EC2]、[!DNL Microsoft SQL Azure]和其他大部分的雲端伺服器提供者。 若您對特定主機有任何疑問，[請提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)，讓我們提供此資訊。
+[!DNL Commerce Intelligence]支援[!DNL Amazon RDS]、[!DNL EC2]、[!DNL Microsoft SQL Azure]和其他大部分的雲端伺服器提供者。 若您對特定主機有任何疑問，[請提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)，讓我們提供此資訊。
 
 您的系統需要對資料庫執行SELECT查詢。 這項作業最初是為了取得資料庫結構的快照，然後定期超時以保持資料最新。 您的更新是漸進式的，而Adobe會限制更新頻率和時間，以防止伺服器上出現任何不想要的負載。
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 1. 在[!DNL Commerce Intelligence]底下的&#x200B;**[!UICONTROL Manage Data** > **Connections]**&#x200B;中輸入伺服器IP位址、使用者名稱和密碼。
 
-   ![](../../../assets/manage-data-connections.png)
+   ![顯示資料庫整合的「管理資料連線」頁面](../../../assets/manage-data-connections.png)
 
 1. 按一下&#x200B;**[!UICONTROL Add a Data Source]**。
 

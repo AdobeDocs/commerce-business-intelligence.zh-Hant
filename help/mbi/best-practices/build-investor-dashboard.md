@@ -4,9 +4,9 @@ description: 瞭解如何為投資者建立儀表板。
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
    * 量度 — 收入
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
    * 量度 — 首次訂購收入
-   * 篩選器 — 使用者的訂單編號等於1
+      * 篩選器 — 使用者的訂單編號等於1
    * 量度2 — 重複訂購收入
       * 篩選器 — 使用者的訂單編號大於1
    * 取消勾選多個Y軸的方塊
@@ -77,4 +77,4 @@ ht-degree: 0%
 
 周詳地組織報告，並注意詳細資訊。 完成後，控制面板看起來類似以下畫面：
 
-![](../../mbi/assets/investor-dboard-example.png)
+![建立投資者儀表板](../../mbi/assets/investor-dboard-example.png)

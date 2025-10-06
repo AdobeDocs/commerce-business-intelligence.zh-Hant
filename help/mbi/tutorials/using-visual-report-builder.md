@@ -4,9 +4,9 @@ description: 瞭解如何分析特定時段內的報表資料。
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -37,13 +37,13 @@ ht-degree: 0%
 
 假設您想要建立報表，顯示每筆訂單的平均收入。 在此情況下，您會將`Revenue`量度除以`Number of orders`量度。
 
-![](../assets/ave-rev-per-order.png)
+![使用視覺Report Builder](../assets/ave-rev-per-order.png)
 
 ## 步驟4：設定`Time Period`和`Interval of Analysis` {#time}
 
 若要聚焦於特定時間段，您可以設定分析的時段。 您也可以選擇時間間隔來區隔資料（例如，按年、按季度或按月）。 使用圖表右上角的功能表來設定時段和間隔。
 
-![](../assets/Time_Options_Report_Builder.png)
+![使用視覺Report Builder](../assets/Time_Options_Report_Builder.png)
 
 設定時段的特定日期範圍時，請確定開始日期是間隔的開始，結束日期是間隔的結束。
 
@@ -57,17 +57,17 @@ ht-degree: 0%
 
 返回每個訂單範例的平均收入，並將「群組依據」設定為促銷代碼。 這顯示有促銷代碼和無促銷代碼的訂單的每份訂單平均收入。
 
-![](../assets/Group_By_Report_Builder.png)
+![使用視覺Report Builder](../assets/Group_By_Report_Builder.png)
 
 如果分析中包含的量度是建立在不同資料表格上，快顯視窗可讓您選取每個表格中相符的資料維度。 此處的目標是尋找共用分段值型別的維度：
 
-![](../assets/Dimension_Editor.png)
+![使用視覺Report Builder](../assets/Dimension_Editor.png)
 
 ## 步驟6：設定`Metric Filters`、`Perspective`和`Time Interval` {#metric-specific}
 
-對於新增至分析的每個量度，您可以新增篩選器、選取相關的資料透視，以及設定`time interval`選項。 若要存取這些功能，請按一下位於報表中所包含量度旁的漏斗(`Filter`)、眼睛(`Perspective`)和時鐘(`Time`)圖示。
+對於新增至分析的每個量度，您可以新增篩選器、選取相關的資料透視，以及設定`time interval`選項。 若要存取這些功能，請按一下報告中所包含量度旁的funnel (`Filter`)、眼睛(`Perspective`)和時鐘(`Time`)圖示。
 
-![](../assets/Filters_Perspective_Interval_Report_builder.png)
+![使用視覺Report Builder](../assets/Filters_Perspective_Interval_Report_builder.png)
 
 ### `Filters`
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 新增多個篩選器可讓您嚴格控制圖表的資料。 依預設，所有篩選條件都必須為true，才會包含資料片段，但您可以編輯「篩選規則」文字方塊來建立OR關係。
 
-![](../assets/edit-filter-rules.png)
+![使用視覺Report Builder](../assets/edit-filter-rules.png)
 
 ### `Perspectives`
 
@@ -91,23 +91,23 @@ ht-degree: 0%
 
 - `Standard perspective`：標準透視在x軸上顯示相符日期的結果（例如1月的收入）。 這是您在「每筆訂單的平均收入」範例中使用的角度。
 
-![](../assets/Standard.png)
+![使用視覺Report Builder](../assets/Standard.png)
 
 - `Amount`或`Percent Change`與`Previous Period`的比較：此觀點顯示從一個間隔到下一個間隔的量或百分比變更，可用來測量快速變更量度的變更率。 這裡還有一個視角來比較間隔與去年同一時段，以顯示年與年的成長率。
 
-![](../assets/Amt_or_Percent_Change.png)
+![使用視覺Report Builder](../assets/Amt_or_Percent_Change.png)
 
 - `Cumulative perspective`： `cumulative perspective`會顯示該時段內量度的進行中或累計總和。 這通常用於分析客戶總數及規劃未來容量。
 
-![](../assets/Cumulative_Perspective.png)
+![使用視覺Report Builder](../assets/Cumulative_Perspective.png)
 
 - `Percent of First Value perspective`：此透視以分析中包含的首次時間間隔的百分比顯示資料。 這對於測量特定動作相對於第一個週期績效的有效性很有幫助。
 
-![](../assets/Percent_of_First_Value.png)
+![使用視覺Report Builder](../assets/Percent_of_First_Value.png)
 
 - `Rolling averages window perspective`：滾動平均視窗透視會顯示指定時間範圍內量度的滾動平均值。 間隔必須與報告層級上設定的間隔相同。 例如，如果報表依周顯示收入的最後一個完整季度，您可以將滾動平均視窗時間範圍設定為四周。 這表示前三個值為Null，而第四個值代表前四週收入的平均值。 為清楚起見，如果您以滾動平均檢視相同的量度，如下列範例所示，請務必關閉`Multiple Y-Axes`核取方塊。
 
-![](../assets/rolling_avg_window.png)
+![使用視覺Report Builder](../assets/rolling_avg_window.png)
 
 ### 量度特定時間選項
 
@@ -131,7 +131,7 @@ ht-degree: 0%
 
 然後，您可以按一下「**[!UICONTROL Save to Dashboard]**」以儲存報表。
 
-![](../assets/save-to-dashboard.png)
+![使用視覺Report Builder](../assets/save-to-dashboard.png)
 
 ## 報表輸出
 
@@ -139,14 +139,14 @@ ht-degree: 0%
 
 ### 圖表
 
-![](../assets/RB_Chart.png)
+![使用視覺Report Builder](../assets/RB_Chart.png)
 
 ### 表格
 
-![](../assets/RB_Table.png)
+![使用視覺Report Builder](../assets/RB_Table.png)
 
 ### 數字(`scalar`)
 
-![](../assets/RB_Scalar.png)
+![使用視覺Report Builder](../assets/RB_Scalar.png)
 
 恭喜！您已完成。

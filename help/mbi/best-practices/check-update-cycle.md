@@ -4,9 +4,9 @@ description: 瞭解如何檢查更新週期狀態。
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 0%
 
 ## 為何要檢查更新週期狀態？
 
-當您稽核[!DNL Commerce Intelligence]帳戶中的資料時，檢查狀態更新週期會很有用。 如果您看到的[個結果不符合您的預期](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)，例如，[!DNL Commerce Intelligence]中的每日銷售與您在電子商務平台或[[!DNL Google] 電子商務收入](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=zh-Hant)中看到的不相符專案，您可以檢查最後一個資料點，以檢視問題在更新完成後是否得以解決。
+當您稽核[!DNL Commerce Intelligence]帳戶中的資料時，檢查狀態更新週期會很有用。 如果您看到的[個結果不符合您的預期](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)，例如，[!DNL Commerce Intelligence]中的每日銷售與您在電子商務平台或[[!DNL Google] 電子商務收入](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html)中看到的不相符專案，您可以檢查最後一個資料點，以檢視問題在更新完成後是否得以解決。
 
 ## [!UICONTROL Read-Only]和[!UICONTROL Standard]位使用者
 
 `Read-only`使用者可以登入其儀表板，並將滑鼠游標移至頁面右上角的圖示上，以檢視資料最近更新的時間。 這會顯示提取最後一個資料點的時間。
 
-![](../../mbi/assets/last-success-data.png)
+![介面中顯示的上次成功資料更新時間戳記](../../mbi/assets/last-success-data.png)
 
 ## [!UICONTROL Admin]位使用者
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 如需詳細資訊，管理員使用者可以按一下&#x200B;**[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]**。
 
-![](../../mbi/assets/detail-manage-data-integrations.png)
+![管理資料整合頁面，顯示連線詳細資料和更新狀態](../../mbi/assets/detail-manage-data-integrations.png)
 
 此頁面顯示目前的更新狀態以及上次完成更新的時間。
 

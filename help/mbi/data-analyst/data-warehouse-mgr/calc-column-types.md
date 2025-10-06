@@ -4,9 +4,9 @@ description: 瞭解如何建立欄，以擴充和最佳化您的資料進行分�
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 下列範例會在`Seconds since customer's most recent order`資料表中建立`customers`。 這可用來建構未在`X days`內進行購買（有時稱為流失）之客戶的使用者清單。
 
-![](../../assets/age.gif)
+![建立年齡計算資料行的動畫示範](../../assets/age.gif)
 
 ### 貨幣轉換工具
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 對於Commerce使用者端，`base\_currency\_code`欄位通常會儲存原生貨幣。 `Spot Time`欄位應該符合量度中使用的日期。
 
-![](../../assets/currency_converter.png)
+![貨幣轉換器計算資料行組態](../../assets/currency_converter.png)
 
 ## 一對多計算欄 {#onetomany}
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 在下列範例中，`Customer's group\_id`維度會向下連結至`orders`資料表。
 
-![](../../assets/joined_column.gif)
+![建立聯結資料行連結表格的動畫示範](../../assets/joined_column.gif)
 
 ## 多對一計算欄 {#manytoone}
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 在下列範例中，維度`Customer's lifetime number of canceled orders`是在`customers`資料表上建立的（具有`orders.status`的篩選器）。
 
-![](../../assets/many_to_one.gif){: width="699" height="351"}
+![多對一資料行彙總的動畫示範](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### Sum {#sum}
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 如果您在建立計算欄時無法記住所有輸入內容，請在建置時將此參照對映保持在方便的位置：
 
-![](../../assets/merged_reference_map.png)
+![參考地圖顯示合併的計算資料行組態](../../assets/merged_reference_map.png)
 
 ## 進階計算欄 {#advanced}
 

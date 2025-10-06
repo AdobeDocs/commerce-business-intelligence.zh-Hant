@@ -4,9 +4,9 @@ description: 瞭解如何使用SQL Report Builder稽核資料和測量結果，�
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
 role: Admin, Data Architect, Data Engineer, User
 feature: Reports, Data Warehouse Manager, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 0%
 
 若要更清楚的檢視查詢，您可以重新格式化查詢欄位中的顯示方式。 準備就緒後，選取`Run Query`。 結果會在查詢下方的報表面板中填入為表格。
 
-![](../../assets/run-query-results.gif)
+![執行SQL查詢和檢視結果的動畫示範](../../assets/run-query-results.gif)
 
 ## 限制查詢
 
 如果您嘗試查明特定差異或資料集，您應該將查詢限製為特定範例，以對照您的本機資料庫進行檢查。 您可以編輯查詢以符合所需的限制來完成此操作。 在下列範例中，您將查詢限製為僅包含自2013年1月1日或之後開始的收入。 更新查詢之後，再次選取&#x200B;**[!UICONTROL Run Query]**&#x200B;以更新結果。
 
-![](../../assets/restricting-query.gif)
+![使用篩選器限制查詢的動畫示範](../../assets/restricting-query.gif)
 
 ## 儲存和匯出
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 在儲存報告後，選取`Go to Dashboard`以導覽至該儀表板。 從那裡，您可以尋找報告並選取&#x200B;**[!UICONTROL Options gear > Full `.csv`匯出]**&#x200B;或&#x200B;**[!UICONTROL Full Excel Export]**&#x200B;以匯出資料。
 
-![](../../assets/export-dboard-data.gif)
+![匯出儀表板資料的動畫示範](../../assets/export-dboard-data.gif)
 
 ## 自訂查詢
 
@@ -48,4 +48,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您在稽核資料後發現不一致，請參閱[連絡支援：資料差異](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=zh-Hant)支援主題，以取得後續操作的詳細資訊。
+>如果您在稽核資料後發現不一致，請參閱[連絡支援：資料差異](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html)支援主題，以取得後續操作的詳細資訊。

@@ -4,9 +4,9 @@ description: 瞭解如何熟悉SQL Report Builder中使用的術語，並為您�
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 此查詢會傳回此結果表：
 
-![](../assets/SQL_results_table.png)
+![顯示SQL查詢結果的表格，其中包含依產品、年份和月份銷售的專案](../assets/SQL_results_table.png)
 
 ## 步驟2：建立視覺效果
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 第一次執行查詢時，報表可能看起來難以捉摸，因為查詢中的所有欄都繪製為序列：
 
-![](../assets/SQL_initial_report_results.png)
+![初始SQL報告，所有資料行均繪製為數列](../assets/SQL_initial_report_results.png)
 
 在此範例中，您希望這會是隨時間變化的折線圖。 若要建立檔案，請使用下列設定：
 
@@ -82,13 +82,13 @@ ht-degree: 0%
 
 以下快速瞭解您如何建立此視覺效果，從執行查詢到設定報表：
 
-![](../assets/SQL_report_settings.gif)
+![設定SQL報表視覺效果設定的動畫示範](../assets/SQL_report_settings.gif)
 
 ## 步驟3：選取`Chart Type`
 
 此範例使用`Line`圖表型別。 若要使用其他`chart type`，請按一下圖表選項區段上方的圖示以變更它：
 
-![](../assets/Chart_types.png)
+![可用的圖表型別圖示，包括線條、長條、區域和其他視覺化選項](../assets/Chart_types.png)
 
 ## 步驟4：儲存視覺效果
 

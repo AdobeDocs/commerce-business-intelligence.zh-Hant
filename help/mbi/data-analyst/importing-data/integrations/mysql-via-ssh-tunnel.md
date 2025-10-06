@@ -4,9 +4,9 @@ description: 瞭解如何透過SSH通道連線 [!DNL MySQL] 。
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 以下說明如何瀏覽[!DNL Commerce Intelligence]以擷取金鑰：
 
-![](../../../assets/MySQL_SSH.gif)<!--{: width="770"}-->
+![透過SSH通道的MySQL連線動畫示範](../../../assets/MySQL_SSH.gif)<!--{: width="770"}-->
 
 ## 允許存取[!DNL Commerce Intelligence] IP位址 {#allowlist}
 
@@ -120,4 +120,4 @@ ht-degree: 0%
 
 ## 相關：
 
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

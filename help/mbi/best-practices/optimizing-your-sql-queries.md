@@ -4,18 +4,18 @@ description: 瞭解如何最佳化SQL查詢。
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: acc152709c7c66f387f4eded9e6c1c646a83af35
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
 
 # 最佳化SQL查詢
 
-[!DNL SQL Report Builder]可讓您在任何指定時間查詢及反複處理這些查詢。 當您需要修改查詢而不必等待更新週期完成才能實現您建立的欄或報告需要更新時，這會很有用。
+[!DNL SQL Report Builder]可讓您隨時執行並變更查詢。 如果您需要立即更新查詢，而不是等到更新週期完成後再修正欄或報表，此功能會很有幫助。
 
-在執行查詢之前，[[!DNL Commerce Intelligence] 會估計其成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=zh-Hant)。 成本會考慮執行查詢所需的時間長度和資源數量。 如果該成本被認為太高，或者如果傳回的列數超過[!DNL Commerce Intelligence]限制，則查詢會失敗。 為了查詢您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) （可確保您撰寫的查詢儘可能簡化），Adobe建議下列事項。
+在執行查詢之前，[[!DNL Commerce Intelligence] 會估計其成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html)。 成本會考慮執行查詢所需的時間長度和資源數量。 如果該成本被認為太高，或者如果傳回的列數超過[!DNL Commerce Intelligence]限制，則查詢會失敗。 為了查詢您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) （可確保您撰寫的查詢儘可能簡化），Adobe建議下列事項。
 
 ## 使用SELECT或選取所有欄
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 | **代替這個……** | **試試這個！** |
 |-----|-----|
-| ![](../../mbi/assets/Select_all_1.png) | ![](../../mbi/assets/Select_all_2.png) |
+| 使用SELECT星號![的](../../mbi/assets/Select_all_1.png)SQL查詢 | ![SQL查詢選取特定資料行](../../mbi/assets/Select_all_2.png) |
 
 {style="table-layout:auto"}
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 | **代替這個……** | **試試這個！** |
 |-----|-----|
-| ![](../../mbi/assets/Full_Outer_Join_1.png) | ![](../../mbi/assets/Full_Outer_Join_2.png) |
+| 具有完整外部聯結的![SQL查詢](../../mbi/assets/Full_Outer_Join_1.png) | 具有最佳化聯結的![SQL查詢](../../mbi/assets/Full_Outer_Join_2.png) |
 
 {style="table-layout:auto"}
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## 使用篩選器
 
-儘可能使用篩選器。 `WHERE`和`HAVING`子句會篩選您的結果，並只提供您真正想要的資料。
+儘可能使用篩選器。 條款`WHERE`和`HAVING`會篩選您的結果，並只提供您真正想要的資料。
 
 ## 在JOIN子句中使用篩選器
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 | **代替這個……** | **試試這個！** |
 |-----|-----|
-| ![](../../mbi/assets/Join_filters_1.png) | ![](../../mbi/assets/Join_filters_2.png) |
+| 具有WHERE子句篩選器的![SQL查詢](../../mbi/assets/Join_filters_1.png) | 具有ON子句篩選器的![SQL查詢](../../mbi/assets/Join_filters_2.png) |
 
 {style="table-layout:auto"}
 
@@ -73,19 +73,19 @@ ht-degree: 0%
 
 使用`EXISTS`與`IN`取決於您嘗試傳回的結果型別。 如果您只對單一值感興趣，請使用`EXISTS`子句而非`IN`。 `IN`與逗號分隔值清單一起使用，這會增加查詢的計算成本。
 
-執行`IN`查詢時，系統必須先處理子查詢（`IN`陳述式），然後根據`IN`陳述式中指定的關聯性處理整個查詢。 `EXISTS`的效率更高，因為查詢不需要執行多次 — 檢查查詢中指定的關聯性時會傳回true/false值。
+執行`IN`查詢時，系統必須先處理子查詢（`IN`陳述式），然後根據`IN`陳述式中指定的關聯性處理整個查詢。 `EXISTS`查詢的效率更高，因為查詢不需要執行多次 — 檢查查詢中指定的關聯性時會傳回true/false值。
 
 簡單地說：使用`EXISTS`時，系統不必處理這麼多。
 
 | **代替這個……** | **試試這個！** |
 |-----|-----|
-| ![](../../mbi/assets/Exists_1.png) | ![](../../mbi/assets/Exists_2.png) |
+| ![使用LEFT JOIN的SQL查詢，檢查為NULL](../../mbi/assets/Exists_1.png) | 使用EXISTS子句的![SQL查詢](../../mbi/assets/Exists_2.png) |
 
 {style="table-layout:auto"}
 
 ## 使用ORDER BY
 
-`ORDER BY`在SQL中是昂貴的函式，可能會大幅增加查詢的成本。 如果您收到錯誤訊息，指出查詢的EXPLAIN成本過高，請視需要嘗試從查詢中消除任何`ORDER BY`。
+`ORDER BY`函式在SQL中成本很高，而且會大幅增加查詢的成本。 如果您收到錯誤訊息，指出查詢的EXPLAIN成本過高，請視需要嘗試從查詢中消除任何`ORDER BY`。
 
 這並不是說`ORDER BY`不能使用 — 只是它應該只在必要時使用。
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 | **代替這個……** | **試試這個！** |
 |-----|-----|
-| ![](../../mbi/assets/Group_by_2.png) | ![](../../mbi/assets/Group_by_1.png) |
+| ![SQL查詢，GROUP BY在篩選前](../../mbi/assets/Group_by_2.png) | 在GROUP BY![之前使用篩選的](../../mbi/assets/Group_by_1.png)SQL查詢 |
 
 {style="table-layout:auto"}
 

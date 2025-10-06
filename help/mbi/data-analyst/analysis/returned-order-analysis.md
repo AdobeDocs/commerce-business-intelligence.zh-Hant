@@ -4,9 +4,9 @@ description: 瞭解如何設定控制面板，提供商店回報的詳細分析�
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 此主題示範如何設定控制面板，提供商店回訪的詳細分析。
 
-![](../../assets/detailed-returns-dboard.png)
+![顯示退貨率與原因的詳細退貨儀表板](../../assets/detailed-returns-dboard.png)
 
 開始之前，您必須是[Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html)客戶，且應確定貴公司使用`enterprise\_rma`資料表進行退貨。
 
@@ -61,9 +61,9 @@ ht-degree: 0%
 * **`Order's created at`**
 * 選取定義： `Joined Column`
 * [!UICONTROL Create Path]：
-* &#x200B;
+* 
   [!UICONTROL Many]: `enterprise_rma.order_id`
-* &#x200B;
+* 
   [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * 選取[!UICONTROL table]： `sales_flat_order`
@@ -82,9 +82,9 @@ ht-degree: 0%
 * **`return_date_requested`**
 * 選取定義： `Joined Column`
 * [!UICONTROL Create Path]：
-   * &#x200B;
+   * 
      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
-   * &#x200B;
+   * 
      [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * 選取[!UICONTROL table]： `enterprise_rma`
@@ -157,25 +157,25 @@ ht-degree: 0%
 
 * 公式：重複訂購機率
 * [!UICONTROL Formula]： `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]： `All time`
-* &#x200B;
-  [!UICONTROL 間隔]: `None`
+* 
+  [！UICONTROL間隔]: `None`
 * [!UICONTROL Group by]： `Customer's order number`
-* &#x200B;
-  [!UICONTROL 圖表型別]: `Bar`
+* 
+  [！UICONTROL圖表型別]: `Bar`
 
 * **平均傳回時間（所有時間）**
 * 量度`A`： `Avg time between order and return`
 * [!UICONTROL Metric]： `Avg time between order and return`
 
 * [!UICONTROL Time period]： `All time`
-* &#x200B;
-  [!UICONTROL 間隔]: `None`
-* &#x200B;
-  [!UICONTROL 圖表型別]: `Number`
+* 
+  [！UICONTROL間隔]: `None`
+* 
+  [！UICONTROL圖表型別]: `Number`
 
 * **含退貨的訂單百分比**
 * 量度`A`： `Number of orders`
@@ -188,12 +188,12 @@ ht-degree: 0%
 
 * 公式：含退貨的訂單百分比
 * [!UICONTROL Formula]： `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]： `All time`
-* &#x200B;
-  [!UICONTROL 間隔]: `None`
+* 
+  [！UICONTROL間隔]: `None`
 * [!UICONTROL Chart Type]： `Number - % of orders with return`
 
 * **依月份傳回的收入**
@@ -202,8 +202,8 @@ ht-degree: 0%
 
 * [!UICONTROL Time period]： `All time`
 * [!UICONTROL Interval]： `By month`
-* &#x200B;
-  [!UICONTROL 圖表型別]: `Line`
+* 
+  [！UICONTROL圖表型別]: `Line`
 
 * **已退貨且不再購買的客戶**
 * 量度`A`： `Number of orders with returns`
@@ -213,12 +213,12 @@ ht-degree: 0%
    * `Is customer's last order? (1=yes/0=no) = 1`
 
 * [!UICONTROL Time period]： `All time`
-* &#x200B;
-  [!UICONTROL 間隔]: `None`
-* &#x200B;
-  [!UICONTROL 群組依據]: `Customer_email`
-* &#x200B;
-  [!UICONTROL 圖表型別]: `Table`
+* 
+  [！UICONTROL間隔]: `None`
+* 
+  [！UICONTROL群組依據]: `Customer_email`
+* 
+  [！UICONTROL圖表型別]: `Table`
 
 * **依據專案的回訪率**
 * 量度`A`： `Returned items` （隱藏）
@@ -230,16 +230,16 @@ ht-degree: 0%
 
 * [!UICONTROL Formula]： `Return %`
 * [!UICONTROL Formula]： `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]： `All time`
-* &#x200B;
-  [!UICONTROL 間隔]: `None`
+* 
+  [！UICONTROL間隔]: `None`
 * [!UICONTROL Group by]： `product_sku AND/OR product_name`
-* &#x200B;
-  [!UICONTROL 圖表型別]: `Table`
+* 
+  [！UICONTROL圖表型別]: `Table`
 
 編譯所有報表後，您可以視需要在控制面板上組織報表。 結果可能如上述範例控制面板所示。
 
-如果您在建立此分析時遇到任何問題，或想與Professional Services團隊互動，請[連絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+如果您在建立此分析時遇到任何問題，或想與Professional Services團隊互動，請[連絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。

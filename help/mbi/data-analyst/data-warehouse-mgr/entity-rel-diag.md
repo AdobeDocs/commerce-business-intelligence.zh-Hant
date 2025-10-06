@@ -4,9 +4,9 @@ description: 瞭解一些ER圖表，協助您視覺化幾個常見Commerce資料
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 在[!DNL Commerce Intelligence]內，如果這兩個資料表之間的路徑不存在，您可以在Data Warehouse索引標籤中[建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md)。 當您準備好建立路徑時，其定義如下：
 
-![](../../assets/SFO___CE_path.png)
+![實體關係圖，顯示從sales_flat_order到customer_entity](../../assets/SFO___CE_path.png)的路徑
 
 ## `sales\_flat\_order & sales\_flat\_order\_item`
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 在[!DNL Commerce Intelligence]內，如果這兩個資料表之間的路徑不存在，您可以在Data Warehouse索引標籤中[建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md)。 當您準備好建立路徑時，請如下所示定義路徑。
 
-![](../../assets/SFOI___SFO_path.png)
+![實體關係圖，顯示從sales_flat_order_item到sales_flat_order](../../assets/SFOI___SFO_path.png)的路徑
 
 ## `catalog\_product\_entity & sales\_flat\_order\_item`
 
@@ -59,4 +59,4 @@ ht-degree: 0%
 
 在[!DNL Commerce Intelligence]內，如果這兩個資料表之間的路徑不存在，您可以在Data Warehouse索引標籤中[建立路徑](../data-warehouse-mgr/create-paths-calc-columns.md)。 當您準備好建立路徑時，請如下所示定義路徑。
 
-![](../../assets/SFOI___CPE_path.png)
+![實體關係圖，顯示從sales_flat_order_item到catalog_product_entity](../../assets/SFOI___CPE_path.png)的路徑

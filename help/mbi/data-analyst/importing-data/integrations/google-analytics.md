@@ -4,9 +4,9 @@ description: 瞭解如何連結Google Analytics與 [!DNL Commerce Intelligence]�
 exl-id: 10e813f1-0306-4bdd-8222-e6364ac624de
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >需要[管理員許可權](../../../administrator/user-management/user-management.md)。
 
-![](../../../assets/google-analytics-logo.png)
+![Google Analytics標誌](../../../assets/google-analytics-logo.png)
 
 [!DNL Google Analytics]是網際網路上使用最廣泛的網頁分析服務。 在您的網站上實作[!DNL Google Analytics]可讓您追蹤訪客如何使用您的網站、哪些內容吸引人、訪客的退出地點等等。 在[!DNL Commerce Intelligence]中分析這些量度，連同其他資料片段，可改善您網站的整體健康狀況和可用性。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 1. 設定檔ID清單隨即顯示。 檢查您要連線至[!DNL Commerce Intelligence]的設定檔。 如果您有多個設定檔，並且需要一些協助來識別哪一個，請參閱下面的「連線多個[!DNL Google Analytics]設定檔」一節。
 
-   ![](../../../assets/list-profile-id.png)<!--{: width="600px"}-->
+   在URL ![中顯示設定檔ID的](../../../assets/list-profile-id.png)<!--{: width="600px"}-->Google Analytics管理頁面
 
 1. 變更會自動儲存，因此完成時請按一下&#x200B;**返回連線**。
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ## 相關：
 
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [正在連線 [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [分析網站活動和客戶轉換率](../../analysis/web-act-cust-conversion.md)
 * [使用 [!DNL Google Analytics] Cookie追蹤使用者贏取資料](../../analysis/google-track-user-acq.md)

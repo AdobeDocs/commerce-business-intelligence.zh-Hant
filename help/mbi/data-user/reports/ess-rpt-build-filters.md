@@ -4,9 +4,9 @@ description: 瞭解如何使用篩選器。
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 0854d644cb72b3fc8b8b31a0bf7e8dca4cc99724
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
    在此報表中，每個資料點會顯示當月客戶總數。
 
-1. 在左側面板中，按一下「篩選器」 (![](../../assets/magento-bi-btn-filter.png))圖示。
+1. 在左側面板中，按一下「篩選器」 （![篩選器圖示](../../assets/magento-bi-btn-filter.png)）圖示。
 
    ![新增篩選器](../../assets/magento-bi-report-builder-filter-add.png)
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
    篩選器依字母順序編號，第一個是`[A]`。 篩選的前兩個部分是下拉式選項，第三個部分是值。
 
-   ![](../../assets/magento-bi-report-builder-filter-add-a.png)
+   ![顯示新增篩選器選項的篩選器介面](../../assets/magento-bi-report-builder-filter-add-a.png)
 
    * 按一下篩選的第一個部分，然後選擇您要用來作為運算式主旨的欄。
 

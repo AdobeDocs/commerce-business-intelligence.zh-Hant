@@ -4,9 +4,9 @@ description: 瞭解如何使用可變更的值來設定資料欄。
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 若要變更重新檢查頻率，請按一下您要變更之欄旁的核取方塊。 然後按一下&#x200B;**[!UICONTROL Set Recheck Frequency]**&#x200B;下拉式清單，並設定所要的頻率。
 
-![](../../assets/dwm-recheck.png)
+![Data Warehouse管理員顯示重新檢查組態選項](../../assets/dwm-recheck.png)
 
 您有時可能會在`Paused`欄中看到`Changes?`。 當表格的[復寫方法](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)設定為`Paused`時，會顯示這個值。
 

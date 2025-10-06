@@ -4,9 +4,9 @@ description: 瞭解評估行銷活動績效的幾種不同方法。
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
 1. 選取`Add New Metric`並選取正在記錄您的[!DNL `Adwords...`]成本資料的[!DNL AdWords]資料表。
 1. 在量度編輯器中，為您的量度命名（例如，[!UICONTROL AdWord Cost]）
 1. 使用下拉式清單，對依&#x200B;**欄排序的**&#x200B;資料表（變更）中的`adCost`欄執行[!DNL Adwords...]總和`date`。
-   ![](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
+   新增量度後![成功訊息](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
 1. 按一下頂端的「`Back to Metric List`」並前往任何儀表板。
 
 1. 建立依行銷活動劃分割槽段支出的報表
@@ -99,7 +99,7 @@ ht-degree: 0%
 >
 >此範例假設所有行銷活動成本都專門用於產生特定產品的購買。 假設所有成本都花在產生購買上，則產生的ROI會考慮最壞的情況（最高每次購買成本）。 您可以確定您的實際ROI高於此計算。 範例：假設您在產生10名新使用者和10次購買的行銷活動上花費$20，則您的每次購買實際成本為$1。 假設所有成本都是為了取得新使用者，則每次購買的成本為$2。
 
-開始之前，[送出支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)以將下列維度聯結到您的行專案表格(`sales\_flat\_order\_item, order\_item`)：
+開始之前，[送出支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以將下列維度聯結到您的行專案表格(`sales\_flat\_order\_item, order\_item`)：
 
 * 訂單的來源（如果您只追蹤使用者層級的轉介來源，則加入使用者的來源）
 * 訂單的行銷活動（如果您只追蹤使用者層級的轉介來源，則加入使用者的行銷活動）
@@ -122,8 +122,8 @@ ht-degree: 0%
 1. 設定好這些量度後，即可新增公式：
 1. [!UICONTROL ROI]：輸入公式`\[A\]/\[B\]`，如果`\[A\]`代表`Revenue per campaign for specific product(s)`，`\[B\]`代表`Ad cost by campaigns`。 這會傳回（特定產品的收入） / （行銷活動成本）的比率
 1. [!UICONTROL Return]：輸入公式`\[A\]-\[B\]`。 這會透過計算（平均使用者LTV）傳回使用者的平均利潤 — （每次收購的平均成本）
-1. （選用） [!UICONTROL Revenue]：取消隱藏`Revenue by items`量度以檢視每個行銷活動的特定產品收入
-1. （選用） [!UICONTROL Cost]：取消隱藏`AdWords Cost`量度以檢視行銷活動的成本
+   1. （選用） [!UICONTROL Revenue]：取消隱藏`Revenue by items`量度以檢視每個行銷活動的特定產品收入
+   1. （選用） [!UICONTROL Cost]：取消隱藏`AdWords Cost`量度以檢視行銷活動的成本
 
 1. 為報表命名，並確實儲存為表格
 

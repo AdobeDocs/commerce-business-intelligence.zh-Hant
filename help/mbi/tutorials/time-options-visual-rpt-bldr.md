@@ -4,9 +4,9 @@ description: 瞭解如何分析特定時段內的報表資料。
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 當您在報表中使用這類量度時，您會注意到，將此量度新增至報表，會自動設定獨立的`Time Interval` （共`None`個）和`Time Range` （共`Global`個）：
 
-![](../assets/Metrics_without_timestamps.gif)
+![顯示量度的報告，其時間間隔設定為[無]，時間範圍設定為[全域]](../assets/Metrics_without_timestamps.gif)
 
 ## 指定一個量度獨立的時間間隔 {#independenttimeinterval}
 
@@ -62,11 +62,11 @@ ht-degree: 0%
 
 現在您可以瞭解去年每個月的影響力有多大：
 
-![](../assets/Independent_Time_Int.png)
+![顯示前一年按月收入百分比的圖表](../assets/Independent_Time_Int.png)
 
 ## 比較不同時間範圍內的相同量度 {#difftimerange}
 
-此範例使用名為`Day number of the month`的自訂維度。 如果您想要建立此報表，但您的Data Warehouse中尚未有此維度，請[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)以尋求協助。
+此範例使用名為`Day number of the month`的自訂維度。 如果您想要建立此報表，但您的Data Warehouse中尚未有此維度，請[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以尋求協助。
 
 此類別中最常見的兩個範例是(1)比較成長量度（逐年收入或逐月收入），以及(2)更瞭解最近的存貨或專案銷售趨勢。
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 
    如果量度從報表中消失，不必擔心，設定獨立時間選項會自動隱藏報表中的量度。 若要重新顯示，請按一下量度旁的&#x200B;**[!UICONTROL Show]**。
 
-   ![](../assets/Different_Time_Ranges.gif)
+   ![在報告中設定不同時間範圍的示範](../assets/Different_Time_Ranges.gif)
 
    * 按一下&#x200B;**[!UICONTROL Apply]**&#x200B;以儲存間隔和範圍設定。
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
    * 在`Group By`下拉式清單中，選取`Show All`並按一下&#x200B;**[!UICONTROL Apply]**。 這會建立報表的X軸值：
 
-   ![](../assets/TO4.png)
+   ![顯示依月份](../assets/TO4.png)日數分組的收入比較的報告
 
    * 重新命名量度。 在此範例中，第一個量度是`Revenue - 2015`，第二個是`Revenue - 2014`。
 
@@ -136,7 +136,7 @@ ht-degree: 0%
 
 * 針對`last promo period`，在`D / C`欄位中輸入`Formula`。
 
-  ![](../assets/Different_Time_Ranges_2.png)
+  ![顯示不同期間之供給計算的週報表](../assets/Different_Time_Ranges_2.png)
 
 * 最後，隱藏量度並將`SKU`或類似的維度以`Group By`形式新增至報表，以自訂報表。
 
