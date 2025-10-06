@@ -39,7 +39,7 @@ ht-degree: 0%
 
 在`qualitative cohort`中建立`Report Builder`報告時，Adobe分析團隊會在必要的資料表上建立一些[進階計算資料行](../data-warehouse-mgr/creating-calculated-columns.md)。
 
-若要建置這些專案，請提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （並參考此文章！）。 以下是您需要瞭解的事項：
+若要建置這些專案，請提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant) （並參考此文章！）。 以下是您需要瞭解的事項：
 
 * 您要使用執行同類群組分析的`metric`及其使用的表格（範例： `Revenue`，建置在`orders`表格上）。
 

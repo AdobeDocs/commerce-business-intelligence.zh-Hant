@@ -25,6 +25,6 @@ ht-degree: 0%
 
    ![顯示可用資料表的資料表選取下拉式清單](../../assets/change-metrics-2.png)
 
-1. 如果您在新資料表中沒有相符的資料行，您可以&#x200B;**在資料表中建立它**，或者[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （如果它是由[!DNL Commerce Intelligence]建立的計算資料行或維度）。 您也可以&#x200B;**從量度**&#x200B;中刪除維度。 若要刪除您不再需要的維度，只要返回量度的編輯器，並在「`Dimensions`」下選取要刪除的維度即可。
+1. 如果您在新資料表中沒有相符的資料行，您可以&#x200B;**在資料表中建立它**，或者[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant) （如果它是由[!DNL Commerce Intelligence]建立的計算資料行或維度）。 您也可以&#x200B;**從量度**&#x200B;中刪除維度。 若要刪除您不再需要的維度，只要返回量度的編輯器，並在「`Dimensions`」下選取要刪除的維度即可。
 
    ![操作資料行選取下拉式功能表](../../assets/change-metrics-3.png)

@@ -99,7 +99,7 @@ ht-degree: 0%
 >
 >此範例假設所有行銷活動成本都專門用於產生特定產品的購買。 假設所有成本都花在產生購買上，則產生的ROI會考慮最壞的情況（最高每次購買成本）。 您可以確定您的實際ROI高於此計算。 範例：假設您在產生10名新使用者和10次購買的行銷活動上花費$20，則您的每次購買實際成本為$1。 假設所有成本都是為了取得新使用者，則每次購買的成本為$2。
 
-開始之前，[送出支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以將下列維度聯結到您的行專案表格(`sales\_flat\_order\_item, order\_item`)：
+開始之前，[送出支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)以將下列維度聯結到您的行專案表格(`sales\_flat\_order\_item, order\_item`)：
 
 * 訂單的來源（如果您只追蹤使用者層級的轉介來源，則加入使用者的來源）
 * 訂單的行銷活動（如果您只追蹤使用者層級的轉介來源，則加入使用者的行銷活動）

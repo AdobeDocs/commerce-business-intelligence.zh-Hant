@@ -136,7 +136,7 @@ ht-degree: 6%
 
 **正在尋找其他說明嗎？**
 
-技術支援不包含寫入SQL和建立`Data Warehouse Views`。 不過，[服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)確實提供建立檢視的協助。 從使用新資料庫移轉舊版資料庫以建立單一Data Warehouse檢視進行特定分析的所有作業，支援團隊都能提供協助。
+技術支援不包含寫入SQL和建立`Data Warehouse Views`。 不過，[服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)確實提供建立檢視的協助。 從使用新資料庫移轉舊版資料庫以建立單一Data Warehouse檢視進行特定分析的所有作業，支援團隊都能提供協助。
 
 通常，為了合併2-3個類似結構的表格而建立新的`Data Warehouse View`需要五個小時的服務時間，這相當於大約1,250美元的工作。 不過，以下是一些可能會增加所需預期投資的常見因素：
 

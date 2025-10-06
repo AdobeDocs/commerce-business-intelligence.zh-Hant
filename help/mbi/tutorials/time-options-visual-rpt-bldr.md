@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ## 比較不同時間範圍內的相同量度 {#difftimerange}
 
-此範例使用名為`Day number of the month`的自訂維度。 如果您想要建立此報表，但您的Data Warehouse中尚未有此維度，請[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以尋求協助。
+此範例使用名為`Day number of the month`的自訂維度。 如果您想要建立此報表，但您的Data Warehouse中尚未有此維度，請[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)以尋求協助。
 
 此類別中最常見的兩個範例是(1)比較成長量度（逐年收入或逐月收入），以及(2)更瞭解最近的存貨或專案銷售趨勢。
 
