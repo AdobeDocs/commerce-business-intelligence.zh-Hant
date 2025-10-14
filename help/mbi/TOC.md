@@ -23,7 +23,7 @@ ht-degree: 0%
    - [Commerce Intelligence Essentials與Commerce Intelligence Pro](getting-started/essentials-vs-pro.md)
 - 管理員 {#administrator}
    - 帳戶管理 {#acct-mgmt}
-      - [ [!DNL New Architecture]的優點](../mbi/administrator/account-management/new-architecture.md)
+      - [&#x200B; [!DNL New Architecture]的優點](../mbi/administrator/account-management/new-architecture.md)
       - [在辦公室周圍顯示儀表板](../mbi/administrator/account-management/display-dashboards-office.md)
       - [管理您的帳戶](administrator/account-management/managing-account-settings.md)
       - [限制資料庫存取](../mbi/administrator/account-management/restrict-db-access.md)
@@ -79,13 +79,13 @@ ht-degree: 0%
       - [匯出我的查詢結果](data-analyst/dev-reports/export-query-results.md)
       - [在[Report Builder]中使用公式](../mbi/data-analyst/dev-reports/formulas-in-rpt-bldr.md)
       - [建立 [!DNL Google Analytics] 個圖表](data-analyst/dev-reports/google-analytics-charts-regex.md)
-      - [ [!DNL Lifetime Revenue Cohort Analysis]的重要性](data-analyst/dev-reports/lifetime-rev-cohort-analysis.md)
+      - [&#x200B; [!DNL Lifetime Revenue Cohort Analysis]的重要性](data-analyst/dev-reports/lifetime-rev-cohort-analysis.md)
       - [使用 [!DNL Show Top/Bottom] 功能排序資料](data-analyst/dev-reports/order-data-top-bottom-feat.md)
       - [使用 [!DNL SQL Report Builder]](data-analyst/dev-reports/sql-rpt-bldr.md)
       - [首次購買報告](data-analyst/dev-reports/time-first-purchase-slope-dwnwrd.md)
       - [瞭解 [!DNL Repeat Order Probability Report]](data-analyst/dev-reports/repeat-order-probability.md)
       - [使用 [!DNL SQL Report Builder]稽核量度](data-analyst/dev-reports/audit-metrics-sql.md)
-      - [ [!DNL SQL] 和 [!DNL Data Warehouse Manager]之間的資料行差異](data-analyst/dev-reports/columns-sql-dwm.md)
+      - [&#x200B; [!DNL SQL] 和 [!DNL Data Warehouse Manager]之間的資料行差異](data-analyst/dev-reports/columns-sql-dwm.md)
    - 正在連線資料 {#connecting}
       - [簡介](data-analyst/importing-data/connecting-data/connecting-data.md)
       - [格式化及匯入電子商務資料](data-analyst/importing-data/connecting-data/format-import-ecom-data.md)
@@ -114,7 +114,7 @@ ht-degree: 0%
       - [預期 [!DNL Google ECommerce] 資料](data-analyst/importing-data/integrations/google-ecommerce-data.md)
       - [正在連線 [!DNL Mixpanel]](data-analyst/importing-data/integrations/mixpanel.md)
       - [預期 [!DNL Mixpanel] 資料](data-analyst/importing-data/integrations/mixpanel-data.md)
-      - [ [!DNL Mixpanel]中的資料驗證](data-analyst/importing-data/integrations/mixpanel-data-valid.md)
+      - [&#x200B; [!DNL Mixpanel]中的資料驗證](data-analyst/importing-data/integrations/mixpanel-data-valid.md)
       - [正在連線 [!DNL PrestaShop]](data-analyst/importing-data/integrations/prestashop.md)
       - [正在連線 [!DNL Quickbooks]](data-analyst/importing-data/integrations/quickbooks.md)
       - [預期 [!DNL Quickbooks] 資料](data-analyst/importing-data/integrations/quickbooks-data.md)
@@ -216,7 +216,7 @@ ht-degree: 0%
 - 最佳實務 {#best-practices}
    - 使用資料 {#data}
       - [使用資料](best-practices/work-data.md)
-      - [ [!DNL Google Analytics]中的UTM標籤](best-practices/utm-tagging-google.md)
+      - [&#x200B; [!DNL Google Analytics]中的UTM標籤](best-practices/utm-tagging-google.md)
       - [格式化及匯入財務資料](best-practices/format-import-financial-data.md)
       - [分段和篩選的建議資料維度](best-practices/segment-filter.md)
       - [檢查更新週期狀態](best-practices/check-update-cycle.md)

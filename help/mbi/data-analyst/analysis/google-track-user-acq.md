@@ -101,4 +101,4 @@ Adobe建議將名為`user_referral`的資料表新增至您的資料庫，其資
 * **[探索您最有價值的贏取來源和管道](../analysis/most-value-source-channel.md)**
 * **[連線您的 [!DNL Google Adwords] 帳戶](../importing-data/integrations/google-adwords.md)**
 * **[提高廣告行銷活動的ROI](../analysis/roi-ad-camp.md)**
-* **[ [!DNL Google Analytics] UTM歸因如何運作？](../analysis/utm-attributes.md)**
+* **[&#x200B; [!DNL Google Analytics] UTM歸因如何運作？](../analysis/utm-attributes.md)**

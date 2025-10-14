@@ -15,7 +15,7 @@ ht-degree: 0%
 
 若要將您的[!DNL Linkshare]資料帶入[!DNL Adobe Commerce Intelligence]，您必須執行下列兩件事：
 
-1. [匯出Linkshare資料於 ](#export)
+1. [匯出Linkshare資料於 &#x200B;](#export)
 1. [將試算表上傳至 [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
 ## 從Linkshare匯出資料 {#export}
