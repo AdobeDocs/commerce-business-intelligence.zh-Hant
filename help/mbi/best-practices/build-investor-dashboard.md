@@ -64,7 +64,7 @@ ht-degree: 0%
 * 網站造訪
 * 轉換率
 
-透過[Commerce資料擴充服務](https://business.adobe.com/products/magento/magento-commerce.html)，您可以包含下列報表：
+透過[Commerce資料擴充服務](https://business.adobe.com/tw/products/magento/magento-commerce.html)，您可以包含下列報表：
 
 * 依州/地區、年齡、性別區分的不重複客戶。
 

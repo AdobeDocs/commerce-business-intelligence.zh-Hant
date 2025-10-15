@@ -88,7 +88,7 @@ ht-degree: 0%
 
 ## 行銷支出表格
 
-分析行銷支出時，您可以在分析中包含[!DNL Facebook]、[!DNL Google AdWords]或其他來源。 如果您有多個行銷支出來源，請連絡[Managed Services團隊](https://business.adobe.com/products/magento/fully-managed-service.html)，以取得為行銷活動設定整合表格的協助。
+分析行銷支出時，您可以在分析中包含[!DNL Facebook]、[!DNL Google AdWords]或其他來源。 如果您有多個行銷支出來源，請連絡[Managed Services團隊](https://business.adobe.com/tw/products/magento/fully-managed-service.html)，以取得為行銷活動設定整合表格的協助。
 
 **維度**
 

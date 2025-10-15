@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![顯示退貨率與原因的詳細退貨儀表板](../../assets/detailed-returns-dboard.png)
 
-開始之前，您必須是[Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html)客戶，且應確定貴公司使用`enterprise\_rma`資料表進行退貨。
+開始之前，您必須是[Adobe Commerce](https://business.adobe.com/tw/products/magento/magento-commerce.html)客戶，且應確定貴公司使用`enterprise\_rma`資料表進行退貨。
 
 此分析包含[進階計算資料行](../data-warehouse-mgr/adv-calc-columns.md)。
 
