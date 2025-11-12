@@ -4,9 +4,9 @@ description: 瞭解如何使用贏取來源複製Google Analytics管道。
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: cb7dd221f3e83be0c7ee01a6af479e5d1bad108c
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 1. **啟用您的[!DNL Google ECommerce]整合**
 
-   [啟用](../importing-data/integrations/google-ecommerce.md)時，請確定[同步]&#x200B;(../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) Data Warehouse中的&#x200B;**媒體**&#x200B;和&#x200B;**來源**&#x200B;欄位。 完成此程式後，媒體與來源贏取資料會匯入您的Data Warehouse。
+   [啟用時](../importing-data/integrations/google-ecommerce.md)，請確定在Data Warehouse中[同步](tour-dwm.md#syncing) **媒體**&#x200B;和&#x200B;**來源**&#x200B;欄位。 完成此程式後，媒體與來源贏取資料會匯入您的Data Warehouse。
 
 1. **上傳Google頻道群組的對應**
 
