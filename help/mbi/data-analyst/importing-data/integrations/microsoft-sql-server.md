@@ -4,9 +4,9 @@ description: 瞭解如何透過四個步驟程式將Microsoft SQL資料庫連線
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 本主題說明如何在四步驟程式中將[!DNL Microsoft SQL]資料庫連線至[!DNL Commerce Intelligence]。 此程式需要伺服器連線和SQL的相關技術專業知識，並且可能需要團隊開發人員的支援。
 
-[!DNL Commerce Intelligence]支援[!DNL Amazon RDS]、[!DNL EC2]、[!DNL Microsoft SQL Azure]和其他大部分的雲端伺服器提供者。 若您對特定主機有任何疑問，[請提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)，讓我們提供此資訊。
+[!DNL Commerce Intelligence]支援[!DNL Amazon RDS]、[!DNL EC2]、[!DNL Microsoft SQL Azure]和其他大部分的雲端伺服器提供者。 若您對特定主機有任何疑問，[請提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)，讓我們提供此資訊。
 
 您的系統需要對資料庫執行SELECT查詢。 這項作業最初是為了取得資料庫結構的快照，然後定期超時以保持資料最新。 您的更新是漸進式的，而Adobe會限制更新頻率和時間，以防止伺服器上出現任何不想要的負載。
 
@@ -35,9 +35,9 @@ ht-degree: 0%
 
    您可以在`Settings`頁面的連線區段中，找到用來連線至伺服器的IP位址。
 
-1. 建立用來登入資料庫伺服器的使用者。 您有兩個選項；透過`UI`或透過`query`：
+1. 建立使用者以登入您的資料庫伺服器。 您有兩個選項；透過`UI`或透過`query`：
    * `UI`
-   * [`Query`](http://sqlserverplanet.com/security/add-user) （第二個範例）
+   * `Query`
 
 1. 在[!DNL Commerce Intelligence]底下的&#x200B;**[!UICONTROL Manage Data** > **Connections]**&#x200B;中輸入伺服器IP位址、使用者名稱和密碼。
 

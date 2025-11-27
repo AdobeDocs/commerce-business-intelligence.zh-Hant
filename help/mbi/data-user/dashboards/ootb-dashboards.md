@@ -4,9 +4,9 @@ description: 瞭解如何檢查基本量度的健康情況，例如使用者期�
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 3a7423c9dd0f957b77baa27b3447a715caad017b
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >部分儀表板的可用性取決於您的資料集。
 
-如果您有問題或有興趣將套件新增至您的帳戶，請提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)以尋求協助。
+如果您有問題或有興趣將套件新增至您的帳戶，請提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以尋求協助。
 
 ## 執行概覽
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 `Retention health`儀表板會顯示您使用者群的重複購買行為。
 
-`Time between orders`圖表顯示使用者第一到第二順序、第二到第三順序等之間經過的平均時間和/或中間值。 您可以[考慮使用此資料來設定電子郵件行銷活動](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/)。
+`Time between orders`圖表顯示使用者第一到第二順序、第二到第三順序等之間經過的平均時間和/或中間值。 您可以考慮使用此資料來設定電子郵件行銷活動。
 
 `Users by lifetime number of orders`圖表會列出每個存留期訂單的使用者總數，以提供重複購買行為的一般概觀。  
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 * 過去`X`天內活躍的頂級付費者清單（您可能想要獎勵誰）
 
-使用您的資料匯出工具，可以輕鬆[建立具有類似目標行銷購買行為之使用者的電子郵件清單](http://blog.rjmetrics.com/creating-contact-lists-for-top-customers/)。
+您可以使用資料匯出工具，針對Target行銷活動，建立具有類似購買行為之使用者的電子郵件清單。
 
 ## 使用者活動
 
@@ -97,4 +97,4 @@ ht-degree: 0%
 
 `% of cohort members who have purchased`圖表很有價值，因為它會根據使用者註冊的時間來顯示使用者的轉換率（從0到1） （每行代表一組使用者）。 此外，也會顯示首次購買的時間（例如，註冊後第1、2、3個月……）。 您可能會發現10%的使用者是在第1個月啟動，而此數目是在第2、3、4個月增長……並在稍後穩定增長。
 
-通常，一段時間後，此圖表中的線條會變成水平線。 這表示在此時間點之後，只有少數其他同類群組成員會進行有機轉換 — 大部分要購買的使用者都已完成轉換。 此時，這些成員極不可能在不進行干預的情況下轉換為購買者。 [透過自訂促銷活動或目標電子郵件與他們聯絡，是快速開始此母體轉換的低風險方式。](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/)
+通常，一段時間後，此圖表中的線條會變成水平線。 這表示在此時間點之後，只有少數其他同類群組成員會進行有機轉換 — 大部分要購買的使用者都已完成轉換。 此時，這些成員極不可能在不進行干預的情況下轉換為購買者。 透過自訂促銷活動或目標電子郵件聯絡他們，是快速開始此族群轉換的低風險方式。

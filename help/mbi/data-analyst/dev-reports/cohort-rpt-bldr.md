@@ -4,9 +4,9 @@ description: 瞭解分析在其生命週期內具有類似特性的使用者群�
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1597'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,6 @@ ht-degree: 0%
 ## 同類群組分析是什麼？ {#what}
 
 `Cohort`分析可大致定義為分析在其生命週期內具有類似特性的使用者群組。 它可讓您識別不同使用者群組中的行為趨勢。
-
-如需`cohort`分析的深入入門課程，請檢閱[此頁面](https://www.cohortanalysis.com/)。
 
 在您的[!DNL Commerce Intelligence]儀表板中，可以輕鬆根據您帳戶中的`cohorts`日期和量度建立使用者`cohort`。
 

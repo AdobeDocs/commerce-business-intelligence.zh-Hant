@@ -4,9 +4,9 @@ description: 瞭解如何使用贏取來源複製Google Analytics管道。
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: cb7dd221f3e83be0c7ee01a6af479e5d1bad108c
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 | 有機搜尋 | 已在無薪搜尋引擎中自然排名的流量。 | Medium = `organic` |
 | 轉介 | 來自非有機搜尋的外部連結或非社交網路網站的流量。 | Medium = `referral` |
 | 付費搜尋 | 具有UTM追蹤程式碼的流量，其中媒體為「cpc」、「ppc」或「paidsearch」，而且是不符合「內容」的廣告發佈網路。 | Medium = `^(cpc|ppc|paidsearch)$`<br>以及廣告發佈網路≠ `Content` |
-| 社交 | 來自約[400個社交網路](https://www.annielytics.com/blog/analytics/sites-google-analytics-includes-in-social-reports/)中任何一個，且未標籤為廣告的轉介流量。 | 社交Source轉介= `Yes`<br>或Medium = `^(social|social-network|social-media|sm|social network|social media)$` |
+| 社交 | 來自約400個社交網路中的任何一個，且未被標籤為廣告的轉介流量。 | 社交Source轉介= `Yes`<br>或Medium = `^(social|social-network|social-media|sm|social network|social media)$` |
 | 電子郵件 | 來自以「電子郵件」媒體標籤的工作階段流量。 | Medium的UTM追蹤代碼= `email` |
 | 顯示 | 具有UTM追蹤程式碼（媒體為顯示或cpm）的流量。 也包括廣告發佈網路符合「內容」的AdWords互動 | Medium = `^(display|cpm|banner)$`<br>或廣告發佈網路= `Content`<br>以及廣告格式≠ `Text` |
 | 其他 | 其他廣告頻道（不包括付費搜尋）的工作階段，這些工作階段標示了媒體「cpc」、「ppc」、「cpm」、「cpv」、「cpa」、「cpp」、「affiliate」。 | Medium = `^(cpv|cpa|cpp|content-text)$` |

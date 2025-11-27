@@ -4,9 +4,9 @@ description: 瞭解什麼是質化同類群組、您為什麼可能有興趣建�
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,6 @@ ht-degree: 0%
 ## 什麼是`qualitative cohorts`？ {#whatare}
 
 一般來說，`Cohort`分析可廣義地定義為在其生命週期內具有類似特性的使用者群組的分析。 它可讓您識別不同使用者群組中的行為趨勢。
-
-請參閱[同類群組分析](https://www.cohortanalysis.com/)。
 
 大部分`cohort`會依共同日期將[!DNL Commerce Intelligence]個使用者分組分析（例如，指定月份中首次購買的所有客戶集）。 `qualitative cohort`有些不同：它是由非以時間為基準的特性所定義的使用者群組。 例如：
 
@@ -39,7 +37,7 @@ ht-degree: 0%
 
 在`qualitative cohort`中建立`Report Builder`報告時，Adobe分析團隊會在必要的資料表上建立一些[進階計算資料行](../data-warehouse-mgr/creating-calculated-columns.md)。
 
-若要建置這些專案，請提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant) （並參考此文章！）。 以下是您需要瞭解的事項：
+若要建置這些專案，請提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （並參考此文章！）。 以下是您需要瞭解的事項：
 
 * 您要使用執行同類群組分析的`metric`及其使用的表格（範例： `Revenue`，建置在`orders`表格上）。
 
