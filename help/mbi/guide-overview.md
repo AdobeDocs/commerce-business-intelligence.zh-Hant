@@ -5,7 +5,7 @@ breadcrumb-title: 指南概觀
 seo-title: Commerce Intelligence User Guide
 seo-description: Describes how to use Adobe Commerce Intelligence features used to gain insights from Adobe Commerce or Magento Open Source data, along with other third-party data sources.
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
-source-git-commit: 2522a1b8784d2cad126bcc796487f6158798a78a
+source-git-commit: bb836eaa0407057ad34bc13f1a74d34acbc6cc67
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 2%
@@ -39,25 +39,25 @@ ht-degree: 2%
 
 ## 如何取得協助
 
-如果您有任何問題，並且想要利用您的部分專業服務，或是您的帳戶發生問題，請連絡[支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+如果您有任何問題，並且想要利用您的部分專業服務，或是您的帳戶發生問題，請連絡[支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ### 服務原則
 
-檢視客戶支援團隊提供哪些服務的[清單](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+檢視客戶支援團隊提供哪些服務的[清單](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ### 提交支援票證
 
-需要建置進階計算欄的協助嗎？ 發生缺陷或連線問題？ 若您需要聯絡支援團隊，Adobe會要求您使用[支援票證指導方針](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。 這些指南概述Adobe解決問題所需的資訊。
+需要建置進階計算欄的協助嗎？ 發生缺陷或連線問題？ 若您需要聯絡支援團隊，Adobe會要求您使用[支援票證指導方針](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。 這些指南概述Adobe解決問題所需的資訊。
 
 ## 可用檔案
 
 | 檔案資源 | 說明 |
 |----------------------- | ----------- |
-| [Adobe Commerce 2.4商家檔案](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/user-guides/home) | 適用於Adobe Commerce和Magento Open Source的以商家為中心的檔案 |
-| [Adobe Commerce服務檔案](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home) | 支援服務集合的檔案，可協助商家將其業務的關鍵元件與商店整合。 |
-| [Adobe Commerce 2.4作業指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/operational-guides/home) | 有關用於開發、部署和維護在Adobe Commerce和Magento Open Source平台上部署之專案的概念、流程、工具和最佳實務的系統檔案。 |
+| [Adobe Commerce 2.4商家檔案](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | 適用於Adobe Commerce和Magento Open Source的以商家為中心的檔案 |
+| [Adobe Commerce服務檔案](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) | 支援服務集合的檔案，可協助商家將其業務的關鍵元件與商店整合。 |
+| [Adobe Commerce 2.4作業指南](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home) | 有關用於開發、部署和維護在Adobe Commerce和Magento Open Source平台上部署之專案的概念、流程、工具和最佳實務的系統檔案。 |
 | [Adobe Commerce 2.4開發人員檔案](https://developer.adobe.com/commerce/) | 用於建置和自訂Adobe Commerce或Magento Open Source的開發人員專屬檔案 |
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2025-09-04 10:40:17 -->
+<!-- Last updated from includes: 2026-01-07 10:11:29 -->
