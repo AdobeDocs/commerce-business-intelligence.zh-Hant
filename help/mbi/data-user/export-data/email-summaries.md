@@ -1,17 +1,17 @@
 ---
-title: 建立自動化的電子郵件摘要
+title: 建立自動化電子郵件摘要
 description: 瞭解如何建立自動化的電子郵件摘要。
 exl-id: a9aea4fc-9193-467f-8554-3ad77ac3fa73
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: a65ededb203b7551fdfcb31cff130ef85b01fbe3
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
 
-# 建立自動化的電子郵件摘要
+# 建立自動化電子郵件摘要
 
 電子郵件摘要是強大的溝通工具，可用來與關鍵利害關係人分享您的業務的狀態和趨勢。 透過電子郵件摘要，您可以：
 
@@ -34,11 +34,26 @@ ht-degree: 0%
 
 1. 在`Choose Content`區段中，選取您要包含在摘要中的報告。
 
+   新增內容有兩個選項：
+
+   * **選取個別報告** — 從您的儀表板選擇特定報告
+   * **選取整個儀表板** — 包含儀表板中顯示在儀表板配置中的所有報告
+
    您最多可以選取十個您擁有的報表。 選取報表後，使用顯示的圖示來選取是否要以表格或圖表形式傳送該報表。 如果以數字儲存報表，則只能以數字傳送。 如需傳送包含過時資料之報告的電子郵件摘要的相關資訊，請參閱[管理您的帳戶設定](../../administrator/account-management/managing-account-settings.md)。
+
+   若要新增整個儀表板，您有以下格式和刪除選項：
+
+   * 將報表格式變更為圖表或表格
+   * 刪除要包含在電子郵件中的報告
+   * 選取此選項可包含表格報表的CSV檔案，讓收件者直接從收件匣存取原始且可匯出的資料。
 
    >[!NOTE]
    >
    >`Cohort`報告僅在您使用新架構時可用。
+
+   >[!NOTE]
+   >
+   >大型CSV附件支援最多每封電子郵件25 MB的總和。
 
 1. （選擇性）若要接收電子郵件，請選取`Send Email To Me`。
 
@@ -82,20 +97,24 @@ ht-degree: 0%
 
 1. （選擇性）若要指定結束日期，請選取`End Date`並從行事曆中選取結束日期。
 
-## 修改現有的電子郵件摘要
+## 修改現有電子郵件摘要
 
-在您建立並儲存電子郵件摘要後，`Email Summaries`頁面會顯示所有已儲存摘要的清單。 您可以展開每一列(`+`)以取得詳細資訊。 此檢視中的欄為：
+在您建立並儲存電子郵件摘要後，`Email Summaries`頁面會顯示所有已儲存摘要的清單。 您可以展開每列的(`+`)以取得詳細資訊。 此檢視中的欄為：
 
 * `Email Name` — 電子郵件摘要的名稱
-* `Content` — 摘要中的內容型別，例如任何報告的名稱。 如需傳送包含過時資料之報告的電子郵件摘要的相關資訊，請參閱[管理您的帳戶設定](../../administrator/account-management/managing-account-settings.md)。
+* `Content` — 摘要中的內容型別，例如任何報告的名稱
 * `Scheduled` — 傳送電子郵件摘要的頻率、日期和時間
 * `Recipients` — 電子郵件摘要的收件者
 * `Created Date` — 建立電子郵件摘要的日期
 * `Status` - `Paused`或`Active`
 
+>[!NOTE]
+>
+>如需傳送包含過時資料之報告的電子郵件摘要的相關資訊，請參閱[管理您的帳戶設定](../../administrator/account-management/managing-account-settings.md)。
+
 按一下每列右側的齒輪圖示以：
 
 * `Send Now` — 立即傳送電子郵件摘要給所有指定的收件者
-* `Edit` — 可讓您修改電子郵件摘要的詳細資料
-* `Pause/Active` — 可讓您根據設定方式，暫停傳送電子郵件摘要或啟用摘要
+* `Edit` — 修改電子郵件摘要的詳細資料
+* `Pause/Active` — 暫停或啟動電子郵件摘要傳遞
 * `Delete` — 刪除電子郵件摘要
