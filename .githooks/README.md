@@ -1,7 +1,7 @@
 ---
-source-git-commit: 199353c57dd1ca316c2a8b76fee1148d0e342299
+source-git-commit: 98e0c5dbd61d6d0f8d1a6e09d239cb25cbab8f81
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ## 鉤子會做什麼
 
-- **自動偵測**&#x200B;個暫存的影像檔案(PNG、JPG、JPEG、GIF、SVG)
+- **自動偵測**&#x200B;個暫存的影像檔案(PNG、JPG、JPEG、GIF)
 - **執行`image_optim`**&#x200B;以壓縮和最佳化影像
 - **自動重新存放最佳化的影像**
 - **確定所有認可的影像都已正確最佳化**
@@ -85,11 +85,11 @@ Image optimization complete!
 ## 影像指導方針
 
 - **PNG**：用於熒幕擷取畫面和UI元素（將會自動最佳化）
-- **SVG**：用於圖示和簡單圖形（預設會停用最佳化）
+- **SVG**：用於圖示和簡單圖形（不是由預先認可勾點自動最佳化）
 - **JPEG**：用於像片（將自動最佳化）
 - **GIF**：用於動畫（將會自動最佳化）
 
-預先提交掛接將會在提交時自動最佳化所有影像。
+預先提交勾點會在提交時自動最佳化PNG、JPEG和GIF影像。
 
 ## 手動最佳化
 
@@ -138,10 +138,13 @@ bundle exec rake images:optimize path=../path/to/images
 
 ## 支援的影像格式
 
+預先確認掛接會自動處理：
+
 - **PNG** (`.png`) — 無失真和失真壓縮
 - **JPEG** (`.jpg`， `.jpeg`) — 包含中繼資料清理的失真壓縮
 - **GIF** (`.gif`) — 動畫和靜態最佳化
-- **SVG** (`.svg`) — 向量最佳化（預設為停用）
+
+**注意**： SVG最佳化預設為停用（可能會破壞複雜的向量圖形和動畫）。 預先提交勾點不會自動處理SVG檔案。
 
 ## 最佳實務
 
