@@ -4,9 +4,9 @@ description: 瞭解如何檢查更新週期狀態。
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: d683f1362d87eee16c41ba9a8a83a9ff533b14aa
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 為何要檢查更新週期狀態？
 
-當您稽核[!DNL Commerce Intelligence]帳戶中的資料時，檢查狀態更新週期會很有用。 如果您看到的[個結果不符合您的預期](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)，例如，[!DNL Commerce Intelligence]中的每日銷售與您在電子商務平台或[[!DNL Google] 電子商務收入](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=zh-Hant)中看到的不相符專案，您可以檢查最後一個資料點，以檢視問題在更新完成後是否得以解決。
+當您稽核[!DNL Commerce Intelligence]帳戶中的資料時，檢查狀態更新週期會很有用。 如果您看到的[個結果不符合您的預期](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)，例如，[!DNL Commerce Intelligence]中的每日銷售與您在電子商務平台或[[!DNL Google] 電子商務收入](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html)中看到的不相符專案，您可以檢查最後一個資料點，以檢視問題在更新完成後是否得以解決。
 
 ## [!UICONTROL Read-Only]和[!UICONTROL Standard]位使用者
 
@@ -42,3 +42,34 @@ ht-degree: 0%
 >[!NOTE]
 >
 >如果您設定了中斷時數（不希望[!DNL Commerce Intelligence]更新資料的時間），強制更新會啟動不遵守這些中斷時數限制的更新週期。
+
+
+## 使用API檢查更新週期狀態
+
+您可以使用&#x200B;**更新週期狀態API**&#x200B;來擷取最近完成的更新週期。
+
+**要求**
+
+```bash
+curl -sS -H "X-RJM-API-Key: <EXPORT-API-KEY>" \
+  https://api.rjmetrics.com/0.1/client/<CLIENT_ID>/fullupdatestatus
+```
+
+**回應（範例）**
+
+```json
+{
+  "clientId": 194,
+  "lastCompletedUpdateJob": {
+    "id": 13554,
+    "type": { "id": 2, "name": "Full Update" },
+    "start": "2025-12-09 03:26:25",
+    "end": "2025-12-09 03:29:03",
+    "status": { "id": 4, "name": "Completed Successfully" }
+  },
+  "lastCompletedUpdateJobWithDataSync": null,
+  "timezoneAbbreviation": "EST"
+}
+```
+
+如需引數、驗證、錯誤和速率限制，請參閱開發人員檔案中的[更新週期狀態API](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/)。

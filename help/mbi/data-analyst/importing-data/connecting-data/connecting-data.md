@@ -4,9 +4,9 @@ description: 瞭解如何在Data Warehouse Manager中瀏覽可供同步的表格
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: d683f1362d87eee16c41ba9a8a83a9ff533b14aa
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
@@ -66,10 +66,14 @@ ht-degree: 0%
 若要新增整合，請按一下&#x200B;**[!UICONTROL Manage Data** > **Connections]**，然後按一下&#x200B;**[!UICONTROL Add a New Data Source]**。 按一下要新增之整合的圖示，然後依照說明主題中的指示進行設定：
 
 * [整合常見問題集](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
-* [可用 &#x200B;](../integrations/integrations.md)
+* [可用 ](../integrations/integrations.md)
 * [合併您的表格](../../../best-practices/consolidating-your-tables.md)
 * [限制對資料庫的存取](../../../administrator/account-management/restrict-db-access.md)
 
-**沒有看見您想要的整合？**&#x200B;必須啟用部分整合，才會在您的帳戶中顯示。 如果您正在尋找[!DNL Facebook]之類的專案，但它並未列出，請[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+**沒有看見您想要的整合？**&#x200B;必須啟用部分整合，才會在您的帳戶中顯示。 如果您正在尋找[!DNL Facebook]之類的專案，但它並未列出，請[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 **如果您看到整合的錯誤狀態**，請參閱[疑難排解小節](https://support.magento.com/hc/en-us/sections/360003078151)以取得說明。
+
+## 監視更新健康狀態（選擇性）
+
+連線來源後，您可能想要自動執行基本健康情況檢查，以確認完整更新正在完成。 使用開發人員檔案中的[Update Cycle Status API](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/)，為您的使用者端擷取最近完成的更新週期，並將其顯示在內部儀表板或警示中。
