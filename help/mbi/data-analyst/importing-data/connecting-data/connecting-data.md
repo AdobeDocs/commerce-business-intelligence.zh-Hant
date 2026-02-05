@@ -66,7 +66,7 @@ ht-degree: 0%
 若要新增整合，請按一下&#x200B;**[!UICONTROL Manage Data** > **Connections]**，然後按一下&#x200B;**[!UICONTROL Add a New Data Source]**。 按一下要新增之整合的圖示，然後依照說明主題中的指示進行設定：
 
 * [整合常見問題集](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
-* [可用 ](../integrations/integrations.md)
+* [可用 &#x200B;](../integrations/integrations.md)
 * [合併您的表格](../../../best-practices/consolidating-your-tables.md)
 * [限制對資料庫的存取](../../../administrator/account-management/restrict-db-access.md)
 
