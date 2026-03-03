@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ## 在[!DNL Zendesk]中開啟[!DNL Commerce Intelligence]認證頁面 {#stepone}
 
-1. 移至`Integrations`資料來源&#x200B;**[!UICONTROL Manage Data** > ** > **整合&#x200B;**下的]**&#x200B;頁面。
+1. 移至`Integrations`資料來源&#x200B;**[!UICONTROL Manage Data** > **&#x200B; > &#x200B;** 整合&#x200B;**下的]**&#x200B;頁面。
 1. 按一下畫面右側的&#x200B;**[!UICONTROL Add Integration]**。
 1. 按一下[!DNL Zendesk]圖示。 這會開啟[!DNL Zendesk]認證頁面。
 

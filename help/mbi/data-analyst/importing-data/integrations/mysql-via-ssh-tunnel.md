@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 跳轉到
 
-* [[!DNL MySQL]透過 ](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL]透過 &#x200B;](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL]透過 [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 若要透過[!DNL MySQL]將您的[!DNL Commerce Intelligence]資料庫連線至`SSH tunnel`，您必須執行下列幾個動作：

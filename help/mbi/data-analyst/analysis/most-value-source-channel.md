@@ -15,7 +15,7 @@ ht-degree: 0%
 
 您調查了對象、建立了行銷活動、投資了幾個行銷管道。 現在時間已經過去，這些管道的表現如何？ 哪個頻道吸引的新使用者最多？ 哪一個來源對您的總收入貢獻最大？
 
-透過[!DNL Adobe Commerce Intelligence]，您可以透過反向連結來源輕鬆將收入和使用者分段，不論是對應至[!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en)或自訂資料欄位。 此細分可讓您找到績效最佳的管道，並更好地投入行銷預算。
+透過[!DNL Adobe Commerce Intelligence]，您可以透過反向連結來源輕鬆將收入和使用者分段，不論是對應至[[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en)或自訂資料欄位。 此細分可讓您找到績效最佳的管道，並更好地投入行銷預算。
 
 本主題會探索一些可用來發掘您最有價值行銷管道的報告：
 

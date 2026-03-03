@@ -69,27 +69,27 @@ ht-degree: 0%
 * [!UICONTROL Metric]：訂單數
 
 * [!UICONTROL Formula]：初始重複順序機率
-* 
-  [！UICONTROL公式]: `A/B`
-* 
+* &#x200B;
+  [!UICONTROL 公式]: `A/B`
+* &#x200B;
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]： `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Scalar`
 
 * **自訂單**&#x200B;以來的指定月份重複訂單機率
 * 量度A：自上次訂購後依月份重複訂購（隱藏）
 * [!UICONTROL Metric]： `Number of orders`
-* 
+* &#x200B;
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]： `Customer's order number greater than 1`
 
 * 量度B：按訂購後月份的最後訂單（隱藏）
 * [!UICONTROL Metric]： `Number of orders`
-* 
+* &#x200B;
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]： `Is customer's last order? (Yes/No) = Yes`
 
@@ -97,29 +97,29 @@ ht-degree: 0%
 * [!UICONTROL Metric]： `Number of orders`
 * [!UICONTROL Filter]： `Customer's order number greater than 1`
 
-* 
-  [！UICONTROL群組依據]: `Independent`
+* &#x200B;
+  [!UICONTROL 群組依據]: `Independent`
 
 * 量度D：所有上次訂單（隱藏）
 * [!UICONTROL Metric]： `Number of orders`
 * [!UICONTROL Filter]： `Is customer's last order? (Yes/No) = Yes`
 
-* 
-  [！UICONTROL群組依據]: `Independent`
+* &#x200B;
+  [!UICONTROL 群組依據]: `Independent`
 
 * [!UICONTROL Formula]：初始重複順序機率
-* 
-  [！UICONTROL公式]: `(C-A)/(C+D-A-B)`
-* 
+* &#x200B;
+  [!UICONTROL 公式]: `(C-A)/(C+D-A-B)`
+* &#x200B;
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]： `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]： `Months since previous order`
 * 顯示top.bottom：前24個類別，依類別名稱排序
 
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Line`
 
 初始重複訂購機率報表代表「重複訂購總數/訂購總數」。 每個訂單都是重複訂單的機會；重複訂單的數量是實際重複訂單的子集。

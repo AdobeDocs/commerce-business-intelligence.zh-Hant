@@ -48,7 +48,7 @@ ht-degree: 0%
 |---|---|---|
 | `Number of returns` | 要求的傳回次數。 | `Operation`欄： `entity id`<br>`Operation`： `Count`<br>`Timestamp`欄： `date requested` |
 | `Total returned amount` | 傳回的總金額。 | `Operation `資料行： `Return's total value`<br>`Operation`： Sum<br>`Timestamp`資料行：要求的日期 |
-| `Average returned amount` | 傳回的平均金額。 | `Operation`` Column: Return's total value`<br>`Operation`： `Average`<br>`Timestamp`欄： `date requested` |
+| `Average returned amount` | 傳回的平均金額。 | `Operation` ` Column: Return's total value`<br>`Operation`： `Average`<br>`Timestamp`欄： `date requested` |
 | `Average time to return` | 從訂單到退貨的平均時間。 | `Operation`欄：訂單建立日期與傳回請求日期之間的秒數<br>`Operation`： `Average`<br>`Timestamp`欄： `date requested` |
 
 {style="table-layout:auto"}
