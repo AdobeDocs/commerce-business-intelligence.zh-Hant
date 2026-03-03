@@ -2,9 +2,9 @@
 title: Connect WooCommerce
 description: 瞭解如何瞭解您的業務成效或尋找您最有價值的贏取來源和管道。
 exl-id: 26ac24e0-087b-4958-873c-2facab22ffb2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 0%
@@ -25,5 +25,5 @@ ht-degree: 0%
 
 ## 相關：
 
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [分段和篩選的建議資料維度](../../../best-practices/segment-filter.md)

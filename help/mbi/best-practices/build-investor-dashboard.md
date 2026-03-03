@@ -2,9 +2,9 @@
 title: 為投資者建立儀表板
 description: 瞭解如何為投資者建立儀表板。
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Dashboards, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
@@ -64,7 +64,7 @@ ht-degree: 0%
 * 網站造訪
 * 轉換率
 
-透過[Commerce資料擴充服務](https://business.adobe.com/tw/products/magento/magento-commerce.html)，您可以包含下列報表：
+透過[Commerce資料擴充服務](https://business.adobe.com/products/magento/magento-commerce.html)，您可以包含下列報表：
 
 * 依州/地區、年齡、性別區分的不重複客戶。
 

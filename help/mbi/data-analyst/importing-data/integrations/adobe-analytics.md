@@ -2,9 +2,9 @@
 title: 連線Adobe Analytics
 description: 瞭解如何將 [!DNL Adobe Analytics] 的端對端客戶歷程重點與您從 [!DNL Commerce Intelligence]所仰賴的電子商務重點結合在一起。
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 0%
@@ -57,6 +57,6 @@ ht-degree: 0%
 
 1. 選取的報表套裝會顯示在表格中。 按一下&#x200B;**[!UICONTROL Save]**&#x200B;以確認您的選擇。
 
-1. 通知[!DNL Commerce Intelligence] [支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)您的整合已獲得授權，他們將為您執行初始連線程式。
+1. 通知[!DNL Commerce Intelligence] [支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)您的整合已獲得授權，他們將為您執行初始連線程式。
 
 初始連線程式執行後，您的表格將可在Data Warehouse頁面的`All Tables`標籤下使用。 選取您要復寫的欄，資料將在下次完整更新後顯示。

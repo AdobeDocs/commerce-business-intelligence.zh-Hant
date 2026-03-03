@@ -2,9 +2,9 @@
 title: 包含的儀表板
 description: 瞭解如何檢查基本量度的健康情況，例如使用者期限收入、重複購買次數等，從而為未來的探索奠定堅實的基礎。
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 3a7423c9dd0f957b77baa27b3447a715caad017b
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >部分儀表板的可用性取決於您的資料集。
 
-如果您有問題或有興趣將套件新增至您的帳戶，請提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)以尋求協助。
+如果您有問題或有興趣將套件新增至您的帳戶，請提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以尋求協助。
 
 ## 執行概覽
 

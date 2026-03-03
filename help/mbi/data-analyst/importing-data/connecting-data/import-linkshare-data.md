@@ -2,9 +2,9 @@
 title: 匯入Linkshare資料
 description: 瞭解如何將Linkshare資料匯入 [!DNL Commerce Intelligence]。
 exl-id: 1c2025a6-746c-4929-bbb1-62af1afcbc49
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 若要將您的[!DNL Linkshare]資料帶入[!DNL Adobe Commerce Intelligence]，您必須執行下列兩件事：
 
-1. [匯出Linkshare資料於 &#x200B;](#export)
+1. [匯出Linkshare資料於 ](#export)
 1. [將試算表上傳至 [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
 ## 從Linkshare匯出資料 {#export}

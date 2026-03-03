@@ -2,9 +2,9 @@
 title: 瞭解並評估表格關係
 description: 瞭解如何瞭解一個表格中可能屬於另一個實體多少個事件。
 exl-id: e7256f46-879a-41da-9919-b700f2691013
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 0%

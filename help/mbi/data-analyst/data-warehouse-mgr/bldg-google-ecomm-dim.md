@@ -2,9 +2,9 @@
 title: 建置[!DNL Google ECommerce]維度
 description: 瞭解如何建立將您的電子商務資料與您的訂單和客戶資料連結的維度。
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Warehouse Manager
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 0%
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ## 建立維度
 
-若要建立維度，請按一下[&#x200B; > &#x200B;](../data-warehouse-mgr/tour-dwm.md)以開啟&#x200B;**[!UICONTROL Data]** Data Warehouse管理員&#x200B;**[!UICONTROL Data Warehouse]**。
+若要建立維度，請按一下[ > ](../data-warehouse-mgr/tour-dwm.md)以開啟&#x200B;**[!UICONTROL Data]** Data Warehouse管理員&#x200B;**[!UICONTROL Data Warehouse]**。
 
 ### 訂單表格，第1回合
 

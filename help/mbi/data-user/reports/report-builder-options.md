@@ -2,9 +2,9 @@
 title: 選擇Report Builder
 description: 瞭解如何選擇您的Report Builder。
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 # 選擇Report Builder
 
 >[!NOTE]
->&#x200B;>需要[管理員許可權](../../administrator/user-management/user-management.md)。
+>>需要[管理員許可權](../../administrator/user-management/user-management.md)。
 
 現在您有了更多建立分析的選項，有時候可能很難確切知道Report Builder的哪一種風格適合您的需求。 本主題將引導您選擇最佳方法來建置分析。
 

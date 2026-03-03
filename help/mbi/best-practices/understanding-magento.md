@@ -2,9 +2,9 @@
 title: 瞭解您的 [!DNL Commerce Intelligence] 環境
 description: 瞭解如何使用及改善您的 [!DNL Commerce Intelligence] 環境。
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '749'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 您的[!DNL Adobe Commerce Intelligence]環境
 
-當您分析商務資料時，請注意這些因素和常見的誤解。 若您需要協助以確保您正確使用Commerce結構描述，請立即[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+當您分析商務資料時，請注意這些因素和常見的誤解。 若您需要協助以確保您正確使用Commerce結構描述，請立即[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ## [!DNL entity\_id]
 

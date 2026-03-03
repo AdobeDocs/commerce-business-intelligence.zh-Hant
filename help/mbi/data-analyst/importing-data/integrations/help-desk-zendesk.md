@@ -2,9 +2,9 @@
 title: Zendesk服務檯報告
 description: 瞭解您最有價值的轉介管道。
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 * **`[!DNL Zendesk] user's`**&#x200B;資料表
    * `User is agent? (Yes/No) `
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Calculation`
 
       * `Input columns` - `role`，`email`
@@ -161,19 +161,19 @@ ht-degree: 0%
 * `Ticket's latest solved date`
 * `First agent response date`
 * `Seconds to resolution`
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Date Difference`
 
       * `Ticket's latest solved date`減去`created_at`
 
 * **`Seconds to first response`**
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Date Difference`
 
       * `First agent response date`減去`created_at`
 
 * **`Requester's ticket number`**
-   * &#x200B;
+   * 
       * `Column type` - `Same Table > Event Number`
 
       * `Event Owner` - `requester_id`
@@ -181,7 +181,7 @@ ht-degree: 0%
       * `Event Rank` - `created_at`
 
 * **`Ticket created_at (hour of day)`**
-   * &#x200B;
+   * 
       * `Column type` - 「相同表格>計算」
 
       * `Input columns` - `created_at`
@@ -191,7 +191,7 @@ ht-degree: 0%
       * `Datatype` — 整數
 
 * **`Ticket created_at (day of week)`**
-   * &#x200B;
+   * 
       * `Column type` - 「相同表格>計算」
 
       * `Input columns` - `created_at`
@@ -204,8 +204,8 @@ ht-degree: 0%
    * 選取定義： `Count`
    * [!UICONTROL Create Path]：
    * [!UICONTROL Many]： `[!DNL Zendesk] tickets.email`
-   * &#x200B;
-     [!UICONTROL One]: `customer_entity.email`
+   * 
+     [！UICONTROL One]: `customer_entity.email`
 
    * 選取[!UICONTROL table]： `[!DNL Zendesk] tickets`
    * [!UICONTROL Path]： `[!DNL Zendesk] tickets.email = customer_entity.email`
@@ -214,7 +214,7 @@ ht-degree: 0%
 
 * **`User's lifetime number of support tickets requested`**
 * **`Has user filed a support ticket? (Yes/No)`**
-   * &#x200B;
+   * 
       * `Column type` - 「相同表格>計算」
 
       * `Input columns` - `User's lifetime number of support tickets requested`
@@ -401,8 +401,8 @@ ht-degree: 0%
 * `Chart Type`： `Column`
 
 * **[!UICONTROL Number of new users who have and have not filed tickets]**
-   * &#x200B;
-     [!UICONTROL 公制]: Users
+   * 
+     [！UICONTROL公制]: Users
 
 * 量度`A`： `New users`
 * `Time period`： `All time`

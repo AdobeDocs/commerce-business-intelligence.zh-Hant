@@ -2,9 +2,9 @@
 title: 使用SQL Report Builder
 description: 瞭解如何使用SQL Report Builder稽核資料和測量結果，以便將結果與本機資料庫的資料進行比較。
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Reports, Data Warehouse Manager, SQL Report Builder
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -48,4 +48,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您在稽核資料後發現不一致，請參閱[連絡支援：資料差異](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=zh-Hant)支援主題，以取得後續操作的詳細資訊。
+>如果您在稽核資料後發現不一致，請參閱[連絡支援：資料差異](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html)支援主題，以取得後續操作的詳細資訊。

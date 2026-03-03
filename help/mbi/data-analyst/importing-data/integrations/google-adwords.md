@@ -2,9 +2,9 @@
 title: 連線Google Adwords
 description: 瞭解如何將您的廣告成本與從您的行銷活動取得的使用者客戶期限值(CLV)結合，以評估行銷活動ROI。
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
@@ -55,9 +55,9 @@ ht-degree: 0%
 
 ## 相關
 
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [透過 [!DNL Google ECommerce]追蹤訂單轉介來源](../integrations/google-ecommerce.md)
 * [追蹤資料庫中的使用者反向連結來源](../../analysis/google-track-user-acq.md)
 * [探索您最有價值的贏取來源和管道](../../analysis/most-value-source-channel.md)
 * [提高廣告行銷活動的ROI](../../analysis/roi-ad-camp.md)
-* [&#x200B; [!DNL Google Analytics] UTM歸因如何運作？](../../analysis/utm-attributes.md)
+* [ [!DNL Google Analytics] UTM歸因如何運作？](../../analysis/utm-attributes.md)

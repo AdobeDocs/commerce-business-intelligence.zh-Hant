@@ -2,9 +2,9 @@
 title: 重複訂購機率報表
 description: 瞭解並瞭解「重複訂購機率報表」。
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 在某些情況下，您或許可以將`order-specific`維度轉換為`user-specific`維度，以新增為`Repeat Order Probability`圖表中的篩選器。 在這些情況下，您會傳回使用者第一訂單或最新訂單的訂單屬性（例如，使用者的第一訂單區域名稱）。
 
-若要建立這類新維度，[請連絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+若要建立這類新維度，[請連絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ## 比較不同屬性的訂單重複機率
 

@@ -2,9 +2,9 @@
 title: 連線QuickBooks
 description: 瞭解您的企業財務現在如何與銷售和行銷資料並存，讓您快速輕鬆地掌握費用、識別超支等等。
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: b6f8a4f533286fad67dc875ebb6f4f3b7022ca5b
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -44,4 +44,4 @@ ht-degree: 0%
 ## 相關
 
 * [預期 [!DNL QuickBooks] 資料](../integrations/quickbooks-data.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

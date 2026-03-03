@@ -2,9 +2,9 @@
 title: 在視覺Report Builder中使用時間選項
 description: 瞭解如何分析特定時段內的報表資料。
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 0%
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ## 比較不同時間範圍內的相同量度 {#difftimerange}
 
-此範例使用名為`Day number of the month`的自訂維度。 如果您想要建立此報表，但您的Data Warehouse中尚未有此維度，請[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)以尋求協助。
+此範例使用名為`Day number of the month`的自訂維度。 如果您想要建立此報表，但您的Data Warehouse中尚未有此維度，請[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以尋求協助。
 
 此類別中最常見的兩個範例是(1)比較成長量度（逐年收入或逐月收入），以及(2)更瞭解最近的存貨或專案銷售趨勢。
 

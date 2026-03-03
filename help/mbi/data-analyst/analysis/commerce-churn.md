@@ -2,9 +2,9 @@
 title: Commerce流失
 description: 瞭解如何產生及分析您的Commerce流失率。
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 2%
@@ -76,19 +76,19 @@ ht-degree: 2%
 * **流失率**
    * [!UICONTROL Metric]：新客戶（依第一筆訂單日期）
    * [!UICONTROL Filter]： `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]： `New customers (by last order date)`
    * [!UICONTROL Filter]：
-   * 自客戶上次訂購日期起的秒數>= [您為流失客戶定義的截止日期&#x200B;]&#x200B;**`^`**
+   * 自客戶上次訂購日期起的秒數>= [您為流失客戶定義的截止日期&#x200B;]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]： `New customers (by last order date)`
    * [!UICONTROL Filter]： `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]： `(B / ((A + B) - C)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: Percentage
 
 * *量度`A`：`New customers cumulative`*

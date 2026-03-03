@@ -2,9 +2,9 @@
 title: 建立質化同類群組分析
 description: 瞭解什麼是質化同類群組、您為什麼可能有興趣建立此分析，以及如何在Commerce Intelligence中建立它。
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 0%
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 在`qualitative cohort`中建立`Report Builder`報告時，Adobe分析團隊會在必要的資料表上建立一些[進階計算資料行](../data-warehouse-mgr/creating-calculated-columns.md)。
 
-若要建置這些專案，請提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant) （並參考此文章！）。 以下是您需要瞭解的事項：
+若要建置這些專案，請提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) （並參考此文章！）。 以下是您需要瞭解的事項：
 
 * 您要使用執行同類群組分析的`metric`及其使用的表格（範例： `Revenue`，建置在`orders`表格上）。
 

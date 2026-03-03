@@ -2,9 +2,9 @@
 title: 分段和篩選的建議資料維度
 description: 瞭解細分和篩選的最佳實務。
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '911'
 ht-degree: 0%
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 * **[!UICONTROL Billing / Shipping Address]**：您大部分的訂單來自何處？ 帳單和運送地址之間是否有差異？
 * **[!UICONTROL Status]**：您有多少訂單無法完成？ 過去七天擱置訂單的比率是多少？
-* **[!UICONTROL Customer acquisition source]**：除了在使用者層級追蹤使用者贏取資料之外，您還可以在訂單或事件層級[追蹤資料。 &#x200B;](../data-analyst/analysis/google-track-user-acq.md)透過一個來源註冊的使用者完全可以繼續透過其他來源存取您的網站。
+* **[!UICONTROL Customer acquisition source]**：除了在使用者層級追蹤使用者贏取資料之外，您還可以在訂單或事件層級[追蹤資料。 ](../data-analyst/analysis/google-track-user-acq.md)透過一個來源註冊的使用者完全可以繼續透過其他來源存取您的網站。
 * **[!UICONTROL Device]**：行動訂單的數量是否增加？ 您的收入中有多少是透過行動裝置購買產生的？ (如果您尚未追蹤此專案，請參閱此主題[關於追蹤順序裝置資料](../data-analyst/analysis/track-usr-dev-browser.md)。
 * **[!UICONTROL Fulfillment Center]**：您的哪個履行中心產生最多收入？ 如果您正在分析訂單時間與出貨時間之間的差異，哪一個履行中心的回應速度最快？
 * **[!UICONTROL Delivery Carrier]**：哪一個是最受歡迎的電信業者？ 哪個電信業者傳回的專案數最少？
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 依照上述維度來劃分量度的第一個步驟，就是確定您正在資料庫中追蹤此資料。 如果未受到追蹤，請和您的技術團隊會面，並找到開始追蹤此資料的方法。
 
-確認資料庫已追蹤資料後，[請連絡支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)，將維度推送至[!DNL Commerce Intelligence]量度和圖表。 您也可以使用&#x200B;*欄位管理*&#x200B;工具來追蹤[!DNL Commerce Intelligence]中的這些欄位。
+確認資料庫已追蹤資料後，[請連絡支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)，將維度推送至[!DNL Commerce Intelligence]量度和圖表。 您也可以使用&#x200B;*欄位管理*&#x200B;工具來追蹤[!DNL Commerce Intelligence]中的這些欄位。
 
 ## 相關
 

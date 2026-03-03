@@ -2,9 +2,9 @@
 title: 匯出原始資料
 description: 瞭解如何從您的 [!DNL Commerce Intelligence] Data Warehouse匯出記錄，以進一步瞭解為您的儀表板提供動力的原因。
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 匯出原始資料
 
-使用原始資料匯出，您可以從Data Warehouse匯出記錄，以更密切地瞭解為您的儀表板提供動力的內容。 此外，原始資料匯出可協助您[精確找出資料差異](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=zh-Hant)。
+使用原始資料匯出，您可以從Data Warehouse匯出記錄，以更密切地瞭解為您的儀表板提供動力的內容。 此外，原始資料匯出可協助您[精確找出資料差異](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html)。
 
 原始資料匯出可讓您存取透過取消標準化及預先彙總相關量度而產生的其他欄和維度。 例如，`User's first order date`是可為[!DNL Commerce Intelligence]中的每個使用者匯出的維度，但資料庫中可能無法使用。
 

@@ -2,9 +2,9 @@
 title: 建立量度的篩選器集
 description: 瞭解如何建立已儲存的篩選器集，並將其套用至量度。
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 如果[!DNL Commerce Intelligence]中有多個量度需要以類似方式篩選（例如，篩選掉測試訂單），您可以建立已儲存的「篩選設定」並將它們套用至量度。 這樣可節省您的時間，因為在建立或編輯量度時，您不必新增個別篩選器。
 
-如需詳細資訊，請參閱[訓練影片](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=zh-Hant)。
+如需詳細資訊，請參閱[訓練影片](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html)。
 
 >[!NOTE]
 >

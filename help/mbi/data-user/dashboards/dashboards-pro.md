@@ -2,9 +2,9 @@
 title: 現成可用的儀表板
 description: 瞭解現成可用的儀表板，以將insight提供給您的企業。
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->這些儀表板的存取權取決於您的帳戶型別和存取層級。 如果您沒有看到這些儀表板，請連絡[支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+>這些儀表板的存取權取決於您的帳戶型別和存取層級。 如果您沒有看到這些儀表板，請連絡[支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ## 報告可用性
 
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ## 產品
 
-「產品」儀表板會顯示一般產品績效，包括訂購的產品、其商品總值(GMV)，以及購買與退款的頂級產品。 這可協助您平衡購買與回報，並判斷產品成功與受歡迎程度。 您的商店必須設定[以追蹤退款](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=zh-Hant)，才能填入這些圖表。
+「產品」儀表板會顯示一般產品績效，包括訂購的產品、其商品總值(GMV)，以及購買與退款的頂級產品。 這可協助您平衡購買與回報，並判斷產品成功與受歡迎程度。 您的商店必須設定[以追蹤退款](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html)，才能填入這些圖表。
 
 >[!NOTE]
 >

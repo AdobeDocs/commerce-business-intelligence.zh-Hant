@@ -2,9 +2,9 @@
 title: 匯入Bing廣告支出資料
 description: 瞭解如何將Bing廣告支出資料匯入 [!DNL Commerce Intelligence] 進行分析。
 exl-id: c8dec4b4-74ce-41b2-a77d-403fe44e2816
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 0%
@@ -26,4 +26,4 @@ ht-degree: 0%
 1. 在`Save As`對話方塊中，按一下您想要儲存匯出檔案的資料夾。
 1. 在`File name`方塊中，選擇檔案匯出的名稱。
 1. 按一下&#x200B;**[!UICONTROL Save]**。
-1. 下載檔案後，[請連絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)代表您執行第一次上傳，並設定必要的後端維度。
+1. 下載檔案後，[請連絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)代表您執行第一次上傳，並設定必要的後端維度。

@@ -2,9 +2,9 @@
 title: 在儀表板中大量編輯圖表
 description: 瞭解如何在 [!DNL Commerce Intelligence]中使用大量編輯功能。
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 大量編輯功能可讓您輕鬆變更儀表板中的圖表名稱和日期。 例如，您希望特定控制面板上的所有圖表每月參照單一商店並報告，而非每季報告。 讓`bulk-editing`功能完成工作，而不用手動變更所有專案。 在本主題中，您將瞭解如何使用：
 
-* [&#x200B; [!DNL Find/Replace] 功能](#findreplace)
+* [ [!DNL Find/Replace] 功能](#findreplace)
 
-* [&#x200B; [!DNL Prepend Name] 功能](#prepend)
+* [ [!DNL Prepend Name] 功能](#prepend)
 
-* [&#x200B; [!DNL Change Dates] 功能](#dates)
+* [ [!DNL Change Dates] 功能](#dates)
 
 話雖如此，請考慮此事項 — *這些變更需要永久嗎？*&#x200B;如果沒有，請考慮複製儀表板，然後變更新儀表板中的日期。 這可讓您保留原始儀表板，同時仍可進行所需的變更。
 

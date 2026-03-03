@@ -2,9 +2,9 @@
 title: 設定復寫方法
 description: 瞭解表格的組織方式，以及表格資料的行為方式，讓您為表格選擇最佳的複製方法。
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1442'
 ht-degree: 0%
@@ -135,6 +135,6 @@ ht-degree: 0%
 ## 相關檔案
 
 * [瞭解資料重新檢查](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [修改資料庫以支援 &#x200B;](../../best-practices/mod-db-inc-replication.md)
+* [修改資料庫以支援 ](../../best-practices/mod-db-inc-replication.md)
 * [最佳化資料庫以進行分析](../../best-practices/opt-db-analysis.md)
 * [縮短更新時間](../../best-practices/reduce-update-cycle-time.md)

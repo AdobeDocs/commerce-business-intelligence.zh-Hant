@@ -2,9 +2,9 @@
 title: 預期Google Adwords資料
 description: 瞭解如何使用Data Warehouse Manager輕鬆追蹤相關資料欄位以進行分析。
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%
@@ -89,4 +89,4 @@ ht-degree: 0%
 
 如果您沒有整合表格，但您在`adwords`表格上建置了精美的儀表板，則需要復寫報告或建立重複的量度，以便將該資料與您的[!DNL Facebook Ads]資料進行比較。 使用合併表格可讓您順暢地將[!DNL Facebook Ads]資料與現有的[!DNL Adwords]報告合併。 您也可以依廣告平台分段。
 
-如果您已同步上述欄位，[請連絡我們](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)以整合您的廣告支出。
+如果您已同步上述欄位，[請連絡我們](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)以整合您的廣告支出。

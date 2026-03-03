@@ -2,9 +2,9 @@
 title: 預期 [!DNL Adobe Analytics] 資料
 description: 瞭解連線RDS執行個體的步驟。
 exl-id: 4df66ec1-c7f3-4b02-8f0f-49cada99c14c
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -48,6 +48,6 @@ ht-degree: 0%
 | 限制 | 說明 |
 | --- | --- |
 | `Historical data period` | 如同其他協力廠商整合，[!DNL Adobe Analytics]整合會提取有限的歷史資料量，然後繼續更新資料。 歷史期間設定為2週。 |
-| `Empty component combinations` | 有些量度和維度組合沒有包含資料。 如果選取這種組合進行復寫，[!DNL Commerce Intelligence]會從復寫資料表中排除資料行。 若要避免選取這類組合，您可以先在[[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hant)中建立報告，以確認您取得預期的資料。 |
+| `Empty component combinations` | 有些量度和維度組合沒有包含資料。 如果選取這種組合進行復寫，[!DNL Commerce Intelligence]會從復寫資料表中排除資料行。 若要避免選取這類組合，您可以先在[[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)中建立報告，以確認您取得預期的資料。 |
 | `Re-authorization cadence` | 每兩週需要重新授權[!DNL Adobe Analytics]整合。 若要重新授權，請移至整合的[編輯]頁面，然後按一下&#x200B;**[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]**。 |
 | `One dimension per row` | [!DNL Adobe Analytics]一次提供一個維度的量度資料。 如果您在設定期間選取多個維度，則[!DNL Commerce Intelligence]表格中的每一列會包含單一維度值，且其他維度的每一列為Null。 |
