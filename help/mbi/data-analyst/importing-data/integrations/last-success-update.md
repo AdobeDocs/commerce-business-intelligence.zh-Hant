@@ -31,4 +31,4 @@ ht-degree: 0%
 若要檢查來自&#x200B;*特定資料表*&#x200B;的資料是否新鮮，Adobe建議建立快速的[[!DNL SQL] 報告](../../dev-reports/sql-rpt-bldr.md)，對您帳戶上最重要的資料表執行`MAX(timestamp)`。 將此時間戳記與`Last Data Point`做比較，會指出問題是否會影響整個帳戶或資料表的子集。 Adobe建議針對三至四個重要的常用表格執行此作業。
 
 - 如果`MAX(timestamp)`值比`Last Data Point Received`更新，則表示資料表的子集受到影響，但整體帳戶的更新週期是穩定的。
-- 如果`MAX(timestamp)`值等於或早於`Last Data Point Received`，表示帳戶的更新週期受到影響。 在這種情況下，[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+- 如果`MAX(timestamp)`值等於或早於`Last Data Point Received`，表示帳戶的更新週期受到影響。 在這種情況下，[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。

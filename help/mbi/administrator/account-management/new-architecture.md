@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ### 取得協助
 
-[!DNL Adobe Commerce Intelligence] [服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)可以執行您的重新實作，但需額外付費。 請連絡您的[Adobe帳戶團隊](../../guide-overview.md#Submitting-a-Support-Ticket)，並準備好提供您想要優先在新帳戶中建立的控制面板/報告清單
+[!DNL Adobe Commerce Intelligence] [服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)可以執行您的重新實作，但需額外付費。 請連絡您的[Adobe帳戶團隊](../../guide-overview.md#Submitting-a-Support-Ticket)，並準備好提供您想要優先在新帳戶中建立的控制面板/報告清單
 
 ### 繼續使用現有架構
 

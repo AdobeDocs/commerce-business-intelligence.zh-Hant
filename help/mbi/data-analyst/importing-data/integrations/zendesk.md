@@ -54,4 +54,4 @@ ht-degree: 0%
 ## 相關：
 
 * [預期 [!DNL Zendesk] 資料](../integrations/exp-zendesk-data.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)

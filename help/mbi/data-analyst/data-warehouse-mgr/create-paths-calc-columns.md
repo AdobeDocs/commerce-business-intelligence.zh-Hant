@@ -20,7 +20,7 @@ ht-degree: 0%
 1. 資料庫中的資料表如何相互關聯
 1. 定義此關係的主要和外部索引鍵
 
-如果您知道此資訊，可以依照本主題中的指示輕鬆建立路徑。 您可能想要詢問貴組織的技術專家，或聯絡[Professional Services團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+如果您知道此資訊，可以依照本主題中的指示輕鬆建立路徑。 您可能想要詢問貴組織的技術專家，或聯絡[Professional Services團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
 
 ## 重新整理表格關係和索引鍵型別 {#refresher}
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 * **[!DNL Commerce Intelligence]無法猜測主要/外部索引鍵關係**。 您不想將不正確的資料帶入帳戶，因此建立路徑必須手動完成。
 
-* **目前只能在兩個不同的資料表**&#x200B;之間指定路徑。 您嘗試重新建立的邏輯是否涉及兩個以上的表格？ 然後(1)先將資料行聯結至中介表格，然後再聯結至「最終目的地」表格，或(2)洽詢[專業服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)，以找出達成目標的最佳方法，這樣做可能會有意義。
+* **目前只能在兩個不同的資料表**&#x200B;之間指定路徑。 您嘗試重新建立的邏輯是否涉及兩個以上的表格？ 然後(1)先將資料行聯結至中介表格，然後再聯結至「最終目的地」表格，或(2)洽詢[專業服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)，以找出達成目標的最佳方法，這樣做可能會有意義。
 
 * **資料行一次只能是ONE路徑的外部索引鍵參考**。 例如，如果`order_items.order_id`指向`orders.id`，則`order_items.order_id`無法指向任何其他專案。
 

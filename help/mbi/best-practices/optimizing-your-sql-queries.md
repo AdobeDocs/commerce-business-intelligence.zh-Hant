@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL SQL Report Builder]可讓您隨時執行並變更查詢。 如果您需要立即更新查詢，而不是等到更新週期完成後再修正欄或報表，此功能會很有幫助。
 
-在執行查詢之前，[[!DNL Commerce Intelligence] 會估計其成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html)。 成本會考慮執行查詢所需的時間長度和資源數量。 如果該成本被認為太高，或者如果傳回的列數超過[!DNL Commerce Intelligence]限制，則查詢會失敗。 為了查詢您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) （可確保您撰寫的查詢儘可能簡化），Adobe建議下列事項。
+在執行查詢之前，[[!DNL Commerce Intelligence] 會估計其成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=zh-Hant)。 成本會考慮執行查詢所需的時間長度和資源數量。 如果該成本被認為太高，或者如果傳回的列數超過[!DNL Commerce Intelligence]限制，則查詢會失敗。 為了查詢您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) （可確保您撰寫的查詢儘可能簡化），Adobe建議下列事項。
 
 ## 使用SELECT或選取所有欄
 

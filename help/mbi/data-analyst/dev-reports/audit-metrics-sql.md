@@ -48,4 +48,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您在稽核資料後發現不一致，請參閱[連絡支援：資料差異](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html)支援主題，以取得後續操作的詳細資訊。
+>如果您在稽核資料後發現不一致，請參閱[連絡支援：資料差異](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=zh-Hant)支援主題，以取得後續操作的詳細資訊。

@@ -25,7 +25,7 @@ ht-degree: 0%
 
 在某些情況下，您或許可以將`order-specific`維度轉換為`user-specific`維度，以新增為`Repeat Order Probability`圖表中的篩選器。 在這些情況下，您會傳回使用者第一訂單或最新訂單的訂單屬性（例如，使用者的第一訂單區域名稱）。
 
-若要建立這類新維度，[請連絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+若要建立這類新維度，[請連絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
 
 ## 比較不同屬性的訂單重複機率
 
