@@ -2,9 +2,9 @@
 title: 年度、每月和每週報告
 description: 瞭解如何輕鬆檢視一段時間內的趨勢，並變更您想比較之時間期間的觀點。
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: Reports, Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 0%

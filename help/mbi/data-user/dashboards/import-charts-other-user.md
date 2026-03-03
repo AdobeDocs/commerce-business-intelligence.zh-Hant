@@ -2,9 +2,9 @@
 title: 從其他使用者匯入圖表
 description: 瞭解如何編輯其他使用者擁有的圖表，或建立類似內容。
 exl-id: defcb72d-6027-4ae7-b974-e2f39773fe32
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 0%

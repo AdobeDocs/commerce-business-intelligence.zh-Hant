@@ -2,9 +2,9 @@
 title: 透過VPN連線資料庫
 description: 瞭解如何透過VPN而非SSH通道連線資料庫。
 exl-id: c7aa564d-42de-426e-92e9-f6e250a6abba
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%

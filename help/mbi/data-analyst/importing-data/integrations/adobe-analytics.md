@@ -2,9 +2,9 @@
 title: 連線Adobe Analytics
 description: 瞭解如何將 [!DNL Adobe Analytics] 的端對端客戶歷程重點與您從 [!DNL Commerce Intelligence]所仰賴的電子商務重點結合在一起。
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 0%

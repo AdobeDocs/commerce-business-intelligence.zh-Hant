@@ -2,9 +2,9 @@
 title: 使用贏取來源複製Google Analytics管道
 description: 瞭解如何使用贏取來源複製Google Analytics管道。
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 0%
@@ -32,11 +32,11 @@ ht-degree: 0%
 | 直接 | 直接進入您網站的人。 | Source = `Direct`<br>而Medium = `(not set); OR Medium = (none)` |
 | 有機搜尋 | 已在無薪搜尋引擎中自然排名的流量。 | Medium = `organic` |
 | 轉介 | 來自非有機搜尋的外部連結或非社交網路網站的流量。 | Medium = `referral` |
-| 付費搜尋 | 具有UTM追蹤程式碼的流量，其中媒體為「cpc」、「ppc」或「paidsearch」，而且是不符合「內容」的廣告發佈網路。 | Medium = `^(cpc|ppc|paidsearch)$`<br>以及廣告發佈網路≠ `Content` |
-| 社交 | 來自約400個社交網路中的任何一個，且未被標籤為廣告的轉介流量。 | 社交Source轉介= `Yes`<br>或Medium = `^(social|social-network|social-media|sm|social network|social media)$` |
+| 付費搜尋 | 具有UTM追蹤程式碼的流量，其中媒體為「cpc」、「ppc」或「paidsearch」，而且是不符合「內容」的廣告發佈網路。 | Medium = `^(cpc`\|`ppc`\|`paidsearch)$`<br>以及廣告發佈網路≠ `Content` |
+| 社交 | 來自約400個社交網路中的任何一個，且未被標籤為廣告的引薦流量。 | 社交Source轉介= `Yes`<br>或Medium = `^(social`\|`social-network`\|`social-media`\|`sm`\|`social network`\|`social media)$` |
 | 電子郵件 | 來自以「電子郵件」媒體標籤的工作階段流量。 | Medium的UTM追蹤代碼= `email` |
-| 顯示 | 具有UTM追蹤程式碼（媒體為顯示或cpm）的流量。 也包括廣告發佈網路符合「內容」的AdWords互動 | Medium = `^(display|cpm|banner)$`<br>或廣告發佈網路= `Content`<br>以及廣告格式≠ `Text` |
-| 其他 | 其他廣告頻道（不包括付費搜尋）的工作階段，這些工作階段標示了媒體「cpc」、「ppc」、「cpm」、「cpv」、「cpa」、「cpp」、「affiliate」。 | Medium = `^(cpv|cpa|cpp|content-text)$` |
+| 顯示 | 具有UTM追蹤程式碼（媒體為顯示或cpm）的流量。 也包括廣告發佈網路符合「內容」的AdWords互動 | Medium = `^(display`\|`cpm`\|`banner)$`<br>OR廣告發佈網路= `Content`<br>且廣告格式≠`Text` |
+| 其他 | 其他廣告頻道（不包括付費搜尋）的工作階段，這些工作階段標示了媒體「cpc」、「ppc」、「cpm」、「cpv」、「cpa」、「cpp」、「affiliate」。 | Medium = `^(cpv`\|`cpa`\|`cpp`\|`content-text)$` |
 
 {style="table-layout:auto"}
 

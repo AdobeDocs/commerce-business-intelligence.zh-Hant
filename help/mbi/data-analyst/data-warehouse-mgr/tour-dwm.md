@@ -2,9 +2,9 @@
 title: Data Warehouse Manager
 description: 瞭解如何管理表格和欄同步設定、深入研究表格的綱要，以及建立要在報告中使用的計算欄。
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 0%

@@ -2,9 +2,9 @@
 title: 存取您的Commerce Intelligence帳戶
 description: 瞭解如何登入您的Commerce Intelligence帳戶。
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: Accounts
-source-git-commit: 988a7bee27a0c381d1c84db960e978ca73eb3615
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 0%

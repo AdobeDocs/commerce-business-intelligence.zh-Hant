@@ -2,9 +2,9 @@
 title: 非日期同類群組的同類群組Report Builder
 description: 瞭解如何依類似活動或屬性將使用者分組。
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 76c5329c3f55570fa4e46601e902dc5a09e319e7
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%

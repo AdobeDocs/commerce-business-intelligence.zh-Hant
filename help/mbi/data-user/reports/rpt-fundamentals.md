@@ -2,9 +2,9 @@
 title: 使用報表
 description: 瞭解如何使用您的報告資料。
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 * 從註冊到每次使用的首次購買日期的平均時間。
 
-這會顯示註冊日期與使用者首次購買日期之間經過的平均時間，並讓您瞭解使用者在轉換漏斗中的這最後一個步驟中的行為。
+這會顯示註冊日期與使用者首次購買日期之間經過的平均時間，並讓您瞭解使用者在轉換funnel的最後一步會如何表現。
 
 ## 尋找資料
 

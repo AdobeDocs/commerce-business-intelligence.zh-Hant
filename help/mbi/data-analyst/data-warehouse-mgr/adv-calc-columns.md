@@ -2,9 +2,9 @@
 title: 進階計算欄型別
 description: 瞭解大部分使用欄案例的基本知識 — 但您可能想要比Data Warehouse Manager可建立的計算欄更複雜。
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 2%

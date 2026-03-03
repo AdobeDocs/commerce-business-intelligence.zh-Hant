@@ -2,9 +2,9 @@
 title: 資料使用者
 description: 瞭解如何使用資料進行更明智的業務決策，以及建立報告和儀表板。
 exl-id: 2f412c94-5042-4411-b19b-482993e6f70f
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: cd4698a1ce3721d80aeec0782ee1efb3e43b5ce6
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
