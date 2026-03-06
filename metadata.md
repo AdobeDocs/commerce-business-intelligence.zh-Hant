@@ -13,7 +13,7 @@ level: Beginner, Intermediate
 topic: Commerce
 index: true
 badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
-source-git-commit: 269e0b3e7e61c784157bb56ca5c95b1db270118a
+source-git-commit: 75aa9f4212e48280c6e1cc96fca3b7f1d203c444
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%
