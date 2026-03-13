@@ -118,7 +118,7 @@ ht-degree: 0%
 
 [!UICONTROL Port]: `3306`
 
-[！UICONTROL使用者名稱]: `mbi`
+[!UICONTROL 使用者名稱]: `mbi`
 
 [!UICONTROL Password]：在上一節中顯示了[輸入密碼]
 
