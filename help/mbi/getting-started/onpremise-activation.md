@@ -23,7 +23,7 @@ ht-degree: 0%
 
 建立帳戶之後，請檢視電子郵件中是否有來自[!DNL The Magento BI Team@rjmetrics.com]的帳戶通知電子郵件。 使用電子郵件中提供的連結來存取您的[!DNL Commerce Intelligence]帳戶並建立密碼。 移至您的收件匣並驗證您的電子郵件地址。
 
-如果您沒有收到電子郵件，[請連絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+如果您沒有收到電子郵件，[請連絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ![為新的Commerce Intelligence帳戶建立密碼畫面](../assets/create-account-4.png)
 
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 [!UICONTROL Port]: `3306`
 
-[!UICONTROL 使用者名稱]: `mbi`
+[！UICONTROL使用者名稱]: `mbi`
 
 [!UICONTROL Password]：在上一節中顯示了[輸入密碼]
 
@@ -171,7 +171,7 @@ ht-degree: 0%
 <!--
 # Activate your [!DNL Commerce Intelligence] Account
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >
