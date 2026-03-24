@@ -1,15 +1,24 @@
 ---
-title: 與SQL Report Builder搭配使用的整合？
-description: 瞭解可搭配SQL Report Builder使用的整合。
+title: Integrations used with the SQL Report Builder?
+description: Learn which integrations can be used with SQL Report Builder.
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/IZiNmZWiM-abcCkhpnViqBR6heWeznEG-KTnKjAw23M
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '38'
+source-wordcount: 38
 ht-degree: 0%
 
 ---
 
-# `SQL Report Builder`整合
+# `SQL Report Builder` Integrations
 
-在目前的世界狀態中，[[!DNL Google Analytics]](../importing-data/integrations/google-analytics.md)是唯一無法與[`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md)一起使用的整合。 此功能正在開發中。
+In the current state of the world, [[!DNL Google Analytics]](../importing-data/integrations/google-analytics.md) is the only integration unavailable for use with the [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md). This functionality in development.

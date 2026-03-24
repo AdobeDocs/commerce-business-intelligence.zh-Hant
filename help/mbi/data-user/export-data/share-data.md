@@ -1,16 +1,31 @@
 ---
-title: 共用資料
-description: 共用資料的概觀。
+title: Sharing Data
+description: Overview of sharing data.
 exl-id: 5c434d3b-0519-4980-a666-60bed122a93b
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/LarCQQMTUBoSMT5CjxZBK4eqh8Hb08-NZPtgrtDUZyo
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '51'
+source-wordcount: 51
 ht-degree: 0%
 
 ---
 
-# 共用資料
+# Sharing Data
 
-傳達業務的狀態和趨勢至關重要。 在本節中，瞭解如何將圖表中的資料匯出並共用至`.csv`或`Excel`檔案。 此外，瞭解如何設定並自動傳送資料的電子郵件摘要給關鍵利害關係人。
+Communicating the status and trends of your business is essential. In this section, learn how to export and share data from a chart to a `.csv` or `Excel` file. Also, learn how to configure and automatically send email summaries of your data to key stakeholders.
