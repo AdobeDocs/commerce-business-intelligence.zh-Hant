@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ![顯示退貨率與原因的詳細退貨儀表板](../../assets/detailed-returns-dboard.png)
 
-開始之前，您必須是[Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html)客戶，且應確定貴公司使用`enterprise\_rma`資料表進行退貨。
+開始之前，您必須是[Adobe Commerce](https://business.adobe.com/tw/products/magento/magento-commerce.html)客戶，且應確定貴公司使用`enterprise\_rma`資料表進行退貨。
 
 此分析包含[進階計算資料行](../data-warehouse-mgr/adv-calc-columns.md)。
 
@@ -257,4 +257,4 @@ ht-degree: 0%
 
 編譯所有報表後，您可以視需要在控制面板上組織報表。 結果可能如上述範例控制面板所示。
 
-如果您在建立此分析時遇到任何問題，或想與Professional Services團隊互動，請[連絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
+如果您在建立此分析時遇到任何問題，或想與Professional Services團隊互動，請[連絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
