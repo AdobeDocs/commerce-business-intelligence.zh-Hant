@@ -5,13 +5,18 @@ breadcrumb-title: 指南概觀
 seo-title: Commerce Intelligence User Guide
 seo-description: Describes how to use Adobe Commerce Intelligence features used to gain insights from Adobe Commerce or Magento Open Source data, along with other third-party data sources.
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
-source-git-commit: bb836eaa0407057ad34bc13f1a74d34acbc6cc67
+TQID: https://experienceleague.adobe.com/VOTO62g3Z13NyaT1T-QK98eHc9EVuIBt7OsW8ssEaNI
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: 424
 ht-degree: 2%
 
 ---
-
 
 # [!DNL Adobe Commerce Intelligence]使用手冊
 
@@ -39,23 +44,23 @@ ht-degree: 2%
 
 ## 如何取得協助
 
-如果您有任何問題，並且想要利用您的部分專業服務，或是您的帳戶發生問題，請連絡[支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+如果您有任何問題，並且想要利用您的部分專業服務，或是您的帳戶發生問題，請連絡[支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ### 服務原則
 
-檢視客戶支援團隊提供哪些服務的[清單](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+檢視客戶支援團隊提供哪些服務的[清單](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ### 提交支援票證
 
-需要建置進階計算欄的協助嗎？ 發生缺陷或連線問題？ 若您需要聯絡支援團隊，Adobe會要求您使用[支援票證指導方針](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。 這些指南概述Adobe解決問題所需的資訊。
+需要建置進階計算欄的協助嗎？ 發生缺陷或連線問題？ 若您需要聯絡支援團隊，Adobe會要求您使用[支援票證指導方針](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。 這些指南概述Adobe解決問題所需的資訊。
 
 ## 可用檔案
 
 | 檔案資源 | 說明 |
 |----------------------- | ----------- |
-| [Adobe Commerce 2.4商家檔案](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/user-guides/home) | 適用於Adobe Commerce和Magento Open Source的以商家為中心的檔案 |
-| [Adobe Commerce服務檔案](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home) | 支援服務集合的檔案，可協助商家將其業務的關鍵元件與商店整合。 |
-| [Adobe Commerce 2.4作業指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/operational-guides/home) | 有關用於開發、部署和維護在Adobe Commerce和Magento Open Source平台上部署之專案的概念、流程、工具和最佳實務的系統檔案。 |
+| [Adobe Commerce 2.4商家檔案](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | 適用於Adobe Commerce和Magento Open Source的以商家為中心的檔案 |
+| [Adobe Commerce服務檔案](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) | 支援服務集合的檔案，可協助商家將其業務的關鍵元件與商店整合。 |
+| [Adobe Commerce 2.4作業指南](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home) | 有關用於開發、部署和維護在Adobe Commerce和Magento Open Source平台上部署之專案的概念、流程、工具和最佳實務的系統檔案。 |
 | [Adobe Commerce 2.4開發人員檔案](https://developer.adobe.com/commerce/) | 用於建置和自訂Adobe Commerce或Magento Open Source的開發人員專屬檔案 |
 
 {{$include /help/_includes/templated/whats-new.md}}

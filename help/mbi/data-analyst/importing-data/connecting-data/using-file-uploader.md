@@ -4,9 +4,15 @@ description: 瞭解如何將您的所有資料都放入單一Data Warehouse。
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/pdmp5wyeWdjrebZlZ9j4u3OJBb-LpADk6Uib-bWy1Vc
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c32adafa-ed01-4b31-997e-2413013911b0id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: 1293
 ht-degree: 0%
 
 ---
@@ -24,7 +30,7 @@ ht-degree: 0%
 ## 限制和需求 {#require}
 
 1. **唯一支援的檔案上傳格式為`CSV`或`comma separated values`**。 如果您使用Excel，可以使用「另存新檔」功能將檔案儲存為`.csv`格式。
-1. **`CSV`檔案必須使用`UTF-8 encoding`**。 在大多數情況下，這不是問題。 如果您在上傳檔案時發生此錯誤，[請參閱此支援文章](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=zh-Hant)。
+1. **`CSV`檔案必須使用`UTF-8 encoding`**。 在大多數情況下，這不是問題。 如果您在上傳檔案時發生此錯誤，[請參閱此支援文章](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html)。
 1. **檔案不能大於100MB**。 如果檔案大於此值，請將表格分割為多個區塊，然後另存為個別檔案。 您可以在載入初始檔案後附加資料。
 1. **所有資料表都必須有`primary key`**。 表格中至少要有一欄可用作`primary key`，或表格中每一列的唯一識別碼。 任何指定為`primary key`的資料行都可以&#x200B;*永不*&#x200B;為Null。 `primary key`可以簡單到只新增為每一列提供數字的資料行，也可以串連為兩個資料行，組成唯一值的資料行（例如，`campaign name`和`date`）。
 

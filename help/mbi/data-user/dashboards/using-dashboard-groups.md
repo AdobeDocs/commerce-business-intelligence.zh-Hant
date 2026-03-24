@@ -1,56 +1,61 @@
 ---
-title: 使用儀表板群組
-description: 瞭解如何更妥善地組織儀表板。
+title: Use Dashboard Groups
+description: Learn how to allow better organization of dashboards.
 exl-id: e48b7345-62d0-4898-997e-3c3c02040ad3
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/8YJRsYyWhmBvEE5JFjQChnRvKFwBVzvMk4TbRJVJ3RY
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: 301
 ht-degree: 0%
 
 ---
 
-# 使用儀表板群組
+# Use dashboard groups
 
-控制面板群組可讓控制面板的組織方式更有效率。 最常見的使用案例是將類似的儀表板分組在相同的「群組」下。 例如，與行銷相關的所有儀表板都可以分組在儀表板群組「行銷」下。
+Dashboard groups allow better organization of dashboards. The most common use case is to group similar dashboards under the same &quot;group&quot;. For example, all dashboards related to marketing could be grouped under a dashboard group &quot;Marketing&quot;.
 
-在儀表板選取下拉式清單中，儀表板群組會依字母順序顯示，而「無群組」下的所有儀表板則會顯示在最後。 相同群組下的儀表板會一起顯示，並在每個群組中按字母順序顯示。
+In the dashboard selection dropdown, dashboard groups are shown in alphabetical order, with all dashboards under &quot;No Group&quot; shown last. Dashboards under the same group are shown together and in alphabetical order within each group.
 
-## 儀表板群組共用
+## Dashboard Group Sharing
 
-儀表板群組無法直接在使用者之間共用。 與使用者共用儀表板時，如果不存在，系統會自動為這些使用者建立該儀表板所在儀表板群組。 如果控制面板群組存在，控制面板會附加至清單。
+Dashboard groups cannot be directly shared between users. When a dashboard is shared with users, the dashboard group it is under is automatically created for those users if it does not exist. If the dashboard group exists, the dashboard is appended to the list.
 
-當控制面板的群組由其擁有者變更時，該變更會自動反映給與控制面板共用過的所有使用者。 使用者無法變更他們不擁有的儀表板的儀表板群組。
+When a dashboard&#39;s group is changed by its owner, the change is reflected automatically for all users with whom the dashboard has been shared. Users cannot change the dashboard group for dashboards they do not own.
 
-## 建立儀表板群組
+## Create dashboard groups
 
-控制面板群組可透過下列兩種方式之一建立：
+Dashboard groups can be created in one of two ways:
 
-1. 建立控制面板時：
+1. When creating a dashboard:
 
-   ![建立儀表板群組](../../assets/create-dashboard-groups-new-dashboard.png)
+   ![create dashboard group](../../assets/create-dashboard-groups-new-dashboard.png)
 
-1. 變更現有儀表板的群組時，從`Manage Data > Dashboards`頁面：
+1. When changing the group of an existing dashboard, from the `Manage Data > Dashboards` page:
 
-   1. 按一下您要建立群組的控制面板。
+   1. Click the dashboard for which you would like to create the group.
 
-   1. 在`Dashboard Group (optional)`下方，會顯示目前的儀表板群組。
+   1. Under `Dashboard Group (optional)`, the current dashboard group appears.
 
-   1. 若要建立群組，請輸入新群組的名稱，然後按一下方塊外部。
+   1. To create a group, type the name of the new group and then click outside the box.
 
-      ![建立儀表板群組](../../assets/create-dashboard-groups-existing-dashboard.png)
+      ![create dashboard group](../../assets/create-dashboard-groups-existing-dashboard.png)
 
-## 將現有儀表板新增到現有群組
+## Add Existing Dashboards to Existing Groups
 
-1. 在`Manage Data > Dashboards`頁面上，選擇要變更群組的儀表板。
+1. On the `Manage Data > Dashboards` page, choose the dashboard for which to change the group.
 
-1. `Dashboard Group (optional)`下的文字會顯示儀表板目前的儀表板群組。
+1. The text under `Dashboard Group (optional)` shows the current dashboard group of the dashboard.
 
-1. 若要變更儀表板的群組，請從清單中選擇另一個群組 — 在此案例中為`PS`、`Campaigns`。
+1. To change the group of the dashboard, choose another group from the list – in this case `PS`, `Campaigns`.
 
-   ![變更群組儀表板](../../assets/add-existing-dashboard-existing-group.png)
+   ![change group dashboard](../../assets/add-existing-dashboard-existing-group.png)
 
-## 刪除儀表板群組
+## Delete dashboard groups
 
-當儀表板群組下方沒有儀表板時，系統會自動將其刪除。
+When a dashboard group has no dashboards under it, it is automatically deleted.

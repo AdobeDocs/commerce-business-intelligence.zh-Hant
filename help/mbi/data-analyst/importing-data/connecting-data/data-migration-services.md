@@ -4,16 +4,22 @@ description: 瞭解提交請求並開始移轉所需的一切。
 exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/q8FzCjuqcQC57WLd0201CV46es2CrbAjZx9FGFX-RFw
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: 685
 ht-degree: 0%
 
 ---
 
 # 資料移轉
 
-移轉至新的資料庫結構描述、伺服器或報告資料庫並不一定會有壓力。 [[!DNL Adobe] 服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)提供移轉協助。
+移轉至新的資料庫結構描述、伺服器或報告資料庫並不一定會有壓力。 [[!DNL Adobe] 服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)提供移轉協助。
 
 為確保轉換儘可能順暢，提交移轉請求時請務必儘可能詳細說明。 本主題提供提交請求並開始移轉所需的一切。 提供您需求的全面資訊，確保您的專案範圍設定正確，而且估計準確。
 
@@ -67,7 +73,7 @@ ht-degree: 0%
 
 ## 如何提交請求？ {#submitreq}
 
-您可以透過[提交支援要求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)與我們聯絡。
+您可以透過[提交支援要求](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)與我們聯絡。
 
 如果您依照上一節中的步驟建立欄位比對試算表，別忘了附加試算表。
 

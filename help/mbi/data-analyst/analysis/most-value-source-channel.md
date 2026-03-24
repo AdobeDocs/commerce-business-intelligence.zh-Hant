@@ -4,9 +4,14 @@ description: 瞭解可用來揭露您最有價值行銷管道的一些報告。
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/aV7qVf-LREVyXEtR2EMJqRSTo-rvfzLIwuulccXrqzE
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: 974
 ht-degree: 0%
 
 ---
@@ -15,7 +20,7 @@ ht-degree: 0%
 
 您調查了對象、建立了行銷活動、投資了幾個行銷管道。 現在時間已經過去，這些管道的表現如何？ 哪個頻道吸引的新使用者最多？ 哪一個來源對您的總收入貢獻最大？
 
-透過[!DNL Adobe Commerce Intelligence]，您可以透過反向連結來源輕鬆將收入和使用者分段，不論是對應至[[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en)或自訂資料欄位。 此細分可讓您找到績效最佳的管道，並更好地投入行銷預算。
+透過[!DNL Adobe Commerce Intelligence]，您可以透過反向連結來源輕鬆將收入和使用者分段，不論是對應至[!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en)或自訂資料欄位。 此細分可讓您找到績效最佳的管道，並更好地投入行銷預算。
 
 本主題會探索一些可用來發掘您最有價值行銷管道的報告：
 

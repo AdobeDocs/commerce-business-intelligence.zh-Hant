@@ -4,9 +4,15 @@ description: 瞭解如何分析您的廣告支出資料，並瞭解您的錢是�
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/6TR559YyeTHT3KWl3oA4Bdnpr-HCowTXTTkvmP0I0tg
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: 313
 ht-degree: 0%
 
 ---
@@ -58,11 +64,11 @@ ht-degree: 0%
 
 ## 相關
 
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [連線您的 [!DNL Google Adwords] 帳戶](../integrations/google-ecommerce.md)
 * [透過 [!DNL Google eCommerce]追蹤訂單轉介來源](../integrations/google-ecommerce.md)
 * [追蹤資料庫中的使用者反向連結來源](../../analysis/google-track-user-acq.md)
 * [追蹤資料庫中的使用者裝置、瀏覽器和作業系統資料](../../analysis/track-usr-dev-browser.md)
 * [探索您最有價值的贏取來源和管道](../../analysis/most-value-source-channel.md)
 * [提高廣告行銷活動的ROI](../../analysis/roi-ad-camp.md)
-* [&#x200B; [!DNL Google Analytics] UTM歸因如何運作？](../../analysis/utm-attributes.md)
+* [ [!DNL Google Analytics] UTM歸因如何運作？](../../analysis/utm-attributes.md)

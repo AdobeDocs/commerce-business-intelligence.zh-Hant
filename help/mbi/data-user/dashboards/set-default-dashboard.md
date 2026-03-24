@@ -1,28 +1,33 @@
 ---
-title: 設定預設儀表板
-description: 瞭解如何設定預設儀表板。
+title: Set a Default Dashboard
+description: Learn how to set a default dashboard.
 exl-id: a3fc64e3-b527-4c2c-848d-c0962cd20ff3
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/SvKbCwEQh5N0qGA0p2CzcfMoEE7DV6IIOli0MnOdFgs
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '64'
+source-wordcount: 64
 ht-degree: 0%
 
 ---
 
-# 設定預設儀表板
+# Set a default dashboard
 
-預設儀表板是您在開啟[!DNL Commerce Intelligence]時看到的第一個儀表板。
+The default dashboard is the first dashboard that you see upon opening [!DNL Commerce Intelligence].
 
-1. 在儀表板中，按一下位於熒幕上方的&#x200B;**[!UICONTROL Dashboard Options]**。
+1. While in the dashboard, click **[!UICONTROL Dashboard Options]** located at the top of the screen.
 
-1. 在下拉式清單中按一下&#x200B;**[!UICONTROL Make Default]**。
+1. Click **[!UICONTROL Make Default]** in the dropdown.
 
-1. 顯示確認提示時，按一下&#x200B;**[!UICONTROL Yes]**&#x200B;以變更預設儀表板。
+1. When the confirmation prompt displays, click **[!UICONTROL Yes]** to change the default dashboard.
 
-現在這是您的新預設儀表板。
+This is now your new default dashboard.
 
 範例：
 
-![預設儀表板](../../assets/default_dashboard.gif)
+![default dashboard](../../assets/default_dashboard.gif)
