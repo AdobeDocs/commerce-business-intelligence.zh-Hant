@@ -5,11 +5,21 @@ exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
 role: Admin,  User
 feature: Reports, Dashboards
 TQID: https://experienceleague.adobe.com/TJ0KsU551M5PkQcY-Ic0PuExtC9SCkO0MhZGdHL4N6g
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 529
@@ -27,7 +37,7 @@ ht-degree: 0%
 
 ![顯示ROI量度和行銷活動績效的行銷儀表板](../../assets/Marketing_dashboard_example.png)
 
-開始之前，您想要連線您的[!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md)、[!DNL [Adwords]](../importing-data/integrations/google-adwords.md)和[!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md)帳戶，並引進任何其他線上廣告支出資料。 此分析包含[進階計算資料行](../data-warehouse-mgr/adv-calc-columns.md)。
+開始之前，您想要連線您的[[!DNL [Facebook Ads]]](../importing-data/integrations/facebook-ads.md)、[[!DNL [Adwords]]](../importing-data/integrations/google-adwords.md)和[[!DNL [Google Ecommerce]]](../importing-data/integrations/google-ecommerce.md)帳戶，並引進任何其他線上廣告支出資料。 此分析包含[進階計算資料行](../data-warehouse-mgr/adv-calc-columns.md)。
 
 ## 整合的表格
 
@@ -48,9 +58,9 @@ ht-degree: 0%
    * **`Order's GA campaign`**
       * 選取定義： `Joined Column`
       * [!UICONTROL Create Path]：
-      * 
+      * &#x200B;
         [!UICONTROL Many]: `sales_flat_order.increment_id`
-      * 
+      * &#x200B;
         [!UICONTROL One]: `ecommerce####.transaction_id`
 
       * 選取[!UICONTROL table]： `ecommerce####`
@@ -148,9 +158,9 @@ ht-degree: 0%
 
 * 量度`A`：廣告支出
 * [!UICONTROL Time period]： `All time`
-* 
-  [！UICONTROL間隔]: `None`
-* 
+* &#x200B;
+  [!UICONTROL 間隔]: `None`
+* &#x200B;
   [!UICONTROL Chart Type]: `Scalar`
 
 * **廣告客戶贏取（所有時間）**
@@ -164,9 +174,9 @@ ht-degree: 0%
 
 * 量度`A`： `Ad customer acquisitions`
 * [!UICONTROL Time period]： `All time`
-* 
-  [！UICONTROL間隔]: `None`
-* 
+* &#x200B;
+  [!UICONTROL 間隔]: `None`
+* &#x200B;
   [!UICONTROL Chart Type]: `Scalar`
 
 * **廣告ROI**
@@ -189,7 +199,7 @@ ht-degree: 0%
       * 篩選器邏輯： （[`A`]或[`B`]或[`C`]）和[`D`]
 
    * [!UICONTROL Formula]： `((C - (A / B)) / (A / B))`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `Percentage`
 
 * 量度`A`： `Ad Spend (hide)`
@@ -197,20 +207,20 @@ ht-degree: 0%
 * 量度`C`： `Average LTV (hide)`
 * [!UICONTROL Formula]： `Ads ROI`
 * [!UICONTROL Time period]： `All time`
-* 
-  [！UICONTROL間隔]: `None`
-* 
+* &#x200B;
+  [!UICONTROL 間隔]: `None`
+* &#x200B;
   [!UICONTROL Chart Type]: `Scalar`
 
 * **訂單（依ga中）**
-   * 
-     [！UICONTROL公制]: `Orders`
+   * &#x200B;
+     [!UICONTROL 公制]: `Orders`
 
 * 量度`A`： `Orders`
 * [!UICONTROL Time period]： `All time`
 * [!UICONTROL Interval]： `By Month`
 * [!UICONTROL Group by]： `Order's medium`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Area`
 
 * **依據行銷活動的廣告ROI**
@@ -241,15 +251,15 @@ ht-degree: 0%
       * 篩選器邏輯： （[`A`]或[`B`]或[`C`]）和[`D`]
 
    * [!UICONTROL Formula]： `(A / B)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]： `(C - (A / B))`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]： `((C - (A / B)) / (A / B))`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Metric]： `Ad Clicks`
@@ -257,33 +267,33 @@ ht-degree: 0%
    * [!UICONTROL Metric]： `Ad Impressions`
 
    * [!UICONTROL Formula]： `(H / I)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Formula]： `(A / H)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `Currency`
 
 * 量度`A`： `Ad Spend` （隱藏）
 * 量度`B`： `Ad customer acquisitions`
 * 量度`C`： `Average LTV`
 * 量度`D`： `Average lifetime # of orders`
-* 
-  [！UICONTROL公式]: `CAC`
+* &#x200B;
+  [!UICONTROL 公式]: `CAC`
 * [!UICONTROL Formula]： `Avg return`
 * [!UICONTROL Formula]： `Ads ROI`
 * 量度`H`： `adClicks`
 * 量度`I`： `Impressions`
-* 
-  [！UICONTROL公式]: `CTR`
-* 
-  [！UICONTROL公式]: `CPC`
+* &#x200B;
+  [!UICONTROL 公式]: `CTR`
+* &#x200B;
+  [!UICONTROL 公式]: `CPC`
 * [!UICONTROL Time period]： `All time`
-* 
-  [！UICONTROL間隔]: `None`
-* 
-  [！UICONTROL群組依據]: `campaign` (將「客戶的第一個訂單」行銷活動用於非廣告支出表格量度)
-* 
+* &#x200B;
+  [!UICONTROL 間隔]: `None`
+* &#x200B;
+  [!UICONTROL 群組依據]: `campaign` (將「客戶的第一個訂單」行銷活動用於非廣告支出表格量度)
+* &#x200B;
   [!UICONTROL Chart Type]: `Table`
 
 如果您在建立此分析時遇到任何問題，或只是想與專業服務團隊互動，請[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
@@ -291,4 +301,4 @@ ht-degree: 0%
 ### 相關
 
 * [在 [!DNL Google Analytics]中進行UTM標籤的最佳作法](../../best-practices/utm-tagging-google.md)
-* [ [!DNL Google Analytics] UTM歸因如何運作？](../analysis/utm-attributes.md)
+* [&#x200B; [!DNL Google Analytics] UTM歸因如何運作？](../analysis/utm-attributes.md)

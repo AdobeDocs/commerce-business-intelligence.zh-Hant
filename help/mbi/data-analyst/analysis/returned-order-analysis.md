@@ -5,11 +5,20 @@ exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/vEHbYcJUPlGk2eZsKvak9nSYBqOVvnKNSYDEutHMt3g
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 434
@@ -67,9 +76,9 @@ ht-degree: 0%
 * **`Order's created at`**
 * 選取定義： `Joined Column`
 * [!UICONTROL Create Path]：
-* 
+* &#x200B;
   [!UICONTROL Many]: `enterprise_rma.order_id`
-* 
+* &#x200B;
   [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * 選取[!UICONTROL table]： `sales_flat_order`
@@ -88,9 +97,9 @@ ht-degree: 0%
 * **`return_date_requested`**
 * 選取定義： `Joined Column`
 * [!UICONTROL Create Path]：
-   * 
+   * &#x200B;
      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
-   * 
+   * &#x200B;
      [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * 選取[!UICONTROL table]： `enterprise_rma`
@@ -163,25 +172,25 @@ ht-degree: 0%
 
 * 公式：重複訂購機率
 * [!UICONTROL Formula]： `B / A`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]： `All time`
-* 
-  [！UICONTROL間隔]: `None`
+* &#x200B;
+  [!UICONTROL 間隔]: `None`
 * [!UICONTROL Group by]： `Customer's order number`
-* 
-  [！UICONTROL圖表型別]: `Bar`
+* &#x200B;
+  [!UICONTROL 圖表型別]: `Bar`
 
 * **平均傳回時間（所有時間）**
 * 量度`A`： `Avg time between order and return`
 * [!UICONTROL Metric]： `Avg time between order and return`
 
 * [!UICONTROL Time period]： `All time`
-* 
-  [！UICONTROL間隔]: `None`
-* 
-  [！UICONTROL圖表型別]: `Number`
+* &#x200B;
+  [!UICONTROL 間隔]: `None`
+* &#x200B;
+  [!UICONTROL 圖表型別]: `Number`
 
 * **含退貨的訂單百分比**
 * 量度`A`： `Number of orders`
@@ -194,12 +203,12 @@ ht-degree: 0%
 
 * 公式：含退貨的訂單百分比
 * [!UICONTROL Formula]： `B / A`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]： `All time`
-* 
-  [！UICONTROL間隔]: `None`
+* &#x200B;
+  [!UICONTROL 間隔]: `None`
 * [!UICONTROL Chart Type]： `Number - % of orders with return`
 
 * **依月份傳回的收入**
@@ -208,8 +217,8 @@ ht-degree: 0%
 
 * [!UICONTROL Time period]： `All time`
 * [!UICONTROL Interval]： `By month`
-* 
-  [！UICONTROL圖表型別]: `Line`
+* &#x200B;
+  [!UICONTROL 圖表型別]: `Line`
 
 * **已退貨且不再購買的客戶**
 * 量度`A`： `Number of orders with returns`
@@ -219,12 +228,12 @@ ht-degree: 0%
    * `Is customer's last order? (1=yes/0=no) = 1`
 
 * [!UICONTROL Time period]： `All time`
-* 
-  [！UICONTROL間隔]: `None`
-* 
-  [！UICONTROL群組依據]: `Customer_email`
-* 
-  [！UICONTROL圖表型別]: `Table`
+* &#x200B;
+  [!UICONTROL 間隔]: `None`
+* &#x200B;
+  [!UICONTROL 群組依據]: `Customer_email`
+* &#x200B;
+  [!UICONTROL 圖表型別]: `Table`
 
 * **依據專案的回訪率**
 * 量度`A`： `Returned items` （隱藏）
@@ -236,15 +245,15 @@ ht-degree: 0%
 
 * [!UICONTROL Formula]： `Return %`
 * [!UICONTROL Formula]： `B / A`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]： `All time`
-* 
-  [！UICONTROL間隔]: `None`
+* &#x200B;
+  [!UICONTROL 間隔]: `None`
 * [!UICONTROL Group by]： `product_sku AND/OR product_name`
-* 
-  [！UICONTROL圖表型別]: `Table`
+* &#x200B;
+  [!UICONTROL 圖表型別]: `Table`
 
 編譯所有報表後，您可以視需要在控制面板上組織報表。 結果可能如上述範例控制面板所示。
 

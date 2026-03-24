@@ -5,10 +5,18 @@ exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/nqiC-AsuhdcOrxqFsW9ZqRZvlL8Ndu9xmNrTi-pvgv8
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 751
@@ -32,7 +40,7 @@ ht-degree: 1%
 
 ### （選項1）透過[!DNL Google Analytics E-Commerce]追蹤訂單轉介來源資料
 
-如果您使用[!DNL Google Analytics E-Commerce]追蹤您的訂單與銷售資料，則可以使用[!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md)同步每個訂單的轉介來源資料。 這可讓您依反向連結來源（例如，`utm_source`或`utm_medium`）來劃分收入與訂單。 您也可透過[!DNL Commerce Intelligence]自訂維度（例如`User's first order source`）瞭解客戶贏取來源。
+如果您使用[!DNL Google Analytics E-Commerce]追蹤您的訂單與銷售資料，則可以使用[[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md)同步每個訂單的轉介來源資料。 這可讓您依反向連結來源（例如，`utm_source`或`utm_medium`）來劃分收入與訂單。 您也可透過[!DNL Commerce Intelligence]自訂維度（例如`User's first order source`）瞭解客戶贏取來源。
 
 ### （選項2）將[!DNL Google Analytics]的贏取來源資料儲存在資料庫中
 
@@ -106,4 +114,4 @@ Adobe建議將名為`user_referral`的資料表新增至您的資料庫，其資
 * **[探索您最有價值的贏取來源和管道](../analysis/most-value-source-channel.md)**
 * **[連線您的 [!DNL Google Adwords] 帳戶](../importing-data/integrations/google-adwords.md)**
 * **[提高廣告行銷活動的ROI](../analysis/roi-ad-camp.md)**
-* **[ [!DNL Google Analytics] UTM歸因如何運作？](../analysis/utm-attributes.md)**
+* **[&#x200B; [!DNL Google Analytics] UTM歸因如何運作？](../analysis/utm-attributes.md)**

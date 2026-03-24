@@ -5,11 +5,23 @@ exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
 role: Admin, Developer, User
 feature: Dashboards, Reports
 TQID: https://experienceleague.adobe.com/z2NS33cMO3wETk6FFyI-rkbPkWxxw2zYxUUjdC4zRa4
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 274
@@ -42,7 +54,7 @@ ht-degree: 0%
 * **[!UICONTROL catalog_product_entity]**&#x200B;資料表：
    * **`Product's most recent order date`**
       * [!UICONTROL Column type]： `Many to One`
-      * 
+      * &#x200B;
         [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]： `sales_order_item.product_id => catalog_product_entity.entity_id`
       * 選取[!UICONTROL column]： `created_at`
@@ -51,7 +63,7 @@ ht-degree: 0%
 
    * **`Product's first order date`**
       * [!UICONTROL Column type]： `Many to One`
-      * 
+      * &#x200B;
         [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]： `sales_order_item.product_id => catalog_product_entity.entity_id`
       * 選取[!UICONTROL column]： `created_at`
@@ -60,13 +72,13 @@ ht-degree: 0%
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]： `Same Table`
-      * 
+      * &#x200B;
         [!UICONTROL Column equation]: `AGE`
       * 選取[!UICONTROL DATETIME column]： `Product's most recent order date`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]： `Many to One`
-      * 
+      * &#x200B;
         [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]： `sales_order_item.product_id => catalog_product_entity.entity_id`
       * 選取[!UICONTROL column]： `qty_ordered`
@@ -75,12 +87,12 @@ ht-degree: 0%
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]： `Same Table`
-      * 
+      * &#x200B;
         [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column]個輸入：
          * A： `Product's lifetime number of items sold`
          * B： `Product's first order date`
-      * 
+      * &#x200B;
         [!UICONTROL Datatype]: `Decimal`
       * 定義：
          * 當A為null或B為null時則為空值，否則四捨五入(A：：decimal/(extract(epoch from (current_timestamp - B))：：decimal/604800.0)，2)結束
@@ -88,40 +100,40 @@ ht-degree: 0%
 * **[!UICONTROL cataloginventory_stock_item]**&#x200B;資料表：
    * **`Sku`**
       * [!UICONTROL Column type]： `One to Many`
-      * 
+      * &#x200B;
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]： `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * 選取[!UICONTROL column]： `sku`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]： `One to Many`
-      * 
+      * &#x200B;
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]： `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * 選取[!UICONTROL column]： `Product's lifetime number of items sold`
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]： `One to Many`
-      * 
+      * &#x200B;
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]： `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * 選取[!UICONTROL column]： `Seconds since product's most recent order date`
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]： `One to Many`
-      * 
+      * &#x200B;
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]： `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * 選取[!UICONTROL column]： `Avg products sold per week (all time)`
 
    * **`Weeks on hand`**
       * [!UICONTROL Column type]： `Same Table`
-      * 
+      * &#x200B;
         [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column]個輸入：
          * A： `qty`
          * B： `Avg products sold per week (all time)`
-      * 
+      * &#x200B;
         [!UICONTROL Datatype]: `Decimal`
       * 定義：
          * 當A為null或B為null或B = 0.0則為null，否則四捨五入(A：：decimal/B，2)結束
@@ -132,7 +144,7 @@ ht-degree: 0%
 * **[!UICONTROL catalog_product_entity]**&#x200B;資料表：
    * **`Product's most recent order date`**
       * [!UICONTROL Column type]： `Many to One`
-      * 
+      * &#x200B;
         [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]： `sales_order_item.product_id => catalog_product_entity.entity_id`
       * 選取[!UICONTROL column]： `created_at`
@@ -141,7 +153,7 @@ ht-degree: 0%
 
    * **`Product's first order date`**
       * [!UICONTROL Column type]： `Many to One`
-      * 
+      * &#x200B;
         [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]： `sales_order_item.product_id => catalog_product_entity.entity_id`
       * 選取[!UICONTROL column]： `created_at`
@@ -150,13 +162,13 @@ ht-degree: 0%
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]： `Same Table`
-      * 
+      * &#x200B;
         [!UICONTROL Column equation]: `AGE`
       * 選取DATETIME資料行： **`Product's most recent order date`**
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]： `Many to One`
-      * 
+      * &#x200B;
         [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]： **`sales_order_item.product_id => catalog_product_entity.entity_id`**
       * 選取[!UICONTROL column]： **`qty_ordered`**
@@ -169,28 +181,28 @@ ht-degree: 0%
 * **[!UICONTROL cataloginventory_stock_item]**&#x200B;資料表：
    * **`Sku`**
       * [!UICONTROL Column type]： `One to Many`
-      * 
+      * &#x200B;
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]： `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * 選取[!UICONTROL column]： `sku`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]： `One to Many`
-      * 
+      * &#x200B;
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]： `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * 選取[!UICONTROL column]： `Product's lifetime number of items sold`
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]： `One to Many`
-      * 
+      * &#x200B;
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]： `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * 選取[!UICONTROL column]： `Seconds since product's most recent order date`
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]： `One to Many`
-      * 
+      * &#x200B;
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]： `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * 選取[!UICONTROL column]： `Avg products sold per week (all time)`
@@ -221,7 +233,7 @@ ht-degree: 0%
    * [!UICONTROL Group by]：
       * `Sku`
       * `Weeks on hand`
-   * 
+   * &#x200B;
      [!UICONTROL Chart type]: `Table`
 
 * **`Inventory with less than 2 weeks on hand (order now)`**
@@ -231,9 +243,9 @@ ht-degree: 0%
 
    * [!UICONTROL Time period]： `All time`
    * 時間間隔： `None`
-   * 
-     [！UICONTROL群組依據]: `Sku`
-   * 
+   * &#x200B;
+     [!UICONTROL 群組依據]: `Sku`
+   * &#x200B;
      [!UICONTROL Chart type]: `Table`
 
 * **`Inventory with more than 26 weeks on hand (put on sale)`**
@@ -243,9 +255,9 @@ ht-degree: 0%
 
    * [!UICONTROL Time period]： `All time`
    * 時間間隔： `None`
-   * 
-     [！UICONTROL群組依據]: `Sku`
-   * 
+   * &#x200B;
+     [!UICONTROL 群組依據]: `Sku`
+   * &#x200B;
      [!UICONTROL Chart type]: `Table`
 
 如果您在建立此分析時遇到任何問題，或只是想與專業服務團隊互動，請[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
