@@ -19,7 +19,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: ad4dda927f0b1b2eba9596d7adfd1419676cf03d
 workflow-type: tm+mt
 source-wordcount: 267
 ht-degree: 0%
@@ -38,11 +38,11 @@ ht-degree: 0%
 
 | **資料行名稱** | **描述** |
 |---|---|
-| `entity\_id` | 表格的唯一識別碼。 每個`entity\_id`代表一個傳回要求。 |
-| `date\_requested` | 要求傳回的日期。 |
+| `entity_id` | 表格的唯一識別碼。 每個`entity_id`代表一個傳回要求。 |
+| `date_requested` | 要求傳回的日期。 |
 | `status` | 傳回的狀態。 值包括「received」、「pending」、「authorized」等。 |
-| `order\_id` | 與`sales\_flat\_order`資料表相關聯的外部索引鍵。 |
-| `customer\_id` | 與`customer\_entity`資料表相關聯的外部索引鍵。 |
+| `order_id` | 與`sales_flat_order`資料表相關聯的外部索引鍵。 |
+| `customer_id` | 與`customer_entity`資料表相關聯的外部索引鍵。 |
 
 {style="table-layout:auto"}
 
@@ -50,9 +50,9 @@ ht-degree: 0%
 
 | **資料行名稱** | **描述** |
 |---|---|
-| `Order's created\_at` | 這是原始訂單的日期。 這可用來取得訂單與退貨要求之間的時間。 |
+| `Order's created_at` | 這是原始訂單的日期。 這可用來取得訂單與退貨要求之間的時間。 |
 | `Customer's order number` | 這是與原始訂單相關聯的客戶訂單編號。 |
-| `Seconds between order's created\_at and return's date\_requested` | 從訂購日期到退貨請求的秒數。 |
+| `Seconds between order's created_at and return's date_requested` | 從訂購日期到退貨請求的秒數。 |
 | `Return's total value` | 這是傳回的總金額。 這是每個退貨專案的個別退貨金額的總和。 |
 
 {style="table-layout:auto"}
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 | **量度名稱** | **描述** | **建構** |
 |---|---|---|
-| `Number of returns` | 要求的傳回次數。 | `Operation`欄： `entity id`<br>`Operation`： `Count`<br>`Timestamp`欄： `date requested` |
+| `Number of returns` | 要求的傳回次數。 | `Operation`欄： `entity_id`<br>`Operation`： `Count`<br>`Timestamp`欄： `date requested` |
 | `Total returned amount` | 傳回的總金額。 | `Operation `資料行： `Return's total value`<br>`Operation`： Sum<br>`Timestamp`資料行：要求的日期 |
 | `Average returned amount` | 傳回的平均金額。 | `Operation` ` Column: Return's total value`<br>`Operation`： `Average`<br>`Timestamp`欄： `date requested` |
 | `Average time to return` | 從訂單到退貨的平均時間。 | `Operation`欄：訂單建立日期與傳回請求日期之間的秒數<br>`Operation`： `Average`<br>`Timestamp`欄： `date requested` |
