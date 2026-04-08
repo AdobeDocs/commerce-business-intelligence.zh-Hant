@@ -5,21 +5,12 @@ exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/ofPlk5xNr8aspjFlpzEtDtjcOPm9DrQFYX9-vPDfK6w
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: ad4dda927f0b1b2eba9596d7adfd1419676cf03d
 workflow-type: tm+mt
 source-wordcount: 267
 ht-degree: 0%
@@ -38,11 +29,11 @@ ht-degree: 0%
 
 | **資料行名稱** | **描述** |
 |---|---|
-| `entity\_id` | 表格的唯一識別碼。 每個`entity\_id`代表一個傳回要求。 |
-| `date\_requested` | 要求傳回的日期。 |
+| `entity_id` | 表格的唯一識別碼。 每個`entity_id`代表一個傳回要求。 |
+| `date_requested` | 要求傳回的日期。 |
 | `status` | 傳回的狀態。 值包括「received」、「pending」、「authorized」等。 |
-| `order\_id` | 與`sales\_flat\_order`資料表相關聯的外部索引鍵。 |
-| `customer\_id` | 與`customer\_entity`資料表相關聯的外部索引鍵。 |
+| `order_id` | 與`sales_flat_order`資料表相關聯的外部索引鍵。 |
+| `customer_id` | 與`customer_entity`資料表相關聯的外部索引鍵。 |
 
 {style="table-layout:auto"}
 
@@ -50,9 +41,9 @@ ht-degree: 0%
 
 | **資料行名稱** | **描述** |
 |---|---|
-| `Order's created\_at` | 這是原始訂單的日期。 這可用來取得訂單與退貨要求之間的時間。 |
+| `Order's created_at` | 這是原始訂單的日期。 這可用來取得訂單與退貨要求之間的時間。 |
 | `Customer's order number` | 這是與原始訂單相關聯的客戶訂單編號。 |
-| `Seconds between order's created\_at and return's date\_requested` | 從訂購日期到退貨請求的秒數。 |
+| `Seconds between order's created_at and return's date_requested` | 從訂購日期到退貨請求的秒數。 |
 | `Return's total value` | 這是傳回的總金額。 這是每個退貨專案的個別退貨金額的總和。 |
 
 {style="table-layout:auto"}
@@ -61,9 +52,9 @@ ht-degree: 0%
 
 | **量度名稱** | **描述** | **建構** |
 |---|---|---|
-| `Number of returns` | 要求的傳回次數。 | `Operation`欄： `entity id`<br>`Operation`： `Count`<br>`Timestamp`欄： `date requested` |
+| `Number of returns` | 要求的傳回次數。 | `Operation`欄： `entity_id`<br>`Operation`： `Count`<br>`Timestamp`欄： `date requested` |
 | `Total returned amount` | 傳回的總金額。 | `Operation `資料行： `Return's total value`<br>`Operation`： Sum<br>`Timestamp`資料行：要求的日期 |
-| `Average returned amount` | 傳回的平均金額。 | `Operation` ` Column: Return's total value`<br>`Operation`： `Average`<br>`Timestamp`欄： `date requested` |
+| `Average returned amount` | 傳回的平均金額。 | `Operation`` Column: Return's total value`<br>`Operation`： `Average`<br>`Timestamp`欄： `date requested` |
 | `Average time to return` | 從訂單到退貨的平均時間。 | `Operation`欄：訂單建立日期與傳回請求日期之間的秒數<br>`Operation`： `Average`<br>`Timestamp`欄： `date requested` |
 
 {style="table-layout:auto"}
