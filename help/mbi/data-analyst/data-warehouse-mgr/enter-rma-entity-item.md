@@ -5,21 +5,12 @@ exl-id: aa71cb3f-3e0b-4b6b-b4cc-dad103f79c51
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/jBMtEluq3XNIzItebuvDQ43PAuW6mAsyG7RkHn8URJ4
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 08a466710b782238003c6bdb8cefacd07134291c
 workflow-type: tm+mt
 source-wordcount: 269
 ht-degree: 0%
@@ -38,14 +29,14 @@ ht-degree: 0%
 
 | **資料行名稱** | **描述** |
 |---|---|
-| `entity\_id` | 表格的唯一識別碼。 每個`entity\_id`代表要求傳回的專案。 |
-| `rma\_entity\_id` | 與`enterprise\_rma`資料表相關聯的外部索引鍵。 |
+| `entity_id` | 表格的唯一識別碼。 每個`entity_id`代表要求傳回的專案。 |
+| `rma_entity_id` | 與`enterprise_rma`資料表相關聯的外部索引鍵。 |
 | `status` | 專案傳回的狀態。 值包括「received」、「pending」、「authorized」等。 此狀態的值可能與整體傳回狀態的值不符。 |
-| `qty\_requested` | 客戶要求退貨的數量。 |
-| `qty\_approved` | 核准退貨的數量。 |
-| `qty\_returned` | 退回的數量。 |
-| `order\_item\_id` | 與`sales\_flat\_order\_item`資料表相關聯的外部索引鍵。 |
-| `product\_sku` | 正在傳回的SKU。 |
+| `qty_requested` | 客戶要求退貨的數量。 |
+| `qty_approved` | 核准退貨的數量。 |
+| `qty_returned` | 退回的數量。 |
+| `order_item_id` | 與`sales_flat_order_item`資料表相關聯的外部索引鍵。 |
+| `product_sku` | 正在傳回的SKU。 |
 
 {style="table-layout:auto"}
 
@@ -53,9 +44,9 @@ ht-degree: 0%
 
 | **資料行名稱** | **描述** |
 |---|---|
-| `Return date\_requested` | 這是客戶要求退貨的日期。 |
+| `Return date_requested` | 這是客戶要求退貨的日期。 |
 | `Item price` | 專案的價格。 |
-| `Return item's total value (qty\_returned * price)` | 這是傳回專案的總貨幣值。 用於計算`enterprise\_rma`表格上的總退貨金額。 |
+| `Return item's total value (qty_returned * price)` | 這是傳回專案的總貨幣值。 用於計算`enterprise_rma`表格上的總退貨金額。 |
 
 {style="table-layout:auto"}
 
@@ -72,7 +63,7 @@ ht-degree: 0%
 
 `enterprise_rma`
 
-* 透過下列聯結，在`Return date\_requested`資料表上建立聯結資料行，例如`enterprise_rma_item_entity`：
+* 透過下列聯結，在`Return date_requested`資料表上建立聯結資料行，例如`enterprise_rma_item_entity`：
 * Commerce 1.x： `enterprise_rma_item_entity.rma_entity_id ` （許多） => `enterprise_rma.entity_id` （一個）
 * Commerce 2.x： `magento_rma_item_entity.rma_entity_id ` （許多） => `magento_rma.entity_id` （一個）
 
