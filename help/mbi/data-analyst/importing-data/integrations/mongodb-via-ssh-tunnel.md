@@ -5,23 +5,14 @@ exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/fYXQ353R-dPB-rSeYCR2w0c8Lp5I0HoVYh1A3UAI6aI
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 661
+source-wordcount: 686
 ht-degree: 0%
 
 ---
@@ -61,7 +52,7 @@ ht-degree: 0%
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## 正在建立`Linux`的[!DNL Commerce Intelligence]使用者 {#linux}
+## 正在建立[!DNL Commerce Intelligence]的`Linux`使用者 {#linux}
 
 >[!IMPORTANT]
 >
@@ -145,7 +136,7 @@ ht-degree: 0%
 
 在此頁面中輸入下列資訊，從`Database Connection`區段開始：
 
-* `Host`： `127.0.0.1`
+* `Host`: `127.0.0.1`
 * `Username`： [!DNL Commerce Intelligence] [!DNL MongoDB]使用者名稱（應為`rjmetric`）
 * `Password`： [!DNL Commerce Intelligence] [!DNL MongoDB]密碼
 * `Port`：伺服器上的MongoDB連線埠（預設為`27017`）
@@ -157,8 +148,13 @@ ht-degree: 0%
 * `Username`： [!DNL Commerce Intelligence] Linux (SSH)使用者名稱（應為rjmetric）
 * `SSH Port`：伺服器上的SSH連線埠（預設為22）
 
-完成時，按一下&#x200B;**[!UICONTROL Save Test]**&#x200B;以完成設定。
+完成時，按一下&#x200B;**[!UICONTROL Save & Test]**&#x200B;以完成設定。
 
-### 相關
+>[!NOTE]
+>
+>如需SSH主機金鑰註冊、重新整理、錯誤訊息及疑難排解，請參閱[SSH主機金鑰驗證](ssh-host-key-verification.md)。
 
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+## 相關 {#related}
+
+* [SSH主機金鑰驗證](ssh-host-key-verification.md)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

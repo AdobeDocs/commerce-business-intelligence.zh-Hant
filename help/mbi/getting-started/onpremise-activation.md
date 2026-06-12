@@ -5,26 +5,14 @@ exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 TQID: https://experienceleague.adobe.com/V34xz5uwqrCn716FqG5byQ6wnLwkZUccBXgJMqiSdR4
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: b6ae8fb1a1a7f30e3d56740986f9366e7d1e7f1a
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 732
+source-wordcount: 761
 ht-degree: 0%
 
 ---
@@ -41,7 +29,7 @@ ht-degree: 0%
 
 建立帳戶之後，請檢視電子郵件中是否有來自[!DNL The Magento BI Team@rjmetrics.com]的帳戶通知電子郵件。 使用電子郵件中提供的連結來存取您的[!DNL Commerce Intelligence]帳戶並建立密碼。 移至您的收件匣並驗證您的電子郵件地址。
 
-如果您沒有收到電子郵件，[請連絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+如果您沒有收到電子郵件，[請連絡支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
 
 ![為新的Commerce Intelligence帳戶建立密碼畫面](../assets/create-account-4.png)
 
@@ -57,7 +45,7 @@ ht-degree: 0%
 
 ![新增具有電子郵件地址和許可權層級欄位的使用者表單](../assets/create-account-5.png)
 
-## 在[!DNL Commerce Intelligence]管理員中建立專用的[!DNL Commerce]使用者
+## 在[!DNL Commerce]管理員中建立專用的[!DNL Commerce Intelligence]使用者
 
 若要使用[!DNL Commerce Intelligence]，您必須將永久且專屬的使用者新增至[!DNL Commerce]專案。 此專屬使用者可做為與[!DNL Commerce]的永久連線，以啟用擷取新資料並將新資料傳輸至帳戶的[!DNL Commerce Intelligence] Data Warehouse。
 
@@ -68,13 +56,13 @@ ht-degree: 0%
 >
 >Adobe鼓勵使用可指出其永久狀態的帳戶名稱（例如ACI專用、ACI資料庫聯結器等）。
 
-在您於Admin中建立[!DNL Commerce Intelligence]的專用使用者後，請以[!DNL Commerce]設定為&#x200B;**[!UICONTROL Master]**&#x200B;將相同使用者新增到`Contributor`專案的主要環境。
+在您於Admin中建立[!DNL Commerce Intelligence]的專用使用者後，請以&#x200B;**[!UICONTROL Master]**&#x200B;設定為`Contributor`將相同使用者新增到[!DNL Commerce]專案的主要環境。
 
 ![Commerce新增角色設定為貢獻者的使用者介面](../assets/commerce-add-user-settings.png)
 
 ## 取得Commerce Intelligence SSH金鑰
 
-1. 在[!UICONTROL Connect your database]設定的[!DNL Commerce Intelligence]頁面上，向下捲動並選取&#x200B;**[!UICONTROL Encryption settings]**。
+1. 在[!DNL Commerce Intelligence]設定的[!UICONTROL Connect your database]頁面上，向下捲動並選取&#x200B;**[!UICONTROL Encryption settings]**。
 
 1. 對於&#x200B;**加密型別**，請選取`SSH Tunnel`。
 
@@ -122,9 +110,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe強烈建議您使用[`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md)通道來建立資料庫連線。 不過，如果此方法不是選項，您仍可使用[!DNL Commerce Intelligence]將[`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)連結至您的資料庫。
+>Adobe強烈建議您使用[`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md)通道來建立資料庫連線。 如需SSH主機金鑰註冊、錯誤和疑難排解資訊，請參閱[SSH主機金鑰驗證](../data-analyst/importing-data/integrations/ssh-host-key-verification.md)。 不過，如果此方法不是選項，您仍可使用[`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)將[!DNL Commerce Intelligence]連結至您的資料庫。
 
-在[!DNL Commerce Intelligence]畫面中輸入您的[!UICONTROL Connect your Magento Database]資訊。
+在[!UICONTROL Connect your Magento Database]畫面中輸入您的[!DNL Commerce Intelligence]資訊。
 
 ![使用整合名稱、主機、連線埠、使用者名稱、密碼和資料庫名稱的欄位連線您的資料庫表單](../assets/connect-magento-db.png)
 
@@ -136,7 +124,7 @@ ht-degree: 0%
 
 [!UICONTROL Port]: `3306`
 
-[!UICONTROL 使用者名稱]: `mbi`
+[！UICONTROL使用者名稱]: `mbi`
 
 [!UICONTROL Password]：在上一節中顯示了[輸入密碼]
 
@@ -166,7 +154,7 @@ ht-degree: 0%
 
 **輸入：**
 
-[!UICONTROL Encryption Type]： `SSH Tunnel`
+[!UICONTROL Encryption Type]: `SSH Tunnel`
 
 [!UICONTROL Remote Address]： `ssh.us-3.magento.cloud` [來自上一個步驟]
 
@@ -189,7 +177,7 @@ ht-degree: 0%
 <!--
 # Activate your [!DNL Commerce Intelligence] Account
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >
