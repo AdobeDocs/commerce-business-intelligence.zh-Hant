@@ -166,4 +166,4 @@ ht-degree: 0%
 ## 相關 {#related}
 
 * [SSH主機金鑰驗證](ssh-host-key-verification.md)
-* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
