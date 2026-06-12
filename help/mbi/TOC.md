@@ -5,9 +5,9 @@ user-guide-title: Commerce Intelligence使用手冊
 breadcrumb-title: Commerce Intelligence使用手冊
 role: Admin, Developer, Leader, User
 feature: Business Performance
-source-git-commit: 994fd98dac3dd8693b79c7497bba7bb6df27edf6
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '663'
 ht-degree: 0%
 
 ---
@@ -137,10 +137,11 @@ ht-degree: 0%
       - [正在連線Adobe Commerce](data-analyst/importing-data/integrations/magento.md)
       - [預期Commerce資料](data-analyst/importing-data/integrations/magento-data.md)
       - [正在連線 [!DNL Microsoft SQL Server]](data-analyst/importing-data/integrations/microsoft-sql-server.md)
-      - [正在透過 [!DNL MongoDB] 連線 [!DNL SSH Tunnel]](data-analyst/importing-data/integrations/mongodb-via-ssh-tunnel.md)
-      - [正在透過 [!DNL MySQL] 連線 [!DNL direct connection]](data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)
-      - [正在透過 [!DNL MySQL] 連線 [!DNL cPanel]](data-analyst/importing-data/integrations/mysql-via-cpanel.md)
-      - [正在透過 [!DNL MySQL] 連線 [!DNL SSH Tunnel]](data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md)
+      - [SSH主機金鑰驗證](data-analyst/importing-data/integrations/ssh-host-key-verification.md)
+      - [正在透過 [!DNL SSH Tunnel]連線 [!DNL MongoDB] &#x200B;](data-analyst/importing-data/integrations/mongodb-via-ssh-tunnel.md)
+      - [正在透過 [!DNL direct connection]連線 [!DNL MySQL] &#x200B;](data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)
+      - [正在透過 [!DNL cPanel]連線 [!DNL MySQL] &#x200B;](data-analyst/importing-data/integrations/mysql-via-cpanel.md)
+      - [正在透過 [!DNL SSH Tunnel]連線 [!DNL MySQL] &#x200B;](data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md)
       - [正在連線 [!DNL PostgreSQ]](data-analyst/importing-data/integrations/postgresql.md)
    - 分析行銷活動 {#campaigns}
       - [抵用券程式碼分析（基本）](data-analyst/analysis/ess-coupon-code-analysis.md)

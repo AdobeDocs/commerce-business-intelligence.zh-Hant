@@ -19,21 +19,21 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 541
+source-wordcount: 566
 ht-degree: 0%
 
 ---
 
-# 透過[!DNL PostgreSQL]連線[!DNL SSH Tunnel]
+# 透過[!DNL SSH Tunnel]連線[!DNL PostgreSQL]
 
-若要透過[!DNL PostgreSQL]將您的[!DNL Commerce Intelligence]資料庫連線至`SSH tunnel`，您必須執行下列幾個動作：
+若要透過`SSH tunnel`將您的[!DNL PostgreSQL]資料庫連線至[!DNL Commerce Intelligence]，您必須執行下列幾個動作：
 
 1. [擷取 [!DNL Commerce Intelligence] 公開金鑰](#retrieve)
 1. [允許存取 [!DNL Commerce Intelligence] IP位址](#allowlist)
-1. [為 [!DNL Linux] 建立 [!DNL Commerce Intelligence]使用者](#linux)
-1. [為 [!DNL PostgreSQL] 建立 [!DNL Commerce Intelligence]使用者](#postgres)
+1. [為 [!DNL Commerce Intelligence]建立 [!DNL Linux] 使用者](#linux)
+1. [為 [!DNL Commerce Intelligence]建立 [!DNL PostgreSQL] 使用者](#postgres)
 1. [在 [!DNL Commerce Intelligence]中輸入連線和使用者資訊](#finish)
 
 ## 正在擷取[!DNL Commerce Intelligence] [!DNL public key] {#retrieve}
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 為了連線成功，您必須將防火牆設定為允許從IP位址存取。 它是`54.88.76.97/32`，但它也在`PostgreSQL`認證頁面上。 請參閱上方GIF中的藍色方塊。
 
-## 正在建立[!DNL Linux]的[!DNL Commerce Intelligence]使用者 {#linux}
+## 正在建立[!DNL Commerce Intelligence]的[!DNL Linux]使用者 {#linux}
 
 只要包含即時（或經常更新）資料，這可以是生產或次要機器。 您可以用任何您喜歡的方式[限制此使用者](../../../administrator/account-management/restrict-db-access.md)，只要它保留連線至[!DNL PostgreSQL]伺服器的權利。
 
@@ -108,7 +108,7 @@ ht-degree: 0%
 * `Username`： RJMetrics Postgres使用者名稱（應為rjmetric）
 * `Password`： RJMetrics Postgres密碼
 * `Port`：伺服器上的PostgreSQL連線埠（預設為5432）
-* `Host`： 127.0.0.1
+* `Host`: 127.0.0.1
 
 在`SSH Connection`下：
 
@@ -116,8 +116,13 @@ ht-degree: 0%
 * `Username`：您的SSH登入名稱（應為rjmetric）
 * `SSH Port`：伺服器上的SSH連線埠（預設為22）
 
-完成時，按一下&#x200B;**儲存並測試**&#x200B;以完成設定。
+完成時，按一下&#x200B;**[!UICONTROL Save & Test]**&#x200B;以完成設定。
 
-### 相關
+>[!NOTE]
+>
+>如需SSH主機金鑰註冊、重新整理、錯誤訊息及疑難排解，請參閱[SSH主機金鑰驗證](ssh-host-key-verification.md)。
 
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+## 相關 {#related}
+
+* [SSH主機金鑰驗證](ssh-host-key-verification.md)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)

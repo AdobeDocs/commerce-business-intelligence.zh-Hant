@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 376
+source-wordcount: 399
 ht-degree: 0%
 
 ---
@@ -31,17 +31,18 @@ ht-degree: 0%
 ## 在此主題中
 
 * [允許存取 [!DNL Commerce Intelligence] IP位址](#allowlist)
-* [為 [!DNL MySQL] 建立 [!DNL Commerce Intelligence]使用者](#steptwo)
+* [為 [!DNL Commerce Intelligence]建立 [!DNL MySQL] 使用者](#steptwo)
 * [在 [!DNL Commerce Intelligence]中輸入連線資訊](#stepthree)
 
 ## 跳轉到
 
-* [[!DNL MySQL]透過 &#x200B;](../integrations/mysql-via-ssh-tunnel.md)
+* [[!DNL MySQL]透過`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md)
+* [SSH主機金鑰驗證](../integrations/ssh-host-key-verification.md)
 * [[!DNL MySQL]透過 [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 >[!NOTE]
 >
->[!DNL Adobe]建議您使用[SSH](../integrations/mysql-via-ssh-tunnel.md)或其他加密形式來保護您的資料！ 如果這不是選項，您仍然可以使用本主題中的指示直接將[!DNL Commerce Intelligence]連線到您的資料庫。
+>[!DNL Adobe]建議您使用[SSH](../integrations/mysql-via-ssh-tunnel.md)或其他加密形式來保護您的資料！ 如需SSH主機金鑰驗證，請參閱[SSH主機金鑰驗證](../integrations/ssh-host-key-verification.md)。 如果這不是選項，您仍然可以使用本主題中的指示直接將[!DNL Commerce Intelligence]連線到您的資料庫。
 
 此主題會逐步引導您將[!DNL MySQL]資料庫直接連線至[!DNL Commerce Intelligence]。 這些設定也可以搭配使用MySQL的[!DNL Adobe Commerce]或其他電子商務資料庫使用。
 
@@ -51,9 +52,9 @@ ht-degree: 0%
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 
-## 建立[!DNL MySQL]的[!DNL Commerce Intelligence]使用者
+## 建立[!DNL Commerce Intelligence]的[!DNL MySQL]使用者
 
-為`MySQL`建立[!DNL Commerce Intelligence]使用者最簡單的方法是在以`MySQL`許可權登入`GRANT`時執行下列查詢。 將`Commerce Intelligence IP Address`取代為[!DNL Commerce Intelligence] IP位址，並將`secure password`取代為您選擇的安全密碼：
+為[!DNL Commerce Intelligence]建立`MySQL`使用者最簡單的方法是在以`GRANT`許可權登入`MySQL`時執行下列查詢。 將`Commerce Intelligence IP Address`取代為[!DNL Commerce Intelligence] IP位址，並將`secure password`取代為您選擇的安全密碼：
 
 ```sql
     GRANT SELECT ON *.* TO 'magentobi'@'<Commerce Intelligence IP address>' IDENTIFIED BY '<secure password>';
@@ -81,4 +82,4 @@ ht-degree: 0%
 
 ## 相關檔案
 
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)

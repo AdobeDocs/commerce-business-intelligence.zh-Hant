@@ -22,9 +22,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: b6ae8fb1a1a7f30e3d56740986f9366e7d1e7f1a
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 732
+source-wordcount: 761
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ![新增具有電子郵件地址和許可權層級欄位的使用者表單](../assets/create-account-5.png)
 
-## 在[!DNL Commerce Intelligence]管理員中建立專用的[!DNL Commerce]使用者
+## 在[!DNL Commerce]管理員中建立專用的[!DNL Commerce Intelligence]使用者
 
 若要使用[!DNL Commerce Intelligence]，您必須將永久且專屬的使用者新增至[!DNL Commerce]專案。 此專屬使用者可做為與[!DNL Commerce]的永久連線，以啟用擷取新資料並將新資料傳輸至帳戶的[!DNL Commerce Intelligence] Data Warehouse。
 
@@ -68,13 +68,13 @@ ht-degree: 0%
 >
 >Adobe鼓勵使用可指出其永久狀態的帳戶名稱（例如ACI專用、ACI資料庫聯結器等）。
 
-在您於Admin中建立[!DNL Commerce Intelligence]的專用使用者後，請以[!DNL Commerce]設定為&#x200B;**[!UICONTROL Master]**&#x200B;將相同使用者新增到`Contributor`專案的主要環境。
+在您於Admin中建立[!DNL Commerce Intelligence]的專用使用者後，請以&#x200B;**[!UICONTROL Master]**&#x200B;設定為`Contributor`將相同使用者新增到[!DNL Commerce]專案的主要環境。
 
 ![Commerce新增角色設定為貢獻者的使用者介面](../assets/commerce-add-user-settings.png)
 
 ## 取得Commerce Intelligence SSH金鑰
 
-1. 在[!UICONTROL Connect your database]設定的[!DNL Commerce Intelligence]頁面上，向下捲動並選取&#x200B;**[!UICONTROL Encryption settings]**。
+1. 在[!DNL Commerce Intelligence]設定的[!UICONTROL Connect your database]頁面上，向下捲動並選取&#x200B;**[!UICONTROL Encryption settings]**。
 
 1. 對於&#x200B;**加密型別**，請選取`SSH Tunnel`。
 
@@ -122,9 +122,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe強烈建議您使用[`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md)通道來建立資料庫連線。 不過，如果此方法不是選項，您仍可使用[!DNL Commerce Intelligence]將[`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)連結至您的資料庫。
+>Adobe強烈建議您使用[`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md)通道來建立資料庫連線。 如需SSH主機金鑰註冊、錯誤和疑難排解資訊，請參閱[SSH主機金鑰驗證](../data-analyst/importing-data/integrations/ssh-host-key-verification.md)。 不過，如果此方法不是選項，您仍可使用[`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)將[!DNL Commerce Intelligence]連結至您的資料庫。
 
-在[!DNL Commerce Intelligence]畫面中輸入您的[!UICONTROL Connect your Magento Database]資訊。
+在[!UICONTROL Connect your Magento Database]畫面中輸入您的[!DNL Commerce Intelligence]資訊。
 
 ![使用整合名稱、主機、連線埠、使用者名稱、密碼和資料庫名稱的欄位連線您的資料庫表單](../assets/connect-magento-db.png)
 
@@ -166,7 +166,7 @@ ht-degree: 0%
 
 **輸入：**
 
-[!UICONTROL Encryption Type]： `SSH Tunnel`
+[!UICONTROL Encryption Type]: `SSH Tunnel`
 
 [!UICONTROL Remote Address]： `ssh.us-3.magento.cloud` [來自上一個步驟]
 

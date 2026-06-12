@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 567
+source-wordcount: 628
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 [!DNL Commerce Intelligence]支援SQL和NoSQL資料庫，例如[MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md)、[Microsoft SQL](../integrations/microsoft-sql-server.md)、[MongoDB](../integrations/mongodb-via-ssh-tunnel.md)和[PostgreSQL](../integrations/postgresql.md)。
 
-雖然您可以使用資料庫認證直接將資料庫連線至[!DNL Commerce Intelligence]，但Adobe建議您使用SSH通道等經驗證的加密方法。 這可確保您的資料在進入Data Warehouse時保持安全和安全。
+雖然您可以使用資料庫認證直接將資料庫連線至[!DNL Commerce Intelligence]，但Adobe建議您使用SSH通道等經驗證的加密方法。 這可確保您的資料在進入Data Warehouse時保持安全和安全。 如需SSH主機金鑰註冊、錯誤和疑難排解資訊，請參閱[SSH主機金鑰驗證](../integrations/ssh-host-key-verification.md)。
 
 視連線方法和資料庫型別而定，可能需要一些技術專業才能完成設定。
 
@@ -85,11 +85,11 @@ ht-degree: 0%
 若要新增整合，請按一下&#x200B;**[!UICONTROL Manage Data** > **Connections]**，然後按一下&#x200B;**[!UICONTROL Add a New Data Source]**。 按一下要新增之整合的圖示，然後依照說明主題中的指示進行設定：
 
 * [整合常見問題集](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
-* [可用 &#x200B;](../integrations/integrations.md)
+* [可用的`SaaS`和`database`整合](../integrations/integrations.md)
 * [合併您的表格](../../../best-practices/consolidating-your-tables.md)
 * [限制對資料庫的存取](../../../administrator/account-management/restrict-db-access.md)
 
-**沒有看見您想要的整合？**&#x200B;必須啟用部分整合，才會在您的帳戶中顯示。 如果您正在尋找[!DNL Facebook]之類的專案，但它並未列出，請[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+**沒有看見您想要的整合？** 您必須啟用部分整合，才會在您的帳戶中顯示。 如果您正在尋找[!DNL Facebook]之類的專案，但它並未列出，請[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
 
 **如果您看到整合的錯誤狀態**，請參閱[疑難排解小節](https://support.magento.com/hc/en-us/sections/360003078151)以取得說明。
 

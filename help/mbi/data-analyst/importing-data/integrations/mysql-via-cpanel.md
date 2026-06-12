@@ -19,16 +19,16 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 366
+source-wordcount: 400
 ht-degree: 0%
 
 ---
 
-# 透過[!DNL MySQL]連線[!DNL cPanel]
+# 透過[!DNL cPanel]連線[!DNL MySQL]
 
-* [在 [!DNL Commerce Intelligence] [!DNL MySQL]中建立 [!DNL cPanel]使用者](#cpanel)
+* [在 [!DNL cPanel]中建立 [!DNL Commerce Intelligence] [!DNL MySQL]使用者](#cpanel)
 * [在 [!DNL Commerce Intelligence]中輸入連線和使用者資訊](#finish)
 
 ## 跳轉到
@@ -40,17 +40,17 @@ ht-degree: 0%
 >
 >[!DNL Adobe]建議您使用SSH或其他加密形式來保護您的資料！ 如果這不是選項，您仍然可以使用本主題中的指示直接將[!DNL Commerce Intelligence]連線到您的資料庫。
 
-此主題將引導您使用[!DNL MySQL]直接將您的[!DNL Commerce Intelligence]資料庫連線到[!DNL cPanel]。 此處理程式也可用來將[!DNL Adobe Commerce]和任何其他以MySQL為基礎的電子商務資料庫連線到[!DNL Commerce Intelligence]。
+此主題將引導您使用[!DNL cPanel]直接將您的[!DNL MySQL]資料庫連線到[!DNL Commerce Intelligence]。 此處理程式也可用來將[!DNL Adobe Commerce]和任何其他以MySQL為基礎的電子商務資料庫連線到[!DNL Commerce Intelligence]。
 
-1. 在[!DNL Commerce Intelligence]中建立[!DNL MySQL] [!DNL cPanel]使用者
+1. 在[!DNL cPanel]中建立[!DNL Commerce Intelligence] [!DNL MySQL]使用者
 1. 在[!DNL Commerce Intelligence]中輸入連線和使用者資訊
 
 開始使用。
 
-## 在[!DNL Commerce Intelligence]中建立[!DNL MySQL] [!DNL cPanel]使用者 {#cpanel}
+## 在[!DNL cPanel]中建立[!DNL Commerce Intelligence] [!DNL MySQL]使用者 {#cpanel}
 
 1. 透過您的託管提供者登入[!DNL cPanel]。
-1. 按一下位於&#x200B;**[!UICONTROL [!DNL MySQL] Databases]**&#x200B;區段中的`Database`。
+1. 按一下位於`Database`區段中的&#x200B;**[!UICONTROL [!DNL MySQL] Databases]**。
 1. 向下捲動至`Add New User`區段並建立[!DNL Commerce Intelligence]的使用者：
 
    ![cPanel MySQL資料庫介面顯示建立使用者表單](../../../assets/create-mbi-mysql-user-cpanel.png)
@@ -82,6 +82,11 @@ ht-degree: 0%
 
 完成時，按一下&#x200B;**[!UICONTROL Save & Test]**&#x200B;以完成設定。
 
-## 相關：
+>[!NOTE]
+>
+>如果您使用SSH通道，請參閱[SSH主機金鑰驗證](ssh-host-key-verification.md)，以取得註冊、重新整理、錯誤訊息及疑難排解資訊。
 
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+## 相關 {#related}
+
+* [SSH主機金鑰驗證](ssh-host-key-verification.md)
+* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
