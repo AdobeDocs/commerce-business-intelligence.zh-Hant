@@ -18,9 +18,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
-source-wordcount: 238
+source-wordcount: 242
 ht-degree: 0%
 
 ---
@@ -40,10 +40,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->除了來自&#x200B;**[!UICONTROL Standard]**&#x200B;的所有量度之外，所有具有[!DNL Google Analytics]許可權的使用者都可以透過「資料匯出」存取Data Warehouse中的所有資料。
+>除了來自[!DNL Google Analytics]的所有量度之外，所有具有&#x200B;**[!UICONTROL Standard]**&#x200B;許可權的使用者都可以透過「資料匯出」存取Data Warehouse中的所有資料。
 
-您也可以編輯量度，並在&#x200B;**[!UICONTROL Standard]**&#x200B;區段中選取&#x200B;**[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)**&#x200B;位使用者，以限制量度的存取權。
+您也可以編輯量度，並在&#x200B;**[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)**&#x200B;區段中選取&#x200B;**[!UICONTROL Standard]**&#x200B;位使用者，以限制量度的存取權。
 
 >[!NOTE]
 >
 >如果您複製量度，[!DNL Commerce Intelligence]會複製在原始量度中設定的使用者許可權。
+

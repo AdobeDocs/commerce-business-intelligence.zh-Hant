@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
-source-wordcount: 948
+source-wordcount: 877
 ht-degree: 0%
 
 ---
@@ -183,7 +183,7 @@ ht-degree: 0%
     <td></td>
   </tr>
   <tr>
-    <td rowspan="4">儀表板   — 共用</td>
+    <td rowspan="4">儀表板 — 共用</td>
     <td>跨角色與使用者共用控制面板</td>
     <td></td>
     <td>✓</td>
@@ -490,3 +490,4 @@ ht-degree: 0%
 [!DNL Advanced User Management]將資料篩選功能擴充至電子郵件摘要。 視對象而定，管理員使用者可以指定必須篩選所選報表的使用者群組。
 
 ![排程電子郵件摘要](../../assets/schedule-email-summary.png)
+

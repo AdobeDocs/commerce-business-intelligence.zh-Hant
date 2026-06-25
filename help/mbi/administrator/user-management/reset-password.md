@@ -19,17 +19,18 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
-source-wordcount: 75
+source-wordcount: 88
 ht-degree: 0%
 
 ---
 
 # 重設密碼
 
-若要重設密碼，請按一下&#x200B;**[!UICONTROL Reset Password]**&#x200B;登入頁面密碼欄位下方的[!DNL Adobe Commerce Intelligence]。 輸入使用者帳戶的電子郵件地址，並傳送包含密碼重設連結的電子郵件。
+若要重設密碼，請按一下[!DNL Adobe Commerce Intelligence]登入頁面密碼欄位下方的&#x200B;**[!UICONTROL Reset Password]**。 輸入使用者帳戶的電子郵件地址，並傳送包含密碼重設連結的電子郵件。
 
-此外，您可以使用[!DNL Commerce Intelligence]頁面在&#x200B;**[!UICONTROL Personal Settings]**&#x200B;內變更密碼。
+此外，您可以使用&#x200B;**[!UICONTROL Personal Settings]**&#x200B;頁面在[!DNL Commerce Intelligence]內變更密碼。
 
 如果您重設密碼，但帳戶仍然被鎖定，請依照[這些提示](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html?lang=zh-Hant)來協助找出問題。
+
