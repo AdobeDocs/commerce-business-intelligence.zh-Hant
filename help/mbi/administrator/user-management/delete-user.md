@@ -4,24 +4,15 @@ description: 瞭解如何刪除 [!DNL Commerce Intelligence] 使用者。
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
 role: Admin, User
 feature: User Management
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b6935462-7263-4ced-a703-60de6a5aeb2d
-subfeature_v2:
-  - id: d971c7be-3e54-4af9-807c-8d1f9f7b22df
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b6935462-7263-4ced-a703-60de6a5aeb2d
+subfeature_v2: id: d971c7be-3e54-4af9-807c-8d1f9f7b22df
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
-source-wordcount: 190
+source-wordcount: 201
 ht-degree: 0%
 
 ---
@@ -41,5 +32,6 @@ ht-degree: 0%
 如果您只需要該使用者推送至其他使用者帳戶的控制面板，請執行以下操作：
 
 1. 使用已刪除使用者的電子郵件地址來建立新的[!DNL Commerce Intelligence]使用者。
-1. 建立使用者後[通知支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。 支援將儀表板轉移至您的帳戶。
+1. 建立使用者後[通知支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。 支援將儀表板轉移至您的帳戶。
 1. Adobe支援通知您轉移後，您可以再次刪除使用者。
+
