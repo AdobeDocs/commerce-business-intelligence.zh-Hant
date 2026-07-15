@@ -5,7 +5,8 @@ user-guide-title: Commerce Intelligence使用手冊
 breadcrumb-title: Commerce Intelligence使用手冊
 role: Admin, Developer, Leader, User
 feature: Business Performance
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+nudge: true
+source-git-commit: f9af732019bbe5d695d55db238395c579678ed3c
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 0%
@@ -239,3 +240,4 @@ ht-degree: 0%
    - [在 [!DNL Visual Report Builder]中使用時間選項](tutorials/time-options-visual-rpt-bldr.md)
    - [從 [!DNL SQL] 查詢建立視覺效果](tutorials/create-visuals-from-sql.md)
    - [匯出原始資料](tutorials/export-raw-data.md)
+

@@ -1,7 +1,6 @@
 ---
 title: 限制對資料庫的存取
 description: 瞭解如何限制存取，限制對存放您資料庫的伺服器的存取。
-exl-id: 7a0bc0d7-086e-4a6e-b1dd-6db13814710e
 role: Admin, User
 feature: Accounts, User Management
 TQID: https://experienceleague.adobe.com/O2cS-hbhjqktc4LpJD6agxgIwabrypgCY9fnJTCR2XM
@@ -16,12 +15,14 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 7a0bc0d7-086e-4a6e-b1dd-6db13814710e
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
 source-wordcount: 225
 ht-degree: 0%
 
 ---
+
 
 # 限制存取
 
@@ -32,7 +33,6 @@ ht-degree: 0%
 若要限制[!DNL Commerce Intelligence Linux]使用者，您必須執行下列兩個動作：
 
 1. 將PATH環境變數變更為空字串。 這表示使用者無法存取系統可執行檔。
-
 1. 確定執行的殼層是`bash -r`
 
 這兩項作業都可在使用者本位`dir/.ssh`目錄的`authorized_keys`檔案中完成，做為使用者登入時執行命令的一部分。 看起來像這樣：
@@ -44,5 +44,3 @@ command="env PATH="" /bin/bash -r" <rjmetrics public key goes here>
 ```
 
 完成時，您為[!DNL Commerce Intelligence]建立的使用者無法變更您的系統。
-
-
