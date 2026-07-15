@@ -1,29 +1,22 @@
 ---
 title: 新增Adobe Commerce Intelligence使用者
 description: 瞭解如何新增新的 [!DNL Commerce Intelligence] 使用者以及如何更新您的使用者名稱或密碼。
-exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
 role: Admin, User
 feature: User Management
 TQID: https://experienceleague.adobe.com/-cMJHvHlodd05-Np22qtxxS8lHMi4StXOz1iD83xWkU
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
 source-wordcount: 245
 ht-degree: 0%
 
 ---
+
 
 # 新增[!DNL Adobe Commerce Intelligence]位使用者
 
@@ -54,6 +47,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->每個帳戶都有合約數量的授權或名額。 若您已達到限制或想進一步瞭解，請[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
-
-
+>每個帳戶都有合約數量的授權或名額。 若您已達到限制或想進一步瞭解，請[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)。
