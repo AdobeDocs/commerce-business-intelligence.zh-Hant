@@ -18,7 +18,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
-source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
+source-git-commit: 8dadc431bf2aa7e353c7aeea31db7fef75a011f0
 workflow-type: tm+mt
 source-wordcount: 229
 ht-degree: 0%
@@ -37,4 +37,4 @@ ht-degree: 0%
 1. **USB鍵盤和滑鼠**&#x200B;可控制您的硬體鎖。
 1. **瀏覽器延伸功能可一次在數個索引標籤之間旋轉。** 這可讓您設定您顯示在唯一標籤中的任何選定控制面板。 如果您使用[!DNL Chrome]，Adobe建議使用[Revolver Tabs](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en)副檔名。
 
-擁有上述硬體後，您就可以在熒幕上開啟一個瀏覽器視窗，其中包含您想要顯示在每個標籤中的特定儀表板。 最後，將瀏覽器設定為以所需頻率旋轉每個儀表板。
+擁有必要的硬體後，您便可以在熒幕上開啟瀏覽器視窗，其中包含您想要顯示在每個標籤中的特定儀表板。 最後，將瀏覽器設定為以所需頻率旋轉每個儀表板。
