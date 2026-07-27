@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4557430537492370a52030b60750950db8b245da
+source-git-commit: aa7acd0d863a3cd48ff83675b72c2a96eae02b4d
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 6%
+source-wordcount: '692'
+ht-degree: 0%
 
 ---
 # Adobe Commerce Intelligence技術檔案
@@ -11,17 +11,17 @@ ht-degree: 6%
 
 ## Adobe Open Source行為準則
 
-本專案已採用 [Adobe 開放原始碼管理辦法](code-of-conduct.md)或 [.NET Foundation 管理辦法](https://dotnetfoundation.org/code-of-conduct)。如需詳細資訊，請參閱[貢獻](contributing.md)一文。
+此專案已採用[Adobe Open Source行為準則](code-of-conduct.md)或[.NET Foundation行為準則](https://dotnetfoundation.org/code-of-conduct)。 如需詳細資訊，請參閱[貢獻](contributing.md)文章。
 
 ## 關於您對Adobe內容的貢獻
 
-請參閱[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
+請參閱[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 貢獻方式取決於您的身分和您要貢獻的變更型別：
 
 ### 微幅變更
 
-如果您要提出微幅更新，請瀏覽文章，然後按一下文章底部的意見區域，按一下&#x200B;**詳細的意見選項**，然後按一下&#x200B;**建議編輯**，即可前往GitHub的Markdown來源檔案。 使用GitHub UI進行更新。 如需詳細資訊，請參閱一般[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
+如果您要提出微幅更新，請瀏覽文章，然後按一下文章底部的意見區域，按一下&#x200B;**詳細的意見選項**，然後按一下&#x200B;**建議編輯**，即可前往GitHub的Markdown來源檔案。 使用GitHub UI進行更新。 如需詳細資訊，請參閱一般[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 您在本存放庫為檔案和程式碼範例提交的小幅更正或釐清均包含在Adobe使用條款中。
 
@@ -37,7 +37,7 @@ ht-degree: 6%
 
 社群投稿人可以使用GitHub UI進行基本編輯或建立存放庫復本，以做出重大貢獻。
 
-如需詳細資訊，請參閱[Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
+如需詳細資訊，請參閱[Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 ## 如何使用Markdown將主題格式化
 
@@ -60,10 +60,11 @@ ht-degree: 6%
 
 ### 鉤子會做什麼
 
-- 自動偵測分階段影像檔案(PNG、JPG、JPEG、GIF、SVG)
-- 執行`image_optim`以壓縮和最佳化影像
+- 自動偵測暫存的影像檔案(`.png`， `.jpeg`， `.jpg`， `.gif`， `.svg`)
+- 執行`image_optim`以壓縮和最佳化點陣影像(`.png`， `.jpeg`， `.jpg`， `.gif`)
 - 自動重新存放最佳化的影像
-- 確保所有認可的影像都已適當最佳化
+- 確保所有認可的點陣化影像都已適當最佳化
+- 根據大小限制檢查分段的SVG，如果從`help/`引用了過大的SVG，則中止認可（否則僅警告）
 
 ### 優點
 
@@ -74,7 +75,7 @@ ht-degree: 6%
 
 如需詳細的設定指示、疑難排解和組態，請參閱[`.githooks/README.md`](.githooks/README.md)。
 
-## Experience League 製作指南
+## Experience League Authoring指南
 
 ### 快速入門
 
@@ -90,9 +91,9 @@ ht-degree: 6%
 
 ### 製作
 
-- [編寫最佳實務](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/authoring-best-practices)
+- [製作最佳實務](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/authoring-best-practices)
 - [Markdown語法指南](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/markdown-syntax)
 - [Markdown語法速查表](https://experienceleague.adobe.com/en/docs/authoring-guide/using/markdown/cheatsheet)
-- [使用資料表](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/tables)
-- [正在新增連結](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/linking)
-- [移動與重新調整內容](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/restructure-new)
+- [使用表格](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/tables)
+- [新增連結](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/linking)
+- [移動和重組內容](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/restructure-new)
