@@ -5,25 +5,15 @@ exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/eDJBh7FlhuKjBa5ft4sqAfZavmBk4V9m-Iu-26cG2VI
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 482
-ht-degree: 0%
+source-wordcount: 593
+ht-degree: 16%
 
 ---
 
@@ -45,7 +35,7 @@ ht-degree: 0%
 * 選取[!UICONTROL table]： `sales_flat_order`
 * 選取[!UICONTROL column]： **`entity_id`**
 * [!UICONTROL Path]： sales_flat_order.customer_id = customer_entity.entity_id
-* [!UICONTROL Filter]：
+* [!UICONTROL Filter]:
 * 已計算的訂單
 
 * `sales_flat_order`資料表
@@ -53,8 +43,8 @@ ht-degree: 0%
 * 選取定義：聯結欄
 * 選取[!UICONTROL table]： `customer_entity`
 * 選取[!UICONTROL column]： `Customer's lifetime number of orders`
-* [!UICONTROL Path]： `sales_flat_order.customer_id = customer_entity.entity_id`
-* [!UICONTROL Filter]： `Orders we count`
+* [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
+* [!UICONTROL Filter]: `Orders we count`
 
 * `Seconds since created_at`
 * 選取定義： `Age`
@@ -78,64 +68,64 @@ ht-degree: 0%
 
 * **初始重複順序機率**
 * 量度A：所有時間重複訂單
-* [!UICONTROL Metric]： `Number of orders`
-* [!UICONTROL Filter]： `Customer's order number greater than 1`
+* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 量度B：所有時間訂單
 * [!UICONTROL Metric]：訂單數
 
 * [!UICONTROL Formula]：初始重複順序機率
-* &#x200B;
-  [!UICONTROL 公式]: `A/B`
-* &#x200B;
+* 
+  [！UICONTROL公式]: `A/B`
+* 
   [!UICONTROL Format]: `Percent`
 
-* [!UICONTROL Time period]： `All time`
-* &#x200B;
+* [!UICONTROL Time period]: `All time`
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Scalar`
 
 * **自訂單**&#x200B;以來的指定月份重複訂單機率
 * 量度A：自上次訂購後依月份重複訂購（隱藏）
-* [!UICONTROL Metric]： `Number of orders`
-* &#x200B;
+* [!UICONTROL Metric]: `Number of orders`
+* 
   [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]： `Customer's order number greater than 1`
+* [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 量度B：按訂購後月份的最後訂單（隱藏）
-* [!UICONTROL Metric]： `Number of orders`
-* &#x200B;
+* [!UICONTROL Metric]: `Number of orders`
+* 
   [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]： `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * 量度C：所有時間重複訂單（隱藏）
-* [!UICONTROL Metric]： `Number of orders`
-* [!UICONTROL Filter]： `Customer's order number greater than 1`
+* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* &#x200B;
-  [!UICONTROL 群組依據]: `Independent`
+* 
+  [！UICONTROL群組依據]: `Independent`
 
 * 量度D：所有上次訂單（隱藏）
-* [!UICONTROL Metric]： `Number of orders`
-* [!UICONTROL Filter]： `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* &#x200B;
-  [!UICONTROL 群組依據]: `Independent`
+* 
+  [！UICONTROL群組依據]: `Independent`
 
 * [!UICONTROL Formula]：初始重複順序機率
-* &#x200B;
-  [!UICONTROL 公式]: `(C-A)/(C+D-A-B)`
-* &#x200B;
+* 
+  [！UICONTROL公式]: `(C-A)/(C+D-A-B)`
+* 
   [!UICONTROL Format]: `Percent`
 
-* [!UICONTROL Time period]： `All time`
-* &#x200B;
+* [!UICONTROL Time period]: `All time`
+* 
   [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]： `Months since previous order`
+* [!UICONTROL Group by]: `Months since previous order`
 * 顯示top.bottom：前24個類別，依類別名稱排序
 
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Line`
 
 初始重複訂購機率報表代表「重複訂購總數/訂購總數」。 每個訂單都是重複訂單的機會；重複訂單的數量是實際重複訂單的子集。
@@ -144,8 +134,8 @@ ht-degree: 0%
 
 當您建置控制面板後，最常見的問題是：如何使用此功能來判斷流失臨界值？
 
-**此問題沒有「一個正確答案」。**&#x200B;但是，Adobe建議尋找直線與初始重複機率一半的值相交的點。 這時您可以說「如果使用者要重複訂單，他們現在可能已經完成了。」 基本上，目標是選取從「保留」切換為「重新啟用」的合理臨界值。
+**此問題沒有「一個正確答案」。** 不過，Adobe建議找出直線與初始重複機率一半的值相交的點。 這時您可以說「如果使用者要重複訂單，他們現在可能已經完成了。」 基本上，目標是選取從「保留」切換為「重新啟用」的合理臨界值。
 
 編譯所有報表後，您可以視需要在控制面板上組織報表。 結果看起來可能像頁面頂端的影像
 
-如果您在建立此分析時遇到任何問題，或只是想與專業服務團隊互動，請[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+如果您在建立此分析時遇到任何問題，或只是想與專業服務團隊互動，請[聯絡支援人員](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

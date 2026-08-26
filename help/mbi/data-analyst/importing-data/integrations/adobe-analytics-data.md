@@ -1,36 +1,25 @@
 ---
 title: 預期 [!DNL Adobe Analytics] 資料
-description: 瞭解連線RDS執行個體的步驟。
+description: 使用Commerce Intelligence 2.0報表API，檢閱Analytics從Adobe Analytics匯入的資料欄位，這樣您就知道報表中將會出現什麼內容。
 exl-id: 4df66ec1-c7f3-4b02-8f0f-49cada99c14c
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/vA-1cABpxQNwI8xTF4Elkgv2geudkp5tnBH1l6-PZiY
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 400
-ht-degree: 0%
+source-wordcount: 443
+ht-degree: 1%
 
 ---
 
 # 預期[!DNL Adobe Analytics]資料
 
-[!DNL Adobe Analytics]的[!DNL Adobe Commerce Intelligence]整合使用[Analytics 2.0報告API](https://developer.adobe.com/analytics-apis/docs/2.0/#!AdobeDocs/analytics-2.0-apis/master/README.md)。
+[!DNL Adobe Commerce Intelligence]的[!DNL Adobe Analytics]整合使用[Analytics 2.0報告API](https://developer.adobe.com/analytics-apis/docs/2.0/#!AdobeDocs/analytics-2.0-apis/master/README.md)。
 
 >[!INFO]
 >
@@ -41,8 +30,8 @@ ht-degree: 0%
 此表格的結構描述是由您在整合設定程式中選取的量度和維度所組成。 [!DNL Commerce Intelligence]也會產生數個額外的資料行，以供識別。
 
 例如，如果您在設定期間選取下列量度和維度：
-- `Metric`： `Page views`
-- `Dimension`： `Page`
+- `Metric`: `Page views`
+- `Dimension`: `Page`
 
 此表格將包含下列欄：
 
@@ -51,20 +40,20 @@ ht-degree: 0%
 | `_id` | 此欄是主索引鍵。 |
 | `_item_hash` | [!DNL Commerce Intelligence]唯一識別碼。 此資料行由[!DNL Commerce Intelligence]建立。 |
 | `_updated_at` | 此欄包含上次更新資料列的時間。 由[!DNL Commerce Intelligence]建立。 |
-| `start_date` | 資料列所含資料的開始日期。 `start_date`一律為一列中的同日00:00。 |
-| `end_date` | 列所包含資料的結束日期。 `end_date`在一列中永遠是同一天23:59。 |
+| `start_date` | 資料列所含資料的開始日期。 `start_date`在一列中永遠是同一天的00:00。 |
+| `end_date` | 列所包含資料的結束日期。 `end_date`在一列中永遠是同一天的23:59。 |
 | `page_views` | 選取的量度：所識別時段內的頁面檢視總數。 |
 | `page` | 選取的維度：具有追蹤檢視的個別頁面名稱。 |
 
-使用[!DNL Commerce Intelligence]頁面中的&#x200B;*sync*&#x200B;或&#x200B;*unsync*&#x200B;選項，控制`Data Warehouse`表格中哪些選取的量度和維度有可用資料。 目前未同步的欄會以灰色顯示。 如果您停止同步欄，可以稍後再次開始同步。
+使用`Data Warehouse`頁面中的&#x200B;*sync*&#x200B;或&#x200B;*unsync*&#x200B;選項，控制[!DNL Commerce Intelligence]表格中哪些選取的量度和維度有可用資料。 目前未同步的欄會以灰色顯示。 如果您停止同步欄，可以稍後再次開始同步。
 
 ## 目前限制
 
-本節概述[!DNL Adobe Analytics]之[!DNL Commerce Intelligence]整合的限制。
+本節概述[!DNL Commerce Intelligence]之[!DNL Adobe Analytics]整合的限制。
 
 | 限制 | 說明 |
 | --- | --- |
 | `Historical data period` | 如同其他協力廠商整合，[!DNL Adobe Analytics]整合會提取有限的歷史資料量，然後繼續更新資料。 歷史期間設定為2週。 |
-| `Empty component combinations` | 有些量度和維度組合沒有包含資料。 如果選取這種組合進行復寫，[!DNL Commerce Intelligence]會從復寫資料表中排除資料行。 若要避免選取這類組合，您可以先在[[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hant)中建立報告，以確認您取得預期的資料。 |
+| `Empty component combinations` | 有些量度和維度組合沒有包含資料。 如果選取這種組合進行復寫，[!DNL Commerce Intelligence]會從復寫資料表中排除資料行。 若要避免選取這類組合，您可以先在[[!DNL Adobe Analytics] Workspace](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/home)中建立報告，以確認您取得預期的資料。 |
 | `Re-authorization cadence` | 每兩週需要重新授權[!DNL Adobe Analytics]整合。 若要重新授權，請移至整合的[編輯]頁面，然後按一下&#x200B;**[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]**。 |
 | `One dimension per row` | [!DNL Adobe Analytics]一次提供一個維度的量度資料。 如果您在設定期間選取多個維度，則[!DNL Commerce Intelligence]表格中的每一列會包含單一維度值，且其他維度的每一列為Null。 |

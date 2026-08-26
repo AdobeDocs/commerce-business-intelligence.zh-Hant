@@ -5,24 +5,14 @@ exl-id: 203a2d4b-e7ad-4704-a3c1-8e22ff0bf2d6
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/DhJhNDqTEki-evyidC-9d08qq-XSDPRu1jJqG1lOijI
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 263
+source-wordcount: 283
 ht-degree: 0%
 
 ---
@@ -37,7 +27,7 @@ ht-degree: 0%
 |-----|-----|
 | `Users` | `users`表格包含註冊客戶的帳戶詳細資料，包括個人的電子郵件、名稱和註冊日期。 這可讓您分析不同的客戶區段及其購買行為。 |
 | [`Orders`](https://guides.spreecommerce.org/developer/orders.html#overview) | `orders`表格可作為您所有訂單層級量度的基礎。 這裡記錄的是從您的[!DNL Spree]商店購買的所有訂單詳細資料，包括`completed\_at` （訂單的時間戳記）、`user\_id` （下訂單的註冊使用者識別碼）。 如果訂單是由註冊的使用者所訂，則`user\_id`會連結回`users`表格，以分析使用者的購買行為。 |
-| `Line items` | `line\_items`資料表是`orders`資料表或`subscriptions`的子系。 它會記錄訂單或訂閱的行專案詳細資料。 針對具有多個產品的訂單，此表格中每個產品都有自己的資料列，包括可讓您將其連結至`product\_id`表格的`Products`。 |
+| `Line items` | `line\_items`資料表是`orders`資料表或`subscriptions`的子系。 它會記錄訂單或訂閱的行專案詳細資料。 針對具有多個產品的訂單，此表格中每個產品都有自己的資料列，包括可讓您將其連結至`Products`表格的`product\_id`。 |
 | `Products` | `products`表格會記錄Spree目錄中可銷售專案的所有產品詳細資料。 這可讓您依產品屬性來劃分條列專案層級量度。 |
 | `Subscriptions` | 如果您有[!DNL Spree]訂閱延伸，`subscriptions`表格會保留每個個別訂閱的資訊，包括`created\_at` （開始日期）、`cancelled\_at` （取消訂閱的日期）以及訂閱的`interval`。 |
 
@@ -46,4 +36,4 @@ ht-degree: 0%
 ## 相關：
 
 * [正在連線 [!DNL Spree]](../integrations/spree.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [重新驗證整合](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

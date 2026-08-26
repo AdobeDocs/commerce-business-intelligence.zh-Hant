@@ -5,25 +5,14 @@ exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
 TQID: https://experienceleague.adobe.com/UXIfQT9NxvKnefTMVWxjTYEMDpmCRITyzlFpNcU-y90
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1007
+source-wordcount: 1032
 ht-degree: 0%
 
 ---
@@ -37,7 +26,7 @@ ht-degree: 0%
 1. 資料庫中的資料表如何相互關聯
 1. 定義此關係的主要和外部索引鍵
 
-如果您知道此資訊，可以依照本主題中的指示輕鬆建立路徑。 您可能想要詢問貴組織的技術專家，或聯絡[Professional Services團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+如果您知道此資訊，可以依照本主題中的指示輕鬆建立路徑。 您可能想要詢問貴組織的技術專家，或聯絡[Professional Services團隊](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ## 重新整理表格關係和索引鍵型別 {#refresher}
 
@@ -59,9 +48,9 @@ ht-degree: 0%
 
 ### 主索引鍵和外部索引鍵 {#keys}
 
-`Primary Key`是未變更的資料行或資料行集，會在資料表中產生唯一值。 例如，當客戶在網站上訂購時，購物車的`orders`表格中會新增一列，並附上新的`order_id`。 此`order_id`可讓客戶與企業追蹤該特定訂單的進度。 由於訂單ID是唯一的，因此它通常是`Primary Key`資料表的`orders`。
+`Primary Key`是未變更的資料行或資料行集，會在資料表中產生唯一值。 例如，當客戶在網站上訂購時，購物車的`orders`表格中會新增一列，並附上新的`order_id`。 此`order_id`可讓客戶與企業追蹤該特定訂單的進度。 由於訂單ID是唯一的，因此它通常是`orders`資料表的`Primary Key`。
 
-`Foreign Key`是在資料表內建立的資料行，連結到另一個資料表的`Primary Key`資料行。 外部索引鍵會建立表格之間的參考，讓分析師輕鬆查閱並連結記錄。 假設您想知道哪些訂單屬於您的每位客戶。 `customer id`資料行（`Primary Key`資料表的`customers`）與`order_id`資料行（`Foreign Key`資料表中的`customers`，參考`Primary Key`資料表的`orders`）可讓我們連結及分析此資訊。 建立路徑時，系統會要求您同時定義`Primary Key`和`Foreign Key`。
+`Foreign Key`是在資料表內建立的資料行，連結到另一個資料表的`Primary Key`資料行。 外部索引鍵會建立表格之間的參考，讓分析師輕鬆查閱並連結記錄。 假設您想知道哪些訂單屬於您的每位客戶。 `customer id`資料行（`customers`資料表的`Primary Key`）與`order_id`資料行（`customers`資料表中的`Foreign Key`，參考`orders`資料表的`Primary Key`）可讓我們連結及分析此資訊。 建立路徑時，系統會要求您同時定義`Primary Key`和`Foreign Key`。
 
 ## 建立路徑 {#createpath}
 
@@ -70,8 +59,8 @@ ht-degree: 0%
 使用&#x200B;**客戶**&#x200B;和&#x200B;**訂單**&#x200B;之間的關係來顯示如何完成它。 劃分：
 
 * 關聯性為`one-to-many` — 客戶可以有多個訂單，但一個訂單只能有一個客戶。 這會告訴我們關係的方向，或是應該建立計算欄的位置。 在此情況下，這表示來自`orders`表格的資訊可以匯入`customers`表格。
-* 您要使用的`primary key`是`customers.customerid`，或`customer ID`資料表中的`customers`資料行。
-* 您要使用的`foreign key`是`orders.customerid`，或`customer ID`資料表中的`orders`資料行。
+* 您要使用的`primary key`是`customers.customerid`，或`customers`資料表中的`customer ID`資料行。
+* 您要使用的`foreign key`是`orders.customerid`，或`orders`資料表中的`customer ID`資料行。
 
 現在，您可以建立路徑。
 
@@ -96,7 +85,7 @@ ht-degree: 0%
 
 * **[!DNL Commerce Intelligence]無法猜測主要/外部索引鍵關係**。 您不想將不正確的資料帶入帳戶，因此建立路徑必須手動完成。
 
-* **目前只能在兩個不同的資料表**&#x200B;之間指定路徑。 您嘗試重新建立的邏輯是否涉及兩個以上的表格？ 然後(1)先將資料行聯結至中介表格，然後再聯結至「最終目的地」表格，或(2)洽詢[專業服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)，以找出達成目標的最佳方法，這樣做可能會有意義。
+* **目前只能在兩個不同的資料表**&#x200B;之間指定路徑。 您嘗試重新建立的邏輯是否涉及兩個以上的表格？ 然後(1)先將資料行聯結至中介表格，然後再聯結至「最終目的地」表格，或(2)洽詢[專業服務團隊](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)，以找出達成目標的最佳方法，這樣做可能會有意義。
 
 * **資料行一次只能是ONE路徑的外部索引鍵參考**。 例如，如果`order_items.order_id`指向`orders.id`，則`order_items.order_id`無法指向任何其他專案。
 
@@ -110,7 +99,7 @@ ht-degree: 0%
 
 ## 正在結束 {#wrapup}
 
-現在您已熟悉如何在Data Warehouse中建立計算欄的路徑。 如果您仍不確定特定路徑，請記住，您隨時都可以按一下&#x200B;**[!UICONTROL Support]**&#x200B;帳戶中的[!DNL Commerce Intelligence]以取得協助。
+現在您已熟悉如何在Data Warehouse中建立計算欄的路徑。 如果您仍不確定特定路徑，請記住，您隨時都可以按一下[!DNL Commerce Intelligence]帳戶中的&#x200B;**[!UICONTROL Support]**&#x200B;以取得協助。
 
 ## 相關
 

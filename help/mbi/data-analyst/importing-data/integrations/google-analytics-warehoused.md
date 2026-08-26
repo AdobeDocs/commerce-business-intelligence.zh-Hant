@@ -5,28 +5,14 @@ exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/fmI-RG3Ba7s--6-Qve8xzcBLAKcbAqfaMAb7hNiKciU
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 489
+source-wordcount: 514
 ht-degree: 0%
 
 ---
@@ -47,7 +33,7 @@ ht-degree: 0%
 
 檢視[!DNL Google Analytics]個廣告行銷活動，以取得從操作觀點可以做些什麼的範例。 假設您在第四季有多個名稱不同的廣告行銷活動。 行銷活動是特定行銷活動的結果。 使用倉儲資料，您可以建立欄，找出有問題的行銷活動名稱，並傳回第四季方案名稱`Operation Dumbo`。
 
-組合方面可讓[!DNL Google Analytics]資料與其他資料結合，以進行分析。 例如，從`Total Time On Site By Ad Campaign`取得[!DNL Google Analytics]個資料，並與`Total Spent Per Campaign`的[!DNL Facebook Ads]個資料結合，以完整瞭解有多少參與導致您成本。
+組合方面可讓[!DNL Google Analytics]資料與其他資料結合，以進行分析。 例如，從[!DNL Google Analytics]取得`Total Time On Site By Ad Campaign`個資料，並與[!DNL Facebook Ads]的`Total Spent Per Campaign`個資料結合，以完整瞭解有多少參與導致您成本。
 
 另一方面，透過[!DNL Google Analytics Live]整合，每個[!DNL Google Analytics]圖表都像是未儲存在Data Warehouse中的小型定址接收器。
 
@@ -55,9 +41,9 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused]是`Premium`整合。 如果您有興趣將此整合新增至您的訂閱，請[連絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+>[!DNL Google Analytics Warehoused]是`Premium`整合。 如果您有興趣將此整合新增至您的訂閱，請[連絡支援人員](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
-1. 移至`Connections`下的&#x200B;**[!UICONTROL Admin** > **Integrations]**&#x200B;頁面。
+1. 移至&#x200B;**[!UICONTROL Admin** > **Integrations]**&#x200B;下的`Connections`頁面。
 1. 按一下位於右側的&#x200B;**[!UICONTROL Add an Integration]**。
 1. 按一下[!DNL Google Analytics Warehoused]圖示。 這會開啟[!DNL Google Analytics]認證頁面。
 1. 輸入您的[!DNL Google Analytics]認證。 完成授權程式後，系統會將您重新導向回[!DNL Commerce Intelligence]。
@@ -75,15 +61,15 @@ ht-degree: 0%
 
    `www.google.com/analytics/web/#home/a11345062w43527078p**XXXXXXXX**/`
 
-## 正在從[!DNL Google Analytics Warehoused]中斷連線[!DNL Commerce Intelligence] {#disconnect}
+## 正在從[!DNL Commerce Intelligence]中斷連線[!DNL Google Analytics Warehoused] {#disconnect}
 
 1. 造訪您的[!DNL Google Analytics] [帳戶設定](https://myaccount.google.com/intro)頁面。
-1. 在`Security`區段下，按一下&#x200B;**[!UICONTROL edit]**&#x200B;應用程式和網站旁的`Authorizing`。
-1. 按一下&#x200B;**[!UICONTROL revoke access]**&#x200B;旁的[!DNL Commerce Intelligence]。
+1. 在`Security`區段下，按一下`Authorizing`應用程式和網站旁的&#x200B;**[!UICONTROL edit]**。
+1. 按一下[!DNL Commerce Intelligence]旁的&#x200B;**[!UICONTROL revoke access]**。
 
 ## 相關檔案
 
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [重新驗證整合](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [正在連線 [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [分析網站活動和客戶轉換率](../../analysis/web-act-cust-conversion.md)
 * [使用 [!DNL Google Analytics] Cookie追蹤使用者贏取資料](../../analysis/google-track-user-acq.md)

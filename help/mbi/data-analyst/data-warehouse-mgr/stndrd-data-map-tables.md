@@ -1,27 +1,18 @@
 ---
 title: 使用對應表格標準化資料
-description: 瞭解如何使用對應表格。
+description: 標準化不一致的值（例如計費狀態格式），使用Commerce Intelligence的Data Warehouse Manager中的對應表格來保持報表的準確性。
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/ScOu9-YwG9T8nTMEow3QehHL8GcYeuNtUS0MHTf4GFU
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 775
+source-wordcount: 788
 ht-degree: 0%
 
 ---
@@ -71,14 +62,14 @@ ht-degree: 0%
 若要建立`joined`欄，請導覽至Data Warehouse管理員中要重新定位欄位的資料表。 在此範例中，這會是`customer_address`資料表。
 
 1. 按一下&#x200B;**[!UICONTROL Create a Column]**。
-1. 從`Joined Column`下拉式清單中選取`Definition`。
+1. 從`Definition`下拉式清單中選取`Joined Column`。
 1. 請為資料行指定名稱，使其與資料庫中的`state`資料行不同。 為欄`billing state (mapped)`命名，以便您分辨在Report Builder中分段時要使用的欄。
-1. 連線表格所需的路徑不存在，因此您需要建立一個路徑。 在&#x200B;**[!UICONTROL Create new path]**&#x200B;下拉式清單中按一下`Select a table and column`。
+1. 連線表格所需的路徑不存在，因此您需要建立一個路徑。 在`Select a table and column`下拉式清單中按一下&#x200B;**[!UICONTROL Create new path]**。
 
    如果您不確定資料表關聯性是什麼，或不確定如何正確定義主索引鍵和外索引鍵，請檢視[教學課程](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)以取得協助。
 
    * 在`Many`側，選取您要重新定位欄位的資料表（再次說明，它是`customer_address`）以及範例中的`Foreign Key`資料行或`state`資料行。
-   * 在`One`側，選取`mapping`資料表和`Primary key`資料行。 在此情況下，您可以從`state_input`資料表選取`mapping_state`資料行。
+   * 在`One`側，選取`mapping`資料表和`Primary key`資料行。 在此情況下，您可以從`mapping_state`資料表選取`state_input`資料行。
    * 以下是該路徑的外觀：
 
      ![Data Warehouse管理員顯示狀態對應計算路徑](../../assets/State_Mapping_Path.png)
@@ -93,7 +84,7 @@ ht-degree: 0%
 
 ![在標準化後顯示乾淨狀態區段的圖表](../../assets/Clean_State_Segments.png)
 
-當您想要清除Data Warehouse中某些可能亂七八糟的資料時，隨時都能使用對應表格。 不過，對應表格也可以用於其他酷炫的使用案例，例如[在 [!DNL Google Analytics channels] 中複製 [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md)。
+當您想要清除Data Warehouse中某些可能亂七八糟的資料時，隨時都能使用對應表格。 不過，對應表格也可以用於其他酷炫的使用案例，例如[在 [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md)中複製 [!DNL Google Analytics channels] 。
 
 ### 相關
 

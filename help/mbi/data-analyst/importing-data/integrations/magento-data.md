@@ -5,24 +5,14 @@ exl-id: b481c8fc-41b6-4094-8901-17d57f26bfc0
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/D-GNfk1-kMscgF1xBKM5xG7wRV4IkIDh9wEBCMGb630
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 239
+source-wordcount: 254
 ht-degree: 0%
 
 ---
@@ -37,7 +27,7 @@ ht-degree: 0%
 |-----|-----|
 | `Customers` | `customer\_entity`和相關表格說明與資料庫中每個&#x200B;*已註冊客戶*&#x200B;相關聯的資訊，例如其電子郵件地址和註冊日期。 有了這些資訊，您就可以開始依客戶層級的屬性和同類群組進行分段。 |
 | `Orders` | `sales\_flat\_order`表格會記錄所有訂單，包括下訂單的`created\_at`時間戳記，以及總和收入的`base\_grand\_total`欄位。 這些欄位是訂單層級量度的基礎。 如果訂單是由&#x200B;*註冊客戶*&#x200B;所訂，`customer\_id`欄位會連結回`customer\_entity`表格，以允許分析客戶購買行為。 |
-| `Order items` | `sales\_flat\_order\_item`表格會記錄每個屬於訂單的專案。 這包含`price`和`qty\_ordered`欄位，以及連線至`order\_id`資料表的`sales\_flat\_order`欄位。 此表格是`Item sold`等量度的基礎，可讓您依`product`和`product type`分段。 |
+| `Order items` | `sales\_flat\_order\_item`表格會記錄每個屬於訂單的專案。 這包含`price`和`qty\_ordered`欄位，以及連線至`sales\_flat\_order`資料表的`order\_id`欄位。 此表格是`Item sold`等量度的基礎，可讓您依`product`和`product type`分段。 |
 | `Products` | `catalog\_product\_entity`表格儲存產品層級屬性的資訊，例如類別、大小和顏色。 |
 | `Categories` | 您的產品屬於一或多個不同的`product categories`，端視您的Commerce組建設定方式而定。 `catalog\_category\_entity`表格會儲存這些類別的階層（例如，「服飾>上衣> T恤」），`catalog\_category\_product`表格會記錄您的產品與這些類別之間的連線。 |
 
@@ -46,4 +36,4 @@ ht-degree: 0%
 ## 相關
 
 * [正在連線 [!DNL Adobe Commerce]](../integrations/magento.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [重新驗證整合](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

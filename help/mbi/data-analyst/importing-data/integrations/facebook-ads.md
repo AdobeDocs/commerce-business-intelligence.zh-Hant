@@ -5,24 +5,14 @@ exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/6TR559YyeTHT3KWl3oA4Bdnpr-HCowTXTTkvmP0I0tg
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 313
+source-wordcount: 321
 ht-degree: 0%
 
 ---
@@ -45,7 +35,7 @@ ht-degree: 0%
 
 ## 將[!DNL Facebook]新增為[!DNL Commerce Intelligence]中的資料來源 {#stepone}
 
-1. 若要將[!DNL Facebook]整合新增至您的[!DNL Commerce Intelligence]帳戶，請瀏覽至`Connections`下的&#x200B;**[!UICONTROL Manage Data** > **Integrations]**&#x200B;頁面。
+1. 若要將[!DNL Facebook]整合新增至您的[!DNL Commerce Intelligence]帳戶，請瀏覽至&#x200B;**[!UICONTROL Manage Data** > **Integrations]**&#x200B;下的`Connections`頁面。
 1. 按一下右側的&#x200B;**[!UICONTROL Add Integration]**。
 1. 按一下[!DNL Facebook]圖示。 這會顯示[!DNL Facebook]授權頁面。
 1. 按一下&#x200B;**[!UICONTROL Authorize]**。
@@ -66,19 +56,19 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**[!UICONTROL Save Connections]**。
 
-   如果連線成功，*連線成功！*&#x200B;訊息會顯示在頁面頂端。
+   如果連線成功，*連線成功！* 訊息會顯示在頁面頂端。
 
 ## 接下來呢？ {#next}
 
-請確定您正在追蹤[!DNL Facebook]中的[!DNL Google Analytics]個行銷活動。 這可確保已針對您的`utm\_campaign`行銷活動正確填入[!DNL Google Analytics]中的[!DNL Facebook]欄位。
+請確定您正在追蹤[!DNL Google Analytics]中的[!DNL Facebook]個行銷活動。 這可確保已針對您的[!DNL Facebook]行銷活動正確填入[!DNL Google Analytics]中的`utm\_campaign`欄位。
 
 ## 相關
 
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [重新驗證整合](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [連線您的 [!DNL Google Adwords] 帳戶](../integrations/google-ecommerce.md)
 * [透過 [!DNL Google eCommerce]追蹤訂單轉介來源](../integrations/google-ecommerce.md)
 * [追蹤資料庫中的使用者反向連結來源](../../analysis/google-track-user-acq.md)
 * [追蹤資料庫中的使用者裝置、瀏覽器和作業系統資料](../../analysis/track-usr-dev-browser.md)
 * [探索您最有價值的贏取來源和管道](../../analysis/most-value-source-channel.md)
 * [提高廣告行銷活動的ROI](../../analysis/roi-ad-camp.md)
-* [&#x200B; [!DNL Google Analytics] UTM歸因如何運作？](../../analysis/utm-attributes.md)
+* [ [!DNL Google Analytics] UTM歸因如何運作？](../../analysis/utm-attributes.md)

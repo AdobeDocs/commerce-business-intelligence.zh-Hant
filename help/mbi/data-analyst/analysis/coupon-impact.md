@@ -5,24 +5,15 @@ exl-id: b0619365-fa75-49b5-a393-87f3364a390f
 role: Admin, User
 feature: Data Warehouse Manager, Reports
 TQID: https://experienceleague.adobe.com/eILs8O8m45IOVLRYERopvcugIawdQ3c1YGTxr11W3mo
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1382
-ht-degree: 1%
+source-wordcount: 1422
+ht-degree: 2%
 
 ---
 
@@ -63,8 +54,8 @@ ht-degree: 1%
 
 | **客戶贏取** | **新客戶數目** | **平均期限收入** | **重複訂單數** | **含抵用券的重複訂單數** | 含抵用券的重複訂單的&#x200B;**%** |
 |-----|-----|-----|-----|-----|-----|
-| 抵用券 | 1,206 | 356.91美元 | 2,570 | 1,248 | 48.56% |
-| 無抵用券 | 11,561 | 498.30美元 | 20,145 | 3,251 | 16.14% |
+| 抵用券 | 1,206 | $356.91 | 2,570 | 1,248 | 48.56% |
+| 無抵用券 | 11,561 | $498.30 | 20,145 | 3,251 | 16.14% |
 
 {style="table-layout:auto"}
 
@@ -92,7 +83,7 @@ ht-degree: 1%
 
 ## 分析優惠券取得的第一筆訂單詳細資料 {#firstorder}
 
-本節僅著重於從優惠券取得取得的&#x200B;**筆第一筆訂單，依優惠券分段。**&#x200B;在您的分析中使用這些量度：
+本節僅著重於從優惠券取得取得的&#x200B;**第一筆訂單，依優惠券分段。** 在分析中使用這些量度：
 
 ### 訂單數/客戶數
 
@@ -126,9 +117,9 @@ ht-degree: 1%
 
 | **優惠券** | **首次訂購(FTO)** | 來自FTO **的總收入** | 套用至FTO **的**&#x200B;折扣 | 來自FTO **的**&#x200B;淨收入 | **FTO的平均訂單值** |
 |-----|-----|-----|-----|-----|-----|
-| **100美元或以上優惠25%** | 56 | 8,531.04美元 | 2,132.76美元 | 6,398.28美元 | 152.34美元 |
-| **$10折扣** | 87 | 3,707.07美元 | 426.10美元 | 3,280.97美元 | 42.61美元 |
-| **20%優惠** | 145 | 10,975.05美元 | 2,195.01美元 | 8,780.04美元 | 75.69美元 |
+| **100美元或以上優惠25%** | 56 | $8,531.04 | $2,132.76 | $6,398.28 | $152.34 |
+| **$10折扣** | 87 | $3,707.07 | $426.10 | $3,280.97 | $42.61 |
+| **20%優惠** | 145 | $10,975.05 | $2,195.01 | $8,780.04 | $75.69 |
 
 {style="table-layout:auto"}
 
@@ -154,9 +145,9 @@ ht-degree: 1%
 
 | **客戶的第一張訂單優惠券** | **客戶數目** | **平均期限訂單數** | **平均期限收入** |
 |-----|-----|-----|-----|
-| **100美元或以上優惠25%** | 56 | 2.8 | 554.54美元 |
-| **$10折扣** | 87 | 1.9 | 115.50美元 |
-| **20%優惠** | 145 | 1.3 | 103.75美元 |
+| **100美元或以上優惠25%** | 56 | 2.8 | $554.54 |
+| **$10折扣** | 87 | 1.9 | $115.50 |
+| **20%優惠** | 145 | 1.3 | $103.75 |
 
 {style="table-layout:auto"}
 
@@ -166,4 +157,4 @@ ht-degree: 1%
 
 ## 正在結束 {#wrapup}
 
-您可以建立許多分析，以更清楚瞭解客戶如何使用抵用券。 想過分析客戶如何使用優惠券或使用優惠券的時間嗎？ 如何找出最佳折扣金額 — 哪些金額可鼓勵重複購買者、更高的平均訂單值和更高的期限收入？ 如需這些型別問題的協助，請[連絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+您可以建立許多分析，以更清楚瞭解客戶如何使用抵用券。 想過分析客戶如何使用優惠券或使用優惠券的時間嗎？ 如何找出最佳折扣金額 — 哪些金額可鼓勵重複購買者、更高的平均訂單值和更高的期限收入？ 如需這些型別問題的協助，請[連絡支援人員](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

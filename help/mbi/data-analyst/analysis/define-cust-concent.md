@@ -5,26 +5,15 @@ exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/kayq-ci-AiHHgNoaX09h6dqKQX14MudLvEqFmos3hQE
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 472
-ht-degree: 0%
+source-wordcount: 640
+ht-degree: 11%
 
 ---
 
@@ -42,7 +31,7 @@ ht-degree: 0%
 
 ## 計算欄
 
-如果您使用原始架構（例如，如果您的「`Data Warehouse Views`」功能表下沒有「`Manage Data`」選項），您想要聯絡支援團隊以建置以下欄。 在新架構上，可從`Manage Data > Data Warehouse`頁面建立這些欄。 詳細指示如下。
+如果您使用原始架構（例如，如果您的「`Manage Data`」功能表下沒有「`Data Warehouse Views`」選項），您想要聯絡支援團隊以建置以下欄。 在新架構上，可從`Manage Data > Data Warehouse`頁面建立這些欄。 詳細指示如下。
 
 如果您的企業允許訪客訂購，則需作進一步的區分。 若是如此，您可以忽略`customer_entity`資料表的所有步驟。 如果不允許客體訂單，請忽略`sales_flat_order`資料表的所有步驟。
 
@@ -75,7 +64,7 @@ ht-degree: 0%
 * 客戶的收入百分位數
 * [!UICONTROL Column type]： - `Same table > Calculation`
 * [!UICONTROL Inputs]： - `(input) Ranking by customer lifetime revenue`， `Number of customers`
-* [!UICONTROL Calculation]： - **當A為Null然後為Null時，則為(A/B)* 100 end &#x200B;**
+* [!UICONTROL Calculation]： - **&#x200B;當A為Null然後為Null時，則為(A/B)*100 end **
 * [!UICONTROL Datatype]： - `Decimal`
 
 * `Sales_flat_order`資料表
@@ -93,8 +82,8 @@ ht-degree: 0%
 * 客戶的收入百分位數
 * [!UICONTROL Column type]： - `Same table > Calculation`
 * [!UICONTROL Inputs]： - `(input) Ranking by customer lifetime revenue`， `Number of customers`
-* [!UICONTROL Calculation]： - **當A為Null然後為Null時，則為(A/B)* 100 end &#x200B;**
-* [!UICONTROL Datatype]： - `Decimal`
+* [!UICONTROL Calculation]： - **&#x200B;當A為Null然後為Null時，則為(A/B)*100 end **
+* [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
 >
@@ -111,35 +100,35 @@ ht-degree: 0%
 ## 報表
 
 * **客戶集中度**
-* [!UICONTROL Metric]： `Total customer lifetime value`
-* [!UICONTROL Filter]： `Customer's revenue percentile IS NOT NULL`
+* [!UICONTROL Metric]: `Total customer lifetime value`
+* [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
-* [!UICONTROL Metric]： `Total customer lifetime value`
-* [!UICONTROL Filter]： `Customer's revenue percentile IS NOT NULL`
+* [!UICONTROL Metric]: `Total customer lifetime value`
+* [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
-* &#x200B;
-  [!UICONTROL 群組依據]: `Independent`
+* 
+  [！UICONTROL群組依據]: `Independent`
 * 量度`A`： `Total customer lifetime revenue by percentile`
 * 量度`B`： `Total customer lifetime revenue (ungrouped)`
-* [!UICONTROL Time period]： `All time`
-* &#x200B;
+* [!UICONTROL Time period]: `All time`
+* 
   [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]： `Customer's revenue percentile`
+* [!UICONTROL Group by]: `Customer's revenue percentile`
 * 顯示頂端/底部： `100% of Customer's revenue percentile Name`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Line`
 
 * **前10%濃度**
-* [!UICONTROL Filter]： `Customer's revenue percentile <= 10`
+* [!UICONTROL Filter]: `Customer's revenue percentile <= 10`
 
 * 量度`A`： `Total customer lifetime revenue`
-* [!UICONTROL Time period]： `All time`
-* &#x200B;
+* [!UICONTROL Time period]: `All time`
+* 
   [!UICONTROL Interval]: `None`
 * 隱藏圖表
-* &#x200B;
-  [!UICONTROL 群組依據]: `Email`
-* &#x200B;
+* 
+  [！UICONTROL群組依據]: `Email`
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **僅一次購買最下層50%的濃度**
@@ -147,30 +136,30 @@ ht-degree: 0%
 * 量度`A`： `Total customer lifetime revenue`
 * `Customer's revenue percentile <= 50`
 * `Customer's lifetime number of orders = 1`
-* [!UICONTROL Filter]：
+* [!UICONTROL Filter]:
 
-* [!UICONTROL Time period]： `All time`
-* &#x200B;
+* [!UICONTROL Time period]: `All time`
+* 
   [!UICONTROL Interval]: `None`
 * 隱藏圖表
-* &#x200B;
-  [!UICONTROL 群組依據]: `Email`
-* &#x200B;
+* 
+  [！UICONTROL群組依據]: `Email`
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **後10%濃度**
-* [!UICONTROL Filter]： `Customer's revenue percentile > 90`
+* [!UICONTROL Filter]: `Customer's revenue percentile > 90`
 
 * 量度`A`： `Total customer lifetime revenue`
-* [!UICONTROL Time period]： `All time`
-* &#x200B;
+* [!UICONTROL Time period]: `All time`
+* 
   [!UICONTROL Interval]: `None`
 * 隱藏圖表
-* &#x200B;
-  [!UICONTROL 群組依據]: `Email`
-* &#x200B;
+* 
+  [！UICONTROL群組依據]: `Email`
+* 
   [!UICONTROL Chart type]: `Table`
 
 編譯所有報表後，您可以視需要在控制面板上組織報表。 結果可能如上述範例控制面板所示。
 
-如果您在建立此分析時遇到任何問題，或只是想與專業服務團隊互動，請[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+如果您在建立此分析時遇到任何問題，或只是想與專業服務團隊互動，請[聯絡支援人員](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
