@@ -124,4 +124,4 @@ ht-degree: 0%
 * [透過SSH通道連線MySQL](mysql-via-ssh-tunnel.md)
 * [透過SSH通道連線MongoDB](mongodb-via-ssh-tunnel.md)
 * [透過SSH通道連線PostgreSQL](postgresql.md)
-* [重新驗證整合](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [重新驗證整合](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

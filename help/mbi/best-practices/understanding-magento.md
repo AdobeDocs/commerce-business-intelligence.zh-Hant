@@ -30,7 +30,7 @@ ht-degree: 0%
 
 # 您的[!DNL Adobe Commerce Intelligence]環境
 
-當您分析商務資料時，請注意這些因素和常見的誤解。 若您需要協助以確保您正確使用Commerce結構描述，請立即[聯絡支援人員](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
+當您分析商務資料時，請注意這些因素和常見的誤解。 若您需要協助以確保您正確使用Commerce結構描述，請立即[聯絡支援人員](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ## [!DNL entity\_id]
 

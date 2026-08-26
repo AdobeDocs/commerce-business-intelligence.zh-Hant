@@ -63,4 +63,4 @@ ht-degree: 0%
 [[!DNL Stripe] API檔案](https://stripe.com/docs/api)可以成為瞭解更多有關[!DNL Stripe]如何與[!DNL Commerce Intelligence]整合的實用資源。
 
 * [預期 [!DNL Stripe] 資料](../integrations/stripe-data.md)
-* [重新驗證整合](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [重新驗證整合](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

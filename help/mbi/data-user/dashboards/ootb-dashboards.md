@@ -36,7 +36,7 @@ ht-degree: 0%
 >
 >部分儀表板的可用性取決於您的資料集。
 
-如果您有問題或有興趣將套件新增至您的帳戶，請提交[支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)以尋求協助。
+如果您有問題或有興趣將套件新增至您的帳戶，請提交[支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)以尋求協助。
 
 ## 執行概覽
 

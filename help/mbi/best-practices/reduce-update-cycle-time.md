@@ -59,4 +59,4 @@ ht-degree: 0%
 
 ## 正在結束
 
-如果即使實作這些建議，您的更新時間仍顯緩慢，[請連絡支援團隊](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
+如果即使實作這些建議，您的更新時間仍顯緩慢，[請連絡支援團隊](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

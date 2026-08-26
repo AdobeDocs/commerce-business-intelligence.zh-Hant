@@ -34,4 +34,4 @@ ht-degree: 0%
 
 本節介紹可用來將各種外部資料來源連線至[!DNL Commerce Intelligence]的可用整合。
 
-若要刪除連線或整合，[請連絡支援人員](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)並包含要刪除的連線或整合名稱。
+若要刪除連線或整合，[請連絡支援人員](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)並包含要刪除的連線或整合名稱。

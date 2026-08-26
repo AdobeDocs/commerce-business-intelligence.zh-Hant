@@ -179,7 +179,7 @@ ht-degree: 11%
 
 不用擔心。 這裡未列出並不表示不可能。 Data Warehouse分析師的Adobe團隊可提供協助。
 
-若要定義新的計算資料行，請[提交支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)，其中包含您要建置之專案的詳細資料。
+若要定義新的計算資料行，請[提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)，其中包含您要建置之專案的詳細資料。
 
 ## 相關檔案
 

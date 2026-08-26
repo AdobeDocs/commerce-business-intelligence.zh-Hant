@@ -55,7 +55,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused]是`Premium`整合。 如果您有興趣將此整合新增至您的訂閱，請[連絡支援人員](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
+>[!DNL Google Analytics Warehoused]是`Premium`整合。 如果您有興趣將此整合新增至您的訂閱，請[連絡支援人員](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 1. 移至&#x200B;**[!UICONTROL Admin** > **Integrations]**&#x200B;下的`Connections`頁面。
 1. 按一下位於右側的&#x200B;**[!UICONTROL Add an Integration]**。
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 ## 相關檔案
 
-* [重新驗證整合](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [重新驗證整合](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [正在連線 [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [分析網站活動和客戶轉換率](../../analysis/web-act-cust-conversion.md)
 * [使用 [!DNL Google Analytics] Cookie追蹤使用者贏取資料](../../analysis/google-track-user-acq.md)
