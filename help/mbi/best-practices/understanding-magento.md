@@ -21,16 +21,16 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 749
+source-wordcount: 770
 ht-degree: 0%
 
 ---
 
 # 您的[!DNL Adobe Commerce Intelligence]環境
 
-當您分析商務資料時，請注意這些因素和常見的誤解。 若您需要協助以確保您正確使用Commerce結構描述，請立即[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+當您分析商務資料時，請注意這些因素和常見的誤解。 若您需要協助以確保您正確使用Commerce結構描述，請立即[聯絡支援人員](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ## [!DNL entity\_id]
 
@@ -42,9 +42,9 @@ ht-degree: 0%
 
 ## [!DNL Guest orders]
 
-如果您允許客戶在沒有帳戶（訪客訂單）的情況下從您的網站訂購，則這些客戶不會填入為您`customer\_entity`表格中的列。 此外，客體所下的每個訂單在`customer\_id`資料表上都有空的`sales\_order`值。
+如果您允許客戶在沒有帳戶（訪客訂單）的情況下從您的網站訂購，則這些客戶不會填入為您`customer\_entity`表格中的列。 此外，客體所下的每個訂單在`sales\_order`資料表上都有空的`customer\_id`值。
 
-因此，如果您想要追蹤來賓在一段時間內的行為，所有客戶層級的欄都必須使用客戶識別碼（例如`sales\_order`）在`customer\_email`表格上計算。
+因此，如果您想要追蹤來賓在一段時間內的行為，所有客戶層級的欄都必須使用客戶識別碼（例如`customer\_email`）在`sales\_order`表格上計算。
 
 如果您使用`sales\_order`表格做為Customer表格，則在建立客戶層級量度時必須小心。 例如，考慮平均期限收入量度。 此量度用於識別整個客戶群的平均期限收入。 首先，需要新欄，讓每個客戶傳回其期限收入。 接著，您必須對此欄進行平均值，以取得客戶的平均期限收入。
 

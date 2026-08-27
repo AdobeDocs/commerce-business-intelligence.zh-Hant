@@ -1,6 +1,6 @@
 ---
 title: 變更共用儀表板的存取權
-description: 瞭解如何變更共用儀表板的存取許可權。
+description: 隨時更新共用Commerce Intelligence控制面板的許可權。 瞭解如何從共用控制面板選單調整使用者和組織存取權。
 exl-id: 0041281a-0a3c-49f8-9a5f-39a02c3acf26
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 56
+source-wordcount: 72
 ht-degree: 0%
 
 ---

@@ -22,16 +22,16 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 930
-ht-degree: 2%
+source-wordcount: 962
+ht-degree: 11%
 
 ---
 
 # 進階計算欄型別
 
-您想要建立的許多分析都涉及使用您要&#x200B;**或**&#x200B;的`group by`新資料行`filter by`。 [建立計算欄](../data-warehouse-mgr/creating-calculated-columns.md)教學課程涵蓋大部分使用案例的基本知識，但您可能會想要的計算欄比Data Warehouse管理員可建立的要複雜一些。
+您想要建立的許多分析都涉及使用您要`group by`或`filter by`的&#x200B;**新資料行**。 [建立計算欄](../data-warehouse-mgr/creating-calculated-columns.md)教學課程涵蓋大部分使用案例的基本知識，但您可能會想要的計算欄比Data Warehouse管理員可建立的要複雜一些。
 {: #top}
 
 這些型別的欄可由Data Warehouse分析師的Adobe團隊建立。 若要定義新的計算欄，請提供下列資訊：
@@ -111,8 +111,8 @@ ht-degree: 2%
 
 | **`event\_id`** | **`owner\_id`** | **`timestamp`** | **`Seconds since owner's previous event`** |
 |-----|-----|-----|-----|
-| 1 | `A` | 2015-01-01 00:00:00 | 空 |
-| 2 | `B` | 2015-01-01 00:30:00 | 空 |
+| 1 | `A` | 2015-01-01 00:00:00 | NULL |
+| 2 | `B` | 2015-01-01 00:30:00 | NULL |
 | 3 | `A` | 2015-01-01 02:00:00 | 7720 |
 | 4 | `A` | 2015-01-02 13:00:00 | 126000 |
 | 5 | `B` | 2015-01-03 13:00:00 | 217800 |
@@ -179,7 +179,7 @@ ht-degree: 2%
 
 不用擔心。 這裡未列出並不表示不可能。 Data Warehouse分析師的Adobe團隊可提供協助。
 
-若要定義新的計算資料行，請[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)，其中包含您要建置之專案的詳細資料。
+若要定義新的計算資料行，請[提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)，其中包含您要建置之專案的詳細資料。
 
 ## 相關檔案
 

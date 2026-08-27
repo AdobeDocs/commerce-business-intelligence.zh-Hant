@@ -24,16 +24,16 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1120
-ht-degree: 6%
+source-wordcount: 1156
+ht-degree: 13%
 
 ---
 
 # 使用Data Warehouse檢視
 
-本檔案概述可透過導覽至`Data Warehouse Views` > **[!UICONTROL Manage Data]**&#x200B;存取&#x200B;**[!UICONTROL Data Warehouse Views]**&#x200B;的用途與用途。 以下是其功用以及如何建立檢視的說明，以及如何使用`Data Warehouse Views`合併[!DNL Facebook]和[!DNL AdWords]支出資料的範例。
+本檔案概述可透過導覽至&#x200B;**[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**&#x200B;存取`Data Warehouse Views`的用途與用途。 以下是其功用以及如何建立檢視的說明，以及如何使用`Data Warehouse Views`合併[!DNL Facebook]和[!DNL AdWords]支出資料的範例。
 
 ## 一般用途
 
@@ -49,7 +49,7 @@ ht-degree: 6%
 
 ## 建立和管理Data Warehouse檢視
 
-導覽至「`Data Warehouse Views` > **[!UICONTROL Manage Data]**」可以建立新的&#x200B;**[!UICONTROL Data Warehouse Views]**&#x200B;並刪除現有的檢視，如下所示：
+導覽至「**[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**」可以建立新的`Data Warehouse Views`並刪除現有的檢視，如下所示：
 
 ![Data Warehouse檢視區段顯示自訂檢視設定](../../assets/Data_Warehouse_Views.png)
 
@@ -156,7 +156,7 @@ ht-degree: 6%
 
 **正在尋找其他說明嗎？**
 
-技術支援不包含寫入SQL和建立`Data Warehouse Views`。 不過，[服務團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)確實提供建立檢視的協助。 從使用新資料庫移轉舊版資料庫以建立單一Data Warehouse檢視進行特定分析的所有作業，支援團隊都能提供協助。
+技術支援不包含寫入SQL和建立`Data Warehouse Views`。 不過，[服務團隊](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)確實提供建立檢視的協助。 從使用新資料庫移轉舊版資料庫以建立單一Data Warehouse檢視進行特定分析的所有作業，支援團隊都能提供協助。
 
 通常，為了合併2-3個類似結構的表格而建立新的`Data Warehouse View`需要五個小時的服務時間，這相當於大約1,250美元的工作。 不過，以下是一些可能會增加所需預期投資的常見因素：
 

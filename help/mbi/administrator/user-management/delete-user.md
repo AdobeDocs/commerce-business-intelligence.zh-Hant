@@ -19,9 +19,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
-source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 201
+source-wordcount: 202
 ht-degree: 0%
 
 ---
@@ -42,5 +42,5 @@ ht-degree: 0%
 如果您只需要該使用者推送至其他使用者帳戶的控制面板，請執行以下操作：
 
 1. 使用已刪除使用者的電子郵件地址來建立新的[!DNL Commerce Intelligence]使用者。
-1. 建立使用者後[通知支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。 支援將儀表板轉移至您的帳戶。
+1. 建立使用者後[通知支援人員](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。 支援將儀表板轉移至您的帳戶。
 1. Adobe支援通知您轉移後，您可以再次刪除使用者。

@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 628
+source-wordcount: 627
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ ht-degree: 0%
 * [合併您的表格](../../../best-practices/consolidating-your-tables.md)
 * [限制對資料庫的存取](../../../administrator/account-management/restrict-db-access.md)
 
-**沒有看見您想要的整合？** 您必須啟用部分整合，才會在您的帳戶中顯示。 如果您正在尋找[!DNL Facebook]之類的專案，但它並未列出，請[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+**沒有看見您想要的整合？** 您必須啟用部分整合，才會在您的帳戶中顯示。 如果您正在尋找[!DNL Facebook]之類的專案，但它並未列出，請[提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 **如果您看到整合的錯誤狀態**，請參閱[疑難排解小節](https://support.magento.com/hc/en-us/sections/360003078151)以取得說明。
 
 ## 監視更新健康狀態（選擇性）
 
-連線來源後，您可能想要自動執行基本健康情況檢查，以確認完整更新正在完成。 使用開發人員檔案中的[Update Cycle Status API](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/)，為您的使用者端擷取最近完成的更新週期，並將其顯示在內部儀表板或警示中。
+連線來源後，您可能想要自動執行基本健康情況檢查，以確認完整更新正在完成。 使用開發人員檔案中的[Update Cycle Status API](https://developer.adobe.com/commerce/services/reporting/update-cycle/)，為您的使用者端擷取最近完成的更新週期，並將其顯示在內部儀表板或警示中。
 

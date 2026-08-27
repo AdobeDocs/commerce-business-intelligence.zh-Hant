@@ -1,6 +1,6 @@
 ---
 title: 選擇Report Builder
-description: 瞭解如何選擇您的Report Builder。
+description: 比較Commerce Intelligence中可用的Report Builder，並瞭解哪些適合您的報表需求，從視覺化建置器到SQL型選項。
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 644
+source-wordcount: 724
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## 何時應使用[!DNL SQL Report Builder]？ {#whensql}
 
-檢視在[!DNL SQL Report Builder]上使用[!DNL traditional Report Builder]的一些較常見的原因。
+檢視在[!DNL traditional Report Builder]上使用[!DNL SQL Report Builder]的一些較常見的原因。
 
 ### 如果您要使用[!DNL SQL]特定函式……
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 [!DNL SQL Report Builder]支援[`LISTAGG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LISTAGG.html)和[`GETDATE`](https://docs.aws.amazon.com/redshift/latest/dg/r_GETDATE.html)等您先前無法使用的功能。 您可以存取[`full list`](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html)，但其他一些SQL特定函式包括：
 
-* [`Bitwise aggregate`個函式](https://docs.aws.amazon.com/redshift/latest/dg/c_bitwise_aggregate_functions.html)
+* [`Bitwise aggregate`函式](https://docs.aws.amazon.com/redshift/latest/dg/c_bitwise_aggregate_functions.html)
 * [`CASE expression`](https://docs.aws.amazon.com/redshift/latest/dg/r_CASE_function.html)
 * [`JSON_EXTRACT_PATH_TEXT`](https://docs.aws.amazon.com/redshift/latest/dg/JSON_EXTRACT_PATH_TEXT.html)
 * [`LOG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LOG.html)

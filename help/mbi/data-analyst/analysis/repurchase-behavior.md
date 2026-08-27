@@ -19,10 +19,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 849
-ht-degree: 0%
+source-wordcount: 866
+ht-degree: 1%
 
 ---
 
@@ -63,9 +63,9 @@ ht-degree: 0%
 
 | **產品名稱** | **重複訂購機率** | **平均期限訂單數** | **平均期限收入** | **下個訂單的中位時間** |
 |-----|-----|-----|-----|-----|
-| 單杯咖啡機 | 94.98% | 7.92 | 549.82美元 | 57.01天 |
-| 咖啡膠囊 | 93.82% | 8.68 | 479.98美元 | 63.48天 |
-| 咖啡豆 | 41.92% | 6.07 | 99.82美元 | 27.31天 |
+| 單杯咖啡機 | 94.98% | 7.92 | $549.82 | 57.01天 |
+| 咖啡膠囊 | 93.82% | 8.68 | $479.98 | 63.48天 |
+| 咖啡豆 | 41.92% | 6.07 | $99.82 | 27.31天 |
 
 {style="table-layout:auto"}
 
@@ -97,4 +97,4 @@ ht-degree: 0%
 
 一旦您找出流失發生的原因，您就可以使用分析來建置`reactivation`行銷活動。 您可以利用此資料識別已停用的使用者、自上次造訪以來已過去多久時間、上次購買內容等等。 這可讓您做出可操作的決策，以吸引客戶回來。
 
-如需分析方面的協助，[請連絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+如需分析方面的協助，[請連絡支援人員](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

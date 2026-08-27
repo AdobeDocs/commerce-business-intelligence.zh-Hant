@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 507
+source-wordcount: 521
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## 查詢量度
 
-若要開始，請瀏覽至[!DNL SQL Report Builder]以開啟&#x200B;**[!UICONTROL Report Builder > SQL Report Builder > Create Report]**。 您可以使用[!DNL SQL]編輯器中的側邊欄，將滑鼠游標移至量度上並按一下&#x200B;**[!UICONTROL Insert]**，直接將量度插入查詢。 這會將該量度的查詢定義新增到編輯器中。 定義包括下列元件：
+若要開始，請瀏覽至&#x200B;**[!UICONTROL Report Builder > SQL Report Builder > Create Report]**&#x200B;以開啟[!DNL SQL Report Builder]。 您可以使用[!DNL SQL]編輯器中的側邊欄，將滑鼠游標移至量度上並按一下&#x200B;**[!UICONTROL Insert]**，直接將量度插入查詢。 這會將該量度的查詢定義新增到編輯器中。 定義包括下列元件：
 
 - 正在執行&#x200B;**量度作業**，以下範例中的`SUM()`表示。
 - 在&#x200B;**上建立量度的**&#x200B;資料表，由`FROM`子句表示。
@@ -60,8 +60,8 @@ ht-degree: 0%
 
 ## 自訂查詢
 
-您也可以撰寫自訂查詢並匯出結果，以便與本機資料庫進行比較。 依照查詢最佳化[的](../../best-practices/optimizing-your-sql-queries.md)准則，在SQL編輯器中寫入查詢。 您可以使用側邊欄頂端的按鈕，在[!DNL SQL Report Builder]中可用的表格和量度清單之間切換，並將它們新增至您的查詢。 當自訂查詢符合您的需求時，您可以儲存報告並從儀表板匯出該資料。
+您也可以撰寫自訂查詢並匯出結果，以便與本機資料庫進行比較。 依照查詢最佳化[&#128279;](../../best-practices/optimizing-your-sql-queries.md)的准則，在SQL編輯器中寫入查詢。 您可以使用側邊欄頂端的按鈕，在[!DNL SQL Report Builder]中可用的表格和量度清單之間切換，並將它們新增至您的查詢。 當自訂查詢符合您的需求時，您可以儲存報告並從儀表板匯出該資料。
 
 >[!NOTE]
 >
->如果您在稽核資料後發現不一致，請參閱[連絡支援：資料差異](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=zh-Hant)支援主題，以取得後續操作的詳細資訊。
+>如果您在稽核資料後發現不一致，請參閱[連絡支援：資料差異](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies)支援主題，以取得後續操作的詳細資訊。

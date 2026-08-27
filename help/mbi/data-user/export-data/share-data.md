@@ -1,6 +1,6 @@
 ---
-title: Sharing Data
-description: Overview of sharing data.
+title: 共用資料
+description: 瞭解如何將Commerce Intelligence資料匯出並共用為CSV或Excel檔案，以及設定自動化的電子郵件摘要，以隨時向利害關係人提供最新資訊。
 exl-id: 5c434d3b-0519-4980-a666-60bed122a93b
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -19,13 +19,13 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 51
+source-wordcount: 70
 ht-degree: 0%
 
 ---
 
-# Sharing Data
+# 共用資料
 
-Communicating the status and trends of your business is essential. In this section, learn how to export and share data from a chart to a `.csv` or `Excel` file. Also, learn how to configure and automatically send email summaries of your data to key stakeholders.
+傳達業務的狀態和趨勢至關重要。 在本節中，瞭解如何將圖表中的資料匯出並共用至`.csv`或`Excel`檔案。 此外，瞭解如何設定並自動傳送資料的電子郵件摘要給關鍵利害關係人。

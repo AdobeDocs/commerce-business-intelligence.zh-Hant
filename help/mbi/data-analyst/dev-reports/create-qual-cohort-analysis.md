@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 846
+source-wordcount: 861
 ht-degree: 0%
 
 ---
@@ -52,9 +52,9 @@ ht-degree: 0%
 
 ## 我應該傳送哪些資訊給支援以設定我的分析？ {#support}
 
-在`qualitative cohort`中建立`Report Builder`報告時，Adobe分析團隊會在必要的資料表上建立一些[進階計算資料行](../data-warehouse-mgr/creating-calculated-columns.md)。
+在`Report Builder`中建立`qualitative cohort`報告時，Adobe分析團隊會在必要的資料表上建立一些[進階計算資料行](../data-warehouse-mgr/creating-calculated-columns.md)。
 
-若要建置這些專案，請提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant) （並參考此文章！）。 以下是您需要瞭解的事項：
+若要建置這些專案，請提交[支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) （並參考此文章！）。 以下是您需要瞭解的事項：
 
 * 您要使用執行同類群組分析的`metric`及其使用的表格（範例： `Revenue`，建置在`orders`表格上）。
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 * 您想要分析使用的`cohort date` （範例： `User's first order date`時間戳記）。 此範例可讓我們檢視每個區段並詢問`How does a user's revenue grow in the months following their first order date?`。
 
-* 您想要檢視分析的`time interval` （範例： `weeks`、`months`或`quarters`之後的`User's first order date`）。
+* 您想要檢視分析的`time interval` （範例： `weeks`、`months`或`User's first order date`之後的`quarters`）。
 
 Adobe分析團隊回應上述要求後，您就會有一些新的進階計算欄來建置您的報表！ 然後，您可以按照以下說明執行此操作。
 
@@ -78,7 +78,7 @@ Adobe分析團隊回應上述要求後，您就會有一些新的進階計算欄
 
 1. 將`time range`設為報告涵蓋的時間範圍。
 
-在此範例中，您檢視了`all time`的`Revenue`檢視。 接著，您應該會看到一連串的點：
+在此範例中，您檢視了`Revenue`的`all time`檢視。 接著，您應該會看到一連串的點：
 
 ![同類群組群組和分析選項的動畫示範](../../assets/qualcohort2.gif)
 

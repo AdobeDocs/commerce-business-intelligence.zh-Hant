@@ -1,6 +1,6 @@
 ---
 title: 縮短更新週期時間
-description: 瞭解如何縮短更新週期時間。
+description: 縮短Commerce Intelligence更新週期時間，讓您的儀表板更快反映最新資料。 瞭解影響同步速度的因素以及如何改進同步速度。
 exl-id: 0b211e2d-770f-480d-a7fb-8d10e3e7272e
 role: Admin, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager, Dashboards
@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 398
+source-wordcount: 427
 ht-degree: 0%
 
 ---
@@ -59,4 +59,4 @@ ht-degree: 0%
 
 ## 正在結束
 
-如果即使實作這些建議，您的更新時間仍顯緩慢，[請連絡支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+如果即使實作這些建議，您的更新時間仍顯緩慢，[請連絡支援團隊](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

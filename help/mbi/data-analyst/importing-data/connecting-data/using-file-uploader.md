@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 32bcb9f48faa4e766972b0690f86c9813c6a9d53
 workflow-type: tm+mt
-source-wordcount: 1293
+source-wordcount: 1370
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 ## 限制和需求 {#require}
 
 1. **唯一支援的檔案上傳格式為`CSV`或`comma separated values`**。 如果您使用Excel，可以使用「另存新檔」功能將檔案儲存為`.csv`格式。
-1. **`CSV`檔案必須使用`UTF-8 encoding`**。 在大多數情況下，這不是問題。 如果您在上傳檔案時發生此錯誤，[請參閱此支援文章](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=zh-Hant)。
+1. **`CSV`檔案必須使用`UTF-8 encoding`**。 在大多數情況下，這不是問題。
 1. **檔案不能大於100MB**。 如果檔案大於此值，請將表格分割為多個區塊，然後另存為個別檔案。 您可以在載入初始檔案後附加資料。
 1. **所有資料表都必須有`primary key`**。 表格中至少要有一欄可用作`primary key`，或表格中每一列的唯一識別碼。 任何指定為`primary key`的資料行都可以&#x200B;*永不*&#x200B;為Null。 `primary key`可以簡單到只新增為每一列提供數字的資料行，也可以串連為兩個資料行，組成唯一值的資料行（例如，`campaign name`和`date`）。
 
@@ -120,7 +120,7 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**[!UICONTROL Save Table]**。
 
-*成功！儲存表格後，*&#x200B;訊息會顯示在畫面頂端。
+*成功！* 儲存表格後，訊息會顯示在畫面頂端。
 
 如果您需要視覺效果，請檢視整個程式：
 
@@ -152,7 +152,7 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**[!UICONTROL Open]**&#x200B;開始上傳。
 
-   上傳完成後，[!DNL Commerce Intelligence]將會驗證檔案中的資料結構。 *成功！儲存表格後，*&#x200B;訊息會顯示在畫面頂端。
+   上傳完成後，[!DNL Commerce Intelligence]將會驗證檔案中的資料結構。 *成功！* 儲存表格後，訊息會顯示在畫面頂端。
 
 ## 資料可用性 {#availability}
 
@@ -172,4 +172,4 @@ ht-degree: 0%
 
 ## 協力廠商資源
 
-* [[!DNL Google Docs] 資料格式化指南](https://support.google.com/docs/answer/56470?hl=en)
+* [[!DNL Google Docs]資料格式設定指南](https://support.google.com/docs/answer/56470?hl=en)

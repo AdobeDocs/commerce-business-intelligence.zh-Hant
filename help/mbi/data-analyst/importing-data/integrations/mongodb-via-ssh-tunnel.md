@@ -1,6 +1,6 @@
 ---
 title: '透過SSH通道連線 [!DNL MongoDB] '
-description: 瞭解如何透過SSH通道連線 [!DNL MongoDB] 。
+description: 瞭解如何使用SSH通道將MongoDB資料庫安全地連線到Commerce Intelligence，包括金鑰設定和連線設定步驟。
 exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 686
+source-wordcount: 705
 ht-degree: 0%
 
 ---
@@ -166,4 +166,4 @@ ht-degree: 0%
 ## 相關 {#related}
 
 * [SSH主機金鑰驗證](ssh-host-key-verification.md)
-* [重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [重新驗證整合](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

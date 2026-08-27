@@ -1,6 +1,6 @@
 ---
 title: 建立自動化電子郵件摘要
-description: 瞭解如何建立自動化的電子郵件摘要。
+description: 在Commerce Intelligence中建立自動化的電子郵件摘要，以按照週期與主要利害關係人分享業務狀態和趨勢。
 exl-id: a9aea4fc-9193-467f-8554-3ad77ac3fa73
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 604
+source-wordcount: 620
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 ### 儲存電子郵件摘要以供稍後傳送
 
-1. 從`Manual`欄位中選取`Set when to send the Email Summary`。
+1. 從`Set when to send the Email Summary`欄位中選取`Manual`。
 
 1. 按一下&#x200B;**[!UICONTROL Save]**。
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 ### 傳送電子郵件摘要一次
 
-1. 從`Once`欄位中選取`Set when to send the Email Summary`。
+1. 從`Set when to send the Email Summary`欄位中選取`Once`。
 
 1. 在`Select Start Date`行事曆中指定開始日期。
 
@@ -103,7 +103,7 @@ ht-degree: 0%
 
 ### 建立重複排程
 
-1. 從`Repeating`欄位中選取`Set when to send the Email Summary`。
+1. 從`Set when to send the Email Summary`欄位中選取`Repeating`。
 
 1. 在`Set Frequency`欄位中，選取`Daily`、`Weekly`或`Monthly`。
 

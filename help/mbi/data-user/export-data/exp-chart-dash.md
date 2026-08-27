@@ -1,6 +1,6 @@
 ---
 title: 匯出圖表資料
-description: 瞭解如何檢檢視表後的資料。
+description: 使用圖表的齒輪圖示檢視及匯出任何Commerce Intelligence圖表後的資料，以便深入瞭解驅動控制面板的數字。
 exl-id: 3c75ff3c-c4e2-4ff8-a303-6f24ccfca0ff
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 103
+source-wordcount: 122
 ht-degree: 0%
 
 ---
@@ -37,6 +37,6 @@ ht-degree: 0%
 - `Full Excel Export`
 - `Raw Export`
 
-您也可以定義要包含在匯出[中的](../../tutorials/export-raw-data.md)資料表和資料行。
+您也可以定義要包含在匯出[&#128279;](../../tutorials/export-raw-data.md)中的資料表和資料行。
 
 如果您需要在簡報或檔案中包含圖表，可以將圖表匯出為PNG、PDF或SVG格式的影像。 按一下任何圖表右上角的齒輪圖示。 在下拉式清單中選取`Enlarge`選項，然後按一下&#x200B;**[!UICONTROL Download]**&#x200B;以完成匯出。

@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1253
+source-wordcount: 1265
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ ht-degree: 0%
 ## 先決條件
 
 * 匯入您的廣告成本資料：
-   * [將您的 [!DNL Google AdWords] 連線至 [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md)：這會同步處理您的[!DNL Adwords]在[!DNL Commerce Intelligence]中的支出
-   * [上傳其他廣告成本資料](../importing-data/connecting-data/import-offline-ad-data.md)：建議將此用於沒有直接聯結器的頻道[!DNL Commerce Intelligence]
-   * 如果您從多個來源匯入成本資料，您可以[合併](../../best-practices/consolidating-your-tables.md)在[!DNL Commerce Intelligence]中的資料。 只需[提交支援票證](../../guide-overview.md#Submitting-a-Support-Ticket)即可。
+  * [將您的 [!DNL Google AdWords] 連線至 [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md)：這會同步處理您的[!DNL Adwords]在[!DNL Commerce Intelligence]中的支出
+  * [上傳其他廣告成本資料](../importing-data/connecting-data/import-offline-ad-data.md)：建議將此用於沒有直接聯結器的頻道[!DNL Commerce Intelligence]
+  * 如果您從多個來源匯入成本資料，您可以[合併](../../best-practices/consolidating-your-tables.md)在[!DNL Commerce Intelligence]中的資料。 只需[提交支援票證](../../guide-overview.md#Submitting-a-Support-Ticket)即可。
 * [追蹤使用者贏取管道資料](../analysis/google-track-user-acq.md)
 
 ## 使用者贏取行銷活動
@@ -59,9 +59,9 @@ ht-degree: 0%
 
 1. 建立一段時間內總支出的[!UICONTROL Metric]
 1. 前往[!UICONTROL Data > Metrics]
-1. 選取`Add New Metric`並選取正在記錄您的[!DNL `Adwords...`]成本資料的[!DNL AdWords]資料表。
+1. 選取`Add New Metric`並選取正在記錄您的[!DNL AdWords]成本資料的[!DNL `Adwords...`]資料表。
 1. 在量度編輯器中，為您的量度命名（例如，[!UICONTROL AdWord Cost]）
-1. 使用下拉式清單，對依&#x200B;**欄排序的**&#x200B;資料表（變更）中的`adCost`欄執行[!DNL Adwords...]總和`date`。
+1. 使用下拉式清單，對依`date`欄排序的[!DNL Adwords...]資料表（變更）中的`adCost`欄執行&#x200B;**總和**。
    新增量度後![成功訊息](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
 1. 按一下頂端的「`Back to Metric List`」並前往任何儀表板。
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 1. 在`Group by`標籤下，新增`campaign`為[!UICONTROL grouping field]，然後按一下方塊中的`Add All`。
 1. 此報表依行銷活動顯示您的全部[!DNL AdWords]成本
 
-**2。 建立依行銷活動計數新使用者的報告：**
+**2. 建立依行銷活動計數新使用者的報告：**
 
 1. 在任何儀表板中，按一下&#x200B;**[!UICONTROL Add Report > Create report]**
 1. 選取計算一段時間內新註冊使用者人數的`New users`量度
@@ -80,7 +80,7 @@ ht-degree: 0%
 1. 在`Group by`標籤下，新增`campaign`為`grouping field`，然後按一下方塊中的&#x200B;**`Add All`**
 1. 此報表依行銷活動顯示您所有時間的註冊使用者
 
-**3。 建立依促銷活動劃分平均使用者LTV的報告：**
+**3. 建立依促銷活動劃分平均使用者LTV的報告：**
 
 1. 在任何儀表板中，按一下&#x200B;**[!UICONTROL Add Report > Create report]**
 1. 選取計算平均使用者期限收入的`Average lifetime revenue`量度
@@ -115,7 +115,7 @@ ht-degree: 0%
 >
 >此範例假設所有行銷活動成本都專門用於產生特定產品的購買。 假設所有成本都花在產生購買上，則產生的ROI會考慮最壞的情況（最高每次購買成本）。 您可以確定您的實際ROI高於此計算。 範例：假設您在產生10名新使用者和10次購買的行銷活動上花費$20，則您的每次購買實際成本為$1。 假設所有成本都是為了取得新使用者，則每次購買的成本為$2。
 
-開始之前，[送出支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)以將下列維度聯結到您的行專案表格(`sales\_flat\_order\_item, order\_item`)：
+開始之前，[送出支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)以將下列維度聯結到您的行專案表格(`sales\_flat\_order\_item, order\_item`)：
 
 * 訂單的來源（如果您只追蹤使用者層級的轉介來源，則加入使用者的來源）
 * 訂單的行銷活動（如果您只追蹤使用者層級的轉介來源，則加入使用者的行銷活動）
@@ -126,15 +126,15 @@ ht-degree: 0%
 1. 在任何儀表板中，按一下&#x200B;**[!UICONTROL Add Report > Create new report]**
 1. 選取在行專案層級計算收入的`Revenue by items`量度
 1. 將[!UICONTROL Time period]設為`All-time`，並將[!UICONTROL Interval]設為`None`
-1. 在「`Filter by`」標籤下方，新增`product name 'IN'`產品`A`、產品`B`、產品`C`， ...」，並包含以逗號分隔的行銷活動鎖定的所有產品名稱（例如，`product name 'IN' yellow t-shirt`、`red t-shirt, blue t-shirt`）
+1. 在「`Filter by`」標籤下，新增`product name 'IN'`產品`A`、產品`B`、產品`C`...」 並包含以逗號分隔之促銷活動鎖定的所有產品名稱（例如，`product name 'IN' yellow t-shirt`， `red t-shirt, blue t-shirt`）
 1. 在`Group by`標籤下，新增`order's campaign`或`order's utm\_campaign`作為`grouping`欄位，然後按一下方塊中的&#x200B;**[!UICONTROL Add All]**
 1. 此報表依行銷活動顯示特定產品的收入
 
-**2。 若要計算ROI，請再次將度量合併到一個報表中：**
+**2. 若要計算ROI，請再次將度量合併到一個報表中：**
 
 1. 在任何儀表板中，按一下&#x200B;**[!UICONTROL Add Report > Create new report]**
 1. 新增`Revenue by items`量度，依照上方特定產品報表之行銷活動的篩選器和說明分組，然後按一下量度純量值下方的&#x200B;**[!UICONTROL Hide]**
-1. 現在依照您在上述[!DNL AdWords Cost]區段中探索的`Ad cost by campaigns`報告中的篩選器和群組方式方向，新增`User acquisition campaigns`量度；然後按一下量度純量值下方的&#x200B;**[!UICONTROL Hide]**
+1. 現在依照您在上述`User acquisition campaigns`區段中探索的`Ad cost by campaigns`報告中的篩選器和群組方式方向，新增[!DNL AdWords Cost]量度；然後按一下量度純量值下方的&#x200B;**[!UICONTROL Hide]**
 1. 設定好這些量度後，即可新增公式：
 1. [!UICONTROL ROI]：輸入公式`\[A\]/\[B\]`，如果`\[A\]`代表`Revenue per campaign for specific product(s)`，`\[B\]`代表`Ad cost by campaigns`。 這會傳回（特定產品的收入） / （行銷活動成本）的比率
 1. [!UICONTROL Return]：輸入公式`\[A\]-\[B\]`。 這會透過計算（平均使用者LTV）傳回使用者的平均利潤 — （每次收購的平均成本）
@@ -143,7 +143,7 @@ ht-degree: 0%
 
 1. 為報表命名，並確實儲存為表格
 
-**3。 對每個已公告的產品或產品群組重複上述步驟1和2。**
+**3. 對每個已公告的產品或產品群組重複上述步驟1和2。**
 
 ## 相關檔案
 

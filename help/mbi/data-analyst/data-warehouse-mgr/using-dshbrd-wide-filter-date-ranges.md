@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 449
+source-wordcount: 481
 ht-degree: 0%
 
 ---
@@ -59,11 +59,11 @@ ht-degree: 0%
 
 ## 存放區篩選器
 
-若要分析特定商店的表現，請按一下右上角的商店圖示（![商店篩選](../../assets/store-filter.png)）。 根據預設，`Store Filter`設為`All Stores`，這會顯示您Commerce網站中可用的所有[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html?lang=zh-Hant)中的資料。
+若要分析特定商店的表現，請按一下右上角的商店圖示（![商店篩選](../../assets/store-filter.png)）。 根據預設，`Store Filter`設為`All Stores`，這會顯示您Commerce網站中可用的所有[存放區檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/store-views)中的資料。
 
 >[!NOTE]
 >
->已針對整個[!DNL Commerce Intelligence]帳戶啟用或停用存放區篩選器。 如果儀表板包含不受篩選器影響的報表（例如未建立在任何[!DNL Adobe Commerce]資料上的報表），則套用商店篩選器時，這些報表不會更新。 如果您認為報表應該根據存放區選擇進行更新，或是您認為您的帳戶存放區篩選器被錯誤停用，您可以[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+>已針對整個[!DNL Commerce Intelligence]帳戶啟用或停用存放區篩選器。 如果儀表板包含不受篩選器影響的報表（例如未建立在任何[!DNL Adobe Commerce]資料上的報表），則套用商店篩選器時，這些報表不會更新。 如果您認為報表應該根據存放區選擇進行更新，或是您認為您的帳戶存放區篩選器被錯誤停用，您可以[聯絡支援人員](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 當您從`Store Filter`中選取商店時，當您在儀表板之間導覽時，篩選器會保留您的選取。 保留您的選取專案可讓您檢視您選取之存放區的資料，直到您選取`All Stores`為止。
 

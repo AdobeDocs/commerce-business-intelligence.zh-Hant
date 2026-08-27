@@ -1,6 +1,6 @@
 ---
 title: 最佳化SQL查詢
-description: 瞭解如何最佳化SQL查詢。
+description: 在Commerce Intelligence SQL Report Builder中最佳化SQL查詢。 瞭解減少查詢成本並避免因過大結果而失敗的最佳實務。
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 826
+source-wordcount: 847
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 [!DNL SQL Report Builder]可讓您隨時執行並變更查詢。 如果您需要立即更新查詢，而不是等到更新週期完成後再修正欄或報表，此功能會很有幫助。
 
-在執行查詢之前，[[!DNL Commerce Intelligence] 會估計其成本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=zh-Hant)。 成本會考慮執行查詢所需的時間長度和資源數量。 如果該成本被認為太高，或者如果傳回的列數超過[!DNL Commerce Intelligence]限制，則查詢會失敗。 為了查詢您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) （可確保您撰寫的查詢儘可能簡化），Adobe建議下列事項。
+在執行查詢之前，[!DNL Commerce Intelligence]會估計其成本。 成本會考慮執行查詢所需的時間長度和資源數量。 如果該成本被認為太高，或者如果傳回的列數超過[!DNL Commerce Intelligence]限制，則查詢會失敗。 為了查詢您的[Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) （可確保您撰寫的查詢儘可能簡化），Adobe建議下列事項。
 
 ## 使用SELECT或選取所有欄
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 | **代替這個……** | **試試這個！** |
 |-----|-----|
-| 使用SELECT星號![的](../../mbi/assets/Select_all_1.png)SQL查詢 | ![SQL查詢選取特定資料行](../../mbi/assets/Select_all_2.png) |
+| 使用SELECT星號![&#128279;](../../mbi/assets/Select_all_1.png)的SQL查詢 | ![SQL查詢選取特定資料行](../../mbi/assets/Select_all_2.png) |
 
 {style="table-layout:auto"}
 
@@ -112,7 +112,7 @@ ht-degree: 0%
 
 | **代替這個……** | **試試這個！** |
 |-----|-----|
-| ![SQL查詢，GROUP BY在篩選前](../../mbi/assets/Group_by_2.png) | 在GROUP BY![之前使用篩選的](../../mbi/assets/Group_by_1.png)SQL查詢 |
+| ![SQL查詢，GROUP BY在篩選前](../../mbi/assets/Group_by_2.png) | 在GROUP BY![&#128279;](../../mbi/assets/Group_by_1.png)之前使用篩選的SQL查詢 |
 
 {style="table-layout:auto"}
 

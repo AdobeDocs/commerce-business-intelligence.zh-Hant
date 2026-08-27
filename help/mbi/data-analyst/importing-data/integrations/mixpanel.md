@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 246
+source-wordcount: 256
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ ht-degree: 0%
 
 將您的[!DNL Mixpanel]資料連線到[!DNL Commerce Intelligence]一個簡單的三個步驟程式：
 
-1. [在 [!DNL Mixpanel] 中開啟 [!DNL Commerce Intelligence]認證頁面](#stepone)
+1. [在 [!DNL Commerce Intelligence]中開啟 [!DNL Mixpanel] 認證頁面](#stepone)
 1. [擷取您的 [!DNL Mixpanel] API認證](#steptwo)
-1. [在 [!DNL Mixpanel] 中輸入您的 [!DNL Commerce Intelligence]API認證](#stepthree)
+1. [在 [!DNL Commerce Intelligence]中輸入您的 [!DNL Mixpanel] API認證](#stepthree)
 
 若要完成此程式，您必須開啟兩個瀏覽器視窗或索引標籤，一個用於[!DNL Commerce Intelligence]，另一個用於您的[!DNL Mixpanel]帳戶。
 
@@ -48,9 +48,9 @@ ht-degree: 0%
 
 開始使用：
 
-1. 移至`Connections`下的&#x200B;**[!DNL Manage Data** > **Connections]**&#x200B;頁面。
+1. 移至&#x200B;**[!DNL Manage Data** > **Connections]**&#x200B;下的`Connections`頁面。
 
-1. 按一下&#x200B;**[!UICONTROL Add a New Source]**&#x200B;表格上方熒幕右側的`Data Sources`。
+1. 按一下`Data Sources`表格上方熒幕右側的&#x200B;**[!UICONTROL Add a New Source]**。
 
 1. 按一下[!DNL Mixpanel]圖示並開啟認證頁面。
 
@@ -70,14 +70,14 @@ ht-degree: 0%
 
 請保持此開啟，您需要它來結束此工作。
 
-## 在[!DNL Mixpanel]中輸入您的[!DNL Commerce Intelligence] API認證 {#stepthree}
+## 在[!DNL Commerce Intelligence]中輸入您的[!DNL Mixpanel] API認證 {#stepthree}
 
-1. 將`API Key`和`Secret`複製到[!DNL Mixpanel]中的[!DNL Commerce Intelligence]認證頁面。
+1. 將`API Key`和`Secret`複製到[!DNL Commerce Intelligence]中的[!DNL Mixpanel]認證頁面。
 1. 按一下&#x200B;**[!UICONTROL Connect to Mixpanel]**&#x200B;以完成設定。
 
-如果連線成功，則為&#x200B;_成功！_&#x200B;訊息會顯示在頁面頂端。
+如果連線成功，_成功！_ 訊息會顯示在頁面頂端。
 
 ### 相關
 
 * [預期 [!DNL Mixpanel] 資料](../integrations/mixpanel-data.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [重新驗證整合](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

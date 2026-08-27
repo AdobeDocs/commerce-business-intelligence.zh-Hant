@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1950
+source-wordcount: 1989
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->這些儀表板的存取權取決於您的帳戶型別和存取層級。 如果您沒有看到這些儀表板，請連絡[支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+>這些儀表板的存取權取決於您的帳戶型別和存取層級。 如果您沒有看到這些儀表板，請連絡[支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ## 報告可用性
 
@@ -152,7 +152,7 @@ ht-degree: 0%
 
 ## 產品
 
-「產品」儀表板會顯示一般產品績效，包括訂購的產品、其商品總值(GMV)，以及購買與退款的頂級產品。 這可協助您平衡購買與回報，並判斷產品成功與受歡迎程度。 您的商店必須設定[以追蹤退款](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=zh-Hant)，才能填入這些圖表。
+「產品」儀表板會顯示一般產品績效，包括訂購的產品、其商品總值(GMV)，以及購買與退款的頂級產品。 這可協助您平衡購買與回報，並判斷產品成功與受歡迎程度。 您的商店必須設定[以追蹤退款](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure)，才能填入這些圖表。
 
 >[!NOTE]
 >

@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 263
+source-wordcount: 283
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 |-----|-----|
 | `Users` | `users`表格包含註冊客戶的帳戶詳細資料，包括個人的電子郵件、名稱和註冊日期。 這可讓您分析不同的客戶區段及其購買行為。 |
 | [`Orders`](https://guides.spreecommerce.org/developer/orders.html#overview) | `orders`表格可作為您所有訂單層級量度的基礎。 這裡記錄的是從您的[!DNL Spree]商店購買的所有訂單詳細資料，包括`completed\_at` （訂單的時間戳記）、`user\_id` （下訂單的註冊使用者識別碼）。 如果訂單是由註冊的使用者所訂，則`user\_id`會連結回`users`表格，以分析使用者的購買行為。 |
-| `Line items` | `line\_items`資料表是`orders`資料表或`subscriptions`的子系。 它會記錄訂單或訂閱的行專案詳細資料。 針對具有多個產品的訂單，此表格中每個產品都有自己的資料列，包括可讓您將其連結至`product\_id`表格的`Products`。 |
+| `Line items` | `line\_items`資料表是`orders`資料表或`subscriptions`的子系。 它會記錄訂單或訂閱的行專案詳細資料。 針對具有多個產品的訂單，此表格中每個產品都有自己的資料列，包括可讓您將其連結至`Products`表格的`product\_id`。 |
 | `Products` | `products`表格會記錄Spree目錄中可銷售專案的所有產品詳細資料。 這可讓您依產品屬性來劃分條列專案層級量度。 |
 | `Subscriptions` | 如果您有[!DNL Spree]訂閱延伸，`subscriptions`表格會保留每個個別訂閱的資訊，包括`created\_at` （開始日期）、`cancelled\_at` （取消訂閱的日期）以及訂閱的`interval`。 |
 
@@ -46,4 +46,4 @@ ht-degree: 0%
 ## 相關：
 
 * [正在連線 [!DNL Spree]](../integrations/spree.md)
-* [正在重新驗證整合](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=zh-Hant)
+* [重新驗證整合](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

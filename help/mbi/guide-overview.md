@@ -25,9 +25,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 last-update: 2026-08-14
-source-git-commit: a02a389e329acf9bf10b85687e5f877cab992337
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 489
+source-wordcount: 492
 ht-degree: 2%
 
 ---
@@ -58,15 +58,15 @@ ht-degree: 2%
 
 ## 如何取得協助
 
-如果您有任何問題，並且想要利用您的部分專業服務，或是您的帳戶發生問題，請連絡[支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+如果您有任何問題，並且想要利用您的部分專業服務，或是您的帳戶發生問題，請連絡[支援團隊](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ### 服務原則
 
-檢視客戶支援團隊提供哪些服務的[清單](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。
+檢視客戶支援團隊提供哪些服務的[清單](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ### 提交支援票證
 
-需要建置進階計算欄的協助嗎？ 發生缺陷或連線問題？ 若您需要聯絡支援團隊，Adobe會要求您使用[支援票證指導方針](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)。 這些指南概述Adobe解決問題所需的資訊。
+需要建置進階計算欄的協助嗎？ 發生缺陷或連線問題？ 若您需要聯絡支援團隊，Adobe會要求您使用[支援票證指導方針](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。 這些指南概述Adobe解決問題所需的資訊。
 
 ## 可用檔案
 

@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 306
+source-wordcount: 319
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 本主題說明如何在四步驟程式中將[!DNL Microsoft SQL]資料庫連線至[!DNL Commerce Intelligence]。 此程式需要伺服器連線和SQL的相關技術專業知識，並且可能需要團隊開發人員的支援。
 
-[!DNL Commerce Intelligence]支援[!DNL Amazon RDS]、[!DNL EC2]、[!DNL Microsoft SQL Azure]和其他大部分的雲端伺服器提供者。 若您對特定主機有任何疑問，[請提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)，讓我們提供此資訊。
+[!DNL Commerce Intelligence]支援[!DNL Amazon RDS]、[!DNL EC2]、[!DNL Microsoft SQL Azure]和其他大部分的雲端伺服器提供者。 若您對特定主機有任何疑問，[請提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)，讓我們提供此資訊。
 
 您的系統需要對資料庫執行SELECT查詢。 這項作業最初是為了取得資料庫結構的快照，然後定期超時以保持資料最新。 您的更新是漸進式的，而Adobe會限制更新頻率和時間，以防止伺服器上出現任何不想要的負載。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
    * `UI`
    * `Query`
 
-1. 在[!DNL Commerce Intelligence]底下的&#x200B;**[!UICONTROL Manage Data** > **Connections]**&#x200B;中輸入伺服器IP位址、使用者名稱和密碼。
+1. 在&#x200B;**[!UICONTROL Manage Data** > **Connections]**&#x200B;底下的[!DNL Commerce Intelligence]中輸入伺服器IP位址、使用者名稱和密碼。
 
    ![顯示資料庫整合的「管理資料連線」頁面](../../../assets/manage-data-connections.png)
 

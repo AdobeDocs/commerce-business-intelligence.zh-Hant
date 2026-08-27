@@ -22,9 +22,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 911
+source-wordcount: 927
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 依照上述維度來劃分量度的第一個步驟，就是確定您正在資料庫中追蹤此資料。 如果未受到追蹤，請和您的技術團隊會面，並找到開始追蹤此資料的方法。
 
-確認資料庫已追蹤資料後，[請連絡支援團隊](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=zh-Hant)，將維度推送至[!DNL Commerce Intelligence]量度和圖表。 您也可以使用&#x200B;*欄位管理*&#x200B;工具來追蹤[!DNL Commerce Intelligence]中的這些欄位。
+確認資料庫已追蹤資料後，[請連絡支援團隊](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)，將維度推送至[!DNL Commerce Intelligence]量度和圖表。 您也可以使用&#x200B;*欄位管理*&#x200B;工具來追蹤[!DNL Commerce Intelligence]中的這些欄位。
 
 ## 相關
 
