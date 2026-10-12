@@ -4,36 +4,52 @@ description: 瞭解如何與您的Google Analytics量度互動。
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-TQID: https://experienceleague.adobe.com/tUS-KM-3gcLLLeCY4tqS6pUDMeCvLkrFSKp-U-JT61E
+TQID: 'https://experienceleague.adobe.com/tUS-KM-3gcLLLeCY4tqS6pUDMeCvLkrFSKp-U-JT61E'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 269
+source-wordcount: '298'
 ht-degree: 0%
-
 ---
-
 # 必須有[!DNL Google Analytics]個資料
 
-連線[!DNL Google Analytics]整合後，您可以在[!DNL Google Analytics]中立即與您的&#x200B;*量度`Visual Report Builder`*&#x200B;互動。 當您輸入`Visual Report Builder`時，如果按一下&#x200B;**[!UICONTROL Add a Metric]**，[!DNL Google Analytics]設定檔中的一系列量度會隨即顯示在Data Warehouse中量度下方的下拉式清單中。
+連線[!DNL Google Analytics]整合後，您可以在&#x200B;`Visual Report Builder`*中立即與您的[!DNL Google Analytics]量度*&#x200B;互動。 當您輸入`Visual Report Builder`時，如果按一下&#x200B;**[!UICONTROL Add a Metric]**，[!DNL Google Analytics]設定檔中的一系列量度會隨即顯示在Data Warehouse中量度下方的下拉式清單中。
 
-[!DNL Google Analytics]整合為&#x200B;*即時* — 這表示當您新增量度至報告時，`Report Builder`會立即向[!DNL Google Analytics] *要求資料*。 這也表示您可以存取的量度定義方式與[!DNL Google Analytics]中的完全相同，且這些值並非在您的&#x200B;*帳戶中為*&#x200B;倉儲[!DNL Commerce Intelligence] — 僅以視覺化方式顯示在您的報表中。
+[!DNL Google Analytics]整合為&#x200B;*即時* — 這表示當您新增量度至報告時，`Report Builder`會立即向[!DNL Google Analytics] *要求資料*。 這也表示您可以存取的量度定義方式與[!DNL Google Analytics]中的完全相同，且這些值並非在您的[!DNL Commerce Intelligence]帳戶中為&#x200B;*倉儲* — 僅以視覺化方式顯示在您的報表中。
 
 +++支援的量度和維度（Google Analytics 3或Universal Analytics）
 
@@ -41,7 +57,7 @@ ht-degree: 0%
 >
 >自2023年7月1日起，標準Universal Analytics ([!DNL Google Analytics] 3)屬性將不再處理資料。 在2023年7月1日之後，您將能夠檢視您的Universal Analytics報表。 不過，新資料只會流入[!DNL Google Analytics] 4個屬性。
 
-[!DNL Google Analytics]中的[!DNL Commerce Intelligence]整合使用[!DNL Google Analytics] [核心報表API](https://developers.google.com/analytics/devguides/reporting/core/v3/)，並支援下列量度和維度。
+[!DNL Commerce Intelligence]中的[!DNL Google Analytics]整合使用[!DNL Google Analytics] [核心報表API](https://developers.google.com/analytics/devguides/reporting/core/v3/)，並支援下列量度和維度。
 
 >[!NOTE]
 >
@@ -174,7 +190,7 @@ ht-degree: 0%
 
 +++支援的量度和維度(Google Analytics 4)
 
-[!DNL Google Analytics]中的[!DNL Commerce Intelligence]整合使用[!DNL Google Analytics] [資料API v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1)。
+[!DNL Commerce Intelligence]中的[!DNL Google Analytics]整合使用[!DNL Google Analytics] [資料API v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1)。
 
 >[!NOTE]
 >

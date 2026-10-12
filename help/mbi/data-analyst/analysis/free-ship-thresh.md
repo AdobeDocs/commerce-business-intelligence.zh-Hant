@@ -4,32 +4,43 @@ description: 瞭解如何設定儀表板，以追蹤免運費運送臨界值的�
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
 role: Admin,  User
 feature: Data Warehouse Manager, Dashboards, Reports
-TQID: https://experienceleague.adobe.com/dh7Ep6xzBaaeO5LAnsUogg0jSCIXMjv-faBsPyGXpcg
+TQID: 'https://experienceleague.adobe.com/dh7Ep6xzBaaeO5LAnsUogg0jSCIXMjv-faBsPyGXpcg'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 507
-ht-degree: 0%
-
+source-wordcount: '610'
+ht-degree: 17%
 ---
-
 # 免運費
 
 >[!NOTE]
 >
->此主題包含使用原始架構和新架構的使用者端指示。 如果您在選取主工具列中的`Data Warehouse Views`後有`Manage Data`區段可用，則表示您使用新架構。
+>此主題包含使用原始架構和新架構的使用者端指示。 如果您在選取主工具列中的`Manage Data`後有`Data Warehouse Views`區段可用，則表示您使用新架構。
 
 本主題將示範如何設定追蹤免運費運送臨界值績效的控制面板。 這個儀表板（如下所示）是A/B測試兩個免運費臨界值的好方法。 例如，貴公司可能不確定您應以$50或$100的價格提供免運費。 您應該針對客戶的兩個隨機子集執行A/B測試，並在[!DNL Commerce Intelligence]中執行分析。
 
@@ -41,28 +52,28 @@ ht-degree: 0%
 
 ## 計算欄
 
-如果您使用原始架構（例如，如果您的「`Data Warehouse Views`」功能表下沒有「`Manage Data`」選項），您希望聯絡支援團隊以建置以下欄。 在新架構上，可從`Manage Data > Data Warehouse`頁面建立這些欄。 詳細指示如下。
+如果您使用原始架構（例如，如果您的「`Manage Data`」功能表下沒有「`Data Warehouse Views`」選項），您希望聯絡支援團隊以建置以下欄。 在新架構上，可從`Manage Data > Data Warehouse`頁面建立這些欄。 詳細指示如下。
 
 * **`sales_flat_order`**&#x200B;資料表
-   * 此計算會以相對於您一般購物車大小的增量建立值區。 增量範圍包括5、10、50、100
+  * 此計算會以相對於您一般購物車大小的增量建立值區。 增量範圍包括5、10、50、100
 
 * **`Order subtotal (buckets)`**&#x200B;原始架構：由分析人員建立，作為您`[FREE SHIPPING ANALYSIS]`票證的一部分
 * **`Order subtotal (buckets)`**&#x200B;新架構：
-   * 如上所述，這項計算會以相對於您一般購物車大小的增量建立值區。 如果您有原生小計資料行，例如`base_subtotal`，可以做為這個新資料行的基礎。 如果沒有，它可以是計算欄，其中不包含收入的送貨和折扣。
+  * 如上所述，這項計算會以相對於您一般購物車大小的增量建立值區。 如果您有原生小計資料行，例如`base_subtotal`，可以做為這個新資料行的基礎。 如果沒有，它可以是計算欄，其中不包含收入的送貨和折扣。
 
   >[!NOTE]
   >
   >「貯體」大小取決於適合您作為使用者端的尺寸。 您可以從`average order value`開始，建立一些小於或大於該數量的值區。 檢視以下計算時，您會瞭解如何輕鬆複製部分查詢、編輯查詢及建立其他值區。 範例是以50為增量完成。
 
-   * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`或`calculated column`，`Datatype`： `Integer`
-   * [!UICONTROL Calculation]： `case when A >= 0 and A<=200 then 0 - 200`
-當`A< 200`和`A <= 250`然後`201 - 250`
-當`A<251`和`A<= 300`然後`251 - 300`
-當`A<301`和`A<= 350`然後`301 - 350`
-當`A<351`與`A<=400`然後`351 - 400`
-當`A<401`與`A<=450`然後`401 - 450`
-否則&#39;超過450&#39;
-結束
+  * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`或`calculated column`，`Datatype`： `Integer`
+  * [!UICONTROL Calculation]&#x200B;: `case when A >= 0 and A<=200 then 0 - 200`
+    當`A< 200`和`A <= 250`，則 `201 - 250`
+    當`A<251`和`A<= 300`，則 `251 - 300`
+    當`A<301`和`A<= 350`，則 `301 - 350`
+    當`A<351`和`A<=400`，則 `351 - 400`
+    當`A<401`和`A<=450`，則 `401 - 450`
+    否則&#39;超過450&#39;
+    結束
 
 
 ## 量度
@@ -76,72 +87,72 @@ ht-degree: 0%
 ## 報表
 
 * **平均訂單值（送貨規則A**）
-   * [!UICONTROL Metric]： `Average order value`
+  * [!UICONTROL Metric]&#x200B;: `Average order value`
 
 * 量度`A`： `Average Order Value`
-* [!UICONTROL Time period]： `Time period with shipping rule A`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
 * &#x200B;
-  [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]&#x200B;: `None`
 * &#x200B;
-  [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]&#x200B;: `Scalar`
 
 * **根據小計貯體排列的訂單數（送貨規則為A**）
-   * [!UICONTROL Metric]： `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
   >[!NOTE]
   >
-  >您可以顯示`X`中的前`sorted by` `Order subtotal` `Show top/bottom` （貯體）以截斷尾端。
+  >您可以顯示`Show top/bottom`中的前`X` `sorted by` `Order subtotal` （貯體）以截斷尾端。
 
 * 量度`A`： `Number of orders`
-* [!UICONTROL Time period]： `Time period with shipping rule A`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
 * &#x200B;
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]： `Order subtotal (buckets)`
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Order subtotal (buckets)`
 * &#x200B;
-  [!UICONTROL Chart Type]: `Column`
+  [!UICONTROL Chart Type]&#x200B;: `Column`
 
 * 送貨規則為A **之小計訂單的**&#x200B;百分比
-   * [!UICONTROL Metric]： `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-   * [!UICONTROL Metric]： `Number of orders`
-   * &#x200B;
-     [!UICONTROL 群組依據]: `Independent`
-   * [!UICONTROL Formula]： `(A / B)`
-   * &#x200B;
-     [!UICONTROL Format]: `%`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
+  * &#x200B;
+    [!UICONTROL 群組依據]&#x200B;: `Independent`
+  * [!UICONTROL Formula]&#x200B;: `(A / B)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `%`
 
 * 量度`A`： `Number of orders by subtotal (hide)`
 * 量度`B`： `Total number of orders (hide)`
-* [!UICONTROL Formula]： `% of orders`
-* [!UICONTROL Time period]： `Time period with shipping rule A`
+* [!UICONTROL Formula]&#x200B;: `% of orders`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
 * &#x200B;
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]： `Order subtotal (buckets)`
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Order subtotal (buckets)`
 * &#x200B;
-  [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 * 小計超過送貨規則A **的訂單的**&#x200B;百分比
-   * [!UICONTROL Metric]： `Number of orders`
-   * &#x200B;
-     [!UICONTROL Perspective]: `Cumulative`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
+  * &#x200B;
+    [!UICONTROL Perspective]&#x200B;: `Cumulative`
 
-   * [!UICONTROL Metric]： `Number of orders`
-   * &#x200B;
-     [!UICONTROL 群組依據]: `Independent`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
+  * &#x200B;
+    [!UICONTROL 群組依據]&#x200B;: `Independent`
 
-   * [!UICONTROL Formula]： `1- (A / B)`
-   * &#x200B;
-     [!UICONTROL Format]: `%`
+  * [!UICONTROL Formula]&#x200B;: `1- (A / B)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `%`
 
 * 量度`A`： `Number of orders by subtotal`
 * 量度`B`： `Total number of orders (hide)`
-* [!UICONTROL Formula]： `% of orders`
-* [!UICONTROL Time period]： `Time period with shipping rule A`
+* [!UICONTROL Formula]&#x200B;: `% of orders`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
 * &#x200B;
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]： `Order subtotal (buckets)`
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Order subtotal (buckets)`
 * &#x200B;
-  [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 
 針對送貨規則B重複上述步驟與報表，並重複時間週期。

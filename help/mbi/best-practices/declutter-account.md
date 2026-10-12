@@ -1,34 +1,42 @@
 ---
-title: 正在清除您的 [!DNL Commerce Intelligence] 帳戶
-description: 瞭解如何清除您的 [!DNL Commerce Intelligence] 帳戶。
+title: 正在清除您的[!DNL Commerce Intelligence]帳戶
+description: 瞭解如何清除您的[!DNL Commerce Intelligence]帳戶。
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
 role: Admin, User
 feature: Accounts
-TQID: https://experienceleague.adobe.com/cybn11Z5oXnfc6Oz34Dk1syw4w0o03vA-TRNMjHeifE
+TQID: 'https://experienceleague.adobe.com/cybn11Z5oXnfc6Oz34Dk1syw4w0o03vA-TRNMjHeifE'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: 9e444628-408e-5d74-8cd4-c552f0d5d47f
+    internal-label: Accounts
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 904
+source-wordcount: '909'
 ht-degree: 0%
-
 ---
-
 # 清除您的[!DNL Adobe Commerce Intelligence]帳戶
 
 無論您與[!DNL Commerce Intelligence]已合作六個月或六年，維護整潔的帳戶對貴組織充分利用平台至關重要。 長期下來，通常會有一些使用者、控制面板、報表、量度和欄不再需要這些專案。 您可能建立了報表以供一次性使用，但已忘記該報表，或離開貴公司的使用者從未停用帳戶。
 
-透過[帳戶的](../best-practices/naming-elements.md)標準化、清除所有元素[!DNL Commerce Intelligence])的命名，下列帳戶稽核步驟可協助您減少使用者的雜亂和不必要的分析。 一個額外優點包括[可能更快的更新週期](../best-practices/reduce-update-cycle-time.md)。
+透過[!DNL Commerce Intelligence]帳戶的[標準化、清除所有元素](../best-practices/naming-elements.md))的命名，下列帳戶稽核步驟可協助您減少使用者的雜亂和不必要的分析。 一個額外優點包括[可能更快的更新週期](../best-practices/reduce-update-cycle-time.md)。
 
 ## 步驟1：識別非作用中的使用者
 
@@ -108,7 +116,7 @@ ht-degree: 0%
 
 ![報告相依性對話方塊，顯示哪些報告使用選取的資料行](../../mbi/assets/report_dependecies.png)
 
-如果您決定不再需要該量度，請按一下&#x200B;**[!UICONTROL Metrics]**&#x200B;以導覽回&#x200B;**[!UICONTROL Back to Metric List]**&#x200B;頁面，並尋找您要刪除的量度。 按一下&#x200B;**[!UICONTROL Delete]**。
+如果您決定不再需要該量度，請按一下&#x200B;**[!UICONTROL Back to Metric List]**&#x200B;以導覽回&#x200B;**[!UICONTROL Metrics]**&#x200B;頁面，並尋找您要刪除的量度。 按一下&#x200B;**[!UICONTROL Delete]**。
 
 ## 步驟4：評估您的同步欄
 

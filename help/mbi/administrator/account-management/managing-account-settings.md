@@ -6,26 +6,37 @@ role: Admin, User
 feature: Accounts
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b6935462-7263-4ced-a703-60de6a5aeb2d
+    internal-label: Administration
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: 9e444628-408e-5d74-8cd4-c552f0d5d47f
+    internal-label: Accounts
 subfeature_v2:
   - id: a763c1a2-1d0a-40d7-9617-8139636fd12e
+    internal-label: Access management
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+    internal-label: Administration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 349
+source-wordcount: '354'
 ht-degree: 0%
-
 ---
-
 # 自訂您的帳戶設定
 
 >[!NOTE]
@@ -38,7 +49,7 @@ ht-degree: 0%
 
 * **[!UICONTROL Currency:]**&#x200B;這是您帳戶中所有貨幣值的&#x200B;*預設貨幣*。 只要小數或貨幣值同步至Data Warehouse，此設定就會決定報表中置於該值之前的符號。
 
-* **[!UICONTROL Blackout Hours:]**&#x200B;此設定可確保在一天中選定的時間內，您的Data Warehouse不會存取您連線的資料庫。 所有時數都會以零時和東部標準時間(EST)表示。 例如，如果您不希望在EST上午9:00到下午1:00之間存取生產資料庫，您應該輸入下列位數陣列： **9、10、11、12**。
+* **[!UICONTROL Blackout Hours:]**&#x200B;此設定可確保在一天中選定的時間內，您的Data Warehouse不會存取您連線的資料庫。 所有時數都會以零時和東部標準時間(EST)表示。 例如，如果您不希望在EST上午9:00到下午1:00之間存取生產資料庫，則應輸入下列位數陣列： **9、10、11、12**。
 
 * **[!UICONTROL Forced update hours:]**&#x200B;此設定可確保Data Warehouse更新在您指定的小時&#x200B;*內在您的帳戶*&#x200B;中自動開始。 和中斷時間一樣，這些也會出現在ET中。 例如，如果您希望Data Warehouse更新在&#x200B;**午夜**&#x200B;和&#x200B;**中午** EST自動開始，您應輸入下列位數陣列： **0、12**。
 

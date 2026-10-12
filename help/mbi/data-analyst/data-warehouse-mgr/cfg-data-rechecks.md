@@ -4,30 +4,43 @@ description: 瞭解如何使用可變更的值來設定資料欄。
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-TQID: https://experienceleague.adobe.com/aw43nDwCdBOJ-9D2BKJGV7PV-7c3jGXxhUEgE2utY5A
+TQID: 'https://experienceleague.adobe.com/aw43nDwCdBOJ-9D2BKJGV7PV-7c3jGXxhUEgE2utY5A'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 569
+source-wordcount: '571'
 ht-degree: 0%
-
 ---
-
 # 設定資料檢查
 
 在資料庫表格中，可以有可變更值的資料欄。 例如，在`orders`資料表中可能會有名為`status`的資料行。 一開始將訂單寫入資料庫時，狀態資料行可能包含值&#x200B;_pending_。 已在您的[Data Warehouse](../data-warehouse-mgr/tour-dwm.md)中使用此`pending`值復寫訂單。
@@ -51,7 +64,7 @@ ht-degree: 0%
 ## 重新檢查頻率 {#frequency}
 
 **您知道嗎？**
-在`primary key`資料行上設定重新檢查並不會檢查資料行是否有變更值。 系統會檢查表格中是否有已刪除的列，且任何刪除都會從Data Warehouse中清除。
+在`primary key`資料行上設定重新檢查並不會檢查資料行是否有變更的值。 系統會檢查表格中是否有已刪除的列，且任何刪除都會從Data Warehouse中清除。
 
 當欄被標籤為要重新檢查時，您也可以設定重新檢查發生的頻率。 如果特定資料行不經常變更，則選擇較不頻繁的重新檢查可以[最佳化您的更新週期](../../best-practices/reduce-update-cycle-time.md)。
 
@@ -67,13 +80,13 @@ ht-degree: 0%
 
 ## 管理重新檢查頻率 {#manage}
 
-按一下表格名稱，然後檢查個別欄，即可在Data Warehouse中管理重新檢查頻率。 同步處理狀態與重新檢查頻率(**變更嗎？**&#x200B;欄)會針對表格中的每個欄顯示。
+按一下表格名稱，然後檢查個別欄，即可在Data Warehouse中管理重新檢查頻率。 同步處理狀態與重新檢查頻率(**變更？** 欄)。
 
 若要變更重新檢查頻率，請按一下您要變更之欄旁的核取方塊。 然後按一下&#x200B;**[!UICONTROL Set Recheck Frequency]**&#x200B;下拉式清單，並設定所要的頻率。
 
 ![Data Warehouse管理員顯示重新檢查組態選項](../../assets/dwm-recheck.png)
 
-您有時可能會在`Paused`欄中看到`Changes?`。 當表格的[復寫方法](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)設定為`Paused`時，會顯示這個值。
+您有時可能會在`Changes?`欄中看到`Paused`。 當表格的[復寫方法](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)設定為`Paused`時，會顯示這個值。
 
 [!DNL Adobe]建議檢閱這些欄，以最佳化您的更新並確保重新檢查可變更的欄。 如果根據資料變更的頻率，欄的重新檢查頻率很高，Adobe建議將其降低，以最佳化您的更新。
 

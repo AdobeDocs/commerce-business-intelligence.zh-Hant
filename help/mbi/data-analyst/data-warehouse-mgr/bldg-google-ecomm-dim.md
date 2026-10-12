@@ -4,29 +4,39 @@ description: 瞭解如何建立將您的電子商務資料與您的訂單和客�
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
 role: Admin, Developer, User
 feature: Data Integration, Data Warehouse Manager
-TQID: https://experienceleague.adobe.com/K5PKexwI5oIb0WFtT47gQ2wEuF-TYUQrntRq1yJ4Vlc
+TQID: 'https://experienceleague.adobe.com/K5PKexwI5oIb0WFtT47gQ2wEuF-TYUQrntRq1yJ4Vlc'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1023
+source-wordcount: '1024'
 ht-degree: 0%
-
 ---
-
 # 建置[!DNL Google ECommerce]維度
 
 >[!NOTE]
@@ -39,7 +49,7 @@ ht-degree: 0%
 
 ## 必要條件和概覽
 
-若要在此主題中建立維度，您需要[!DNL Google ECommerce]表格、`orders`表格和`customers`表格。 這些資料表必須先同步至[您的Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md)，才能建立維度。 已同步的資料表會顯示在`Synced Tables`的`Data Warehouse Manager`區段中。
+若要在此主題中建立維度，您需要[!DNL Google ECommerce]表格、`orders`表格和`customers`表格。 這些資料表必須先同步至[您的Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md)，才能建立維度。 已同步的資料表會顯示在`Data Warehouse Manager`的`Synced Tables`區段中。
 
 如果您需要重新整理程式，以下快速瞭解同步表格和欄：
 
@@ -66,7 +76,7 @@ ht-degree: 0%
 
 ## 建立維度
 
-若要建立維度，請按一下[&#x200B; > &#x200B;](../data-warehouse-mgr/tour-dwm.md)以開啟&#x200B;**[!UICONTROL Data]** Data Warehouse管理員&#x200B;**[!UICONTROL Data Warehouse]**。
+若要建立維度，請按一下&#x200B;**[!UICONTROL Data]** > **[!UICONTROL Data Warehouse]**&#x200B;以開啟[Data Warehouse管理員](../data-warehouse-mgr/tour-dwm.md)。
 
 ### 訂單表格，第1回合
 
@@ -75,7 +85,7 @@ ht-degree: 0%
 1. 從Data Warehouse中的表格清單中，按一下包含訂單資訊的表格（在此例中為`orders`）。
 1. 按一下&#x200B;**[!UICONTROL Create a Column]**。
 1. 為欄命名。
-1. 從`Joined Column`定義下拉式清單[中選取](../data-warehouse-mgr/calc-column-types.md)。 此範例適用於[一對一關係](../data-warehouse-mgr/table-relationships.md)，將`eCommerce.transactionID`資料行與`orders`資料表的一列相符。
+1. 從[定義下拉式清單](../data-warehouse-mgr/calc-column-types.md)中選取`Joined Column`。 此範例適用於[一對一關係](../data-warehouse-mgr/table-relationships.md)，將`eCommerce.transactionID`資料行與`orders`資料表的一列相符。
 1. 接下來，您需要定義路徑，或定義所使用的表格和欄的連線方式。 按一下`Select a table and column`下拉式清單。
 1. 您需要的路徑無法使用，因此您需要建立新的路徑。 按一下&#x200B;**[!UICONTROL Create new Path]**。
 1. 在顯示的視窗中，將`Many`端設定為`orders.order\_id`，或將`orders`表格中包含訂單ID的欄設定為。
@@ -101,7 +111,7 @@ ht-degree: 0%
 1. 從Data Warehouse中的表格清單中，按一下包含客戶資訊的表格（在此例中為`customers`）。
 1. 按一下&#x200B;**[!UICONTROL Create a Column]**。
 1. 為欄命名。
-1. 在此範例中，從`is MAX`定義下拉式清單[中選取](../../data-analyst/data-warehouse-mgr/calc-column-types.md)定義。 如果套用至只有一個可能值的文字欄，`is MIN`定義也可以運作。 重要部分是確保設定正確的篩選器，您稍後再執行。
+1. 在此範例中，從[定義下拉式清單](../../data-analyst/data-warehouse-mgr/calc-column-types.md)中選取`is MAX`定義。 如果套用至只有一個可能值的文字欄，`is MIN`定義也可以運作。 重要部分是確保設定正確的篩選器，您稍後再執行。
 1. 按一下&#x200B;**[!UICONTROL Select a table and column]**&#x200B;下拉式清單，選取`orders`資料表，然後選取`Order's [!DNL Google Analytics] source`資料行。
 1. 按一下&#x200B;**[!UICONTROL Save]**。
 1. 回到表格結構描述後，按一下`Options`下拉式清單，然後`Filters`。
@@ -117,7 +127,7 @@ ht-degree: 0%
 
 ### 額外優點：訂單表格，第2回合
 
-您可以視需要在此停止，但此區段會將您在&#x200B;**最後一個區段[!DNL Google Analytics]中建立的**&#x200B;客戶第一訂單的[維度](#customers)帶入`orders`表格，以啟用進一步分析。 在此區段中建立維度可讓您使用客戶第一張訂單的`orders`屬性，分析在`Revenue`表格（`Number of orders`、`Distinct buyers`、[!DNL Google Analytics]等等）上建置的所有量度。
+您可以視需要在此停止，但此區段會將您在[最後一個區段](#customers)中建立的&#x200B;**客戶第一訂單的[!DNL Google Analytics]維度**&#x200B;帶入`orders`表格，以啟用進一步分析。 在此區段中建立維度可讓您使用客戶第一張訂單的[!DNL Google Analytics]屬性，分析在`orders`表格（`Revenue`、`Number of orders`、`Distinct buyers`等等）上建置的所有量度。
 
 此範例將`Customer's first order's [!DNL Google Analytics] source`維度聯結至`orders`資料表。
 

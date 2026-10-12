@@ -4,33 +4,51 @@ description: 瞭解如何存取所有已註冊帳戶的記錄。
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/iTzls4nEtW9ep-3s536ZnRCCr2TeMD6AsDecZc3Cdys
+TQID: 'https://experienceleague.adobe.com/iTzls4nEtW9ep-3s536ZnRCCr2TeMD6AsDecZc3Cdys'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 610
+source-wordcount: '604'
 ht-degree: 0%
-
 ---
-
 # customer_entity表格
 
 `customer_entity`資料表包含所有已註冊帳戶的記錄。 無論客戶是否完成購買，只要客戶註冊帳戶，即視為已註冊。 每一列對應一個唯一的註冊帳戶，由該帳戶的`entity_id`識別。
@@ -45,7 +63,7 @@ ht-degree: 0%
 | `email` | 與帳戶相關聯的電子郵件地址 |
 | `entity_id` (PK) | 資料表的唯一識別碼，常用於執行個體內其他資料表中與`customer_id`的聯結 |
 | `group_id` | 與`customer_group`資料表相關聯的外部索引鍵。 加入`customer_group.customer_group_id`以決定與註冊帳戶相關聯的客戶群組 |
-| `store_id` | 與`store`資料表相關聯的外部索引鍵。 加入`store`。`store_id`以判斷哪個Commerce存放區檢視與已註冊的帳戶相關聯 |
+| `store_id` | 與`store`資料表相關聯的外部索引鍵。 加入`store`.`store_id` 若要判斷哪個Commerce商店檢視與已註冊的帳戶相關聯 |
 
 {style="table-layout:auto"}
 
@@ -53,11 +71,11 @@ ht-degree: 0%
 
 | **資料行名稱** | **描述** |
 |---|---|
-| `Customer's first 30 day revenue` | 此客戶在第一個訂單日期起的30天內所下所有訂單的收入總和。 計算方式為將`customer_entity.entity_id`加入`sales_order.customer_id`並加總`base_grand_total`2592000之所有訂單的`sales_order.Seconds between customer's first order date and this order`欄位，即30天內的秒數 |
-| `Customer's first order date` | 此客戶下第一個訂單的時間戳記。 計算方式為將`customer_entity.entity_id`加入`sales_order.customer_id`並傳回最小值`sales_order`。`created_at`值 |
-| `Customer's first order's billing region` | 與客戶第一筆訂單相關聯的帳單區域。 透過加入`customer_entity.entity_id`到`sales_order.customer_id`並傳回`Billing address region` = 1的`sales_order.Customer's order number`進行計算 |
-| `Customer's first order's coupon_code` | 與客戶第一筆訂單相關聯的抵用券代碼。 透過加入`customer_entity.entity_id`到`sales_order.customer_id`並傳回`sales_order.coupon_code` = 1的`sales_order.Customer's order number`進行計算 |
-| `Customer's group code` | 註冊客戶的群組名稱。 透過將`customer_entity.group_id`加入`customer_group`進行計算。`customer_group_id`並傳回`customer_group_code`欄位 |
+| `Customer's first 30 day revenue` | 此客戶在第一個訂單日期起的30天內所下所有訂單的收入總和。 計算方式為將`customer_entity.entity_id`加入`sales_order.customer_id`並加總`sales_order.Seconds between customer's first order date and this order`2592000之所有訂單的`base_grand_total`欄位，即30天內的秒數 |
+| `Customer's first order date` | 此客戶下第一個訂單的時間戳記。 透過加入`customer_entity.entity_id`到`sales_order.customer_id`並傳回最小值`sales_order`.`created_at`進行計算 值 |
+| `Customer's first order's billing region` | 與客戶第一筆訂單相關聯的帳單區域。 透過加入`customer_entity.entity_id`到`sales_order.customer_id`並傳回`sales_order.Customer's order number` = 1的`Billing address region`進行計算 |
+| `Customer's first order's coupon_code` | 與客戶第一筆訂單相關聯的抵用券代碼。 透過加入`customer_entity.entity_id`到`sales_order.customer_id`並傳回`sales_order.Customer's order number` = 1的`sales_order.coupon_code`進行計算 |
+| `Customer's group code` | 註冊客戶的群組名稱。 透過將`customer_entity.group_id`加入`customer_group`計算。`customer_group_id` 並傳回`customer_group_code`欄位 |
 | `Customer's lifetime number of coupons` | 套用至此客戶所下所有訂單的優惠券總數。 計算方式為將`customer_entity.entity_id`加入`sales_order.customer_id`並計算`sales_order.coupon_code`不是`NULL`的訂單數 |
 | `Customer's lifetime number of orders` | 此客戶下單的訂單總數。 計算方式為將`customer_entity.entity_id`加入`sales_order.customer_id`並計算`sales_order`資料表中的資料列數目 |
 | `Customer's lifetime revenue` | 此客戶下所有訂單的收入總和。 計算方式為將`customer_entity.entity_id`加入`sales_order.customer_id`並加總此客戶下所有訂單的`base_grand_total`欄位 |
@@ -84,9 +102,9 @@ ht-degree: 0%
 `customer_group`
 
 * 加入`customer_group`資料表以建立傳回已註冊帳戶之客戶群組名稱的資料行。
-   * 路徑： `customer_entity.group_id` （許多） => `customer_group.customer_group_id` （一個）
+  * 路徑： `customer_entity.group_id` （許多） => `customer_group.customer_group_id` （一個）
 
 `store`
 
 * 加入`store`資料表以建立資料行，這些資料行會傳回與已登入帳戶相關聯之存放區的相關詳細資料。
-   * 路徑： `customer_entity.store_id` （許多） => `store.store_id` （一個）
+  * 路徑： `customer_entity.store_id` （許多） => `store.store_id` （一個）

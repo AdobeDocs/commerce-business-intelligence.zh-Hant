@@ -4,35 +4,50 @@ description: 瞭解如何將SQL查詢轉譯為您在Commerce Intelligence中使�
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-TQID: https://experienceleague.adobe.com/-VQfwFZeSlEcD053XRQ4mWF51jnTGaV04tUAqLu7-U8
+TQID: 'https://experienceleague.adobe.com/-VQfwFZeSlEcD053XRQ4mWF51jnTGaV04tUAqLu7-U8'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: c38ccf61-5a4f-5140-ad2b-c3434e82ed6d
+    internal-label: SQL Report Builder
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Reporting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 942
+source-wordcount: '942'
 ht-degree: 0%
-
 ---
-
 # 在Commerce Intelligence中翻譯SQL查詢
 
-曾經想過如何將SQL查詢轉譯為您在[中使用的](../data-warehouse-mgr/creating-calculated-columns.md)計算資料行[、](../../data-user/reports/ess-manage-data-metrics.md)量度[和](../../tutorials/using-visual-report-builder.md)報表[!DNL Commerce Intelligence]？ 如果您是大量的SQL使用者，瞭解[!DNL Commerce Intelligence]中的SQL轉譯方式可讓您更聰明地在[Data Warehouse管理員](../data-warehouse-mgr/tour-dwm.md)中工作，並充分利用[!DNL Commerce Intelligence]平台。
+曾經想過如何將SQL查詢轉譯為您在[!DNL Commerce Intelligence]中使用的[計算資料行](../data-warehouse-mgr/creating-calculated-columns.md)、[量度](../../data-user/reports/ess-manage-data-metrics.md)和[報表](../../tutorials/using-visual-report-builder.md)？ 如果您是大量的SQL使用者，瞭解[!DNL Commerce Intelligence]中的SQL轉譯方式可讓您更聰明地在[Data Warehouse管理員](../data-warehouse-mgr/tour-dwm.md)中工作，並充分利用[!DNL Commerce Intelligence]平台。
 
-在本主題結束時，您找到SQL查詢子句和&#x200B;**專案的**&#x200B;轉譯矩陣[!DNL Commerce Intelligence]。
+在本主題結束時，您找到SQL查詢子句和[!DNL Commerce Intelligence]專案的&#x200B;**轉譯矩陣**。
 
 從檢視一般查詢開始：
 
@@ -51,7 +66,7 @@ ht-degree: 0%
 
 ## 彙總函式
 
-查詢中的彙總函式（例如，`count`、`sum`、`average`、`max`、`min`）採用&#x200B;**中的**&#x200B;量度彙總&#x200B;**或**&#x200B;資料行彙總[!DNL Commerce Intelligence]的形式。 差異因子是執行彙總是否需要聯結。
+查詢中的彙總函式（例如，`count`、`sum`、`average`、`max`、`min`）採用[!DNL Commerce Intelligence]中的&#x200B;**量度彙總**&#x200B;或&#x200B;**資料行彙總**&#x200B;的形式。 差異因子是執行彙總是否需要聯結。
 
 檢視上述每個專案的範例。
 
@@ -108,7 +123,7 @@ ht-degree: 0%
 
 ![使用SQL的客戶期限值分析動畫示範](../../assets/Customer_LTV.gif)
 
-現在您已在`Customer LTV`資料表中建立新的`customers`資料行，您已準備好使用此資料行建立[量度彙總](#aggregate) （例如，找出每位客戶的平均LTV）。 您也可以`group by`或`filter`，依報表中的計算資料行，使用建置在`customers`資料表上的現有量度。
+現在您已在`customers`資料表中建立新的`Customer LTV`資料行，您已準備好使用此資料行建立[量度彙總](#aggregate) （例如，找出每位客戶的平均LTV）。 您也可以`group by`或`filter`，依報表中的計算資料行，使用建置在`customers`資料表上的現有量度。
 
 >[!NOTE]
 >
