@@ -4,29 +4,43 @@ description: 瞭解資料如何產生、造成新列插入的原因，以及如�
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/IUTQdZYcHkue-29jNZOxONAK4u5plphslzqtUXJ5JAs
+TQID: 'https://experienceleague.adobe.com/IUTQdZYcHkue-29jNZOxONAK4u5plphslzqtUXJ5JAs'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 964
-ht-degree: 2%
-
+source-wordcount: '964'
+ht-degree: 4%
 ---
-
 # 在[!DNL Adobe Commerce]中儲存資料
 
 [!DNL Adobe Commerce]平台會記錄並整理數百個表格中的各種寶貴商業資料。 本主題說明：
@@ -52,11 +66,11 @@ ht-degree: 2%
 | 207 | 4 | 12 | 襯衫6 | 2016/09/22 09:24:02 |
 
 * `entity_id` — 這是`catalog_product_entity`資料表的主索引鍵，表示資料表的每一列都必須有不同的`entity_id`。 此資料表上的每個`entity_id`只能與一個產品相關聯，而且每個產品只能與一個`entity_id`相關聯
-   * 上表的頂行，`entity_id` = 205，是為「Rewback Bellbottoms」建立的新列。 `entity_id` = 205出現在Commerce平台的任何位置，指的是產品「Rewback Bellbottoms」
+  * 上表的頂行，`entity_id` = 205，是為「Rewback Bellbottoms」建立的新列。 `entity_id` = 205出現在Commerce平台的任何位置，指的是產品「Rewback Bellbottoms」
 * `entity_type_id` - Commerce有多個物件類別（例如客戶、地址及產品等等），此欄是用來表示此特定列所屬的類別。
-   * 這是`catalog_product_entity`資料表，每一列都有相同的實體型別： product。 在Adobe Commerce中，產品的`entity_type_id`為4，因此建立的所有三個新產品都會針對此欄傳回4。
+  * 這是`catalog_product_entity`資料表，每一列都有相同的實體型別： product。 在Adobe Commerce中，產品的`entity_type_id`為4，因此建立的所有三個新產品都會針對此欄傳回4。
 * `attribute_set_id` — 屬性集是用來識別具有相同描述元的產品。
-   * 表格的前兩列為`Throwback Bellbottoms`和`Straight Leg Jeans`產品，兩者均為褲子。 這些產品會有相同的描述項（例如，名稱、內接、腰圍），因此會有相同的`attribute_set_id`。 第三個專案`V-Neck T-Shirt`有不同的`attribute_set_id`，因為它沒有和褲子相同的描述元；襯衫沒有腰圍或內襯。
+  * 表格的前兩列為`Throwback Bellbottoms`和`Straight Leg Jeans`產品，兩者均為褲子。 這些產品會有相同的描述項（例如，名稱、內接、腰圍），因此會有相同的`attribute_set_id`。 第三個專案`V-Neck T-Shirt`有不同的`attribute_set_id`，因為它沒有和褲子相同的描述元；襯衫沒有腰圍或內襯。
 * `sku` — 這些是使用者在Adobe Commerce中建立產品時指派給每個產品的唯一值。
 * `created_at` — 此欄會傳回每個產品建立時的時間戳記
 
@@ -69,9 +83,9 @@ ht-degree: 2%
 | `214` | `1` | `sammy.customer@gmail.com` | `2016/09/23 15:27:12` |
 
 * `entity_id` — 如同先前的資料表，`entity_id`是`customer_entity`資料表的主索引鍵。
-   * 當`Sammy Customer`建立帳戶，且上述資料列寫入`customer_entity`資料表時，已指派客戶`entity_id` = 214。 在所有表格中，識別為`entity_id` = 214的客戶一律會參照使用者Sammy Customer
+  * 當`Sammy Customer`建立帳戶，且上述資料列寫入`customer_entity`資料表時，已指派客戶`entity_id` = 214。 在所有表格中，識別為`entity_id` = 214的客戶一律會參照使用者Sammy Customer
 * `entity_type_id` — 此資料行會識別此資料表中列出的實體型別，其功能與`catalog_product_entity`資料表中相同
-   * `customer_entity`表格上的每一列都是客戶，Commerce預設會將客戶定義為`entity_type_id` 1
+  * `customer_entity`表格上的每一列都是客戶，Commerce預設會將客戶定義為`entity_type_id` 1
 * `email` — 此欄位會由新客戶建立帳戶時輸入的電子郵件填入
 * `created_at` — 此欄傳回每個使用者加入時的時間戳記
 
@@ -84,11 +98,11 @@ ht-degree: 2%
 | 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 
 * `entity_id` — 這是`sales_flat_order`資料表的主索引鍵。
-   * 當Sammy客戶下此訂單，且將上列寫入`sales_flat_order`表格時，已指派訂單`entity_id` = 227。
+  * 當Sammy客戶下此訂單，且將上列寫入`sales_flat_order`表格時，已指派訂單`entity_id` = 227。
 * `customer_id` — 此欄是下此特定訂單之客戶的唯一識別碼
-   * 與此訂單關聯的`customer_id`為214，這是`entity_id`資料表上Sammy客戶的`customer_entity`。
+  * 與此訂單關聯的`customer_id`為214，這是`customer_entity`資料表上Sammy客戶的`entity_id`。
 * `subtotal` — 此欄是針對訂單向客戶收取的總金額
-   * 兩雙「Rewback Bellbottoms」和「V領T恤」總共花費$94.85美元
+  * 兩雙「Rewback Bellbottoms」和「V領T恤」總共花費$94.85美元
 * `created_at` — 此欄傳回每個訂單建立時的時間戳記
 
 ## `sales\_flat\_order\_item ( or Sales\_order\_item`
@@ -103,13 +117,13 @@ ht-degree: 2%
 | 823 | `V-Neck T-Shirt` | 207 | 227 | 1 | 14.95 |
 
 * `item_id` — 此資料行是`sales_flat_order_item`資料表的主索引鍵
-   * `Sammy Customer`的訂單已在此資料表上建立兩行，因為訂單包含兩個不同的產品
+  * `Sammy Customer`的訂單已在此資料表上建立兩行，因為訂單包含兩個不同的產品
 * `name` — 此欄是產品的名稱
 * `product_id` — 此欄是此列所參考之產品的唯一識別碼
-   * 上方的第一列有`product_id` = 205，因為`Throwback Bellbottoms`在`entity_id`資料表上有`catalog_product_entity` / 205
+  * 上方的第一列有`product_id` = 205，因為`Throwback Bellbottoms`在`catalog_product_entity`資料表上有`entity_id` / 205
 * `order_id` — 此欄是包含這些特定訂單專案的訂單的`entity_id`
-   * 以上兩個資料列都有`order_id` = 227，因為它們都是`Sammy Customer`所下訂單的一部分，`entity_id`資料表上有`sales_flat_order` = 227
+  * 以上兩個資料列都有`order_id` = 227，因為它們都是`Sammy Customer`所下訂單的一部分，`sales_flat_order`資料表上有`entity_id` = 227
 * `qty_ordered` — 此欄是包含在此特定訂單中的產品單位數
-   * `Sammy Customer`的訂單包含兩對`Throwback Bellbottoms`
+  * `Sammy Customer`的訂單包含兩對`Throwback Bellbottoms`
 * `price` — 此欄是訂單專案的單一單位價格
-   * 在`subtotal`資料表中來自`Sammy Customer`順序的`sales_flat_order`為94.85，這是兩個`Throwback Bellbottoms` （每個$39.95）和1 `V-Neck T-Shirt` (1$14.95)的配對總和。
+  * 在`sales_flat_order`資料表中來自`Sammy Customer`順序的`subtotal`為94.85，這是兩個`Throwback Bellbottoms` （每個$39.95）和1 `V-Neck T-Shirt` (1$14.95)的配對總和。

@@ -4,29 +4,43 @@ description: 瞭解如何透過VPN而非SSH通道連線資料庫。
 exl-id: c7aa564d-42de-426e-92e9-f6e250a6abba
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-TQID: https://experienceleague.adobe.com/0B7swwGIgBemitnx8Q4tyN8VtqwzcA-DYZdXHqzyNAk
+TQID: 'https://experienceleague.adobe.com/0B7swwGIgBemitnx8Q4tyN8VtqwzcA-DYZdXHqzyNAk'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 414
-ht-degree: 0%
-
+source-wordcount: '422'
+ht-degree: 1%
 ---
-
 # 透過VPN連線資料庫
 
 雖然Adobe建議您使用`SSH tunnel`連線資料庫，但您也可以使用加密的`VPN`連線來確保安全。 如需SSH主機金鑰註冊、錯誤及SSH通道連線疑難排解，請參閱[SSH主機金鑰驗證](ssh-host-key-verification.md)。 `VPN`可用於任何資料庫整合，而且為了保持簡單，程式與設定`SSH tunnel`幾乎相同：
@@ -66,10 +80,10 @@ ht-degree: 0%
 * `Username`： [!DNL Commerce Intelligence]資料庫使用者的使用者名稱
 * `Password`： [!DNL Commerce Intelligence]資料庫使用者的密碼
 * `Port`：您伺服器上的資料庫連線埠。 預設值為：
-   * `MicrosoftSQL`: `1433`
-   * `MongoDB`: `27017`
-   * `MySQL`: `3306`
-   * `PostgreSQL`: `5432`
+  * `MicrosoftSQL`: `1433`
+  * `MongoDB`: `27017`
+  * `MySQL`: `3306`
+  * `PostgreSQL`: `5432`
 * `Host`：預設為localhost `127.0.0.1`，但也可以是伺服器的公用IP位址或區域網路位址。
 * `Database Name (optional)`：如果您只允許存取一個資料庫（這是在資料庫使用者建立步驟中指定的），請在這裡輸入該資料庫的名稱。
 

@@ -4,32 +4,49 @@ description: 檢閱Commerce Intelligence中的quote_item表格結構描述，此
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/wLNm1g1L6-0Ded-bZT991KvJi3dVO6zA4i2qftiX2J0
+TQID: 'https://experienceleague.adobe.com/wLNm1g1L6-0Ded-bZT991KvJi3dVO6zA4i2qftiX2J0'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 704
+source-wordcount: '704'
 ht-degree: 0%
-
 ---
-
 # quote_item表格
 
 `quote_item`資料表（`sales_flat_quote_item`位於M1）包含每個新增至購物車的專案的記錄，無論購物車是否捨棄或轉換為購買。 每一列代表一個購物車專案。 由於此表格可能會有相當的大小，Adobe建議您在符合某些條件時（例如有任何未轉換的購物車超過60天）定期刪除記錄。
@@ -42,13 +59,13 @@ ht-degree: 0%
 
 | **資料行名稱** | **描述** |
 |---|---|
-| `base_price` | 在套用[目錄價格規則、分層折扣和特殊定價](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/pricing/pricing-advanced)之後，以及在套用任何稅捐、運費或購物車折扣之前，將專案新增到購物車時產品的個別單位價格。 以商店的基本貨幣表示。 |
+| `base_price` | 在套用[目錄價格規則、分層折扣和特殊定價](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced)之後，以及在套用任何稅捐、運費或購物車折扣之前，將專案新增到購物車時產品的個別單位價格。 以商店的基本貨幣表示。 |
 | `created_at` | 購物車專案的建立時間戳記，以UTC儲存在本機。 視您在[!DNL Commerce Intelligence]中的設定而定，此時間戳記可能會轉換為[!DNL Commerce Intelligence]中與您的資料庫時區不同的報表時區 |
 | `item_id` (PK) | 表格的唯一識別碼 |
 | `name` | 訂單專案的文字名稱 |
 | `parent_item_id` | 將簡單產品與其上層組合或可設定產品相關的`Foreign key`。 加入`quote_item.item_id`以決定與簡單產品相關聯的父產品屬性。 對於上層購物車專案（也就是套件或可設定的產品型別），`parent_item_id`是`NULL` |
 | `product_id` | 與`catalog_product_entity`資料表關聯的`Foreign key`。 加入`catalog_product_entity.entity_id`以決定與訂單專案相關聯的產品屬性 |
-| `product_type` | 已新增至購物車的產品型別。 潛在的[產品型別](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/product-create#product-types)包括：簡單、可設定、群組、虛擬、套件組合和可下載 |
+| `product_type` | 已新增至購物車的產品型別。 潛在的[產品型別](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/product-create#product-types)包括：簡單、可設定、群組、虛擬、套件組合和可下載 |
 | `qty` | 特定購物車專案包含在購物車中的單位數量 |
 | `quote_id` | 與`quote`資料表關聯的`Foreign key`。 加入`quote.entity_id`以決定與購物車專案相關聯的購物車屬性 |
 | `sku` | 適用於購物車專案的唯一識別碼 |
@@ -62,7 +79,7 @@ ht-degree: 0%
 |---|---|
 | `Cart creation date` | 與購物車建立日期相關聯的時間戳記。 將`quote_item.quote_id`加入`quote.entity_id`並傳回`created_at`時間戳記即可計算 |
 | `Cart is active? (1/0)` | 如果購物車是由客戶建立且尚未轉換為訂單，則傳回「1」的布林欄位。 針對轉換後的購物車或透過管理員建立的購物車，傳回「0」。 透過加入`quote_item.quote_id`至`quote.entity_id`並傳回`is_active`欄位進行計算 |
-| `Cart item total value (qty * base_price)` | 在套用[目錄價格規則、階層折扣和特殊定價](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/pricing/pricing-advanced)之後，以及在套用任何稅捐、運費或購物車折扣之前，將專案新增至購物車時的專案總值。 計算方式為`qty`乘以`base_price` |
+| `Cart item total value (qty * base_price)` | 在套用[目錄價格規則、階層折扣和特殊定價](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced)之後，以及在套用任何稅捐、運費或購物車折扣之前，將專案新增至購物車時的專案總值。 計算方式為`qty`乘以`base_price` |
 | `Seconds since cart creation` | 從購物車建立日期到現在之間經過的時間。 透過加入`quote_item.quote_id`至`quote.entity_id`並傳回`Seconds since cart creation`欄位進行計算 |
 | `Store name` | 與訂單專案相關聯的Commerce商店名稱。 透過加入`sales_order_item.store_id`至`store.store_id`並傳回`name`欄位進行計算 |
 
@@ -91,7 +108,7 @@ ht-degree: 0%
 
 `quote_item`
 
-* 加入`quote_item`以建立將上層可設定或套件SKU的詳細資訊與簡單產品關聯的資料行。 若是在Data Warehouse管理員中建置，請[連絡支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)以取得設定這些計算的協助。
+* 加入`quote_item`以建立將上層可設定或套件SKU的詳細資訊與簡單產品關聯的資料行。 若是在Data Warehouse管理員中建置，請[連絡支援](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)以取得設定這些計算的協助。
   * 路徑： `quote_item.parent_item_id` （許多） => `quote_item.item_id` （一個）
 
 `store`

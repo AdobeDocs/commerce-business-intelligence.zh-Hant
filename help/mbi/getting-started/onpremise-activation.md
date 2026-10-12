@@ -1,34 +1,50 @@
 ---
-title: 啟用您的 [!DNL Adobe Commerce Intelligence] 帳戶
-description: 瞭解要聯絡誰以啟用您的 [!DNL Commerce Intelligence] 帳戶。
+title: 啟用您的[!DNL Adobe Commerce Intelligence]帳戶
+description: 瞭解要聯絡誰以啟用您的[!DNL Commerce Intelligence]帳戶。
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-TQID: https://experienceleague.adobe.com/V34xz5uwqrCn716FqG5byQ6wnLwkZUccBXgJMqiSdR4
+TQID: 'https://experienceleague.adobe.com/V34xz5uwqrCn716FqG5byQ6wnLwkZUccBXgJMqiSdR4'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 767
+source-wordcount: '769'
 ht-degree: 0%
-
 ---
-
 # 啟用您的[!DNL Commerce Intelligence]帳戶以進行內部部署和入門訂閱
 
 若要針對內部部署訂閱啟用[!DNL Commerce Intelligence]，請先建立[!DNL Commerce Intelligence]帳戶、輸入您的設定資訊，然後將[!DNL Commerce Intelligence]連線至您的[!DNL Commerce]資料庫。<!-- For information about activation in `Cloud Starter` projects, see [Activating your [!DNL Commerce Intelligence] Account for `Cloud Starter` Subscriptions](../getting-started/cloud-activation.md).-->
@@ -41,7 +57,7 @@ ht-degree: 0%
 
 建立帳戶之後，請檢視電子郵件中是否有來自[!DNL The Magento BI Team@rjmetrics.com]的帳戶通知電子郵件。 使用電子郵件中提供的連結來存取您的[!DNL Commerce Intelligence]帳戶並建立密碼。 移至您的收件匣並驗證您的電子郵件地址。
 
-如果您沒有收到電子郵件，[請連絡支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
+如果您沒有收到電子郵件，[請連絡支援](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
 
 ![為新的Commerce Intelligence帳戶建立密碼畫面](../assets/create-account-4.png)
 
@@ -132,15 +148,15 @@ ht-degree: 0%
 
 [!UICONTROL Integration Name]： [為您的[!DNL Commerce Intelligence]執行個體選擇名稱]
 
-[!UICONTROL Host]&#x200B;: `mbi.internal`
+[!UICONTROL Host]: `mbi.internal`
 
-[!UICONTROL Port]&#x200B;: `3306`
+[!UICONTROL Port]: `3306`
 
-[!UICONTROL 使用者名稱]&#x200B;: `mbi`
+[！UICONTROL使用者名稱]: `mbi`
 
 [!UICONTROL Password]：在上一節中顯示了[輸入密碼]
 
-[!UICONTROL Database Name]&#x200B;: `main`
+[!UICONTROL Database Name]: `main`
 
 [!UICONTROL Table Prefixes]：如果沒有資料表首碼，[請留空]
 
@@ -150,7 +166,7 @@ ht-degree: 0%
 
 **輸入：**
 
-[!UICONTROL Database Timezone]&#x200B;: `UTC`
+[!UICONTROL Database Timezone]: `UTC`
 
 [!UICONTROL Desired Timezone]： [選擇要顯示資料的時區]
 
@@ -166,13 +182,13 @@ ht-degree: 0%
 
 **輸入：**
 
-[!UICONTROL Encryption Type]&#x200B;: `SSH Tunnel`
+[!UICONTROL Encryption Type]: `SSH Tunnel`
 
 [!UICONTROL Remote Address]： `ssh.us-3.magento.cloud` [來自上一個步驟]
 
 [!UICONTROL Username]： `vfbfui4vmfez6-master-7rqtwti—mymagento` [來自上一個步驟]
 
-[!UICONTROL Port]&#x200B;: `22`
+[!UICONTROL Port]: `22`
 
 ## 儲存您的整合。
 
@@ -189,7 +205,7 @@ ht-degree: 0%
 <!--
 # Activate your [!DNL Commerce Intelligence] Account
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 >[!NOTE]
 >

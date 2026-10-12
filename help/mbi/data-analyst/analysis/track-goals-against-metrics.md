@@ -4,27 +4,38 @@ description: 瞭解如何設定儀表板，協助您根據實際資料（包括�
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards, Reports
-TQID: https://experienceleague.adobe.com/gT-FJxqVg3X9fuXe-4kWErttYJ6qSMD4eqNvOITNNtQ
+TQID: 'https://experienceleague.adobe.com/gT-FJxqVg3X9fuXe-4kWErttYJ6qSMD4eqNvOITNNtQ'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 402
-ht-degree: 0%
-
+source-wordcount: '431'
+ht-degree: 6%
 ---
-
 # 根據效能度量追蹤目標
 
 大多數使用者端想要追蹤其&#x200B;**業務目標**，但未意識到這在[!DNL Adobe Commerce Intelligence]中可行。 本主題將示範如何設定儀表板，協助您根據實際資料（包括收入、新註冊使用者和一段時間內的訂單）追蹤業務目標。 您也會瞭解如何比較年度與年度績效，全都透過如下的儀表板進行：
@@ -69,48 +80,48 @@ ht-degree: 0%
 
 * 剩餘&#x200B;**個收入可達成目標**
 * 量度`A`： `Revenue`
-* &#x200B;
-  [!UICONTROL 公制]: `Revenue`
+* 
+  [！UICONTROL公制]: `Revenue`
 
 * 量度`B`： `Target Revenue`
-* [!UICONTROL Metric]： `Monthly Revenue Target`
+* [!UICONTROL Metric]: `Monthly Revenue Target`
 
-* [!UICONTROL Formula]： `Revenue left to achieve target`
-* &#x200B;
-  [!UICONTROL 公式]: `(B-A)`
-* &#x200B;
+* [!UICONTROL Formula]: `Revenue left to achieve target`
+* 
+  [！UICONTROL公式]: `(B-A)`
+* 
   [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]： （無論您想要哪個相關時段）
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
-* &#x200B;
-  [!UICONTROL 圖表型別]: `Scalar`
+* 
+  [！UICONTROL圖表型別]: `Scalar`
 
 * **收入目標**
 * 量度`A`： `Revenue`
-* &#x200B;
-  [!UICONTROL 公制]: `Revenue`
+* 
+  [！UICONTROL公制]: `Revenue`
 
 * 量度`B`： `Target Revenue`
-* [!UICONTROL Metric]： `Monthly Revenue Target`
+* [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * 量度`C`： `Revenue (amount change since previous year)` （隱藏）
-* &#x200B;
-  [!UICONTROL 公制]: `Revenue`
-* [!UICONTROL Perspective]： `Amount change vs. Previous year`
+* 
+  [！UICONTROL公制]: `Revenue`
+* [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]： （去年這個月）
-* &#x200B;
-  [!UICONTROL 公式]: `(A-C)`
-* &#x200B;
+* 
+  [！UICONTROL公式]: `(A-C)`
+* 
   [!UICONTROL Format]: `Currency`
 
 * 關閉`Multiple Y-Axes`
 * [!UICONTROL Time period]： （無論您想要哪個相關時段）*
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
-* [!UICONTROL Chart Type]： `Line Chart`
+* [!UICONTROL Chart Type]: `Line Chart`
 
 完成上述收入目標報表後，您即可針對訂單、註冊帳戶或已包含於目標檔案上傳中的任何其他值，建立相同的目標報表。
 

@@ -4,24 +4,32 @@ description: 瞭解Google Analytics來源歸因程式。
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
 role: Admin, Developer, User
 feature: Reports
-TQID: https://experienceleague.adobe.com/DIg4HPkxaY4eCXZvTS8j4eO8C-d-yqPgBkrvFD5L0ms
+TQID: 'https://experienceleague.adobe.com/DIg4HPkxaY4eCXZvTS8j4eO8C-d-yqPgBkrvFD5L0ms'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 760
+source-wordcount: '781'
 ht-degree: 0%
-
 ---
-
 # [!DNL Google Analytics]和UTM歸因
 
 [追蹤使用者贏取來源](../../data-analyst/analysis/google-track-user-acq.md)至[識別表現最佳的廣告行銷活動](../../data-analyst/analysis/most-value-source-channel.md)至關重要。 本主題探索[!DNL Google Analytics]來源歸因程式。 換句話說，會在何時記錄哪一則資訊。
@@ -42,13 +50,13 @@ ht-degree: 0%
 
 ### 最終點按歸因
 
-最後點按歸因是[!DNL Google Analytics]最常用的歸因模型。 在此案例中，[!DNL Google Analytics] Cookie代表轉換事件前最新來源的UTM引數，而這是記錄在資料庫[中的](../../data-analyst/analysis/google-track-user-acq.md)。 如果使用者點按包含新UTM引數集的新URL，[!DNL Google Analytics] Cookie只會覆寫先前的UTM引數。
+最後點按歸因是[!DNL Google Analytics]最常用的歸因模型。 在此案例中，[!DNL Google Analytics] Cookie代表轉換事件前最新來源的UTM引數，而這是記錄在資料庫](../../data-analyst/analysis/google-track-user-acq.md)中的[。 如果使用者點按包含新UTM引數集的新URL，[!DNL Google Analytics] Cookie只會覆寫先前的UTM引數。
 
-例如，假設某個使用者先透過[!DNL Google Analytics] *付費搜尋*&#x200B;造訪網站，然後透過&#x200B;*有機搜尋*&#x200B;傳回，最後在轉換事件之前直接或透過&#x200B;*電子郵件連結* *（不含UTM引數*）返回&#x200B;**網站**。 在此範例中，[!DNL Google Analytics] Cookie指出使用者的來源是有機的，因為這是轉換前的最後一個來源。 已忽略最終轉換事件之前使用者的&#x200B;*路徑*。 如果使用者改為透過包含UTM的電子郵件連結造訪網站，則[!DNL Google Analytics] Cookie會指出來源為「電子郵件」。 因此，如果Cookie中存在UTM引數，且使用者透過直接進入，則[!DNL Google Analytics] Cookie會顯示UTM引數而非「直接」。
+例如，假設某個使用者先透過[!DNL Google Analytics] *付費搜尋*&#x200B;造訪網站，然後透過&#x200B;*有機搜尋*&#x200B;傳回，最後在轉換事件之前直接或透過&#x200B;*電子郵件連結* **（不含UTM引數**）返回&#x200B;*網站*。 在此範例中，[!DNL Google Analytics] Cookie指出使用者的來源是有機的，因為這是轉換前的最後一個來源。 已忽略最終轉換事件之前使用者的&#x200B;*路徑*。 如果使用者改為透過包含UTM的電子郵件連結造訪網站，則[!DNL Google Analytics] Cookie會指出來源為「電子郵件」。 因此，如果Cookie中存在UTM引數，且使用者透過直接進入，則[!DNL Google Analytics] Cookie會顯示UTM引數而非「直接」。
 
 >[!NOTE]
 >
->當Cookie [!DNL Google Analytics]過期[或使用者在瀏覽器中清除其Cookie時，特定使用者的](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage) Cookie引數會被清除。*
+>當Cookie [過期](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)或使用者在瀏覽器中清除其Cookie時，特定使用者的[!DNL Google Analytics] Cookie引數會被清除。*
 
 ### 首次點按歸因
 

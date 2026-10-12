@@ -4,30 +4,45 @@ description: 瞭解如何檢查更新週期的狀態。
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/qT3lojSuve8jHgNVKoJCUW82cN2QK497wFX8NVbptWI
+TQID: 'https://experienceleague.adobe.com/qT3lojSuve8jHgNVKoJCUW82cN2QK497wFX8NVbptWI'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 32bcb9f48faa4e766972b0690f86c9813c6a9d53
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 515
+source-wordcount: '515'
 ht-degree: 0%
-
 ---
-
 # 資料和更新資訊
 
 * [我的資料為何變更？](#datachange)
@@ -63,8 +78,8 @@ ht-degree: 0%
 
 ## 為什麼[!DNL Google ECommerce]資料與我的資料庫不同？ {#ecommdatabase}
 
-[!DNL Google Analytics]和您的資料庫之間的差異可能因各種原因而產生。 追蹤功能未正確啟用、使用者造訪無痕內容，以及點選事件無法正常運作只是幾個例子。 如果您的收入和訂單看起來不正確，[請參閱此主題](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies)以診斷問題。
+[!DNL Google Analytics]和您的資料庫之間的差異可能因各種原因而產生。 追蹤功能未正確啟用、使用者造訪無痕內容，以及點選事件無法正常運作只是幾個例子。 如果您的收入和訂單看起來不正確，[請參閱此主題](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies)以診斷問題。
 
 ## 如何疑難排解資料差異？ {#datadiscrepancy}
 
-Adobe知道看到不一致的資料可能會讓人感到挫折。 請嘗試使用[資料匯出教學課程](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies)來診斷問題。 如果您仍然被截斷，[請連絡支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。
+Adobe知道看到不一致的資料可能會讓人感到挫折。 請嘗試使用[資料匯出教學課程](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies)來診斷問題。 如果您仍然被截斷，[請連絡支援](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)。

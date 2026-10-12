@@ -4,29 +4,41 @@ description: 瞭解表格的組織方式，以及表格資料的行為方式，�
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Data Import/Export
-TQID: https://experienceleague.adobe.com/zP44fYttORVvVtWgnykRswpsh9VwdqYbfwt1aJqWJdE
+TQID: 'https://experienceleague.adobe.com/zP44fYttORVvVtWgnykRswpsh9VwdqYbfwt1aJqWJdE'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1442
+source-wordcount: '1464'
 ht-degree: 0%
-
 ---
-
 # 設定復寫方法
 
 使用`Replication`方法和[重新檢查](../data-warehouse-mgr/cfg-data-rechecks.md)來識別資料庫表格中的新資料或更新資料。 正確設定這些變數對於確保資料正確性和最佳化更新時間至關重要。 本主題著重於復寫方法。
@@ -53,7 +65,7 @@ ht-degree: 0%
 * `datetime`資料行絕不為Null；
 * 不會從表格中刪除列
 
-除了這些條件外，Adobe還建議為用於&#x200B;**復寫的**&#x200B;資料行`datetime`編制索引`Modified At`，因為這有助於最佳化復寫速度。
+除了這些條件外，Adobe還建議為用於`Modified At`復寫的`datetime`資料行&#x200B;**編制索引**，因為這有助於最佳化復寫速度。
 
 當更新執行時，透過搜尋在最近更新之後發生的`datetime`欄中有值的列，可識別新資料或已變更的資料。 探索到新列時，會將它們復寫到您的Data Warehouse。 如果[Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)中有任何資料列存在，則會以目前的資料庫值覆寫。
 
@@ -128,7 +140,7 @@ ht-degree: 0%
    >
    >**有些增量方法需要您設定`Replication Key`**。 [!DNL Commerce Intelligence]將使用此索引鍵來決定下一個更新週期應該從何處開始。
    >
-   >例如，如果您想要對`modified at`資料表使用`orders`方法，您必須將`date column`設定為復寫金鑰。 復寫金鑰可能有數個選項，但您選取`created at`或建立訂單的時間。 如果上次更新週期在12/1/2015 00:10:00停止，則下一個週期會開始複製日期大於此日期的`created at`資料。
+   >例如，如果您想要對`orders`資料表使用`modified at`方法，您必須將`date column`設定為復寫金鑰。 復寫金鑰可能有數個選項，但您選取`created at`或建立訂單的時間。 如果上次更新週期在12/1/2015 00:10:00停止，則下一個週期會開始複製日期大於此日期的`created at`資料。
 
 1. 完成時，按一下&#x200B;**[!UICONTROL Save]**。
 
@@ -151,6 +163,6 @@ ht-degree: 0%
 ## 相關檔案
 
 * [瞭解資料重新檢查](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [修改資料庫以支援 &#x200B;](../../best-practices/mod-db-inc-replication.md)
+* [正在修改您的資料庫以支援`Incremental`復寫](../../best-practices/mod-db-inc-replication.md)
 * [最佳化資料庫以進行分析](../../best-practices/opt-db-analysis.md)
 * [縮短更新時間](../../best-practices/reduce-update-cycle-time.md)

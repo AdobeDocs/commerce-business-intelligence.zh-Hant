@@ -4,27 +4,36 @@ description: 瞭解如何建立分析以瞭解目前客戶的期限值，並預�
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/bGbpknj6UfM8k995EnptIRfwZsvYTNo8-kzF9HrALQk
+TQID: 'https://experienceleague.adobe.com/bGbpknj6UfM8k995EnptIRfwZsvYTNo8-kzF9HrALQk'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 338
-ht-degree: 0%
-
+source-wordcount: '392'
+ht-degree: 13%
 ---
-
 # 預期期限值分析
 
 預測客戶下更多訂單時的期限值是任何規模企業最重要的方面之一。
@@ -37,18 +46,18 @@ ht-degree: 0%
 
 第一步是透過下列步驟建構新的量度：
 * 瀏覽至&#x200B;**[!UICONTROL Manage Data > Metrics]**
-   * 檢視現有的&#x200B;**[!UICONTROL Avg lifetime revenue]**。
+  * 檢視現有的&#x200B;**[!UICONTROL Avg lifetime revenue]**。
 
   >[!NOTE]
   >
   >此量度建構於的資料表（可能是`customer_entity`或`sales_order`，視您的存放區接受訪客結帳的能力而定。）
 
-   * 按一下&#x200B;**[!UICONTROL Create New Metric]**&#x200B;並從上方選取表格。
-   * 此量度在&#x200B;**欄上執行**&#x200B;中位數`Customer's lifetime revenue`，排序依據`created_at`。
-      * [!UICONTROL Filters]：
-         * 新增`Customers we count (Saved Filter Set)` （或`Registered accounts we count`）
+  * 按一下&#x200B;**[!UICONTROL Create New Metric]**&#x200B;並從上方選取表格。
+  * 此量度在`Customer's lifetime revenue`欄上執行&#x200B;**中位數**，排序依據`created_at`。
+    * [!UICONTROL Filters]:
+      * 新增`Customers we count (Saved Filter Set)` （或`Registered accounts we count`）
 
-   * 為量度命名，例如`Median lifetime revenue`。
+  * 為量度命名，例如`Median lifetime revenue`。
 
 ## 建立您的控制面板
 
@@ -65,41 +74,41 @@ ht-degree: 0%
 >在&#x200B;**[!UICONTROL Time Period:]**，每個報表的時段會列為`All-time`。 您可以根據分析需求隨意變更。 Adobe建議此儀表板上的所有報告涵蓋相同時段，例如`All time`、`Year-to-date`或`Last 365 days`。
 
 * **[!UICONTROL Average LTV (all)]**
-   * [!UICONTROL Metric]： `Avg lifetime revenue`
-   * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 間隔]: `None`
-   * [!UICONTROL Chart Type]： `Number (scalar)`
+  * [!UICONTROL Metric]: `Avg lifetime revenue`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [！UICONTROL間隔]: `None`
+  * [!UICONTROL Chart Type]: `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
-   * [!UICONTROL Metric]： `Avg lifetime revenue`
-      * 新增[!UICONTROL filters]：
-         * [`A`] `Customer's group code` **不等於** `Not Logged In`
-         * [`B`] `Customer's lifetime number of orders` **大於**`0`
+  * [!UICONTROL Metric]: `Avg lifetime revenue`
+    * 新增[!UICONTROL filters]：
+      * [`A`] `Customer's group code` **不等於** `Not Logged In`
+      * [`B`] `Customer's lifetime number of orders` **大於**`0`
 
-   * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 間隔]: `None`
-   * [!UICONTROL Chart Type]： `Number (scalar)`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [！UICONTROL間隔]: `None`
+  * [!UICONTROL Chart Type]: `Number (scalar)`
 
 * **[!UICONTROL Average and Median LTV]**
-   * 量度`1`： `Avg lifetime revenue`
-   * 量度`2`： `Median lifetime revenue`
-   * [!UICONTROL Time period]： `All time`
-   * [!UICONTROL Interval]： `By Month`
-   * &#x200B;
-     [!UICONTROL 圖表型別]: `Line`
-   * 取消核取`Multiple Y-Axes`
+  * 量度`1`： `Avg lifetime revenue`
+  * 量度`2`： `Median lifetime revenue`
+  * [!UICONTROL Time period]: `All time`
+  * [!UICONTROL Interval]: `By Month`
+  * 
+    [！UICONTROL圖表型別]: `Line`
+  * 取消核取`Multiple Y-Axes`
 
 * **LTV （依存留期訂單數）**
-   * 量度`1`： `Avg lifetime revenue`
-   * 量度`2`： `New customers`
-   * [!UICONTROL Time period]： `All time`
-   * &#x200B;
-     [!UICONTROL 間隔]: `None`
-   * [!UICONTROL Group by]： `Customer's lifetime number of orders`
-   * &#x200B;
-     [!UICONTROL 圖表型別]: `Line`
+  * 量度`1`： `Avg lifetime revenue`
+  * 量度`2`： `New customers`
+  * [!UICONTROL Time period]: `All time`
+  * 
+    [！UICONTROL間隔]: `None`
+  * [!UICONTROL Group by]: `Customer's lifetime number of orders`
+  * 
+    [！UICONTROL圖表型別]: `Line`
 
   >[!NOTE]
   >

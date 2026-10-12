@@ -4,29 +4,41 @@ description: 瞭解評估行銷活動績效的幾種不同方法。
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
-TQID: https://experienceleague.adobe.com/teo53W9N30xpRRE1nUupBLKJnl1kUK4zt-roFGiulGU
+TQID: 'https://experienceleague.adobe.com/teo53W9N30xpRRE1nUupBLKJnl1kUK4zt-roFGiulGU'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 1cf9e104-5756-5a15-85a5-38be6a065d7f
+    internal-label: Campaigns
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Troubleshooting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1265
+source-wordcount: '1265'
 ht-degree: 0%
-
 ---
-
 # Advertising行銷活動與ROI
 
 [!DNL Adobe Commerce Intelligence]可讓您從資料庫輕鬆[結合廣告成本資料和收入資料](../../data-analyst/importing-data/integrations/google-adwords.md)。 這可幫助您識別哪些行銷活動具有最高的投資報酬率(ROI)。 本主題會探索幾種評估行銷活動績效的不同方法。
@@ -115,7 +127,7 @@ ht-degree: 0%
 >
 >此範例假設所有行銷活動成本都專門用於產生特定產品的購買。 假設所有成本都花在產生購買上，則產生的ROI會考慮最壞的情況（最高每次購買成本）。 您可以確定您的實際ROI高於此計算。 範例：假設您在產生10名新使用者和10次購買的行銷活動上花費$20，則您的每次購買實際成本為$1。 假設所有成本都是為了取得新使用者，則每次購買的成本為$2。
 
-開始之前，[送出支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)以將下列維度聯結到您的行專案表格(`sales\_flat\_order\_item, order\_item`)：
+開始之前，[送出支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)以將下列維度聯結到您的行專案表格(`sales\_flat\_order\_item, order\_item`)：
 
 * 訂單的來源（如果您只追蹤使用者層級的轉介來源，則加入使用者的來源）
 * 訂單的行銷活動（如果您只追蹤使用者層級的轉介來源，則加入使用者的行銷活動）
@@ -152,5 +164,5 @@ ht-degree: 0%
 * [追蹤資料庫中的使用者裝置、瀏覽器和作業系統資料](../analysis/track-usr-dev-browser.md)
 * [探索您最有價值的贏取來源和管道](../analysis/most-value-source-channel.md)
 * [連線您的 [!DNL Google Adwords] 帳戶](../importing-data/integrations/google-adwords.md)
-* [&#x200B; [!DNL Google Analytics] UTM歸因如何運作？](../analysis/utm-attributes.md)
+* [ [!DNL Google Analytics] UTM歸因如何運作？](../analysis/utm-attributes.md)
 * [在 [!DNL Google Analytics]中進行UTM標籤的五個最佳實務](../../best-practices/utm-tagging-google.md)

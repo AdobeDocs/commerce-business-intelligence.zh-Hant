@@ -4,26 +4,36 @@ description: 瞭解如何依使用者贏取來源劃分資料。
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
-TQID: https://experienceleague.adobe.com/nqiC-AsuhdcOrxqFsW9ZqRZvlL8Ndu9xmNrTi-pvgv8
+TQID: 'https://experienceleague.adobe.com/nqiC-AsuhdcOrxqFsW9ZqRZvlL8Ndu9xmNrTi-pvgv8'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 751
-ht-degree: 1%
-
+source-wordcount: '791'
+ht-degree: 3%
 ---
-
 # 依使用者贏取來源細分
 
 >[!NOTE]
@@ -40,7 +50,7 @@ ht-degree: 1%
 
 ### （選項1）透過[!DNL Google Analytics E-Commerce]追蹤訂單轉介來源資料
 
-如果您使用[!DNL Google Analytics E-Commerce]追蹤您的訂單與銷售資料，則可以使用[[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md)同步每個訂單的轉介來源資料。 這可讓您依反向連結來源（例如，`utm_source`或`utm_medium`）來劃分收入與訂單。 您也可透過[!DNL Commerce Intelligence]自訂維度（例如`User's first order source`）瞭解客戶贏取來源。
+如果您使用[!DNL Google Analytics E-Commerce]追蹤您的訂單與銷售資料，則可以使用[!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md)同步每個訂單的轉介來源資料。 這可讓您依反向連結來源（例如，`utm_source`或`utm_medium`）來劃分收入與訂單。 您也可透過[!DNL Commerce Intelligence]自訂維度（例如`User's first order source`）瞭解客戶贏取來源。
 
 ### （選項2）將[!DNL Google Analytics]的贏取來源資料儲存在資料庫中
 
@@ -64,7 +74,7 @@ ht-degree: 1%
 
 很明顯有些贏取來源資料會編碼為字串。 測試以確認這是訪客的最新贏取來源和相關聯的行銷活動資料。 現在您需要瞭解如何擷取資料。
 
-此程式碼已轉譯為github[上託管的](https://github.com/RJMetrics/referral-grabber-php)PHP程式庫。 若要使用程式庫，`include`對`ReferralGrabber.php`的參照，然後呼叫
+此程式碼已轉譯為github](https://github.com/RJMetrics/referral-grabber-php)上託管的[PHP程式庫。 若要使用程式庫，`include`對`ReferralGrabber.php`的參照，然後呼叫
 
 `$data = ReferralGrabber::parseGoogleCookie($_COOKIE['__utmz']);`
 
@@ -114,4 +124,4 @@ Adobe建議將名為`user_referral`的資料表新增至您的資料庫，其資
 * **[探索您最有價值的贏取來源和管道](../analysis/most-value-source-channel.md)**
 * **[連線您的 [!DNL Google Adwords] 帳戶](../importing-data/integrations/google-adwords.md)**
 * **[提高廣告行銷活動的ROI](../analysis/roi-ad-camp.md)**
-* **[&#x200B; [!DNL Google Analytics] UTM歸因如何運作？](../analysis/utm-attributes.md)**
+* **[ [!DNL Google Analytics] UTM歸因如何運作？](../analysis/utm-attributes.md)**

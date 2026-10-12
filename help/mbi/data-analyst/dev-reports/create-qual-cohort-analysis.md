@@ -4,30 +4,43 @@ description: 瞭解什麼是質化同類群組、您為什麼可能有興趣建�
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/XOdXVSRzCzVPNWv9N58Ddheo-h5kO-3UZFiAwGDzXzQ
+TQID: 'https://experienceleague.adobe.com/XOdXVSRzCzVPNWv9N58Ddheo-h5kO-3UZFiAwGDzXzQ'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Insights
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 861
+source-wordcount: '861'
 ht-degree: 0%
-
 ---
-
 # 建立`Qualitative Cohort Analysis`
 
 您知道與透過有機搜尋取得的客戶相比，您取得[!DNL Google Adwords]的客戶區段的LTV成長方式嗎？ 您是否曾考慮在相同報表中並排執行不同客戶區段的`cohort`分析？ 若是如此，`qualitative cohort analysis`可協助您回答這些問題。
@@ -54,7 +67,7 @@ ht-degree: 0%
 
 在`Report Builder`中建立`qualitative cohort`報告時，Adobe分析團隊會在必要的資料表上建立一些[進階計算資料行](../data-warehouse-mgr/creating-calculated-columns.md)。
 
-若要建置這些專案，請提交[支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) （並參考此文章！）。 以下是您需要瞭解的事項：
+若要建置這些專案，請提交[支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) （並參考此文章！）。 以下是您需要瞭解的事項：
 
 * 您要使用執行同類群組分析的`metric`及其使用的表格（範例： `Revenue`，建置在`orders`表格上）。
 

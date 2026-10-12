@@ -1,33 +1,48 @@
 ---
 title: 來賓訂單
-description: 瞭解訪客訂單對您資料的影響，以及在 [!DNL Commerce Intelligence] Data Warehouse中正確說明訪客訂單的選項。
+description: 瞭解訪客訂單對您資料的影響，以及在[!DNL Commerce Intelligence] Data Warehouse中正確說明訪客訂單的選項。
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/leSf21lcOaEbm1aehC8iZLdbtRJFKK9yVQwdvft-GKQ
+TQID: 'https://experienceleague.adobe.com/leSf21lcOaEbm1aehC8iZLdbtRJFKK9yVQwdvft-GKQ'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 566
+source-wordcount: '568'
 ht-degree: 0%
-
 ---
-
 # 賓客訂單
 
 在檢閱您的訂單時，如果您發現許多`customer\_id`值為空，或沒有可連線回`customers`表格的值，這表示您的商店允許訪客訂單。 這表示您的`customers`資料表很可能並未包含您的所有客戶。
@@ -42,7 +57,7 @@ ht-degree: 0%
 
   ![客服訂單資料表顯示客戶資訊](../../assets/guest-orders-4.png)
 
-* **如果允許來賓訂單**，這表示某些訂單在`customer\_id`欄中沒有值。 在`customer\_id`資料表上，`orders`資料行的值只提供給已註冊客戶。 未註冊的客戶會收到此欄的`NULL` （或空白）值。 因此，並非所有訂單記錄在`customers`資料表中都有相符的記錄。
+* **如果允許來賓訂單**，這表示某些訂單在`customer\_id`欄中沒有值。 在`orders`資料表上，`customer\_id`資料行的值只提供給已註冊客戶。 未註冊的客戶會收到此欄的`NULL` （或空白）值。 因此，並非所有訂單記錄在`customers`資料表中都有相符的記錄。
 
   >[!NOTE]
   >
@@ -62,7 +77,7 @@ ht-degree: 0%
 
 在來賓訂單設定中，所有客戶量度都以`orders`資料表為基礎，以說明來賓訂單，您必須確保您是`not counting customers twice`。 如果您計算訂單表格的ID，則會計算每個訂單。 如果您改為計算`orders`資料表上的ID並使用篩選器`Customer's order number = 1`，則您將會計算每個唯一客戶`only one time`。 這適用於所有客戶層級的量度，例如`Customer's lifetime revenue`或`Customer's lifetime number of orders`。
 
-您可以在上方看到`customer\_ids`資料表中有Null `orders`。 如果您使用`customer\_email`識別不重複客戶，可以看到`erin@test.com`已下三(3)份訂單。 因此，您可以根據下列條件在`New customers`資料表上建置`orders`量度：
+您可以在上方看到`orders`資料表中有Null `customer\_ids`。 如果您使用`customer\_email`識別不重複客戶，可以看到`erin@test.com`已下三(3)份訂單。 因此，您可以根據下列條件在`orders`資料表上建置`New customers`量度：
 
 * `Operation table = orders`
 * `Operation column = id`

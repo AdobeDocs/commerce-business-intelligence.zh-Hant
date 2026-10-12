@@ -4,29 +4,41 @@ description: 瞭解如何使用量度建立圖表。
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/xPbHndhmDdKugylEyPC3yXwMQHHF7FdMvJI7ZNDk-Yo
+TQID: 'https://experienceleague.adobe.com/xPbHndhmDdKugylEyPC3yXwMQHHF7FdMvJI7ZNDk-Yo'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Measurement
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 612
+source-wordcount: '612'
 ht-degree: 0%
-
 ---
-
 # 建立量度
 
 >[!NOTE]
@@ -37,7 +49,7 @@ ht-degree: 0%
 
 在[!DNL Commerce Intelligence]中，您可以使用量度來[建立圖表](../../data-user/reports/ess-rpt-build-visual.md)。 例如，量度`revenue`是訂單總數。 量度`average customer revenue per order`是平均客戶每筆訂單花費的金額。
 
-在報表中使用時，可以在指定的時段內分析量度，並依不同類別篩選或分段[&#128279;](../../best-practices/segment-filter.md)。 請考慮分析依性別分組的平均客戶收入 — 在此案例中，`average customer revenue per order`是量度，而性別是分組。
+在報表中使用時，可以在指定的時段內分析量度，並依不同類別篩選或分段[](../../best-practices/segment-filter.md)。 請考慮分析依性別分組的平均客戶收入 — 在此案例中，`average customer revenue per order`是量度，而性別是分組。
 
 ## 定義量度 {#define}
 
@@ -54,15 +66,15 @@ ht-degree: 0%
 1. 下一步是定義量度的功能。 使用下拉式功能表，定義量度的作業、`operation`欄及`date`維度：
 
    * 選擇作業：
-      * `Count` — 此作業會計算資料表中的列數
-      * `Max` - Max會傳回特定資料欄的最大值
-      * `Min` - Min會傳回特定資料欄的最小值
-      * `Sum` — 此作業會加總特定資料欄的值
-      * `Average` — 此作業會計算資料欄值的平均值
-      * `Count Distinct Value` — 這會計算特定資料欄中值的唯一數目
-      * `Median` — 此作業會計算資料欄值的中位數
-      * `First and Third Quartiles` — 這些作業會分別計算資料欄值的第25個百分位和第75個百分位
-      * `Tenth and Ninetieth Percentiles` — 這些作業會分別計算資料欄值的第10個百分位和第90個百分位
+     * `Count` — 此作業會計算資料表中的列數
+     * `Max` - Max會傳回特定資料欄的最大值
+     * `Min` - Min會傳回特定資料欄的最小值
+     * `Sum` — 此作業會加總特定資料欄的值
+     * `Average` — 此作業會計算資料欄值的平均值
+     * `Count Distinct Value` — 這會計算特定資料欄中值的唯一數目
+     * `Median` — 此作業會計算資料欄值的中位數
+     * `First and Third Quartiles` — 這些作業會分別計算資料欄值的第25個百分位和第75個百分位
+     * `Tenth and Ninetieth Percentiles` — 這些作業會分別計算資料欄值的第10個百分位和第90個百分位
 
    * 選擇要對其執行作業的欄。 例如，如果您想要尋找總收入，可在`order total`欄上執行加總作業。
 

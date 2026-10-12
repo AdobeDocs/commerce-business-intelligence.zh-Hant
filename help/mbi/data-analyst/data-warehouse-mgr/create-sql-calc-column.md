@@ -4,57 +4,76 @@ description: 瞭解如何在新的Adobe Commerce Intelligence架構上以SQL計�
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-TQID: https://experienceleague.adobe.com/DePK-zuSTUhzOSCc121Yev7BXUhjEkwEGYtAgdSaguM
+TQID: 'https://experienceleague.adobe.com/DePK-zuSTUhzOSCc121Yev7BXUhjEkwEGYtAgdSaguM'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: c38ccf61-5a4f-5140-ad2b-c3434e82ed6d
+    internal-label: SQL Report Builder
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 839
+source-wordcount: '846'
 ht-degree: 0%
-
 ---
-
 # 建立SQL計算資料行
 
 此主題概述`Calculation`資料行型別的用途和用途，可以使用[Data Warehouse管理員](../data-warehouse-mgr/tour-dwm.md)將其新增到表格。 以下說明SQL計算的用途、使用它們的原因、建立SQL計算的程式，並包含兩個範例。
 
 **說明**
 
-在過去，被視為`advanced`的欄只能由位於[!DNL Adobe Commerce Intelligence]的客戶成功團隊分析師完成。 現在，所有功能都由一般使用者掌握，而且可以在新的`SQL Calculation`架構上以[!DNL Commerce Intelligence]欄的形式建立進階欄。
+在過去，被視為`advanced`的欄只能由位於[!DNL Adobe Commerce Intelligence]的客戶成功團隊分析師完成。 現在，所有功能都由一般使用者掌握，而且可以在新的[!DNL Commerce Intelligence]架構上以`SQL Calculation`欄的形式建立進階欄。
 
-`Calculation`欄型別（現在可作為Data Warehouse Manager中的選項）與允許您使用PostgreSQL邏輯轉換表格上的欄的表格作業相同。 您可以在PostgreSQL網站`Calculation`此處[找到可以在](https://www.postgresql.org/docs/9.6/functions.html)資料行型別中使用的函式和運運算元的相關檔案。
+`Calculation`欄型別（現在可作為Data Warehouse Manager中的選項）與允許您使用PostgreSQL邏輯轉換表格上的欄的表格作業相同。 您可以在PostgreSQL網站[此處](https://www.postgresql.org/docs/9.6/functions.html)找到可以在`Calculation`資料行型別中使用的函式和運運算元的相關檔案。
 
 可以使用`Calculation`資料行建立的不同資料行幾乎不受限制，但大部分的資料行可以使用IF-THEN陳述式與基本算術來建立，這可用於下列範例。
 
 **範例1：客戶的上次訂單是否？**
 
-大多數帳戶的`Is customer's last order?`表格中都有名為`orders`的欄，以分析重複購買率和流失的客戶。 如果您的帳戶使用新架構，則此欄是使用`Calculation`欄建置的，並可在以下熒幕擷取中看見：
+大多數帳戶的`orders`表格中都有名為`Is customer's last order?`的欄，以分析重複購買率和流失的客戶。 如果您的帳戶使用新架構，則此欄是使用`Calculation`欄建置的，並可在以下熒幕擷取中看見：
 
 用於識別客戶最後訂單的![SQL計算資料行定義](../../assets/Is_customer_s_last_order.png)
 
-`Is customer's last order?`資料行使用分別別為`Customer's lifetime number of orders`和`Customer's order number`的輸入`A`和`B`。
+`Is customer's last order?`資料行使用分別別為`A`和`B`的輸入`Customer's lifetime number of orders`和`Customer's order number`。
 
 逐行，PostgreSQL的含義是：
 
 * 案例：這會從一連串If - Then陳述式開始
 * 當`A`為Null或`B`為Null時則為Null：如果任一輸入為空白，則輸出也應為空白。 這是為了防止SQL錯誤
-* 當`A=B`然後`Yes`：如果這個資料列的`Customer's lifetime number of orders`等於`Customer's order number`，則傳回`Yes`。 因此，如果客戶已下四份訂單，則第四份訂單的列會傳回`Yes`的`Is customer's last order?`
+* 當`A=B`然後`Yes`：如果這個資料列的`Customer's lifetime number of orders`等於`Customer's order number`，則傳回`Yes`。 因此，如果客戶已下四份訂單，則第四份訂單的列會傳回`Is customer's last order?`的`Yes`
 * else `No`：如果其他陳述式都不符合，則傳回`No`
 * end：這會結束If - Then陳述式
 
@@ -64,17 +83,17 @@ ht-degree: 0%
 
 許多使用者端都喜歡在專案層級分析收入，並依`product name`或`category`之類的欄位進行分割。 大部分的資料庫實際上並不會提供您訂單中產品的收入，而是提供訂單中售出的數量及料號的價格。
 
-若要啟用產品收入分析，大部分帳戶的`Order item total value (quantity * price)`表格中都有名為`Orders Items`的欄。 如果您的帳戶使用新架構，則此欄也是使用`Calculation`欄建置的，並可在以下熒幕擷圖中看到：
+若要啟用產品收入分析，大部分帳戶的`Orders Items`表格中都有名為`Order item total value (quantity * price)`的欄。 如果您的帳戶使用新架構，則此欄也是使用`Calculation`欄建置的，並可在以下熒幕擷圖中看到：
 
 訂單專案總計值的![SQL計算資料行定義](../../assets/Order_item_total_value.png)
 
-在Commerce結構描述中，`Order item total value (quantity * price)`資料行使用分別別為`qty ordered`和`base price`的輸入`A`和`B`。
+在Commerce結構描述中，`Order item total value (quantity * price)`資料行使用分別別為`A`和`B`的輸入`qty ordered`和`base price`。
 
 此新欄傳回的值是美元和美分，因此正確的資料型別為`Decimal(10,2)`。
 
 **機械**
 
-導覽至`Calculation`，可將新的&#x200B;**[!DNL Manage Data > Data Warehouse]**&#x200B;資料行新增至資料表，如下所示：
+導覽至&#x200B;**[!DNL Manage Data > Data Warehouse]**，可將新的`Calculation`資料行新增至資料表，如下所示：
 
 ![顯示計算資料行結果的資料表檢視](../../assets/blobid2.png)
 

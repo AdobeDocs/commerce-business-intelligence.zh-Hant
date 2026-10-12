@@ -4,29 +4,41 @@ description: 瞭解Google Analytics中UTM追蹤（標籤）的最佳實務。
 exl-id: 70bfd855-3b3f-469b-99bc-deb8251904b7
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-TQID: https://experienceleague.adobe.com/IX5oaIr8tbUUeA3ZrIQNUMnG8ApXMBS1hcpecqFW8kg
+TQID: 'https://experienceleague.adobe.com/IX5oaIr8tbUUeA3ZrIQNUMnG8ApXMBS1hcpecqFW8kg'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+    internal-label: Email marketing
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 450
-ht-degree: 0%
-
+source-wordcount: '461'
+ht-degree: 1%
 ---
-
 # UTM追蹤
 
 `UTM`追蹤是URL的標籤慣例，可讓您分析使用者的來源。 如果您檢視您從大多數行銷電子郵件或橫幅廣告點按的URL，您會看到UTM標籤。 是那些以`utm\_source`和`utm\_medium`之類的結尾的長連結。
@@ -37,23 +49,23 @@ ht-degree: 0%
 
 以下列出使用`UTM`標籤設定您的URL時應記住的五個最重要事項。
 
-### 1.請務必標籤您可以控制的所有網站URL
+### &#x200B;1. 目標是標籤您可以控制的每個URL來您的網站
 
 每次要求人員按一下連結時，您都應該設定`UTM`標籤。 這包括您的所有電子郵件連結（您的電子郵件服務供應商可能會自動標籤您的URL）、廣告連結、新聞文章、部落格。
 
-### 2.使用工具建立URL
+### &#x200B;2. 使用工具來建立URL
 
-`UTM`標籤的URL可能很麻煩。 不要嘗試輸入長整數，請使用類似此[的工具](https://support.google.com/analytics/answer/1033867?hl=en)來協助您。 這可確保您考慮將所有合理的引數新增到URL中，並且讓URL直接從其中複製貼上。 若要管理社交連結，[!DNL Hootsuite]等工具包含將自訂URL引數新增至所有連結的選項。
+`UTM`標籤的URL可能很麻煩。 不要嘗試輸入長整數，請使用類似此](https://support.google.com/analytics/answer/1033867?hl=en)的工具[來協助您。 這可確保您考慮將所有合理的引數新增到URL中，並且讓URL直接從其中複製貼上。 若要管理社交連結，[!DNL Hootsuite]等工具包含將自訂URL引數新增至所有連結的選項。
 
-### 3.請確定引數值區分大小寫
+### &#x200B;3. 請確定您的引數值區分大小寫
 
 請務必記住，標籤`utm\_source=adwords`與`utm\_source=Adwords`是不同的標籤。 考慮將所有內容變為小寫。
 
-### 4.將UTM引數值儲存在資料庫中
+### &#x200B;4. 將UTM引數值儲存在資料庫中
 
 每次發生交易或事件時，您都要評估行銷活動的效能。 您可以從[[!DNL Google Analytics] Cookie將UTM引數值的值讀入資料庫](../data-analyst/analysis/google-track-user-acq.md)來執行此操作。
 
-### 5.思考如何為行銷活動命名
+### &#x200B;5. 想想您如何為行銷活動命名
 
 若要追蹤您的行銷活動如何隨著時間改善，您需要對命名慣例保持聰明。 保持簡單，並儘可能最小化。 複雜的命名系統較難維護。
 

@@ -4,42 +4,56 @@ description: 瞭解使用SQL Report Builder的來去去。
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-TQID: https://experienceleague.adobe.com/AH2H26Tjo9EXQdXg3fckTOgVkSbA6yqPJdVuO1Yzw2A
+TQID: 'https://experienceleague.adobe.com/AH2H26Tjo9EXQdXg3fckTOgVkSbA6yqPJdVuO1Yzw2A'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: c38ccf61-5a4f-5140-ad2b-c3434e82ed6d
+    internal-label: SQL Report Builder
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Optimization
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1448
+source-wordcount: '1448'
 ht-degree: 0%
-
 ---
-
 # 使用[!DNL SQL Report Builder]
 
 >[!NOTE]
 >
 >需要[管理員許可權](../../administrator/user-management/user-management.md)才能建立和編輯SQL圖表。 `Standard`個使用者可以在儀表板上重新排列這些圖表，並且`Read-only`個使用者具有與傳統圖表相同的體驗。 此外，`Read-only`個使用者沒有查詢文字的存取權。
 
-請觀看[訓練影片](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/mbi/sql-report-builder)以瞭解更多資訊。
+請觀看[訓練影片](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/mbi/sql-report-builder)以瞭解更多資訊。
 
 [!DNL SQL]或結構化查詢語言是一種用來與資料庫通訊的程式設計語言。 在[!DNL Commerce Intelligence]中，[!DNL SQL]用於查詢或擷取您Data Warehouse中的資料。 檢視您控制面板上的報告 — 在幕後，每個報告都由[!DNL SQL]查詢提供技術支援。
 
 您可以使用[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md)直接查詢您的Data Warehouse、檢視結果，並將其轉換為圖表。 您可以按一下&#x200B;**[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**，開始使用[!DNL SQL Report Builder]建立報告。
 
-請觀看[訓練影片](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/mbi/sql-report-builder)以瞭解更多資訊。
+請觀看[訓練影片](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/mbi/sql-report-builder)以瞭解更多資訊。
 
 [!DNL SQL Report Builder]可讓您直接查詢您的Data Warehouse、檢視結果，並快速將其轉換為圖表。 使用[!DNL SQL]建立報告的最佳部分是，您不需要等待更新週期來重複您建立的欄。 如果結果看起來不正確，您可以快速編輯並重新執行查詢，直到符合您的預期為止。
 
@@ -71,7 +85,7 @@ ht-degree: 0%
 >
 >[!DNL SQL Report Builder]個查詢區分大小寫。 在撰寫查詢時，請務必使用正確的大小寫，否則可能會出現非預期的結果或錯誤。
 
-依照查詢最佳化[&#128279;](../../best-practices/optimizing-your-sql-queries.md)的准則，在[!DNL SQL]編輯器中寫入查詢。
+依照查詢最佳化](../../best-practices/optimizing-your-sql-queries.md)的[准則，在[!DNL SQL]編輯器中寫入查詢。
 
 >[!IMPORTANT]
 >
@@ -149,7 +163,7 @@ ht-degree: 0%
 
 大多數時間，結果的差異可歸因於更新週期。 如果[!DNL Commerce Intelligence]正在將資料從您的資料庫復寫到Data Warehouse，即使使用相同的查詢，您也可能會看到不同的結果。
 
-連線問題也可能導致不一致。 按一下「**[!DNL Manage Data** > **Connections]**」以瀏覽至「`Connections`」頁面以將其簽出 — 有問題的資料庫整合是否有錯誤？ 若是如此，您可能需要[重新驗證整合](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)，才能重新執行專案。
+連線問題也可能導致不一致。 按一下「**[!DNL Manage Data** > **Connections]**」以瀏覽至「`Connections`」頁面以將其簽出 — 有問題的資料庫整合是否有錯誤？ 若是如此，您可能需要[重新驗證整合](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)，才能重新執行專案。
 
 如果所有的整合都已成功連線，而且您並未處於更新週期中，則可能有其他問題發生。
 

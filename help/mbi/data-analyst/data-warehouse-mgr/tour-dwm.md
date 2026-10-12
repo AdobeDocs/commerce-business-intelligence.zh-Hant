@@ -4,33 +4,51 @@ description: 瞭解如何管理表格和欄同步設定、深入研究表格的�
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/h1abSvMbiLAovsl4YtlBHmLTOW03Bk6WlMOwYvh4cIk
+TQID: 'https://experienceleague.adobe.com/h1abSvMbiLAovsl4YtlBHmLTOW03Bk6WlMOwYvh4cIk'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Insights
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1237
+source-wordcount: '1244'
 ht-degree: 0%
-
 ---
-
 # Data Warehouse Manager
 
 >[!NOTE]
@@ -83,7 +101,7 @@ Data Warehouse Manager不僅可讓您輕鬆檢視和管理資料來源，您也�
    如果您正在同步直接從資料庫取得的資料表，則可能無法表示`Primary Keys`。 在此情況下，請連絡您的資料庫管理員，要求將一或多個主索引鍵新增至表格。
 1. 完成後，按一下![按鈕](../../assets/button.png)按鈕。
 
-*成功！顯示*&#x200B;訊息，且所選欄的狀態變更為`Pending`。 下次完整更新完成後，新同步的表格和欄將可用於報告中。 您也可以在初始同步之後設定新的[復寫方法](./cfg-replication-methods.md)。
+*成功！* 訊息隨即顯示，且所選欄的狀態會變更為`Pending`。 下次完整更新完成後，新同步的表格和欄將可用於報告中。 您也可以在初始同步之後設定新的[復寫方法](./cfg-replication-methods.md)。
 
 以下快速瞭解整個程式：
 
@@ -135,7 +153,7 @@ Data Warehouse Manager不僅可讓您輕鬆檢視和管理資料來源，您也�
 
 ## 那麼，我何時可以使用新的欄？ {#when}
 
-新的同步欄和新的/更新的計算欄將在下次完整更新完成後準備使用。 如果更新尚未進行，您可以按一下&#x200B;**[!UICONTROL Force update]**&#x200B;或`Data Warehouse`頁面頂端顯示的`Integrations`來強制更新。 您也可以按一下&#x200B;**[!UICONTROL Email me when complete]**，在更新完成時排程電子郵件通知。
+新的同步欄和新的/更新的計算欄將在下次完整更新完成後準備使用。 如果更新尚未進行，您可以按一下`Data Warehouse`或`Integrations`頁面頂端顯示的&#x200B;**[!UICONTROL Force update]**&#x200B;來強制更新。 您也可以按一下&#x200B;**[!UICONTROL Email me when complete]**，在更新完成時排程電子郵件通知。
 
 當您準備在報告中使用新欄時，[您必須先將它們新增到量度](../data-warehouse-mgr/manage-data-dimensions-metrics.md)。 雖然在更新完成之前無法取得資料，您仍可在報表中使用新欄。 更新完成後，會顯示報表中的資料。
 
