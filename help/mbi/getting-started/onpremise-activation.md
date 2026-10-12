@@ -148,15 +148,15 @@ ht-degree: 0%
 
 [!UICONTROL Integration Name]： [為您的[!DNL Commerce Intelligence]執行個體選擇名稱]
 
-[!UICONTROL Host]: `mbi.internal`
+[!UICONTROL Host]&#x200B;: `mbi.internal`
 
-[!UICONTROL Port]: `3306`
+[!UICONTROL Port]&#x200B;: `3306`
 
-[！UICONTROL使用者名稱]: `mbi`
+[!UICONTROL 使用者名稱]&#x200B;: `mbi`
 
 [!UICONTROL Password]：在上一節中顯示了[輸入密碼]
 
-[!UICONTROL Database Name]: `main`
+[!UICONTROL Database Name]&#x200B;: `main`
 
 [!UICONTROL Table Prefixes]：如果沒有資料表首碼，[請留空]
 
@@ -166,7 +166,7 @@ ht-degree: 0%
 
 **輸入：**
 
-[!UICONTROL Database Timezone]: `UTC`
+[!UICONTROL Database Timezone]&#x200B;: `UTC`
 
 [!UICONTROL Desired Timezone]： [選擇要顯示資料的時區]
 
@@ -182,13 +182,13 @@ ht-degree: 0%
 
 **輸入：**
 
-[!UICONTROL Encryption Type]: `SSH Tunnel`
+[!UICONTROL Encryption Type]&#x200B;: `SSH Tunnel`
 
 [!UICONTROL Remote Address]： `ssh.us-3.magento.cloud` [來自上一個步驟]
 
 [!UICONTROL Username]： `vfbfui4vmfez6-master-7rqtwti—mymagento` [來自上一個步驟]
 
-[!UICONTROL Port]: `22`
+[!UICONTROL Port]&#x200B;: `22`
 
 ## 儲存您的整合。
 

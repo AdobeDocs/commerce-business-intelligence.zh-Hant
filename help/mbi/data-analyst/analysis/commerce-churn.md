@@ -52,7 +52,7 @@ ht-degree: 19%
   * 選取[!UICONTROL table]： `sales_flat_order`
   * 選取[!UICONTROL column]： `created_at`
   * `sales_flat_order.customer_id = customer_entity.entity_id`
-  * [!UICONTROL Filter]: `Orders we count`
+  * [!UICONTROL Filter]&#x200B;: `Orders we count`
 
 * **`Seconds since customer's last order date`**
   * 選取[!UICONTROL definition]： `Age`
@@ -98,21 +98,21 @@ ht-degree: 19%
 
 * **流失率**
   * [!UICONTROL Metric]：新客戶（依第一筆訂單日期）
-  * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-  * 
-    [!UICONTROL Perspective]: `Cumulative`
-  * [!UICONTROL Metric]: `New customers (by last order date)`
+  * [!UICONTROL Filter]&#x200B;: `Lifetime number of orders Greater Than 0`
+  * &#x200B;
+    [!UICONTROL Perspective]&#x200B;: `Cumulative`
+  * [!UICONTROL Metric]&#x200B;: `New customers (by last order date)`
   * [!UICONTROL Filter]:
-  * 自客戶上次訂購日期起的秒數>= [您為流失客戶定義的截止日期&#x200B;]**`^`**
+  * 自客戶上次訂購日期起的秒數>= [您為流失客戶定義的截止日期&#x200B;]&#x200B;**`^`**
   * `Lifetime number of orders Greater Than 0`
 
-  * [!UICONTROL Metric]: `New customers (by last order date)`
-  * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-  * 
-    [!UICONTROL Perspective]: Cumulative
-  * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-  * 
-    [!UICONTROL Format]: Percentage
+  * [!UICONTROL Metric]&#x200B;: `New customers (by last order date)`
+  * [!UICONTROL Filter]&#x200B;: `Lifetime number of orders Greater Than 0`
+  * &#x200B;
+    [!UICONTROL Perspective]&#x200B;: Cumulative
+  * [!UICONTROL Formula]&#x200B;: `(B / ((A + B) - C)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: Percentage
 
 * *量度`A`：`New customers cumulative`*
 * *量度`B`：`Churned customers by last order date`*

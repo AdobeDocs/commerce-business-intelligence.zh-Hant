@@ -74,41 +74,41 @@ ht-degree: 13%
 >在&#x200B;**[!UICONTROL Time Period:]**，每個報表的時段會列為`All-time`。 您可以根據分析需求隨意變更。 Adobe建議此儀表板上的所有報告涵蓋相同時段，例如`All time`、`Year-to-date`或`Last 365 days`。
 
 * **[!UICONTROL Average LTV (all)]**
-  * [!UICONTROL Metric]: `Avg lifetime revenue`
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [！UICONTROL間隔]: `None`
-  * [!UICONTROL Chart Type]: `Number (scalar)`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 間隔]&#x200B;: `None`
+  * [!UICONTROL Chart Type]&#x200B;: `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
-  * [!UICONTROL Metric]: `Avg lifetime revenue`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
     * 新增[!UICONTROL filters]：
       * [`A`] `Customer's group code` **不等於** `Not Logged In`
       * [`B`] `Customer's lifetime number of orders` **大於**`0`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [！UICONTROL間隔]: `None`
-  * [!UICONTROL Chart Type]: `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 間隔]&#x200B;: `None`
+  * [!UICONTROL Chart Type]&#x200B;: `Number (scalar)`
 
 * **[!UICONTROL Average and Median LTV]**
   * 量度`1`： `Avg lifetime revenue`
   * 量度`2`： `Median lifetime revenue`
-  * [!UICONTROL Time period]: `All time`
-  * [!UICONTROL Interval]: `By Month`
-  * 
-    [！UICONTROL圖表型別]: `Line`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * [!UICONTROL Interval]&#x200B;: `By Month`
+  * &#x200B;
+    [!UICONTROL 圖表型別]&#x200B;: `Line`
   * 取消核取`Multiple Y-Axes`
 
 * **LTV （依存留期訂單數）**
   * 量度`1`： `Avg lifetime revenue`
   * 量度`2`： `New customers`
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [！UICONTROL間隔]: `None`
-  * [!UICONTROL Group by]: `Customer's lifetime number of orders`
-  * 
-    [！UICONTROL圖表型別]: `Line`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL 間隔]&#x200B;: `None`
+  * [!UICONTROL Group by]&#x200B;: `Customer's lifetime number of orders`
+  * &#x200B;
+    [!UICONTROL 圖表型別]&#x200B;: `Line`
 
   >[!NOTE]
   >

@@ -55,7 +55,7 @@ ht-degree: 1%
 
 ### &#x200B;2. 使用工具來建立URL
 
-`UTM`標籤的URL可能很麻煩。 不要嘗試輸入長整數，請使用類似此](https://support.google.com/analytics/answer/1033867?hl=en)的工具[來協助您。 這可確保您考慮將所有合理的引數新增到URL中，並且讓URL直接從其中複製貼上。 若要管理社交連結，[!DNL Hootsuite]等工具包含將自訂URL引數新增至所有連結的選項。
+`UTM`標籤的URL可能很麻煩。 不要嘗試輸入長整數，請使用類似此[&#128279;](https://support.google.com/analytics/answer/1033867?hl=en)的工具來協助您。 這可確保您考慮將所有合理的引數新增到URL中，並且讓URL直接從其中複製貼上。 若要管理社交連結，[!DNL Hootsuite]等工具包含將自訂URL引數新增至所有連結的選項。
 
 ### &#x200B;3. 請確定您的引數值區分大小寫
 

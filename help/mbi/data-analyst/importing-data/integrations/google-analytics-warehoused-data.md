@@ -57,7 +57,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->若要避免非預期或無意義的結果，請確認您使用的任何維度都與您在`Report Builder`中使用的一或多個量度](https://ga-dev-tools.google/dimensions-metrics-explorer/)相容[。
+>若要避免非預期或無意義的結果，請確認您使用的任何維度都與您在`Report Builder`中使用的一或多個量度[&#128279;](https://ga-dev-tools.google/dimensions-metrics-explorer/)相容。
 
 在您的Data Warehouse中建立單一資料表（稱為`report`）。
 

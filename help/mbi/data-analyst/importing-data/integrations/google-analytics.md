@@ -67,7 +67,7 @@ ht-degree: 0%
 
 1. 設定檔ID清單隨即顯示。 檢查您要連線至[!DNL Commerce Intelligence]的設定檔。 如果您有多個設定檔，並且需要一些協助來識別哪一個，請參閱下面的「連線多個[!DNL Google Analytics]設定檔」一節。
 
-   在URL ](../../../assets/list-profile-id.png)<!--{: width="600px"}-->中顯示設定檔ID的![Google Analytics管理頁面
+   在URL &rbrack;(../../../assets/list-profile-id.png)<!--{: width="600px"}-->中顯示設定檔ID的!&lbrack;Google Analytics管理頁面
 
 1. 變更會自動儲存，因此完成時請按一下&#x200B;**返回連線**。
 

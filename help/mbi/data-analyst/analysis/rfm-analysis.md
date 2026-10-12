@@ -64,132 +64,132 @@ ht-degree: 54%
 
 * **`Sales_flat_order/customer_entity`**&#x200B;資料表
 * `Customer's last order date`
-* [!UICONTROL Column type]: `Many to one > Max`
-* [!UICONTROL Pat]: `sales_flat_order.customer_id > customer_entity.entity_id`
+* [!UICONTROL Column type]&#x200B;: `Many to one > Max`
+* [!UICONTROL Pat]&#x200B;: `sales_flat_order.customer_id > customer_entity.entity_id`
 * 已選取[!UICONTROL column]： `created_at`
-* [!UICONTROL Filter]: `Orders we count`
+* [!UICONTROL Filter]&#x200B;: `Orders we count`
 
-* 
+* &#x200B;
   自客戶上次訂購日期起    秒
   * [!UICONTROL Column type]： - &quot;相同表格>年齡
 * 已選取[!UICONTROL column]： `Customer's last order date`
 
 * （輸入）計數參考
-* [!UICONTROL Column type]: `Same table > Calculation`
-* 
-  [！UICONTROL輸入]: `entity_id`
-* [!UICONTROL Calculation]: `**case when A is null then null else 1 end**`
-* 
-  [！UICONTROL資料型別]: `Integer`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
+* &#x200B;
+  [!UICONTROL 輸入]&#x200B;: `entity_id`
+* [!UICONTROL Calculation]&#x200B;: `**case when A is null then null else 1 end**`
+* &#x200B;
+  [!UICONTROL 資料型別]&#x200B;: `Integer`
 
 * **計數參考**&#x200B;資料表（這是您以數字「1」上傳的檔案）
 * 客戶數量
-* [!UICONTROL Column type]: `Many to One > Count Distinct`
+* [!UICONTROL Column type]&#x200B;: `Many to One > Count Distinct`
 * [!UICONTROL Path]： `ales_flat_order.(input) reference > Count reference.Primary Key`或`customer_entity.(input)reference > Count Reference`。`Primary Key`
 * 已選取[!UICONTROL column]： `sales_flat_order.customer_email`或`customer_entity.entity_id`
 
 * **Customer_entity**&#x200B;表格
 * 客戶數量
-* [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
+* [!UICONTROL Column type]&#x200B;: `One to Many > JOINED_COLUMN`
 * [!UICONTROL Path]： `customer_entity`.（輸入）參考>客戶集中度。`Primary Key`
 * 已選取[!UICONTROL column]： `Number of customers`
 
 * （輸入） `Ranking by customer lifetime revenue`
-* [!UICONTROL Column type]: `Same table > Event Number`
-* [!UICONTROL Event owner]: `(input) reference for count`
-* [!UICONTROL Event rank]: `Customer's lifetime revenue`
+* [!UICONTROL Column type]&#x200B;: `Same table > Event Number`
+* [!UICONTROL Event owner]&#x200B;: `(input) reference for count`
+* [!UICONTROL Event rank]&#x200B;: `Customer's lifetime revenue`
 
 * 依客戶期限收入排名
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: `case when A is null then null else (B-(A-1)) end`
-* 
-  [！UICONTROL資料型別]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `case when A is null then null else (B-(A-1)) end`
+* &#x200B;
+  [!UICONTROL 資料型別]&#x200B;: `Integer`
 
 * 客戶的貨幣分數（依百分位數）
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
-* 
-  [！UICONTROL資料型別]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
+* &#x200B;
+  [!UICONTROL 資料型別]&#x200B;: `Integer`
 
 * （輸入）依客戶期限訂單數排名
-* [!UICONTROL Column type]: `Same table > Event Number`
-* [!UICONTROL Event owner]: `(input) reference for count`
-* [!UICONTROL Event rank]: `Customer's lifetime number of orders`
+* [!UICONTROL Column type]&#x200B;: `Same table > Event Number`
+* [!UICONTROL Event owner]&#x200B;: `(input) reference for count`
+* [!UICONTROL Event rank]&#x200B;: `Customer's lifetime number of orders`
 
 * 依客戶期限訂單數排名
-* 
-  [！UICONTROL欄型別]: – "相同表格>計算"
+* &#x200B;
+  [!UICONTROL 欄型別]&#x200B;: – "相同表格>計算"
 * [!UICONTROL Inputs]： - **（輸入）依客戶期限訂單數**&#x200B;排名，**客戶數**
 * [!UICONTROL Calculation]： - **當A為Null然後為Null時，否則(B-(A-1))結束**
 * [!UICONTROL Datatype]： — 整數
 
 * 客戶的頻率分數（依百分位數）
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime number of orders`, `Number of customers`
-* [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
-* 
-  [！UICONTROL資料型別]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
+* &#x200B;
+  [!UICONTROL 資料型別]&#x200B;: `Integer`
 
 * 自客戶上次訂購日期起的秒數排名
-* [!UICONTROL Column type]: `Same table > Event Number`
-* [!UICONTROL Event owner]: `(input) reference for count`
-* [!UICONTROL Event rank]: `Seconds since customer's last order date`
+* [!UICONTROL Column type]&#x200B;: `Same table > Event Number`
+* [!UICONTROL Event owner]&#x200B;: `(input) reference for count`
+* [!UICONTROL Event rank]&#x200B;: `Seconds since customer's last order date`
 
 * 客戶的造訪間隔分數（依百分位數）
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime number of orders`, `Number of customers`
-* [!UICONTROL Calculation]: `Case when (A * 100/B,0) <= 20 then 5 when (A * 100/B,0) <= 40 then 4 when (A * 100/B,0) <= 60 then 3 when (A * 100/B,0) <= 80 then 2 when (A * 100/B,0) <= 100 then 1 else 0 end`
-* 
-  [！UICONTROL資料型別]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `Case when (A * 100/B,0) <= 20 then 5 when (A * 100/B,0) <= 40 then 4 when (A * 100/B,0) <= 60 then 3 when (A * 100/B,0) <= 80 then 2 when (A * 100/B,0) <= 100 then 1 else 0 end`
+* &#x200B;
+  [!UICONTROL 資料型別]&#x200B;: `Integer`
 
 * 客戶的造訪間隔分數（依百分位數）
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
-* [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else concat(A,B,C) end`
-* 
-  [！UICONTROL資料型別]: String
+* [!UICONTROL Calculation]&#x200B;: `case when (A IS NULL or B IS NULL or C IS NULL) then null else concat(A,B,C) end`
+* &#x200B;
+  [!UICONTROL 資料型別]&#x200B;: String
 
 * **計數參考**&#x200B;資料表
-* [!UICONTROL Number of customers]: `(RFM > 0)`
-* [!UICONTROL Column type]: `Many to One > Count Distinct`
+* [!UICONTROL Number of customers]&#x200B;: `(RFM > 0)`
+* [!UICONTROL Column type]&#x200B;: `Many to One > Count Distinct`
 * [!UICONTROL Path]： `sales_flat_order.(input) reference > Customer Concentration. Primary Key`或`customer_entity.(input)reference > Customer Concentration.Primary Key`
 * 已選取[!UICONTROL column]： `sales_flat_order.customer_email`或`customer_entity.entity_id`
 * [!UICONTROL Filter]： `Customer's RFM score (by percentile)`不等於000
 
 * **Customer_entity**&#x200B;表格
-* [!UICONTROL Number of customers]: `(RFM > 0)`
-* [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
-* [!UICONTROL Path]: `customer_entity.(input) reference > Customer Concentration.Primary Key`
+* [!UICONTROL Number of customers]&#x200B;: `(RFM > 0)`
+* [!UICONTROL Column type]&#x200B;: `One to Many > JOINED_COLUMN`
+* [!UICONTROL Path]&#x200B;: `customer_entity.(input) reference > Customer Concentration.Primary Key`
 * 已選取[!UICONTROL column]： - `Number of customers`
 
 * 客戶的造訪間隔分數`(R+F+M)`
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]： - `Customer's recency score (by percentiles)`， `Customer's frequency score (by percentiles)`， `Customer's monetary score (by percentiles)`
-* [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
-* 
-  [！UICONTROL資料型別]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
+* &#x200B;
+  [!UICONTROL 資料型別]&#x200B;: `Integer`
 
 * （輸入）依客戶的整體RFM分數排名
-* [!UICONTROL Column type]: `Same table > Event Number`
-* [!UICONTROL Event owner]: `(input) reference for count`
-* [!UICONTROL Event rank]: `Customer's recency score (R+F+M)`
+* [!UICONTROL Column type]&#x200B;: `Same table > Event Number`
+* [!UICONTROL Event owner]&#x200B;: `(input) reference for count`
+* [!UICONTROL Event rank]&#x200B;: `Customer's recency score (R+F+M)`
 * [!UICONTROL Filter]： `Customer's RFM score (by percentile)`不等於000
 
 * 依客戶的整體RFM分數排名
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer's overall RFM score`, `Number of customers (RFM > 0)`
-* [!UICONTROL Calculation]: `case when A is null then null else (B-(A-1)) end`
-* 
-  [！UICONTROL資料型別]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `case when A is null then null else (B-(A-1)) end`
+* &#x200B;
+  [!UICONTROL 資料型別]&#x200B;: `Integer`
 
 * 客戶的RFM群組
-* [!UICONTROL Column type]: `Same table > Calculation`
+* [!UICONTROL Column type]&#x200B;: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: `Case when round(A * 100/B,0) <= 20 then '5. copper' when round(A * 100/B,0) <= 40 then '4. bronze' when round(A * 100/B,0) <= 60 then '3. silver' when round(A * 100/B,0)<= 80 then '2. gold' else '1. Platinum' end`
-* 
-  [！UICONTROL資料型別]: `Integer`
+* [!UICONTROL Calculation]&#x200B;: `Case when round(A * 100/B,0) <= 20 then '5. copper' when round(A * 100/B,0) <= 40 then '4. bronze' when round(A * 100/B,0) <= 60 then '3. silver' when round(A * 100/B,0)<= 80 then '2. gold' else '1. Platinum' end`
+* &#x200B;
+  [!UICONTROL 資料型別]&#x200B;: `Integer`
 
 >[!NOTE]
 >
@@ -207,51 +207,51 @@ ht-degree: 54%
 
 * 按RFM群組&#x200B;**客戶**
 * 量度`A`： `New customers`
-* [!UICONTROL Metric]: `New customers`
-* [!UICONTROL Filter]: `Customer's RFM score (by percentiles) Not Equal to 000`
+* [!UICONTROL Metric]&#x200B;: `New customers`
+* [!UICONTROL Filter]&#x200B;: `Customer's RFM score (by percentiles) Not Equal to 000`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
 * 隱藏圖表
-* [!UICONTROL Group by]: `Customer's RFM group`
-* 
-  [！UICONTROL群組依據]: `Email`
-* 
-  [!UICONTROL Chart type]: `Table`
+* [!UICONTROL Group by]&#x200B;: `Customer's RFM group`
+* &#x200B;
+  [!UICONTROL 群組依據]&#x200B;: `Email`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Table`
 
 * **具有5個造訪間隔分數的客戶**
 * 量度`A`： `New customers`
-* [!UICONTROL Metric]: `New customers`
-* [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 5`
+* [!UICONTROL Metric]&#x200B;: `New customers`
+* [!UICONTROL Filter]&#x200B;: `Customer's recency score (by percentiles) Equal to 5`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* 
-  [!UICONTROL Chart Type]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Scalar`
 * 隱藏圖表
-* 
-  [！UICONTROL群組依據]: `Email`
-* [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`
-* 
-  [!UICONTROL Chart type]: `Table`
+* &#x200B;
+  [!UICONTROL 群組依據]&#x200B;: `Email`
+* [!UICONTROL Group by]&#x200B;: `Customer's RFM score (R+F+M)`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Table`
 
 * **具有一個造訪間隔分數的客戶**
 * 量度`A`： `New customers`
-* [!UICONTROL Metric]: `New customers`
-* [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 1`
+* [!UICONTROL Metric]&#x200B;: `New customers`
+* [!UICONTROL Filter]&#x200B;: `Customer's recency score (by percentiles) Equal to 1`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* 
-  [!UICONTROL Chart Type]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Scalar`
 * 隱藏圖表
-* 
-  [！UICONTROL群組依據]: `Email`
-* [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`
-* 
-  [!UICONTROL Chart type]: `Table`
+* &#x200B;
+  [!UICONTROL 群組依據]&#x200B;: `Email`
+* [!UICONTROL Group by]&#x200B;: `Customer's RFM score (R+F+M)`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Table`
 
 編譯所有報表後，您可以視需要在控制面板上組織報表。 結果看起來可能像上面的範例儀表板，但三個產生的表格只是您可執行的客戶細分型別的範例。

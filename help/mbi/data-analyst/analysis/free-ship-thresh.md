@@ -66,7 +66,7 @@ ht-degree: 17%
   >「貯體」大小取決於適合您作為使用者端的尺寸。 您可以從`average order value`開始，建立一些小於或大於該數量的值區。 檢視以下計算時，您會瞭解如何輕鬆複製部分查詢、編輯查詢及建立其他值區。 範例是以50為增量完成。
 
   * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`或`calculated column`，`Datatype`： `Integer`
-  * [!UICONTROL Calculation]: `case when A >= 0 and A<=200 then 0 - 200`
+  * [!UICONTROL Calculation]&#x200B;: `case when A >= 0 and A<=200 then 0 - 200`
     當`A< 200`和`A <= 250`，則 `201 - 250`
     當`A<251`和`A<= 300`，則 `251 - 300`
     當`A<301`和`A<= 350`，則 `301 - 350`
@@ -87,72 +87,72 @@ ht-degree: 17%
 ## 報表
 
 * **平均訂單值（送貨規則A**）
-  * [!UICONTROL Metric]: `Average order value`
+  * [!UICONTROL Metric]&#x200B;: `Average order value`
 
 * 量度`A`： `Average Order Value`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
-  [!UICONTROL Interval]: `None`
-* 
-  [!UICONTROL Chart Type]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Scalar`
 
 * **根據小計貯體排列的訂單數（送貨規則為A**）
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
   >[!NOTE]
   >
   >您可以顯示`Show top/bottom`中的前`X` `sorted by` `Order subtotal` （貯體）以截斷尾端。
 
 * 量度`A`： `Number of orders`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
-  [!UICONTROL Chart Type]: `Column`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Order subtotal (buckets)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Column`
 
 * 送貨規則為A **之小計訂單的**&#x200B;百分比
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
-  * 
-    [！UICONTROL群組依據]: `Independent`
-  * [!UICONTROL Formula]: `(A / B)`
-  * 
-    [!UICONTROL Format]: `%`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
+  * &#x200B;
+    [!UICONTROL 群組依據]&#x200B;: `Independent`
+  * [!UICONTROL Formula]&#x200B;: `(A / B)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `%`
 
 * 量度`A`： `Number of orders by subtotal (hide)`
 * 量度`B`： `Total number of orders (hide)`
-* [!UICONTROL Formula]: `% of orders`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Formula]&#x200B;: `% of orders`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Order subtotal (buckets)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 * 小計超過送貨規則A **的訂單的**&#x200B;百分比
-  * [!UICONTROL Metric]: `Number of orders`
-  * 
-    [!UICONTROL Perspective]: `Cumulative`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
+  * &#x200B;
+    [!UICONTROL Perspective]&#x200B;: `Cumulative`
 
-  * [!UICONTROL Metric]: `Number of orders`
-  * 
-    [！UICONTROL群組依據]: `Independent`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
+  * &#x200B;
+    [!UICONTROL 群組依據]&#x200B;: `Independent`
 
-  * [!UICONTROL Formula]: `1- (A / B)`
-  * 
-    [!UICONTROL Format]: `%`
+  * [!UICONTROL Formula]&#x200B;: `1- (A / B)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `%`
 
 * 量度`A`： `Number of orders by subtotal`
 * 量度`B`： `Total number of orders (hide)`
-* [!UICONTROL Formula]: `% of orders`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Formula]&#x200B;: `% of orders`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Order subtotal (buckets)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 
 針對送貨規則B重複上述步驟與報表，並重複時間週期。

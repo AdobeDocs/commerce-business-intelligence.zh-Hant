@@ -55,7 +55,7 @@ ht-degree: 0%
 
 | **代替這個……** | **試試這個！** |
 |-----|-----|
-| 使用SELECT星號](../../mbi/assets/Select_all_1.png)的![SQL查詢 | ![SQL查詢選取特定資料行](../../mbi/assets/Select_all_2.png) |
+| 使用SELECT星號![&#128279;](../../mbi/assets/Select_all_1.png)的SQL查詢 | ![SQL查詢選取特定資料行](../../mbi/assets/Select_all_2.png) |
 
 {style="table-layout:auto"}
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 
 | **代替這個……** | **試試這個！** |
 |-----|-----|
-| ![SQL查詢，GROUP BY在篩選前](../../mbi/assets/Group_by_2.png) | 在GROUP BY](../../mbi/assets/Group_by_1.png)之前使用篩選的![SQL查詢 |
+| ![SQL查詢，GROUP BY在篩選前](../../mbi/assets/Group_by_2.png) | 在GROUP BY![&#128279;](../../mbi/assets/Group_by_1.png)之前使用篩選的SQL查詢 |
 
 {style="table-layout:auto"}
 

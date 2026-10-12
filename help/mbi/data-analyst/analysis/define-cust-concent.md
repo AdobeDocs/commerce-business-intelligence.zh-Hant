@@ -88,7 +88,7 @@ ht-degree: 11%
 * 客戶的收入百分位數
 * [!UICONTROL Column type]： - `Same table > Calculation`
 * [!UICONTROL Inputs]： - `(input) Ranking by customer lifetime revenue`， `Number of customers`
-* [!UICONTROL Calculation]： - **&#x200B;當A為Null然後為Null時，則為(A/B)*100 end **
+* [!UICONTROL Calculation]： - **&#x200B;當A為Null然後為Null時，則為(A/B)*100 end &#x200B;**
 * [!UICONTROL Datatype]： - `Decimal`
 
 * `Sales_flat_order`資料表
@@ -106,7 +106,7 @@ ht-degree: 11%
 * 客戶的收入百分位數
 * [!UICONTROL Column type]： - `Same table > Calculation`
 * [!UICONTROL Inputs]： - `(input) Ranking by customer lifetime revenue`， `Number of customers`
-* [!UICONTROL Calculation]： - **&#x200B;當A為Null然後為Null時，則為(A/B)*100 end **
+* [!UICONTROL Calculation]： - **&#x200B;當A為Null然後為Null時，則為(A/B)*100 end &#x200B;**
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
@@ -124,36 +124,36 @@ ht-degree: 11%
 ## 報表
 
 * **客戶集中度**
-* [!UICONTROL Metric]: `Total customer lifetime value`
-* [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
+* [!UICONTROL Metric]&#x200B;: `Total customer lifetime value`
+* [!UICONTROL Filter]&#x200B;: `Customer's revenue percentile IS NOT NULL`
 
-* [!UICONTROL Metric]: `Total customer lifetime value`
-* [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
+* [!UICONTROL Metric]&#x200B;: `Total customer lifetime value`
+* [!UICONTROL Filter]&#x200B;: `Customer's revenue percentile IS NOT NULL`
 
-* 
-  [！UICONTROL群組依據]: `Independent`
+* &#x200B;
+  [!UICONTROL 群組依據]&#x200B;: `Independent`
 * 量度`A`： `Total customer lifetime revenue by percentile`
 * 量度`B`： `Total customer lifetime revenue (ungrouped)`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Customer's revenue percentile`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Customer's revenue percentile`
 * 顯示頂端/底部： `100% of Customer's revenue percentile Name`
-* 
-  [!UICONTROL Chart type]: `Line`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Line`
 
 * **前10%濃度**
-* [!UICONTROL Filter]: `Customer's revenue percentile <= 10`
+* [!UICONTROL Filter]&#x200B;: `Customer's revenue percentile <= 10`
 
 * 量度`A`： `Total customer lifetime revenue`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
 * 隱藏圖表
-* 
-  [！UICONTROL群組依據]: `Email`
-* 
-  [!UICONTROL Chart type]: `Table`
+* &#x200B;
+  [!UICONTROL 群組依據]&#x200B;: `Email`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Table`
 
 * **僅一次購買最下層50%的濃度**
 
@@ -162,27 +162,27 @@ ht-degree: 11%
 * `Customer's lifetime number of orders = 1`
 * [!UICONTROL Filter]:
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
 * 隱藏圖表
-* 
-  [！UICONTROL群組依據]: `Email`
-* 
-  [!UICONTROL Chart type]: `Table`
+* &#x200B;
+  [!UICONTROL 群組依據]&#x200B;: `Email`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Table`
 
 * **後10%濃度**
-* [!UICONTROL Filter]: `Customer's revenue percentile > 90`
+* [!UICONTROL Filter]&#x200B;: `Customer's revenue percentile > 90`
 
 * 量度`A`： `Total customer lifetime revenue`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
 * 隱藏圖表
-* 
-  [！UICONTROL群組依據]: `Email`
-* 
-  [!UICONTROL Chart type]: `Table`
+* &#x200B;
+  [!UICONTROL 群組依據]&#x200B;: `Email`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Table`
 
 編譯所有報表後，您可以視需要在控制面板上組織報表。 結果可能如上述範例控制面板所示。
 

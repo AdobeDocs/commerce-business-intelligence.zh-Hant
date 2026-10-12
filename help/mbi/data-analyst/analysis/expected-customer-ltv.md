@@ -56,54 +56,54 @@ ht-degree: 38%
 
 使用&#x200B;**30天月**&#x200B;時，要在&#x200B;**訂單**&#x200B;資料表上建立的資料行：
 
-* [!UICONTROL Column name]: `Months between first order and this order`
-* [!UICONTROL Column type]: `Same Table`
-* 
-  [!UICONTROL Column equation]: `CALCULATION`
+* [!UICONTROL Column name]&#x200B;: `Months between first order and this order`
+* [!UICONTROL Column type]&#x200B;: `Same Table`
+* &#x200B;
+  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
 * [!UICONTROL Column input]： A = `Seconds between customer's first order date and this order`
-* 
-  [!UICONTROL Datatype]: `Integer`
+* &#x200B;
+  [!UICONTROL Datatype]&#x200B;: `Integer`
 * **定義：**`case when A is null then null when A <= 0 then '1'::int else (ceil(A)/2629800)::int end`
 
-* [!UICONTROL Column name]: `Months since order`
-* [!UICONTROL Column type]: `Same Table`
-* 
-  [!UICONTROL Column equation]: `CALCULATION`
+* [!UICONTROL Column name]&#x200B;: `Months since order`
+* [!UICONTROL Column type]&#x200B;: `Same Table`
+* &#x200B;
+  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
 * [!UICONTROL Column input]： A = `created_at`
-* 
-  [!UICONTROL Datatype]: `Integer`
+* &#x200B;
+  [!UICONTROL Datatype]&#x200B;: `Integer`
 * 定義： `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
 
 使用&#x200B;**行事曆**&#x200B;個月時，要在&#x200B;**`orders`**&#x200B;資料表上建立的資料行：
 
-* [!UICONTROL Column name]: `Calendar months between first order and this order`
-* [!UICONTROL Column type]: `Same Table`
-* 
-  [!UICONTROL Column equation]: `CALCULATION`
+* [!UICONTROL Column name]&#x200B;: `Calendar months between first order and this order`
+* [!UICONTROL Column type]&#x200B;: `Same Table`
+* &#x200B;
+  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
 * [!UICONTROL Column inputs]:
   * `A` = `created_at`
   * `B` = `Customer's first order date`
 
-* 
-  [!UICONTROL Datatype]: `Integer`
+* &#x200B;
+  [!UICONTROL Datatype]&#x200B;: `Integer`
 * 定義： `case when (A::date is null) or (B::date is null) then null else ((date_part('year',A::date) - date_part('year',B::date))*12 + date_part('month',A::date) - date_part('month',B::date))::int end`
 
-* [!UICONTROL Column name]: `Calendar months since order`
-* [!UICONTROL Column type]: `Same Table`
-* 
-  [!UICONTROL Column equation]: `CALCULATION`
+* [!UICONTROL Column name]&#x200B;: `Calendar months since order`
+* [!UICONTROL Column type]&#x200B;: `Same Table`
+* &#x200B;
+  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
 * [!UICONTROL Column input]: `A` = `created_at`
-* 
-  [!UICONTROL Datatype]: `Integer`
+* &#x200B;
+  [!UICONTROL Datatype]&#x200B;: `Integer`
 * **定義：**`case when A is null then null else ((date_part('year',current_timestamp::date) - date_part('year',A::date))*12 + date_part('month',current_timestamp::date) - date_part('month',A::date))::int end`
 
-* [!UICONTROL Column name]: `Is in current month? (Yes/No)`
-* [!UICONTROL Column type]: `Same Table`
-* 
-  [!UICONTROL Column equation]: `CALCULATION`
+* [!UICONTROL Column name]&#x200B;: `Is in current month? (Yes/No)`
+* [!UICONTROL Column type]&#x200B;: `Same Table`
+* &#x200B;
+  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
 * [!UICONTROL Column input]： A = `created_at`
-* 
-  [!UICONTROL Datatype]: `String`
+* &#x200B;
+  [!UICONTROL Datatype]&#x200B;: `String`
 * 定義： `case when A is null then null when (date_trunc('month', current_timestamp::date))::varchar = (date_trunc('month', A::date))::varchar then 'Yes' else 'No' end`
 
 ## 量度
@@ -134,54 +134,54 @@ ht-degree: 38%
   * `Calendar months between first order and this order` `<= X` （請為X挑選一些合理的數字，例如24個月）
   * `Is in current month?` = `No`
 
-* 
-  [！UICONTROL公制]: `Revenue`
+* &#x200B;
+  [!UICONTROL 公制]&#x200B;: `Revenue`
 * [!UICONTROL Filter]:
 
 * 量度`B`： `All time customers (hide)`
   * `Is in current month?` = `No`
 
-* [!UICONTROL Metric]: `New customers by first order date`
+* [!UICONTROL Metric]&#x200B;: `New customers by first order date`
 * [!UICONTROL Filter]:
 
 * 量度`C`： `All time customers by month since first order (hide)`
   * `Calendar months since order` `<= X`
   * `Is in current month?` = `No`
 
-* [!UICONTROL Metric]: `New customers by first order date`
+* [!UICONTROL Metric]&#x200B;: `New customers by first order date`
 * [!UICONTROL Filter]:
 
-* [!UICONTROL Formula]: `Expected revenue`
-* [!UICONTROL Formula]: `A / (B - C)`
-* 
-  [!UICONTROL Format]: `Currency`
+* [!UICONTROL Formula]&#x200B;: `Expected revenue`
+* [!UICONTROL Formula]&#x200B;: `A / (B - C)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Currency`
 
 其他圖表詳細資料
 
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * 時間間隔： `None`
 * [!UICONTROL Group by]： `Calendar months between first order and this order` — 全部顯示
 * 使用`group by`旁的鉛筆圖示，將`All time customers`量度的`group by`變更為「獨立」
 * 編輯`Show top/bottom`欄位，如下所示：
-  * [!UICONTROL Revenue]: `Top 24 sorted by Calendar months between first order and this order`
-  * [!UICONTROL All time customers]: `Top 24 sorted by All time customers`
-  * [!UICONTROL All time customers by month since first order]: `Top 24 sorted by All time customers by month since first order`
+  * [!UICONTROL Revenue]&#x200B;: `Top 24 sorted by Calendar months between first order and this order`
+  * [!UICONTROL All time customers]&#x200B;: `Top 24 sorted by All time customers`
+  * [!UICONTROL All time customers by month since first order]&#x200B;: `Top 24 sorted by All time customers by month since first order`
 
 **同類群組每月平均收入**
 
 * 量度`A`： `Revenue`
-* 
-  [!UICONTROL Metric view]: `Cohort`
-* [!UICONTROL Cohort date]: `Customer's first order date`
-* [!UICONTROL Perspective]: `Average value per cohort member`
+* &#x200B;
+  [!UICONTROL Metric view]&#x200B;: `Cohort`
+* [!UICONTROL Cohort date]&#x200B;: `Customer's first order date`
+* [!UICONTROL Perspective]&#x200B;: `Average value per cohort member`
 
 **依同類群組的每月累計平均收入**
 
 * 量度`A`： `Revenue`
-* 
-  [!UICONTROL Metric view]: `Cohort`
-* [!UICONTROL Cohort date]: `Customer's first order date`
-* [!UICONTROL Perspective]: `Cumulative average value per cohort member`
+* &#x200B;
+  [!UICONTROL Metric view]&#x200B;: `Cohort`
+* [!UICONTROL Cohort date]&#x200B;: `Customer's first order date`
+* [!UICONTROL Perspective]&#x200B;: `Cumulative average value per cohort member`
 
 編譯所有報表後，您可以視需要在控制面板上組織報表。 結果看起來可能像頁面頂端的影像。
 
